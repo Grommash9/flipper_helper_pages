@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://grommash9.github.io/flipper_helper_pages/sitemap.xml

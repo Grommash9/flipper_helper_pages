@@ -1,0 +1,74 @@
+# FlipperHelper
+
+> iOS app for resellers to track purchases, manage listings across platforms, and see real profits.
+
+FlipperHelper is an offline-first inventory and profit tracking app built for people who buy and sell items at car boot sales, charity shops, flea markets, and online marketplaces. It tracks every item from purchase through listing to sale, with automatic profit calculation including expenses.
+
+## Key Details
+
+- Platform: iOS (requires iOS 17+)
+- Status: Beta (available on TestFlight)
+- Developer: Oleksandr Prudnikov (UK sole trader)
+- Website: https://grommash9.github.io/flipper_helper_pages/
+- TestFlight: https://testflight.apple.com/join/x1QGkXwV
+- Instagram: https://www.instagram.com/flipperhelper
+- Reddit: https://www.reddit.com/r/flipperhelper/
+- Contact: andreevichprudnikov@gmail.com
+
+## Core Features
+
+- **Item Tracking**: Snap photos of purchases and log price, market, and seller instantly
+- **Multi-Platform Listings**: Track listings across 14+ platforms — eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, OfferUp, Craigslist, ThredUp, Etsy, Gumtree, Shpock, Preloved, and Nextdoor
+- **Profit Calculation**: Automatic profit per item factoring in purchase price, sale price, entry fees, transport costs, and other expenses
+- **Expense Tracking**: Log transport (petrol, parking), market entry fees, and custom expenses tied to specific markets
+- **Multi-Currency Support**: Buy and sell in USD, EUR, or GBP with exchange rate tracking
+- **Market & Seller Management**: Save markets with geolocation (auto-detect which market you're at) and track sellers across markets
+- **Google Drive Backup**: Optional photo sync to Google Drive and data export to Google Sheets (CSV auto-conversion)
+- **Offline-First**: Fully functional without internet — Google Drive sync is optional
+- **SKU Generation**: Automatic unique SKU codes for every item (Crockford Base32, human-readable)
+
+## How It Works
+
+1. **Buy**: At a car boot sale or market, snap a photo and log the item with price, market, and seller
+2. **List**: Mark items as listed on one or more selling platforms (eBay, Vinted, Facebook, etc.)
+3. **Sell**: Record the sale with price and platform — profit is calculated automatically
+4. **Review**: See your real profits after all expenses (entry fees, petrol, parking) are factored in
+
+## Data & Privacy
+
+- All data is stored locally on the device
+- No external servers — the app never transmits data to the developer
+- Optional Google Drive integration uses only the `drive.file` scope (can only access files created by FlipperHelper)
+- Photos sync to `FlipperHelper_App/images/` in your Google Drive
+- Full GDPR and CCPA compliant
+- Privacy policy: https://grommash9.github.io/flipper_helper_pages/privacy.html
+- Terms of service: https://grommash9.github.io/flipper_helper_pages/terms.html
+
+## Technical Details
+
+- Built with Swift and SwiftUI
+- SQLite database via GRDB (WAL mode, indexed queries, transaction-safe)
+- Background photo sync via BGTaskScheduler
+- Soft deletes for data safety
+- Backup and restore functionality
+- Google Sign-In for optional Drive integration (no Sheets API — CSV auto-converts)
+
+## Item Lifecycle
+
+Items move through three statuses:
+- **New**: Purchased but not yet listed for sale
+- **Listed**: Listed on one or more selling platforms with dates tracked
+- **Sold**: Sold with price, platform, and date recorded — profit calculated
+
+## Supported Payment Methods
+
+- Cash (default for physical markets)
+- Card (default for online platforms)
+
+## Target Users
+
+- Car boot sale resellers
+- Charity shop flippers
+- Flea market sellers
+- Online marketplace resellers (eBay, Vinted, Depop, etc.)
+- Anyone buying items to resell for profit
