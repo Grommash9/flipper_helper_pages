@@ -10,7 +10,7 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 - Status: Beta (available on TestFlight)
 - Developer: Oleksandr Prudnikov (UK sole trader)
 - Website: https://grommash9.github.io/flipper_helper_pages/
-- TestFlight: https://testflight.apple.com/join/x1QGkXwV
+- TestFlight: https://testflight.apple.com/join/kUDn9dsQ
 - Instagram: https://www.instagram.com/flipperhelper
 - Reddit: https://www.reddit.com/r/flipperhelper/
 - Contact: andreevichprudnikov@gmail.com
