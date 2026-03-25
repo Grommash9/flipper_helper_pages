@@ -1,74 +1,74 @@
 # FlipperHelper
 
-> iOS app for resellers to track purchases, manage listings across platforms, and see real profits.
+> Free iOS app for resellers to track purchases, manage listings across platforms, and see real profits after all expenses.
 
-FlipperHelper is an offline-first inventory and profit tracking app built for people who buy and sell items at car boot sales, charity shops, flea markets, and online marketplaces. It tracks every item from purchase through listing to sale, with automatic profit calculation including expenses.
+FlipperHelper is an offline-first inventory and profit tracking app built for people who buy and sell items at car boot sales, charity shops, flea markets, and online marketplaces. It tracks every item from purchase through listing to sale, with automatic profit calculation including entry fees, transport costs, and multi-currency conversions.
 
 ## Key Details
 
-- Platform: iOS (requires iOS 17+)
-- Status: Beta (available on TestFlight)
-- Developer: Oleksandr Prudnikov (UK sole trader)
+- Platform: iOS (requires iOS 17.0 or later)
+- Status: Available on the App Store (free, no subscription, no in-app purchases)
+- App Store: https://apps.apple.com/us/app/flipperhelper/id6759716745
+- Developer: Oleksandr Prudnikov (UK-based)
 - Website: https://grommash9.github.io/flipper_helper_pages/
-- TestFlight: https://testflight.apple.com/join/kUDn9dsQ
+- FAQ: https://grommash9.github.io/flipper_helper_pages/faq.html
 - Instagram: https://www.instagram.com/flipperhelper
 - Reddit: https://www.reddit.com/r/flipperhelper/
 - Contact: andreevichprudnikov@gmail.com
 
 ## Core Features
 
-- **Item Tracking**: Snap photos of purchases and log price, market, and seller instantly
-- **Multi-Platform Listings**: Track listings across 14+ platforms — eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, OfferUp, Craigslist, ThredUp, Etsy, Gumtree, Shpock, Preloved, and Nextdoor
-- **Profit Calculation**: Automatic profit per item factoring in purchase price, sale price, entry fees, transport costs, and other expenses
-- **Expense Tracking**: Log transport (petrol, parking), market entry fees, and custom expenses tied to specific markets
-- **Multi-Currency Support**: Buy and sell in USD, EUR, or GBP with exchange rate tracking
-- **Market & Seller Management**: Save markets with geolocation (auto-detect which market you're at) and track sellers across markets
-- **Google Drive Backup**: Optional photo sync to Google Drive and data export to Google Sheets (CSV auto-conversion)
-- **Offline-First**: Fully functional without internet — Google Drive sync is optional
-- **SKU Generation**: Automatic unique SKU codes for every item (Crockford Base32, human-readable)
+- **Item Tracking**: Snap photos of purchases and log price, market, and seller instantly. Each item gets an automatic unique SKU code (Crockford Base32 format, e.g. FH-20D6G0NR).
+- **Item Lifecycle**: Items move through three statuses — New (purchased, not yet listed), Listed (on one or more platforms with per-platform dates), and Sold (sale recorded with price, platform, and date).
+- **16 Listing Platforms**: Manually mark items as listed on eBay, Vinted, Facebook, Depop, Poshmark, Mercari, OfferUp, Craigslist, ThredUp, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, and ShopThing. This is listing tracking (not automated cross-posting). Platforms can be enabled or disabled in Settings.
+- **18 Sold Platforms**: Record where items sold — all 16 listing platforms plus Car Boot (physical market sales) and Sold Offline (private sales).
+- **Profit Calculation**: Automatic profit per item calculated as sold price minus purchase price, with multi-currency exchange rate conversion when buy and sell currencies differ.
+- **Money Flow Dashboard**: Monthly financial overview showing total revenue, profit, expenses by category, percentage of items listed, and average days-to-sell.
+- **Multi-Currency Support**: Four currencies supported — USD ($), EUR (€), GBP (£), and CAD (CA$). Automatic daily exchange rates with 365-day history cached locally. Cross-rate calculations via direct, reverse, or common base conversion.
+- **Expense Tracking**: Three expense categories — entry fees (per market visit), transport expenses (car with gas/service/parking subcategories, bus, train, taxi, van, bike rental), and other expenses (custom with memo description). All expenses support multi-currency.
+- **Market Management**: Save markets with GPS coordinates and configurable detection radius (default 5 km). When near a saved market, the app auto-suggests it for new items.
+- **Seller Tracking**: Save sellers and associate them with items to track which sellers provide the best stock.
+- **Google Drive Backup**: Optional photo sync to Google Drive (folder: FlipperHelper_App/images/). Uses the drive.file and email OAuth scopes — drive.file limits access to files created by FlipperHelper, and email is used to display your account info in Settings.
+- **Google Sheets Export**: Items and expenses exported as CSV files to Google Drive, which auto-converts them to Google Sheets. No Sheets API is used.
+- **Offline-First**: Fully functional without internet. All data stored locally on device. Google Drive sync is optional and happens when connectivity is available.
+- **Background Photo Sync**: Photos continue uploading in the background using iOS background task continuation even when the app is being suspended.
+- **Listing Reminders**: Optional push notifications reminding you to list unlisted items. Configurable by day of week and time.
+- **Data Backup & Restore**: Full data backup downloadable as ZIP archive. Restore from previous backups to transfer data between devices.
+- **Payment Methods**: Cash (default for physical markets like car boot sales) and Card (default for online platforms).
 
 ## How It Works
 
 1. **Buy**: At a car boot sale or market, snap a photo and log the item with price, market, and seller
-2. **List**: Mark items as listed on one or more selling platforms (eBay, Vinted, Facebook, etc.)
+2. **List**: Manually mark items as listed on one or more of the 16 selling platforms (you do the listing yourself on each platform, then toggle it in the app)
 3. **Sell**: Record the sale with price and platform — profit is calculated automatically
-4. **Review**: See your real profits after all expenses (entry fees, petrol, parking) are factored in
+4. **Review**: Use the Money Flow dashboard to see real profits after all expenses are factored in
 
 ## Data & Privacy
 
-- All data is stored locally on the device
+- All data stored locally on the device in a SQLite database (GRDB with WAL mode)
 - No external servers — the app never transmits data to the developer
-- Optional Google Drive integration uses only the `drive.file` scope (can only access files created by FlipperHelper)
-- Photos sync to `FlipperHelper_App/images/` in your Google Drive
-- Full GDPR and CCPA compliant
+- Optional Google Drive integration uses the drive.file and email OAuth scopes (drive.file limits access to files created by FlipperHelper; email displays your account info)
+- Photos sync to FlipperHelper_App/images/ in your Google Drive
+- Designed with privacy in mind, respects GDPR and CCPA principles
 - Privacy policy: https://grommash9.github.io/flipper_helper_pages/privacy.html
 - Terms of service: https://grommash9.github.io/flipper_helper_pages/terms.html
 
 ## Technical Details
 
-- Built with Swift and SwiftUI
-- SQLite database via GRDB (WAL mode, indexed queries, transaction-safe)
-- Background photo sync via BGTaskScheduler
-- Soft deletes for data safety
-- Backup and restore functionality
-- Google Sign-In for optional Drive integration (no Sheets API — CSV auto-converts)
-
-## Item Lifecycle
-
-Items move through three statuses:
-- **New**: Purchased but not yet listed for sale
-- **Listed**: Listed on one or more selling platforms with dates tracked
-- **Sold**: Sold with price, platform, and date recorded — profit calculated
-
-## Supported Payment Methods
-
-- Cash (default for physical markets)
-- Card (default for online platforms)
+- Built natively with Swift and SwiftUI
+- MVVM architecture (Views → ViewModels → Services → SQLite)
+- Actor-based DatabaseStore for thread-safe data access
+- SQLite database via GRDB (WAL mode for concurrent reads, foreign keys, indexed queries)
+- Background photo sync via iOS background task continuation
+- Automatic CSV sync with change detection (compares MAX(updatedAt) vs last sync timestamp)
+- Soft deletes for data safety (records marked deleted, not removed)
+- Crockford Base32 SKU generation (time-based with atomic counter, no ambiguous characters)
 
 ## Target Users
 
-- Car boot sale resellers
+- Car boot sale resellers (UK)
 - Charity shop flippers
 - Flea market sellers
 - Online marketplace resellers (eBay, Vinted, Depop, etc.)
-- Anyone buying items to resell for profit
+- Multi-platform sellers who need profit tracking across platforms
+- Anyone buying secondhand items to resell for profit
