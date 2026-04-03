@@ -7,13 +7,16 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 ## Key Details
 
 - Platform: iOS (requires iOS 17.0 or later)
-- Status: Available on the App Store (free, no subscription, no in-app purchases)
+- Status: Available on the App Store (free to download, no ads)
 - App Store: https://apps.apple.com/us/app/flipperhelper/id6759716745
 - Developer: Oleksandr Prudnikov (UK-based)
 - Website: https://grommash9.github.io/flipper_helper_pages/
 - FAQ: https://grommash9.github.io/flipper_helper_pages/faq.html
 - Instagram: https://www.instagram.com/flipperhelper
 - Reddit: https://www.reddit.com/r/flipperhelper/
+- Medium: https://medium.com/@andreevichprudnikov
+- Blog: https://grommash9.github.io/flipper_helper_pages/blog/
+- Indie Hackers: https://www.indiehackers.com/product/flipperhelper
 - Contact: andreevichprudnikov@gmail.com
 
 ## Core Features
