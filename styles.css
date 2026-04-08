@@ -881,6 +881,39 @@ section > .container > p {
 }
 
 /* ========================================
+   Badges / Featured On
+   ======================================== */
+.badges-section {
+  padding: var(--space-2xl) 0;
+  text-align: center;
+}
+
+.badges-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.badges-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.badges-row a {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.badges-row a:hover {
+  opacity: 1;
+}
+
+/* ========================================
    Footer
    ======================================== */
 .footer {
