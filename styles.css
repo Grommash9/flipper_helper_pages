@@ -116,7 +116,6 @@ body {
   line-height: var(--leading-normal);
   color: var(--text-primary);
   background-color: var(--bg-primary);
-  overflow-x: hidden;
 }
 
 img {
@@ -211,6 +210,44 @@ ul, ol {
   border-radius: var(--radius-sm);
 }
 
+/* Hamburger menu toggle (CSS-only, no JS) */
+.nav-toggle-input {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: calc(var(--z-nav) + 1);
+}
+
+.nav-toggle-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: transform var(--transition-base), opacity var(--transition-base);
+}
+
+.nav-toggle-input:checked ~ .nav-toggle-label .nav-toggle-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle-input:checked ~ .nav-toggle-label .nav-toggle-line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle-input:checked ~ .nav-toggle-label .nav-toggle-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .nav-links {
   display: none;
   align-items: center;
@@ -232,9 +269,53 @@ ul, ol {
   background: var(--border-subtle);
 }
 
+/* Mobile dropdown nav */
+.nav-toggle-input:checked ~ .nav-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(9, 9, 11, 0.95);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: var(--space-md) var(--space-lg);
+  gap: var(--space-xs);
+  animation: navSlideDown 0.2s ease-out;
+}
+
+@keyframes navSlideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.nav-toggle-input:checked ~ .nav-links a {
+  padding: var(--space-md);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
   .nav-links {
     display: flex;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .nav-toggle-input:checked ~ .nav-links {
+    position: static;
+    flex-direction: row;
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: none;
+    padding: 0;
+    animation: none;
   }
 }
 
@@ -266,7 +347,7 @@ ul, ol {
 }
 
 .btn:active {
-  transform: translateY(0);
+  transform: translateY(0) scale(0.97);
 }
 
 .btn-primary {
@@ -313,7 +394,7 @@ ul, ol {
   display: flex;
   align-items: center;
   padding: calc(80px + var(--space-3xl)) 0 var(--space-4xl);
-  overflow: hidden;
+  overflow: clip;
 }
 
 .hero-compact {
@@ -348,6 +429,13 @@ ul, ol {
   flex-wrap: wrap;
   gap: var(--space-sm) var(--space-md);
   margin-top: var(--space-xl);
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .hero-features {
+    justify-content: flex-start;
+  }
 }
 
 .hero-feature {
@@ -357,6 +445,12 @@ ul, ol {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.hero-feature:hover {
+  border-color: var(--border-default);
+  background: var(--bg-card-hover);
 }
 
 .hero::before {
@@ -503,7 +597,7 @@ ul, ol {
 
 /* Video mockup for phone demo */
 .video-mockup {
-  width: 220px;
+  width: 260px;
   aspect-ratio: 880 / 1920;
   background: var(--bg-tertiary);
   border-radius: var(--radius-lg);
@@ -512,9 +606,29 @@ ul, ol {
   box-shadow: var(--shadow-lg);
 }
 
+/* Gradient glow behind phone mockup */
+.hero-visual::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(0, 122, 255, 0.2), transparent 70%);
+  filter: blur(40px);
+  z-index: -1;
+  pointer-events: none;
+}
+
 @media (min-width: 768px) {
   .video-mockup {
-    width: 260px;
+    width: 280px;
+  }
+
+  .hero-visual::after {
+    width: 350px;
+    height: 500px;
   }
 }
 
@@ -645,7 +759,7 @@ section > .container > p {
 
 .feature-card {
   position: relative;
-  padding: var(--space-xl);
+  padding: var(--space-xl) var(--space-xl) var(--space-2xl);
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
@@ -668,6 +782,26 @@ section > .container > p {
   transition: opacity var(--transition-base);
 }
 
+.feature-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-primary);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+/* On mobile (no hover), show subtle always-on top border */
+@media (hover: none) {
+  .feature-card::after {
+    opacity: 0.3;
+  }
+}
+
 .feature-card:hover {
   background: var(--bg-card-hover);
   border-color: var(--border-default);
@@ -679,14 +813,18 @@ section > .container > p {
   opacity: 1;
 }
 
+.feature-card:hover::after {
+  opacity: 1;
+}
+
 .feature-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   margin-bottom: var(--space-lg);
-  background: var(--color-primary-light);
+  background: linear-gradient(135deg, var(--color-primary-light), rgba(0, 122, 255, 0.05));
   border: 1px solid rgba(0, 122, 255, 0.2);
   border-radius: var(--radius-md);
   color: var(--color-primary-text);
@@ -888,12 +1026,14 @@ section > .container > p {
   text-align: center;
 }
 
-.badges-label {
+.badges-section > .container > p.badges-label {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--text-muted);
   margin-bottom: var(--space-md);
+  max-width: none;
+  text-align: center;
 }
 
 .badges-row {
@@ -911,6 +1051,29 @@ section > .container > p {
 
 .badges-row a:hover {
   opacity: 1;
+}
+
+.badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.badge-link:hover {
+  border-color: var(--border-hover);
+}
+
+.badge-link img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
 }
 
 /* ========================================
@@ -1066,7 +1229,23 @@ section > .container > p {
 
 .footer-links-inline {
   display: flex;
-  gap: var(--space-lg);
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-lg);
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .footer-links-inline {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-links-inline {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+  }
 }
 
 .footer-links-inline a {
@@ -1752,6 +1931,225 @@ section > .container > p {
 .faq-more {
   text-align: center;
   margin-top: var(--space-xl);
+}
+
+/* ========================================
+   Section Visual Rhythm — Gradient Dividers
+   ======================================== */
+@media (min-width: 1024px) {
+  section {
+    padding: 7rem 0;
+  }
+
+  .hero-compact {
+    padding: calc(80px + var(--space-xl)) 0 var(--space-2xl);
+  }
+}
+
+section.features::after,
+.screenshots-section::after,
+.audience-section::after,
+.story-section::after,
+.comparison-section::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: var(--space-4xl);
+  background: linear-gradient(90deg, transparent, var(--color-primary-glow), transparent);
+  opacity: 0.4;
+}
+
+/* ========================================
+   Screenshots Scroll Affordance
+   ======================================== */
+.screenshots-section {
+  position: relative;
+}
+
+.screenshots-section .container {
+  position: relative;
+}
+
+/* Gradient fade masks on edges */
+.screenshots-grid::before,
+.screenshots-grid::after {
+  content: '';
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+  width: 40px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@media (max-width: 1023px) {
+  .screenshots-grid {
+    cursor: grab;
+    position: relative;
+  }
+
+  .screenshots-grid::before {
+    background: linear-gradient(to right, var(--bg-primary), transparent);
+    margin-right: -40px;
+  }
+
+  .screenshots-grid::after {
+    background: linear-gradient(to left, var(--bg-primary), transparent);
+    margin-left: -40px;
+  }
+}
+
+/* Desktop stagger — odd up, even down */
+@media (min-width: 1024px) {
+  .screenshot-card:nth-child(odd) {
+    transform: translateY(-8px);
+  }
+
+  .screenshot-card:nth-child(even) {
+    transform: translateY(8px);
+  }
+
+  .screenshot-card:nth-child(odd).animate-on-scroll.is-visible {
+    transform: translateY(-8px);
+  }
+
+  .screenshot-card:nth-child(even).animate-on-scroll.is-visible {
+    transform: translateY(8px);
+  }
+}
+
+/* ========================================
+   Audience Section — Lead Paragraph
+   ======================================== */
+.audience-content p:first-child {
+  font-size: var(--text-xl);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.audience-content p:nth-child(2) {
+  border-left: 3px solid var(--color-primary);
+  padding-left: var(--space-lg);
+}
+
+.audience-content p {
+  margin-bottom: var(--space-xl);
+}
+
+/* ========================================
+   Stats Grid Polish
+   ======================================== */
+.stat-number {
+  background: linear-gradient(135deg, var(--color-primary-text), #66B3FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-card {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.stat-card:hover {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 639px) {
+  .stats-grid {
+    gap: var(--space-lg);
+  }
+}
+
+/* ========================================
+   Comparison Table Mobile Improvement
+   ======================================== */
+.comparison-table-wrapper {
+  position: relative;
+}
+
+/* Right gradient fade on mobile */
+.comparison-table-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(to left, var(--bg-primary), transparent);
+  pointer-events: none;
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  z-index: 1;
+}
+
+@media (min-width: 700px) {
+  .comparison-table-wrapper::after {
+    display: none;
+  }
+}
+
+/* FlipperHelper column header more distinct */
+.comparison-table thead .highlight-col {
+  background: rgba(0, 122, 255, 0.15);
+  color: var(--color-primary-text);
+  font-weight: 700;
+}
+
+/* ========================================
+   FAQ Smooth Animation
+   ======================================== */
+@supports (interpolate-size: allow-keywords) {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+
+  .faq-item ::details-content {
+    transition: height 0.3s ease, content-visibility 0.3s allow-discrete;
+    height: 0;
+    overflow: clip;
+  }
+
+  .faq-item[open] ::details-content {
+    height: auto;
+  }
+}
+
+/* ========================================
+   MailerLite CLS Fix
+   ======================================== */
+.ml-embedded[data-form] {
+  min-height: 60px;
+}
+
+/* ========================================
+   Micro-interactions
+   ======================================== */
+/* Animated underline for text links */
+.text-link {
+  text-decoration: none;
+  background-image: linear-gradient(var(--color-primary-text), var(--color-primary-text));
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size var(--transition-base), opacity var(--transition-fast);
+}
+
+.text-link:hover {
+  background-size: 0% 1px;
+  opacity: 1;
+}
+
+/* Smooth transitions on all interactive elements */
+.btn,
+.feature-card,
+.stat-card,
+.screenshot-phone,
+.faq-item {
+  transition-property: transform, box-shadow, background, border-color, opacity;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
 }
 
 /* ========================================
