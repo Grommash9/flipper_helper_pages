@@ -44,8 +44,26 @@
   </url>
   <url>
     <loc>https://grommash9.github.io/flipper_helper_pages/blog/</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/blog/hmrc-1000-trading-allowance-resellers-uk.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/blog/death-pile-uk-resellers.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/blog/works-without-internet.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
