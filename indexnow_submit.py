@@ -25,7 +25,7 @@ from xml.etree import ElementTree as ET
 
 HOST = "grommash9.github.io"
 BASE_PATH = "/flipper_helper_pages"
-KEY = "2b65138064e82e738915c1602ad0d13e"
+KEY = "38075ea95ee84541a32c8acf493aa478"
 KEY_LOCATION = f"https://{HOST}{BASE_PATH}/{KEY}.txt"
 SITEMAP = Path(__file__).parent / "sitemap.xml"
 ENDPOINT = "https://api.indexnow.org/indexnow"
