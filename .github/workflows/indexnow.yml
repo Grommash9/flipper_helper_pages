@@ -1,0 +1,31 @@
+name: IndexNow submit
+
+# Runs AFTER the Pages deploy finishes so the key file and any new URLs are
+# already live before we ping Bing/Yandex. Triggered by:
+#   - Successful completion of the "Deploy to GitHub Pages" workflow (push to main)
+#   - Manual re-run via workflow_dispatch (no deploy required)
+on:
+  workflow_run:
+    workflows: ["Deploy to GitHub Pages"]
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Submit URLs to IndexNow
+        run: python3 indexnow_submit.py
