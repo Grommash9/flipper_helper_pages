@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog - FlipperHelper | Release Notes, Testing & QA</title>
+    <meta name="description" content="Public changelog for FlipperHelper, the iOS reselling tracker. Every release since February 2026, plus the unit tests, 100,000-item stress benchmarks, and 63 automated Maestro QA flows that gate every build.">
+    <link rel="icon" type="image/svg+xml" href="logo_FH.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://grommash9.github.io/flipper_helper_pages/changelog.html">
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FlipperHelper Changelog - Release Notes, Testing & QA">
+    <meta property="og:description" content="Every FlipperHelper release since February 2026, plus the unit tests, 100k-item stress benchmarks, and 63 automated Maestro QA flows.">
+    <meta property="og:url" content="https://grommash9.github.io/flipper_helper_pages/changelog.html">
+    <meta property="og:image" content="https://grommash9.github.io/flipper_helper_pages/logo_FH.png">
+    <meta property="og:site_name" content="FlipperHelper">
+    <meta property="og:locale" content="en_GB">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="FlipperHelper Changelog">
+    <meta name="twitter:description" content="Public release notes, unit tests, 100k-item stress benchmarks, and 63 Maestro QA flows.">
+    <meta name="twitter:image" content="https://grommash9.github.io/flipper_helper_pages/logo_FH.png">
+    <!-- BreadcrumbList JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://grommash9.github.io/flipper_helper_pages/"},
+        {"@type": "ListItem", "position": 2, "name": "Changelog", "item": "https://grommash9.github.io/flipper_helper_pages/changelog.html"}
+      ]
+    }
+    </script>
+    <!-- FAQPage JSON-LD (AEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How often is FlipperHelper updated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FlipperHelper ships incrementally. Since the first commit on 20 February 2026, releases have gone out several times per month, driven by user feedback from resellers actively using the app. The public changelog at grommash9.github.io/flipper_helper_pages/changelog.html lists every release by month."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is FlipperHelper actively maintained?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. FlipperHelper is a solo-developed app with an active public changelog, a public subreddit (r/flipperhelper) for build-in-public updates, and a tested release pipeline. The most recent release was 15 April 2026."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What testing does FlipperHelper have before release?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every release is gated by 10 Swift unit test files totalling over 3,400 lines of test code, a dedicated stress test suite that loads fixtures of 100,000 items, 50,000 transport expenses, 20 markets, and 50 sellers to benchmark query, aggregation, and CSV export performance, and 63 end-to-end Maestro flow tests that exercise the full app on a simulator covering item lifecycle, multi-currency sales, expenses, settings, and navigation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does FlipperHelper have automated end-to-end tests?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. FlipperHelper uses Maestro, a mobile UI testing framework, to run 63 end-to-end flow tests on every release. Coverage includes item creation, listing on multiple platforms, selling in different currencies, expense tracking, market and seller management, notification settings, data backup and restore, and App Store screenshot automation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can FlipperHelper handle large inventories?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The stress test suite validates FlipperHelper's SQLite query path against a dataset of 100,000 items and 50,000 expenses. Benchmarks cover count queries, full table fetches, filtered date ranges, monthly aggregation, stats by market, CSV export, and full backup restore — all verified against the real DatabaseStore used in production."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <img src="logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
+                <span>FlipperHelper</span>
+            </a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="faq.html">FAQ</a>
+                <a href="blog/">Blog</a>
+                <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-small" target="_blank" rel="noopener">Get the App</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="legal-page">
+        <div class="container">
+            <div class="legal-content blog-post">
+                <p class="blog-updated">Last updated: 15 April 2026</p>
+                <h1>FlipperHelper Changelog</h1>
+                <p>Public release notes for FlipperHelper, the iOS reselling tracker. First commit on 20 February 2026. Shipped by a solo developer based in London, active weekly, with a full test suite gating every build.</p>
+
+                <section>
+                    <h2>April 2026</h2>
+                    <p><strong>15 April</strong> &mdash; Dashboard deep links. The app now registers a custom URL scheme (<code>flipperhelper://</code>) that routes to the Dashboard, Add Item, and Items List screens. Used by the App Store in-app event "Car Boot Season 2026" to jump straight into the right screen.</p>
+                    <p><strong>11 April</strong> &mdash; Sold button on search results. Requested by a user with ~170 listed items, who pointed out that scrolling a long list to mark a single sale was painful. Search now shows a one-tap sold button on any listed item that hasn't sold yet. Saves a tap-tap-tap.</p>
+                    <p><strong>9 April</strong> &mdash; Custom dashboard ranges. Before, the dashboard only showed "this month". Now you can pick a custom date range, a specific week, or a specific month &mdash; useful for reviewing how a single weekend went, or looking back at March after it ended.</p>
+                    <p><strong>9 April</strong> &mdash; Dates on entry fees and expenses. If you paid a &pound;5 entry fee on Saturday but only logged it on Sunday, the date used to be wrong. Now you can pick the date when you log any fee or expense. Item costs also show as a separate line in the dashboard summary, so at a glance you can see stock cost vs entry fees, transport, and other expenses.</p>
+                </section>
+
+                <section>
+                    <h2>March 2026</h2>
+                    <p>Main theme: UX polish, faster backups, better notifications.</p>
+                    <ul>
+                        <li><strong>CSV &plus; GZIP sync</strong> &mdash; replaced the old JSON export pipeline. Backups are now compressed CSV: smaller files, faster uploads to Google Drive, no backend required. A 100k-item backup round-trips end-to-end.</li>
+                        <li><strong>Background photo sync</strong> &mdash; photos keep uploading to Google Drive using iOS background task continuation, even when the app is suspended. Queue is resumed on next launch if interrupted.</li>
+                        <li><strong>Listing reminder notifications</strong> &mdash; optional local push reminders for unlisted items. Configurable per day of week and time. No server involved; processed entirely on device.</li>
+                        <li><strong>Entry fee lifecycle per market</strong> &mdash; entry fees are now linked to markets. Add a fee once; it auto-suggests for the next visit. Option to disable a market from prompting for entry fees.</li>
+                        <li><strong>Multi-platform listing flow</strong> &mdash; list the same item across eBay, Vinted, Depop, Facebook, and others in one pass. Dates and asking prices tracked per platform.</li>
+                        <li><strong>Device currency on first login</strong> &mdash; the app now picks your iPhone's region currency by default (GBP, EUR, USD, CAD) instead of asking.</li>
+                        <li><strong>Exchange rates</strong> &mdash; auto-updated daily, stored for 365 days locally, used for multi-currency profit calculation.</li>
+                        <li><strong>Data backup and restore</strong> &mdash; full backup as ZIP archive, including items, markets, sellers, expenses, settings, and photos. Restore works on a fresh install.</li>
+                        <li><strong>SKU display</strong> &mdash; tap-to-copy SKU on item details (Crockford Base32 format, e.g. <code>FH-20D6G0NR</code>).</li>
+                        <li><strong>UX</strong> &mdash; haptics on delete and save, dropped keyboard on outside tap, scroll to profit after selling, cleanup of new-item state on leave.</li>
+                        <li><strong>Localization</strong> &mdash; English as the canonical language; dropped a partial Russian locale that wasn't being maintained.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>February 2026 &mdash; v1.0 launch</h2>
+                    <p>First commit: 20 February 2026. First TestFlight release: 26 February 2026. Initial scope:</p>
+                    <ul>
+                        <li>Photo-first item tracking with automatic SKU generation</li>
+                        <li>16 listing platforms (eBay, Vinted, Facebook, Depop, Poshmark, Mercari, OfferUp, Craigslist, ThredUp, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing)</li>
+                        <li>18 sold platforms (the 16 above plus Car Boot and Sold Offline)</li>
+                        <li>Markets with optional GPS and radius-based auto-suggestion</li>
+                        <li>Sellers linked to markets</li>
+                        <li>Transport expenses by mode (car, bus, train, taxi, van, bike rental)</li>
+                        <li>Other expenses (packaging, fees, etc.)</li>
+                        <li>Google Drive integration using the restricted <code>drive.file</code> and email OAuth scopes</li>
+                        <li>CSV export that Google Drive auto-converts to a Sheet &mdash; no Sheets API required</li>
+                        <li>Offline-first: fully functional without a network</li>
+                        <li>iOS 17+ with SwiftUI</li>
+                        <li>Automatic TestFlight upload on release tag (GitHub Actions + manual code signing)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Testing &amp; QA pipeline</h2>
+                    <p>Every release is gated by three layers of automated testing before a TestFlight build goes out.</p>
+
+                    <h3>Swift unit tests</h3>
+                    <p>10 test files, 3,424 lines of test code covering the data layer, services, and helpers:</p>
+                    <ul>
+                        <li><code>DatabaseTests.swift</code> &mdash; SQLite / GRDB queries and migrations (523 lines)</li>
+                        <li><code>DataStoreTests.swift</code> &mdash; actor-based DataStore concurrency and persistence (497 lines)</li>
+                        <li><code>StressTests.swift</code> &mdash; large-dataset benchmarks (688 lines, see below)</li>
+                        <li><code>ModelTests.swift</code> &mdash; Item, Market, Seller, expense models (456 lines)</li>
+                        <li><code>MigrationServiceTests.swift</code> &mdash; schema migrations and legacy data imports (333 lines)</li>
+                        <li><code>HelperTests.swift</code> &mdash; formatters, currency helpers, utilities (323 lines)</li>
+                        <li><code>ExchangeRateServiceTests.swift</code> &mdash; multi-currency rate fetching and caching (192 lines)</li>
+                        <li><code>UUID7Tests.swift</code> &mdash; time-ordered UUID v7 generation (165 lines)</li>
+                        <li><code>ExportServiceTests.swift</code> &mdash; CSV generation for Google Sheets export (153 lines)</li>
+                        <li><code>SKUGeneratorTests.swift</code> &mdash; Crockford Base32 SKU uniqueness and format (94 lines)</li>
+                    </ul>
+
+                    <h3>Stress tests &mdash; 100,000 items</h3>
+                    <p>The stress suite loads a generated fixture into the real SQLite database used in production:</p>
+                    <ul>
+                        <li><strong>100,000 items</strong></li>
+                        <li><strong>50,000 transport expenses</strong></li>
+                        <li><strong>20 markets</strong> across multiple currencies</li>
+                        <li><strong>50 sellers</strong></li>
+                        <li>3 months of purchase history (Jan, Feb, Mar 2026)</li>
+                    </ul>
+                    <p>Benchmarks on that fixture cover: count-all-items query, fetch-all-item-records, filtered sold-items query, filtered date-range (February) query, monthly aggregation SQL, stats-by-market SQL, CSV export of all 100k items, restore from backup end-to-end, and <code>getMonthlyFinancialSummary</code> through the real <code>DatabaseStore</code>. Each benchmark uses XCTest's <code>measure</code> block so regressions show up as a wall-clock slowdown, not a silent correctness bug. Row counts are asserted after every restore so truncated fixtures fail loudly instead of silently.</p>
+
+                    <h3>Maestro end-to-end tests &mdash; 63 flows</h3>
+                    <p>FlipperHelper uses <a href="https://maestro.mobile.dev/" target="_blank" rel="noopener">Maestro</a> to run UI flows against the simulator. 63 <code>.yaml</code> flow files cover:</p>
+                    <ul>
+                        <li>Full item lifecycle: add &rarr; list &rarr; sell &rarr; profit verification</li>
+                        <li>Multi-currency flows: EUR buy / GBP sell, USD buy / EUR sell, base currency changes</li>
+                        <li>Payment-method combinations: cash buy / card sell, card buy / cash sell</li>
+                        <li>Listing on multiple platforms, platform toggles, quick-list icons, unlist / relist</li>
+                        <li>Selling offline (car boot sales), selling in a different currency, editing a sold item</li>
+                        <li>Markets: create, edit, delete (with and without items), currency mismatch, GPS geolocation, market currency auto-change</li>
+                        <li>Sellers: lifecycle, create seller with market, multi-seller per market</li>
+                        <li>Expenses: entry fees per market, transport (all modes), expense summaries, empty states, edit / delete</li>
+                        <li>Foreign currency expenses, suggested-amount reuse</li>
+                        <li>Settings: notifications, platform toggles, edit market, edit seller, danger zone, exchange rates view</li>
+                        <li>Navigation: all tabs, stress navigation, dashboard stats, long-text edge cases</li>
+                        <li>Data: full backup flow, rapid item creation, delete item</li>
+                        <li>App Store screenshot automation (<code>99_app_store_screenshots.yaml</code>)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Where it&apos;s going</h2>
+                    <p>For what&apos;s being considered next, see the <a href="faq.html">FAQ</a> and the <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">r/flipperhelper subreddit</a>, where shipped changes are announced and requests are collected. If you use FlipperHelper and want something added, the subreddit or <a href="mailto:andreevichprudnikov@gmail.com">email</a> is the fastest way.</p>
+                    <p><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary blog-cta" target="_blank" rel="noopener">Download FlipperHelper on the App Store</a></p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer footer-compact">
+        <div class="container">
+            <div class="footer-row">
+                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
+                <div class="footer-links-inline">
+                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="mailto:andreevichprudnikov@gmail.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

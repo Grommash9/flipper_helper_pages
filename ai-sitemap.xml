@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ai-sitemap.xml — LLM-friendly sitemap for FlipperHelper.
+  Purpose: help AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, etc.)
+  discover the canonical pages that answer common questions about the app.
+  Each <url> is annotated with a plain-text <!-- intent --> comment describing
+  the primary questions it answers, so LLMs can route queries accurately.
+  Paired with: sitemap.xml (search engines), llms.txt (AI policy + summary),
+  robots.txt (crawler rules).
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- intent: "What is FlipperHelper? What does it do? Is it free? Who makes it?" -->
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- intent: "How does FlipperHelper work? What platforms? Offline? Multi-currency? Pricing? Privacy?" -->
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/faq.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- intent: "Is FlipperHelper actively maintained? How often is it updated? What testing does it have? Does it handle large inventories? 100k items, 63 Maestro E2E flows, 3,424 lines of unit tests." -->
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/changelog.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "Best apps for resellers, how to track reselling profits, car boot sale tips, FlipperHelper vs Flippd vs Vendoo, sourcing stock from France." -->
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/blog/</loc>
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Best reselling apps 2026, free reseller tools, eBay Vinted Depop inventory tracker." -->
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/blog/best-apps-for-resellers-2026.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "How to track reselling profits — fees, transport, entry fees, multi-currency, real profit calculation." -->
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/blog/how-to-track-reselling-profits.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Car boot sale flipping tips, what to buy, how to negotiate, UK car boot scene." -->
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/blog/car-boot-sale-tips.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "FlipperHelper vs Flippd vs Vendoo comparison, cross-listing vs tracking-only, pricing differences." -->
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/blog/flipperhelper-vs-flippd-vs-vendoo.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Sourcing reselling stock from France, cross-channel flips, how to bring stock back to the UK." -->
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/blog/sourcing-stock-from-france.html</loc>
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "FlipperHelper press kit — founder bio, logos, screenshots, story angles, contact." -->
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/press/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- intent: "AI policy, what LLMs can cite, canonical summary for answer engines." -->
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/llms.txt</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- intent: "Privacy policy — what data FlipperHelper stores, Google Drive scope, offline-first." -->
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/privacy.html</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- intent: "Terms of service." -->
+  <url>
+    <loc>https://grommash9.github.io/flipper_helper_pages/terms.html</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
