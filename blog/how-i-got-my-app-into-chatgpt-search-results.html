@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Into ChatGPT Results in 30 Days | FlipperHelper</title>
+    <meta name="description" content="A solo developer's guide to Answer Engine Optimisation (AEO) — using LLMs to find out why they don't recommend your app, then fixing the actual problems. Real data from 11 queries and 40 citations.">
+    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="canonical" href="https://grommash9.github.io/flipper_helper_pages/blog/how-i-got-my-app-into-chatgpt-search-results.html">
+    <!-- OpenGraph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How I Got My Reselling App Into ChatGPT Search Results in 30 Days">
+    <meta property="og:description" content="Answer Engine Optimisation for indie apps — real data from automated LLM audits, citation analysis, and the fixes that actually moved the needle.">
+    <meta property="og:url" content="https://grommash9.github.io/flipper_helper_pages/blog/how-i-got-my-app-into-chatgpt-search-results.html">
+    <meta property="og:image" content="https://grommash9.github.io/flipper_helper_pages/logo_FH.png">
+    <meta property="og:site_name" content="FlipperHelper">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:published_time" content="2026-04-16">
+    <meta property="article:author" content="Oleksandr Prudnikov">
+    <meta property="article:section" content="Marketing">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How I Got My Reselling App Into ChatGPT Search Results in 30 Days">
+    <meta name="twitter:description" content="AEO for indie apps — automated LLM audits, citation analysis, and the fixes that moved the needle.">
+    <meta name="twitter:image" content="https://grommash9.github.io/flipper_helper_pages/logo_FH.png">
+    <!-- BreadcrumbList JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://grommash9.github.io/flipper_helper_pages/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://grommash9.github.io/flipper_helper_pages/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "How I Got My App Into ChatGPT Search Results", "item": "https://grommash9.github.io/flipper_helper_pages/blog/how-i-got-my-app-into-chatgpt-search-results.html"}
+      ]
+    }
+    </script>
+    <!-- Article JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How I Got My Reselling App Into ChatGPT Search Results in 30 Days",
+      "description": "A solo developer's guide to Answer Engine Optimisation (AEO) — using LLMs to find out why they don't recommend your app, then fixing the actual problems.",
+      "datePublished": "2026-04-16",
+      "dateModified": "2026-04-16",
+      "author": {"@type": "Person", "name": "Oleksandr Prudnikov"},
+      "publisher": {"@type": "Person", "name": "Oleksandr Prudnikov"},
+      "mainEntityOfPage": "https://grommash9.github.io/flipper_helper_pages/blog/how-i-got-my-app-into-chatgpt-search-results.html"
+    }
+    </script>
+    <!-- FAQPage JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Answer Engine Optimisation (AEO)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AEO is the practice of optimising your product's visibility in AI-powered answer engines like ChatGPT, Perplexity, and Google AI Overviews. Instead of optimising for search rankings (SEO), you optimise for the answers LLMs give when users ask 'what's the best app for X.' This includes improving your App Store description, structured data, content clarity, and monitoring how LLMs describe your product."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I check if ChatGPT recommends my app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can manually ask ChatGPT questions your users would ask and see if your app appears. For a more systematic approach, use the ChatGPT API to send multiple queries programmatically, check whether your app is mentioned, and ask follow-up questions about why competitors rank higher or why your app isn't recommended."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What sources does ChatGPT use to recommend apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Based on our audit of 40 web citations across 11 queries, apps.apple.com accounted for 32.5% of all citations — making it the single most important source. Competitor websites, review sites, and app directories made up the rest. Our own blog and content marketing sites had zero citations for app recommendation queries, suggesting the App Store listing is the primary source of truth for LLM app recommendations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Bing indexing help with ChatGPT visibility?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ChatGPT's web search mode uses Bing as its search provider. By registering your site with Bing Webmaster Tools and setting up IndexNow (an open protocol that pings Bing when you update your site), you can speed up how quickly ChatGPT discovers your new content. Bing Webmaster Tools also has an AI Performance tab (beta) that shows how often Microsoft Copilot cites your pages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does saving pages to the Wayback Machine help with AI visibility?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Potentially, yes. LLMs that search the live web are covered by Bing indexing. But statically trained models (the next generation of base models) use web archive data including the Internet Archive for training. Archiving your key pages on the Wayback Machine ensures they're available for future model training, giving you visibility in both live-search and training-data-based models."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../" class="nav-logo">
+                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
+                <span>FlipperHelper</span>
+            </a>
+            <div class="nav-links">
+                <a href="../">Home</a>
+                <a href="../faq.html">FAQ</a>
+                <a href="./">Blog</a>
+                <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-small" target="_blank" rel="noopener">Get the App</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="legal-page">
+        <div class="container">
+            <div class="legal-content blog-post">
+                <a href="./" class="blog-back">&larr; Back to Blog</a>
+                <p class="blog-updated">Last updated: 16 April 2026</p>
+                <h1>How I Got My Reselling App Into ChatGPT Search Results in 30 Days</h1>
+                <div class="blog-meta">
+                    <span class="blog-date">16 April 2026</span>
+                    <span class="blog-tag">Marketing</span>
+                    <span class="blog-reading-time">8 min read</span>
+                </div>
+
+                <section>
+                    <p><strong>I launched FlipperHelper &mdash; a free iOS app for resellers &mdash; on March 21, 2026.</strong> Within 25 days I had 56 first-time downloads. Most came from Reddit posts and content marketing. But the last three days had downloads every single day with no new content pushed. Something else was driving discovery.</p>
+                    <p>I&rsquo;d been manually checking ChatGPT every week or two, asking it to recommend an app for tracking reselling profits. Sometimes FlipperHelper appeared. Sometimes it didn&rsquo;t. It depended entirely on how I phrased the question. Then I realised I could automate this &mdash; and learn exactly what the model thinks is wrong with my app.</p>
+                </section>
+
+                <section>
+                    <h2>The audit script</h2>
+                    <p>I wrote a Python script that queries ChatGPT&rsquo;s API with 11 different questions a real reseller might ask. Things like &ldquo;best app for tracking reselling profit in 2026,&rdquo; &ldquo;free iOS app for resellers to track inventory across eBay, Vinted, and Depop,&rdquo; or &ldquo;is there a reselling app that works offline at markets?&rdquo;</p>
+                    <p>For each question the script runs two passes:</p>
+                    <ul>
+                        <li><strong>gpt-4o</strong> (no web access) &mdash; baseline, shows what the model learned from training data</li>
+                        <li><strong>gpt-4o-search-preview</strong> (live web search) &mdash; simulates what an actual ChatGPT user sees when browsing is enabled</li>
+                    </ul>
+                    <p>When my app appears but isn&rsquo;t ranked first, the script asks a follow-up: &ldquo;What advantages does the top pick have over FlipperHelper?&rdquo; When it doesn&rsquo;t appear at all, it asks: &ldquo;Why don&rsquo;t you recommend FlipperHelper?&rdquo;</p>
+                </section>
+
+                <section>
+                    <h2>First audit results &mdash; April 15, 2026</h2>
+                    <table style="width:100%; border-collapse:collapse; margin:1.5rem 0;">
+                        <thead>
+                            <tr style="border-bottom:2px solid #e0e0e0; text-align:left;">
+                                <th style="padding:0.75rem 1rem;">Metric</th>
+                                <th style="padding:0.75rem 1rem;">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom:1px solid #f0f0f0;">
+                                <td style="padding:0.75rem 1rem;">Queries tested</td>
+                                <td style="padding:0.75rem 1rem;"><strong>11</strong></td>
+                            </tr>
+                            <tr style="border-bottom:1px solid #f0f0f0;">
+                                <td style="padding:0.75rem 1rem;">Mentioned (training data only)</td>
+                                <td style="padding:0.75rem 1rem;"><strong>4 / 11</strong></td>
+                            </tr>
+                            <tr style="border-bottom:1px solid #f0f0f0;">
+                                <td style="padding:0.75rem 1rem;">Mentioned (live web search)</td>
+                                <td style="padding:0.75rem 1rem;"><strong>5 / 11</strong></td>
+                            </tr>
+                            <tr style="border-bottom:1px solid #f0f0f0;">
+                                <td style="padding:0.75rem 1rem;">Total web citations collected</td>
+                                <td style="padding:0.75rem 1rem;"><strong>40</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="padding:0.75rem 1rem;">Top cited domain</td>
+                                <td style="padding:0.75rem 1rem;"><strong>apps.apple.com (13 / 40 &mdash; 32.5%)</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><strong>The App Store page is the single most trusted source for how LLMs understand your app.</strong> My blog posts, Medium articles, and dev.to content &mdash; none of them were cited in app recommendation queries. The App Store accounted for nearly a third of all citations on its own.</p>
+                </section>
+
+                <section>
+                    <h2>What ChatGPT got wrong &mdash; and what I fixed</h2>
+
+                    <h3>1. A misunderstanding that was killing recommendations</h3>
+                    <p>My app has optional Google Drive photo sync and CSV export to Google Sheets. ChatGPT interpreted the Google Drive feature as the <em>only</em> backup mechanism and started warning users about &ldquo;risk of data loss&rdquo; without it connected.</p>
+                    <p>In reality, FlipperHelper is offline-first. Everything is stored locally on the device. No account required. Google Drive is purely optional. But my App Store description didn&rsquo;t make this distinction clearly enough. Since ChatGPT treats the App Store as its primary source, this vague wording was actively hurting recommendations.</p>
+                    <p><strong>Fix:</strong> rewrote the App Store description to explicitly separate local storage, optional cloud photo backup, and optional Sheets export. Shipped an update with changelog noting &ldquo;enhanced backup functionality&rdquo; to trigger re-indexing.</p>
+
+                    <h3>2. Tiny missing features that competitors have</h3>
+                    <p>When my app ranked below competitors, the script asked why. One finding: other apps let users add free-text notes to items (e.g. &ldquo;scratched on the back,&rdquo; &ldquo;missing a button&rdquo;). FlipperHelper didn&rsquo;t have this. ChatGPT called it &ldquo;more limited functionality.&rdquo;</p>
+                    <p><strong>Fix:</strong> one optional text field. About three minutes of development. But in the LLM&rsquo;s evaluation, it was a meaningful competitive disadvantage that cost recommendations.</p>
+
+                    <h3>3. The freshness problem</h3>
+                    <p>LLMs favour apps with recent updates and active changelogs. I noticed competitors with changelogs repeating &ldquo;bug fixes&rdquo; every release &mdash; possibly to signal active maintenance. My approach: I have zero production bugs and strong test coverage (10 test files, 3,424 lines of test code, 63 end-to-end QA flows, 100k-item stress tests). Instead of fake bug fixes, I published a structured changelog page highlighting testing quality and stability.</p>
+                </section>
+
+                <section>
+                    <h2>Indexing optimisations that help AI find you</h2>
+
+                    <h3>Bing Webmaster Tools</h3>
+                    <p>ChatGPT&rsquo;s web search uses Bing. Register your site, request indexing, and check the <strong>AI Performance</strong> tab (currently in beta) to see how often Microsoft Copilot cites your pages.</p>
+                    <p>I also set up <strong>IndexNow</strong> &mdash; an open protocol that automatically notifies Bing, Yandex, Seznam, and Naver whenever my site updates. Built it into my GitHub Actions deployment pipeline so every push triggers a re-indexing request. No manual work.</p>
+
+                    <h3>Wayback Machine</h3>
+                    <p>I archived key pages (home, changelog, FAQ) on the Internet Archive. The reasoning: live-web-search models pull from Bing&rsquo;s index &mdash; covered by IndexNow. Statically trained models use web archive data for training &mdash; covered by Wayback Machine. Two types of models, two indexing strategies.</p>
+
+                    <h3>Structured data</h3>
+                    <p>Added <code>ai-sitemap.xml</code> with intent annotations and FAQ JSON-LD (FAQPage, BreadcrumbList schemas) across key pages. The idea is to help crawlers &mdash; both traditional and AI &mdash; understand what each page is about and surface answers directly.</p>
+                </section>
+
+                <section>
+                    <h2>Early signs it&rsquo;s working</h2>
+                    <p>My download data shows three distinct phases after launch:</p>
+                    <ul>
+                        <li><strong>Pre-marketing (Mar 21&ndash;24):</strong> 1 download in 4 days &mdash; the app was live but invisible</li>
+                        <li><strong>Content-driven (Mar 25 &ndash; Apr 11):</strong> 50 downloads across 18 days (2.8/day average), driven by Reddit posts and blog content</li>
+                        <li><strong>Organic (Apr 12&ndash;14):</strong> 5 downloads in 3 days with no new content pushed &mdash; every day had at least one download</li>
+                    </ul>
+                    <p>That organic window is the first real signal of passive discovery. People finding the app without active promotion. Correlation isn&rsquo;t causation, but the timing lines up with the AEO work shipped on April 15.</p>
+                </section>
+
+                <section>
+                    <h2>Answer Engine Optimisation &mdash; the approach</h2>
+                    <p>Think of AEO as the natural evolution of SEO. Instead of optimising for Google search rankings, you&rsquo;re optimising for the answers LLMs give when someone asks &ldquo;what&rsquo;s the best app for X.&rdquo;</p>
+                    <p>The feedback loop is faster than traditional SEO because you can literally ask the model what&rsquo;s wrong and it tells you. Not everything is reliable &mdash; system prompts prevent full transparency &mdash; but enough is actionable to make weekly audits worthwhile.</p>
+                    <p><strong>The workflow I recommend:</strong></p>
+                    <ol>
+                        <li>Write a script that queries major LLMs with questions your users would ask</li>
+                        <li>Track whether your product appears and where it ranks</li>
+                        <li>When it doesn&rsquo;t appear, ask why &mdash; the model gives specific reasons</li>
+                        <li>Fix the actual issues (description clarity, missing features, content gaps)</li>
+                        <li>Re-run weekly and track progress</li>
+                    </ol>
+                    <p>The bar is low right now. Most developers aren&rsquo;t doing this, which means small fixes can move you ahead of competitors who haven&rsquo;t thought about AI visibility at all.</p>
+                </section>
+
+                <section>
+                    <h2>Frequently asked questions</h2>
+
+                    <h3>What is Answer Engine Optimisation (AEO)?</h3>
+                    <p>AEO is the practice of optimising your product&rsquo;s visibility in AI-powered answer engines like ChatGPT, Perplexity, and Google AI Overviews. Instead of optimising for search rankings, you optimise for the answers LLMs give when users ask &ldquo;what&rsquo;s the best app for X.&rdquo; This includes improving your App Store description, adding structured data, clarifying feature descriptions, and monitoring how models describe your product.</p>
+
+                    <h3>How do I check if ChatGPT recommends my app?</h3>
+                    <p>You can manually ask ChatGPT questions your users would ask and see if your app appears. For a systematic approach, use the ChatGPT API to send multiple queries programmatically, check whether your app is mentioned, and ask follow-up questions about why competitors rank higher or why your app isn&rsquo;t recommended.</p>
+
+                    <h3>What sources does ChatGPT use to recommend apps?</h3>
+                    <p>Based on our audit of 40 web citations across 11 queries, apps.apple.com accounted for 32.5% of all citations &mdash; the single most important source. Competitor websites, review sites, and app directories made up the rest. Blog content and developer articles had zero citations for app recommendation queries.</p>
+
+                    <h3>How does Bing indexing help with ChatGPT visibility?</h3>
+                    <p>ChatGPT&rsquo;s web search mode uses Bing as its search provider. By registering with Bing Webmaster Tools and setting up IndexNow, you can speed up how quickly ChatGPT discovers new content. Bing also has an AI Performance tab (beta) showing how often Copilot cites your pages.</p>
+
+                    <h3>Does saving pages to the Wayback Machine help with AI visibility?</h3>
+                    <p>Potentially, yes. Live-web-search models are covered by Bing indexing. But statically trained models use web archive data for training. Archiving pages on the Wayback Machine ensures they&rsquo;re available for future model training, covering both types of AI visibility.</p>
+                </section>
+
+                <section class="blog-cta">
+                    <h2>Try FlipperHelper</h2>
+                    <p>Free iOS app for resellers. Track purchases, expenses, and real profit per item. Works fully offline at markets. Optional Google Drive photo backup and Google Sheets export.</p>
+                    <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer footer-compact">
+        <div class="container">
+            <div class="footer-row">
+                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
+                <div class="footer-links-inline">
+                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
+                    <a href="../privacy.html">Privacy</a>
+                    <a href="../terms.html">Terms</a>
+                    <a href="mailto:andreevichprudnikov@gmail.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
