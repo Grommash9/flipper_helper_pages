@@ -1584,6 +1584,35 @@ section > .container > p {
   display: inline-block;
 }
 
+.blog-figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.blog-figure img,
+.blog-figure svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.blog-figure figcaption {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  margin-top: var(--space-sm);
+}
+
+.blog-figure--phone {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-figure--phone img {
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
 /* ========================================
    Hero Updated Date
    ======================================== */

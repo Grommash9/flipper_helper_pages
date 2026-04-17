@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgSh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8FAFB"/>
+      <stop offset="100%" stop-color="#EEF2F7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="480" rx="12" fill="url(#bgSh)" stroke="#DDE3EC" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="360" y="38" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1A2E">UK Side Hustle Earnings: Monthly Range (Part-Time)</text>
+  <text x="360" y="60" text-anchor="middle" font-size="13" fill="#888">Typical ranges based on part-time effort. Not guarantees.</text>
+
+  <!-- Chart: horizontal range bars -->
+  <!-- x: 180 to 660 maps to £0 to £2,000 -->
+  <!-- scale: £100 = (660-180)/20 = 24px -->
+
+  <!-- Grid -->
+  <line x1="180" y1="80" x2="180" y2="420" stroke="#DDE3EC" stroke-width="1"/>
+  <line x1="300" y1="80" x2="300" y2="420" stroke="#DDE3EC" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="420" y1="80" x2="420" y2="420" stroke="#DDE3EC" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="540" y1="80" x2="540" y2="420" stroke="#DDE3EC" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="660" y1="80" x2="660" y2="420" stroke="#DDE3EC" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <!-- X axis labels -->
+  <text x="180" y="440" text-anchor="middle" font-size="12" fill="#888">£0</text>
+  <text x="300" y="440" text-anchor="middle" font-size="12" fill="#888">£500</text>
+  <text x="420" y="440" text-anchor="middle" font-size="12" fill="#888">£1,000</text>
+  <text x="540" y="440" text-anchor="middle" font-size="12" fill="#888">£1,500</text>
+  <text x="660" y="440" text-anchor="middle" font-size="12" fill="#888">£2,000+</text>
+
+  <!-- Row height: 38px, starting y=88 -->
+
+  <!-- 1. Freelancing: £200-£2,000+ -->
+  <text x="170" y="104" text-anchor="end" font-size="13" fill="#555" font-weight="600">Freelancing</text>
+  <rect x="228" y="90" width="432" height="22" rx="4" fill="#334B90" opacity="0.2"/>
+  <rect x="228" y="90" width="432" height="22" rx="4" fill="none" stroke="#334B90" stroke-width="1.5"/>
+  <text x="650" y="106" text-anchor="end" font-size="11" font-weight="600" fill="#334B90">£200-2,000+</text>
+
+  <!-- 2. Reselling: £100-£1,000+ -->
+  <text x="170" y="142" text-anchor="end" font-size="13" fill="#555" font-weight="600">Reselling</text>
+  <rect x="204" y="128" width="276" height="22" rx="4" fill="#334B90" opacity="0.2"/>
+  <rect x="204" y="128" width="276" height="22" rx="4" fill="none" stroke="#334B90" stroke-width="1.5"/>
+  <circle cx="485" cy="139" r="3" fill="#334B90"/>
+  <line x1="480" y1="139" x2="500" y2="139" stroke="#334B90" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="508" y="143" font-size="11" font-weight="600" fill="#334B90">£100-1,000+</text>
+
+  <!-- 3. Matched betting: £500-£1,000 (tapers) -->
+  <text x="170" y="180" text-anchor="end" font-size="13" fill="#555">Matched betting</text>
+  <rect x="300" y="166" width="180" height="22" rx="4" fill="#F9DDA5" opacity="0.5"/>
+  <rect x="300" y="166" width="180" height="22" rx="4" fill="none" stroke="#D4B76A" stroke-width="1.5"/>
+  <text x="488" y="182" font-size="11" font-weight="600" fill="#8B7030">£500-1,000</text>
+  <text x="575" y="182" font-size="10" fill="#888">(tapers off)</text>
+
+  <!-- 4. Spare room: £300-£625 -->
+  <text x="170" y="218" text-anchor="end" font-size="13" fill="#555">Spare room</text>
+  <rect x="252" y="204" width="126" height="22" rx="4" fill="#BBCBF7" opacity="0.4"/>
+  <rect x="252" y="204" width="126" height="22" rx="4" fill="none" stroke="#8A9FCF" stroke-width="1.5"/>
+  <text x="386" y="220" font-size="11" font-weight="600" fill="#334B90">£300-625</text>
+  <text x="460" y="220" font-size="10" fill="#27AE60">(tax-free)</text>
+
+  <!-- 5. Delivery driving: £300-£800 -->
+  <text x="170" y="256" text-anchor="end" font-size="13" fill="#555">Delivery driving</text>
+  <rect x="252" y="242" width="192" height="22" rx="4" fill="#BBCBF7" opacity="0.4"/>
+  <rect x="252" y="242" width="192" height="22" rx="4" fill="none" stroke="#8A9FCF" stroke-width="1.5"/>
+  <text x="452" y="258" font-size="11" font-weight="600" fill="#334B90">£300-800</text>
+
+  <!-- 6. Tutoring: £200-£600 -->
+  <text x="170" y="294" text-anchor="end" font-size="13" fill="#555">Tutoring</text>
+  <rect x="228" y="280" width="144" height="22" rx="4" fill="#BBCBF7" opacity="0.4"/>
+  <rect x="228" y="280" width="144" height="22" rx="4" fill="none" stroke="#8A9FCF" stroke-width="1.5"/>
+  <text x="380" y="296" font-size="11" font-weight="600" fill="#334B90">£200-600</text>
+
+  <!-- 7. Dog walking: £200-£500 -->
+  <text x="170" y="332" text-anchor="end" font-size="13" fill="#555">Dog walking</text>
+  <rect x="228" y="318" width="120" height="22" rx="4" fill="#BBCBF7" opacity="0.4"/>
+  <rect x="228" y="318" width="120" height="22" rx="4" fill="none" stroke="#8A9FCF" stroke-width="1.5"/>
+  <text x="356" y="334" font-size="11" font-weight="600" fill="#334B90">£200-500</text>
+
+  <!-- 8. Handmade / Etsy: £50-£500 -->
+  <text x="170" y="370" text-anchor="end" font-size="13" fill="#555">Handmade / Etsy</text>
+  <rect x="192" y="356" width="156" height="22" rx="4" fill="#BBCBF7" opacity="0.4"/>
+  <rect x="192" y="356" width="156" height="22" rx="4" fill="none" stroke="#8A9FCF" stroke-width="1.5"/>
+  <text x="356" y="372" font-size="11" font-weight="600" fill="#334B90">£50-500</text>
+
+  <!-- 9. Surveys: £50-£150 -->
+  <text x="170" y="408" text-anchor="end" font-size="13" fill="#555">Surveys</text>
+  <rect x="192" y="394" width="36" height="22" rx="4" fill="#DDE3EC"/>
+  <rect x="192" y="394" width="36" height="22" rx="4" fill="none" stroke="#AAB" stroke-width="1.5"/>
+  <text x="236" y="410" font-size="11" font-weight="600" fill="#888">£50-150</text>
+
+  <!-- Highlights -->
+  <rect x="165" y="85" width="510" height="30" rx="0" fill="#334B90" opacity="0.04"/>
+  <rect x="165" y="123" width="510" height="30" rx="0" fill="#334B90" opacity="0.04"/>
+
+  <!-- Footer -->
+  <text x="360" y="468" text-anchor="middle" font-size="11" fill="#AAA">Ranges based on part-time effort. Freelancing and reselling scale with skill and time invested.</text>
+</svg>

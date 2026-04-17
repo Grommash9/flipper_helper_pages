@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgFb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8FAFB"/>
+      <stop offset="100%" stop-color="#EEF2F7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="520" rx="12" fill="url(#bgFb)" stroke="#DDE3EC" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="360" y="38" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1A2E">Facebook Marketplace: Seller Safety Checklist</text>
+  <text x="360" y="60" text-anchor="middle" font-size="13" fill="#888">Quick reference for safe local sales</text>
+
+  <!-- DO column -->
+  <rect x="30" y="80" width="320" height="410" rx="10" fill="#fff" stroke="#27AE60" stroke-width="2"/>
+  <rect x="30" y="80" width="320" height="44" rx="10" fill="#27AE60"/>
+  <rect x="30" y="104" width="320" height="20" fill="#27AE60"/>
+  <text x="190" y="108" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">DO</text>
+
+  <!-- Do items -->
+  <text x="55" y="152" font-size="20" fill="#27AE60">&#10003;</text>
+  <text x="80" y="152" font-size="13" fill="#333">Meet in public places (car parks,</text>
+  <text x="80" y="168" font-size="13" fill="#333">coffee shops, police safe spots)</text>
+
+  <text x="55" y="198" font-size="20" fill="#27AE60">&#10003;</text>
+  <text x="80" y="198" font-size="13" fill="#333">Accept cash or instant bank transfer</text>
+
+  <text x="55" y="238" font-size="20" fill="#27AE60">&#10003;</text>
+  <text x="80" y="238" font-size="13" fill="#333">Check your bank balance before</text>
+  <text x="80" y="254" font-size="13" fill="#333">handing over items</text>
+
+  <text x="55" y="284" font-size="20" fill="#27AE60">&#10003;</text>
+  <text x="80" y="284" font-size="13" fill="#333">Check buyer's profile (age, friends,</text>
+  <text x="80" y="300" font-size="13" fill="#333">activity level)</text>
+
+  <text x="55" y="330" font-size="20" fill="#27AE60">&#10003;</text>
+  <text x="80" y="330" font-size="13" fill="#333">Confirm collection a few hours</text>
+  <text x="80" y="346" font-size="13" fill="#333">before the arranged time</text>
+
+  <text x="55" y="376" font-size="20" fill="#27AE60">&#10003;</text>
+  <text x="80" y="376" font-size="13" fill="#333">Bring someone for items over £100</text>
+
+  <text x="55" y="416" font-size="20" fill="#27AE60">&#10003;</text>
+  <text x="80" y="416" font-size="13" fill="#333">Meet during daylight hours only</text>
+
+  <text x="55" y="456" font-size="20" fill="#27AE60">&#10003;</text>
+  <text x="80" y="456" font-size="13" fill="#333">Trust your gut — cancel if</text>
+  <text x="80" y="472" font-size="13" fill="#333">something feels off</text>
+
+  <!-- DON'T column -->
+  <rect x="370" y="80" width="320" height="410" rx="10" fill="#fff" stroke="#C0392B" stroke-width="2"/>
+  <rect x="370" y="80" width="320" height="44" rx="10" fill="#C0392B"/>
+  <rect x="370" y="104" width="320" height="20" fill="#C0392B"/>
+  <text x="530" y="108" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">DON'T</text>
+
+  <!-- Don't items -->
+  <text x="395" y="152" font-size="20" fill="#C0392B">&#10007;</text>
+  <text x="420" y="152" font-size="13" fill="#333">Click payment links from buyers</text>
+
+  <text x="395" y="192" font-size="20" fill="#C0392B">&#10007;</text>
+  <text x="420" y="192" font-size="13" fill="#333">Trust payment screenshots —</text>
+  <text x="420" y="208" font-size="13" fill="#333">always check your actual account</text>
+
+  <text x="395" y="238" font-size="20" fill="#C0392B">&#10007;</text>
+  <text x="420" y="238" font-size="13" fill="#333">Agree to "I'll send a courier"</text>
+
+  <text x="395" y="278" font-size="20" fill="#C0392B">&#10007;</text>
+  <text x="420" y="278" font-size="13" fill="#333">Accept cheques or "I'll pay</text>
+  <text x="420" y="294" font-size="13" fill="#333">tomorrow" promises</text>
+
+  <text x="395" y="324" font-size="20" fill="#C0392B">&#10007;</text>
+  <text x="420" y="324" font-size="13" fill="#333">Hold items without a deposit</text>
+
+  <text x="395" y="364" font-size="20" fill="#C0392B">&#10007;</text>
+  <text x="420" y="364" font-size="13" fill="#333">Mark as "pending" before you</text>
+  <text x="420" y="380" font-size="13" fill="#333">have the money</text>
+
+  <text x="395" y="410" font-size="20" fill="#C0392B">&#10007;</text>
+  <text x="420" y="410" font-size="13" fill="#333">Meet alone at night for</text>
+  <text x="420" y="426" font-size="13" fill="#333">expensive items</text>
+
+  <text x="395" y="456" font-size="20" fill="#C0392B">&#10007;</text>
+  <text x="420" y="456" font-size="13" fill="#333">Refund "overpayments" before</text>
+  <text x="420" y="472" font-size="13" fill="#333">original payment fully clears</text>
+
+  <!-- Footer -->
+  <text x="360" y="510" text-anchor="middle" font-size="11" fill="#AAA">Based on real seller experiences from r/Flipping and r/FlippingUK</text>
+</svg>

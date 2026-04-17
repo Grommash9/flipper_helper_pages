@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgEbay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8FAFB"/>
+      <stop offset="100%" stop-color="#EEF2F7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="480" rx="12" fill="url(#bgEbay)" stroke="#DDE3EC" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="360" y="38" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1A2E">eBay UK Fees at a Glance: Private vs Business Seller</text>
+  <text x="360" y="58" text-anchor="middle" font-size="13" fill="#888">Selling a jacket for £25 + £4.50 postage (bought for £5)</text>
+
+  <!-- PRIVATE SELLER CARD -->
+  <rect x="30" y="80" width="315" height="360" rx="10" fill="#fff" stroke="#BBCBF7" stroke-width="2"/>
+  <!-- Header -->
+  <rect x="30" y="80" width="315" height="48" rx="10" fill="#334B90"/>
+  <rect x="30" y="108" width="315" height="20" fill="#334B90"/>
+  <text x="187" y="111" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Private Seller</text>
+
+  <!-- Private seller details -->
+  <text x="50" y="158" font-size="14" fill="#555">Final value fee</text>
+  <text x="325" y="158" text-anchor="end" font-size="14" font-weight="700" fill="#27AE60">FREE</text>
+
+  <line x1="50" y1="172" x2="325" y2="172" stroke="#EEF2F7" stroke-width="1"/>
+
+  <text x="50" y="194" font-size="14" fill="#555">Per-order fee</text>
+  <text x="325" y="194" text-anchor="end" font-size="14" font-weight="700" fill="#27AE60">FREE</text>
+
+  <line x1="50" y1="208" x2="325" y2="208" stroke="#EEF2F7" stroke-width="1"/>
+
+  <text x="50" y="230" font-size="14" fill="#555">Regulatory fee</text>
+  <text x="325" y="230" text-anchor="end" font-size="14" font-weight="700" fill="#27AE60">FREE</text>
+
+  <line x1="50" y1="244" x2="325" y2="244" stroke="#EEF2F7" stroke-width="1"/>
+
+  <text x="50" y="266" font-size="14" fill="#555">Listing fee</text>
+  <text x="325" y="266" text-anchor="end" font-size="14" fill="#555">300 free/month</text>
+
+  <line x1="50" y1="280" x2="325" y2="280" stroke="#EEF2F7" stroke-width="1"/>
+
+  <!-- Total box -->
+  <rect x="50" y="300" width="275" height="52" rx="8" fill="#E8F5E9"/>
+  <text x="187" y="322" text-anchor="middle" font-size="13" fill="#555">eBay takes from this sale:</text>
+  <text x="187" y="343" text-anchor="middle" font-size="22" font-weight="700" fill="#27AE60">£0.00</text>
+
+  <!-- Profit -->
+  <text x="187" y="380" text-anchor="middle" font-size="13" fill="#888">Your revenue: £29.50</text>
+  <text x="187" y="400" text-anchor="middle" font-size="13" fill="#888">Profit after £5 cost + postage:</text>
+  <text x="187" y="422" text-anchor="middle" font-size="18" font-weight="700" fill="#334B90">~£20+</text>
+
+  <!-- BUSINESS SELLER CARD -->
+  <rect x="375" y="80" width="315" height="360" rx="10" fill="#fff" stroke="#F9DDA5" stroke-width="2"/>
+  <!-- Header -->
+  <rect x="375" y="80" width="315" height="48" rx="10" fill="#8B7030"/>
+  <rect x="375" y="108" width="315" height="20" fill="#8B7030"/>
+  <text x="532" y="111" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Business Seller</text>
+
+  <!-- Business seller details -->
+  <text x="395" y="158" font-size="14" fill="#555">Final value fee (10.9%)</text>
+  <text x="670" y="158" text-anchor="end" font-size="14" font-weight="700" fill="#C0392B">£3.22</text>
+
+  <line x1="395" y1="172" x2="670" y2="172" stroke="#EEF2F7" stroke-width="1"/>
+
+  <text x="395" y="194" font-size="14" fill="#555">Per-order fee</text>
+  <text x="670" y="194" text-anchor="end" font-size="14" font-weight="700" fill="#C0392B">£0.40</text>
+
+  <line x1="395" y1="208" x2="670" y2="208" stroke="#EEF2F7" stroke-width="1"/>
+
+  <text x="395" y="230" font-size="14" fill="#555">Regulatory fee (0.35%)</text>
+  <text x="670" y="230" text-anchor="end" font-size="14" font-weight="700" fill="#C0392B">£0.10</text>
+
+  <line x1="395" y1="244" x2="670" y2="244" stroke="#EEF2F7" stroke-width="1"/>
+
+  <text x="395" y="266" font-size="14" fill="#555">VAT on fees (20%)</text>
+  <text x="670" y="266" text-anchor="end" font-size="14" font-weight="700" fill="#C0392B">£0.74</text>
+
+  <line x1="395" y1="280" x2="670" y2="280" stroke="#EEF2F7" stroke-width="1"/>
+
+  <!-- Total box -->
+  <rect x="395" y="300" width="275" height="52" rx="8" fill="#FDEDEC"/>
+  <text x="532" y="322" text-anchor="middle" font-size="13" fill="#555">eBay takes from this sale:</text>
+  <text x="532" y="343" text-anchor="middle" font-size="22" font-weight="700" fill="#C0392B">£4.46</text>
+
+  <!-- Profit -->
+  <text x="532" y="380" text-anchor="middle" font-size="13" fill="#888">Your revenue: £25.04</text>
+  <text x="532" y="400" text-anchor="middle" font-size="13" fill="#888">Profit after £5 cost + postage:</text>
+  <text x="532" y="422" text-anchor="middle" font-size="18" font-weight="700" fill="#334B90">~£15</text>
+
+  <!-- Footer note -->
+  <text x="360" y="465" text-anchor="middle" font-size="12" fill="#AAA">Based on eBay UK fees from February 2026. Clothing category (10.9%).</text>
+</svg>

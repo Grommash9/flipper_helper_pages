@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBay Fee Calculator UK 2026 | FlipperHelper</title>
+    <meta name="description" content="Free eBay fee calculator for UK sellers. Enter your sale price and category to see exact fees, net revenue, and profit. Updated for February 2026 changes.">
+    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="canonical" href="https://grommash9.github.io/flipper_helper_pages/blog/ebay-fee-calculator-uk.html">
+    <!-- OpenGraph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="eBay Fee Calculator UK 2026">
+    <meta property="og:description" content="See exactly what eBay takes from your sale. Free calculator with February 2026 fee updates.">
+    <meta property="og:url" content="https://grommash9.github.io/flipper_helper_pages/blog/ebay-fee-calculator-uk.html">
+    <meta property="og:image" content="https://grommash9.github.io/flipper_helper_pages/logo_FH.png">
+    <meta property="og:site_name" content="FlipperHelper">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:published_time" content="2026-04-17">
+    <meta property="article:author" content="Oleksandr Prudnikov">
+    <meta property="article:section" content="Tools">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="eBay Fee Calculator UK 2026">
+    <meta name="twitter:description" content="Calculate your eBay fees and profit. Updated for 2026.">
+    <meta name="twitter:image" content="https://grommash9.github.io/flipper_helper_pages/logo_FH.png">
+    <!-- BreadcrumbList JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://grommash9.github.io/flipper_helper_pages/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://grommash9.github.io/flipper_helper_pages/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "eBay Fee Calculator UK", "item": "https://grommash9.github.io/flipper_helper_pages/blog/ebay-fee-calculator-uk.html"}
+      ]
+    }
+    </script>
+    <!-- Article JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "eBay Fee Calculator UK 2026: Calculate Your Fees and Profit",
+      "description": "Free eBay fee calculator for UK sellers. See exact fees by category, net revenue, and profit after all costs.",
+      "datePublished": "2026-04-17",
+      "dateModified": "2026-04-17",
+      "author": {
+        "@type": "Person",
+        "name": "Oleksandr Prudnikov",
+        "description": "Developer of FlipperHelper, a profit-tracking app for UK resellers",
+        "url": "https://grommash9.github.io/flipper_helper_pages/"
+      },
+      "publisher": {"@type": "Person", "name": "Oleksandr Prudnikov"},
+      "mainEntityOfPage": "https://grommash9.github.io/flipper_helper_pages/blog/ebay-fee-calculator-uk.html"
+    }
+    </script>
+    <!-- FAQPage JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does eBay take from a sale UK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For private sellers: nothing — selling is free. For business sellers: a final value fee of 10.9-12.9% depending on category, plus a per-order fee of 30p (orders under £10) or 40p (orders over £10), plus a 0.35% regulatory operating fee. VAT at 20% is added on top of all fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I calculate eBay fees UK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The total fee for business sellers is: (sale price + postage) × category fee % + per-order fee (30p or 40p) + (sale price + postage) × 0.35% regulatory fee. Then add 20% VAT on the total fees. Private sellers pay no fees."
+          }
+        }
+      ]
+    }
+    </script>
+    <style>
+        .calc-container {
+            background: var(--card-bg, #F8FAFB);
+            border: 1px solid var(--border-subtle, #e0e0e0);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        .calc-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .calc-field {
+            flex: 1;
+            min-width: 200px;
+        }
+        .calc-field label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            font-size: 0.9rem;
+        }
+        .calc-field input, .calc-field select {
+            width: 100%;
+            padding: 0.6rem 0.8rem;
+            border: 1px solid var(--border-default, #ccc);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: #fff;
+            box-sizing: border-box;
+        }
+        .calc-field input:focus, .calc-field select:focus {
+            outline: none;
+            border-color: var(--accent, #334B90);
+        }
+        .calc-results {
+            background: #fff;
+            border: 1px solid var(--border-subtle, #e0e0e0);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .calc-results h3 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        .calc-line {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.4rem 0;
+            border-bottom: 1px solid var(--border-subtle, #f0f0f0);
+        }
+        .calc-line:last-child {
+            border-bottom: none;
+        }
+        .calc-line.calc-total {
+            font-weight: 700;
+            padding-top: 0.8rem;
+            margin-top: 0.4rem;
+            border-top: 2px solid var(--border-default, #ccc);
+            border-bottom: none;
+        }
+        .calc-line.calc-profit {
+            font-size: 1.1rem;
+            color: var(--accent, #334B90);
+        }
+        .calc-line.calc-loss {
+            font-size: 1.1rem;
+            color: #c0392b;
+        }
+        .calc-section-label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #666;
+            margin-top: 1.2rem;
+            margin-bottom: 0.4rem;
+        }
+        .calc-note {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        .private-note {
+            background: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            margin-top: 1.5rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../" class="nav-logo">
+                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
+                <span>FlipperHelper</span>
+            </a>
+            <div class="nav-links">
+                <a href="../">Home</a>
+                <a href="../faq.html">FAQ</a>
+                <a href="./">Blog</a>
+                <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-small" target="_blank" rel="noopener">Get the App</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="legal-page">
+        <div class="container">
+            <div class="legal-content blog-post">
+                <a href="./" class="blog-back">&larr; Back to Blog</a>
+                <p class="blog-updated">Last updated: 17 April 2026</p>
+                <h1>eBay Fee Calculator UK 2026</h1>
+                <div class="blog-meta">
+                    <span class="blog-date">17 April 2026</span>
+                    <span class="blog-tag">Tools</span>
+                </div>
+
+                <section>
+                    <p>Calculate exactly what eBay takes from your sale and what profit you keep. Updated with the February 2026 per-order fee changes. For the full fee breakdown, see our <a href="ebay-selling-fees-uk-2026.html">eBay selling fees UK 2026 guide</a>.</p>
+                </section>
+
+                <section>
+                    <div class="calc-container">
+                        <div class="calc-row">
+                            <div class="calc-field">
+                                <label for="sellerType">Seller type</label>
+                                <select id="sellerType">
+                                    <option value="private">Private seller (no fees)</option>
+                                    <option value="business" selected>Business seller</option>
+                                </select>
+                            </div>
+                            <div class="calc-field" id="categoryField">
+                                <label for="category">Category</label>
+                                <select id="category">
+                                    <option value="10.9">Clothes, Shoes &amp; Accessories (10.9%)</option>
+                                    <option value="10.9">Home, Furniture &amp; DIY (10.9%)</option>
+                                    <option value="10.9">Toys &amp; Games (10.9%)</option>
+                                    <option value="10.9">Books, Comics &amp; Magazines (10.9%)</option>
+                                    <option value="10.9">Sporting Goods (10.9%)</option>
+                                    <option value="10.9">Music, Films &amp; TV (10.9%)</option>
+                                    <option value="10.9">Collectables &amp; Art (10.9%)</option>
+                                    <option value="10.9">Health &amp; Beauty (10.9%)</option>
+                                    <option value="10.9">Pet Supplies (10.9%)</option>
+                                    <option value="10.9">Garden &amp; Patio (10.9%)</option>
+                                    <option value="12.9">Mobile Phones (12.9%)</option>
+                                    <option value="12.9">Tablets &amp; eBook Readers (12.9%)</option>
+                                    <option value="12.5">Business, Office &amp; Industrial (12.5%)</option>
+                                    <option value="9.5">Parts &amp; Accessories &mdash; Vehicles (9.5%)</option>
+                                    <option value="6.9">Cameras &amp; Photography (6.9%)</option>
+                                    <option value="6.9">Computers &amp; Networking (6.9%)</option>
+                                    <option value="6.9">Video Games &amp; Consoles (6.9%)</option>
+                                    <option value="6.9">Sound &amp; Vision (6.9%)</option>
+                                    <option value="2.0">Musical Instruments (2.0%)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="calc-row">
+                            <div class="calc-field">
+                                <label for="salePrice">Item sale price (&pound;)</label>
+                                <input type="number" id="salePrice" value="25.00" min="0" step="0.01">
+                            </div>
+                            <div class="calc-field">
+                                <label for="postageCharged">Postage charged to buyer (&pound;)</label>
+                                <input type="number" id="postageCharged" value="4.50" min="0" step="0.01">
+                            </div>
+                        </div>
+
+                        <p class="calc-section-label">Optional: calculate your profit</p>
+                        <div class="calc-row">
+                            <div class="calc-field">
+                                <label for="purchasePrice">What you paid for the item (&pound;)</label>
+                                <input type="number" id="purchasePrice" value="5.00" min="0" step="0.01">
+                            </div>
+                            <div class="calc-field">
+                                <label for="postageCost">Actual postage cost (&pound;)</label>
+                                <input type="number" id="postageCost" value="3.50" min="0" step="0.01">
+                            </div>
+                        </div>
+
+                        <div id="resultsSection"></div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Why this matters: fees catch people off guard</h2>
+                    <p>One of the <a href="https://www.reddit.com/r/eBaySellerAdvice/comments/1lqazk4/" target="_blank" rel="noopener">most upvoted posts on r/eBaySellerAdvice</a> is titled &ldquo;Learned a hard lesson today.&rdquo; The seller listed a book for $4 and didn&rsquo;t realise eBay charges fees on the <em>total</em> transaction including shipping &mdash; not just the item price. The fees ate roughly 50% of the sale price, and they couldn&rsquo;t even afford a box to ship it in.</p>
+                    <p><a href="https://www.reddit.com/r/eBaySellerAdvice/comments/1b61ruy/" target="_blank" rel="noopener">Another popular post</a>: someone bought a golf bag at a charity shop for $15 and sold it on eBay for $68. Sounds like a great flip. But after shipping ($111 &mdash; it was big and heavy, going cross-country), the transaction fee ($26), and a promoted listing fee ($20), they made $6 profit. On a $68 sale.</p>
+                    <p>These are US examples (UK private sellers now pay zero fees &mdash; see below), but the lesson is universal: if you don&rsquo;t calculate your fees and postage <em>before</em> listing, your &ldquo;profit&rdquo; can evaporate. That&rsquo;s what the calculator above is for.</p>
+                </section>
+
+                <section>
+                    <h2>How eBay fees work</h2>
+                    <p>Since October 2024, UK private sellers pay no final value fees on eBay, with 300 free listings per month (source: <a href="https://www.ebay.co.uk/help/selling/fees-credits-invoices/selling-fees?id=4364" target="_blank" rel="noopener">eBay&rsquo;s official UK fee page</a>). If you exceed 300 listings, you pay 35p per additional listing. If you&rsquo;re selling items you already own (not buying to resell), you&rsquo;re a private seller.</p>
+                    <p>If you&rsquo;re <strong>regularly buying items specifically to resell</strong>, eBay (and HMRC) may consider you a business seller. The line isn&rsquo;t always clear &mdash; see our <a href="hmrc-1000-trading-allowance-resellers-uk.html">HMRC trading allowance guide</a> for more on this.</p>
+                    <p>Business sellers pay three fees on every sale (per <a href="https://www.ebay.co.uk/help/selling/fees-credits-invoices/selling-fees?id=4364" target="_blank" rel="noopener">eBay&rsquo;s fee schedule</a>):</p>
+                    <ul>
+                        <li><strong>Final value fee:</strong> A percentage of the total sale (item + postage), varying by category from 2% to 12.9%</li>
+                        <li><strong>Per-order fee:</strong> 30p on orders under &pound;10, 40p on orders over &pound;10 (increased February 2026)</li>
+                        <li><strong>Regulatory operating fee:</strong> 0.35% of the total sale</li>
+                    </ul>
+                    <p>VAT at 20% is added on top of all three fees. The calculator above includes VAT in the total.</p>
+                    <p>For more detail including international fees and Shop subscriptions, see our <a href="ebay-selling-fees-uk-2026.html">complete eBay fee breakdown</a>.</p>
+                </section>
+
+                <section>
+                    <h2>Frequently asked questions</h2>
+
+                    <h3>How much does eBay take from a sale UK?</h3>
+                    <p>Private sellers: nothing. Business sellers: typically 13&ndash;15% of the total sale when you include the final value fee, per-order fee, regulatory fee, and VAT on fees.</p>
+
+                    <h3>How do I calculate eBay fees?</h3>
+                    <p>Total fee = (sale price + postage) &times; category fee % + per-order fee + (sale price + postage) &times; 0.35%. Then add 20% VAT on all fees. Or just use the calculator above.</p>
+                </section>
+
+                <section>
+                    <h3>About the author</h3>
+                    <p><strong>Oleksandr Prudnikov</strong> builds <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">FlipperHelper</a>, a profit-tracking app for UK resellers. Fee data in this calculator is sourced from <a href="https://www.ebay.co.uk/help/selling/fees-credits-invoices/selling-fees?id=4364" target="_blank" rel="noopener">eBay&rsquo;s official UK seller fees page</a> and verified against actual eBay invoices.</p>
+                </section>
+
+                <section class="blog-cta">
+                    <h2>Calculate fees automatically for every item</h2>
+                    <p>Typing numbers into a calculator works for one item. When you&rsquo;re selling 20 items a week across eBay, Vinted, and Facebook Marketplace, you need something that tracks it all. FlipperHelper calculates your profit per item after all costs.</p>
+                    <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer footer-compact">
+        <div class="container">
+            <div class="footer-row">
+                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
+                <div class="footer-links-inline">
+                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
+                    <a href="../privacy.html">Privacy</a>
+                    <a href="../terms.html">Terms</a>
+                    <a href="mailto:andreevichprudnikov@gmail.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        var sellerType = document.getElementById('sellerType');
+        var category = document.getElementById('category');
+        var salePrice = document.getElementById('salePrice');
+        var postageCharged = document.getElementById('postageCharged');
+        var purchasePrice = document.getElementById('purchasePrice');
+        var postageCost = document.getElementById('postageCost');
+        var categoryField = document.getElementById('categoryField');
+        var resultsSection = document.getElementById('resultsSection');
+
+        function calculate() {
+            var type = sellerType.value;
+            var price = parseFloat(salePrice.value) || 0;
+            var postage = parseFloat(postageCharged.value) || 0;
+            var cost = parseFloat(purchasePrice.value) || 0;
+            var actualPostage = parseFloat(postageCost.value) || 0;
+            var totalSale = price + postage;
+
+            if (type === 'private') {
+                categoryField.style.display = 'none';
+                var profit = totalSale - cost - actualPostage;
+                resultsSection.innerHTML =
+                    '<div class="private-note">Private sellers pay no eBay fees. You keep the full sale amount.</div>' +
+                    '<div class="calc-results">' +
+                    '<h3>Your numbers</h3>' +
+                    '<div class="calc-line"><span>Sale price + postage</span><span>&pound;' + totalSale.toFixed(2) + '</span></div>' +
+                    '<div class="calc-line"><span>eBay fees</span><span>&pound;0.00</span></div>' +
+                    '<div class="calc-line"><span>You receive</span><span>&pound;' + totalSale.toFixed(2) + '</span></div>' +
+                    (cost > 0 || actualPostage > 0 ?
+                        '<div class="calc-section-label">Profit</div>' +
+                        '<div class="calc-line"><span>Purchase price</span><span>&minus;&pound;' + cost.toFixed(2) + '</span></div>' +
+                        '<div class="calc-line"><span>Actual postage cost</span><span>&minus;&pound;' + actualPostage.toFixed(2) + '</span></div>' +
+                        '<div class="calc-line calc-total ' + (profit >= 0 ? 'calc-profit' : 'calc-loss') + '"><span>Your profit</span><span>' + (profit >= 0 ? '&pound;' : '&minus;&pound;') + Math.abs(profit).toFixed(2) + '</span></div>'
+                    : '') +
+                    '</div>';
+                return;
+            }
+
+            categoryField.style.display = '';
+            var feePercent = parseFloat(category.value) / 100;
+            var finalValueFee = totalSale * feePercent;
+            var perOrderFee = totalSale > 10 ? 0.40 : 0.30;
+            var regulatoryFee = totalSale * 0.0035;
+            var subtotalFees = finalValueFee + perOrderFee + regulatoryFee;
+            var vat = subtotalFees * 0.20;
+            var totalFees = subtotalFees + vat;
+            var youReceive = totalSale - totalFees;
+            var profit = youReceive - cost - actualPostage;
+            var feePercentTotal = totalSale > 0 ? (totalFees / totalSale * 100) : 0;
+
+            resultsSection.innerHTML =
+                '<div class="calc-results">' +
+                '<h3>Fee breakdown</h3>' +
+                '<div class="calc-line"><span>Sale price + postage</span><span>&pound;' + totalSale.toFixed(2) + '</span></div>' +
+                '<div class="calc-line"><span>Final value fee (' + (feePercent * 100).toFixed(1) + '%)</span><span>&minus;&pound;' + finalValueFee.toFixed(2) + '</span></div>' +
+                '<div class="calc-line"><span>Per-order fee</span><span>&minus;&pound;' + perOrderFee.toFixed(2) + '</span></div>' +
+                '<div class="calc-line"><span>Regulatory operating fee (0.35%)</span><span>&minus;&pound;' + regulatoryFee.toFixed(2) + '</span></div>' +
+                '<div class="calc-line"><span>VAT on fees (20%)</span><span>&minus;&pound;' + vat.toFixed(2) + '</span></div>' +
+                '<div class="calc-line calc-total"><span>Total eBay fees (' + feePercentTotal.toFixed(1) + '% of sale)</span><span>&minus;&pound;' + totalFees.toFixed(2) + '</span></div>' +
+                '<div class="calc-line" style="padding-top:0.8rem;"><span>You receive</span><span>&pound;' + youReceive.toFixed(2) + '</span></div>' +
+                (cost > 0 || actualPostage > 0 ?
+                    '<div class="calc-section-label">Profit</div>' +
+                    '<div class="calc-line"><span>Purchase price</span><span>&minus;&pound;' + cost.toFixed(2) + '</span></div>' +
+                    '<div class="calc-line"><span>Actual postage cost</span><span>&minus;&pound;' + actualPostage.toFixed(2) + '</span></div>' +
+                    '<div class="calc-line calc-total ' + (profit >= 0 ? 'calc-profit' : 'calc-loss') + '"><span>Your profit</span><span>' + (profit >= 0 ? '&pound;' : '&minus;&pound;') + Math.abs(profit).toFixed(2) + '</span></div>'
+                : '') +
+                '</div>' +
+                '<p class="calc-note">Fees shown exclude VAT on the item itself. International fees not included. For the full fee structure, see our <a href="ebay-selling-fees-uk-2026.html">eBay fees guide</a>.</p>';
+        }
+
+        sellerType.addEventListener('change', calculate);
+        category.addEventListener('change', calculate);
+        salePrice.addEventListener('input', calculate);
+        postageCharged.addEventListener('input', calculate);
+        purchasePrice.addEventListener('input', calculate);
+        postageCost.addEventListener('input', calculate);
+
+        calculate();
+    })();
+    </script>
+</body>
+</html>

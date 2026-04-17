@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgComp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8FAFB"/>
+      <stop offset="100%" stop-color="#EEF2F7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="420" rx="12" fill="url(#bgComp)" stroke="#DDE3EC" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="360" y="38" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1A2E">Royal Mail vs Evri: Cost Per Item Type</text>
+  <text x="360" y="60" text-anchor="middle" font-size="13" fill="#888">2nd Class Royal Mail vs Evri ParcelShop Standard (April 2026)</text>
+
+  <!-- Legend -->
+  <rect x="210" y="76" width="14" height="14" rx="3" fill="#334B90"/>
+  <text x="230" y="88" font-size="13" fill="#555">Royal Mail 2nd Class</text>
+  <rect x="400" y="76" width="14" height="14" rx="3" fill="#F9DDA5" stroke="#D4B76A" stroke-width="1"/>
+  <text x="420" y="88" font-size="13" fill="#555">Evri ParcelShop</text>
+
+  <!-- Chart area -->
+  <!-- Y axis: £0 to £10, y=120 to y=360 -->
+  <!-- Scale: £1 = 24px -->
+
+  <text x="75" y="364" text-anchor="end" font-size="12" fill="#888">£0</text>
+  <text x="75" y="316" text-anchor="end" font-size="12" fill="#888">£2</text>
+  <text x="75" y="268" text-anchor="end" font-size="12" fill="#888">£4</text>
+  <text x="75" y="220" text-anchor="end" font-size="12" fill="#888">£6</text>
+  <text x="75" y="172" text-anchor="end" font-size="12" fill="#888">£8</text>
+  <text x="75" y="124" text-anchor="end" font-size="12" fill="#888">£10</text>
+
+  <!-- Grid -->
+  <line x1="85" y1="360" x2="580" y2="360" stroke="#DDE3EC" stroke-width="1"/>
+  <line x1="85" y1="312" x2="580" y2="312" stroke="#DDE3EC" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="85" y1="264" x2="580" y2="264" stroke="#DDE3EC" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="85" y1="216" x2="580" y2="216" stroke="#DDE3EC" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="85" y1="168" x2="580" y2="168" stroke="#DDE3EC" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="85" y1="120" x2="580" y2="120" stroke="#DDE3EC" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <!-- Category 1: Light clothing (<250g) -->
+  <!-- RM: £1.90 large letter, h=1.90*24=45.6, y=360-45.6=314.4 -->
+  <rect x="110" y="314" width="50" height="46" rx="4" fill="#334B90"/>
+  <text x="135" y="306" text-anchor="middle" font-size="12" font-weight="600" fill="#334B90">£1.90</text>
+  <!-- Evri: £2.62, h=2.62*24=62.88, y=360-62.88=297.1 -->
+  <rect x="168" y="297" width="50" height="63" rx="4" fill="#F9DDA5" stroke="#D4B76A" stroke-width="1"/>
+  <text x="193" y="289" text-anchor="middle" font-size="12" font-weight="600" fill="#8B7030">£2.62</text>
+  <!-- Label -->
+  <text x="164" y="388" text-anchor="middle" font-size="12" fill="#555" font-weight="600">Light clothing</text>
+  <text x="164" y="403" text-anchor="middle" font-size="11" fill="#888">&lt;250g</text>
+
+  <!-- Category 2: Shoes/heavy clothing (<2kg) -->
+  <!-- RM: £4.25, h=4.25*24=102, y=360-102=258 -->
+  <rect x="280" y="258" width="50" height="102" rx="4" fill="#334B90"/>
+  <text x="305" y="250" text-anchor="middle" font-size="12" font-weight="600" fill="#334B90">£4.25</text>
+  <!-- Evri: £2.62 -->
+  <rect x="338" y="297" width="50" height="63" rx="4" fill="#F9DDA5" stroke="#D4B76A" stroke-width="1"/>
+  <text x="363" y="289" text-anchor="middle" font-size="12" font-weight="600" fill="#8B7030">£2.62</text>
+  <!-- Savings badge - positioned to the right of the bar pair -->
+  <rect x="396" y="270" width="62" height="22" rx="11" fill="#27AE60"/>
+  <text x="427" y="285" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">-£1.63</text>
+  <!-- Label -->
+  <text x="334" y="388" text-anchor="middle" font-size="12" fill="#555" font-weight="600">Shoes</text>
+  <text x="334" y="403" text-anchor="middle" font-size="11" fill="#888">&lt;2kg</text>
+
+  <!-- Category 3: Books/electronics (<5kg) -->
+  <!-- RM: £8.75 medium parcel, h=8.75*24=210, y=360-210=150 -->
+  <rect x="480" y="150" width="50" height="210" rx="4" fill="#334B90"/>
+  <text x="505" y="142" text-anchor="middle" font-size="12" font-weight="600" fill="#334B90">£8.75</text>
+  <!-- Evri: £2.62 -->
+  <rect x="538" y="297" width="50" height="63" rx="4" fill="#F9DDA5" stroke="#D4B76A" stroke-width="1"/>
+  <text x="563" y="289" text-anchor="middle" font-size="12" font-weight="600" fill="#8B7030">£2.62</text>
+  <!-- Savings badge - positioned to the right of the bar pair -->
+  <rect x="596" y="220" width="62" height="22" rx="11" fill="#27AE60"/>
+  <text x="627" y="235" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">-£6.13</text>
+  <!-- Label -->
+  <text x="534" y="388" text-anchor="middle" font-size="12" fill="#555" font-weight="600">Books / electronics</text>
+  <text x="534" y="403" text-anchor="middle" font-size="11" fill="#888">&lt;5kg</text>
+
+  <!-- Verdict boxes -->
+  <rect x="600" y="120" width="110" height="60" rx="8" fill="#334B90" opacity="0.08"/>
+  <text x="655" y="143" text-anchor="middle" font-size="11" font-weight="600" fill="#334B90">Royal Mail wins</text>
+  <text x="655" y="158" text-anchor="middle" font-size="11" fill="#555">for light items</text>
+  <text x="655" y="173" text-anchor="middle" font-size="11" fill="#555">(large letter)</text>
+
+  <rect x="600" y="310" width="110" height="55" rx="8" fill="#F9DDA5" opacity="0.3"/>
+  <text x="655" y="333" text-anchor="middle" font-size="11" font-weight="600" fill="#8B7030">Evri wins</text>
+  <text x="655" y="348" text-anchor="middle" font-size="11" fill="#555">for parcels</text>
+  <text x="655" y="363" text-anchor="middle" font-size="11" fill="#555">(flat £2.62)</text>
+</svg>

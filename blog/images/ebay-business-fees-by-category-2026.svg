@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgCat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8FAFB"/>
+      <stop offset="100%" stop-color="#EEF2F7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="420" rx="12" fill="url(#bgCat)" stroke="#DDE3EC" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="360" y="38" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1A2E">eBay Business Seller: Final Value Fees by Category</text>
+  <text x="360" y="60" text-anchor="middle" font-size="13" fill="#888">February 2026 rates (excl. VAT). Private sellers pay 0%.</text>
+
+  <!-- Chart: horizontal bars -->
+  <!-- x: 220 to 620 maps to 0% to 14% -->
+  <!-- scale: 1% = (620-220)/14 = 28.57px -->
+
+  <!-- Grid lines -->
+  <line x1="220" y1="80" x2="220" y2="365" stroke="#DDE3EC" stroke-width="1"/>
+  <line x1="363" y1="80" x2="363" y2="365" stroke="#DDE3EC" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="506" y1="80" x2="506" y2="365" stroke="#DDE3EC" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <!-- X axis labels -->
+  <text x="220" y="385" text-anchor="middle" font-size="12" fill="#888">0%</text>
+  <text x="363" y="385" text-anchor="middle" font-size="12" fill="#888">5%</text>
+  <text x="506" y="385" text-anchor="middle" font-size="12" fill="#888">10%</text>
+  <text x="620" y="385" text-anchor="middle" font-size="12" fill="#888">14%</text>
+
+  <!-- Consumer Electronics (6.9%) -->
+  <text x="210" y="108" text-anchor="end" font-size="13" fill="#555">Consumer Electronics</text>
+  <!-- 6.9% * 28.57 = 197.1 -->
+  <rect x="220" y="93" width="197" height="26" rx="4" fill="#BBCBF7"/>
+  <text x="424" y="111" font-size="13" font-weight="600" fill="#334B90">6.9%</text>
+
+  <!-- Parts & Accessories (9.5%) -->
+  <text x="210" y="158" text-anchor="end" font-size="13" fill="#555">Parts &amp; Accessories</text>
+  <!-- 9.5% * 28.57 = 271.4 -->
+  <rect x="220" y="143" width="271" height="26" rx="4" fill="#BBCBF7"/>
+  <text x="498" y="161" font-size="13" font-weight="600" fill="#334B90">9.5%</text>
+  <text x="534" y="161" font-size="10" fill="#C0392B">(was 8.9%)</text>
+
+  <!-- Clothes/Shoes (10.9%) - highlight as most common -->
+  <text x="210" y="208" text-anchor="end" font-size="13" fill="#555" font-weight="600">Clothes &amp; Shoes</text>
+  <!-- 10.9% * 28.57 = 311.4 -->
+  <rect x="220" y="193" width="311" height="26" rx="4" fill="#334B90"/>
+  <text x="538" y="211" font-size="13" font-weight="700" fill="#334B90">10.9%</text>
+  <!-- "Most common" badge - positioned clearly after percentage -->
+  <rect x="580" y="199" width="95" height="20" rx="10" fill="#334B90"/>
+  <text x="627" y="213" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">MOST COMMON</text>
+
+  <!-- Home/Furniture (10.9%) -->
+  <text x="210" y="258" text-anchor="end" font-size="13" fill="#555">Home &amp; Furniture</text>
+  <rect x="220" y="243" width="311" height="26" rx="4" fill="#BBCBF7"/>
+  <text x="538" y="261" font-size="13" font-weight="600" fill="#334B90">10.9%</text>
+
+  <!-- Toys/Books/Sports (10.9%) -->
+  <text x="210" y="308" text-anchor="end" font-size="13" fill="#555">Toys / Books / Sports</text>
+  <rect x="220" y="293" width="311" height="26" rx="4" fill="#BBCBF7"/>
+  <text x="538" y="311" font-size="13" font-weight="600" fill="#334B90">10.9%</text>
+
+  <!-- Business/Office (12.5%) -->
+  <text x="210" y="358" text-anchor="end" font-size="13" fill="#555">Business &amp; Office</text>
+  <!-- 12.5% * 28.57 = 357.1 -->
+  <rect x="220" y="343" width="357" height="26" rx="4" fill="#F9DDA5" stroke="#D4B76A" stroke-width="1"/>
+  <text x="584" y="361" font-size="13" font-weight="600" fill="#8B7030">12.5%</text>
+  <text x="620" y="361" font-size="10" fill="#C0392B">(was 11.9%)</text>
+
+  <!-- Note -->
+  <text x="360" y="410" text-anchor="middle" font-size="11" fill="#AAA">+ 30-40p per order + 0.35% regulatory fee + 20% VAT on all fees</text>
+</svg>
