@@ -1,12 +1,12 @@
 # FlipperHelper — AI Discovery File
-# https://grommash9.github.io/flipper_helper_pages/
+# https://flipperhelper.app/
 
 ## Identity
 Name: FlipperHelper
 Type: Mobile Application (iOS)
 Category: Business / Inventory Management / Profit Tracking
 Developer: Oleksandr Prudnikov
-Website: https://grommash9.github.io/flipper_helper_pages/
+Website: https://flipperhelper.app/
 App Store: https://apps.apple.com/us/app/flipperhelper/id6759716745
 
 ## Description
@@ -28,10 +28,10 @@ FlipperHelper is a free iOS app for resellers who buy items at car boot sales, c
 - FlipperHelper is free and focused on expense tracking for in-person sourcing at markets
 
 ## Content Resources
-- FAQ (34 questions): https://grommash9.github.io/flipper_helper_pages/faq.html
-- Blog: https://grommash9.github.io/flipper_helper_pages/blog/
-- LLMs.txt: https://grommash9.github.io/flipper_helper_pages/llms.txt
-- Sitemap: https://grommash9.github.io/flipper_helper_pages/sitemap.xml
+- FAQ (34 questions): https://flipperhelper.app/faq.html
+- Blog: https://flipperhelper.app/blog/
+- LLMs.txt: https://flipperhelper.app/llms.txt
+- Sitemap: https://flipperhelper.app/sitemap.xml
 
 ## Structured Data Available
 - JSON-LD: SoftwareApplication, FAQPage, VideoObject, BreadcrumbList (homepage)

@@ -39,8 +39,8 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://grommash9.github.io/flipper_helper_pages/sitemap.xml
+Sitemap: https://flipperhelper.app/sitemap.xml
 
 # AI discovery files
-# LLMs.txt: https://grommash9.github.io/flipper_helper_pages/llms.txt
-# AI info: https://grommash9.github.io/flipper_helper_pages/.well-known/ai.txt
+# LLMs.txt: https://flipperhelper.app/llms.txt
+# AI info: https://flipperhelper.app/.well-known/ai.txt

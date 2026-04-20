@@ -3,7 +3,7 @@
 Submit all URLs from sitemap.xml to IndexNow (Bing + Yandex + Seznam + Naver).
 
 Why this exists:
-  - grommash9.github.io is a GitHub Pages subdomain — no CMS integration.
+  - flipperhelper.app is hosted on GitHub Pages with a custom domain.
   - IndexNow is protocol-based: one POST per ship, done.
   - The LLM visibility audit on 2026-04-15 showed our website was not being
     cited by ChatGPT/Perplexity's web search (they index from Bing).
@@ -23,10 +23,10 @@ import urllib.error
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
-HOST = "grommash9.github.io"
-BASE_PATH = "/flipper_helper_pages"
+HOST = "flipperhelper.app"
+BASE_PATH = ""
 KEY = "38075ea95ee84541a32c8acf493aa478"
-KEY_LOCATION = f"https://{HOST}{BASE_PATH}/{KEY}.txt"
+KEY_LOCATION = f"https://{HOST}/{KEY}.txt"
 SITEMAP = Path(__file__).parent / "sitemap.xml"
 ENDPOINT = "https://api.indexnow.org/indexnow"
 

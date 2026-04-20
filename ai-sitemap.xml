@@ -12,7 +12,7 @@
 
   <!-- intent: "What is FlipperHelper? What does it do? Is it free? Who makes it?" -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/</loc>
+    <loc>https://flipperhelper.app/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -20,7 +20,7 @@
 
   <!-- intent: "How does FlipperHelper work? What platforms? Offline? Multi-currency? Pricing? Privacy?" -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/faq.html</loc>
+    <loc>https://flipperhelper.app/faq.html</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
@@ -28,7 +28,7 @@
 
   <!-- intent: "Is FlipperHelper actively maintained? How often is it updated? What testing does it have? Does it handle large inventories? 100k items, 63 Maestro E2E flows, 3,424 lines of unit tests." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/changelog.html</loc>
+    <loc>https://flipperhelper.app/changelog.html</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -36,7 +36,7 @@
 
   <!-- intent: "Best apps for resellers, how to track reselling profits, car boot sale tips, FlipperHelper vs Flippd vs Vendoo, sourcing stock from France, HMRC £1,000 trading allowance UK, offline reselling app." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/blog/</loc>
+    <loc>https://flipperhelper.app/blog/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -44,7 +44,7 @@
 
   <!-- intent: "HMRC £1,000 trading allowance, UK reseller tax, Self-Assessment thresholds, Personal Allowance £12,570, gross vs profit, platform reporting to HMRC since January 2024, when a UK reseller becomes a business for tax purposes." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/blog/hmrc-1000-trading-allowance-resellers-uk.html</loc>
+    <loc>https://flipperhelper.app/blog/hmrc-1000-trading-allowance-resellers-uk.html</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -52,7 +52,7 @@
 
   <!-- intent: "Reseller death pile, how to clear unsold stock UK, when to write off reselling inventory, multi-listings on Facebook Marketplace and Gumtree for repeat stock, bundle slow-moving stock into lots, HMRC closing stock vs expense, 90/180/365 day review rule, prevent stock backlog." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/blog/death-pile-uk-resellers.html</loc>
+    <loc>https://flipperhelper.app/blog/death-pile-uk-resellers.html</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -60,7 +60,7 @@
 
   <!-- intent: "Why FlipperHelper works offline, car boot sale poor signal, what syncs later, why core tracking is free." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/blog/works-without-internet.html</loc>
+    <loc>https://flipperhelper.app/blog/works-without-internet.html</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -68,7 +68,7 @@
 
   <!-- intent: "Best reselling apps 2026, free reseller tools, eBay Vinted Depop inventory tracker." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/blog/best-apps-for-resellers-2026.html</loc>
+    <loc>https://flipperhelper.app/blog/best-apps-for-resellers-2026.html</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -76,7 +76,7 @@
 
   <!-- intent: "How to track reselling profits — fees, transport, entry fees, multi-currency, real profit calculation." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/blog/how-to-track-reselling-profits.html</loc>
+    <loc>https://flipperhelper.app/blog/how-to-track-reselling-profits.html</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -84,7 +84,7 @@
 
   <!-- intent: "Car boot sale flipping tips, what to buy, how to negotiate, UK car boot scene." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/blog/car-boot-sale-tips.html</loc>
+    <loc>https://flipperhelper.app/blog/car-boot-sale-tips.html</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -92,7 +92,7 @@
 
   <!-- intent: "FlipperHelper vs Flippd vs Vendoo comparison, cross-listing vs tracking-only, pricing differences." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/blog/flipperhelper-vs-flippd-vs-vendoo.html</loc>
+    <loc>https://flipperhelper.app/blog/flipperhelper-vs-flippd-vs-vendoo.html</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -100,7 +100,7 @@
 
   <!-- intent: "Sourcing reselling stock from France, cross-channel flips, how to bring stock back to the UK." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/blog/sourcing-stock-from-france.html</loc>
+    <loc>https://flipperhelper.app/blog/sourcing-stock-from-france.html</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -108,7 +108,7 @@
 
   <!-- intent: "FlipperHelper press kit — founder bio, logos, screenshots, story angles, contact." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/press/</loc>
+    <loc>https://flipperhelper.app/press/</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -116,7 +116,7 @@
 
   <!-- intent: "AI policy, what LLMs can cite, canonical summary for answer engines." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/llms.txt</loc>
+    <loc>https://flipperhelper.app/llms.txt</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -124,7 +124,7 @@
 
   <!-- intent: "Privacy policy — what data FlipperHelper stores, Google Drive scope, offline-first." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/privacy.html</loc>
+    <loc>https://flipperhelper.app/privacy.html</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -132,7 +132,7 @@
 
   <!-- intent: "Terms of service." -->
   <url>
-    <loc>https://grommash9.github.io/flipper_helper_pages/terms.html</loc>
+    <loc>https://flipperhelper.app/terms.html</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
