@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Track Whether a Sourcing Trip Was Worth It | FlipperHelper Blog</title>
+    <meta name="description" content="Track profit per sourcing trip by grouping items and expenses into Hauls. See which car boot runs and market visits actually made money. Free in FlipperHelper for iOS.">
+    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="canonical" href="https://flipperhelper.app/blog/track-sourcing-trip-profit.html">
+    <!-- OpenGraph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How to Track Whether a Sourcing Trip Was Worth It">
+    <meta property="og:description" content="Group items and expenses by trip to see real per-trip profit. Hauls feature in FlipperHelper makes this simple.">
+    <meta property="og:url" content="https://flipperhelper.app/blog/track-sourcing-trip-profit.html">
+    <meta property="og:image" content="https://flipperhelper.app/blog/images/hauls-list.png">
+    <meta property="og:site_name" content="FlipperHelper">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:published_time" content="2026-04-23">
+    <meta property="article:author" content="Oleksandr Prudnikov">
+    <meta property="article:section" content="Updates">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How to Track Whether a Sourcing Trip Was Worth It">
+    <meta name="twitter:description" content="Group items and expenses by sourcing trip to see which trips made money. New Hauls feature in FlipperHelper.">
+    <meta name="twitter:image" content="https://flipperhelper.app/blog/images/hauls-list.png">
+    <!-- BreadcrumbList JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flipperhelper.app/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://flipperhelper.app/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "Track Sourcing Trip Profit", "item": "https://flipperhelper.app/blog/track-sourcing-trip-profit.html"}
+      ]
+    }
+    </script>
+    <!-- Article JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How to Track Whether a Sourcing Trip Was Worth It",
+      "description": "Group your items and expenses by sourcing trip to see which trips made money and which didn't. New Hauls feature in FlipperHelper tracks per-trip profitability over time.",
+      "datePublished": "2026-04-23",
+      "dateModified": "2026-04-23",
+      "author": {"@type": "Person", "name": "Oleksandr Prudnikov"},
+      "publisher": {"@type": "Person", "name": "Oleksandr Prudnikov"},
+      "mainEntityOfPage": "https://flipperhelper.app/blog/track-sourcing-trip-profit.html"
+    }
+    </script>
+    <!-- FAQPage JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I know if a car boot sale trip was profitable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add up all costs for the trip (entry fees, fuel, parking, items purchased) and compare against the total revenue from selling those items. The trip is profitable once sales exceed total costs. Use FlipperHelper's Hauls feature to track this automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best way to track reselling expenses per trip?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Group your expenses and items by trip date. Include entry fees, transport costs, and any other trip-specific spending. A dedicated reselling app like FlipperHelper lets you create a Haul for each trip and automatically calculates the total cost vs revenue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to know if a sourcing trip was worth it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on how quickly your items sell. Some items sell within days, others take months. Per-trip tracking that updates over time is ideal — you can check back periodically and see the trip moving from a loss into profit as items sell."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../" class="nav-logo">
+                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
+                <span>FlipperHelper</span>
+            </a>
+            <div class="nav-links">
+                <a href="../">Home</a>
+                <a href="../faq.html">FAQ</a>
+                <a href="./">Blog</a>
+                <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-small" target="_blank" rel="noopener">Get the App</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="legal-page">
+        <div class="container">
+            <div class="legal-content blog-post">
+                <a href="./" class="blog-back">&larr; Back to Blog</a>
+                <p class="blog-updated">Last updated: 23 April 2026</p>
+                <h1>How to Track Whether a Sourcing Trip Was Actually Worth It</h1>
+                <div class="blog-meta">
+                    <span class="blog-date">23 April 2026</span>
+                    <span class="blog-tag">Updates</span>
+                    <span class="blog-reading-time">4 min read</span>
+                </div>
+
+                <section>
+                    <p>My wife and I went on a sourcing trip to France in April. Eurotunnel tickets, fuel there and back, entry fees at three different markets, bought about 15 items across two days. Came back feeling good about the finds.</p>
+                    <p>Then the question hit &mdash; <strong>did we actually make money on that trip?</strong> Or did we just have fun spending it?</p>
+                    <p>The expenses were scattered across different categories. The items were mixed in with everything else we bought that month. There was no simple way to <strong>track profit per sourcing trip</strong> without pulling out a spreadsheet.</p>
+                    <p>So we built a way to do it inside the app.</p>
+                </section>
+
+                <section>
+                    <h2>A haul = one sourcing trip, fully tracked</h2>
+                    <p>A <strong>Haul</strong> in FlipperHelper is one sourcing trip &mdash; a car boot run, a market visit, a weekend road trip. You group the items you bought and the expenses you paid into one place, and the app calculates whether that trip made or lost money.</p>
+                    <p>Here&rsquo;s how tracking a sourcing trip works in the app:</p>
+                    <ol>
+                        <li><strong>Create a haul</strong> &mdash; give it a name (e.g. &ldquo;France April&rdquo;) and set the date range</li>
+                        <li><strong>Select the items you bought on that trip</strong> &mdash; the app shows all items from that period (with photos) &mdash; just tap to select</li>
+                        <li><strong>Add all expenses related to that trip</strong> &mdash; fuel, entry fees, Eurotunnel, parking, food &mdash; whatever you spent</li>
+                        <li><strong>Instantly see total cost vs revenue</strong> &mdash; items cost, expenses, sales so far, and net profit or loss</li>
+                    </ol>
+                    <p>The profit updates automatically over time. You sell an item three months later and the haul&rsquo;s numbers change. So you can check back and see exactly when a trip turned profitable.</p>
+
+                    <figure style="text-align: center; margin: 24px 0;">
+                        <img src="images/hauls-list.png" alt="FlipperHelper Hauls list showing France trip at minus £77 and London trip at plus £271" style="max-width: 360px; width: 100%; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);" loading="lazy">
+                        <figcaption style="color: #888; font-size: 13px; margin-top: 8px;">Two sourcing trips side by side &mdash; one profitable, one not yet</figcaption>
+                    </figure>
+                </section>
+
+                <section>
+                    <h2>Example: a real sourcing trip breakdown</h2>
+                    <div style="background: #f8fafb; border-radius: 12px; padding: 20px; margin: 16px 0; border-left: 4px solid #334B90;">
+                        <p style="margin: 0 0 8px; font-weight: 600; font-size: 18px;">Haul: France April</p>
+                        <p style="margin: 0 0 4px; color: #555;">Items bought: 15 &nbsp;&middot;&nbsp; Total cost: &pound;85</p>
+                        <p style="margin: 0 0 4px; color: #555;">Expenses: &pound;120 (Eurotunnel &pound;80, fuel &pound;25, entry fees &pound;15)</p>
+                        <p style="margin: 0 0 4px; color: #555;">Sold so far: 9 items &nbsp;&middot;&nbsp; Revenue: &pound;310</p>
+                        <p style="margin: 12px 0 0; font-weight: 700; font-size: 20px; color: #32D34A;">Net profit: +&pound;105</p>
+                        <p style="margin: 4px 0 0; color: #999; font-size: 13px;">6 items still unsold &mdash; profit will keep growing</p>
+                    </div>
+                    <p>Without grouping this into a haul, those &pound;120 in expenses would just be monthly totals. You&rsquo;d never know that this specific trip was the reason April was profitable.</p>
+
+                    <figure style="text-align: center; margin: 24px 0;">
+                        <img src="images/haul-detail.png" alt="FlipperHelper Haul detail showing London trip with items cost, expenses, sales revenue, net profit and item list" style="max-width: 360px; width: 100%; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);" loading="lazy">
+                        <figcaption style="color: #888; font-size: 13px; margin-top: 8px;">Full breakdown of a sourcing trip &mdash; costs, revenue, and every item with its profit</figcaption>
+                    </figure>
+                </section>
+
+                <section>
+                    <h2>The problem with tracking per-trip profit</h2>
+                    <p>Most reselling tools &mdash; apps, spreadsheets, whatever &mdash; track items and expenses as flat lists. That works for overall monthly profit. But it doesn&rsquo;t answer the question: <em>was this specific trip worth the drive?</em></p>
+                    <p>Calculating your <strong>reselling trip profit</strong> is harder than it looks because costs are spread across categories:</p>
+                    <ul>
+                        <li><strong>Transport:</strong> fuel, Eurotunnel, parking, tolls</li>
+                        <li><strong>Entry fees:</strong> car boot entry, antique fair admission</li>
+                        <li><strong>Items:</strong> everything you bought</li>
+                        <li><strong>Other:</strong> food, accommodation for overnight trips</li>
+                    </ul>
+                    <p>And the revenue comes in over weeks or months as items sell. You can&rsquo;t evaluate the trip on the day you get home &mdash; you need to track it over time.</p>
+                </section>
+
+                <section>
+                    <h2>Why per-trip tracking changes how you source</h2>
+                    <p>Once you have a few hauls tracked, patterns emerge. Maybe your local <strong>car boot trip profit</strong> is consistently good because expenses are low. Maybe that road trip to a big antique fair looked exciting but barely broke even once you counted fuel and accommodation.</p>
+                    <p>Without per-trip tracking, all you see is monthly totals. You might be doing 10 trips a month and not realise that 3 of them are losing money and dragging down the profitable ones.</p>
+                    <p>With hauls, you can <strong>track profit per sourcing trip</strong> and make better decisions about where to spend your weekends.</p>
+                </section>
+
+                <section>
+                    <h2>Share your trip results</h2>
+                    <p>We also added shareable cards for hauls. Same style as the existing share cards in the app &mdash; clean design, shows your items, the number of pieces, and what you invested. Post your trip results on Instagram, TikTok, or wherever you share your reselling content.</p>
+                </section>
+
+                <section>
+                    <h2>Cash vs card tracking on expenses</h2>
+                    <p>We also added the ability to tag every expense as cash or card. My wife asked for this one &mdash; at car boots and markets almost everything is cash, and it&rsquo;s easy to lose track of how much actually went out. Card expenses show on your bank statement but cash just disappears unless you wrote it down.</p>
+                </section>
+
+                <section>
+                    <h2>How to get started</h2>
+                    <p>If you&rsquo;re already using FlipperHelper, update to the latest version. You&rsquo;ll see a <strong>Hauls</strong> card on the home screen &mdash; tap it to create your first haul.</p>
+                    <p>If you&rsquo;re new, the app is free on the App Store. No account required, works offline, no ads. Check our <a href="../faq.html">FAQ</a> if you have questions, or read our guide on <a href="how-to-track-reselling-profits.html">how to track reselling profits properly</a> for the full picture on expense tracking.</p>
+                </section>
+
+                <section class="blog-faq">
+                    <h2>Frequently asked questions</h2>
+
+                    <h3>How do I know if a car boot sale trip was profitable?</h3>
+                    <p>Add up all trip costs (entry fees, fuel, parking, items purchased) and compare against total revenue from selling those items. The trip is profitable once sales exceed total costs. FlipperHelper&rsquo;s Hauls feature tracks this automatically and updates as items sell.</p>
+
+                    <h3>What is the best way to track reselling expenses per trip?</h3>
+                    <p>Group your expenses and items by trip. Include entry fees, transport costs, and any other trip-specific spending. In FlipperHelper, create a Haul for each trip &mdash; the app calculates total cost vs revenue automatically.</p>
+
+                    <h3>How long does it take to know if a sourcing trip was worth it?</h3>
+                    <p>It depends on how quickly your items sell. Some sell within days, others take months. Per-trip tracking that updates over time is ideal &mdash; check back periodically and see the trip moving from a loss into profit.</p>
+                </section>
+
+                <section class="blog-cta">
+                    <h2>Start tracking profit on every sourcing trip</h2>
+                    <p>Create a haul, add your items and expenses, see exactly what each trip made or lost. Free on iOS &mdash; no account, works offline.</p>
+                    <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer footer-compact">
+        <div class="container">
+            <div class="footer-row">
+                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
+                <div class="footer-links-inline">
+                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
+                    <a href="../privacy.html">Privacy</a>
+                    <a href="../terms.html">Terms</a>
+                    <a href="mailto:andreevichprudnikov@gmail.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script data-goatcounter="https://grommash9.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

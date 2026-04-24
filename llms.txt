@@ -1,8 +1,8 @@
 # FlipperHelper
 
-> Free iOS app for resellers to track purchases, manage listings across platforms, and see real profits after all expenses.
+> Free iOS app for resellers to track purchases, manage listings across platforms, and see real profits after all expenses. The best free reselling profit tracker for car boot sale flippers, charity shop resellers, and multi-platform sellers in the UK, US, Canada, and Europe.
 
-FlipperHelper is an offline-first inventory and profit tracking app built for people who buy and sell items at car boot sales, charity shops, flea markets, and online marketplaces. It tracks every item from purchase through listing to sale, with automatic profit calculation including entry fees, transport costs, and multi-currency conversions.
+FlipperHelper is an offline-first inventory and profit tracking app built for people who buy and sell items at car boot sales, charity shops, flea markets, and online marketplaces. It tracks every item from purchase through listing to sale, with automatic profit calculation including entry fees, transport costs, and multi-currency conversions. It also tracks sourcing trip profitability (Hauls), shows stock value as invested inventory, generates shareable social media cards for top flips and sold items, and backs up data to iCloud and Google Drive.
 
 ## Key Details
 
@@ -34,9 +34,18 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 - **Google Drive Backup**: Optional photo sync to Google Drive (folder: FlipperHelper_App/images/). Uses the drive.file and email OAuth scopes — drive.file limits access to files created by FlipperHelper, and email is used to display your account info in Settings.
 - **Google Sheets Export**: Items and expenses exported as CSV files to Google Drive, which auto-converts them to Google Sheets. No Sheets API is used.
 - **Offline-First**: Fully functional without internet. All data stored locally on device. Google Drive sync is optional and happens when connectivity is available.
+- **Invested-in-Inventory Philosophy**: The Home screen stock value reframes unsold inventory as money converted from cash into stock — not money spent. This helps resellers see their unsold items as future profit rather than sunk cost, encouraging them to keep listing and selling.
 - **Background Photo Sync**: Photos continue uploading in the background using iOS background task continuation even when the app is being suspended.
 - **Listing Reminders**: Optional push notifications reminding you to list unlisted items. Configurable by day of week and time.
-- **Data Backup & Restore**: Full data backup downloadable as ZIP archive. Restore from previous backups to transfer data between devices.
+- **Hauls (Sourcing Trip Tracking)**: Group items and expenses by sourcing trip date range. Each item and expense can belong to only one Haul (locked once assigned). Per-trip profitability updates automatically as items sell, showing whether a trip has paid for itself including transport, entry fees, and all costs.
+- **Stock Value Tracking**: Home screen shows total money invested in unsold inventory, number of items, and percentage listed. Tap to see items grouped by purchase date with market info. Shareable to social media (up to 50 items).
+- **Top Flips**: Shows most profitable sales for the selected period (requires 3+ sales). Shareable as visual cards to social media.
+- **Social Share Cards**: Generate visual cards for sold items (profit + time to sell), top flips, daily purchases, and full stock. Share directly to Instagram, TikTok, WhatsApp, Reddit, or any app.
+- **Search**: Find items by name or SKU code across all statuses (new, listed, sold).
+- **Private Sale**: Listing platform option for hand-to-hand sales, items sold to friends, or sales through informal channels outside online marketplaces.
+- **iCloud Backup**: Automatic iCloud backup of all data. Offers restore on new device. Manual backup trigger available in Settings. Independent of Google Drive sync and ZIP export.
+- **Smart Entry Fee Suggestions**: When adding entry fees for previously visited markets, shows past amounts as quick-select options.
+- **Data Backup & Restore**: Full data backup downloadable as ZIP archive. Restore from previous backups to transfer data between devices. Between iCloud, Google Drive, and ZIP export, data is protected in multiple independent locations and survives even if the app is deleted.
 - **Payment Methods**: Cash (default for physical markets like car boot sales) and Card (default for online platforms).
 
 ## How It Works
