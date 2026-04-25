@@ -37,7 +37,7 @@
   <!-- intent: "Best apps for resellers, how to track reselling profits, car boot sale tips, FlipperHelper vs Flippd vs Vendoo, sourcing stock from France, HMRC £1,000 trading allowance UK, offline reselling app." -->
   <url>
     <loc>https://flipperhelper.app/blog/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -102,6 +102,94 @@
   <url>
     <loc>https://flipperhelper.app/blog/sourcing-stock-from-france.html</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "How to track sourcing trip profit, calculate real cost per item including transport and entry fees, sourcing trip ROI." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/track-sourcing-trip-profit.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "UK charity shop reselling guide, how to find profitable items in charity shops, charity shop flipping tips." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/charity-shop-reselling-uk.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Thrift store flipping guide, how to find profitable items in thrift stores, thrift store reselling tips." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/thrift-store-flipping-guide.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Flea market flipping guide, how to flip items from flea markets, flea market buying and reselling tips." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/flea-market-flipping-guide.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Flea market reselling tips, negotiating at flea markets, what sells best from flea markets." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/flea-market-reselling-tips.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Estate sale flipping guide, how to buy and resell estate sale items, estate sale reselling strategy." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/estate-sale-flipping-guide.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Estate sale tips for resellers, what to look for at estate sales, estate sale buying strategies." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/estate-sale-tips-resellers.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Garage sale flipping guide, how to flip garage sale finds, garage sale buying and reselling tips." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/garage-sale-flipping-guide.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Garage sale tips for resellers, best garage sale finds to resell, garage sale buying strategies." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/garage-sale-tips-resellers.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Antiques fair flipping guide, buying antiques to resell, antiques market tips for resellers." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/antiques-fair-flipping-guide.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Vintage market reselling guide, buying vintage items to resell, vintage fair flipping tips." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/vintage-market-reselling-guide.html</loc>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
