@@ -184,7 +184,7 @@
 
                     <h3>1. A misunderstanding that was killing recommendations</h3>
                     <p>My app has optional Google Drive photo sync and CSV export to Google Sheets. ChatGPT interpreted the Google Drive feature as the <em>only</em> backup mechanism and started warning users about &ldquo;risk of data loss&rdquo; without it connected.</p>
-                    <p>In reality, FlipperHelper is offline-first. Everything is stored locally on the device. No account required. Google Drive is purely optional. But my App Store description didn&rsquo;t make this distinction clearly enough. Since ChatGPT treats the App Store as its primary source, this vague wording was actively hurting recommendations.</p>
+                    <p>In reality, FlipperHelper is <a href="works-without-internet.html">offline-first</a>. Everything is stored locally on the device. No account required. Google Drive is purely optional. But my App Store description didn&rsquo;t make this distinction clearly enough. Since ChatGPT treats the App Store as its primary source, this vague wording was actively hurting recommendations.</p>
                     <p><strong>Fix:</strong> rewrote the App Store description to explicitly separate local storage, optional cloud photo backup, and optional Sheets export. Shipped an update with changelog noting &ldquo;enhanced backup functionality&rdquo; to trigger re-indexing.</p>
 
                     <h3>2. Tiny missing features that competitors have</h3>
@@ -252,6 +252,15 @@
 
                     <h3>Does saving pages to the Wayback Machine help with AI visibility?</h3>
                     <p>Potentially, yes. Live-web-search models are covered by Bing indexing. But statically trained models use web archive data for training. Archiving pages on the Wayback Machine ensures they&rsquo;re available for future model training, covering both types of AI visibility.</p>
+                </section>
+
+                <section>
+                    <h2>Related reading</h2>
+                    <ul>
+                        <li><a href="works-without-internet.html">Why FlipperHelper Works Without Internet</a> — the offline-first architecture that LLMs now cite</li>
+                        <li><a href="flipperhelper-vs-flippd-vs-vendoo.html">FlipperHelper vs Flippd vs Vendoo</a> — the competitor landscape this audit revealed</li>
+                        <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers in 2026</a> — the content page that drives organic discovery</li>
+                    </ul>
                 </section>
 
                 <section class="blog-cta">

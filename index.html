@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlipperHelper — Real Profit Tracker for Resellers</title>
-    <meta name="description" content="Free iOS app for resellers. Track every flip from car boot sale to sold — see your real profit after fees, transport, and expenses. Works offline.">
+    <title>FlipperHelper — Inventory & Profit Tracker for Resellers</title>
+    <meta name="description" content="Free iOS app for resellers. Track inventory from purchase to sale across 16 platforms. See your real profit after entry fees, transport, and every expense. iCloud backup, works offline.">
     <link rel="icon" type="image/svg+xml" href="logo_FH.svg">
     <link rel="apple-touch-icon" href="logo_FH.png">
     <link rel="preconnect" href="https://assets.mailerlite.com">
@@ -19,7 +19,7 @@
     <link rel="alternate" hreflang="x-default" href="https://flipperhelper.app/">
     <!-- OpenGraph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="FlipperHelper - Track Your Flipping Business">
+    <meta property="og:title" content="FlipperHelper — Free Inventory & Profit Tracker for Resellers">
     <meta property="og:description" content="Free iOS app for resellers. Track purchases at car boot sales, list on eBay, Vinted, Facebook and 13 more platforms. See real profits after all expenses.">
     <meta property="og:url" content="https://flipperhelper.app/">
     <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
@@ -29,7 +29,7 @@
     <meta property="og:locale" content="en_GB">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FlipperHelper - Track Your Flipping Business">
+    <meta name="twitter:title" content="FlipperHelper — Free Inventory & Profit Tracker for Resellers">
     <meta name="twitter:description" content="Free iOS app for resellers. Track purchases, list on 16 platforms, see real profits after all expenses.">
     <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
     <!-- JSON-LD Structured Data: SoftwareApplication -->
@@ -38,7 +38,7 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "FlipperHelper",
-      "description": "Free iOS app for resellers to track purchases at car boot sales, flea markets, and charity shops. Manage inventory across 16 selling platforms including eBay, Vinted, Facebook Marketplace, and Depop. Calculate real profit after entry fees, transport costs, and multi-currency conversions.",
+      "description": "Free iOS inventory and profit tracker for resellers who source at car boot sales, flea markets, and charity shops. Track items from purchase to sale across 16 platforms. Calculate real profit after entry fees, transport, and every expense. Automatic iCloud backup, Google Sheets export, works fully offline.",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "iOS 17+",
       "offers": {
@@ -68,11 +68,18 @@
         "Expense tracking: entry fees, transport (car, bus, train, taxi, van, bike rental), and other costs",
         "Multi-currency support (USD, EUR, GBP, CAD) with automatic daily exchange rates",
         "Market and seller management with GPS auto-detection",
-        "Google Drive photo backup (drive.file and email scopes) and CSV export to Google Sheets",
-        "Offline-first — works without internet at markets",
+        "Automatic iCloud backup every 5 minutes — enabled by default, works offline",
+        "Google Drive photo sync and Google Sheets export (drive.file scope only)",
+        "Offline-first — works without internet at markets, all data stored on device",
         "Background photo sync via iOS background task continuation",
-        "Listing reminders via push notifications",
-        "Money Flow dashboard with monthly revenue, profit, and expense breakdown",
+        "Listing reminders via configurable push notifications",
+        "Money Flow dashboard with week, month, and custom date range views",
+        "Hauls: group items and expenses by sourcing trip with per-trip profit tracking",
+        "5 share card types for social media: Flip Card, Monthly Recap, Top Flips, Daily Haul, My Stock",
+        "Celebration system: first sale, best flip ever, best month, first profit, profit streak",
+        "Stock value tracking on home screen with daily breakdown",
+        "Search across inventory by name or SKU with inline sold button",
+        "Days to sell tracking per item",
         "Full data backup and restore as ZIP archive"
       ],
       "screenshot": [
@@ -116,7 +123,7 @@
           "name": "What is FlipperHelper?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "FlipperHelper is a free iOS app for resellers who buy items at car boot sales, charity shops, and flea markets to resell for profit. It tracks every item from purchase through listing to sale, calculates your real profit after all expenses (entry fees, transport, packaging), and works completely offline."
+            "text": "FlipperHelper is a free iOS inventory and profit tracker for resellers who buy items at car boot sales, charity shops, and flea markets to resell. It tracks every item from purchase through listing to sale, calculates your real profit after all expenses (entry fees, transport, packaging), and works completely offline with automatic iCloud backup."
           }
         },
         {
@@ -124,7 +131,7 @@
           "name": "Is FlipperHelper really free?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. FlipperHelper is free to download with no ads. Every current feature is available at no cost — item tracking, expense tracking, profit calculation, multi-currency support, Google Drive backup, and offline mode. No account required."
+            "text": "Yes. FlipperHelper is free to download with no ads. Every current feature is available at no cost — item tracking, expense tracking, profit calculation, multi-currency support, iCloud backup, Google Sheets export, and offline mode. No account required."
           }
         },
         {
@@ -132,7 +139,7 @@
           "name": "Does FlipperHelper work offline?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. FlipperHelper is offline-first — all data is stored locally on your iPhone. You can log purchases, mark listings, and record sales with no internet connection. Google Drive sync is optional and happens when you're back online."
+            "text": "Yes. FlipperHelper is offline-first — all data is stored locally on your iPhone with automatic iCloud backup. You can log purchases, mark listings, and record sales with no internet connection. Google Drive export is optional and happens when you're back online."
           }
         },
         {
@@ -148,7 +155,7 @@
           "name": "How is FlipperHelper different from Vendoo or Flippd?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "FlipperHelper is a profit tracker, not a cross-listing tool. Vendoo pushes listings to multiple platforms — FlipperHelper tracks what you bought, what it cost to get there, and your real profit after all expenses. Flippd is also a tracker but charges $9.99/month and focuses on barcode price research. FlipperHelper is free and focuses on expense tracking for market sourcing."
+            "text": "FlipperHelper is an inventory and profit tracker, not a cross-listing tool. Vendoo pushes listings to multiple platforms — FlipperHelper tracks what you bought, what it cost to get there, and your real profit after all expenses. Flippd is also a tracker but charges $9.99/month and focuses on barcode price research. FlipperHelper is free and focuses on expense tracking for market sourcing."
           }
         }
       ]
@@ -199,8 +206,8 @@
                 <div class="hero-grid">
                     <div class="hero-content">
                         <div class="hero-badge">Now on the App Store</div>
-                        <h1>Track Your Flipping Business</h1>
-                        <p class="hero-subtitle">The iOS app for resellers. Track purchases, list on eBay, Facebook, Vinted & more. See your real profits.</p>
+                        <h1>Inventory &amp; Profit Tracker for Resellers</h1>
+                        <p class="hero-subtitle">The free iOS app for resellers. Track inventory, manage listings across 16 platforms, and see your real profit after every expense. Works offline.</p>
 
                         <div class="hero-cta">
                             <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">
@@ -214,7 +221,7 @@
                             <div class="hero-feature">📸 Snap purchases</div>
                             <div class="hero-feature">🏷️ Track listings</div>
                             <div class="hero-feature">💰 See profits</div>
-                            <div class="hero-feature">☁️ Google backup</div>
+                            <div class="hero-feature">📴 Works offline</div>
                         </div>
                     </div>
                     <div class="hero-visual">
@@ -233,7 +240,7 @@
             <div class="container">
                 <span class="section-subtitle">Simple Workflow</span>
                 <h2>How FlipperHelper Works</h2>
-                <p>Three steps from market find to real profit.</p>
+                <p>The inventory and profit tracker for resellers — three steps from market find to real profit.</p>
                 <div class="features-grid">
                     <div class="feature-card animate-on-scroll" style="transition-delay: 0ms">
                         <div class="feature-icon">📸</div>
@@ -293,7 +300,7 @@
         <section class="features" id="features">
             <div class="container">
                 <span class="section-subtitle">Key Features</span>
-                <h2>Everything You Need to Track Flips</h2>
+                <h2>Reseller Inventory &amp; Profit Tracking Features</h2>
                 <p>Built specifically for resellers who source in person.</p>
                 <div class="features-grid">
                     <div class="feature-card animate-on-scroll" style="transition-delay: 0ms">
@@ -314,17 +321,47 @@
                     <div class="feature-card animate-on-scroll" style="transition-delay: 0ms">
                         <div class="feature-icon">📴</div>
                         <h3>Offline-First</h3>
-                        <p>Works perfectly at markets with no WiFi. All data is stored locally on your iPhone. Sync to Google Drive when you're back online — it's completely optional.</p>
+                        <p>Works perfectly at markets with no WiFi. All data is stored locally on your iPhone with automatic iCloud backup. No account required, no server — your data never leaves your device.</p>
                     </div>
                     <div class="feature-card animate-on-scroll" style="transition-delay: 100ms">
                         <div class="feature-icon">☁️</div>
-                        <h3>Google Drive Backup</h3>
-                        <p>Photos upload to your Google Drive automatically in the background. Export your inventory as a CSV that converts to a Google Sheet for spreadsheet analysis.</p>
+                        <h3>Triple Backup</h3>
+                        <p>Automatic iCloud backup every 5 minutes — enabled by default. Export to Google Sheets with one tap. Photo sync to your Google Drive in the background. Your data is always safe.</p>
                     </div>
                     <div class="feature-card animate-on-scroll" style="transition-delay: 200ms">
                         <div class="feature-icon">📍</div>
                         <h3>Smart Markets</h3>
                         <p>GPS auto-suggests nearby markets when you open the app. Track which sellers you buy from, set geofence radii, and see spending per market over time.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 0ms">
+                        <div class="feature-icon">📊</div>
+                        <h3>Hauls &amp; Trip Tracking</h3>
+                        <p>Group items and expenses by sourcing trip. See per-trip profit as items sell over weeks and months. Know which markets are worth the early morning.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 100ms">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Share Cards &amp; Celebrations</h3>
+                        <p>Share your best flips, monthly stats, and daily hauls as visual cards on social media. Auto-celebrations for first sale, best flip ever, and best month.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 200ms">
+                        <div class="feature-icon">📦</div>
+                        <h3>Stock Value Dashboard</h3>
+                        <p>See how much money is invested in unsold inventory. Money Flow dashboard shows Made from Flips, costs breakdown, and net profit by week, month, or custom range.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 0ms">
+                        <div class="feature-icon">🔍</div>
+                        <h3>Search</h3>
+                        <p>Find any item by name or SKU across your entire inventory. Mark items as sold directly from search results — no scrolling through long lists.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 100ms">
+                        <div class="feature-icon">📅</div>
+                        <h3>Days to Sell</h3>
+                        <p>Track how long each item takes from listed to sold. Spot slow movers early, identify your fastest-selling categories, and make smarter sourcing decisions.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 200ms">
+                        <div class="feature-icon">🔔</div>
+                        <h3>Listing Reminders</h3>
+                        <p>Push notifications remind you to list items you haven't listed yet. Set your preferred days and times. Everything processed on device — no server.</p>
                     </div>
                 </div>
             </div>
@@ -336,7 +373,7 @@
                 <span class="section-subtitle">Who It's For</span>
                 <h2>Built for Resellers Who Source In Person</h2>
                 <div class="audience-content">
-                    <p>FlipperHelper is the profit tracker for people who buy secondhand items to resell. Whether you're a <strong>car boot sale flipper</strong> in the UK, a <strong>flea market seller</strong> in the US, a <strong>charity shop reseller</strong> sourcing for eBay, or a <strong>Vinted and Depop side hustler</strong> in Canada or Europe — this app replaces the messy spreadsheet you've been using to track what you bought, where you listed it, and how much you actually made.</p>
+                    <p>FlipperHelper is the inventory and profit tracker for people who buy secondhand items to resell. Whether you're a <strong>car boot sale flipper</strong> in the UK, a <strong>flea market seller</strong> in the US, a <strong>charity shop reseller</strong> sourcing for eBay, or a <strong>Vinted and Depop side hustler</strong> in Canada or Europe — this app replaces the messy spreadsheet you've been using to track what you bought, where you listed it, and how much you actually made.</p>
                     <p>Unlike cross-listing tools, FlipperHelper doesn't post items for you. It tracks the entire lifecycle — purchase, listing, sale, expenses — and shows your <strong>real profit after all costs</strong>. Entry fees at the market, petrol to get there, the item price, and the final selling price on any of 16 platforms. That's the number that matters.</p>
                     <p>FlipperHelper is <strong>free to download with no ads</strong>. Every current feature is available at no cost. Read our <a href="privacy.html" class="text-link">privacy policy</a> and <a href="terms.html" class="text-link">terms of use</a>.</p>
                     <p><a href="faq.html" class="text-link">See all 46 frequently asked questions &rarr;</a></p>
@@ -372,8 +409,8 @@
                         <span class="stat-label">Currencies</span>
                     </div>
                     <div class="stat-card animate-on-scroll" style="transition-delay: 320ms">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Expense Types</span>
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Share Card Types</span>
                     </div>
                     <div class="stat-card animate-on-scroll" style="transition-delay: 400ms">
                         <span class="stat-number">31</span>
@@ -387,8 +424,8 @@
         <section class="comparison-section">
             <div class="container">
                 <span class="section-subtitle">Comparison</span>
-                <h2>How FlipperHelper Compares</h2>
-                <p>FlipperHelper is a profit tracker, not a cross-listing tool. It complements services like Vendoo rather than replacing them. <a href="faq.html#what-is-flipperhelper-not" class="text-link">Learn more in the FAQ</a>.</p>
+                <h2>FlipperHelper vs Spreadsheets, Vendoo &amp; Flippd</h2>
+                <p>FlipperHelper is an inventory and profit tracker, not a cross-listing tool. It complements services like Vendoo rather than replacing them. <a href="blog/best-apps-for-resellers-2026.html" class="text-link">Read the full comparison</a> or <a href="faq.html#what-is-flipperhelper-not" class="text-link">check the FAQ</a>.</p>
                 <div class="comparison-table-wrapper">
                     <table class="comparison-table">
                         <thead>
@@ -438,10 +475,66 @@
                             </tr>
                             <tr>
                                 <td>Type</td>
-                                <td class="highlight-col">Profit tracker</td>
+                                <td class="highlight-col"><strong>Inventory &amp; profit tracker</strong></td>
                                 <td>DIY</td>
                                 <td>Cross-lister</td>
                                 <td>Inventory</td>
+                            </tr>
+                            <tr>
+                                <td>Sourcing trip tracking</td>
+                                <td class="highlight-col"><strong>Hauls with per-trip profit</strong></td>
+                                <td>Manual</td>
+                                <td>No</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Stock value dashboard</td>
+                                <td class="highlight-col"><strong>Yes (invested in inventory)</strong></td>
+                                <td>Manual</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Share cards</td>
+                                <td class="highlight-col"><strong>5 types (social media ready)</strong></td>
+                                <td>No</td>
+                                <td>No</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>iCloud backup</td>
+                                <td class="highlight-col"><strong>Automatic (every 5 min)</strong></td>
+                                <td>N/A</td>
+                                <td>Cloud</td>
+                                <td>Cloud</td>
+                            </tr>
+                            <tr>
+                                <td>Google Sheets export</td>
+                                <td class="highlight-col"><strong>One-tap CSV &rarr; Sheets</strong></td>
+                                <td>Native</td>
+                                <td>No</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Celebrations</td>
+                                <td class="highlight-col"><strong>First sale, best flip, best month</strong></td>
+                                <td>No</td>
+                                <td>No</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Custom date ranges</td>
+                                <td class="highlight-col"><strong>Week / month / custom</strong></td>
+                                <td>Manual</td>
+                                <td>No</td>
+                                <td>Limited</td>
+                            </tr>
+                            <tr>
+                                <td>Search</td>
+                                <td class="highlight-col"><strong>By name or SKU</strong></td>
+                                <td>Ctrl+F</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
                             </tr>
                         </tbody>
                     </table>
@@ -457,15 +550,15 @@
                 <div class="faq-list">
                     <details class="faq-item" name="faq">
                         <summary>What is FlipperHelper?</summary>
-                        <p>FlipperHelper is a free iOS app for resellers who buy items at car boot sales, charity shops, and flea markets to resell for profit. It tracks every item from purchase through listing to sale, calculates your real profit after all expenses (entry fees, transport, packaging), and works completely offline.</p>
+                        <p>FlipperHelper is a free iOS inventory and profit tracker for resellers who buy items at car boot sales, charity shops, and flea markets to resell. It tracks every item from purchase through listing to sale, calculates your real profit after all expenses (entry fees, transport, packaging), and works completely offline with automatic iCloud backup.</p>
                     </details>
                     <details class="faq-item" name="faq">
                         <summary>Is FlipperHelper really free?</summary>
-                        <p>Yes. FlipperHelper is free to download with no ads. Every current feature is available at no cost — item tracking, expense tracking, profit calculation, multi-currency support, Google Drive backup, and offline mode. No account required.</p>
+                        <p>Yes. FlipperHelper is free to download with no ads. Every current feature is available at no cost — item tracking, expense tracking, profit calculation, multi-currency support, iCloud backup, Google Sheets export, and offline mode. No account required.</p>
                     </details>
                     <details class="faq-item" name="faq">
                         <summary>Does FlipperHelper work offline?</summary>
-                        <p>Yes. FlipperHelper is offline-first — all data is stored locally on your iPhone. You can log purchases, mark listings, and record sales with no internet connection. Google Drive sync is optional and happens when you're back online.</p>
+                        <p>Yes. FlipperHelper is offline-first — all data is stored locally on your iPhone with automatic iCloud backup. You can log purchases, mark listings, and record sales with no internet connection. Google Drive export is optional and happens when you're back online.</p>
                     </details>
                     <details class="faq-item" name="faq">
                         <summary>What selling platforms does FlipperHelper support?</summary>
@@ -473,7 +566,7 @@
                     </details>
                     <details class="faq-item" name="faq">
                         <summary>How is FlipperHelper different from Vendoo or Flippd?</summary>
-                        <p>FlipperHelper is a profit tracker, not a cross-listing tool. Vendoo pushes listings to multiple platforms — FlipperHelper tracks what you bought, what it cost to get there, and your real profit after all expenses. Flippd is also a tracker but charges $9.99/month and focuses on barcode price research. FlipperHelper is free and focuses on expense tracking for market sourcing. <a href="blog/flipperhelper-vs-flippd-vs-vendoo.html" class="text-link">Read the full comparison</a>.</p>
+                        <p>FlipperHelper is an inventory and profit tracker, not a cross-listing tool. Vendoo pushes listings to multiple platforms — FlipperHelper tracks what you bought, what it cost to get there, and your real profit after all expenses. Flippd is also a tracker but charges $9.99/month and focuses on barcode price research. FlipperHelper is free and focuses on expense tracking for market sourcing. <a href="blog/flipperhelper-vs-flippd-vs-vendoo.html" class="text-link">Read the full comparison</a>.</p>
                     </details>
                 </div>
                 <p class="faq-more"><a href="faq.html" class="text-link">See all 46 frequently asked questions &rarr;</a></p>
@@ -519,7 +612,7 @@
     <footer class="footer footer-compact" role="contentinfo">
         <div class="container">
             <div class="footer-row">
-                <p>&copy; 2025–2026 Oleksandr Prudnikov · Last updated April 3, 2026</p>
+                <p>&copy; 2025–2026 Oleksandr Prudnikov · Last updated April 25, 2026</p>
                 <nav aria-label="Footer navigation" class="footer-links-inline">
                     <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
                     <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
