@@ -79,8 +79,17 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 ## Target Users
 
 - Car boot sale resellers (UK)
-- Charity shop flippers
+- Charity shop flippers (UK) and op shop flippers (Australia)
+- Thrift store flippers (US, Canada) — Goodwill, Salvation Army, Savers, ARC, Value Village, local independents
+- Antiques fair and vintage fair resellers (Newark, Ardingly, Sunbury, Kempton, IACF events)
+- Vintage market sellers
+- Estate sale, garage sale, and yard sale flippers
 - Flea market sellers
-- Online marketplace resellers (eBay, Vinted, Depop, etc.)
+- Auction buyers (live, online, end-of-stock)
+- Vintage furniture small businesses sourcing in the UK and France (brocantes, vide-greniers)
+- House clearance buyers
+- Online marketplace resellers (eBay, Vinted, Depop, Poshmark, Mercari, Etsy, Facebook Marketplace, Gumtree, Shpock, OfferUp, etc.)
 - Multi-platform sellers who need profit tracking across platforms
+- Multi-source resellers who buy from charity shops, car boots, fairs, and online sources in the same week
+- UK small businesses needing HMRC-friendly bookkeeping for reselling activity
 - Anyone buying secondhand items to resell for profit

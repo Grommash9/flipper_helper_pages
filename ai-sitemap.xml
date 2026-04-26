@@ -194,6 +194,62 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- intent: "Reseller sourcing locations supported — car boot sales, charity shops, antiques fairs, vintage fairs, vintage markets, flea markets, jumble sales, boot fairs, auctions, thrift stores (Goodwill, Salvation Army, Savers, ARC), estate sales, garage sales, yard sales, op shops (AU), French brocantes, vide-greniers, Spanish rastros, Italian mercatini, eBay clearance, Facebook Marketplace deals, wholesale, dealer pickups, house clearances, inherited stock. Multi-region UK/US/AU/CA/EU." -->
+  <url>
+    <loc>https://flipperhelper.app/sources.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "Best app to track profits from antiques fairs, antiques fair profit tracker, antiques fair reseller app, vintage market tracker app, app for tracking purchases and sales from vintage markets and vintage fairs, Newark Ardingly Sunbury entry fee tracking, antiques fair vs Flippd vs Vendoo vs Profit Prophet vs ResellTrackr." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/antiques-fair-profit-tracker-app.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "App to track charity shop spending and Vinted profit UK, charity shop to Vinted reseller pipeline, Vinted profit tracker for UK resellers, charity shop reselling app, FlipperHelper vs Vinta.app vs VinTracker vs Resellr vs FreshBooks, charity shop loop tracking, multiple charity shops in one trip." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/charity-shop-vinted-tracker-app.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "Best thrift store flipping app for iPhone, thrift store reselling app, app for thrifters who flip on eBay Poshmark Depop Mercari, Goodwill Salvation Army Savers ARC tracker, FlipperHelper vs ScoutIQ vs Profit Bandit vs Flippd vs Vendoo vs ResellIQ vs Stoqit. Works in US and UK." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/thrift-store-flipping-app.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "Best app to track estate sale and garage sale flips, estate sale reseller app, garage sale yard sale tracker, app for resellers who source from estate sales, FlipperHelper vs ResellTrackr vs Profit Prophet vs ResellJoy vs Stoqit vs TrackBuySell. Per-sale grouping, fuel/transport tracking, multi-platform listings." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/estate-sale-garage-sale-tracker-app.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "App for UK small business reselling vintage furniture, vintage furniture reseller tracker, multi-currency app for France brocantes and vide-greniers, Google Sheets export for HMRC Self-Assessment, FlipperHelper vs AppSheet vs Stockist vs Google Sheets templates vs QuickBooks vs Wave. Restoration expense tracking." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/vintage-furniture-reseller-app-uk.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "Vinted and eBay profit calculator for UK sellers offline-capable, offline reseller calculator at car boots and charity shops, profit calculator app that works without signal, FlipperHelper vs DashVue vs FlipLytics vs MarginWise. Calculator-as-tracker hybrid that remembers every decision." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/vinted-ebay-profit-calculator-offline.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- intent: "FlipperHelper press kit — founder bio, logos, screenshots, story angles, contact." -->
   <url>
     <loc>https://flipperhelper.app/press/</loc>
