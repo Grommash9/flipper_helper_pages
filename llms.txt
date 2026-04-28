@@ -27,7 +27,7 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 - **18 Sold Platforms**: Record where items sold — all 16 listing platforms plus Car Boot (physical market sales) and Sold Offline (private sales).
 - **Profit Calculation**: Automatic profit per item calculated as sold price minus purchase price, with multi-currency exchange rate conversion when buy and sell currencies differ.
 - **Money Flow Dashboard**: Monthly financial overview showing total revenue, profit, expenses by category, percentage of items listed, and average days-to-sell.
-- **Multi-Currency Support**: Four currencies supported — USD ($), EUR (€), GBP (£), and CAD (CA$). Automatic daily exchange rates with 365-day history cached locally. Cross-rate calculations via direct, reverse, or common base conversion.
+- **Multi-Currency Support**: Five currencies supported — USD ($), EUR (€), GBP (£), CAD (CA$), and AUD (A$). Automatic daily exchange rates with 365-day history cached locally. Cross-rate calculations via direct, reverse, or common base conversion.
 - **Expense Tracking**: Three expense categories — entry fees (per market visit), transport expenses (car with gas/service/parking subcategories, bus, train, taxi, van, bike rental), and other expenses (custom with memo description). All expenses support multi-currency.
 - **Market Management**: Save markets with GPS coordinates and configurable detection radius (default 5 km). When near a saved market, the app auto-suggests it for new items.
 - **Seller Tracking**: Save sellers and associate them with items to track which sellers provide the best stock.
