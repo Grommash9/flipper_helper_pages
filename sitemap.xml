@@ -7,6 +7,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://flipperhelper.app/about.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://flipperhelper.app/faq.html</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -15,6 +21,48 @@
   <url>
     <loc>https://flipperhelper.app/sources.html</loc>
     <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://flipperhelper.app/blog/uk-car-boot-sales-near-me-2026.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://flipperhelper.app/blog/portobello-road-market-uk-reseller-guide.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://flipperhelper.app/blog/best-uk-antiques-fairs-2026.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://flipperhelper.app/blog/best-uk-online-auction-sites-resellers.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://flipperhelper.app/blog/shiply-furniture-delivery-uk-resellers.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://flipperhelper.app/blog/marche-aux-puces-saint-ouen-uk-guide.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://flipperhelper.app/blog/best-french-brocantes-2026-uk-sourcing.html</loc>
+    <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
