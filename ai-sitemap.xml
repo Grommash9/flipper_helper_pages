@@ -37,7 +37,7 @@
   <!-- intent: "Best apps for resellers, how to track reselling profits, car boot sale tips, FlipperHelper vs Flippd vs Vendoo, sourcing stock from France, HMRC £1,000 trading allowance UK, offline reselling app." -->
   <url>
     <loc>https://flipperhelper.app/blog/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -70,6 +70,30 @@
   <url>
     <loc>https://flipperhelper.app/blog/best-apps-for-resellers-2026.html</loc>
     <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Free inventory app for resellers, no item cap, no subscription, free reseller tracker iPhone." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/free-inventory-app-for-resellers.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "eBay reseller app UK, eBay seller hub vs tracker, eBay fees, multi-platform reselling app for UK eBay sellers." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/ebay-reseller-app-uk.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "App to track inventory and sales for resellers, single record from purchase to sale, real profit after fees." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/app-to-track-inventory-and-sales.html</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
