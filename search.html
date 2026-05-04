@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - FlipperHelper</title>
+    <meta name="description" content="Search FlipperHelper articles, guides, and FAQs about reselling on eBay, Vinted, Facebook Marketplace, car boot sales, charity shops, and more.">
+    <link rel="icon" type="image/svg+xml" href="logo_FH.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://flipperhelper.app/search.html">
+    <meta name="robots" content="noindex, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Search FlipperHelper">
+    <meta property="og:description" content="Search FlipperHelper articles, guides, and FAQs about reselling.">
+    <meta property="og:url" content="https://flipperhelper.app/search.html">
+    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
+    <meta property="og:site_name" content="FlipperHelper">
+    <meta property="og:locale" content="en_GB">
+    <style>
+        .search-page { min-height: 100vh; padding-top: calc(80px + var(--space-3xl)); padding-bottom: var(--space-4xl); }
+        .search-input-wrap { margin: 1.5rem 0 2rem; }
+        .search-input {
+            width: 100%; padding: 0.9rem 1rem; font-size: 1.1rem;
+            border: 2px solid #e0e0e0; border-radius: 8px;
+            font-family: inherit; box-sizing: border-box;
+        }
+        .search-input:focus { outline: none; border-color: #334B90; }
+        .search-meta { color: #666; font-size: 0.95rem; margin: 0.5rem 0 1.5rem; }
+        .search-results { list-style: none; padding: 0; margin: 0; }
+        .search-result { padding: 1rem 0; border-bottom: 1px solid #eee; }
+        .search-result a { color: #334B90; text-decoration: none; font-weight: 600; font-size: 1.1rem; }
+        .search-result a:hover { text-decoration: underline; }
+        .search-result .result-url { color: #888; font-size: 0.85rem; margin: 0.25rem 0; word-break: break-all; }
+        .search-result .result-desc { color: #444; margin: 0.4rem 0 0; line-height: 1.5; }
+        .search-result mark { background: #F9DDA5; color: inherit; padding: 0 2px; border-radius: 2px; }
+        .search-empty { color: #666; padding: 1.5rem 0; }
+        .search-tag { display: inline-block; padding: 2px 8px; font-size: 0.75rem; background: #BBCBF7; color: #1a2a5a; border-radius: 3px; margin-right: 0.5rem; vertical-align: middle; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="visually-hidden">Skip to content</a>
+    <nav class="nav" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <img src="logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
+                <span>FlipperHelper</span>
+            </a>
+            <div class="nav-links">
+                <a href="faq.html">FAQ</a>
+                <a href="blog/">Blog</a>
+                <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-small" target="_blank" rel="noopener">Get the App</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="search-page">
+        <div class="container">
+            <h1>Search FlipperHelper</h1>
+            <p>Find articles, guides, and answers across the whole site.</p>
+            <div class="search-input-wrap">
+                <label for="search-q" class="visually-hidden">Search query</label>
+                <input id="search-q" class="search-input" type="search"
+                       placeholder="Try: vinted fees, car boot, hmrc, ebay…"
+                       autocomplete="off" autofocus>
+            </div>
+            <p id="search-meta" class="search-meta" aria-live="polite"></p>
+            <ul id="search-results" class="search-results" role="list"></ul>
+            <p id="search-empty" class="search-empty" hidden>No results. Try different keywords or <a href="blog/">browse the blog</a>.</p>
+        </div>
+    </main>
+
+    <footer class="footer footer-compact" role="contentinfo">
+        <div class="container">
+            <div class="footer-row">
+                <p>&copy; 2025–2026 Oleksandr Prudnikov</p>
+                <div class="footer-links-inline">
+                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="mailto:andreevichprudnikov@gmail.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    (function () {
+        var input = document.getElementById('search-q');
+        var resultsEl = document.getElementById('search-results');
+        var metaEl = document.getElementById('search-meta');
+        var emptyEl = document.getElementById('search-empty');
+        var INDEX = [];
+
+        function escapeHtml(s) {
+            return s.replace(/[&<>"']/g, function (c) {
+                return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
+            });
+        }
+
+        function escapeRegex(s) {
+            return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+
+        function highlight(text, terms) {
+            var safe = escapeHtml(text);
+            for (var i = 0; i < terms.length; i++) {
+                var t = terms[i];
+                if (!t) continue;
+                var re = new RegExp('(' + escapeRegex(t) + ')', 'gi');
+                safe = safe.replace(re, '<mark>$1</mark>');
+            }
+            return safe;
+        }
+
+        function score(page, terms) {
+            var hay = (page.title + ' ' + page.description + ' ' + page.url).toLowerCase();
+            var s = 0;
+            for (var i = 0; i < terms.length; i++) {
+                var t = terms[i];
+                if (!t) continue;
+                if (hay.indexOf(t) === -1) return 0;
+                if (page.title.toLowerCase().indexOf(t) !== -1) s += 3;
+                if (page.description.toLowerCase().indexOf(t) !== -1) s += 1;
+                if (page.url.toLowerCase().indexOf(t) !== -1) s += 1;
+            }
+            return s;
+        }
+
+        function render(query) {
+            var terms = (query || '').toLowerCase().split(/\s+/).filter(Boolean);
+            resultsEl.innerHTML = '';
+
+            if (!terms.length) {
+                metaEl.textContent = INDEX.length + ' pages indexed. Start typing to search.';
+                emptyEl.hidden = true;
+                return;
+            }
+
+            var matches = INDEX
+                .map(function (p) { return { page: p, score: score(p, terms) }; })
+                .filter(function (x) { return x.score > 0; })
+                .sort(function (a, b) { return b.score - a.score; });
+
+            if (!matches.length) {
+                metaEl.textContent = '';
+                emptyEl.hidden = false;
+                return;
+            }
+
+            emptyEl.hidden = true;
+            metaEl.textContent = matches.length + ' result' + (matches.length === 1 ? '' : 's') + ' for "' + query + '"';
+
+            var frag = document.createDocumentFragment();
+            for (var i = 0; i < matches.length; i++) {
+                var p = matches[i].page;
+                var li = document.createElement('li');
+                li.className = 'search-result';
+                var typeLabel = p.type === 'post' ? 'Blog' : (p.type === 'home' ? 'Home' : 'Page');
+                li.innerHTML =
+                    '<span class="search-tag">' + typeLabel + '</span>' +
+                    '<a href="' + escapeHtml(p.url) + '">' + highlight(p.title, terms) + '</a>' +
+                    '<div class="result-url">' + escapeHtml('flipperhelper.app' + p.url) + '</div>' +
+                    '<p class="result-desc">' + highlight(p.description, terms) + '</p>';
+                frag.appendChild(li);
+            }
+            resultsEl.appendChild(frag);
+        }
+
+        function getQueryParam(name) {
+            var m = location.search.match(new RegExp('[?&]' + name + '=([^&]*)'));
+            return m ? decodeURIComponent(m[1].replace(/\+/g, ' ')) : '';
+        }
+
+        function debounce(fn, wait) {
+            var t;
+            return function () {
+                clearTimeout(t);
+                var args = arguments, ctx = this;
+                t = setTimeout(function () { fn.apply(ctx, args); }, wait);
+            };
+        }
+
+        var update = debounce(function () {
+            var q = input.value;
+            render(q);
+            // Update URL without reload
+            var newUrl = location.pathname + (q ? '?q=' + encodeURIComponent(q) : '') + location.hash;
+            if (history.replaceState) history.replaceState(null, '', newUrl);
+        }, 80);
+
+        fetch('/search-index.json', { cache: 'no-cache' })
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+                INDEX = data;
+                var initial = getQueryParam('q');
+                if (initial) input.value = initial;
+                render(input.value);
+                input.addEventListener('input', update);
+            })
+            .catch(function () {
+                metaEl.textContent = 'Could not load search index. Please try again later.';
+            });
+    })();
+    </script>
+    <script data-goatcounter="https://grommash9.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

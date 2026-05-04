@@ -277,9 +277,16 @@
   <!-- intent: "Best French brocantes 2026, biggest French flea markets for UK resellers, when is Braderie de Lille 2026, Réderie d'Amiens 2026 dates, Foire de Chatou 2026, L'Isle-sur-la-Sorgue antiques fair August 2026, French brocante calendar UK travellers, sourcing antiques from France 2026, vide-greniers near Calais Eurotunnel, biggest brocantes near UK ferry ports." -->
   <url>
     <loc>https://flipperhelper.app/blog/best-french-brocantes-2026-uk-sourcing.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://flipperhelper.app/blog/what-is-a-brocante-uk-guide.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <!-- intent: definitional / glossary — answers "what is a brocante" and the related cluster (vide-grenier, braderie, foire, salon des antiquaires, réderie, marché aux puces). UK reseller framing. -->
   </url>
 
   <!-- intent: "Best app to track profits from antiques fairs, antiques fair profit tracker, antiques fair reseller app, vintage market tracker app, app for tracking purchases and sales from vintage markets and vintage fairs, Newark Ardingly Sunbury entry fee tracking, antiques fair vs Flippd vs Vendoo vs Profit Prophet vs ResellTrackr." -->

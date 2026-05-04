@@ -1,0 +1,374 @@
+[
+  {
+    "url": "/",
+    "title": "FlipperHelper — Inventory & Profit Tracker for Resellers",
+    "description": "Free iOS app for resellers. Track inventory from purchase to sale across 16 platforms. See your real profit after entry fees, transport, and every expense. iCloud backup, works offline.",
+    "type": "home"
+  },
+  {
+    "url": "/about.html",
+    "title": "About Oleksandr Prudnikov",
+    "description": "About the developer of FlipperHelper — a free reselling tracker built for my wife's car boot business. UK-based, Ukrainian, software engineer.",
+    "type": "page"
+  },
+  {
+    "url": "/faq.html",
+    "title": "FAQ - FlipperHelper | Everything About the Reseller Tracking App",
+    "description": "46 questions answered about FlipperHelper, the free iOS profit tracker for UK car boot sale resellers and online sellers. Covers item tracking, expense tracking, hauls, multi-currency profit calculation, 16 selling platforms, Google Drive backup, iCloud sync, share cards, and more.",
+    "type": "page"
+  },
+  {
+    "url": "/changelog.html",
+    "title": "Changelog - FlipperHelper | Release Notes, Testing & QA",
+    "description": "Public changelog for FlipperHelper, the iOS reselling tracker. Every release since February 2026, plus the unit tests, 100,000-item stress benchmarks, and 63 automated Maestro QA flows that gate every build.",
+    "type": "page"
+  },
+  {
+    "url": "/sources.html",
+    "title": "Reseller Sourcing Locations Supported",
+    "description": "Every sourcing location FlipperHelper supports for tracking reseller profits — car boot sales, charity shops, antiques fairs, estate sales, garage sales, thrift stores, and more.",
+    "type": "page"
+  },
+  {
+    "url": "/press/index.html",
+    "title": "Press Kit",
+    "description": "FlipperHelper press kit. Download app screenshots, logos, app icon, and key facts about the free iOS reselling tracker app.",
+    "type": "page"
+  },
+  {
+    "url": "/blog/index.html",
+    "title": "Blog - FlipperHelper | Tips, Guides & Updates for Resellers",
+    "description": "FlipperHelper blog — reselling tips, profit tracking guides, car boot sale strategies, and app updates. Everything you need to flip smarter.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/antiques-fair-flipping-guide.html",
+    "title": "Antiques Fair Flipping: How to Buy and Resell",
+    "description": "How to flip antiques for profit at fairs, antique malls, and flea markets. Sourcing strategies, pricing, niche selection, and real examples from resellers.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/antiques-fair-profit-tracker-app.html",
+    "title": "Antiques Fair Profit Tracker App for UK Resellers",
+    "description": "Best app to track profits from antiques fairs and vintage markets. Log entry fees, transport, and per-item profit on iPhone — works offline, exports to Google Sheets.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/app-to-track-inventory-and-sales.html",
+    "title": "App to Track Inventory and Sales for Resellers (Free, iOS)",
+    "description": "An app to track inventory and sales for resellers — single record from purchase through listing to sale, with real profit after fees and expenses. How the workflow actually works in 2026.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/best-apps-for-resellers-2026.html",
+    "title": "Best Apps for Resellers in 2026: Inventory, Sales & Profit Tracking",
+    "description": "Comparison of the best reseller apps in 2026. Most resellers start with spreadsheets but switch within 6 months. Here's what works for tracking inventory, sales, and real profit.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/best-french-brocantes-2026-uk-sourcing.html",
+    "title": "Best French Brocantes 2026: UK Sourcing Guide",
+    "description": "The biggest French brocantes, antique fairs and braderies in 2026 — verified dates, scale, distance from Calais and Eurotunnel. Calendar for UK resellers sourcing stock from France.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/best-items-to-resell-uk.html",
+    "title": "Best Items to Resell UK 2026",
+    "description": "What to buy and sell for profit in the UK. Best categories and brands from car boot sales, charity shops, and online. What actually sells and what to avoid.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/best-uk-antiques-fairs-2026.html",
+    "title": "Best UK Antiques Fairs 2026: Reseller Calendar",
+    "description": "Verified 2026 dates for Newark IACF, Ardingly, Sunbury Kempton, Detling, Shepton Mallet — trade vs public days, fees, scale, reseller tips.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/best-uk-online-auction-sites-resellers.html",
+    "title": "Best UK Online Auction Sites for Resellers 2026",
+    "description": "The Saleroom, Easy Live, Bidspotter, John Pye, i-Bidder compared — fees, buyer's premium, collection rules. Which to start with as a UK reseller.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/buyer-scams-ebay-vinted-uk.html",
+    "title": "Buyer Scams on eBay & Vinted: UK Seller Guide",
+    "description": "Common buyer scams on eBay and Vinted — empty box returns, item swaps, chargebacks — and how UK sellers can protect themselves.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/car-boot-sale-tips.html",
+    "title": "Car Boot Sale Tips: What to Buy, What to Avoid",
+    "description": "Car boot sales generate over £300m annually in the UK. Learn what items to buy for reselling, what to avoid, how to negotiate, and how to maximise profit per trip.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/charity-shop-prices-too-high-uk.html",
+    "title": "Are Charity Shops Too Expensive Now? UK 2026",
+    "description": "Charity shop prices are rising fast. Why secondhand shops cost more in 2026 and smarter sourcing alternatives for resellers.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/charity-shop-reselling-uk.html",
+    "title": "Charity Shop Reselling UK: How to Source and Sell",
+    "description": "How to make money reselling from UK charity shops. What to look for, which platforms to sell on, the ethics debate, and how to track profit from charity shop sourcing.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/charity-shop-vinted-tracker-app.html",
+    "title": "Charity Shop to Vinted Profit Tracker App (UK 2026)",
+    "description": "Best app to track what you spend at charity shops and your profit on Vinted. Logs purchases, tracks Vinted fees, and shows real profit per item — built for UK resellers.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/death-pile-uk-resellers.html",
+    "title": "The Death Pile: UK Reseller's Guide to Stock That Won't Sell (2026)",
+    "description": "Every reseller has a death pile. Here's how to kill it — when to relist, reprice, bundle, liquidate, donate or bin — with the UK numbers, timelines and tax treatment.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/ebay-fee-calculator-uk.html",
+    "title": "eBay Fee Calculator UK 2026",
+    "description": "Free eBay fee calculator for UK sellers. Enter your sale price and category to see exact fees, net revenue, and profit. Updated for February 2026 changes.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/ebay-reseller-app-uk.html",
+    "title": "eBay Reseller App (UK): Track Profit, Fees, and Multi-Platform Listings",
+    "description": "A reseller app for eBay UK should track real profit after eBay fees, postage, and sourcing costs — and handle the fact you probably also list on Vinted and Facebook. Here's what to look for.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/ebay-selling-fees-uk-2026.html",
+    "title": "eBay Selling Fees UK 2026",
+    "description": "Complete breakdown of eBay UK selling fees for 2026. Private sellers now sell free. Business seller final value fees by category, per-order charges, and what changed in February 2026.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/ebay-selling-tax-uk.html",
+    "title": "Do I Have to Pay Tax Selling on eBay UK? (2026 Guide)",
+    "description": "Do you have to pay tax on eBay sales in the UK? Quick answer for 2026: selling your own stuff, no. Buying to resell, depends on the £1,000 trading allowance. Side hustle tax explained.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/estate-sale-flipping-guide.html",
+    "title": "Estate Sale Flipping: A Reseller's Guide",
+    "description": "Estate sale flipping can turn a part-time side hustle into serious income. Learn what to buy, how to find hidden value, and how real resellers build profit from estate sales.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/estate-sale-garage-sale-tracker-app.html",
+    "title": "Estate Sale & Garage Sale Reseller App for iPhone",
+    "description": "Best app to track estate sale and garage sale finds. Log items at the sale, track listings on eBay and Facebook Marketplace, see real profit after fuel and fees.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/estate-sale-tips-resellers.html",
+    "title": "Estate Sale Tips for Resellers",
+    "description": "Practical estate sale tips for resellers: how to spot overpriced items, deal with crowds, find hidden value, and source more efficiently than thrift stores or auctions.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/flea-market-flipping-guide.html",
+    "title": "Flea Market Flipping: A Complete Guide",
+    "description": "Learn how to make money flipping flea market finds. Real strategies from resellers earning part-time income sourcing at flea markets, charity sales, and more.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/flea-market-reselling-tips.html",
+    "title": "Flea Market Reselling Tips That Actually Work",
+    "description": "Practical flea market reselling tips from experienced flippers. Pricing strategies, what to buy, live selling tactics, and how to turn finds into real profit.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/flipperhelper-vs-flippd-vs-vendoo.html",
+    "title": "FlipperHelper vs Flippd vs Vendoo: Which Do You Need?",
+    "description": "FlipperHelper, Flippd, and Vendoo solve different problems for resellers. One tracks inventory, one tracks profit, one cross-lists. Here's an honest comparison to help you choose.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/free-inventory-app-for-resellers.html",
+    "title": "Free Inventory App for Resellers: What Actually Works",
+    "description": "Looking for a free inventory app to track reselling stock? Most ",
+    "type": "post"
+  },
+  {
+    "url": "/blog/garage-sale-flipping-guide.html",
+    "title": "Garage Sale Flipping: How to Find Profitable Items",
+    "description": "A complete guide to garage sale flipping. Learn which items to buy, how resellers turn $5 finds into $100+ sales, and strategies for building consistent profit.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/garage-sale-tips-resellers.html",
+    "title": "Garage Sale Tips for Resellers: Buy Smarter",
+    "description": "Garage sale tips for resellers covering etiquette, negotiation, pricing traps, and how to avoid common mistakes. Practical advice from the flipping community.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/hmrc-1000-trading-allowance-resellers-uk.html",
+    "title": "When Does HMRC Say You're a Business? The £1,000 Trading Allowance for UK Resellers (2026)",
+    "description": "UK reseller tax guide: the £1,000 trading allowance, when you stop being a hobbyist, Self-Assessment thresholds, and what HMRC actually cares about. All cited from gov.uk.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/how-i-got-my-app-into-chatgpt-search-results.html",
+    "title": "App Into ChatGPT Results in 30 Days",
+    "description": "A solo developer's guide to Answer Engine Optimisation (AEO) — using LLMs to find out why they don't recommend your app, then fixing the actual problems. Real data from 11 queries and 40 citations.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/how-to-deal-with-lowballers.html",
+    "title": "How to Deal with Lowballers on FB, Vinted & eBay",
+    "description": "Lowball offers are universal. How to respond, set boundaries, and stop wasting time on Facebook Marketplace, Vinted and eBay.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/how-to-price-items-for-resale.html",
+    "title": "How to Price Items for Resale: Comp Guide UK",
+    "description": "How to research sold prices, check comps and price reselling stock. Step-by-step for UK resellers on eBay, Vinted and Depop.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/how-to-sell-facebook-marketplace-uk.html",
+    "title": "How to Sell on Facebook Marketplace UK 2026: Tips, Scams & What Sells",
+    "description": "How to sell on Facebook Marketplace in the UK — from listing your first item to dealing with time wasters and avoiding scams. Real tips from sellers who've done 100+ deals.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/how-to-sell-on-ebay-uk.html",
+    "title": "How to Sell on eBay UK: Beginner's Guide",
+    "description": "Step-by-step guide to selling on eBay UK in 2026. How to list your first item, set postage, choose auction vs Buy It Now, and avoid common beginner mistakes.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/how-to-sell-on-vinted-uk.html",
+    "title": "How to Sell on Vinted UK: Complete Guide",
+    "description": "Step-by-step guide to selling on Vinted in the UK. No seller fees, how listing works, shipping options, getting paid, and tips to sell faster.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/how-to-track-reselling-profits.html",
+    "title": "How to Track Your Reselling Profits Properly",
+    "description": "Most resellers significantly overestimate profits because they forget entry fees, petrol, and packaging. Here's how to track every cost and know your real margin.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/is-reselling-worth-it-2026.html",
+    "title": "Is Reselling Still Worth It in 2026? Honest Look",
+    "description": "Honest assessment of reselling in 2026. Rising prices, more competition, thinner margins — but opportunity if you know your numbers.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/marche-aux-puces-saint-ouen-uk-guide.html",
+    "title": "Marché aux Puces de Saint-Ouen: UK Buyer Guide",
+    "description": "Marché aux Puces de Saint-Ouen, Paris — opening hours, sub-markets (Paul Bert Serpette, Vernaison, Dauphine, Biron), travel from the UK, real reseller tips. Updated for 2026.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/portobello-road-market-uk-reseller-guide.html",
+    "title": "Portobello Road Market: UK Reseller Guide 2026",
+    "description": "Portobello Road Market 2026 — opening hours, antique arcades (Admiral Vernon, Crown), Friday vintage day, Saturday antiques, reseller tips.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/reseller-burnout-listing-fatigue.html",
+    "title": "Reseller Burnout: Love Sourcing, Hate Listing?",
+    "description": "The sourcing-to-listing gap kills more reselling businesses than bad stock picks. Warning signs of burnout and practical ways to fix it.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/reseller-storage-ideas-uk.html",
+    "title": "Reseller Storage Ideas: Stop the Warehouse Creep",
+    "description": "Storage and organisation ideas for UK resellers. Small space solutions, SKU systems, and when renting storage is a trap.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/reselling-spreadsheet-template-uk.html",
+    "title": "Free Reselling Spreadsheet Template UK (Google Sheets + Excel)",
+    "description": "Free reselling spreadsheet template for UK resellers. Exact column layout, profit formulas, trip expense tracking, and example data. Google Sheets and Excel compatible.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/royal-mail-postage-prices-resellers-2026.html",
+    "title": "Royal Mail Postage Prices 2026: UK Stamp & Parcel Rates (April Update)",
+    "description": "Royal Mail postage prices from April 2026. 1st class stamp £1.80, 2nd class 91p. Letter, large letter, and parcel rates plus cheapest way to post a parcel in the UK.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/selling-on-multiple-platforms.html",
+    "title": "Selling on Multiple Platforms: UK Reseller Guide",
+    "description": "Manage inventory across eBay, Vinted, Depop and Facebook Marketplace without double-selling or losing track. Practical UK reseller guide.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/shiply-furniture-delivery-uk-resellers.html",
+    "title": "Shiply for UK Resellers: Furniture Delivery Guide",
+    "description": "Shiply for UK resellers — real UK prices £40–£100, the auction model explained, AnyVan compared, scam-proof eBay collection workflow.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/side-hustle-ideas-uk.html",
+    "title": "Side Hustle Ideas UK 2026",
+    "description": "Side hustle ideas that actually work in the UK. How to make extra money from reselling, freelancing, delivery driving, tutoring, and more — with real earnings and honest pros and cons.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/sourcing-stock-from-france.html",
+    "title": "Sourcing Reselling Stock from France: UK Guide to Driving, Customs & Costs",
+    "description": "How to drive from the UK to France via Eurotunnel to buy reselling stock 2-3x cheaper. Complete guide covering car requirements, customs declaration, EORI, taxes, and real costs.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/thrift-store-flipping-app.html",
+    "title": "Thrift Store Flipping App for iPhone (2026)",
+    "description": "Best thrift store flipping app for iPhone. Log thrift store purchases, track items listed on eBay and Depop, see real profit after fees — works offline.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/thrift-store-flipping-guide.html",
+    "title": "Thrift Store Flipping: A Practical Guide",
+    "description": "Learn how to make money flipping thrift store finds. Real strategies for sourcing, pricing, and selling secondhand items for profit on eBay, Vinted, and more.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/track-sourcing-trip-profit.html",
+    "title": "How to Track Whether a Sourcing Trip Was Worth It",
+    "description": "Track profit per sourcing trip by grouping items and expenses into Hauls. See which car boot runs and market visits actually made money. Free in FlipperHelper for iOS.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/uk-car-boot-sales-near-me-2026.html",
+    "title": "UK Car Boot Sales Near Me: 2026 Sunday Calendar",
+    "description": "Verified 2026 UK car boot calendar — Denham, Apps Court, Ford, Stonham Barns, Raynes Park, Dunton. Hours, fees, postcodes, reseller tips.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/vintage-furniture-reseller-app-uk.html",
+    "title": "Vintage Furniture Reseller App for UK Small Business",
+    "description": "Best app for UK small business resellers flipping vintage furniture. Track purchases at fairs and France brocantes, multi-currency, Google Sheets export — built for HMRC-ready bookkeeping.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/vintage-market-reselling-guide.html",
+    "title": "Vintage Market Reselling: UK Guide to Sourcing",
+    "description": "How to source and resell from vintage markets, charity flea markets, and car boot sales in the UK. Real strategies, niche picks, and profit-tracking tips.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/vinted-ebay-profit-calculator-offline.html",
+    "title": "Vinted & eBay Profit Calculator: Offline UK App",
+    "description": "Free Vinted and eBay profit calculator that works offline. Log items at car boots and charity shops, see profit after fees, transport, and entry costs — on iPhone.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/vinted-fees-uk.html",
+    "title": "Vinted Fees UK Explained (2026)",
+    "description": "Vinted fees explained for UK sellers in 2026. Sellers pay nothing. Buyers pay a 3-8% Buyer Protection fee plus shipping. Full breakdown with worked examples.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/works-without-internet.html",
+    "title": "Why FlipperHelper Works Without Internet at Car Boot Sales",
+    "description": "Car boot sales at 6am rarely have phone signal. Here's how FlipperHelper works fully offline, what syncs to Google Drive later, and why your data stays on your phone.",
+    "type": "post"
+  }
+]
