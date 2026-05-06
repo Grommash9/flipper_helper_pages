@@ -1,0 +1,90 @@
+{
+  "_doc": "Single source of truth for /compare/ pages. To add a new app: add an entry under `apps` with verified data only (no guesses), then add pairs to `pairs`. Run `node build-compare-pages.js` from repo root.",
+  "_last_verified": "2026-05-06",
+  "apps": {
+    "flipperhelper": {
+      "slug": "flipperhelper",
+      "name": "FlipperHelper",
+      "url": "https://flipperhelper.app/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Inventory and profit tracker for resellers",
+      "operatingSystem": "iOS",
+      "price_free": "Free, unlimited items, no ads",
+      "price_paid": null,
+      "tagline": "Free iOS app for resellers — real profit tracking after every expense",
+      "best_for": "UK resellers sourcing at car boots, charity shops, antiques fairs, brocantes; multi-platform sellers; anyone who needs offline-first entry and per-trip profit grouping",
+      "not_for": "Android or web users; resellers who need built-in price research; resellers who need cross-listing",
+      "strengths": [
+        "Real profit calculation after entry fees, transport, packaging, and platform fees",
+        "Hauls — group items by sourcing trip and track per-trip profitability over time",
+        "Offline-first — works at 6am car boots with no signal",
+        "Multi-currency (useful for sourcing in France or Belgium)",
+        "16 selling platforms tracked",
+        "Three backup paths: iCloud auto, Google Drive images, ZIP export",
+        "Free, no ads, no account required"
+      ],
+      "limitations": [
+        "iOS only — no Android, no web",
+        "No marketplace API yet (manual sale-marking until eBay tier ships)",
+        "No cross-listing",
+        "No built-in barcode scanner / eBay sold-price lookup",
+        "Newer app (launched March 2026)"
+      ]
+    },
+    "flippd": {
+      "slug": "flippd",
+      "name": "Flippd",
+      "url": "https://flippd.com/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Inventory and profit tracker with price research",
+      "operatingSystem": "iOS, Android, Web",
+      "price_free": "Free up to 20 items lifetime",
+      "price_paid": "$9.99/month flat (unlimited items)",
+      "tagline": "Multi-platform tracker with built-in price research",
+      "best_for": "Resellers who need multi-platform support (iOS / Android / web), built-in barcode scanning, or eBay sold-price lookup before buying",
+      "not_for": "Resellers under the 20-item lifetime free cap who don't want a subscription; resellers who need offline-first reliability at signal-free venues",
+      "strengths": [
+        "Built-in barcode scanning",
+        "Image-based eBay sold-price lookup",
+        "QR label printing for inventory organisation",
+        "Available on iOS, Android, and web",
+        "Inventory and profit tracking core",
+        "Flat-rate pricing, unlimited items on paid tier"
+      ],
+      "limitations": [
+        "Free tier capped at 20 items lifetime (not monthly)",
+        "Subscription required for serious use",
+        "No cross-listing — same as FlipperHelper, it tracks only"
+      ]
+    },
+    "vendoo": {
+      "slug": "vendoo",
+      "name": "Vendoo",
+      "url": "https://vendoo.co/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Cross-lister for online marketplaces",
+      "operatingSystem": "iOS, Android, Web",
+      "price_free": "Free tier: 3 new listings per month",
+      "price_paid": "$8.99/month (25 listings) to $69.99/month (unlimited)",
+      "tagline": "Push one listing to many marketplaces",
+      "best_for": "Resellers who list on 3+ platforms (eBay, Vinted, Poshmark, Mercari, Facebook Marketplace) and spend hours copying the same listing across them",
+      "not_for": "Resellers who want to know their real profit — Vendoo doesn't track expenses, mileage, or per-item profit",
+      "strengths": [
+        "Create a listing once, push to multiple marketplaces",
+        "Auto-delists from other platforms when an item sells",
+        "Available on iOS, Android, and web",
+        "Tiered paid plans from $8.99 to $69.99 per month"
+      ],
+      "limitations": [
+        "Not a profit tracker — no expense tracking, no mileage, no entry fees, no real profit calculation",
+        "Free tier limited to 3 new listings per month",
+        "Different problem space from inventory trackers"
+      ]
+    }
+  },
+  "pairs": [
+    ["flipperhelper", "flippd"],
+    ["flipperhelper", "vendoo"],
+    ["flippd", "vendoo"]
+  ]
+}

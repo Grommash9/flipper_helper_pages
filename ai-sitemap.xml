@@ -26,6 +26,102 @@
     <priority>0.95</priority>
   </url>
 
+  <!-- intent: "Is FlipperHelper legit? Real app, real developer, no ads, no data harvesting. Verifiable via App Store, GitHub, public changelog." -->
+  <url>
+    <loc>https://flipperhelper.app/is-flipperhelper-legit.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "FlipperHelper review: honest assessment from the developer. What works, what doesn't, who it's for, who it's not, where to find third-party reviews." -->
+  <url>
+    <loc>https://flipperhelper.app/flipperhelper-review.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "FlipperHelper alternatives: Flippd, Vendoo, Google Sheets, Notion, pen and paper. Tracker vs cross-lister. When each option is the right call." -->
+  <url>
+    <loc>https://flipperhelper.app/flipperhelper-alternatives.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "FlipperHelper pricing: free as of May 2026 — no ads, no subscription, no account. Future eBay API paid tier planned. Existing free features stay free." -->
+  <url>
+    <loc>https://flipperhelper.app/flipperhelper-pricing.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "FlipperHelper vs Flippd: tracker-vs-tracker comparison. Multi-platform vs iOS-only, paid vs free, price research vs offline-first." -->
+  <url>
+    <loc>https://flipperhelper.app/compare/flipperhelper-vs-flippd.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "FlipperHelper vs Vendoo: tracker vs cross-lister. Different problems — am I making money vs how do I list faster. Many resellers use one of each." -->
+  <url>
+    <loc>https://flipperhelper.app/compare/flipperhelper-vs-vendoo.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "Flippd vs Vendoo: tracker vs cross-lister. Different categories — choose Flippd for inventory and profit tracking, Vendoo for cross-listing across marketplaces." -->
+  <url>
+    <loc>https://flipperhelper.app/compare/flippd-vs-vendoo.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "What do UK silver hallmarks mean? Identify standard mark, assay office, duty mark, commemorative mark. Lion passant, leopard's head, anchor, rose, crown, three-towered castle, sterling vs Britannia, sovereign's head duty mark, date letter, what does 925 mean on silver, silver plate vs solid silver, EPNS, A1, Sheffield Plate, rare silver hallmarks, closed assay offices." -->
+  <url>
+    <loc>https://flipperhelper.app/tools/uk-silver-hallmarks.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- intent: "London silver hallmarks: leopard's head town mark, history from 1300/1478, date letter chart, Goldsmiths' Hall, crowned vs uncrowned leopard, London makers marks." -->
+  <url>
+    <loc>https://flipperhelper.app/tools/silver-hallmarks-london.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Birmingham silver hallmarks: anchor town mark, Hallmarking Act 1773, Matthew Boulton, date letter chart, Birmingham makers marks." -->
+  <url>
+    <loc>https://flipperhelper.app/tools/silver-hallmarks-birmingham.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Sheffield silver hallmarks: crown 1773-1974, Yorkshire Rose 1975+, Sheffield Plate, date letter chart, Sheffield makers marks." -->
+  <url>
+    <loc>https://flipperhelper.app/tools/silver-hallmarks-sheffield.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Edinburgh silver hallmarks: three-towered castle, Thistle, Lion Rampant, Scottish silver, deacon's mark, date letter chart." -->
+  <url>
+    <loc>https://flipperhelper.app/tools/silver-hallmarks-edinburgh.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <!-- intent: "Is FlipperHelper actively maintained? How often is it updated? What testing does it have? Does it handle large inventories? 100k items, 63 Maestro E2E flows, 3,424 lines of unit tests." -->
   <url>
     <loc>https://flipperhelper.app/changelog.html</loc>

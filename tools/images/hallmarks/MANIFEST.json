@@ -1,0 +1,163 @@
+{
+  "generated": "2026-05-06",
+  "source": "Wikimedia Commons + EN Wikipedia (CC-licensed)",
+  "attribution_required": true,
+  "policy": "All files are CC-BY-SA / CC-BY / Public Domain. Replace anytime with same filename — the loader picks up automatically. See IMAGES_TODO.md for missing slots.",
+  "files": [
+    {
+      "slot": "standard-lion-passant",
+      "file": "standard-lion-passant.svg",
+      "type": "isolated heraldic vector",
+      "license": "Public domain",
+      "artist": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lion_passant.svg",
+      "note": "Isolated heraldic lion passant — the form used as the English sterling silver mark since 1544."
+    },
+    {
+      "slot": "standard-britannia",
+      "file": "standard-britannia.png",
+      "type": "photo of mark on piece (not isolated)",
+      "license": "CC BY-SA 3.0",
+      "artist": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Waiter_1732_LA.jpg",
+      "note": "1732 silver waiter by Paul de Lamerie with Britannia gauge mark visible. Replace with isolated Britannia figure when found."
+    },
+    {
+      "slot": "standard-num-925",
+      "file": "standard-num-925.png",
+      "type": "isolated official mark",
+      "license": "Public domain",
+      "artist": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:925CCM_Silver.png",
+      "note": "International Common Control Mark for 925 silver. Tiny (138x61) but isolated and official."
+    },
+    {
+      "slot": "town-leopard-uncrowned",
+      "file": "town-leopard-uncrowned.svg",
+      "type": "isolated heraldic vector",
+      "license": "CC BY-SA 3.0",
+      "artist": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Heraldic_leopard.svg",
+      "note": "Isolated heraldic leopard. NOTE: full body, not just the head. London's hallmark is specifically the leopard's HEAD only — replace with a proper leopard's-head punch image when one is found on Commons or photographed."
+    },
+    {
+      "slot": "town-anchor",
+      "file": "town-anchor.svg",
+      "type": "isolated pictogram",
+      "license": "Public domain",
+      "artist": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anchor_pictogram.svg",
+      "note": "Clean isolated anchor pictogram. Closer to the Birmingham hallmark shape than a hallmark cluster photo."
+    },
+    {
+      "slot": "town-crown-sheffield",
+      "file": "town-crown-sheffield.svg",
+      "type": "isolated heraldic vector",
+      "license": "CC BY-SA 3.0",
+      "artist": "Wikimedia Commons (Heraldic Royal Crown)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Heraldic_Royal_Crown_(Common).svg",
+      "note": "Isolated heraldic crown — the form used by Sheffield Assay Office 1773–1974. Common heraldic-crown style; not a literal photograph of a crown punch on silver."
+    },
+    {
+      "slot": "town-rose-sheffield",
+      "file": "town-rose-sheffield.svg",
+      "type": "isolated heraldic vector",
+      "license": "CC BY-SA 3.0",
+      "artist": "Wikimedia Commons (Yorkshire rose, by Lupin)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Yorkshire_rose.svg",
+      "note": "Yorkshire rose — same shape as Sheffield post-1975 hallmark."
+    },
+    {
+      "slot": "generic-set",
+      "file": "generic-set.png",
+      "type": "composite reference",
+      "license": "CC BY-SA 3.0 / GFDL",
+      "artist": "EN Wikipedia (Assayoffices.png)",
+      "source_url": "https://en.wikipedia.org/wiki/File:Assayoffices.png",
+      "note": "Composite of all four current UK Assay Office town marks: London leopard's head, Birmingham anchor, Sheffield Yorkshire rose, Edinburgh castle. Canonical reference image."
+    },
+    {
+      "slot": "example-hallmarks",
+      "file": "example-hallmarks.png",
+      "type": "composite reference",
+      "license": "CC BY-SA 3.0 / GFDL",
+      "artist": "EN Wikipedia (Example Hallmarks.png)",
+      "source_url": "https://en.wikipedia.org/wiki/File:Example_Hallmarks.png",
+      "note": "Illustrative hallmark cluster examples used in the Wikipedia Hallmark article. Useful as supporting illustration."
+    }
+  ],
+  "still_needed_isolated": [
+    "town-leopard-uncrowned (proper head, not full body)",
+    "town-leopard-crowned (pre-1822 London)",
+    "town-castle-edinburgh",
+    "town-tree-fish-bell (Glasgow)",
+    "town-wheat-sword-chester",
+    "town-three-castles-newcastle",
+    "town-castle-exeter",
+    "town-lions-york",
+    "standard-britannia (isolated punch, not on a piece)",
+    "standard-crowned-harp (Dublin)",
+    "standard-num-958, 800, 833, 900, 950, 999 (isolated number stamps)",
+    "duty-george-iii / george-iv / william-iv / victoria (sovereign profile punches; coin profile crops would also work)",
+    "commemorative-* (all 7)"
+  ],
+  "silvermakersmarks": {
+    "sourceSite": "silvermakersmarks.co.uk",
+    "sourceOwner": "David McKinley",
+    "sourceContact": "silvermakersmarks.co.uk/contact-smm.php",
+    "licenseNote": "Used with permission. Do not redistribute outside this tool.",
+    "fetchedAt": "2026-05-06T22:23:39.066Z",
+    "offices": [
+      {
+        "office": "London",
+        "tuples": 481,
+        "cycles": 33
+      },
+      {
+        "office": "Birmingham",
+        "tuples": 251,
+        "cycles": 18
+      },
+      {
+        "office": "Sheffield",
+        "tuples": 258,
+        "cycles": 18
+      },
+      {
+        "office": "Edinburgh",
+        "tuples": 346,
+        "cycles": 23
+      },
+      {
+        "office": "Chester",
+        "tuples": 260,
+        "cycles": 15
+      },
+      {
+        "office": "Newcastle",
+        "tuples": 167,
+        "cycles": 22
+      },
+      {
+        "office": "Exeter",
+        "tuples": 181,
+        "cycles": 24
+      },
+      {
+        "office": "York",
+        "tuples": 198,
+        "cycles": 15
+      },
+      {
+        "office": "Glasgow",
+        "tuples": 172,
+        "cycles": 14
+      },
+      {
+        "office": "Dublin",
+        "tuples": 324,
+        "cycles": 28
+      }
+    ]
+  }
+}

@@ -1,0 +1,1353 @@
+{
+  "office": "Newcastle",
+  "sourceSite": "silvermakersmarks.co.uk",
+  "sourceIndex": "https://www.silvermakersmarks.co.uk/Dates/Newcastle.html",
+  "cycles": [
+    {
+      "key": "1702-1706",
+      "from": 1702,
+      "to": 1706,
+      "frame": "frames/newcastle/1702-1706.gif",
+      "letters": [
+        {
+          "year": 1702,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1702-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1703,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1703-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1704,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1704-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1705,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1705-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1706,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1706-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20E.html"
+        }
+      ]
+    },
+    {
+      "key": "1707-1711",
+      "from": 1707,
+      "to": 1711,
+      "frame": "frames/newcastle/1707-1711.gif",
+      "letters": [
+        {
+          "year": 1707,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1707-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20F.html"
+        },
+        {
+          "year": 1711,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1711-G-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20G.html"
+        }
+      ]
+    },
+    {
+      "key": "1712-1720",
+      "from": 1712,
+      "to": 1720,
+      "frame": "frames/newcastle/1712-1720.gif",
+      "letters": [
+        {
+          "year": 1712,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1712-M-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1716,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1716-O-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1717,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1717-P-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1718,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1718-Q-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1719,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1719-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1720,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1720-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20E.html"
+        }
+      ]
+    },
+    {
+      "key": "1721-1721",
+      "from": 1721,
+      "to": 1721,
+      "frame": "frames/newcastle/1721-1721.gif",
+      "letters": [
+        {
+          "year": 1721,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1721-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20A.html"
+        }
+      ]
+    },
+    {
+      "key": "1722-1722",
+      "from": 1722,
+      "to": 1722,
+      "frame": "frames/newcastle/1722-1722.gif",
+      "letters": [
+        {
+          "year": 1722,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1722-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20B.html"
+        }
+      ]
+    },
+    {
+      "key": "1723-1724",
+      "from": 1723,
+      "to": 1724,
+      "frame": "frames/newcastle/1723-1724.gif",
+      "letters": [
+        {
+          "year": 1723,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1723-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1724,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1724-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20D.html"
+        }
+      ]
+    },
+    {
+      "key": "1725-1726",
+      "from": 1725,
+      "to": 1726,
+      "frame": "frames/newcastle/1725-1726.gif",
+      "letters": [
+        {
+          "year": 1725,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1725-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20E.html"
+        },
+        {
+          "year": 1726,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1726-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20F.html"
+        }
+      ]
+    },
+    {
+      "key": "1727-1727",
+      "from": 1727,
+      "to": 1727,
+      "frame": "frames/newcastle/1727-1727.gif",
+      "letters": [
+        {
+          "year": 1727,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1727-G-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20G.html"
+        }
+      ]
+    },
+    {
+      "key": "1728-1740",
+      "from": 1728,
+      "to": 1740,
+      "frame": "frames/newcastle/1728-1740.gif",
+      "letters": [
+        {
+          "year": 1728,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1728-H-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20H.html"
+        },
+        {
+          "year": 1729,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1729-I-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20I.html"
+        },
+        {
+          "year": 1730,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1730-K-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1731,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1731-L-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1732,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1732-M-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1733,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1733-N-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1734,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1734-O-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1735,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1735-P-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1736,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1736-Q-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1737,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1737-R-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20R.html"
+        },
+        {
+          "year": 1738,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1738-S-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1739,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1739-T-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1740,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1740-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20A.html"
+        }
+      ]
+    },
+    {
+      "key": "1741-1778",
+      "from": 1741,
+      "to": 1778,
+      "frame": "frames/newcastle/1741-1778.gif",
+      "letters": [
+        {
+          "year": 1741,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1741-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1742,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1742-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1743,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1743-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1744,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1744-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20E.html"
+        },
+        {
+          "year": 1745,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1745-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20F.html"
+        },
+        {
+          "year": 1746,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1746-G-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20G.html"
+        },
+        {
+          "year": 1747,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1747-H-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20H.html"
+        },
+        {
+          "year": 1748,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1748-I-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20I.html"
+        },
+        {
+          "year": 1749,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1749-K-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1750,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1750-L-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1751,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1751-M-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1752,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1752-N-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1753,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1753-O-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1754,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1754-P-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1755,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1755-Q-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1756,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1756-R-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20R.html"
+        },
+        {
+          "year": 1757,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1757-S-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1759,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1759-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1760,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1760-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1769,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1769-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1770,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1770-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1771,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1771-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20E.html"
+        },
+        {
+          "year": 1772,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1772-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20F.html"
+        },
+        {
+          "year": 1773,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1773-G-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20G.html"
+        },
+        {
+          "year": 1774,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1774-H-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20H.html"
+        },
+        {
+          "year": 1775,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1775-I-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20I.html"
+        },
+        {
+          "year": 1776,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1776-K-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1777,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1777-L-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1778,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1778-M-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20M.html"
+        }
+      ]
+    },
+    {
+      "key": "1779-1783",
+      "from": 1779,
+      "to": 1783,
+      "frame": "frames/newcastle/1779-1783.gif",
+      "letters": [
+        {
+          "year": 1779,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1779-N-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1780,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1780-O-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1781,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1781-P-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1782,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1782-Q-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1783,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1783-R-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20R.html"
+        },
+        {
+          "year": 1784,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1784-S-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20S.html"
+        }
+      ]
+    },
+    {
+      "key": "1784-1785",
+      "from": 1784,
+      "to": 1785,
+      "frame": "frames/newcastle/1784-1785.gif",
+      "letters": [
+        {
+          "year": 1785,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1785-T-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1786,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1786-U-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20U.html"
+        }
+      ]
+    },
+    {
+      "key": "1786-1790",
+      "from": 1786,
+      "to": 1790,
+      "frame": "frames/newcastle/1786-1790.gif",
+      "letters": [
+        {
+          "year": 1787,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1787-W-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20W.html"
+        },
+        {
+          "year": 1788,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1788-X-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20X.html"
+        },
+        {
+          "year": 1789,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1789-Y-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Y.html"
+        },
+        {
+          "year": 1790,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1790-Z-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Z.html"
+        }
+      ]
+    },
+    {
+      "key": "1791-1797",
+      "from": 1791,
+      "to": 1797,
+      "frame": "frames/newcastle/1791-1797.gif",
+      "letters": [
+        {
+          "year": 1791,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1791-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1792,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1792-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1793,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1793-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1794,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1794-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1795,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1795-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20E.html"
+        },
+        {
+          "year": 1796,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1796-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20F.html"
+        },
+        {
+          "year": 1797,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1797-G-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20G.html"
+        }
+      ]
+    },
+    {
+      "key": "1798-1799",
+      "from": 1798,
+      "to": 1799,
+      "frame": "frames/newcastle/1798-1799.gif",
+      "letters": [
+        {
+          "year": 1798,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1798-H-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20H.html"
+        },
+        {
+          "year": 1799,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1799-I-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20I.html"
+        }
+      ]
+    },
+    {
+      "key": "1800-1811",
+      "from": 1800,
+      "to": 1811,
+      "frame": "frames/newcastle/1800-1811.gif",
+      "letters": [
+        {
+          "year": 1800,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1800-K-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1801,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1801-L-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1802,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1802-M-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1803,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1803-N-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1804,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1804-O-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1805,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1805-P-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1806,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1806-Q-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1807,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1807-R-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20R.html"
+        },
+        {
+          "year": 1808,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1808-S-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1809,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1809-T-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1810,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1810-U-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20U.html"
+        },
+        {
+          "year": 1811,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1811-W-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20W.html"
+        }
+      ]
+    },
+    {
+      "key": "1812-1820",
+      "from": 1812,
+      "to": 1820,
+      "frame": "frames/newcastle/1812-1820.gif",
+      "letters": [
+        {
+          "year": 1812,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1812-X-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20X.html"
+        },
+        {
+          "year": 1813,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1813-Y-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Y.html"
+        },
+        {
+          "year": 1814,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1814-Z-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Z.html"
+        },
+        {
+          "year": 1815,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1815-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1816,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1816-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1817,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1817-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1818,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1818-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1819,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1819-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20E.html"
+        },
+        {
+          "year": 1820,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1820-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20F.html"
+        }
+      ]
+    },
+    {
+      "key": "1821-1831",
+      "from": 1821,
+      "to": 1831,
+      "frame": "frames/newcastle/1821-1831.gif",
+      "letters": [
+        {
+          "year": 1821,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1821-G-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20G.html"
+        },
+        {
+          "year": 1822,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1822-H-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20H.html"
+        },
+        {
+          "year": 1823,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1823-I-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20I.html"
+        },
+        {
+          "year": 1824,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1824-K-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1825,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1825-L-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1826,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1826-M-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1827,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1827-N-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1828,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1828-O-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1829,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1829-P-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1830,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1830-Q-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1831,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1831-R-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20R.html"
+        }
+      ]
+    },
+    {
+      "key": "1832-1836",
+      "from": 1832,
+      "to": 1836,
+      "frame": "frames/newcastle/1832-1836.gif",
+      "letters": [
+        {
+          "year": 1832,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1832-S-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1833,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1833-T-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1834,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1834-U-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20U.html"
+        },
+        {
+          "year": 1835,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1835-W-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20W.html"
+        },
+        {
+          "year": 1836,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1836-X-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20X.html"
+        },
+        {
+          "year": 1837,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1837-Y-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Y.html"
+        }
+      ]
+    },
+    {
+      "key": "1837-1843",
+      "from": 1837,
+      "to": 1843,
+      "frame": "frames/newcastle/1837-1843.gif",
+      "letters": [
+        {
+          "year": 1838,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1838-Z-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Z.html"
+        },
+        {
+          "year": 1839,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1839-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1840,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1840-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1841,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1841-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1842,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1842-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1843,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1843-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20E.html"
+        }
+      ]
+    },
+    {
+      "key": "1844-1844",
+      "from": 1844,
+      "to": 1844,
+      "frame": "frames/newcastle/1844-1844.gif",
+      "letters": [
+        {
+          "year": 1844,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1844-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20F.html"
+        }
+      ]
+    },
+    {
+      "key": "1845-1883",
+      "from": 1845,
+      "to": 1883,
+      "frame": "frames/newcastle/1845-1883.gif",
+      "letters": [
+        {
+          "year": 1845,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1845-G-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20G.html"
+        },
+        {
+          "year": 1846,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1846-H-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20H.html"
+        },
+        {
+          "year": 1847,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1847-I-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20I.html"
+        },
+        {
+          "year": 1848,
+          "letter": "J",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1848-J-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20J.html"
+        },
+        {
+          "year": 1849,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1849-K-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1850,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1850-L-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1851,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1851-M-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1852,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1852-N-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1853,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1853-O-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1854,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1854-P-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1855,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1855-Q-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1856,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1856-R-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20R.html"
+        },
+        {
+          "year": 1857,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1857-S-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1858,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1858-T-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1859,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1859-U-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20U.html"
+        },
+        {
+          "year": 1860,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1860-W-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20W.html"
+        },
+        {
+          "year": 1861,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1861-X-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20X.html"
+        },
+        {
+          "year": 1862,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1862-Y-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Y.html"
+        },
+        {
+          "year": 1863,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/newcastle/1863-Z-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Z.html"
+        },
+        {
+          "year": 1864,
+          "letter": "A",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1864-A-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1865,
+          "letter": "B",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1865-B-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1866,
+          "letter": "C",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1866-C-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1867,
+          "letter": "D",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1867-D-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1868,
+          "letter": "E",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1868-E-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20E.html"
+        },
+        {
+          "year": 1869,
+          "letter": "F",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1869-F-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20F.html"
+        },
+        {
+          "year": 1870,
+          "letter": "G",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1870-G-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20G.html"
+        },
+        {
+          "year": 1871,
+          "letter": "H",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1871-H-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20H.html"
+        },
+        {
+          "year": 1872,
+          "letter": "I",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1872-I-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20I.html"
+        },
+        {
+          "year": 1873,
+          "letter": "K",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1873-K-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1874,
+          "letter": "L",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1874-L-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1875,
+          "letter": "M",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1875-M-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1876,
+          "letter": "N",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1876-N-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1877,
+          "letter": "O",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1877-O-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1878,
+          "letter": "P",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1878-P-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1879,
+          "letter": "Q",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1879-Q-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1880,
+          "letter": "R",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1880-R-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20R.html"
+        },
+        {
+          "year": 1881,
+          "letter": "S",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1881-S-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1882,
+          "letter": "T",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1882-T-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1883,
+          "letter": "U",
+          "case": "L",
+          "glyph": "glyphs/newcastle/1883-U-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Newcastle/Date%20Letters%20U.html"
+        }
+      ]
+    }
+  ],
+  "tuplesCount": 167
+}

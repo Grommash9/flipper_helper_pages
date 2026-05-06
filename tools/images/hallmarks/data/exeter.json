@@ -1,0 +1,1467 @@
+{
+  "office": "Exeter",
+  "sourceSite": "silvermakersmarks.co.uk",
+  "sourceIndex": "https://www.silvermakersmarks.co.uk/Dates/Exeter.html",
+  "cycles": [
+    {
+      "key": "1701-1720",
+      "from": 1701,
+      "to": 1720,
+      "frame": "frames/exeter/1701-1720.gif",
+      "letters": [
+        {
+          "year": 1701,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/exeter/1701-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1702,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/exeter/1702-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1703,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/exeter/1703-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1704,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/exeter/1704-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1705,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/exeter/1705-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20E.html"
+        },
+        {
+          "year": 1706,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/exeter/1706-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20F.html"
+        },
+        {
+          "year": 1707,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/exeter/1707-G-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20G.html"
+        },
+        {
+          "year": 1708,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/exeter/1708-H-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20H.html"
+        },
+        {
+          "year": 1709,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/exeter/1709-I-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20I.html"
+        },
+        {
+          "year": 1710,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/exeter/1710-K-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1711,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/exeter/1711-L-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1712,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/exeter/1712-M-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1713,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/exeter/1713-N-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1714,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/exeter/1714-O-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1715,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/exeter/1715-P-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1716,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/exeter/1716-Q-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1717,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/exeter/1717-R-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20R.html"
+        },
+        {
+          "year": 1718,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/exeter/1718-S-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1719,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/exeter/1719-T-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1720,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/exeter/1720-V-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20V.html"
+        }
+      ]
+    },
+    {
+      "key": "1721-1772",
+      "from": 1721,
+      "to": 1772,
+      "frame": "frames/exeter/1721-1772.gif",
+      "letters": [
+        {
+          "year": 1721,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/exeter/1721-W-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20W.html"
+        },
+        {
+          "year": 1722,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/exeter/1722-X-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20X.html"
+        },
+        {
+          "year": 1723,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/exeter/1723-Y-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Y.html"
+        },
+        {
+          "year": 1724,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/exeter/1724-Z-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Z.html"
+        },
+        {
+          "year": 1725,
+          "letter": "A",
+          "case": "L",
+          "glyph": "glyphs/exeter/1725-A-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1726,
+          "letter": "B",
+          "case": "L",
+          "glyph": "glyphs/exeter/1726-B-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1727,
+          "letter": "C",
+          "case": "L",
+          "glyph": "glyphs/exeter/1727-C-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1728,
+          "letter": "D",
+          "case": "L",
+          "glyph": "glyphs/exeter/1728-D-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1729,
+          "letter": "E",
+          "case": "L",
+          "glyph": "glyphs/exeter/1729-E-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20E.html"
+        },
+        {
+          "year": 1730,
+          "letter": "F",
+          "case": "L",
+          "glyph": "glyphs/exeter/1730-F-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20F.html"
+        },
+        {
+          "year": 1731,
+          "letter": "G",
+          "case": "L",
+          "glyph": "glyphs/exeter/1731-G-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20G.html"
+        },
+        {
+          "year": 1732,
+          "letter": "H",
+          "case": "L",
+          "glyph": "glyphs/exeter/1732-H-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20H.html"
+        },
+        {
+          "year": 1733,
+          "letter": "I",
+          "case": "L",
+          "glyph": "glyphs/exeter/1733-I-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20I.html"
+        },
+        {
+          "year": 1734,
+          "letter": "K",
+          "case": "L",
+          "glyph": "glyphs/exeter/1734-K-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1735,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/exeter/1735-L-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1736,
+          "letter": "M",
+          "case": "L",
+          "glyph": "glyphs/exeter/1736-M-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1737,
+          "letter": "N",
+          "case": "L",
+          "glyph": "glyphs/exeter/1737-N-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1738,
+          "letter": "O",
+          "case": "L",
+          "glyph": "glyphs/exeter/1738-O-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1739,
+          "letter": "P",
+          "case": "L",
+          "glyph": "glyphs/exeter/1739-P-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1740,
+          "letter": "Q",
+          "case": "L",
+          "glyph": "glyphs/exeter/1740-Q-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1741,
+          "letter": "R",
+          "case": "L",
+          "glyph": "glyphs/exeter/1741-R-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20R.html"
+        },
+        {
+          "year": 1742,
+          "letter": "S",
+          "case": "L",
+          "glyph": "glyphs/exeter/1742-S-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1743,
+          "letter": "T",
+          "case": "L",
+          "glyph": "glyphs/exeter/1743-T-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1744,
+          "letter": "U",
+          "case": "L",
+          "glyph": "glyphs/exeter/1744-U-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20U.html"
+        },
+        {
+          "year": 1745,
+          "letter": "W",
+          "case": "L",
+          "glyph": "glyphs/exeter/1745-W-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20W.html"
+        },
+        {
+          "year": 1746,
+          "letter": "X",
+          "case": "L",
+          "glyph": "glyphs/exeter/1746-X-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20X.html"
+        },
+        {
+          "year": 1747,
+          "letter": "Y",
+          "case": "L",
+          "glyph": "glyphs/exeter/1747-Y-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Y.html"
+        },
+        {
+          "year": 1748,
+          "letter": "Z",
+          "case": "L",
+          "glyph": "glyphs/exeter/1748-Z-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Z.html"
+        },
+        {
+          "year": 1749,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/exeter/1749-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1750,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/exeter/1750-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1751,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/exeter/1751-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1752,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/exeter/1752-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1753,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/exeter/1753-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20E.html"
+        },
+        {
+          "year": 1754,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/exeter/1754-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20F.html"
+        },
+        {
+          "year": 1755,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/exeter/1755-G-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20G.html"
+        },
+        {
+          "year": 1756,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/exeter/1756-H-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20H.html"
+        },
+        {
+          "year": 1757,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/exeter/1757-I-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20I.html"
+        },
+        {
+          "year": 1758,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/exeter/1758-K-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1759,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/exeter/1759-L-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1760,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/exeter/1760-M-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1761,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/exeter/1761-N-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1762,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/exeter/1762-O-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1763,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/exeter/1763-P-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1764,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/exeter/1764-Q-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1765,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/exeter/1765-R-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20R.html"
+        },
+        {
+          "year": 1766,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/exeter/1766-S-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1767,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/exeter/1767-T-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1768,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/exeter/1768-U-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20U.html"
+        },
+        {
+          "year": 1769,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/exeter/1769-W-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20W.html"
+        },
+        {
+          "year": 1770,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/exeter/1770-X-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20X.html"
+        },
+        {
+          "year": 1771,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/exeter/1771-Y-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Y.html"
+        },
+        {
+          "year": 1772,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/exeter/1772-Z-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Z.html"
+        }
+      ]
+    },
+    {
+      "key": "1773-1777",
+      "from": 1773,
+      "to": 1777,
+      "frame": "frames/exeter/1773-1777.gif",
+      "letters": [
+        {
+          "year": 1773,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/exeter/1773-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1774,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/exeter/1774-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1775,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/exeter/1775-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1776,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/exeter/1776-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1777,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/exeter/1777-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20E.html"
+        }
+      ]
+    },
+    {
+      "key": "1778-1783",
+      "from": 1778,
+      "to": 1783,
+      "frame": "frames/exeter/1778-1783.gif",
+      "letters": [
+        {
+          "year": 1778,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/exeter/1778-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20F.html"
+        },
+        {
+          "year": 1779,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/exeter/1779-G-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20G.html"
+        },
+        {
+          "year": 1780,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/exeter/1780-H-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20H.html"
+        },
+        {
+          "year": 1781,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/exeter/1781-I-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20I.html"
+        },
+        {
+          "year": 1783,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/exeter/1783-K-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20K.html"
+        }
+      ]
+    },
+    {
+      "key": "1784-1785",
+      "from": 1784,
+      "to": 1785,
+      "frame": "frames/exeter/1784-1785.gif",
+      "letters": [
+        {
+          "year": 1784,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/exeter/1784-L-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1785,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/exeter/1785-M-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20M.html"
+        }
+      ]
+    },
+    {
+      "key": "1786-1796",
+      "from": 1786,
+      "to": 1796,
+      "frame": "frames/exeter/1786-1796.gif",
+      "letters": [
+        {
+          "year": 1786,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/exeter/1786-N-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1787,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/exeter/1787-O-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1788,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/exeter/1788-P-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1789,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/exeter/1789-Q-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1790,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/exeter/1790-R-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20R.html"
+        },
+        {
+          "year": 1791,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/exeter/1791-S-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1792,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/exeter/1792-T-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1793,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/exeter/1793-U-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20U.html"
+        },
+        {
+          "year": 1794,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/exeter/1794-W-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20W.html"
+        },
+        {
+          "year": 1795,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/exeter/1795-X-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20X.html"
+        },
+        {
+          "year": 1796,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/exeter/1796-Y-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Y.html"
+        }
+      ]
+    },
+    {
+      "key": "1797-1804",
+      "from": 1797,
+      "to": 1804,
+      "frame": "frames/exeter/1797-1804.gif",
+      "letters": [
+        {
+          "year": 1797,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/exeter/1797-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1798,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/exeter/1798-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1799,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/exeter/1799-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1800,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/exeter/1800-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1801,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/exeter/1801-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20E.html"
+        },
+        {
+          "year": 1802,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/exeter/1802-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20F.html"
+        },
+        {
+          "year": 1803,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/exeter/1803-G-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20G.html"
+        },
+        {
+          "year": 1804,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/exeter/1804-H-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20H.html"
+        }
+      ]
+    },
+    {
+      "key": "1805-1809",
+      "from": 1805,
+      "to": 1809,
+      "frame": "frames/exeter/1805-1809.gif",
+      "letters": [
+        {
+          "year": 1805,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/exeter/1805-I-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20I.html"
+        },
+        {
+          "year": 1806,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/exeter/1806-K-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1807,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/exeter/1807-L-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1808,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/exeter/1808-M-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1809,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/exeter/1809-N-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20N.html"
+        }
+      ]
+    },
+    {
+      "key": "1810-1821",
+      "from": 1810,
+      "to": 1821,
+      "frame": "frames/exeter/1810-1821.gif",
+      "letters": [
+        {
+          "year": 1810,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/exeter/1810-O-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1811,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/exeter/1811-P-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1812,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/exeter/1812-Q-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1813,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/exeter/1813-R-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20R.html"
+        },
+        {
+          "year": 1814,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/exeter/1814-S-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1815,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/exeter/1815-T-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1816,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/exeter/1816-U-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20U.html"
+        },
+        {
+          "year": 1817,
+          "letter": "A",
+          "case": "L",
+          "glyph": "glyphs/exeter/1817-A-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1818,
+          "letter": "B",
+          "case": "L",
+          "glyph": "glyphs/exeter/1818-B-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1819,
+          "letter": "C",
+          "case": "L",
+          "glyph": "glyphs/exeter/1819-C-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1820,
+          "letter": "D",
+          "case": "L",
+          "glyph": "glyphs/exeter/1820-D-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1821,
+          "letter": "E",
+          "case": "L",
+          "glyph": "glyphs/exeter/1821-E-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20E.html"
+        }
+      ]
+    },
+    {
+      "key": "1822-1823",
+      "from": 1822,
+      "to": 1823,
+      "frame": "frames/exeter/1822-1823.gif",
+      "letters": [
+        {
+          "year": 1822,
+          "letter": "F",
+          "case": "L",
+          "glyph": "glyphs/exeter/1822-F-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20F.html"
+        },
+        {
+          "year": 1823,
+          "letter": "G",
+          "case": "L",
+          "glyph": "glyphs/exeter/1823-G-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20G.html"
+        }
+      ]
+    },
+    {
+      "key": "1824-1825",
+      "from": 1824,
+      "to": 1825,
+      "frame": "frames/exeter/1824-1825.gif",
+      "letters": [
+        {
+          "year": 1824,
+          "letter": "H",
+          "case": "L",
+          "glyph": "glyphs/exeter/1824-H-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20H.html"
+        },
+        {
+          "year": 1825,
+          "letter": "I",
+          "case": "L",
+          "glyph": "glyphs/exeter/1825-I-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20I.html"
+        }
+      ]
+    },
+    {
+      "key": "1826-1831",
+      "from": 1826,
+      "to": 1831,
+      "frame": "frames/exeter/1826-1831.gif",
+      "letters": [
+        {
+          "year": 1826,
+          "letter": "K",
+          "case": "L",
+          "glyph": "glyphs/exeter/1826-K-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1827,
+          "letter": "L",
+          "case": "L",
+          "glyph": "glyphs/exeter/1827-L-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1828,
+          "letter": "M",
+          "case": "L",
+          "glyph": "glyphs/exeter/1828-M-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1829,
+          "letter": "N",
+          "case": "L",
+          "glyph": "glyphs/exeter/1829-N-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1830,
+          "letter": "O",
+          "case": "L",
+          "glyph": "glyphs/exeter/1830-O-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1831,
+          "letter": "P",
+          "case": "L",
+          "glyph": "glyphs/exeter/1831-P-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20P.html"
+        }
+      ]
+    },
+    {
+      "key": "1832-1832",
+      "from": 1832,
+      "to": 1832,
+      "frame": "frames/exeter/1832-1832.gif",
+      "letters": [
+        {
+          "year": 1832,
+          "letter": "Q",
+          "case": "L",
+          "glyph": "glyphs/exeter/1832-Q-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Q.html"
+        }
+      ]
+    },
+    {
+      "key": "1833-1833",
+      "from": 1833,
+      "to": 1833,
+      "frame": "frames/exeter/1833-1833.gif",
+      "letters": [
+        {
+          "year": 1833,
+          "letter": "R",
+          "case": "L",
+          "glyph": "glyphs/exeter/1833-R-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20R.html"
+        }
+      ]
+    },
+    {
+      "key": "1834-1836",
+      "from": 1834,
+      "to": 1836,
+      "frame": "frames/exeter/1834-1836.gif",
+      "letters": [
+        {
+          "year": 1834,
+          "letter": "S",
+          "case": "L",
+          "glyph": "glyphs/exeter/1834-S-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1835,
+          "letter": "T",
+          "case": "L",
+          "glyph": "glyphs/exeter/1835-T-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1836,
+          "letter": "U",
+          "case": "L",
+          "glyph": "glyphs/exeter/1836-U-L.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20U.html"
+        }
+      ]
+    },
+    {
+      "key": "1837-1837",
+      "from": 1837,
+      "to": 1837,
+      "frame": "frames/exeter/1837-1837.gif",
+      "letters": [
+        {
+          "year": 1837,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/exeter/1837-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20A.html"
+        }
+      ]
+    },
+    {
+      "key": "1838-1838",
+      "from": 1838,
+      "to": 1838,
+      "frame": "frames/exeter/1838-1838.gif",
+      "letters": [
+        {
+          "year": 1838,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/exeter/1838-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20B.html"
+        }
+      ]
+    },
+    {
+      "key": "1839-1839",
+      "from": 1839,
+      "to": 1839,
+      "frame": "frames/exeter/1839-1839.gif",
+      "letters": [
+        {
+          "year": 1839,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/exeter/1839-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20C.html"
+        }
+      ]
+    },
+    {
+      "key": "1840-1840",
+      "from": 1840,
+      "to": 1840,
+      "frame": "frames/exeter/1840-1840.gif",
+      "letters": [
+        {
+          "year": 1840,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/exeter/1840-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20D.html"
+        }
+      ]
+    },
+    {
+      "key": "1841-1841",
+      "from": 1841,
+      "to": 1841,
+      "frame": "frames/exeter/1841-1841.gif",
+      "letters": [
+        {
+          "year": 1841,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/exeter/1841-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20E.html"
+        }
+      ]
+    },
+    {
+      "key": "1842-1842",
+      "from": 1842,
+      "to": 1842,
+      "frame": "frames/exeter/1842-1842.gif",
+      "letters": [
+        {
+          "year": 1842,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/exeter/1842-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20F.html"
+        }
+      ]
+    },
+    {
+      "key": "1843-1843",
+      "from": 1843,
+      "to": 1843,
+      "frame": "frames/exeter/1843-1843.gif",
+      "letters": [
+        {
+          "year": 1843,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/exeter/1843-G-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20G.html"
+        }
+      ]
+    },
+    {
+      "key": "1844-1844",
+      "from": 1844,
+      "to": 1844,
+      "frame": "frames/exeter/1844-1844.gif",
+      "letters": [
+        {
+          "year": 1844,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/exeter/1844-H-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20H.html"
+        }
+      ]
+    },
+    {
+      "key": "1845-1882",
+      "from": 1845,
+      "to": 1882,
+      "frame": "frames/exeter/1845-1882.gif",
+      "letters": [
+        {
+          "year": 1845,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/exeter/1845-I-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20I.html"
+        },
+        {
+          "year": 1846,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/exeter/1846-K-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1847,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/exeter/1847-L-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1848,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/exeter/1848-M-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1849,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/exeter/1849-N-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1850,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/exeter/1850-O-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1851,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/exeter/1851-P-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1852,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/exeter/1852-Q-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1853,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/exeter/1853-R-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20R.html"
+        },
+        {
+          "year": 1854,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/exeter/1854-S-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1855,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/exeter/1855-T-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1856,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/exeter/1856-U-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20U.html"
+        },
+        {
+          "year": 1857,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/exeter/1857-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1858,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/exeter/1858-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1859,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/exeter/1859-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1860,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/exeter/1860-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1861,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/exeter/1861-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20E.html"
+        },
+        {
+          "year": 1862,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/exeter/1862-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20F.html"
+        },
+        {
+          "year": 1863,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/exeter/1863-G-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20G.html"
+        },
+        {
+          "year": 1864,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/exeter/1864-H-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20H.html"
+        },
+        {
+          "year": 1865,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/exeter/1865-I-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20I.html"
+        },
+        {
+          "year": 1866,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/exeter/1866-K-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20K.html"
+        },
+        {
+          "year": 1867,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/exeter/1867-L-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20L.html"
+        },
+        {
+          "year": 1868,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/exeter/1868-M-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20M.html"
+        },
+        {
+          "year": 1869,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/exeter/1869-N-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20N.html"
+        },
+        {
+          "year": 1870,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/exeter/1870-O-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20O.html"
+        },
+        {
+          "year": 1871,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/exeter/1871-P-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20P.html"
+        },
+        {
+          "year": 1872,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/exeter/1872-Q-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20Q.html"
+        },
+        {
+          "year": 1873,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/exeter/1873-R-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20R.html"
+        },
+        {
+          "year": 1874,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/exeter/1874-S-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20S.html"
+        },
+        {
+          "year": 1875,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/exeter/1875-T-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20T.html"
+        },
+        {
+          "year": 1876,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/exeter/1876-U-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20U.html"
+        },
+        {
+          "year": 1877,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/exeter/1877-A-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20A.html"
+        },
+        {
+          "year": 1878,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/exeter/1878-B-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20B.html"
+        },
+        {
+          "year": 1879,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/exeter/1879-C-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20C.html"
+        },
+        {
+          "year": 1880,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/exeter/1880-D-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20D.html"
+        },
+        {
+          "year": 1881,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/exeter/1881-E-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20E.html"
+        },
+        {
+          "year": 1882,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/exeter/1882-F-U.gif",
+          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Exeter/Date%20Letters%20F.html"
+        }
+      ]
+    }
+  ],
+  "tuplesCount": 181
+}
