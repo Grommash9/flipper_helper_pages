@@ -1,7 +1,5 @@
 {
   "office": "Sheffield",
-  "sourceSite": "silvermakersmarks.co.uk",
-  "sourceIndex": "https://www.silvermakersmarks.co.uk/Dates/Sheffield.html",
   "cycles": [
     {
       "key": "1773-1783",
@@ -13,85 +11,73 @@
           "year": 1773,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/sheffield/1773-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20E.html"
+          "glyph": "glyphs/sheffield/1773-E-U.gif"
         },
         {
           "year": 1774,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/sheffield/1774-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20F.html"
+          "glyph": "glyphs/sheffield/1774-F-U.gif"
         },
         {
           "year": 1775,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/sheffield/1775-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20N.html"
+          "glyph": "glyphs/sheffield/1775-N-U.gif"
         },
         {
           "year": 1776,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/sheffield/1776-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20R.html"
+          "glyph": "glyphs/sheffield/1776-R-U.gif"
         },
         {
           "year": 1777,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/sheffield/1777-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20H.html"
+          "glyph": "glyphs/sheffield/1777-H-U.gif"
         },
         {
           "year": 1778,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/sheffield/1778-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20S.html"
+          "glyph": "glyphs/sheffield/1778-S-U.gif"
         },
         {
           "year": 1779,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/sheffield/1779-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20A.html"
+          "glyph": "glyphs/sheffield/1779-A-U.gif"
         },
         {
           "year": 1780,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/sheffield/1780-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20C.html"
+          "glyph": "glyphs/sheffield/1780-T-U.gif"
         },
         {
           "year": 1781,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/sheffield/1781-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20D.html"
+          "glyph": "glyphs/sheffield/1781-D-U.gif"
         },
         {
           "year": 1782,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/sheffield/1782-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20C.html"
+          "glyph": "glyphs/sheffield/1782-C-U.gif"
         },
         {
           "year": 1783,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/sheffield/1783-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20B.html"
+          "glyph": "glyphs/sheffield/1783-B-U.gif"
         },
         {
           "year": 1784,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/sheffield/1784-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20I.html"
+          "glyph": "glyphs/sheffield/1784-I-U.gif"
         }
       ]
     },
@@ -105,8 +91,7 @@
           "year": 1785,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/sheffield/1785-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Y.html"
+          "glyph": "glyphs/sheffield/1785-Y-U.gif"
         }
       ]
     },
@@ -120,85 +105,73 @@
           "year": 1786,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/sheffield/1786-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20K.html"
+          "glyph": "glyphs/sheffield/1786-K-U.gif"
         },
         {
           "year": 1787,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/sheffield/1787-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20T.html"
+          "glyph": "glyphs/sheffield/1787-T-U.gif"
         },
         {
           "year": 1788,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/sheffield/1788-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20W.html"
+          "glyph": "glyphs/sheffield/1788-W-U.gif"
         },
         {
           "year": 1789,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/sheffield/1789-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20M.html"
+          "glyph": "glyphs/sheffield/1789-M-U.gif"
         },
         {
           "year": 1790,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/sheffield/1790-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20L.html"
+          "glyph": "glyphs/sheffield/1790-L-U.gif"
         },
         {
           "year": 1791,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/sheffield/1791-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20P.html"
+          "glyph": "glyphs/sheffield/1791-P-U.gif"
         },
         {
           "year": 1792,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/sheffield/1792-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20U.html"
+          "glyph": "glyphs/sheffield/1792-U-L.gif"
         },
         {
           "year": 1793,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/sheffield/1793-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20O.html"
+          "glyph": "glyphs/sheffield/1793-O-L.gif"
         },
         {
           "year": 1794,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/sheffield/1794-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20M.html"
+          "glyph": "glyphs/sheffield/1794-M-L.gif"
         },
         {
           "year": 1795,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/sheffield/1795-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Q.html"
+          "glyph": "glyphs/sheffield/1795-Q-L.gif"
         },
         {
           "year": 1796,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/sheffield/1796-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Z.html"
+          "glyph": "glyphs/sheffield/1796-Z-U.gif"
         },
         {
           "year": 1797,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/sheffield/1797-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20X.html"
+          "glyph": "glyphs/sheffield/1797-X-U.gif"
         }
       ]
     },
@@ -212,113 +185,97 @@
           "year": 1798,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/sheffield/1798-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20V.html"
+          "glyph": "glyphs/sheffield/1798-V-U.gif"
         },
         {
           "year": 1799,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/sheffield/1799-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20E.html"
+          "glyph": "glyphs/sheffield/1799-E-U.gif"
         },
         {
           "year": 1800,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/sheffield/1800-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20N.html"
+          "glyph": "glyphs/sheffield/1800-N-U.gif"
         },
         {
           "year": 1801,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/sheffield/1801-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20H.html"
+          "glyph": "glyphs/sheffield/1801-H-U.gif"
         },
         {
           "year": 1802,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/sheffield/1802-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20M.html"
+          "glyph": "glyphs/sheffield/1802-M-U.gif"
         },
         {
           "year": 1803,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/sheffield/1803-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20F.html"
+          "glyph": "glyphs/sheffield/1803-F-U.gif"
         },
         {
           "year": 1804,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/sheffield/1804-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20G.html"
+          "glyph": "glyphs/sheffield/1804-G-U.gif"
         },
         {
           "year": 1805,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/sheffield/1805-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20B.html"
+          "glyph": "glyphs/sheffield/1805-B-U.gif"
         },
         {
           "year": 1806,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/sheffield/1806-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20A.html"
+          "glyph": "glyphs/sheffield/1806-A-U.gif"
         },
         {
           "year": 1807,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/sheffield/1807-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20S.html"
+          "glyph": "glyphs/sheffield/1807-S-U.gif"
         },
         {
           "year": 1808,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/sheffield/1808-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20P.html"
+          "glyph": "glyphs/sheffield/1808-P-U.gif"
         },
         {
           "year": 1809,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/sheffield/1809-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20K.html"
+          "glyph": "glyphs/sheffield/1809-K-U.gif"
         },
         {
           "year": 1810,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/sheffield/1810-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20L.html"
+          "glyph": "glyphs/sheffield/1810-L-U.gif"
         },
         {
           "year": 1811,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/sheffield/1811-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20C.html"
+          "glyph": "glyphs/sheffield/1811-C-U.gif"
         },
         {
           "year": 1812,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/sheffield/1812-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20D.html"
+          "glyph": "glyphs/sheffield/1812-D-U.gif"
         },
         {
           "year": 1813,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/sheffield/1813-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20R.html"
+          "glyph": "glyphs/sheffield/1813-R-U.gif"
         }
       ]
     },
@@ -332,43 +289,37 @@
           "year": 1814,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/sheffield/1814-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20W.html"
+          "glyph": "glyphs/sheffield/1814-W-U.gif"
         },
         {
           "year": 1815,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/sheffield/1815-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20O.html"
+          "glyph": "glyphs/sheffield/1815-O-U.gif"
         },
         {
           "year": 1816,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/sheffield/1816-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20T.html"
+          "glyph": "glyphs/sheffield/1816-T-U.gif"
         },
         {
           "year": 1817,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/sheffield/1817-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20X.html"
+          "glyph": "glyphs/sheffield/1817-X-U.gif"
         },
         {
           "year": 1818,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/sheffield/1818-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20I.html"
+          "glyph": "glyphs/sheffield/1818-I-U.gif"
         },
         {
           "year": 1819,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/sheffield/1819-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20V.html"
+          "glyph": "glyphs/sheffield/1819-V-U.gif"
         }
       ]
     },
@@ -382,29 +333,25 @@
           "year": 1820,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/sheffield/1820-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Q.html"
+          "glyph": "glyphs/sheffield/1820-Q-U.gif"
         },
         {
           "year": 1821,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/sheffield/1821-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Y.html"
+          "glyph": "glyphs/sheffield/1821-Y-U.gif"
         },
         {
           "year": 1822,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/sheffield/1822-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Z.html"
+          "glyph": "glyphs/sheffield/1822-Z-U.gif"
         },
         {
           "year": 1823,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/sheffield/1823-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20U.html"
+          "glyph": "glyphs/sheffield/1823-U-U.gif"
         }
       ]
     },
@@ -418,29 +365,25 @@
           "year": 1824,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/sheffield/1824-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20A.html"
+          "glyph": "glyphs/sheffield/1824-A-L.gif"
         },
         {
           "year": 1825,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/sheffield/1825-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20B.html"
+          "glyph": "glyphs/sheffield/1825-B-L.gif"
         },
         {
           "year": 1826,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/sheffield/1826-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20C.html"
+          "glyph": "glyphs/sheffield/1826-C-L.gif"
         },
         {
           "year": 1827,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/sheffield/1827-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20D.html"
+          "glyph": "glyphs/sheffield/1827-D-L.gif"
         }
       ]
     },
@@ -454,29 +397,25 @@
           "year": 1828,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/sheffield/1828-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20E.html"
+          "glyph": "glyphs/sheffield/1828-E-L.gif"
         },
         {
           "year": 1832,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/sheffield/1832-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20K.html"
+          "glyph": "glyphs/sheffield/1832-K-L.gif"
         },
         {
           "year": 1833,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/sheffield/1833-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20L.html"
+          "glyph": "glyphs/sheffield/1833-L-L.gif"
         },
         {
           "year": 1834,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/sheffield/1834-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20M.html"
+          "glyph": "glyphs/sheffield/1834-M-L.gif"
         }
       ]
     },
@@ -490,22 +429,19 @@
           "year": 1829,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/sheffield/1829-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20F.html"
+          "glyph": "glyphs/sheffield/1829-F-L.gif"
         },
         {
           "year": 1830,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/sheffield/1830-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20G.html"
+          "glyph": "glyphs/sheffield/1830-G-L.gif"
         },
         {
           "year": 1831,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/sheffield/1831-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20H.html"
+          "glyph": "glyphs/sheffield/1831-H-L.gif"
         }
       ]
     },
@@ -519,36 +455,31 @@
           "year": 1835,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/sheffield/1835-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20P.html"
+          "glyph": "glyphs/sheffield/1835-P-L.gif"
         },
         {
           "year": 1836,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/sheffield/1836-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Q.html"
+          "glyph": "glyphs/sheffield/1836-Q-L.gif"
         },
         {
           "year": 1837,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/sheffield/1837-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20R.html"
+          "glyph": "glyphs/sheffield/1837-R-L.gif"
         },
         {
           "year": 1838,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/sheffield/1838-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20S.html"
+          "glyph": "glyphs/sheffield/1838-S-L.gif"
         },
         {
           "year": 1839,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/sheffield/1839-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20T.html"
+          "glyph": "glyphs/sheffield/1839-T-L.gif"
         }
       ]
     },
@@ -562,141 +493,121 @@
           "year": 1840,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/sheffield/1840-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20U.html"
+          "glyph": "glyphs/sheffield/1840-U-L.gif"
         },
         {
           "year": 1841,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/sheffield/1841-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20V.html"
+          "glyph": "glyphs/sheffield/1841-V-L.gif"
         },
         {
           "year": 1842,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/sheffield/1842-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20X.html"
+          "glyph": "glyphs/sheffield/1842-X-L.gif"
         },
         {
           "year": 1843,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/sheffield/1843-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Z.html"
+          "glyph": "glyphs/sheffield/1843-Z-L.gif"
         },
         {
           "year": 1844,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/sheffield/1844-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20A.html"
+          "glyph": "glyphs/sheffield/1844-A-U.gif"
         },
         {
           "year": 1845,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/sheffield/1845-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20B.html"
+          "glyph": "glyphs/sheffield/1845-B-U.gif"
         },
         {
           "year": 1846,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/sheffield/1846-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20C.html"
+          "glyph": "glyphs/sheffield/1846-C-U.gif"
         },
         {
           "year": 1847,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/sheffield/1847-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20D.html"
+          "glyph": "glyphs/sheffield/1847-D-U.gif"
         },
         {
           "year": 1848,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/sheffield/1848-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20E.html"
+          "glyph": "glyphs/sheffield/1848-E-U.gif"
         },
         {
           "year": 1849,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/sheffield/1849-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20F.html"
+          "glyph": "glyphs/sheffield/1849-F-U.gif"
         },
         {
           "year": 1850,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/sheffield/1850-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20G.html"
+          "glyph": "glyphs/sheffield/1850-G-U.gif"
         },
         {
           "year": 1851,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/sheffield/1851-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20H.html"
+          "glyph": "glyphs/sheffield/1851-H-U.gif"
         },
         {
           "year": 1852,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/sheffield/1852-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20I.html"
+          "glyph": "glyphs/sheffield/1852-I-U.gif"
         },
         {
           "year": 1853,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/sheffield/1853-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20K.html"
+          "glyph": "glyphs/sheffield/1853-K-U.gif"
         },
         {
           "year": 1854,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/sheffield/1854-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20L.html"
+          "glyph": "glyphs/sheffield/1854-L-U.gif"
         },
         {
           "year": 1855,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/sheffield/1855-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20M.html"
+          "glyph": "glyphs/sheffield/1855-M-U.gif"
         },
         {
           "year": 1856,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/sheffield/1856-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20N.html"
+          "glyph": "glyphs/sheffield/1856-N-U.gif"
         },
         {
           "year": 1857,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/sheffield/1857-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20O.html"
+          "glyph": "glyphs/sheffield/1857-O-U.gif"
         },
         {
           "year": 1858,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/sheffield/1858-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20P.html"
+          "glyph": "glyphs/sheffield/1858-P-U.gif"
         },
         {
           "year": 1859,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/sheffield/1859-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20R.html"
+          "glyph": "glyphs/sheffield/1859-R-U.gif"
         }
       ]
     },
@@ -710,15 +621,13 @@
           "year": 1860,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/sheffield/1860-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20S.html"
+          "glyph": "glyphs/sheffield/1860-S-U.gif"
         },
         {
           "year": 1861,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/sheffield/1861-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20T.html"
+          "glyph": "glyphs/sheffield/1861-T-U.gif"
         }
       ]
     },
@@ -732,204 +641,175 @@
           "year": 1862,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/sheffield/1862-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20U.html"
+          "glyph": "glyphs/sheffield/1862-U-U.gif"
         },
         {
           "year": 1863,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/sheffield/1863-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20V.html"
+          "glyph": "glyphs/sheffield/1863-V-U.gif"
         },
         {
           "year": 1864,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/sheffield/1864-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20W.html"
+          "glyph": "glyphs/sheffield/1864-W-U.gif"
         },
         {
           "year": 1865,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/sheffield/1865-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20X.html"
+          "glyph": "glyphs/sheffield/1865-X-U.gif"
         },
         {
           "year": 1866,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/sheffield/1866-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Y.html"
+          "glyph": "glyphs/sheffield/1866-Y-U.gif"
         },
         {
           "year": 1867,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/sheffield/1867-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Z.html"
+          "glyph": "glyphs/sheffield/1867-Z-U.gif"
         },
         {
           "year": 1868,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/sheffield/1868-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20A.html"
+          "glyph": "glyphs/sheffield/1868-A-U.gif"
         },
         {
           "year": 1869,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/sheffield/1869-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20B.html"
+          "glyph": "glyphs/sheffield/1869-B-U.gif"
         },
         {
           "year": 1870,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/sheffield/1870-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20C.html"
+          "glyph": "glyphs/sheffield/1870-C-U.gif"
         },
         {
           "year": 1871,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/sheffield/1871-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20D.html"
+          "glyph": "glyphs/sheffield/1871-D-U.gif"
         },
         {
           "year": 1872,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/sheffield/1872-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20E.html"
+          "glyph": "glyphs/sheffield/1872-E-U.gif"
         },
         {
           "year": 1873,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/sheffield/1873-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20F.html"
+          "glyph": "glyphs/sheffield/1873-F-U.gif"
         },
         {
           "year": 1874,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/sheffield/1874-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20G.html"
+          "glyph": "glyphs/sheffield/1874-G-U.gif"
         },
         {
           "year": 1875,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/sheffield/1875-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20H.html"
+          "glyph": "glyphs/sheffield/1875-H-U.gif"
         },
         {
           "year": 1876,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/sheffield/1876-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20J.html"
+          "glyph": "glyphs/sheffield/1876-J-U.gif"
         },
         {
           "year": 1877,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/sheffield/1877-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20K.html"
+          "glyph": "glyphs/sheffield/1877-K-U.gif"
         },
         {
           "year": 1878,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/sheffield/1878-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20L.html"
+          "glyph": "glyphs/sheffield/1878-L-U.gif"
         },
         {
           "year": 1879,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/sheffield/1879-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20M.html"
+          "glyph": "glyphs/sheffield/1879-M-U.gif"
         },
         {
           "year": 1880,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/sheffield/1880-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20N.html"
+          "glyph": "glyphs/sheffield/1880-N-U.gif"
         },
         {
           "year": 1881,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/sheffield/1881-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20O.html"
+          "glyph": "glyphs/sheffield/1881-O-U.gif"
         },
         {
           "year": 1882,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/sheffield/1882-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20P.html"
+          "glyph": "glyphs/sheffield/1882-P-U.gif"
         },
         {
           "year": 1883,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/sheffield/1883-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Q.html"
+          "glyph": "glyphs/sheffield/1883-Q-U.gif"
         },
         {
           "year": 1884,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/sheffield/1884-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20R.html"
+          "glyph": "glyphs/sheffield/1884-R-U.gif"
         },
         {
           "year": 1885,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/sheffield/1885-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20S.html"
+          "glyph": "glyphs/sheffield/1885-S-U.gif"
         },
         {
           "year": 1886,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/sheffield/1886-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20T.html"
+          "glyph": "glyphs/sheffield/1886-T-U.gif"
         },
         {
           "year": 1887,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/sheffield/1887-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20U.html"
+          "glyph": "glyphs/sheffield/1887-U-U.gif"
         },
         {
           "year": 1888,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/sheffield/1888-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20V.html"
+          "glyph": "glyphs/sheffield/1888-V-U.gif"
         },
         {
           "year": 1889,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/sheffield/1889-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20W.html"
+          "glyph": "glyphs/sheffield/1889-W-U.gif"
         },
         {
           "year": 1890,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/sheffield/1890-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20X.html"
+          "glyph": "glyphs/sheffield/1890-X-U.gif"
         }
       ]
     },
@@ -943,190 +823,163 @@
           "year": 1891,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/sheffield/1891-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Y.html"
+          "glyph": "glyphs/sheffield/1891-Y-U.gif"
         },
         {
           "year": 1892,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/sheffield/1892-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Z.html"
+          "glyph": "glyphs/sheffield/1892-Z-U.gif"
         },
         {
           "year": 1893,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/sheffield/1893-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20A.html"
+          "glyph": "glyphs/sheffield/1893-A-L.gif"
         },
         {
           "year": 1894,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/sheffield/1894-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20B.html"
+          "glyph": "glyphs/sheffield/1894-B-L.gif"
         },
         {
           "year": 1895,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/sheffield/1895-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20C.html"
+          "glyph": "glyphs/sheffield/1895-C-L.gif"
         },
         {
           "year": 1896,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/sheffield/1896-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20D.html"
+          "glyph": "glyphs/sheffield/1896-D-L.gif"
         },
         {
           "year": 1897,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/sheffield/1897-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20E.html"
+          "glyph": "glyphs/sheffield/1897-E-L.gif"
         },
         {
           "year": 1898,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/sheffield/1898-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20F.html"
+          "glyph": "glyphs/sheffield/1898-F-L.gif"
         },
         {
           "year": 1899,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/sheffield/1899-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20G.html"
+          "glyph": "glyphs/sheffield/1899-G-L.gif"
         },
         {
           "year": 1900,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/sheffield/1900-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20H.html"
+          "glyph": "glyphs/sheffield/1900-H-L.gif"
         },
         {
           "year": 1901,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/sheffield/1901-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20I.html"
+          "glyph": "glyphs/sheffield/1901-I-L.gif"
         },
         {
           "year": 1902,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/sheffield/1902-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20K.html"
+          "glyph": "glyphs/sheffield/1902-K-L.gif"
         },
         {
           "year": 1903,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/sheffield/1903-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20L.html"
+          "glyph": "glyphs/sheffield/1903-L-L.gif"
         },
         {
           "year": 1904,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/sheffield/1904-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20M.html"
+          "glyph": "glyphs/sheffield/1904-M-L.gif"
         },
         {
           "year": 1905,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/sheffield/1905-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20N.html"
+          "glyph": "glyphs/sheffield/1905-N-L.gif"
         },
         {
           "year": 1906,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/sheffield/1906-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20O.html"
+          "glyph": "glyphs/sheffield/1906-O-L.gif"
         },
         {
           "year": 1907,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/sheffield/1907-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20P.html"
+          "glyph": "glyphs/sheffield/1907-P-L.gif"
         },
         {
           "year": 1908,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/sheffield/1908-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Q.html"
+          "glyph": "glyphs/sheffield/1908-Q-L.gif"
         },
         {
           "year": 1909,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/sheffield/1909-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20R.html"
+          "glyph": "glyphs/sheffield/1909-R-L.gif"
         },
         {
           "year": 1910,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/sheffield/1910-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20S.html"
+          "glyph": "glyphs/sheffield/1910-S-L.gif"
         },
         {
           "year": 1911,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/sheffield/1911-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20T.html"
+          "glyph": "glyphs/sheffield/1911-T-L.gif"
         },
         {
           "year": 1912,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/sheffield/1912-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20U.html"
+          "glyph": "glyphs/sheffield/1912-U-L.gif"
         },
         {
           "year": 1913,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/sheffield/1913-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20V.html"
+          "glyph": "glyphs/sheffield/1913-V-L.gif"
         },
         {
           "year": 1914,
           "letter": "W",
           "case": "L",
-          "glyph": "glyphs/sheffield/1914-W-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20W.html"
+          "glyph": "glyphs/sheffield/1914-W-L.gif"
         },
         {
           "year": 1915,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/sheffield/1915-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20X.html"
+          "glyph": "glyphs/sheffield/1915-X-L.gif"
         },
         {
           "year": 1916,
           "letter": "Y",
           "case": "L",
-          "glyph": "glyphs/sheffield/1916-Y-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Y.html"
+          "glyph": "glyphs/sheffield/1916-Y-L.gif"
         },
         {
           "year": 1917,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/sheffield/1917-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Z.html"
+          "glyph": "glyphs/sheffield/1917-Z-L.gif"
         }
       ]
     },
@@ -1140,400 +993,343 @@
           "year": 1918,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/sheffield/1918-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20A.html"
+          "glyph": "glyphs/sheffield/1918-A-L.gif"
         },
         {
           "year": 1919,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/sheffield/1919-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20B.html"
+          "glyph": "glyphs/sheffield/1919-B-L.gif"
         },
         {
           "year": 1920,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/sheffield/1920-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20C.html"
+          "glyph": "glyphs/sheffield/1920-C-L.gif"
         },
         {
           "year": 1921,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/sheffield/1921-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20D.html"
+          "glyph": "glyphs/sheffield/1921-D-L.gif"
         },
         {
           "year": 1922,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/sheffield/1922-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20E.html"
+          "glyph": "glyphs/sheffield/1922-E-L.gif"
         },
         {
           "year": 1923,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/sheffield/1923-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20F.html"
+          "glyph": "glyphs/sheffield/1923-F-L.gif"
         },
         {
           "year": 1924,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/sheffield/1924-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20G.html"
+          "glyph": "glyphs/sheffield/1924-G-L.gif"
         },
         {
           "year": 1925,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/sheffield/1925-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20H.html"
+          "glyph": "glyphs/sheffield/1925-H-L.gif"
         },
         {
           "year": 1926,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/sheffield/1926-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20I.html"
+          "glyph": "glyphs/sheffield/1926-I-L.gif"
         },
         {
           "year": 1927,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/sheffield/1927-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20K.html"
+          "glyph": "glyphs/sheffield/1927-K-L.gif"
         },
         {
           "year": 1928,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/sheffield/1928-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20L.html"
+          "glyph": "glyphs/sheffield/1928-L-L.gif"
         },
         {
           "year": 1929,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/sheffield/1929-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20M.html"
+          "glyph": "glyphs/sheffield/1929-M-L.gif"
         },
         {
           "year": 1930,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/sheffield/1930-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20N.html"
+          "glyph": "glyphs/sheffield/1930-N-L.gif"
         },
         {
           "year": 1931,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/sheffield/1931-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20O.html"
+          "glyph": "glyphs/sheffield/1931-O-L.gif"
         },
         {
           "year": 1932,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/sheffield/1932-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20P.html"
+          "glyph": "glyphs/sheffield/1932-P-L.gif"
         },
         {
           "year": 1933,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/sheffield/1933-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Q.html"
+          "glyph": "glyphs/sheffield/1933-Q-L.gif"
         },
         {
           "year": 1934,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/sheffield/1934-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20R.html"
+          "glyph": "glyphs/sheffield/1934-R-L.gif"
         },
         {
           "year": 1935,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/sheffield/1935-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20S.html"
+          "glyph": "glyphs/sheffield/1935-S-L.gif"
         },
         {
           "year": 1936,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/sheffield/1936-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20T.html"
+          "glyph": "glyphs/sheffield/1936-T-L.gif"
         },
         {
           "year": 1937,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/sheffield/1937-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20U.html"
+          "glyph": "glyphs/sheffield/1937-U-L.gif"
         },
         {
           "year": 1938,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/sheffield/1938-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20V.html"
+          "glyph": "glyphs/sheffield/1938-V-L.gif"
         },
         {
           "year": 1939,
           "letter": "W",
           "case": "L",
-          "glyph": "glyphs/sheffield/1939-W-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20W.html"
+          "glyph": "glyphs/sheffield/1939-W-L.gif"
         },
         {
           "year": 1940,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/sheffield/1940-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20X.html"
+          "glyph": "glyphs/sheffield/1940-X-L.gif"
         },
         {
           "year": 1941,
           "letter": "Y",
           "case": "L",
-          "glyph": "glyphs/sheffield/1941-Y-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Y.html"
+          "glyph": "glyphs/sheffield/1941-Y-L.gif"
         },
         {
           "year": 1942,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/sheffield/1942-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Z.html"
+          "glyph": "glyphs/sheffield/1942-Z-L.gif"
         },
         {
           "year": 1943,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/sheffield/1943-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20A.html"
+          "glyph": "glyphs/sheffield/1943-A-U.gif"
         },
         {
           "year": 1944,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/sheffield/1944-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20B.html"
+          "glyph": "glyphs/sheffield/1944-B-U.gif"
         },
         {
           "year": 1945,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/sheffield/1945-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20C.html"
+          "glyph": "glyphs/sheffield/1945-C-U.gif"
         },
         {
           "year": 1946,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/sheffield/1946-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20D.html"
+          "glyph": "glyphs/sheffield/1946-D-U.gif"
         },
         {
           "year": 1947,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/sheffield/1947-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20E.html"
+          "glyph": "glyphs/sheffield/1947-E-U.gif"
         },
         {
           "year": 1948,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/sheffield/1948-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20F.html"
+          "glyph": "glyphs/sheffield/1948-F-U.gif"
         },
         {
           "year": 1949,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/sheffield/1949-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20G.html"
+          "glyph": "glyphs/sheffield/1949-G-U.gif"
         },
         {
           "year": 1950,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/sheffield/1950-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20H.html"
+          "glyph": "glyphs/sheffield/1950-H-U.gif"
         },
         {
           "year": 1951,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/sheffield/1951-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20I.html"
+          "glyph": "glyphs/sheffield/1951-I-U.gif"
         },
         {
           "year": 1952,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/sheffield/1952-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20K.html"
+          "glyph": "glyphs/sheffield/1952-K-U.gif"
         },
         {
           "year": 1953,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/sheffield/1953-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20L.html"
+          "glyph": "glyphs/sheffield/1953-L-U.gif"
         },
         {
           "year": 1954,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/sheffield/1954-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20M.html"
+          "glyph": "glyphs/sheffield/1954-M-U.gif"
         },
         {
           "year": 1955,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/sheffield/1955-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20N.html"
+          "glyph": "glyphs/sheffield/1955-N-U.gif"
         },
         {
           "year": 1956,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/sheffield/1956-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20O.html"
+          "glyph": "glyphs/sheffield/1956-O-U.gif"
         },
         {
           "year": 1957,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/sheffield/1957-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20P.html"
+          "glyph": "glyphs/sheffield/1957-P-U.gif"
         },
         {
           "year": 1958,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/sheffield/1958-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Q.html"
+          "glyph": "glyphs/sheffield/1958-Q-U.gif"
         },
         {
           "year": 1959,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/sheffield/1959-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20R.html"
+          "glyph": "glyphs/sheffield/1959-R-U.gif"
         },
         {
           "year": 1960,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/sheffield/1960-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20S.html"
+          "glyph": "glyphs/sheffield/1960-S-U.gif"
         },
         {
           "year": 1961,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/sheffield/1961-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20T.html"
+          "glyph": "glyphs/sheffield/1961-T-U.gif"
         },
         {
           "year": 1962,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/sheffield/1962-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20U.html"
+          "glyph": "glyphs/sheffield/1962-U-U.gif"
         },
         {
           "year": 1963,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/sheffield/1963-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20V.html"
+          "glyph": "glyphs/sheffield/1963-V-U.gif"
         },
         {
           "year": 1964,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/sheffield/1964-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20W.html"
+          "glyph": "glyphs/sheffield/1964-W-U.gif"
         },
         {
           "year": 1965,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/sheffield/1965-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20X.html"
+          "glyph": "glyphs/sheffield/1965-X-U.gif"
         },
         {
           "year": 1966,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/sheffield/1966-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Y.html"
+          "glyph": "glyphs/sheffield/1966-Y-U.gif"
         },
         {
           "year": 1967,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/sheffield/1967-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Z.html"
+          "glyph": "glyphs/sheffield/1967-Z-U.gif"
         },
         {
           "year": 1968,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/sheffield/1968-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20A.html"
+          "glyph": "glyphs/sheffield/1968-A-U.gif"
         },
         {
           "year": 1969,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/sheffield/1969-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20B.html"
+          "glyph": "glyphs/sheffield/1969-B-U.gif"
         },
         {
           "year": 1970,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/sheffield/1970-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20C.html"
+          "glyph": "glyphs/sheffield/1970-C-U.gif"
         },
         {
           "year": 1971,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/sheffield/1971-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20D.html"
+          "glyph": "glyphs/sheffield/1971-D-U.gif"
         },
         {
           "year": 1972,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/sheffield/1972-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20E.html"
+          "glyph": "glyphs/sheffield/1972-E-U.gif"
         },
         {
           "year": 1973,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/sheffield/1973-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20F.html"
+          "glyph": "glyphs/sheffield/1973-F-U.gif"
         },
         {
           "year": 1974,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/sheffield/1974-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20G.html"
+          "glyph": "glyphs/sheffield/1974-G-U.gif"
         }
       ]
     },
@@ -1547,176 +1343,151 @@
           "year": 1975,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/sheffield/1975-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20A.html"
+          "glyph": "glyphs/sheffield/1975-A-U.gif"
         },
         {
           "year": 1976,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/sheffield/1976-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20B.html"
+          "glyph": "glyphs/sheffield/1976-B-U.gif"
         },
         {
           "year": 1977,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/sheffield/1977-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20C.html"
+          "glyph": "glyphs/sheffield/1977-C-U.gif"
         },
         {
           "year": 1978,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/sheffield/1978-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20D.html"
+          "glyph": "glyphs/sheffield/1978-D-U.gif"
         },
         {
           "year": 1979,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/sheffield/1979-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20E.html"
+          "glyph": "glyphs/sheffield/1979-E-U.gif"
         },
         {
           "year": 1980,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/sheffield/1980-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20F.html"
+          "glyph": "glyphs/sheffield/1980-F-U.gif"
         },
         {
           "year": 1981,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/sheffield/1981-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20G.html"
+          "glyph": "glyphs/sheffield/1981-G-U.gif"
         },
         {
           "year": 1982,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/sheffield/1982-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20H.html"
+          "glyph": "glyphs/sheffield/1982-H-U.gif"
         },
         {
           "year": 1983,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/sheffield/1983-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20I.html"
+          "glyph": "glyphs/sheffield/1983-I-U.gif"
         },
         {
           "year": 1984,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/sheffield/1984-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20K.html"
+          "glyph": "glyphs/sheffield/1984-K-U.gif"
         },
         {
           "year": 1985,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/sheffield/1985-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20L.html"
+          "glyph": "glyphs/sheffield/1985-L-U.gif"
         },
         {
           "year": 1986,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/sheffield/1986-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20M.html"
+          "glyph": "glyphs/sheffield/1986-M-U.gif"
         },
         {
           "year": 1987,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/sheffield/1987-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20N.html"
+          "glyph": "glyphs/sheffield/1987-N-U.gif"
         },
         {
           "year": 1988,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/sheffield/1988-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20O.html"
+          "glyph": "glyphs/sheffield/1988-O-U.gif"
         },
         {
           "year": 1989,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/sheffield/1989-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20P.html"
+          "glyph": "glyphs/sheffield/1989-P-U.gif"
         },
         {
           "year": 1990,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/sheffield/1990-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Q.html"
+          "glyph": "glyphs/sheffield/1990-Q-U.gif"
         },
         {
           "year": 1991,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/sheffield/1991-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20R.html"
+          "glyph": "glyphs/sheffield/1991-R-U.gif"
         },
         {
           "year": 1992,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/sheffield/1992-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20S.html"
+          "glyph": "glyphs/sheffield/1992-S-U.gif"
         },
         {
           "year": 1993,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/sheffield/1993-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20T.html"
+          "glyph": "glyphs/sheffield/1993-T-U.gif"
         },
         {
           "year": 1994,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/sheffield/1994-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20U.html"
+          "glyph": "glyphs/sheffield/1994-U-U.gif"
         },
         {
           "year": 1995,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/sheffield/1995-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20V.html"
+          "glyph": "glyphs/sheffield/1995-V-U.gif"
         },
         {
           "year": 1996,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/sheffield/1996-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20W.html"
+          "glyph": "glyphs/sheffield/1996-W-U.gif"
         },
         {
           "year": 1997,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/sheffield/1997-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20X.html"
+          "glyph": "glyphs/sheffield/1997-X-U.gif"
         },
         {
           "year": 1998,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/sheffield/1998-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Y.html"
+          "glyph": "glyphs/sheffield/1998-Y-U.gif"
         },
         {
           "year": 1999,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/sheffield/1999-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Z.html"
+          "glyph": "glyphs/sheffield/1999-Z-U.gif"
         }
       ]
     },
@@ -1730,176 +1501,151 @@
           "year": 2000,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/sheffield/2000-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20A.html"
+          "glyph": "glyphs/sheffield/2000-A-L.gif"
         },
         {
           "year": 2001,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/sheffield/2001-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20B.html"
+          "glyph": "glyphs/sheffield/2001-B-L.gif"
         },
         {
           "year": 2002,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/sheffield/2002-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20C.html"
+          "glyph": "glyphs/sheffield/2002-C-L.gif"
         },
         {
           "year": 2003,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/sheffield/2003-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20D.html"
+          "glyph": "glyphs/sheffield/2003-D-L.gif"
         },
         {
           "year": 2004,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/sheffield/2004-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20E.html"
+          "glyph": "glyphs/sheffield/2004-E-L.gif"
         },
         {
           "year": 2005,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/sheffield/2005-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20F.html"
+          "glyph": "glyphs/sheffield/2005-F-L.gif"
         },
         {
           "year": 2006,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/sheffield/2006-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20G.html"
+          "glyph": "glyphs/sheffield/2006-G-L.gif"
         },
         {
           "year": 2007,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/sheffield/2007-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20H.html"
+          "glyph": "glyphs/sheffield/2007-H-L.gif"
         },
         {
           "year": 2008,
           "letter": "J",
           "case": "L",
-          "glyph": "glyphs/sheffield/2008-J-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20J.html"
+          "glyph": "glyphs/sheffield/2008-J-L.gif"
         },
         {
           "year": 2009,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/sheffield/2009-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20K.html"
+          "glyph": "glyphs/sheffield/2009-K-L.gif"
         },
         {
           "year": 2010,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/sheffield/2010-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20L.html"
+          "glyph": "glyphs/sheffield/2010-L-L.gif"
         },
         {
           "year": 2011,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/sheffield/2011-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20M.html"
+          "glyph": "glyphs/sheffield/2011-M-L.gif"
         },
         {
           "year": 2012,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/sheffield/2012-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20N.html"
+          "glyph": "glyphs/sheffield/2012-N-L.gif"
         },
         {
           "year": 2013,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/sheffield/2013-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20O.html"
+          "glyph": "glyphs/sheffield/2013-O-L.gif"
         },
         {
           "year": 2014,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/sheffield/2014-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20P.html"
+          "glyph": "glyphs/sheffield/2014-P-L.gif"
         },
         {
           "year": 2015,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/sheffield/2015-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Q.html"
+          "glyph": "glyphs/sheffield/2015-Q-L.gif"
         },
         {
           "year": 2016,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/sheffield/2016-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20R.html"
+          "glyph": "glyphs/sheffield/2016-R-L.gif"
         },
         {
           "year": 2017,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/sheffield/2017-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20S.html"
+          "glyph": "glyphs/sheffield/2017-S-L.gif"
         },
         {
           "year": 2018,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/sheffield/2018-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20T.html"
+          "glyph": "glyphs/sheffield/2018-T-L.gif"
         },
         {
           "year": 2019,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/sheffield/2019-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20U.html"
+          "glyph": "glyphs/sheffield/2019-U-L.gif"
         },
         {
           "year": 2020,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/sheffield/2020-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20V.html"
+          "glyph": "glyphs/sheffield/2020-V-L.gif"
         },
         {
           "year": 2021,
           "letter": "W",
           "case": "L",
-          "glyph": "glyphs/sheffield/2021-W-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20W.html"
+          "glyph": "glyphs/sheffield/2021-W-L.gif"
         },
         {
           "year": 2022,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/sheffield/2022-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20X.html"
+          "glyph": "glyphs/sheffield/2022-X-L.gif"
         },
         {
           "year": 2023,
           "letter": "Y",
           "case": "L",
-          "glyph": "glyphs/sheffield/2023-Y-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Y.html"
+          "glyph": "glyphs/sheffield/2023-Y-L.gif"
         },
         {
           "year": 2024,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/sheffield/2024-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20Z.html"
+          "glyph": "glyphs/sheffield/2024-Z-L.gif"
         }
       ]
     },
@@ -1913,43 +1659,37 @@
           "year": 2025,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/sheffield/2025-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20A.html"
+          "glyph": "glyphs/sheffield/2025-A-U.gif"
         },
         {
           "year": 2026,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/sheffield/2026-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20B.html"
+          "glyph": "glyphs/sheffield/2026-B-U.gif"
         },
         {
           "year": 2027,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/sheffield/2027-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20C.html"
+          "glyph": "glyphs/sheffield/2027-C-U.gif"
         },
         {
           "year": 2028,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/sheffield/2028-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20D.html"
+          "glyph": "glyphs/sheffield/2028-D-U.gif"
         },
         {
           "year": 2029,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/sheffield/2029-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20E.html"
+          "glyph": "glyphs/sheffield/2029-E-U.gif"
         },
         {
           "year": 2030,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/sheffield/2030-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Sheffield/Date%20Letters%20F.html"
+          "glyph": "glyphs/sheffield/2030-F-U.gif"
         }
       ]
     }

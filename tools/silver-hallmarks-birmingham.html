@@ -146,12 +146,12 @@
             gap: 0.6rem;
             margin: 1rem 0;
         }
-        .city-link {
+        .city-link, .city-link:link, .city-link:visited, .city-link:hover {
             background: var(--bg-card);
             border: 1px solid var(--border-default);
             border-radius: var(--radius-sm);
             padding: 0.85rem 1rem;
-            text-decoration: none;
+            text-decoration: none !important;
             color: var(--text-primary);
             font-weight: 600;
             transition: border-color var(--transition-fast), background var(--transition-fast);
@@ -166,6 +166,7 @@
             color: var(--text-tertiary);
             margin-top: 0.2rem;
             font-size: 0.82rem;
+            text-decoration: none;
         }
         /* Date-letter chart — letter picker + buckets */
         .letter-picker {
@@ -324,6 +325,76 @@
             color: var(--text-tertiary);
             line-height: 1.2;
         }
+        .letter-card { position: relative; }
+        .zoom-btn {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 22px;
+            height: 22px;
+            background: rgba(0,0,0,0.55);
+            color: #fff;
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 13px;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.55;
+            transition: opacity var(--transition-fast), background var(--transition-fast);
+            padding: 0;
+            z-index: 2;
+        }
+        .zoom-btn:hover { opacity: 1; background: rgba(0,0,0,0.8); }
+        .img-lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            cursor: zoom-out;
+        }
+        .img-lightbox[hidden] { display: none; }
+        .img-lightbox img {
+            background: #f4ead6;
+            padding: 1.5rem;
+            border-radius: 12px;
+            max-width: min(90vw, 520px);
+            max-height: 90vh;
+            image-rendering: -webkit-optimize-contrast;
+        }
+        .img-lightbox-caption {
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #FAFAFA;
+            font-size: 0.95rem;
+            background: rgba(0,0,0,0.6);
+            padding: 0.5rem 0.85rem;
+            border-radius: var(--radius-sm);
+        }
+        .img-lightbox-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(0,0,0,0.55);
+            color: #fff;
+            border: 0;
+            font-size: 1.6rem;
+            line-height: 1;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
@@ -395,7 +466,6 @@
                             <span class="letter-picker-status" data-default-text="Pick a letter above to see the years Birmingham used it (251 year-letter pairs across 52 letters).">Pick a letter above to see the years Birmingham used it (251 year-letter pairs across 52 letters).</span>
                         </div>
                     </div>
-                    <p class="callout"><strong>Source:</strong> date letter glyphs are sourced from <a href="https://www.silvermakersmarks.co.uk/" target="_blank" rel="noopener">silvermakersmarks.co.uk</a> with permission. For makers' mark identification (out of scope here), use that site directly.</p>
                     <div class="letter-buckets">
                     <div class="letter-bucket is-hidden" data-letter="A-U">
                         <h3 class="letter-bucket-heading">A <small>uppercase · 6 years</small></h3>
@@ -1932,7 +2002,6 @@
                         <li><a href="uk-silver-hallmarks.html">Main UK Silver Hallmarks Identifier</a> (multi-office wizard)</li>
                         <li>Official site: <a href="https://www.theassayoffice.co.uk/" target="_blank" rel="noopener">Birmingham Assay Office</a></li>
                         <li><a href="https://www.thegoldsmiths.co.uk/" target="_blank" rel="noopener">Goldsmiths&rsquo; Company</a> &mdash; the compulsory hallmarking authority for England and Wales</li>
-                        <li><a href="https://www.silvermakersmarks.co.uk/" target="_blank" rel="noopener">silvermakersmarks.co.uk</a> &mdash; the most thorough open reference for British &amp; Irish makers&rsquo; marks (out of scope on this site).</li>
                     </ul>
                 </section>
 
@@ -1947,6 +2016,11 @@
         </div>
     </main>
 
+    <div class="img-lightbox" id="img-lightbox" hidden role="dialog" aria-label="Enlarged hallmark image" aria-modal="true">
+        <button type="button" class="img-lightbox-close" id="img-lightbox-close" aria-label="Close">×</button>
+        <img alt="">
+        <div class="img-lightbox-caption" id="img-lightbox-caption"></div>
+    </div>
     <footer class="footer footer-compact">
         <div class="container">
             <div class="footer-row">
@@ -2002,28 +2076,56 @@
         const clearBtn = picker.querySelector('.letter-pick-clear');
 
         function clear() {
-            buckets.forEach(b => b.classList.remove('is-hidden'));
+            buckets.forEach(b => b.classList.add('is-hidden'));
             buttons.forEach(b => b.classList.remove('is-active'));
             if (status) status.textContent = defaultStatus;
         }
         function pick(key, btn) {
             buttons.forEach(b => b.classList.toggle('is-active', b === btn));
-            let visibleCount = 0;
+            let count = 0;
             buckets.forEach(b => {
                 const match = b.dataset.letter === key;
                 b.classList.toggle('is-hidden', !match);
-                if (match) visibleCount = b.querySelectorAll('.letter-card').length;
+                if (match) count = b.querySelectorAll('.letter-card').length;
             });
             if (status) {
                 const display = btn.firstChild ? btn.firstChild.textContent : key;
-                status.textContent = 'Showing ' + visibleCount + ' year' + (visibleCount === 1 ? '' : 's') + ' for letter "' + display + '".';
+                status.textContent = 'Showing ' + count + ' year' + (count === 1 ? '' : 's') + ' for letter "' + display + '".';
             }
-            // No scroll — the picker is sticky at top and the just-revealed
-            // bucket is positioned directly below it. Auto-scroll was hiding
-            // the picker behind the sticky overlap.
         }
         buttons.forEach(btn => btn.addEventListener('click', () => pick(btn.dataset.pick, btn)));
         if (clearBtn) clearBtn.addEventListener('click', clear);
+    })();
+
+    // Lightbox + magnifier on every letter card
+    (function () {
+        const lb = document.getElementById('img-lightbox');
+        const lbImg = lb && lb.querySelector('img');
+        const lbCap = document.getElementById('img-lightbox-caption');
+        const lbClose = document.getElementById('img-lightbox-close');
+        if (!lb || !lbImg) return;
+        function open(src, caption) {
+            lbImg.src = src;
+            if (lbCap) lbCap.textContent = caption || '';
+            lb.hidden = false;
+        }
+        function close() { lb.hidden = true; }
+        lb.addEventListener('click', e => { if (e.target === lb || e.target === lbImg) close(); });
+        if (lbClose) lbClose.addEventListener('click', close);
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+        document.querySelectorAll('.letter-card').forEach(card => {
+            const img = card.querySelector('.letter-card-img img');
+            if (!img) return;
+            const year = (card.querySelector('.letter-card-year') || {}).textContent || '';
+            const cycle = (card.querySelector('.letter-card-cycle') || {}).textContent || '';
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'zoom-btn';
+            btn.setAttribute('aria-label', 'Show larger image');
+            btn.textContent = '⤢';
+            btn.addEventListener('click', e => { e.stopPropagation(); open(img.src, year + ' · ' + cycle); });
+            card.appendChild(btn);
+        });
     })();
     </script>
     <script data-goatcounter="https://grommash9.goatcounter.com/count"

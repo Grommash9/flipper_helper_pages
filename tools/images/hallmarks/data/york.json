@@ -1,7 +1,5 @@
 {
   "office": "York",
-  "sourceSite": "silvermakersmarks.co.uk",
-  "sourceIndex": "https://www.silvermakersmarks.co.uk/Dates/York.html",
   "cycles": [
     {
       "key": "1560-1699",
@@ -13,771 +11,661 @@
           "year": 1560,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/york/1560-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20B.html"
+          "glyph": "glyphs/york/1560-B-U.gif"
         },
         {
           "year": 1561,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/york/1561-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20C.html"
+          "glyph": "glyphs/york/1561-C-U.gif"
         },
         {
           "year": 1562,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/york/1562-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20D.html"
+          "glyph": "glyphs/york/1562-D-U.gif"
         },
         {
           "year": 1564,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/york/1564-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20F.html"
+          "glyph": "glyphs/york/1564-F-U.gif"
         },
         {
           "year": 1566,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/york/1566-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20H.html"
+          "glyph": "glyphs/york/1566-H-U.gif"
         },
         {
           "year": 1568,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/york/1568-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20K.html"
+          "glyph": "glyphs/york/1568-K-U.gif"
         },
         {
           "year": 1569,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/york/1569-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20L.html"
+          "glyph": "glyphs/york/1569-L-U.gif"
         },
         {
           "year": 1570,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/york/1570-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20M.html"
+          "glyph": "glyphs/york/1570-M-U.gif"
         },
         {
           "year": 1572,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/york/1572-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20O.html"
+          "glyph": "glyphs/york/1572-O-U.gif"
         },
         {
           "year": 1573,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/york/1573-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20P.html"
+          "glyph": "glyphs/york/1573-P-U.gif"
         },
         {
           "year": 1574,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/york/1574-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Q.html"
+          "glyph": "glyphs/york/1574-Q-U.gif"
         },
         {
           "year": 1575,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/york/1575-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20R.html"
+          "glyph": "glyphs/york/1575-R-U.gif"
         },
         {
           "year": 1576,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/york/1576-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20S.html"
+          "glyph": "glyphs/york/1576-S-U.gif"
         },
         {
           "year": 1577,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/york/1577-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20T.html"
+          "glyph": "glyphs/york/1577-T-U.gif"
         },
         {
           "year": 1581,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/york/1581-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Y.html"
+          "glyph": "glyphs/york/1581-Y-U.gif"
         },
         {
           "year": 1582,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/york/1582-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Z.html"
+          "glyph": "glyphs/york/1582-Z-U.gif"
         },
         {
           "year": 1583,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/york/1583-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20A.html"
+          "glyph": "glyphs/york/1583-A-L.gif"
         },
         {
           "year": 1584,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/york/1584-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20B.html"
+          "glyph": "glyphs/york/1584-B-L.gif"
         },
         {
           "year": 1587,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/york/1587-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20E.html"
+          "glyph": "glyphs/york/1587-E-L.gif"
         },
         {
           "year": 1590,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/york/1590-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20H.html"
+          "glyph": "glyphs/york/1590-H-L.gif"
         },
         {
           "year": 1592,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/york/1592-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20K.html"
+          "glyph": "glyphs/york/1592-K-L.gif"
         },
         {
           "year": 1593,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/york/1593-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20L.html"
+          "glyph": "glyphs/york/1593-L-L.gif"
         },
         {
           "year": 1594,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/york/1594-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20M.html"
+          "glyph": "glyphs/york/1594-M-L.gif"
         },
         {
           "year": 1597,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/york/1597-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20P.html"
+          "glyph": "glyphs/york/1597-P-L.gif"
         },
         {
           "year": 1599,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/york/1599-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20R.html"
+          "glyph": "glyphs/york/1599-R-L.gif"
         },
         {
           "year": 1601,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/york/1601-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20T.html"
+          "glyph": "glyphs/york/1601-T-L.gif"
         },
         {
           "year": 1604,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/york/1604-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20X.html"
+          "glyph": "glyphs/york/1604-X-L.gif"
         },
         {
           "year": 1607,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/york/1607-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20A.html"
+          "glyph": "glyphs/york/1607-A-U.gif"
         },
         {
           "year": 1608,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/york/1608-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20B.html"
+          "glyph": "glyphs/york/1608-B-U.gif"
         },
         {
           "year": 1609,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/york/1609-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20C.html"
+          "glyph": "glyphs/york/1609-C-U.gif"
         },
         {
           "year": 1610,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/york/1610-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20D.html"
+          "glyph": "glyphs/york/1610-D-U.gif"
         },
         {
           "year": 1611,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/york/1611-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20E.html"
+          "glyph": "glyphs/york/1611-E-U.gif"
         },
         {
           "year": 1612,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/york/1612-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20F.html"
+          "glyph": "glyphs/york/1612-F-U.gif"
         },
         {
           "year": 1613,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/york/1613-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20G.html"
+          "glyph": "glyphs/york/1613-G-U.gif"
         },
         {
           "year": 1614,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/york/1614-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20H.html"
+          "glyph": "glyphs/york/1614-H-U.gif"
         },
         {
           "year": 1615,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/york/1615-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20J.html"
+          "glyph": "glyphs/york/1615-J-U.gif"
         },
         {
           "year": 1616,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/york/1616-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20K.html"
+          "glyph": "glyphs/york/1616-K-U.gif"
         },
         {
           "year": 1618,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/york/1618-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20M.html"
+          "glyph": "glyphs/york/1618-M-U.gif"
         },
         {
           "year": 1619,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/york/1619-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20N.html"
+          "glyph": "glyphs/york/1619-N-U.gif"
         },
         {
           "year": 1620,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/york/1620-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20O.html"
+          "glyph": "glyphs/york/1620-O-U.gif"
         },
         {
           "year": 1621,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/york/1621-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20P.html"
+          "glyph": "glyphs/york/1621-P-U.gif"
         },
         {
           "year": 1622,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/york/1622-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Q.html"
+          "glyph": "glyphs/york/1622-Q-U.gif"
         },
         {
           "year": 1623,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/york/1623-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20R.html"
+          "glyph": "glyphs/york/1623-R-U.gif"
         },
         {
           "year": 1624,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/york/1624-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20S.html"
+          "glyph": "glyphs/york/1624-S-U.gif"
         },
         {
           "year": 1625,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/york/1625-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20T.html"
+          "glyph": "glyphs/york/1625-T-U.gif"
         },
         {
           "year": 1626,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/york/1626-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20U.html"
+          "glyph": "glyphs/york/1626-U-U.gif"
         },
         {
           "year": 1627,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/york/1627-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20W.html"
+          "glyph": "glyphs/york/1627-W-U.gif"
         },
         {
           "year": 1629,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/york/1629-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Y.html"
+          "glyph": "glyphs/york/1629-Y-U.gif"
         },
         {
           "year": 1630,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/york/1630-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Z.html"
+          "glyph": "glyphs/york/1630-Z-U.gif"
         },
         {
           "year": 1631,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/york/1631-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20A.html"
+          "glyph": "glyphs/york/1631-A-L.gif"
         },
         {
           "year": 1632,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/york/1632-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20B.html"
+          "glyph": "glyphs/york/1632-B-L.gif"
         },
         {
           "year": 1633,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/york/1633-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20C.html"
+          "glyph": "glyphs/york/1633-C-L.gif"
         },
         {
           "year": 1634,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/york/1634-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20D.html"
+          "glyph": "glyphs/york/1634-D-L.gif"
         },
         {
           "year": 1635,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/york/1635-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20E.html"
+          "glyph": "glyphs/york/1635-E-L.gif"
         },
         {
           "year": 1636,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/york/1636-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20F.html"
+          "glyph": "glyphs/york/1636-F-L.gif"
         },
         {
           "year": 1637,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/york/1637-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20G.html"
+          "glyph": "glyphs/york/1637-G-L.gif"
         },
         {
           "year": 1638,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/york/1638-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20H.html"
+          "glyph": "glyphs/york/1638-H-L.gif"
         },
         {
           "year": 1639,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/york/1639-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20I.html"
+          "glyph": "glyphs/york/1639-I-L.gif"
         },
         {
           "year": 1640,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/york/1640-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20K.html"
+          "glyph": "glyphs/york/1640-K-L.gif"
         },
         {
           "year": 1641,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/york/1641-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20L.html"
+          "glyph": "glyphs/york/1641-L-L.gif"
         },
         {
           "year": 1642,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/york/1642-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20M.html"
+          "glyph": "glyphs/york/1642-M-L.gif"
         },
         {
           "year": 1644,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/york/1644-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20O.html"
+          "glyph": "glyphs/york/1644-O-L.gif"
         },
         {
           "year": 1648,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/york/1648-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20S.html"
+          "glyph": "glyphs/york/1648-S-L.gif"
         },
         {
           "year": 1649,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/york/1649-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20T.html"
+          "glyph": "glyphs/york/1649-T-L.gif"
         },
         {
           "year": 1650,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/york/1650-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20V.html"
+          "glyph": "glyphs/york/1650-V-L.gif"
         },
         {
           "year": 1652,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/york/1652-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20X.html"
+          "glyph": "glyphs/york/1652-X-L.gif"
         },
         {
           "year": 1653,
           "letter": "Y",
           "case": "L",
-          "glyph": "glyphs/york/1653-Y-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Y.html"
+          "glyph": "glyphs/york/1653-Y-L.gif"
         },
         {
           "year": 1654,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/york/1654-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Z.html"
+          "glyph": "glyphs/york/1654-Z-L.gif"
         },
         {
           "year": 1655,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/york/1655-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20A.html"
+          "glyph": "glyphs/york/1655-A-U.gif"
         },
         {
           "year": 1656,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/york/1656-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20B.html"
+          "glyph": "glyphs/york/1656-B-U.gif"
         },
         {
           "year": 1657,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/york/1657-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20C.html"
+          "glyph": "glyphs/york/1657-C-U.gif"
         },
         {
           "year": 1658,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/york/1658-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20D.html"
+          "glyph": "glyphs/york/1658-D-U.gif"
         },
         {
           "year": 1659,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/york/1659-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20E.html"
+          "glyph": "glyphs/york/1659-E-U.gif"
         },
         {
           "year": 1660,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/york/1660-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20F.html"
+          "glyph": "glyphs/york/1660-F-U.gif"
         },
         {
           "year": 1661,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/york/1661-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20G.html"
+          "glyph": "glyphs/york/1661-G-U.gif"
         },
         {
           "year": 1662,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/york/1662-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20H.html"
+          "glyph": "glyphs/york/1662-H-U.gif"
         },
         {
           "year": 1663,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/york/1663-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20I.html"
+          "glyph": "glyphs/york/1663-I-U.gif"
         },
         {
           "year": 1664,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/york/1664-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20K.html"
+          "glyph": "glyphs/york/1664-K-U.gif"
         },
         {
           "year": 1665,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/york/1665-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20L.html"
+          "glyph": "glyphs/york/1665-L-U.gif"
         },
         {
           "year": 1666,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/york/1666-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20M.html"
+          "glyph": "glyphs/york/1666-M-U.gif"
         },
         {
           "year": 1667,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/york/1667-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20N.html"
+          "glyph": "glyphs/york/1667-N-U.gif"
         },
         {
           "year": 1668,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/york/1668-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20O.html"
+          "glyph": "glyphs/york/1668-O-U.gif"
         },
         {
           "year": 1669,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/york/1669-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20P.html"
+          "glyph": "glyphs/york/1669-P-U.gif"
         },
         {
           "year": 1670,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/york/1670-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Q.html"
+          "glyph": "glyphs/york/1670-Q-U.gif"
         },
         {
           "year": 1671,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/york/1671-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20R.html"
+          "glyph": "glyphs/york/1671-R-U.gif"
         },
         {
           "year": 1672,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/york/1672-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20S.html"
+          "glyph": "glyphs/york/1672-S-U.gif"
         },
         {
           "year": 1673,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/york/1673-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20T.html"
+          "glyph": "glyphs/york/1673-T-U.gif"
         },
         {
           "year": 1674,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/york/1674-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20V.html"
+          "glyph": "glyphs/york/1674-V-U.gif"
         },
         {
           "year": 1675,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/york/1675-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20W.html"
+          "glyph": "glyphs/york/1675-W-U.gif"
         },
         {
           "year": 1676,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/york/1676-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20X.html"
+          "glyph": "glyphs/york/1676-X-U.gif"
         },
         {
           "year": 1677,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/york/1677-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Y.html"
+          "glyph": "glyphs/york/1677-Y-U.gif"
         },
         {
           "year": 1678,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/york/1678-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Z.html"
+          "glyph": "glyphs/york/1678-Z-U.gif"
         },
         {
           "year": 1679,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/york/1679-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20A.html"
+          "glyph": "glyphs/york/1679-A-U.gif"
         },
         {
           "year": 1680,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/york/1680-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20B.html"
+          "glyph": "glyphs/york/1680-B-U.gif"
         },
         {
           "year": 1681,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/york/1681-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20C.html"
+          "glyph": "glyphs/york/1681-C-U.gif"
         },
         {
           "year": 1682,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/york/1682-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20D.html"
+          "glyph": "glyphs/york/1682-D-L.gif"
         },
         {
           "year": 1683,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/york/1683-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20E.html"
+          "glyph": "glyphs/york/1683-E-L.gif"
         },
         {
           "year": 1684,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/york/1684-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20F.html"
+          "glyph": "glyphs/york/1684-F-L.gif"
         },
         {
           "year": 1685,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/york/1685-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20G.html"
+          "glyph": "glyphs/york/1685-G-U.gif"
         },
         {
           "year": 1686,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/york/1686-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20H.html"
+          "glyph": "glyphs/york/1686-H-U.gif"
         },
         {
           "year": 1687,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/york/1687-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20J.html"
+          "glyph": "glyphs/york/1687-J-U.gif"
         },
         {
           "year": 1688,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/york/1688-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20K.html"
+          "glyph": "glyphs/york/1688-K-U.gif"
         },
         {
           "year": 1689,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/york/1689-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20L.html"
+          "glyph": "glyphs/york/1689-L-U.gif"
         },
         {
           "year": 1690,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/york/1690-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20M.html"
+          "glyph": "glyphs/york/1690-M-U.gif"
         },
         {
           "year": 1691,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/york/1691-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20N.html"
+          "glyph": "glyphs/york/1691-N-U.gif"
         },
         {
           "year": 1692,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/york/1692-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20O.html"
+          "glyph": "glyphs/york/1692-O-U.gif"
         },
         {
           "year": 1693,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/york/1693-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20P.html"
+          "glyph": "glyphs/york/1693-P-U.gif"
         },
         {
           "year": 1694,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/york/1694-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Q.html"
+          "glyph": "glyphs/york/1694-Q-U.gif"
         },
         {
           "year": 1695,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/york/1695-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20R.html"
+          "glyph": "glyphs/york/1695-R-U.gif"
         },
         {
           "year": 1696,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/york/1696-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20S.html"
+          "glyph": "glyphs/york/1696-S-U.gif"
         }
       ]
     },
@@ -791,64 +679,55 @@
           "year": 1701,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/york/1701-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20A.html"
+          "glyph": "glyphs/york/1701-A-U.gif"
         },
         {
           "year": 1702,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/york/1702-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20B.html"
+          "glyph": "glyphs/york/1702-B-U.gif"
         },
         {
           "year": 1703,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/york/1703-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20C.html"
+          "glyph": "glyphs/york/1703-C-U.gif"
         },
         {
           "year": 1705,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/york/1705-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20D.html"
+          "glyph": "glyphs/york/1705-D-U.gif"
         },
         {
           "year": 1706,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/york/1706-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20F.html"
+          "glyph": "glyphs/york/1706-F-U.gif"
         },
         {
           "year": 1707,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/york/1707-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20G.html"
+          "glyph": "glyphs/york/1707-G-U.gif"
         },
         {
           "year": 1709,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/york/1709-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20I.html"
+          "glyph": "glyphs/york/1709-I-U.gif"
         },
         {
           "year": 1712,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/york/1712-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20M.html"
+          "glyph": "glyphs/york/1712-M-U.gif"
         },
         {
           "year": 1714,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/york/1714-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20O.html"
+          "glyph": "glyphs/york/1714-O-U.gif"
         }
       ]
     },
@@ -862,36 +741,31 @@
           "year": 1779,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/york/1779-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20D.html"
+          "glyph": "glyphs/york/1779-D-U.gif"
         },
         {
           "year": 1780,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/york/1780-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20E.html"
+          "glyph": "glyphs/york/1780-E-U.gif"
         },
         {
           "year": 1781,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/york/1781-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20F.html"
+          "glyph": "glyphs/york/1781-F-U.gif"
         },
         {
           "year": 1782,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/york/1782-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20G.html"
+          "glyph": "glyphs/york/1782-G-U.gif"
         },
         {
           "year": 1783,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/york/1783-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20H.html"
+          "glyph": "glyphs/york/1783-H-U.gif"
         }
       ]
     },
@@ -905,8 +779,7 @@
           "year": 1784,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/york/1784-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20J.html"
+          "glyph": "glyphs/york/1784-J-U.gif"
         }
       ]
     },
@@ -920,8 +793,7 @@
           "year": 1785,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/york/1785-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20J.html"
+          "glyph": "glyphs/york/1785-J-U.gif"
         }
       ]
     },
@@ -935,22 +807,19 @@
           "year": 1786,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/york/1786-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20J.html"
+          "glyph": "glyphs/york/1786-J-U.gif"
         },
         {
           "year": 1787,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/york/1787-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20A.html"
+          "glyph": "glyphs/york/1787-A-U.gif"
         },
         {
           "year": 1788,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/york/1788-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20B.html"
+          "glyph": "glyphs/york/1788-B-U.gif"
         }
       ]
     },
@@ -964,8 +833,7 @@
           "year": 1789,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/york/1789-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20C.html"
+          "glyph": "glyphs/york/1789-C-U.gif"
         }
       ]
     },
@@ -979,43 +847,37 @@
           "year": 1790,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/york/1790-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20D.html"
+          "glyph": "glyphs/york/1790-D-L.gif"
         },
         {
           "year": 1791,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/york/1791-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20E.html"
+          "glyph": "glyphs/york/1791-E-L.gif"
         },
         {
           "year": 1793,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/york/1793-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20G.html"
+          "glyph": "glyphs/york/1793-G-L.gif"
         },
         {
           "year": 1794,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/york/1794-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20H.html"
+          "glyph": "glyphs/york/1794-H-L.gif"
         },
         {
           "year": 1795,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/york/1795-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20I.html"
+          "glyph": "glyphs/york/1795-I-L.gif"
         },
         {
           "year": 1796,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/york/1796-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20K.html"
+          "glyph": "glyphs/york/1796-K-L.gif"
         }
       ]
     },
@@ -1029,8 +891,7 @@
           "year": 1797,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/york/1797-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20L.html"
+          "glyph": "glyphs/york/1797-L-U.gif"
         }
       ]
     },
@@ -1044,15 +905,13 @@
           "year": 1798,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/york/1798-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20M.html"
+          "glyph": "glyphs/york/1798-M-U.gif"
         },
         {
           "year": 1799,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/york/1799-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20N.html"
+          "glyph": "glyphs/york/1799-N-U.gif"
         }
       ]
     },
@@ -1066,162 +925,139 @@
           "year": 1800,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/york/1800-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20O.html"
+          "glyph": "glyphs/york/1800-O-U.gif"
         },
         {
           "year": 1801,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/york/1801-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20P.html"
+          "glyph": "glyphs/york/1801-P-U.gif"
         },
         {
           "year": 1802,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/york/1802-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Q.html"
+          "glyph": "glyphs/york/1802-Q-U.gif"
         },
         {
           "year": 1803,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/york/1803-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20R.html"
+          "glyph": "glyphs/york/1803-R-U.gif"
         },
         {
           "year": 1804,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/york/1804-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20S.html"
+          "glyph": "glyphs/york/1804-S-U.gif"
         },
         {
           "year": 1805,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/york/1805-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20T.html"
+          "glyph": "glyphs/york/1805-T-U.gif"
         },
         {
           "year": 1806,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/york/1806-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20U.html"
+          "glyph": "glyphs/york/1806-U-U.gif"
         },
         {
           "year": 1807,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/york/1807-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20V.html"
+          "glyph": "glyphs/york/1807-V-U.gif"
         },
         {
           "year": 1808,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/york/1808-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20W.html"
+          "glyph": "glyphs/york/1808-W-U.gif"
         },
         {
           "year": 1809,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/york/1809-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20X.html"
+          "glyph": "glyphs/york/1809-X-U.gif"
         },
         {
           "year": 1810,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/york/1810-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Y.html"
+          "glyph": "glyphs/york/1810-Y-U.gif"
         },
         {
           "year": 1811,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/york/1811-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Z.html"
+          "glyph": "glyphs/york/1811-Z-U.gif"
         },
         {
           "year": 1812,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/york/1812-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20A.html"
+          "glyph": "glyphs/york/1812-A-L.gif"
         },
         {
           "year": 1813,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/york/1813-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20B.html"
+          "glyph": "glyphs/york/1813-B-L.gif"
         },
         {
           "year": 1814,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/york/1814-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20C.html"
+          "glyph": "glyphs/york/1814-C-L.gif"
         },
         {
           "year": 1815,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/york/1815-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20D.html"
+          "glyph": "glyphs/york/1815-D-L.gif"
         },
         {
           "year": 1816,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/york/1816-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20E.html"
+          "glyph": "glyphs/york/1816-E-L.gif"
         },
         {
           "year": 1817,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/york/1817-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20F.html"
+          "glyph": "glyphs/york/1817-F-L.gif"
         },
         {
           "year": 1818,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/york/1818-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20G.html"
+          "glyph": "glyphs/york/1818-G-L.gif"
         },
         {
           "year": 1819,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/york/1819-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20H.html"
+          "glyph": "glyphs/york/1819-H-L.gif"
         },
         {
           "year": 1820,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/york/1820-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20I.html"
+          "glyph": "glyphs/york/1820-I-L.gif"
         },
         {
           "year": 1822,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/york/1822-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20L.html"
+          "glyph": "glyphs/york/1822-L-L.gif"
         },
         {
           "year": 1823,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/york/1823-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20M.html"
+          "glyph": "glyphs/york/1823-M-L.gif"
         }
       ]
     },
@@ -1235,50 +1071,43 @@
           "year": 1821,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/york/1821-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20K.html"
+          "glyph": "glyphs/york/1821-K-L.gif"
         },
         {
           "year": 1824,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/york/1824-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20N.html"
+          "glyph": "glyphs/york/1824-N-L.gif"
         },
         {
           "year": 1825,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/york/1825-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20O.html"
+          "glyph": "glyphs/york/1825-O-L.gif"
         },
         {
           "year": 1826,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/york/1826-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20P.html"
+          "glyph": "glyphs/york/1826-P-L.gif"
         },
         {
           "year": 1827,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/york/1827-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Q.html"
+          "glyph": "glyphs/york/1827-Q-L.gif"
         },
         {
           "year": 1828,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/york/1828-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20R.html"
+          "glyph": "glyphs/york/1828-R-L.gif"
         },
         {
           "year": 1829,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/york/1829-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20S.html"
+          "glyph": "glyphs/york/1829-S-L.gif"
         }
       ]
     },
@@ -1292,22 +1121,19 @@
           "year": 1830,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/york/1830-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20T.html"
+          "glyph": "glyphs/york/1830-T-L.gif"
         },
         {
           "year": 1831,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/york/1831-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20U.html"
+          "glyph": "glyphs/york/1831-U-L.gif"
         },
         {
           "year": 1832,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/york/1832-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20V.html"
+          "glyph": "glyphs/york/1832-V-L.gif"
         }
       ]
     },
@@ -1321,43 +1147,37 @@
           "year": 1833,
           "letter": "W",
           "case": "L",
-          "glyph": "glyphs/york/1833-W-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20W.html"
+          "glyph": "glyphs/york/1833-W-L.gif"
         },
         {
           "year": 1834,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/york/1834-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20X.html"
+          "glyph": "glyphs/york/1834-X-L.gif"
         },
         {
           "year": 1835,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/york/1835-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Z.html"
+          "glyph": "glyphs/york/1835-Z-L.gif"
         },
         {
           "year": 1836,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/york/1836-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20A.html"
+          "glyph": "glyphs/york/1836-A-U.gif"
         },
         {
           "year": 1837,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/york/1837-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20B.html"
+          "glyph": "glyphs/york/1837-B-U.gif"
         },
         {
           "year": 1838,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/york/1838-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20C.html"
+          "glyph": "glyphs/york/1838-C-U.gif"
         }
       ]
     },
@@ -1371,141 +1191,121 @@
           "year": 1839,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/york/1839-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20D.html"
+          "glyph": "glyphs/york/1839-D-U.gif"
         },
         {
           "year": 1840,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/york/1840-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20E.html"
+          "glyph": "glyphs/york/1840-E-U.gif"
         },
         {
           "year": 1841,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/york/1841-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20F.html"
+          "glyph": "glyphs/york/1841-F-U.gif"
         },
         {
           "year": 1842,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/york/1842-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20G.html"
+          "glyph": "glyphs/york/1842-G-U.gif"
         },
         {
           "year": 1843,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/york/1843-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20H.html"
+          "glyph": "glyphs/york/1843-H-U.gif"
         },
         {
           "year": 1844,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/york/1844-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20I.html"
+          "glyph": "glyphs/york/1844-I-U.gif"
         },
         {
           "year": 1845,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/york/1845-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20K.html"
+          "glyph": "glyphs/york/1845-K-U.gif"
         },
         {
           "year": 1846,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/york/1846-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20L.html"
+          "glyph": "glyphs/york/1846-L-U.gif"
         },
         {
           "year": 1847,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/york/1847-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20M.html"
+          "glyph": "glyphs/york/1847-M-U.gif"
         },
         {
           "year": 1848,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/york/1848-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20N.html"
+          "glyph": "glyphs/york/1848-N-U.gif"
         },
         {
           "year": 1849,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/york/1849-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20O.html"
+          "glyph": "glyphs/york/1849-O-U.gif"
         },
         {
           "year": 1850,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/york/1850-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20P.html"
+          "glyph": "glyphs/york/1850-P-U.gif"
         },
         {
           "year": 1851,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/york/1851-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20Q.html"
+          "glyph": "glyphs/york/1851-Q-U.gif"
         },
         {
           "year": 1852,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/york/1852-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20R.html"
+          "glyph": "glyphs/york/1852-R-U.gif"
         },
         {
           "year": 1853,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/york/1853-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20S.html"
+          "glyph": "glyphs/york/1853-S-U.gif"
         },
         {
           "year": 1854,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/york/1854-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20T.html"
+          "glyph": "glyphs/york/1854-T-U.gif"
         },
         {
           "year": 1855,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/york/1855-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20U.html"
+          "glyph": "glyphs/york/1855-U-U.gif"
         },
         {
           "year": 1856,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/york/1856-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20V.html"
+          "glyph": "glyphs/york/1856-V-U.gif"
         },
         {
           "year": 1857,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/york/1857-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20W.html"
+          "glyph": "glyphs/york/1857-W-U.gif"
         },
         {
           "year": 1858,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/york/1858-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/York/Date%20Letters%20X.html"
+          "glyph": "glyphs/york/1858-X-U.gif"
         }
       ]
     }

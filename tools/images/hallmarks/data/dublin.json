@@ -1,7 +1,5 @@
 {
   "office": "Dublin",
-  "sourceSite": "silvermakersmarks.co.uk",
-  "sourceIndex": "https://www.silvermakersmarks.co.uk/Dates/Dublin.html",
   "cycles": [
     {
       "key": "1638-1645",
@@ -13,29 +11,25 @@
           "year": 1638,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/dublin/1638-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1638-A-U.gif"
         },
         {
           "year": 1639,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/dublin/1639-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1639-B-U.gif"
         },
         {
           "year": 1640,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/dublin/1640-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1640-C-U.gif"
         },
         {
           "year": 1641,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/dublin/1641-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1641-D-U.gif"
         }
       ]
     },
@@ -49,15 +43,13 @@
           "year": 1655,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/dublin/1655-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20S.html"
+          "glyph": "glyphs/dublin/1655-S-U.gif"
         },
         {
           "year": 1657,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/dublin/1657-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/1657-T-U.gif"
         }
       ]
     },
@@ -71,22 +63,19 @@
           "year": 1659,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/dublin/1659-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1659-B-L.gif"
         },
         {
           "year": 1663,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/dublin/1663-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20F.html"
+          "glyph": "glyphs/dublin/1663-F-L.gif"
         },
         {
           "year": 1669,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/dublin/1669-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20G.html"
+          "glyph": "glyphs/dublin/1669-G-L.gif"
         }
       ]
     },
@@ -100,141 +89,121 @@
           "year": 1671,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/dublin/1671-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20O.html"
+          "glyph": "glyphs/dublin/1671-O-L.gif"
         },
         {
           "year": 1679,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/dublin/1679-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1679-B-U.gif"
         },
         {
           "year": 1680,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/dublin/1680-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1680-C-U.gif"
         },
         {
           "year": 1681,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/dublin/1681-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1681-D-U.gif"
         },
         {
           "year": 1682,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/dublin/1682-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20E.html"
+          "glyph": "glyphs/dublin/1682-E-U.gif"
         },
         {
           "year": 1688,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/dublin/1688-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20H.html"
+          "glyph": "glyphs/dublin/1688-H-U.gif"
         },
         {
           "year": 1694,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/dublin/1694-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20K.html"
+          "glyph": "glyphs/dublin/1694-K-U.gif"
         },
         {
           "year": 1696,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/dublin/1696-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1696-L-U.gif"
         },
         {
           "year": 1699,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/dublin/1699-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/1699-M-U.gif"
         },
         {
           "year": 1700,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/dublin/1700-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20N.html"
+          "glyph": "glyphs/dublin/1700-N-U.gif"
         },
         {
           "year": 1701,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/dublin/1701-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20O.html"
+          "glyph": "glyphs/dublin/1701-O-U.gif"
         },
         {
           "year": 1702,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/dublin/1702-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20P.html"
+          "glyph": "glyphs/dublin/1702-P-U.gif"
         },
         {
           "year": 1703,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/dublin/1703-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Q.html"
+          "glyph": "glyphs/dublin/1703-Q-U.gif"
         },
         {
           "year": 1704,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/dublin/1704-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20R.html"
+          "glyph": "glyphs/dublin/1704-R-U.gif"
         },
         {
           "year": 1706,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/dublin/1706-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20S.html"
+          "glyph": "glyphs/dublin/1706-S-U.gif"
         },
         {
           "year": 1708,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/dublin/1708-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/1708-T-U.gif"
         },
         {
           "year": 1710,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/dublin/1710-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20U.html"
+          "glyph": "glyphs/dublin/1710-U-U.gif"
         },
         {
           "year": 1712,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/dublin/1712-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20W.html"
+          "glyph": "glyphs/dublin/1712-W-U.gif"
         },
         {
           "year": 1714,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/dublin/1714-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20X.html"
+          "glyph": "glyphs/dublin/1714-X-U.gif"
         },
         {
           "year": 1715,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/dublin/1715-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Y.html"
+          "glyph": "glyphs/dublin/1715-Y-U.gif"
         }
       ]
     },
@@ -248,99 +217,85 @@
           "year": 1717,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/dublin/1717-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1717-A-L.gif"
         },
         {
           "year": 1718,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/dublin/1718-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1718-B-U.gif"
         },
         {
           "year": 1719,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/dublin/1719-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1719-C-U.gif"
         },
         {
           "year": 1720,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/dublin/1720-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1720-A-U.gif"
         },
         {
           "year": 1721,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/dublin/1721-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1721-B-U.gif"
         },
         {
           "year": 1722,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/dublin/1722-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1722-C-U.gif"
         },
         {
           "year": 1723,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/dublin/1723-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1723-D-U.gif"
         },
         {
           "year": 1724,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/dublin/1724-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20E.html"
+          "glyph": "glyphs/dublin/1724-E-U.gif"
         },
         {
           "year": 1725,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/dublin/1725-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20F.html"
+          "glyph": "glyphs/dublin/1725-F-U.gif"
         },
         {
           "year": 1726,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/dublin/1726-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20G.html"
+          "glyph": "glyphs/dublin/1726-G-U.gif"
         },
         {
           "year": 1727,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/dublin/1727-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20H.html"
+          "glyph": "glyphs/dublin/1727-H-U.gif"
         },
         {
           "year": 1728,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/dublin/1728-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20J.html"
+          "glyph": "glyphs/dublin/1728-J-U.gif"
         },
         {
           "year": 1729,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/dublin/1729-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20K.html"
+          "glyph": "glyphs/dublin/1729-K-U.gif"
         },
         {
           "year": 1730,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/dublin/1730-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1730-L-U.gif"
         }
       ]
     },
@@ -354,71 +309,61 @@
           "year": 1731,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/dublin/1731-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1731-L-U.gif"
         },
         {
           "year": 1732,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/dublin/1732-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/1732-M-U.gif"
         },
         {
           "year": 1733,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/dublin/1733-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20N.html"
+          "glyph": "glyphs/dublin/1733-N-U.gif"
         },
         {
           "year": 1734,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/dublin/1734-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20O.html"
+          "glyph": "glyphs/dublin/1734-O-U.gif"
         },
         {
           "year": 1735,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/dublin/1735-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20P.html"
+          "glyph": "glyphs/dublin/1735-P-U.gif"
         },
         {
           "year": 1736,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/dublin/1736-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Q.html"
+          "glyph": "glyphs/dublin/1736-Q-U.gif"
         },
         {
           "year": 1737,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/dublin/1737-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20R.html"
+          "glyph": "glyphs/dublin/1737-R-U.gif"
         },
         {
           "year": 1738,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/dublin/1738-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20S.html"
+          "glyph": "glyphs/dublin/1738-S-U.gif"
         },
         {
           "year": 1739,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/dublin/1739-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/1739-T-U.gif"
         },
         {
           "year": 1740,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/dublin/1740-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20U.html"
+          "glyph": "glyphs/dublin/1740-U-U.gif"
         }
       ]
     },
@@ -432,197 +377,169 @@
           "year": 1741,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/dublin/1741-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20W.html"
+          "glyph": "glyphs/dublin/1741-W-U.gif"
         },
         {
           "year": 1743,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/dublin/1743-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20X.html"
+          "glyph": "glyphs/dublin/1743-X-U.gif"
         },
         {
           "year": 1745,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/dublin/1745-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Y.html"
+          "glyph": "glyphs/dublin/1745-Y-U.gif"
         },
         {
           "year": 1746,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/dublin/1746-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Z.html"
+          "glyph": "glyphs/dublin/1746-Z-U.gif"
         },
         {
           "year": 1747,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/dublin/1747-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1747-A-U.gif"
         },
         {
           "year": 1748,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/dublin/1748-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1748-B-U.gif"
         },
         {
           "year": 1749,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/dublin/1749-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1749-C-U.gif"
         },
         {
           "year": 1750,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/dublin/1750-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1750-D-U.gif"
         },
         {
           "year": 1751,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/dublin/1751-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20E.html"
+          "glyph": "glyphs/dublin/1751-E-U.gif"
         },
         {
           "year": 1752,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/dublin/1752-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20F.html"
+          "glyph": "glyphs/dublin/1752-F-U.gif"
         },
         {
           "year": 1753,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/dublin/1753-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20G.html"
+          "glyph": "glyphs/dublin/1753-G-U.gif"
         },
         {
           "year": 1754,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/dublin/1754-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20H.html"
+          "glyph": "glyphs/dublin/1754-H-U.gif"
         },
         {
           "year": 1757,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/dublin/1757-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20I.html"
+          "glyph": "glyphs/dublin/1757-I-U.gif"
         },
         {
           "year": 1758,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/dublin/1758-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20K.html"
+          "glyph": "glyphs/dublin/1758-K-U.gif"
         },
         {
           "year": 1759,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/dublin/1759-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1759-L-U.gif"
         },
         {
           "year": 1760,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/dublin/1760-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/1760-M-U.gif"
         },
         {
           "year": 1761,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/dublin/1761-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20N.html"
+          "glyph": "glyphs/dublin/1761-N-U.gif"
         },
         {
           "year": 1762,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/dublin/1762-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20O.html"
+          "glyph": "glyphs/dublin/1762-O-U.gif"
         },
         {
           "year": 1763,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/dublin/1763-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20P.html"
+          "glyph": "glyphs/dublin/1763-P-U.gif"
         },
         {
           "year": 1764,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/dublin/1764-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Q.html"
+          "glyph": "glyphs/dublin/1764-Q-U.gif"
         },
         {
           "year": 1765,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/dublin/1765-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20R.html"
+          "glyph": "glyphs/dublin/1765-R-U.gif"
         },
         {
           "year": 1766,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/dublin/1766-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20S.html"
+          "glyph": "glyphs/dublin/1766-S-U.gif"
         },
         {
           "year": 1767,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/dublin/1767-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/1767-T-U.gif"
         },
         {
           "year": 1768,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/dublin/1768-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20U.html"
+          "glyph": "glyphs/dublin/1768-U-U.gif"
         },
         {
           "year": 1769,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/dublin/1769-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20W.html"
+          "glyph": "glyphs/dublin/1769-W-U.gif"
         },
         {
           "year": 1770,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/dublin/1770-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20X.html"
+          "glyph": "glyphs/dublin/1770-X-U.gif"
         },
         {
           "year": 1771,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/dublin/1771-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Y.html"
+          "glyph": "glyphs/dublin/1771-Y-U.gif"
         },
         {
           "year": 1772,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/dublin/1772-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Z.html"
+          "glyph": "glyphs/dublin/1772-Z-U.gif"
         }
       ]
     },
@@ -636,106 +553,91 @@
           "year": 1773,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/dublin/1773-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1773-A-U.gif"
         },
         {
           "year": 1774,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/dublin/1774-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1774-B-U.gif"
         },
         {
           "year": 1775,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/dublin/1775-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1775-C-U.gif"
         },
         {
           "year": 1776,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/dublin/1776-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1776-D-U.gif"
         },
         {
           "year": 1777,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/dublin/1777-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20E.html"
+          "glyph": "glyphs/dublin/1777-E-U.gif"
         },
         {
           "year": 1778,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/dublin/1778-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20F.html"
+          "glyph": "glyphs/dublin/1778-F-U.gif"
         },
         {
           "year": 1779,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/dublin/1779-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20G.html"
+          "glyph": "glyphs/dublin/1779-G-U.gif"
         },
         {
           "year": 1780,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/dublin/1780-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20H.html"
+          "glyph": "glyphs/dublin/1780-H-U.gif"
         },
         {
           "year": 1781,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/dublin/1781-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20I.html"
+          "glyph": "glyphs/dublin/1781-I-U.gif"
         },
         {
           "year": 1782,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/dublin/1782-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20K.html"
+          "glyph": "glyphs/dublin/1782-K-U.gif"
         },
         {
           "year": 1783,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/dublin/1783-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1783-L-U.gif"
         },
         {
           "year": 1784,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/dublin/1784-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/1784-M-U.gif"
         },
         {
           "year": 1785,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/dublin/1785-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20N.html"
+          "glyph": "glyphs/dublin/1785-N-U.gif"
         },
         {
           "year": 1786,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/dublin/1786-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20O.html"
+          "glyph": "glyphs/dublin/1786-O-U.gif"
         },
         {
           "year": 1787,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/dublin/1787-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20P.html"
+          "glyph": "glyphs/dublin/1787-P-U.gif"
         }
       ]
     },
@@ -749,43 +651,37 @@
           "year": 1788,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/dublin/1788-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Q.html"
+          "glyph": "glyphs/dublin/1788-Q-U.gif"
         },
         {
           "year": 1789,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/dublin/1789-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20R.html"
+          "glyph": "glyphs/dublin/1789-R-U.gif"
         },
         {
           "year": 1790,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/dublin/1790-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20S.html"
+          "glyph": "glyphs/dublin/1790-S-U.gif"
         },
         {
           "year": 1791,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/dublin/1791-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/1791-T-U.gif"
         },
         {
           "year": 1792,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/dublin/1792-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20U.html"
+          "glyph": "glyphs/dublin/1792-U-U.gif"
         },
         {
           "year": 1793,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/dublin/1793-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20W.html"
+          "glyph": "glyphs/dublin/1793-W-U.gif"
         }
       ]
     },
@@ -799,92 +695,79 @@
           "year": 1794,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/dublin/1794-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20X.html"
+          "glyph": "glyphs/dublin/1794-X-U.gif"
         },
         {
           "year": 1795,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/dublin/1795-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Y.html"
+          "glyph": "glyphs/dublin/1795-Y-U.gif"
         },
         {
           "year": 1796,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/dublin/1796-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Z.html"
+          "glyph": "glyphs/dublin/1796-Z-U.gif"
         },
         {
           "year": 1797,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/dublin/1797-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1797-A-U.gif"
         },
         {
           "year": 1798,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/dublin/1798-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1798-B-U.gif"
         },
         {
           "year": 1799,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/dublin/1799-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1799-C-U.gif"
         },
         {
           "year": 1800,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/dublin/1800-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1800-D-U.gif"
         },
         {
           "year": 1801,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/dublin/1801-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20E.html"
+          "glyph": "glyphs/dublin/1801-E-U.gif"
         },
         {
           "year": 1802,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/dublin/1802-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20F.html"
+          "glyph": "glyphs/dublin/1802-F-U.gif"
         },
         {
           "year": 1803,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/dublin/1803-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20G.html"
+          "glyph": "glyphs/dublin/1803-G-U.gif"
         },
         {
           "year": 1804,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/dublin/1804-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20H.html"
+          "glyph": "glyphs/dublin/1804-H-U.gif"
         },
         {
           "year": 1805,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/dublin/1805-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20I.html"
+          "glyph": "glyphs/dublin/1805-I-U.gif"
         },
         {
           "year": 1806,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/dublin/1806-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20K.html"
+          "glyph": "glyphs/dublin/1806-K-U.gif"
         }
       ]
     },
@@ -898,15 +781,13 @@
           "year": 1807,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/dublin/1807-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1807-L-U.gif"
         },
         {
           "year": 1808,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/dublin/1808-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/1808-M-U.gif"
         }
       ]
     },
@@ -920,71 +801,61 @@
           "year": 1811,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/dublin/1811-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20P.html"
+          "glyph": "glyphs/dublin/1811-P-U.gif"
         },
         {
           "year": 1812,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/dublin/1812-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Q.html"
+          "glyph": "glyphs/dublin/1812-Q-U.gif"
         },
         {
           "year": 1813,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/dublin/1813-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20R.html"
+          "glyph": "glyphs/dublin/1813-R-U.gif"
         },
         {
           "year": 1814,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/dublin/1814-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20S.html"
+          "glyph": "glyphs/dublin/1814-S-U.gif"
         },
         {
           "year": 1815,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/dublin/1815-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/1815-T-U.gif"
         },
         {
           "year": 1816,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/dublin/1816-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20U.html"
+          "glyph": "glyphs/dublin/1816-U-U.gif"
         },
         {
           "year": 1817,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/dublin/1817-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20W.html"
+          "glyph": "glyphs/dublin/1817-W-U.gif"
         },
         {
           "year": 1818,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/dublin/1818-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20X.html"
+          "glyph": "glyphs/dublin/1818-X-U.gif"
         },
         {
           "year": 1819,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/dublin/1819-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Y.html"
+          "glyph": "glyphs/dublin/1819-Y-U.gif"
         },
         {
           "year": 1820,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/dublin/1820-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Z.html"
+          "glyph": "glyphs/dublin/1820-Z-U.gif"
         }
       ]
     },
@@ -998,29 +869,25 @@
           "year": 1821,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/dublin/1821-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1821-A-U.gif"
         },
         {
           "year": 1822,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/dublin/1822-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1822-B-U.gif"
         },
         {
           "year": 1823,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/dublin/1823-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1823-C-U.gif"
         },
         {
           "year": 1824,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/dublin/1824-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1824-D-U.gif"
         }
       ]
     },
@@ -1034,15 +901,13 @@
           "year": 1826,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/dublin/1826-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20F.html"
+          "glyph": "glyphs/dublin/1826-F-U.gif"
         },
         {
           "year": 1827,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/dublin/1827-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20G.html"
+          "glyph": "glyphs/dublin/1827-G-U.gif"
         }
       ]
     },
@@ -1056,8 +921,7 @@
           "year": 1828,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/dublin/1828-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20H.html"
+          "glyph": "glyphs/dublin/1828-H-U.gif"
         }
       ]
     },
@@ -1071,8 +935,7 @@
           "year": 1830,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/dublin/1830-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20K.html"
+          "glyph": "glyphs/dublin/1830-K-U.gif"
         }
       ]
     },
@@ -1086,15 +949,13 @@
           "year": 1831,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/dublin/1831-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1831-L-U.gif"
         },
         {
           "year": 1832,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/dublin/1832-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/1832-M-U.gif"
         }
       ]
     },
@@ -1108,8 +969,7 @@
           "year": 1839,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/dublin/1839-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/1839-T-U.gif"
         }
       ]
     },
@@ -1123,8 +983,7 @@
           "year": 1841,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/dublin/1841-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20V.html"
+          "glyph": "glyphs/dublin/1841-V-U.gif"
         }
       ]
     },
@@ -1138,15 +997,13 @@
           "year": 1842,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/dublin/1842-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20W.html"
+          "glyph": "glyphs/dublin/1842-W-U.gif"
         },
         {
           "year": 1843,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/dublin/1843-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20X.html"
+          "glyph": "glyphs/dublin/1843-X-U.gif"
         }
       ]
     },
@@ -1160,8 +1017,7 @@
           "year": 1844,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/dublin/1844-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Y.html"
+          "glyph": "glyphs/dublin/1844-Y-U.gif"
         }
       ]
     },
@@ -1175,8 +1031,7 @@
           "year": 1845,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/dublin/1845-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Z.html"
+          "glyph": "glyphs/dublin/1845-Z-U.gif"
         }
       ]
     },
@@ -1190,8 +1045,7 @@
           "year": 1846,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/dublin/1846-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1846-A-L.gif"
         }
       ]
     },
@@ -1205,281 +1059,241 @@
           "year": 1847,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/dublin/1847-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1847-B-L.gif"
         },
         {
           "year": 1848,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/dublin/1848-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1848-C-L.gif"
         },
         {
           "year": 1849,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/dublin/1849-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1849-D-L.gif"
         },
         {
           "year": 1850,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/dublin/1850-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20E.html"
+          "glyph": "glyphs/dublin/1850-E-L.gif"
         },
         {
           "year": 1854,
           "letter": "J",
           "case": "L",
-          "glyph": "glyphs/dublin/1854-J-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20J.html"
+          "glyph": "glyphs/dublin/1854-J-L.gif"
         },
         {
           "year": 1855,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/dublin/1855-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20K.html"
+          "glyph": "glyphs/dublin/1855-K-L.gif"
         },
         {
           "year": 1856,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/dublin/1856-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1856-L-L.gif"
         },
         {
           "year": 1857,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/dublin/1857-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/1857-M-L.gif"
         },
         {
           "year": 1858,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/dublin/1858-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20N.html"
+          "glyph": "glyphs/dublin/1858-N-L.gif"
         },
         {
           "year": 1859,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/dublin/1859-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20O.html"
+          "glyph": "glyphs/dublin/1859-O-L.gif"
         },
         {
           "year": 1860,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/dublin/1860-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20P.html"
+          "glyph": "glyphs/dublin/1860-P-L.gif"
         },
         {
           "year": 1861,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/dublin/1861-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Q.html"
+          "glyph": "glyphs/dublin/1861-Q-U.gif"
         },
         {
           "year": 1862,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/dublin/1862-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20R.html"
+          "glyph": "glyphs/dublin/1862-R-L.gif"
         },
         {
           "year": 1863,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/dublin/1863-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20S.html"
+          "glyph": "glyphs/dublin/1863-S-L.gif"
         },
         {
           "year": 1864,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/dublin/1864-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/1864-T-L.gif"
         },
         {
           "year": 1865,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/dublin/1865-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20U.html"
+          "glyph": "glyphs/dublin/1865-U-L.gif"
         },
         {
           "year": 1866,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/dublin/1866-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20V.html"
+          "glyph": "glyphs/dublin/1866-V-L.gif"
         },
         {
           "year": 1867,
           "letter": "W",
           "case": "L",
-          "glyph": "glyphs/dublin/1867-W-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20W.html"
+          "glyph": "glyphs/dublin/1867-W-L.gif"
         },
         {
           "year": 1868,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/dublin/1868-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20X.html"
+          "glyph": "glyphs/dublin/1868-X-L.gif"
         },
         {
           "year": 1869,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/dublin/1869-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Y.html"
+          "glyph": "glyphs/dublin/1869-Y-U.gif"
         },
         {
           "year": 1870,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/dublin/1870-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Z.html"
+          "glyph": "glyphs/dublin/1870-Z-L.gif"
         },
         {
           "year": 1871,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/dublin/1871-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1871-A-U.gif"
         },
         {
           "year": 1872,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/dublin/1872-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1872-B-U.gif"
         },
         {
           "year": 1873,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/dublin/1873-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1873-C-U.gif"
         },
         {
           "year": 1874,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/dublin/1874-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1874-D-U.gif"
         },
         {
           "year": 1875,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/dublin/1875-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20E.html"
+          "glyph": "glyphs/dublin/1875-E-U.gif"
         },
         {
           "year": 1876,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/dublin/1876-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20F.html"
+          "glyph": "glyphs/dublin/1876-F-U.gif"
         },
         {
           "year": 1877,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/dublin/1877-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20G.html"
+          "glyph": "glyphs/dublin/1877-G-U.gif"
         },
         {
           "year": 1878,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/dublin/1878-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20H.html"
+          "glyph": "glyphs/dublin/1878-H-U.gif"
         },
         {
           "year": 1879,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/dublin/1879-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20I.html"
+          "glyph": "glyphs/dublin/1879-I-U.gif"
         },
         {
           "year": 1880,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/dublin/1880-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20K.html"
+          "glyph": "glyphs/dublin/1880-K-U.gif"
         },
         {
           "year": 1881,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/dublin/1881-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1881-L-U.gif"
         },
         {
           "year": 1882,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/dublin/1882-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/1882-M-U.gif"
         },
         {
           "year": 1883,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/dublin/1883-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20N.html"
+          "glyph": "glyphs/dublin/1883-N-U.gif"
         },
         {
           "year": 1884,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/dublin/1884-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20O.html"
+          "glyph": "glyphs/dublin/1884-O-U.gif"
         },
         {
           "year": 1885,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/dublin/1885-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20P.html"
+          "glyph": "glyphs/dublin/1885-P-U.gif"
         },
         {
           "year": 1886,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/dublin/1886-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Q.html"
+          "glyph": "glyphs/dublin/1886-Q-U.gif"
         },
         {
           "year": 1887,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/dublin/1887-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20R.html"
+          "glyph": "glyphs/dublin/1887-R-U.gif"
         },
         {
           "year": 1888,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/dublin/1888-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20S.html"
+          "glyph": "glyphs/dublin/1888-S-U.gif"
         },
         {
           "year": 1889,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/dublin/1889-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/1889-T-U.gif"
         }
       ]
     },
@@ -1493,43 +1307,37 @@
           "year": 1890,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/dublin/1890-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20U.html"
+          "glyph": "glyphs/dublin/1890-U-U.gif"
         },
         {
           "year": 1891,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/dublin/1891-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20V.html"
+          "glyph": "glyphs/dublin/1891-V-U.gif"
         },
         {
           "year": 1892,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/dublin/1892-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20W.html"
+          "glyph": "glyphs/dublin/1892-W-U.gif"
         },
         {
           "year": 1893,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/dublin/1893-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20X.html"
+          "glyph": "glyphs/dublin/1893-X-U.gif"
         },
         {
           "year": 1894,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/dublin/1894-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Y.html"
+          "glyph": "glyphs/dublin/1894-Y-U.gif"
         },
         {
           "year": 1895,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/dublin/1895-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Z.html"
+          "glyph": "glyphs/dublin/1895-Z-U.gif"
         }
       ]
     },
@@ -1543,498 +1351,427 @@
           "year": 1896,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/dublin/1896-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1896-A-U.gif"
         },
         {
           "year": 1897,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/dublin/1897-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1897-B-U.gif"
         },
         {
           "year": 1898,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/dublin/1898-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1898-C-U.gif"
         },
         {
           "year": 1899,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/dublin/1899-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1899-D-U.gif"
         },
         {
           "year": 1900,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/dublin/1900-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20E.html"
+          "glyph": "glyphs/dublin/1900-E-U.gif"
         },
         {
           "year": 1901,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/dublin/1901-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20F.html"
+          "glyph": "glyphs/dublin/1901-F-U.gif"
         },
         {
           "year": 1902,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/dublin/1902-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20G.html"
+          "glyph": "glyphs/dublin/1902-G-U.gif"
         },
         {
           "year": 1903,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/dublin/1903-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20H.html"
+          "glyph": "glyphs/dublin/1903-H-U.gif"
         },
         {
           "year": 1904,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/dublin/1904-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20I.html"
+          "glyph": "glyphs/dublin/1904-I-U.gif"
         },
         {
           "year": 1905,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/dublin/1905-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20K.html"
+          "glyph": "glyphs/dublin/1905-K-U.gif"
         },
         {
           "year": 1906,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/dublin/1906-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1906-L-U.gif"
         },
         {
           "year": 1907,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/dublin/1907-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/1907-M-U.gif"
         },
         {
           "year": 1908,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/dublin/1908-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20N.html"
+          "glyph": "glyphs/dublin/1908-N-U.gif"
         },
         {
           "year": 1909,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/dublin/1909-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20O.html"
+          "glyph": "glyphs/dublin/1909-O-U.gif"
         },
         {
           "year": 1910,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/dublin/1910-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20P.html"
+          "glyph": "glyphs/dublin/1910-P-U.gif"
         },
         {
           "year": 1911,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/dublin/1911-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Q.html"
+          "glyph": "glyphs/dublin/1911-Q-U.gif"
         },
         {
           "year": 1912,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/dublin/1912-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20R.html"
+          "glyph": "glyphs/dublin/1912-R-U.gif"
         },
         {
           "year": 1913,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/dublin/1913-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20S.html"
+          "glyph": "glyphs/dublin/1913-S-U.gif"
         },
         {
           "year": 1914,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/dublin/1914-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/1914-T-U.gif"
         },
         {
           "year": 1915,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/dublin/1915-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20U.html"
+          "glyph": "glyphs/dublin/1915-U-U.gif"
         },
         {
           "year": 1916,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/dublin/1916-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1916-A-U.gif"
         },
         {
           "year": 1917,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/dublin/1917-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1917-B-L.gif"
         },
         {
           "year": 1918,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/dublin/1918-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1918-C-L.gif"
         },
         {
           "year": 1919,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/dublin/1919-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1919-D-L.gif"
         },
         {
           "year": 1920,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/dublin/1920-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20E.html"
+          "glyph": "glyphs/dublin/1920-E-L.gif"
         },
         {
           "year": 1921,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/dublin/1921-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20F.html"
+          "glyph": "glyphs/dublin/1921-F-L.gif"
         },
         {
           "year": 1922,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/dublin/1922-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20G.html"
+          "glyph": "glyphs/dublin/1922-G-L.gif"
         },
         {
           "year": 1923,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/dublin/1923-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20H.html"
+          "glyph": "glyphs/dublin/1923-H-L.gif"
         },
         {
           "year": 1924,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/dublin/1924-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20I.html"
+          "glyph": "glyphs/dublin/1924-I-L.gif"
         },
         {
           "year": 1925,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/dublin/1925-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20K.html"
+          "glyph": "glyphs/dublin/1925-K-L.gif"
         },
         {
           "year": 1926,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/dublin/1926-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1926-L-L.gif"
         },
         {
           "year": 1927,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/dublin/1927-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/1927-M-L.gif"
         },
         {
           "year": 1928,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/dublin/1928-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20N.html"
+          "glyph": "glyphs/dublin/1928-N-L.gif"
         },
         {
           "year": 1929,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/dublin/1929-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20O.html"
+          "glyph": "glyphs/dublin/1929-O-L.gif"
         },
         {
           "year": 1930,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/dublin/1930-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20P.html"
+          "glyph": "glyphs/dublin/1930-P-L.gif"
         },
         {
           "year": 1932,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/dublin/1932-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Q.html"
+          "glyph": "glyphs/dublin/1932-Q-U.gif"
         },
         {
           "year": 1933,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/dublin/1933-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20R.html"
+          "glyph": "glyphs/dublin/1933-R-U.gif"
         },
         {
           "year": 1934,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/dublin/1934-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20S.html"
+          "glyph": "glyphs/dublin/1934-S-U.gif"
         },
         {
           "year": 1935,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/dublin/1935-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/1935-T-U.gif"
         },
         {
           "year": 1936,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/dublin/1936-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20U.html"
+          "glyph": "glyphs/dublin/1936-U-U.gif"
         },
         {
           "year": 1937,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/dublin/1937-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20V.html"
+          "glyph": "glyphs/dublin/1937-V-L.gif"
         },
         {
           "year": 1938,
           "letter": "W",
           "case": "L",
-          "glyph": "glyphs/dublin/1938-W-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20W.html"
+          "glyph": "glyphs/dublin/1938-W-L.gif"
         },
         {
           "year": 1939,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/dublin/1939-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20X.html"
+          "glyph": "glyphs/dublin/1939-X-L.gif"
         },
         {
           "year": 1940,
           "letter": "Y",
           "case": "L",
-          "glyph": "glyphs/dublin/1940-Y-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Y.html"
+          "glyph": "glyphs/dublin/1940-Y-L.gif"
         },
         {
           "year": 1941,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/dublin/1941-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Z.html"
+          "glyph": "glyphs/dublin/1941-Z-L.gif"
         },
         {
           "year": 1942,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/dublin/1942-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1942-A-U.gif"
         },
         {
           "year": 1943,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/dublin/1943-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1943-B-U.gif"
         },
         {
           "year": 1944,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/dublin/1944-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1944-C-U.gif"
         },
         {
           "year": 1945,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/dublin/1945-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1945-D-U.gif"
         },
         {
           "year": 1946,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/dublin/1946-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20E.html"
+          "glyph": "glyphs/dublin/1946-E-U.gif"
         },
         {
           "year": 1947,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/dublin/1947-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20F.html"
+          "glyph": "glyphs/dublin/1947-F-U.gif"
         },
         {
           "year": 1948,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/dublin/1948-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20G.html"
+          "glyph": "glyphs/dublin/1948-G-U.gif"
         },
         {
           "year": 1949,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/dublin/1949-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20H.html"
+          "glyph": "glyphs/dublin/1949-H-U.gif"
         },
         {
           "year": 1950,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/dublin/1950-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20I.html"
+          "glyph": "glyphs/dublin/1950-I-U.gif"
         },
         {
           "year": 1951,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/dublin/1951-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20J.html"
+          "glyph": "glyphs/dublin/1951-J-U.gif"
         },
         {
           "year": 1952,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/dublin/1952-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20K.html"
+          "glyph": "glyphs/dublin/1952-K-U.gif"
         },
         {
           "year": 1953,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/dublin/1953-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1953-L-U.gif"
         },
         {
           "year": 1954,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/dublin/1954-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/1954-M-U.gif"
         },
         {
           "year": 1955,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/dublin/1955-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20N.html"
+          "glyph": "glyphs/dublin/1955-N-U.gif"
         },
         {
           "year": 1956,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/dublin/1956-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20O.html"
+          "glyph": "glyphs/dublin/1956-O-U.gif"
         },
         {
           "year": 1957,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/dublin/1957-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20P.html"
+          "glyph": "glyphs/dublin/1957-P-U.gif"
         },
         {
           "year": 1958,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/dublin/1958-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Q.html"
+          "glyph": "glyphs/dublin/1958-Q-U.gif"
         },
         {
           "year": 1959,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/dublin/1959-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20R.html"
+          "glyph": "glyphs/dublin/1959-R-U.gif"
         },
         {
           "year": 1960,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/dublin/1960-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20S.html"
+          "glyph": "glyphs/dublin/1960-S-U.gif"
         },
         {
           "year": 1961,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/dublin/1961-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/1961-T-U.gif"
         },
         {
           "year": 1962,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/dublin/1962-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20U.html"
+          "glyph": "glyphs/dublin/1962-U-U.gif"
         },
         {
           "year": 1963,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/dublin/1963-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20V.html"
+          "glyph": "glyphs/dublin/1963-V-U.gif"
         },
         {
           "year": 1964,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/dublin/1964-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20W.html"
+          "glyph": "glyphs/dublin/1964-W-U.gif"
         },
         {
           "year": 1965,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/dublin/1965-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20X.html"
+          "glyph": "glyphs/dublin/1965-X-U.gif"
         },
         {
           "year": 1966,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/dublin/1966-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Y.html"
+          "glyph": "glyphs/dublin/1966-Y-U.gif"
         },
         {
           "year": 1967,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/dublin/1967-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Z.html"
+          "glyph": "glyphs/dublin/1967-Z-U.gif"
         }
       ]
     },
@@ -2048,239 +1785,205 @@
           "year": 1968,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/dublin/1968-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1968-A-L.gif"
         },
         {
           "year": 1969,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/dublin/1969-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1969-B-L.gif"
         },
         {
           "year": 1970,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/dublin/1970-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1970-C-L.gif"
         },
         {
           "year": 1971,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/dublin/1971-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1971-D-L.gif"
         },
         {
           "year": 1972,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/dublin/1972-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20E.html"
+          "glyph": "glyphs/dublin/1972-E-L.gif"
         },
         {
           "year": 1973,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/dublin/1973-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20F.html"
+          "glyph": "glyphs/dublin/1973-F-L.gif"
         },
         {
           "year": 1974,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/dublin/1974-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20G.html"
+          "glyph": "glyphs/dublin/1974-G-L.gif"
         },
         {
           "year": 1975,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/dublin/1975-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20H.html"
+          "glyph": "glyphs/dublin/1975-H-L.gif"
         },
         {
           "year": 1976,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/dublin/1976-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20I.html"
+          "glyph": "glyphs/dublin/1976-I-L.gif"
         },
         {
           "year": 1977,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/dublin/1977-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1977-L-L.gif"
         },
         {
           "year": 1978,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/dublin/1978-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/1978-M-L.gif"
         },
         {
           "year": 1979,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/dublin/1979-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20N.html"
+          "glyph": "glyphs/dublin/1979-N-L.gif"
         },
         {
           "year": 1980,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/dublin/1980-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20O.html"
+          "glyph": "glyphs/dublin/1980-O-L.gif"
         },
         {
           "year": 1981,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/dublin/1981-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20P.html"
+          "glyph": "glyphs/dublin/1981-P-L.gif"
         },
         {
           "year": 1982,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/dublin/1982-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20R.html"
+          "glyph": "glyphs/dublin/1982-R-U.gif"
         },
         {
           "year": 1983,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/dublin/1983-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20S.html"
+          "glyph": "glyphs/dublin/1983-S-L.gif"
         },
         {
           "year": 1984,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/dublin/1984-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/1984-T-L.gif"
         },
         {
           "year": 1985,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/dublin/1985-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20U.html"
+          "glyph": "glyphs/dublin/1985-U-L.gif"
         },
         {
           "year": 1986,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/dublin/1986-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/1986-A-U.gif"
         },
         {
           "year": 1987,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/dublin/1987-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/1987-B-U.gif"
         },
         {
           "year": 1988,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/dublin/1988-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/1988-C-U.gif"
         },
         {
           "year": 1989,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/dublin/1989-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/1989-D-U.gif"
         },
         {
           "year": 1990,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/dublin/1990-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20E.html"
+          "glyph": "glyphs/dublin/1990-E-U.gif"
         },
         {
           "year": 1991,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/dublin/1991-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20F.html"
+          "glyph": "glyphs/dublin/1991-F-U.gif"
         },
         {
           "year": 1992,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/dublin/1992-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20G.html"
+          "glyph": "glyphs/dublin/1992-G-U.gif"
         },
         {
           "year": 1993,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/dublin/1993-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20H.html"
+          "glyph": "glyphs/dublin/1993-H-U.gif"
         },
         {
           "year": 1994,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/dublin/1994-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20I.html"
+          "glyph": "glyphs/dublin/1994-I-U.gif"
         },
         {
           "year": 1995,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/dublin/1995-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20J.html"
+          "glyph": "glyphs/dublin/1995-J-U.gif"
         },
         {
           "year": 1996,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/dublin/1996-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20K.html"
+          "glyph": "glyphs/dublin/1996-K-U.gif"
         },
         {
           "year": 1997,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/dublin/1997-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/1997-L-U.gif"
         },
         {
           "year": 1998,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/dublin/1998-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/1998-M-U.gif"
         },
         {
           "year": 1999,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/dublin/1999-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20N.html"
+          "glyph": "glyphs/dublin/1999-N-U.gif"
         },
         {
           "year": 2000,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/dublin/2000-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20O.html"
+          "glyph": "glyphs/dublin/2000-O-U.gif"
         },
         {
           "year": 2001,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/dublin/2001-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Q.html"
+          "glyph": "glyphs/dublin/2001-Q-U.gif"
         }
       ]
     },
@@ -2294,141 +1997,121 @@
           "year": 2011,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/dublin/2011-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20A.html"
+          "glyph": "glyphs/dublin/2011-A-U.gif"
         },
         {
           "year": 2012,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/dublin/2012-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20B.html"
+          "glyph": "glyphs/dublin/2012-B-U.gif"
         },
         {
           "year": 2013,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/dublin/2013-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20C.html"
+          "glyph": "glyphs/dublin/2013-C-U.gif"
         },
         {
           "year": 2014,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/dublin/2014-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20D.html"
+          "glyph": "glyphs/dublin/2014-D-U.gif"
         },
         {
           "year": 2015,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/dublin/2015-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20E.html"
+          "glyph": "glyphs/dublin/2015-E-U.gif"
         },
         {
           "year": 2016,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/dublin/2016-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20F.html"
+          "glyph": "glyphs/dublin/2016-F-U.gif"
         },
         {
           "year": 2017,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/dublin/2017-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20G.html"
+          "glyph": "glyphs/dublin/2017-G-U.gif"
         },
         {
           "year": 2018,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/dublin/2018-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20H.html"
+          "glyph": "glyphs/dublin/2018-H-U.gif"
         },
         {
           "year": 2019,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/dublin/2019-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20I.html"
+          "glyph": "glyphs/dublin/2019-I-U.gif"
         },
         {
           "year": 2020,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/dublin/2020-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20J.html"
+          "glyph": "glyphs/dublin/2020-J-U.gif"
         },
         {
           "year": 2021,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/dublin/2021-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20K.html"
+          "glyph": "glyphs/dublin/2021-K-U.gif"
         },
         {
           "year": 2022,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/dublin/2022-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20L.html"
+          "glyph": "glyphs/dublin/2022-L-U.gif"
         },
         {
           "year": 2023,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/dublin/2023-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20M.html"
+          "glyph": "glyphs/dublin/2023-M-U.gif"
         },
         {
           "year": 2024,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/dublin/2024-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20O.html"
+          "glyph": "glyphs/dublin/2024-O-U.gif"
         },
         {
           "year": 2025,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/dublin/2025-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20P.html"
+          "glyph": "glyphs/dublin/2025-P-U.gif"
         },
         {
           "year": 2026,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/dublin/2026-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20Q.html"
+          "glyph": "glyphs/dublin/2026-Q-U.gif"
         },
         {
           "year": 2027,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/dublin/2027-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20R.html"
+          "glyph": "glyphs/dublin/2027-R-U.gif"
         },
         {
           "year": 2028,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/dublin/2028-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20S.html"
+          "glyph": "glyphs/dublin/2028-S-U.gif"
         },
         {
           "year": 2029,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/dublin/2029-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20T.html"
+          "glyph": "glyphs/dublin/2029-T-U.gif"
         },
         {
           "year": 2030,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/dublin/2030-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Dublin/Date%20Letters%20U.html"
+          "glyph": "glyphs/dublin/2030-U-U.gif"
         }
       ]
     }

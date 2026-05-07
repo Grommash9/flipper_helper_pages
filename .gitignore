@@ -26,8 +26,8 @@ node_modules/
 new_images/
 keywords/
 
-# Scraper HTML cache — regeneratable from the source site via
-# `node tools/scrape-silvermakersmarks.js`, so don't commit
+# Scraper HTML cache — regeneratable via `node tools/scrape-date-letters.js`,
+# so don't commit
 tools/images/hallmarks/_raw/
 
 # Probe / scratch dirs left behind by experiments

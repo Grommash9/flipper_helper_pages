@@ -465,4 +465,188 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- intent: "About the developer of FlipperHelper — a free reselling tracker built for my wife's car boot business. UK-based, Ukrainian, software engineer." -->
+  <url>
+    <loc>https://flipperhelper.app/about.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- intent: "Side-by-side comparisons of reseller apps: FlipperHelper, Flippd, Vendoo. Tracker vs cross-lister, free vs paid, iOS vs multi-platform." -->
+  <url>
+    <loc>https://flipperhelper.app/compare/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- intent: "Free in-browser tools for resellers. UK silver hallmarks identifier and more on the way. No signup, no ads, no data harvesting." -->
+  <url>
+    <loc>https://flipperhelper.app/tools/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- intent: "What to buy and sell for profit in the UK. Best categories and brands from car boots and charity shops — what sells and what to avoid." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/best-items-to-resell-uk.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Common buyer scams on eBay and Vinted — empty box returns, item swaps, chargebacks — and how UK sellers can protect themselves." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/buyer-scams-ebay-vinted-uk.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Charity shop prices are rising fast. Why secondhand shops cost more in 2026 and smarter sourcing alternatives for resellers." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/charity-shop-prices-too-high-uk.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Free eBay fee calculator for UK sellers. Enter your sale price and category to see exact fees, net revenue, and profit. Updated for February 2026 changes." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/ebay-fee-calculator-uk.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Complete eBay UK selling fees breakdown for 2026. Private sellers now sell free. Business final value fees by category and what changed in February." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/ebay-selling-fees-uk-2026.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Do you owe tax on eBay UK sales? Selling your own stuff: usually no. Buying to resell: depends on the £1,000 trading allowance. 2026 guide." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/ebay-selling-tax-uk.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "How a solo dev got an iOS app cited in ChatGPT in 30 days. Real data from 11 queries and 40 citations — what worked, what didn't." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/how-i-got-my-app-into-chatgpt-search-results.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Lowball offers are universal. How to respond, set boundaries, and stop wasting time on Facebook Marketplace, Vinted and eBay." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/how-to-deal-with-lowballers.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "How to research sold prices, check comps and price reselling stock. Step-by-step for UK resellers on eBay, Vinted and Depop." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/how-to-price-items-for-resale.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "How to sell on Facebook Marketplace UK — from your first listing to dealing with time wasters and avoiding scams. Tips from 100+ deals." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/how-to-sell-facebook-marketplace-uk.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Step-by-step guide to selling on eBay UK in 2026. List your first item, set postage, choose auction vs Buy It Now, avoid beginner mistakes." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/how-to-sell-on-ebay-uk.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Step-by-step guide to selling on Vinted in the UK. No seller fees, how listing works, shipping options, getting paid, and tips to sell faster." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/how-to-sell-on-vinted-uk.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Honest assessment of reselling in 2026. Rising prices, more competition, thinner margins — but opportunity if you know your numbers." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/is-reselling-worth-it-2026.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "The sourcing-to-listing gap kills more reselling businesses than bad stock picks. Warning signs of burnout and practical ways to fix it." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/reseller-burnout-listing-fatigue.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Storage and organisation ideas for UK resellers. Small space solutions, SKU systems, and when renting storage is a trap." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/reseller-storage-ideas-uk.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Free UK reselling spreadsheet template. Exact column layout, profit formulas, trip expense tracking. Google Sheets and Excel compatible." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/reselling-spreadsheet-template-uk.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Royal Mail postage prices from April 2026. 1st class £1.80, 2nd class 91p. Letter, large letter, parcel rates plus cheapest way to post." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/royal-mail-postage-prices-resellers-2026.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Manage inventory across eBay, Vinted, Depop and Facebook Marketplace without double-selling or losing track. Practical UK reseller guide." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/selling-on-multiple-platforms.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "UK side hustle ideas that actually work in 2026. Reselling, freelancing, delivery, tutoring — with real earnings and honest pros and cons." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/side-hustle-ideas-uk.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- intent: "Vinted fees explained for UK sellers in 2026. Sellers pay nothing. Buyers pay 3-8% protection plus shipping. Full breakdown with examples." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/vinted-fees-uk.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
 </urlset>

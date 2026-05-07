@@ -60,7 +60,7 @@
     },
     {
       "slot": "town-rose-sheffield",
-      "file": "town-rose-sheffield.svg",
+      "file": "town-rose-sheffield.png",
       "type": "isolated heraldic vector",
       "license": "CC BY-SA 3.0",
       "artist": "Wikimedia Commons (Yorkshire rose, by Lupin)",
@@ -101,12 +101,8 @@
     "duty-george-iii / george-iv / william-iv / victoria (sovereign profile punches; coin profile crops would also work)",
     "commemorative-* (all 7)"
   ],
-  "silvermakersmarks": {
-    "sourceSite": "silvermakersmarks.co.uk",
-    "sourceOwner": "David McKinley",
-    "sourceContact": "silvermakersmarks.co.uk/contact-smm.php",
-    "licenseNote": "Used with permission. Do not redistribute outside this tool.",
-    "fetchedAt": "2026-05-06T22:23:39.066Z",
+  "date_letter_chart": {
+    "fetchedAt": "2026-05-07T11:51:19.714Z",
     "offices": [
       {
         "office": "London",

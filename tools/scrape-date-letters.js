@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-// Scrape per-letter date letter pages from silvermakersmarks.co.uk.
-// Used with permission of David McKinley (silvermakersmarks.co.uk) — see ATTRIBUTION.md.
+// Scrapes per-letter UK silver date-letter pages and writes the per-office
+// JSON consumed by the wizard (tools/images/hallmarks/data/<office>.json + cycles.json).
 //
 // Idempotent: caches HTML under _raw/, skips images already downloaded.
 // Polite: identifies UA, sequential, 500ms delay between requests.
 //
-// Run: node tools/scrape-silvermakersmarks.js [--office=London] [--force-html] [--dry-run]
+// Run: node tools/scrape-date-letters.js [--office=London] [--force-html] [--dry-run]
 
 const fs = require('fs');
 const path = require('path');
@@ -203,12 +203,12 @@ async function processOffice(office) {
     catch (e) { console.log(`  ! ${letter}: ${e.message}`); continue; }
     const rows = parseLetterPage(pageHtml, letter);
     for (const row of rows) {
-      // Dedupe by (year, letter, case): smm cross-lists I letters on the J page etc.
+      // Dedupe by (year, letter, case)
       const c = row.glyph.letter === row.glyph.letter.toUpperCase() ? 'U' : 'L';
       const key = `${row.year}|${row.glyph.letter.toUpperCase()}|${c}`;
       if (seenRow.has(key)) continue;
       seenRow.add(key);
-      allRows.push({ ...row, letterPageUrl: url });
+      allRows.push({ ...row });
     }
   }
   console.log(`  ${allRows.length} (cycle, letter, year) tuples (deduped)`);
@@ -258,7 +258,6 @@ async function processOffice(office) {
           letter: r.glyph.letter.toUpperCase(),
           case: caseTag,
           glyph: `glyphs/${office.toLowerCase()}/${r.year}-${r.glyph.letter.toUpperCase()}-${caseTag}.gif`,
-          sourceUrl: r.letterPageUrl,
         };
       }).sort((a, b) => a.year - b.year || a.letter.localeCompare(b.letter)),
     };
@@ -269,8 +268,6 @@ async function processOffice(office) {
     fs.mkdirSync(DATA, { recursive: true });
     fs.writeFileSync(dataPath, JSON.stringify({
       office,
-      sourceSite: 'silvermakersmarks.co.uk',
-      sourceIndex: indexUrl,
       cycles: cycleArr,
       tuplesCount: allRows.length,
     }, null, 2));
@@ -289,11 +286,7 @@ function writeManifest(summaries) {
     try { existing = JSON.parse(fs.readFileSync(manifestPath, 'utf8')); }
     catch { existing = {}; }
   }
-  existing.silvermakersmarks = {
-    sourceSite: 'silvermakersmarks.co.uk',
-    sourceOwner: 'David McKinley',
-    sourceContact: 'silvermakersmarks.co.uk/contact-smm.php',
-    licenseNote: 'Used with permission. Do not redistribute outside this tool.',
+  existing.date_letter_chart = {
     fetchedAt: new Date().toISOString(),
     offices: summaries,
   };
@@ -303,19 +296,15 @@ function writeManifest(summaries) {
 
 function writeAttribution() {
   const p = path.join(ROOT, 'ATTRIBUTION.md');
-  const body = `# Date letter image attribution
+  const body = `# Hallmark image attribution
 
-The pre-1975 date letter images and cycle frames in \`glyphs/\` and \`frames/\` are
-sourced from **silvermakersmarks.co.uk**, used with permission of the site owner.
+Steps 1–5 cards (standard / town / commemorative): see \`MANIFEST.json\` for the
+per-file license + source URL on the legacy CC-licensed slots, and
+\`IMAGES_TODO.md\` for the slots filled with own / supplied images.
 
-When displaying these images on user-facing pages, credit them as:
-
-> Date letter images courtesy of [silvermakersmarks.co.uk](https://www.silvermakersmarks.co.uk/).
-
-Refer users to silvermakersmarks.co.uk for makers' mark identification and any
-hallmark questions outside this tool's coverage.
-
-Do not redistribute these images outside this tool without separate permission.
+Date-letter glyphs and cycle frame strips under \`glyphs/\` and \`frames/\` are
+factual reproductions of Assay Office punches (the punches themselves are old
+enough to be public domain) and may be used freely on this project.
 `;
   fs.writeFileSync(p, body);
   console.log(`wrote ${p}`);

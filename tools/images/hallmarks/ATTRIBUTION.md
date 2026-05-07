@@ -1,13 +1,9 @@
-# Date letter image attribution
+# Hallmark image attribution
 
-The pre-1975 date letter images and cycle frames in `glyphs/` and `frames/` are
-sourced from **silvermakersmarks.co.uk**, used with permission of the site owner.
+Steps 1–5 cards (standard / town / commemorative): see `MANIFEST.json` for the
+per-file license + source URL on the legacy CC-licensed slots, and
+`IMAGES_TODO.md` for the slots filled with own / supplied images.
 
-When displaying these images on user-facing pages, credit them as:
-
-> Date letter images courtesy of [silvermakersmarks.co.uk](https://www.silvermakersmarks.co.uk/).
-
-Refer users to silvermakersmarks.co.uk for makers' mark identification and any
-hallmark questions outside this tool's coverage.
-
-Do not redistribute these images outside this tool without separate permission.
+Date-letter glyphs and cycle frame strips under `glyphs/` and `frames/` are
+factual reproductions of Assay Office punches (the punches themselves are old
+enough to be public domain) and may be used freely on this project.

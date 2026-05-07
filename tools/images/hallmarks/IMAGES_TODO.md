@@ -21,6 +21,19 @@ Filenames must match the slug in `tools/uk-silver-hallmarks.html` exactly. Missi
 | `standard-num-999.png` | Oleksandr |
 | `town-anchor.png` | Oleksandr (Birmingham hallmark) |
 | `town-leopard-uncrowned.png` | Oleksandr (London) |
+| `town-leopard-crowned.png` | Oleksandr (London 1478–1821) |
+| `town-three-castles-newcastle.png` | Oleksandr (Newcastle, closed 1884) |
+| `town-castle-exeter.png` | Oleksandr (Exeter, closed 1883) |
+| `town-wheat-sword-chester.png` | Oleksandr (Chester, closed 1962) |
+| `duty-victoria.png` | Oleksandr (Queen Victoria duty profile, 1837–1890) |
+| `town-lions-york.png` | Oleksandr (York, closed 1858) |
+| `duty-george-iii.png` | Oleksandr (George III duty profile, 1784–1820) |
+| `duty-george-iv.png` | Oleksandr (George IV duty profile, 1820–1830) |
+| `duty-william-iv.png` | Oleksandr (William IV duty profile, 1830–1837) |
+| `town-castle-edinburgh.png` | Oleksandr (Edinburgh three-towered castle, 1457–present) |
+| `town-tree-fish-bell.png` | Oleksandr (Glasgow, closed 1964) |
+| `town-dublin.png` | Crowned harp (mirrors `standard-crowned-harp.png`) |
+| `town-dublin-hibernia.png` | Composite: Crowned Harp + Hibernia (Dublin 1730+) |
 | `town-crown-sheffield.png` | Oleksandr (pre-1975 Sheffield) |
 | `town-rose-sheffield.svg` | CC BY-SA 3.0 — [Yorkshire rose](https://commons.wikimedia.org/wiki/File:Yorkshire_rose.svg) |
 | `commemorative-jubilee-1935.png` | Oleksandr |
@@ -43,14 +56,7 @@ If you find better quality images later, just overwrite the file (same filename)
 - `standard-num-833.png` — `833` numerical stamp (Portuguese / Scandinavian)
 
 #### Town mark (Assay Office)
-- `town-leopard-crowned.png` — London **crowned** leopard's head, 1478–1821 (we have only the uncrowned modern one)
-- `town-castle-edinburgh.png` — Edinburgh three-towered castle
-- `town-tree-fish-bell.png` — Glasgow tree, fish, and bell
-- `town-wheat-sword-chester.png` — Chester three wheat-sheaves and sword
-- `town-three-castles-newcastle.png` — Newcastle three castles
-- `town-castle-exeter.png` — Exeter three-towered castle
-- `town-lions-york.png` — York five lions on a cross
-- `town-dublin.png` — Dublin crowned harp + Hibernia
+*(none — all town slots filled)*
 
 #### Solid vs plated (Step 1)
 - `solid-solid.png` — generic solid silver mark cluster
@@ -58,11 +64,7 @@ If you find better quality images later, just overwrite the file (same filename)
 - `solid-unsure.png` — side-by-side comparison illustration
 
 #### Duty mark (sovereign's head)
-- `duty-george-iii.png` — George III profile
-- `duty-george-iv.png` — George IV profile
-- `duty-william-iv.png` — William IV profile
-- `duty-victoria.png` — Queen Victoria profile
-- `duty-any.png` — generic monarch silhouette
+- `duty-any.png` — generic monarch silhouette (the "Some monarch profile, 1784–1890" fallback card)
 
 ## Where to source the missing images
 

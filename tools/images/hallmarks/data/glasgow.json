@@ -1,7 +1,5 @@
 {
   "office": "Glasgow",
-  "sourceSite": "silvermakersmarks.co.uk",
-  "sourceIndex": "https://www.silvermakersmarks.co.uk/Dates/Glasgow.html",
   "cycles": [
     {
       "key": "1681-1710",
@@ -13,99 +11,85 @@
           "year": 1683,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/glasgow/1683-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20C.html"
+          "glyph": "glyphs/glasgow/1683-C-L.gif"
         },
         {
           "year": 1685,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/glasgow/1685-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20E.html"
+          "glyph": "glyphs/glasgow/1685-E-L.gif"
         },
         {
           "year": 1689,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/glasgow/1689-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20I.html"
+          "glyph": "glyphs/glasgow/1689-I-L.gif"
         },
         {
           "year": 1690,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/glasgow/1690-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20K.html"
+          "glyph": "glyphs/glasgow/1690-K-U.gif"
         },
         {
           "year": 1694,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/glasgow/1694-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20O.html"
+          "glyph": "glyphs/glasgow/1694-O-L.gif"
         },
         {
           "year": 1696,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/glasgow/1696-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Q.html"
+          "glyph": "glyphs/glasgow/1696-Q-L.gif"
         },
         {
           "year": 1698,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/glasgow/1698-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1698-S-L.gif"
         },
         {
           "year": 1699,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/glasgow/1699-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20T.html"
+          "glyph": "glyphs/glasgow/1699-T-L.gif"
         },
         {
           "year": 1700,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/glasgow/1700-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20U.html"
+          "glyph": "glyphs/glasgow/1700-U-L.gif"
         },
         {
           "year": 1701,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/glasgow/1701-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20V.html"
+          "glyph": "glyphs/glasgow/1701-V-L.gif"
         },
         {
           "year": 1704,
           "letter": "Y",
           "case": "L",
-          "glyph": "glyphs/glasgow/1704-Y-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Y.html"
+          "glyph": "glyphs/glasgow/1704-Y-L.gif"
         },
         {
           "year": 1705,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/glasgow/1705-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Z.html"
+          "glyph": "glyphs/glasgow/1705-Z-L.gif"
         },
         {
           "year": 1707,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/glasgow/1707-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20B.html"
+          "glyph": "glyphs/glasgow/1707-B-U.gif"
         },
         {
           "year": 1709,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/glasgow/1709-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20D.html"
+          "glyph": "glyphs/glasgow/1709-D-U.gif"
         }
       ]
     },
@@ -119,15 +103,13 @@
           "year": 1728,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1728-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1728-S-U.gif"
         },
         {
           "year": 1734,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1734-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1734-S-U.gif"
         }
       ]
     },
@@ -141,22 +123,19 @@
           "year": 1743,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1743-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1743-S-U.gif"
         },
         {
           "year": 1747,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1747-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1747-S-U.gif"
         },
         {
           "year": 1756,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1756-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1756-S-U.gif"
         }
       ]
     },
@@ -170,36 +149,31 @@
           "year": 1758,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1758-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1758-S-U.gif"
         },
         {
           "year": 1763,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/glasgow/1763-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20E.html"
+          "glyph": "glyphs/glasgow/1763-E-U.gif"
         },
         {
           "year": 1776,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/glasgow/1776-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20O.html"
+          "glyph": "glyphs/glasgow/1776-O-U.gif"
         },
         {
           "year": 1783,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1783-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1783-S-U.gif"
         },
         {
           "year": 1790,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1790-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1790-S-U.gif"
         }
       ]
     },
@@ -213,15 +187,13 @@
           "year": 1785,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1785-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1785-S-U.gif"
         },
         {
           "year": 1795,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1795-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1795-S-U.gif"
         }
       ]
     },
@@ -235,8 +207,7 @@
           "year": 1800,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1800-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1800-S-U.gif"
         }
       ]
     },
@@ -250,50 +221,43 @@
           "year": 1819,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/glasgow/1819-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20A.html"
+          "glyph": "glyphs/glasgow/1819-A-U.gif"
         },
         {
           "year": 1820,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/glasgow/1820-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20B.html"
+          "glyph": "glyphs/glasgow/1820-B-U.gif"
         },
         {
           "year": 1821,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/glasgow/1821-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20C.html"
+          "glyph": "glyphs/glasgow/1821-C-U.gif"
         },
         {
           "year": 1822,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/glasgow/1822-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20D.html"
+          "glyph": "glyphs/glasgow/1822-D-U.gif"
         },
         {
           "year": 1823,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/glasgow/1823-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20E.html"
+          "glyph": "glyphs/glasgow/1823-E-U.gif"
         },
         {
           "year": 1824,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/glasgow/1824-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20F.html"
+          "glyph": "glyphs/glasgow/1824-F-U.gif"
         },
         {
           "year": 1825,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/glasgow/1825-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20G.html"
+          "glyph": "glyphs/glasgow/1825-G-U.gif"
         }
       ]
     },
@@ -307,43 +271,37 @@
           "year": 1826,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/glasgow/1826-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20H.html"
+          "glyph": "glyphs/glasgow/1826-H-U.gif"
         },
         {
           "year": 1827,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/glasgow/1827-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20I.html"
+          "glyph": "glyphs/glasgow/1827-I-U.gif"
         },
         {
           "year": 1828,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/glasgow/1828-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20J.html"
+          "glyph": "glyphs/glasgow/1828-J-U.gif"
         },
         {
           "year": 1829,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/glasgow/1829-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20K.html"
+          "glyph": "glyphs/glasgow/1829-K-U.gif"
         },
         {
           "year": 1830,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/glasgow/1830-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20L.html"
+          "glyph": "glyphs/glasgow/1830-L-U.gif"
         },
         {
           "year": 1831,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/glasgow/1831-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20M.html"
+          "glyph": "glyphs/glasgow/1831-M-U.gif"
         }
       ]
     },
@@ -357,57 +315,49 @@
           "year": 1832,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/glasgow/1832-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20N.html"
+          "glyph": "glyphs/glasgow/1832-N-U.gif"
         },
         {
           "year": 1833,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/glasgow/1833-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20O.html"
+          "glyph": "glyphs/glasgow/1833-O-U.gif"
         },
         {
           "year": 1834,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/glasgow/1834-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20P.html"
+          "glyph": "glyphs/glasgow/1834-P-U.gif"
         },
         {
           "year": 1835,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/glasgow/1835-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Q.html"
+          "glyph": "glyphs/glasgow/1835-Q-U.gif"
         },
         {
           "year": 1836,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/glasgow/1836-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20R.html"
+          "glyph": "glyphs/glasgow/1836-R-U.gif"
         },
         {
           "year": 1837,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1837-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1837-S-U.gif"
         },
         {
           "year": 1838,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/glasgow/1838-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20T.html"
+          "glyph": "glyphs/glasgow/1838-T-U.gif"
         },
         {
           "year": 1839,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/glasgow/1839-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20U.html"
+          "glyph": "glyphs/glasgow/1839-U-U.gif"
         }
       ]
     },
@@ -421,36 +371,31 @@
           "year": 1840,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/glasgow/1840-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20V.html"
+          "glyph": "glyphs/glasgow/1840-V-U.gif"
         },
         {
           "year": 1841,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/glasgow/1841-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20W.html"
+          "glyph": "glyphs/glasgow/1841-W-U.gif"
         },
         {
           "year": 1842,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/glasgow/1842-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20X.html"
+          "glyph": "glyphs/glasgow/1842-X-U.gif"
         },
         {
           "year": 1843,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/glasgow/1843-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Y.html"
+          "glyph": "glyphs/glasgow/1843-Y-U.gif"
         },
         {
           "year": 1844,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/glasgow/1844-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Z.html"
+          "glyph": "glyphs/glasgow/1844-Z-U.gif"
         }
       ]
     },
@@ -464,316 +409,271 @@
           "year": 1845,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/glasgow/1845-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20A.html"
+          "glyph": "glyphs/glasgow/1845-A-U.gif"
         },
         {
           "year": 1846,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/glasgow/1846-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20B.html"
+          "glyph": "glyphs/glasgow/1846-B-U.gif"
         },
         {
           "year": 1847,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/glasgow/1847-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20C.html"
+          "glyph": "glyphs/glasgow/1847-C-U.gif"
         },
         {
           "year": 1848,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/glasgow/1848-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20D.html"
+          "glyph": "glyphs/glasgow/1848-D-U.gif"
         },
         {
           "year": 1849,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/glasgow/1849-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20E.html"
+          "glyph": "glyphs/glasgow/1849-E-U.gif"
         },
         {
           "year": 1850,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/glasgow/1850-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20F.html"
+          "glyph": "glyphs/glasgow/1850-F-U.gif"
         },
         {
           "year": 1851,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/glasgow/1851-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20G.html"
+          "glyph": "glyphs/glasgow/1851-G-U.gif"
         },
         {
           "year": 1852,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/glasgow/1852-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20H.html"
+          "glyph": "glyphs/glasgow/1852-H-U.gif"
         },
         {
           "year": 1853,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/glasgow/1853-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20I.html"
+          "glyph": "glyphs/glasgow/1853-I-U.gif"
         },
         {
           "year": 1854,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/glasgow/1854-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20J.html"
+          "glyph": "glyphs/glasgow/1854-J-U.gif"
         },
         {
           "year": 1855,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/glasgow/1855-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20K.html"
+          "glyph": "glyphs/glasgow/1855-K-U.gif"
         },
         {
           "year": 1856,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/glasgow/1856-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20L.html"
+          "glyph": "glyphs/glasgow/1856-L-U.gif"
         },
         {
           "year": 1857,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/glasgow/1857-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20M.html"
+          "glyph": "glyphs/glasgow/1857-M-U.gif"
         },
         {
           "year": 1858,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/glasgow/1858-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20N.html"
+          "glyph": "glyphs/glasgow/1858-N-U.gif"
         },
         {
           "year": 1859,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/glasgow/1859-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20O.html"
+          "glyph": "glyphs/glasgow/1859-O-U.gif"
         },
         {
           "year": 1860,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/glasgow/1860-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20P.html"
+          "glyph": "glyphs/glasgow/1860-P-U.gif"
         },
         {
           "year": 1861,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/glasgow/1861-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Q.html"
+          "glyph": "glyphs/glasgow/1861-Q-U.gif"
         },
         {
           "year": 1862,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/glasgow/1862-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20R.html"
+          "glyph": "glyphs/glasgow/1862-R-U.gif"
         },
         {
           "year": 1863,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1863-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1863-S-U.gif"
         },
         {
           "year": 1864,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/glasgow/1864-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20T.html"
+          "glyph": "glyphs/glasgow/1864-T-U.gif"
         },
         {
           "year": 1865,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/glasgow/1865-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20U.html"
+          "glyph": "glyphs/glasgow/1865-U-U.gif"
         },
         {
           "year": 1866,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/glasgow/1866-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20V.html"
+          "glyph": "glyphs/glasgow/1866-V-U.gif"
         },
         {
           "year": 1867,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/glasgow/1867-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20W.html"
+          "glyph": "glyphs/glasgow/1867-W-U.gif"
         },
         {
           "year": 1868,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/glasgow/1868-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20X.html"
+          "glyph": "glyphs/glasgow/1868-X-U.gif"
         },
         {
           "year": 1869,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/glasgow/1869-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Y.html"
+          "glyph": "glyphs/glasgow/1869-Y-U.gif"
         },
         {
           "year": 1870,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/glasgow/1870-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Z.html"
+          "glyph": "glyphs/glasgow/1870-Z-U.gif"
         },
         {
           "year": 1871,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/glasgow/1871-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20A.html"
+          "glyph": "glyphs/glasgow/1871-A-U.gif"
         },
         {
           "year": 1872,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/glasgow/1872-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20B.html"
+          "glyph": "glyphs/glasgow/1872-B-U.gif"
         },
         {
           "year": 1873,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/glasgow/1873-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20C.html"
+          "glyph": "glyphs/glasgow/1873-C-U.gif"
         },
         {
           "year": 1874,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/glasgow/1874-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20D.html"
+          "glyph": "glyphs/glasgow/1874-D-U.gif"
         },
         {
           "year": 1875,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/glasgow/1875-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20E.html"
+          "glyph": "glyphs/glasgow/1875-E-U.gif"
         },
         {
           "year": 1876,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/glasgow/1876-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20F.html"
+          "glyph": "glyphs/glasgow/1876-F-U.gif"
         },
         {
           "year": 1877,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/glasgow/1877-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20G.html"
+          "glyph": "glyphs/glasgow/1877-G-U.gif"
         },
         {
           "year": 1878,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/glasgow/1878-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20H.html"
+          "glyph": "glyphs/glasgow/1878-H-U.gif"
         },
         {
           "year": 1879,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/glasgow/1879-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20I.html"
+          "glyph": "glyphs/glasgow/1879-I-U.gif"
         },
         {
           "year": 1880,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/glasgow/1880-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20J.html"
+          "glyph": "glyphs/glasgow/1880-J-U.gif"
         },
         {
           "year": 1881,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/glasgow/1881-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20K.html"
+          "glyph": "glyphs/glasgow/1881-K-U.gif"
         },
         {
           "year": 1882,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/glasgow/1882-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20L.html"
+          "glyph": "glyphs/glasgow/1882-L-U.gif"
         },
         {
           "year": 1883,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/glasgow/1883-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20M.html"
+          "glyph": "glyphs/glasgow/1883-M-U.gif"
         },
         {
           "year": 1884,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/glasgow/1884-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20N.html"
+          "glyph": "glyphs/glasgow/1884-N-U.gif"
         },
         {
           "year": 1885,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/glasgow/1885-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20O.html"
+          "glyph": "glyphs/glasgow/1885-O-U.gif"
         },
         {
           "year": 1886,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/glasgow/1886-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20P.html"
+          "glyph": "glyphs/glasgow/1886-P-U.gif"
         },
         {
           "year": 1887,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/glasgow/1887-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Q.html"
+          "glyph": "glyphs/glasgow/1887-Q-U.gif"
         },
         {
           "year": 1888,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/glasgow/1888-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20R.html"
+          "glyph": "glyphs/glasgow/1888-R-U.gif"
         },
         {
           "year": 1889,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1889-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1889-S-U.gif"
         }
       ]
     },
@@ -787,64 +687,55 @@
           "year": 1890,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/glasgow/1890-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20T.html"
+          "glyph": "glyphs/glasgow/1890-T-U.gif"
         },
         {
           "year": 1891,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/glasgow/1891-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20U.html"
+          "glyph": "glyphs/glasgow/1891-U-U.gif"
         },
         {
           "year": 1892,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/glasgow/1892-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20V.html"
+          "glyph": "glyphs/glasgow/1892-V-U.gif"
         },
         {
           "year": 1893,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/glasgow/1893-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20W.html"
+          "glyph": "glyphs/glasgow/1893-W-U.gif"
         },
         {
           "year": 1894,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/glasgow/1894-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20X.html"
+          "glyph": "glyphs/glasgow/1894-X-U.gif"
         },
         {
           "year": 1895,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/glasgow/1895-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Y.html"
+          "glyph": "glyphs/glasgow/1895-Y-U.gif"
         },
         {
           "year": 1896,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/glasgow/1896-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Z.html"
+          "glyph": "glyphs/glasgow/1896-Z-U.gif"
         },
         {
           "year": 1897,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/glasgow/1897-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20A.html"
+          "glyph": "glyphs/glasgow/1897-A-U.gif"
         },
         {
           "year": 1898,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/glasgow/1898-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20B.html"
+          "glyph": "glyphs/glasgow/1898-B-U.gif"
         }
       ]
     },
@@ -858,106 +749,91 @@
           "year": 1899,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/glasgow/1899-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20C.html"
+          "glyph": "glyphs/glasgow/1899-C-U.gif"
         },
         {
           "year": 1900,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/glasgow/1900-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20D.html"
+          "glyph": "glyphs/glasgow/1900-D-U.gif"
         },
         {
           "year": 1901,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/glasgow/1901-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20E.html"
+          "glyph": "glyphs/glasgow/1901-E-U.gif"
         },
         {
           "year": 1902,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/glasgow/1902-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20F.html"
+          "glyph": "glyphs/glasgow/1902-F-U.gif"
         },
         {
           "year": 1903,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/glasgow/1903-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20G.html"
+          "glyph": "glyphs/glasgow/1903-G-U.gif"
         },
         {
           "year": 1904,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/glasgow/1904-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20H.html"
+          "glyph": "glyphs/glasgow/1904-H-U.gif"
         },
         {
           "year": 1905,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/glasgow/1905-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20I.html"
+          "glyph": "glyphs/glasgow/1905-I-U.gif"
         },
         {
           "year": 1906,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/glasgow/1906-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20J.html"
+          "glyph": "glyphs/glasgow/1906-J-U.gif"
         },
         {
           "year": 1907,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/glasgow/1907-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20K.html"
+          "glyph": "glyphs/glasgow/1907-K-U.gif"
         },
         {
           "year": 1908,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/glasgow/1908-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20L.html"
+          "glyph": "glyphs/glasgow/1908-L-U.gif"
         },
         {
           "year": 1909,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/glasgow/1909-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20M.html"
+          "glyph": "glyphs/glasgow/1909-M-U.gif"
         },
         {
           "year": 1910,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/glasgow/1910-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20N.html"
+          "glyph": "glyphs/glasgow/1910-N-U.gif"
         },
         {
           "year": 1911,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/glasgow/1911-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20O.html"
+          "glyph": "glyphs/glasgow/1911-O-U.gif"
         },
         {
           "year": 1912,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/glasgow/1912-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20P.html"
+          "glyph": "glyphs/glasgow/1912-P-U.gif"
         },
         {
           "year": 1913,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/glasgow/1913-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Q.html"
+          "glyph": "glyphs/glasgow/1913-Q-U.gif"
         }
       ]
     },
@@ -971,351 +847,301 @@
           "year": 1914,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/glasgow/1914-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20R.html"
+          "glyph": "glyphs/glasgow/1914-R-U.gif"
         },
         {
           "year": 1915,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/glasgow/1915-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1915-S-U.gif"
         },
         {
           "year": 1916,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/glasgow/1916-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20T.html"
+          "glyph": "glyphs/glasgow/1916-T-U.gif"
         },
         {
           "year": 1917,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/glasgow/1917-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20U.html"
+          "glyph": "glyphs/glasgow/1917-U-U.gif"
         },
         {
           "year": 1918,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/glasgow/1918-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20V.html"
+          "glyph": "glyphs/glasgow/1918-V-U.gif"
         },
         {
           "year": 1919,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/glasgow/1919-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20W.html"
+          "glyph": "glyphs/glasgow/1919-W-U.gif"
         },
         {
           "year": 1920,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/glasgow/1920-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20X.html"
+          "glyph": "glyphs/glasgow/1920-X-U.gif"
         },
         {
           "year": 1921,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/glasgow/1921-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Y.html"
+          "glyph": "glyphs/glasgow/1921-Y-U.gif"
         },
         {
           "year": 1922,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/glasgow/1922-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Z.html"
+          "glyph": "glyphs/glasgow/1922-Z-U.gif"
         },
         {
           "year": 1923,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/glasgow/1923-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20A.html"
+          "glyph": "glyphs/glasgow/1923-A-L.gif"
         },
         {
           "year": 1924,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/glasgow/1924-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20B.html"
+          "glyph": "glyphs/glasgow/1924-B-L.gif"
         },
         {
           "year": 1925,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/glasgow/1925-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20C.html"
+          "glyph": "glyphs/glasgow/1925-C-L.gif"
         },
         {
           "year": 1926,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/glasgow/1926-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20D.html"
+          "glyph": "glyphs/glasgow/1926-D-L.gif"
         },
         {
           "year": 1927,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/glasgow/1927-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20E.html"
+          "glyph": "glyphs/glasgow/1927-E-L.gif"
         },
         {
           "year": 1928,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/glasgow/1928-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20F.html"
+          "glyph": "glyphs/glasgow/1928-F-L.gif"
         },
         {
           "year": 1929,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/glasgow/1929-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20G.html"
+          "glyph": "glyphs/glasgow/1929-G-L.gif"
         },
         {
           "year": 1930,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/glasgow/1930-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20H.html"
+          "glyph": "glyphs/glasgow/1930-H-L.gif"
         },
         {
           "year": 1931,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/glasgow/1931-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20I.html"
+          "glyph": "glyphs/glasgow/1931-I-L.gif"
         },
         {
           "year": 1932,
           "letter": "J",
           "case": "L",
-          "glyph": "glyphs/glasgow/1932-J-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20J.html"
+          "glyph": "glyphs/glasgow/1932-J-L.gif"
         },
         {
           "year": 1933,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/glasgow/1933-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20K.html"
+          "glyph": "glyphs/glasgow/1933-K-L.gif"
         },
         {
           "year": 1934,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/glasgow/1934-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20L.html"
+          "glyph": "glyphs/glasgow/1934-L-L.gif"
         },
         {
           "year": 1935,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/glasgow/1935-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20M.html"
+          "glyph": "glyphs/glasgow/1935-M-L.gif"
         },
         {
           "year": 1936,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/glasgow/1936-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20N.html"
+          "glyph": "glyphs/glasgow/1936-N-L.gif"
         },
         {
           "year": 1937,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/glasgow/1937-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20O.html"
+          "glyph": "glyphs/glasgow/1937-O-L.gif"
         },
         {
           "year": 1938,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/glasgow/1938-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20P.html"
+          "glyph": "glyphs/glasgow/1938-P-L.gif"
         },
         {
           "year": 1939,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/glasgow/1939-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Q.html"
+          "glyph": "glyphs/glasgow/1939-Q-L.gif"
         },
         {
           "year": 1940,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/glasgow/1940-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20R.html"
+          "glyph": "glyphs/glasgow/1940-R-L.gif"
         },
         {
           "year": 1941,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/glasgow/1941-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20S.html"
+          "glyph": "glyphs/glasgow/1941-S-L.gif"
         },
         {
           "year": 1942,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/glasgow/1942-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20T.html"
+          "glyph": "glyphs/glasgow/1942-T-L.gif"
         },
         {
           "year": 1943,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/glasgow/1943-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20U.html"
+          "glyph": "glyphs/glasgow/1943-U-L.gif"
         },
         {
           "year": 1944,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/glasgow/1944-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20V.html"
+          "glyph": "glyphs/glasgow/1944-V-L.gif"
         },
         {
           "year": 1945,
           "letter": "W",
           "case": "L",
-          "glyph": "glyphs/glasgow/1945-W-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20W.html"
+          "glyph": "glyphs/glasgow/1945-W-L.gif"
         },
         {
           "year": 1946,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/glasgow/1946-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20X.html"
+          "glyph": "glyphs/glasgow/1946-X-L.gif"
         },
         {
           "year": 1947,
           "letter": "Y",
           "case": "L",
-          "glyph": "glyphs/glasgow/1947-Y-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Y.html"
+          "glyph": "glyphs/glasgow/1947-Y-L.gif"
         },
         {
           "year": 1948,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/glasgow/1948-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20Z.html"
+          "glyph": "glyphs/glasgow/1948-Z-L.gif"
         },
         {
           "year": 1949,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/glasgow/1949-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20A.html"
+          "glyph": "glyphs/glasgow/1949-A-U.gif"
         },
         {
           "year": 1950,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/glasgow/1950-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20B.html"
+          "glyph": "glyphs/glasgow/1950-B-U.gif"
         },
         {
           "year": 1951,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/glasgow/1951-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20C.html"
+          "glyph": "glyphs/glasgow/1951-C-U.gif"
         },
         {
           "year": 1952,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/glasgow/1952-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20D.html"
+          "glyph": "glyphs/glasgow/1952-D-U.gif"
         },
         {
           "year": 1953,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/glasgow/1953-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20E.html"
+          "glyph": "glyphs/glasgow/1953-E-U.gif"
         },
         {
           "year": 1954,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/glasgow/1954-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20F.html"
+          "glyph": "glyphs/glasgow/1954-F-U.gif"
         },
         {
           "year": 1955,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/glasgow/1955-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20G.html"
+          "glyph": "glyphs/glasgow/1955-G-U.gif"
         },
         {
           "year": 1956,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/glasgow/1956-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20H.html"
+          "glyph": "glyphs/glasgow/1956-H-U.gif"
         },
         {
           "year": 1957,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/glasgow/1957-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20J.html"
+          "glyph": "glyphs/glasgow/1957-J-U.gif"
         },
         {
           "year": 1958,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/glasgow/1958-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20L.html"
+          "glyph": "glyphs/glasgow/1958-L-U.gif"
         },
         {
           "year": 1959,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/glasgow/1959-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20M.html"
+          "glyph": "glyphs/glasgow/1959-M-U.gif"
         },
         {
           "year": 1960,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/glasgow/1960-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20N.html"
+          "glyph": "glyphs/glasgow/1960-N-U.gif"
         },
         {
           "year": 1961,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/glasgow/1961-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20O.html"
+          "glyph": "glyphs/glasgow/1961-O-U.gif"
         },
         {
           "year": 1962,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/glasgow/1962-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20P.html"
+          "glyph": "glyphs/glasgow/1962-P-U.gif"
         },
         {
           "year": 1963,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/glasgow/1963-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Glasgow/Date%20Letters%20R.html"
+          "glyph": "glyphs/glasgow/1963-R-U.gif"
         }
       ]
     }

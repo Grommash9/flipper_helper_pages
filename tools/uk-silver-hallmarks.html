@@ -322,6 +322,76 @@
         .wiz-card-sub { color: var(--text-tertiary); font-size: 0.82rem; }
         .wiz-step.is-locked { opacity: 0.4; pointer-events: none; }
         .wiz-step.is-hidden { display: none; }
+        .wiz-card { position: relative; }
+        .zoom-btn {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 22px;
+            height: 22px;
+            background: rgba(0,0,0,0.55);
+            color: #fff;
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 13px;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.55;
+            transition: opacity var(--transition-fast), background var(--transition-fast);
+            padding: 0;
+            z-index: 2;
+        }
+        .zoom-btn:hover { opacity: 1; background: rgba(0,0,0,0.8); }
+        .img-lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            cursor: zoom-out;
+        }
+        .img-lightbox[hidden] { display: none; }
+        .img-lightbox img {
+            background: #f4ead6;
+            padding: 1.5rem;
+            border-radius: 12px;
+            max-width: min(90vw, 520px);
+            max-height: 90vh;
+            image-rendering: -webkit-optimize-contrast;
+        }
+        .img-lightbox-caption {
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #FAFAFA;
+            font-size: 0.95rem;
+            background: rgba(0,0,0,0.6);
+            padding: 0.5rem 0.85rem;
+            border-radius: var(--radius-sm);
+        }
+        .img-lightbox-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(0,0,0,0.55);
+            color: #fff;
+            border: 0;
+            font-size: 1.6rem;
+            line-height: 1;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .hallmarks-output {
             background: var(--bg-secondary);
             border: 1px solid var(--border-subtle);
@@ -331,6 +401,40 @@
             color: var(--text-primary);
         }
         .hallmarks-output h3 { margin-top: 0; color: var(--text-primary); }
+        .hallmarks-output-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.85rem;
+        }
+        .hallmarks-output-head h3 { margin-bottom: 0; }
+        .hallmarks-actions {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .hallmarks-actions[hidden] { display: none; }
+        .btn-action {
+            background: var(--bg-card);
+            border: 1px solid var(--border-default);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-size: 0.85rem;
+            padding: 0.5rem 0.85rem;
+            cursor: pointer;
+            transition: border-color var(--transition-fast), background var(--transition-fast);
+        }
+        .btn-action:hover { background: var(--bg-card-hover); border-color: var(--border-hover); }
+        .btn-action:disabled { opacity: 0.5; cursor: not-allowed; }
+        .btn-action-primary {
+            background: var(--color-primary);
+            border-color: var(--color-primary);
+            color: #fff;
+        }
+        .btn-action-primary:hover { background: var(--color-primary-hover); border-color: var(--color-primary-hover); }
+        .btn-action.is-success { background: rgba(52, 199, 89, 0.18); border-color: #34C759; color: #34C759; }
         .hallmarks-output strong, .hallmarks-output b, .hallmarks-output em { color: var(--text-primary); }
         .hallmarks-output a { color: var(--color-primary-text); }
         .hallmarks-output .verdict {
@@ -343,9 +447,53 @@
             border-radius: var(--radius-sm);
             color: var(--text-primary);
         }
-        .hallmarks-output dl { margin: 0; }
-        .hallmarks-output dt { font-weight: 600; margin-top: 0.8rem; color: var(--text-primary); }
-        .hallmarks-output dd { margin: 0.2rem 0 0 0; color: var(--text-secondary); }
+        .result-rows {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin: 0.85rem 0 0 0;
+        }
+        .result-row {
+            display: flex;
+            gap: 0.85rem;
+            padding: 0.7rem 0.85rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-default);
+            border-radius: var(--radius-sm);
+            align-items: center;
+        }
+        .result-row .result-row-img {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            background: #f4ead6;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6a4a1a;
+            font-weight: 600;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .result-row .result-row-img img { max-width: 100%; max-height: 100%; }
+        .result-row-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.18rem;
+            flex: 1;
+            min-width: 0;
+        }
+        .result-row-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-tertiary);
+        }
+        .result-row-title { font-weight: 600; color: var(--text-primary); }
+        .result-row-sub { font-size: 0.88rem; color: var(--text-secondary); }
+        .result-row-note { font-size: 0.82rem; color: var(--text-tertiary); line-height: 1.4; margin-top: 0.18rem; }
         .hallmarks-output .caveats {
             margin-top: 1.2rem;
             padding-top: 1rem;
@@ -457,9 +605,15 @@
 
                 <!-- LIVE OUTPUT -->
                 <div class="hallmarks-output" id="output" aria-live="polite" aria-atomic="true">
-                    <h3>Summary</h3>
+                    <div class="hallmarks-output-head">
+                        <h3>Summary</h3>
+                        <div class="hallmarks-actions" id="hallmarks-actions" hidden>
+                            <button type="button" class="btn-action" id="copy-result">Copy text</button>
+                            <button type="button" class="btn-action btn-action-primary" id="download-result-img">Download image</button>
+                        </div>
+                    </div>
                     <div class="verdict" id="verdict">Make selections in the wizard above to see your summary.</div>
-                    <dl id="details"></dl>
+                    <div id="details" class="result-rows"></div>
                     <div class="caveats" id="caveats"></div>
                 </div>
 
@@ -473,6 +627,26 @@
                         <a class="city-link" href="silver-hallmarks-edinburgh.html">Edinburgh <small>Three-towered castle — 1457–present</small></a>
                     </div>
                 </section>
+                <style>
+                    .city-link-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+                        gap: 0.6rem;
+                        margin: 1rem 0 1.5rem 0;
+                    }
+                    .city-link, .city-link:link, .city-link:visited, .city-link:hover {
+                        background: var(--bg-card);
+                        border: 1px solid var(--border-default);
+                        border-radius: var(--radius-sm);
+                        padding: 0.85rem 1rem;
+                        text-decoration: none !important;
+                        color: var(--text-primary);
+                        font-weight: 600;
+                        transition: border-color var(--transition-fast), background var(--transition-fast);
+                    }
+                    .city-link:hover { background: var(--bg-card-hover); border-color: var(--border-hover); }
+                    .city-link small { display: block; font-weight: 400; color: var(--text-tertiary); margin-top: 0.2rem; font-size: 0.82rem; text-decoration: none; }
+                </style>
 
                 <section>
                     <h2>What does 925 mean on silver?</h2>
@@ -644,7 +818,6 @@
                 <section>
                     <h2>Resources for date letters and maker&rsquo;s marks</h2>
                     <ul>
-                        <li><strong>silvermakersmarks.co.uk</strong> &mdash; <a href="https://www.silvermakersmarks.co.uk/" target="_blank" rel="noopener">silvermakersmarks.co.uk</a> &mdash; the most thorough open reference for British &amp; Irish makers&rsquo; marks and per-office date letter charts. Date letter images on this tool are sourced from there with permission. Use the site directly for makers&rsquo; mark identification, which this tool deliberately does not cover.</li>
                         <li>The Assay Office London &mdash; <a href="https://www.theassayofficelondon.co.uk/" target="_blank" rel="noopener">theassayofficelondon.co.uk</a></li>
                         <li>Birmingham Assay Office &mdash; <a href="https://www.theassayoffice.co.uk/" target="_blank" rel="noopener">theassayoffice.co.uk</a></li>
                         <li>The Sheffield Assay Office &mdash; <a href="https://www.assayoffice.co.uk/" target="_blank" rel="noopener">assayoffice.co.uk</a></li>
@@ -664,6 +837,11 @@
         </div>
     </main>
 
+    <div class="img-lightbox" id="img-lightbox" hidden role="dialog" aria-label="Enlarged hallmark image" aria-modal="true">
+        <button type="button" class="img-lightbox-close" id="img-lightbox-close" aria-label="Close">×</button>
+        <img alt="">
+        <div class="img-lightbox-caption" id="img-lightbox-caption"></div>
+    </div>
     <footer class="footer footer-compact">
         <div class="container">
             <div class="footer-row">
@@ -679,7 +857,7 @@
         </div>
     </footer>
 
-    <script src="wizard.js?v=2" defer></script>
+    <script src="wizard.js?v=9" defer></script>
     <script data-goatcounter="https://grommash9.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
 </body>

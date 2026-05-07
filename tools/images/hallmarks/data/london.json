@@ -1,7 +1,5 @@
 {
   "office": "London",
-  "sourceSite": "silvermakersmarks.co.uk",
-  "sourceIndex": "https://www.silvermakersmarks.co.uk/Dates/London.html",
   "cycles": [
     {
       "key": "1544-1544",
@@ -13,8 +11,7 @@
           "year": 1544,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/london/1544-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1544-G-U.gif"
         }
       ]
     },
@@ -28,22 +25,19 @@
           "year": 1545,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/london/1545-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1545-H-U.gif"
         },
         {
           "year": 1546,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/london/1546-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1546-I-U.gif"
         },
         {
           "year": 1547,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/london/1547-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1547-K-U.gif"
         }
       ]
     },
@@ -57,15 +51,13 @@
           "year": 1548,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/london/1548-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1548-L-U.gif"
         },
         {
           "year": 1549,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/london/1549-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1549-M-U.gif"
         }
       ]
     },
@@ -79,8 +71,7 @@
           "year": 1550,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/london/1550-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1550-N-U.gif"
         }
       ]
     },
@@ -94,43 +85,37 @@
           "year": 1551,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/london/1551-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1551-O-U.gif"
         },
         {
           "year": 1552,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/london/1552-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1552-P-U.gif"
         },
         {
           "year": 1553,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/london/1553-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1553-Q-U.gif"
         },
         {
           "year": 1554,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/london/1554-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1554-R-U.gif"
         },
         {
           "year": 1555,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/london/1555-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1555-S-U.gif"
         },
         {
           "year": 1556,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/london/1556-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1556-T-U.gif"
         }
       ]
     },
@@ -144,8 +129,7 @@
           "year": 1557,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/london/1557-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1557-U-U.gif"
         }
       ]
     },
@@ -159,22 +143,19 @@
           "year": 1558,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/london/1558-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1558-A-L.gif"
         },
         {
           "year": 1559,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/london/1559-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1559-B-L.gif"
         },
         {
           "year": 1561,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/london/1561-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1561-D-L.gif"
         }
       ]
     },
@@ -188,99 +169,85 @@
           "year": 1562,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/london/1562-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1562-E-L.gif"
         },
         {
           "year": 1563,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/london/1563-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1563-F-L.gif"
         },
         {
           "year": 1564,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/london/1564-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1564-G-L.gif"
         },
         {
           "year": 1565,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/london/1565-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1565-H-L.gif"
         },
         {
           "year": 1566,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/london/1566-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1566-I-L.gif"
         },
         {
           "year": 1568,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/london/1568-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1568-L-L.gif"
         },
         {
           "year": 1569,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/london/1569-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1569-M-L.gif"
         },
         {
           "year": 1570,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/london/1570-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1570-N-L.gif"
         },
         {
           "year": 1571,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/london/1571-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1571-O-L.gif"
         },
         {
           "year": 1572,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/london/1572-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1572-P-L.gif"
         },
         {
           "year": 1573,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/london/1573-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1573-Q-L.gif"
         },
         {
           "year": 1574,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/london/1574-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1574-R-L.gif"
         },
         {
           "year": 1576,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/london/1576-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1576-T-L.gif"
         },
         {
           "year": 1577,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/london/1577-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1577-U-L.gif"
         }
       ]
     },
@@ -294,281 +261,241 @@
           "year": 1578,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/london/1578-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1578-A-U.gif"
         },
         {
           "year": 1579,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/london/1579-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1579-B-U.gif"
         },
         {
           "year": 1580,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/london/1580-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1580-C-U.gif"
         },
         {
           "year": 1581,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/london/1581-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1581-D-U.gif"
         },
         {
           "year": 1582,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/london/1582-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1582-E-U.gif"
         },
         {
           "year": 1583,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/london/1583-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1583-F-U.gif"
         },
         {
           "year": 1584,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/london/1584-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1584-G-U.gif"
         },
         {
           "year": 1585,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/london/1585-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1585-H-U.gif"
         },
         {
           "year": 1586,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/london/1586-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1586-I-U.gif"
         },
         {
           "year": 1587,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/london/1587-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1587-K-U.gif"
         },
         {
           "year": 1588,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/london/1588-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1588-L-U.gif"
         },
         {
           "year": 1589,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/london/1589-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1589-M-U.gif"
         },
         {
           "year": 1590,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/london/1590-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1590-N-U.gif"
         },
         {
           "year": 1591,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/london/1591-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1591-O-U.gif"
         },
         {
           "year": 1592,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/london/1592-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1592-P-U.gif"
         },
         {
           "year": 1593,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/london/1593-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1593-Q-U.gif"
         },
         {
           "year": 1594,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/london/1594-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1594-R-U.gif"
         },
         {
           "year": 1595,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/london/1595-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1595-S-U.gif"
         },
         {
           "year": 1596,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/london/1596-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1596-T-U.gif"
         },
         {
           "year": 1597,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/london/1597-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1597-U-U.gif"
         },
         {
           "year": 1598,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/london/1598-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1598-A-U.gif"
         },
         {
           "year": 1599,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/london/1599-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1599-B-U.gif"
         },
         {
           "year": 1600,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/london/1600-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1600-C-U.gif"
         },
         {
           "year": 1601,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/london/1601-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1601-D-U.gif"
         },
         {
           "year": 1602,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/london/1602-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1602-E-U.gif"
         },
         {
           "year": 1603,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/london/1603-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1603-F-U.gif"
         },
         {
           "year": 1604,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/london/1604-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1604-G-U.gif"
         },
         {
           "year": 1605,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/london/1605-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1605-H-U.gif"
         },
         {
           "year": 1606,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/london/1606-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1606-I-U.gif"
         },
         {
           "year": 1607,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/london/1607-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1607-K-U.gif"
         },
         {
           "year": 1608,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/london/1608-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1608-L-U.gif"
         },
         {
           "year": 1609,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/london/1609-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1609-M-U.gif"
         },
         {
           "year": 1610,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/london/1610-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1610-N-U.gif"
         },
         {
           "year": 1611,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/london/1611-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1611-O-U.gif"
         },
         {
           "year": 1612,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/london/1612-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1612-P-U.gif"
         },
         {
           "year": 1613,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/london/1613-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1613-Q-U.gif"
         },
         {
           "year": 1614,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/london/1614-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1614-R-U.gif"
         },
         {
           "year": 1615,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/london/1615-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1615-S-U.gif"
         },
         {
           "year": 1616,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/london/1616-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1616-T-U.gif"
         },
         {
           "year": 1617,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/london/1617-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1617-U-U.gif"
         }
       ]
     },
@@ -582,204 +509,175 @@
           "year": 1618,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/london/1618-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1618-A-L.gif"
         },
         {
           "year": 1619,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/london/1619-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1619-B-L.gif"
         },
         {
           "year": 1620,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/london/1620-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1620-C-L.gif"
         },
         {
           "year": 1621,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/london/1621-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1621-D-L.gif"
         },
         {
           "year": 1622,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/london/1622-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1622-E-L.gif"
         },
         {
           "year": 1623,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/london/1623-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1623-F-L.gif"
         },
         {
           "year": 1624,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/london/1624-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1624-G-L.gif"
         },
         {
           "year": 1625,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/london/1625-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1625-H-L.gif"
         },
         {
           "year": 1626,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/london/1626-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1626-I-L.gif"
         },
         {
           "year": 1627,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/london/1627-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1627-K-L.gif"
         },
         {
           "year": 1628,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/london/1628-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1628-L-L.gif"
         },
         {
           "year": 1629,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/london/1629-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1629-M-L.gif"
         },
         {
           "year": 1630,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/london/1630-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1630-N-L.gif"
         },
         {
           "year": 1631,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/london/1631-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1631-O-L.gif"
         },
         {
           "year": 1632,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/london/1632-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1632-P-L.gif"
         },
         {
           "year": 1633,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/london/1633-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1633-Q-L.gif"
         },
         {
           "year": 1634,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/london/1634-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1634-R-L.gif"
         },
         {
           "year": 1635,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/london/1635-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1635-S-L.gif"
         },
         {
           "year": 1636,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/london/1636-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1636-T-L.gif"
         },
         {
           "year": 1637,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/london/1637-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1637-U-L.gif"
         },
         {
           "year": 1638,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/london/1638-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1638-A-L.gif"
         },
         {
           "year": 1639,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/london/1639-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1639-B-L.gif"
         },
         {
           "year": 1640,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/london/1640-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1640-C-L.gif"
         },
         {
           "year": 1641,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/london/1641-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1641-D-L.gif"
         },
         {
           "year": 1642,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/london/1642-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1642-E-L.gif"
         },
         {
           "year": 1643,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/london/1643-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1643-F-L.gif"
         },
         {
           "year": 1644,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/london/1644-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1644-G-L.gif"
         },
         {
           "year": 1645,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/london/1645-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1645-H-L.gif"
         },
         {
           "year": 1646,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/london/1646-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1646-I-L.gif"
         }
       ]
     },
@@ -793,148 +691,127 @@
           "year": 1647,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/london/1647-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1647-K-L.gif"
         },
         {
           "year": 1648,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/london/1648-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1648-L-L.gif"
         },
         {
           "year": 1649,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/london/1649-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1649-M-L.gif"
         },
         {
           "year": 1650,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/london/1650-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1650-N-L.gif"
         },
         {
           "year": 1651,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/london/1651-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1651-O-L.gif"
         },
         {
           "year": 1652,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/london/1652-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1652-P-L.gif"
         },
         {
           "year": 1653,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/london/1653-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1653-Q-L.gif"
         },
         {
           "year": 1654,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/london/1654-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1654-R-L.gif"
         },
         {
           "year": 1655,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/london/1655-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1655-S-L.gif"
         },
         {
           "year": 1656,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/london/1656-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1656-T-L.gif"
         },
         {
           "year": 1657,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/london/1657-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1657-U-L.gif"
         },
         {
           "year": 1658,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/london/1658-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1658-A-U.gif"
         },
         {
           "year": 1659,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/london/1659-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1659-B-U.gif"
         },
         {
           "year": 1660,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/london/1660-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1660-C-U.gif"
         },
         {
           "year": 1661,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/london/1661-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1661-D-U.gif"
         },
         {
           "year": 1662,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/london/1662-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1662-E-U.gif"
         },
         {
           "year": 1663,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/london/1663-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1663-F-U.gif"
         },
         {
           "year": 1664,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/london/1664-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1664-G-U.gif"
         },
         {
           "year": 1665,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/london/1665-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1665-H-U.gif"
         },
         {
           "year": 1666,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/london/1666-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1666-I-U.gif"
         },
         {
           "year": 1667,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/london/1667-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1667-K-U.gif"
         }
       ]
     },
@@ -948,85 +825,73 @@
           "year": 1668,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/london/1668-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1668-L-U.gif"
         },
         {
           "year": 1669,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/london/1669-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1669-M-U.gif"
         },
         {
           "year": 1670,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/london/1670-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1670-N-U.gif"
         },
         {
           "year": 1671,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/london/1671-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1671-O-U.gif"
         },
         {
           "year": 1672,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/london/1672-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1672-P-U.gif"
         },
         {
           "year": 1673,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/london/1673-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1673-Q-U.gif"
         },
         {
           "year": 1674,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/london/1674-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1674-R-U.gif"
         },
         {
           "year": 1675,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/london/1675-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1675-S-U.gif"
         },
         {
           "year": 1676,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/london/1676-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1676-T-U.gif"
         },
         {
           "year": 1677,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/london/1677-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1677-U-U.gif"
         },
         {
           "year": 1678,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/london/1678-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1678-A-L.gif"
         },
         {
           "year": 1679,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/london/1679-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1679-B-L.gif"
         }
       ]
     },
@@ -1040,120 +905,103 @@
           "year": 1680,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/london/1680-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1680-C-L.gif"
         },
         {
           "year": 1681,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/london/1681-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1681-D-L.gif"
         },
         {
           "year": 1682,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/london/1682-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1682-E-L.gif"
         },
         {
           "year": 1683,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/london/1683-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1683-F-L.gif"
         },
         {
           "year": 1684,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/london/1684-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1684-G-L.gif"
         },
         {
           "year": 1685,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/london/1685-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1685-H-L.gif"
         },
         {
           "year": 1686,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/london/1686-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1686-I-L.gif"
         },
         {
           "year": 1687,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/london/1687-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1687-K-L.gif"
         },
         {
           "year": 1688,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/london/1688-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1688-L-L.gif"
         },
         {
           "year": 1689,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/london/1689-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1689-M-L.gif"
         },
         {
           "year": 1690,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/london/1690-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1690-N-L.gif"
         },
         {
           "year": 1691,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/london/1691-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1691-O-L.gif"
         },
         {
           "year": 1692,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/london/1692-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1692-P-L.gif"
         },
         {
           "year": 1693,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/london/1693-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1693-Q-L.gif"
         },
         {
           "year": 1694,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/london/1694-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1694-R-L.gif"
         },
         {
           "year": 1695,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/london/1695-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1695-S-L.gif"
         },
         {
           "year": 1696,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/london/1696-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1696-T-L.gif"
         }
       ]
     },
@@ -1167,134 +1015,115 @@
           "year": 1697,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/london/1697-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1697-A-L.gif"
         },
         {
           "year": 1697,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/london/1697-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1697-B-L.gif"
         },
         {
           "year": 1698,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/london/1698-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1698-C-L.gif"
         },
         {
           "year": 1699,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/london/1699-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1699-D-L.gif"
         },
         {
           "year": 1700,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/london/1700-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1700-E-L.gif"
         },
         {
           "year": 1701,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/london/1701-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1701-F-L.gif"
         },
         {
           "year": 1703,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/london/1703-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1703-H-L.gif"
         },
         {
           "year": 1704,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/london/1704-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1704-I-L.gif"
         },
         {
           "year": 1705,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/london/1705-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1705-K-L.gif"
         },
         {
           "year": 1706,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/london/1706-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1706-L-L.gif"
         },
         {
           "year": 1707,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/london/1707-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1707-M-L.gif"
         },
         {
           "year": 1708,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/london/1708-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1708-N-L.gif"
         },
         {
           "year": 1709,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/london/1709-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1709-O-L.gif"
         },
         {
           "year": 1710,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/london/1710-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1710-P-L.gif"
         },
         {
           "year": 1711,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/london/1711-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1711-Q-L.gif"
         },
         {
           "year": 1712,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/london/1712-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1712-R-L.gif"
         },
         {
           "year": 1713,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/london/1713-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1713-S-L.gif"
         },
         {
           "year": 1714,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/london/1714-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1714-T-L.gif"
         },
         {
           "year": 1715,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/london/1715-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1715-U-L.gif"
         }
       ]
     },
@@ -1308,36 +1137,31 @@
           "year": 1716,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/london/1716-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1716-A-U.gif"
         },
         {
           "year": 1717,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/london/1717-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1717-B-U.gif"
         },
         {
           "year": 1718,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/london/1718-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1718-C-U.gif"
         },
         {
           "year": 1719,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/london/1719-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1719-D-U.gif"
         },
         {
           "year": 1720,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/london/1720-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1720-E-U.gif"
         }
       ]
     },
@@ -1351,57 +1175,49 @@
           "year": 1721,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/london/1721-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1721-F-U.gif"
         },
         {
           "year": 1722,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/london/1722-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1722-G-U.gif"
         },
         {
           "year": 1723,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/london/1723-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1723-H-U.gif"
         },
         {
           "year": 1724,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/london/1724-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1724-I-U.gif"
         },
         {
           "year": 1725,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/london/1725-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1725-K-U.gif"
         },
         {
           "year": 1726,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/london/1726-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1726-L-U.gif"
         },
         {
           "year": 1727,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/london/1727-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1727-M-U.gif"
         },
         {
           "year": 1728,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/london/1728-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1728-N-U.gif"
         }
       ]
     },
@@ -1415,71 +1231,61 @@
           "year": 1729,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/london/1729-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1729-O-U.gif"
         },
         {
           "year": 1730,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/london/1730-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1730-P-U.gif"
         },
         {
           "year": 1731,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/london/1731-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1731-Q-U.gif"
         },
         {
           "year": 1732,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/london/1732-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1732-R-U.gif"
         },
         {
           "year": 1733,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/london/1733-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1733-S-U.gif"
         },
         {
           "year": 1734,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/london/1734-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1734-T-U.gif"
         },
         {
           "year": 1735,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/london/1735-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1735-U-U.gif"
         },
         {
           "year": 1736,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/london/1736-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1736-A-L.gif"
         },
         {
           "year": 1737,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/london/1737-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1737-B-L.gif"
         },
         {
           "year": 1738,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/london/1738-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1738-C-L.gif"
         }
       ]
     },
@@ -1493,113 +1299,97 @@
           "year": 1740,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/london/1740-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1740-E-L.gif"
         },
         {
           "year": 1741,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/london/1741-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1741-F-L.gif"
         },
         {
           "year": 1742,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/london/1742-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1742-G-L.gif"
         },
         {
           "year": 1743,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/london/1743-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1743-H-L.gif"
         },
         {
           "year": 1744,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/london/1744-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1744-I-L.gif"
         },
         {
           "year": 1745,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/london/1745-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1745-K-L.gif"
         },
         {
           "year": 1746,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/london/1746-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1746-L-L.gif"
         },
         {
           "year": 1747,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/london/1747-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1747-M-L.gif"
         },
         {
           "year": 1748,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/london/1748-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1748-N-L.gif"
         },
         {
           "year": 1749,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/london/1749-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1749-O-L.gif"
         },
         {
           "year": 1750,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/london/1750-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1750-P-L.gif"
         },
         {
           "year": 1751,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/london/1751-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1751-Q-L.gif"
         },
         {
           "year": 1752,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/london/1752-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1752-R-L.gif"
         },
         {
           "year": 1753,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/london/1753-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1753-S-L.gif"
         },
         {
           "year": 1754,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/london/1754-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1754-T-L.gif"
         },
         {
           "year": 1755,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/london/1755-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1755-U-L.gif"
         }
       ]
     },
@@ -1613,169 +1403,145 @@
           "year": 1756,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/london/1756-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1756-A-U.gif"
         },
         {
           "year": 1757,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/london/1757-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1757-B-U.gif"
         },
         {
           "year": 1758,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/london/1758-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1758-C-U.gif"
         },
         {
           "year": 1759,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/london/1759-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1759-D-U.gif"
         },
         {
           "year": 1760,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/london/1760-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1760-E-U.gif"
         },
         {
           "year": 1761,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/london/1761-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1761-F-U.gif"
         },
         {
           "year": 1762,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/london/1762-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1762-G-U.gif"
         },
         {
           "year": 1763,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/london/1763-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1763-H-U.gif"
         },
         {
           "year": 1764,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/london/1764-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1764-I-U.gif"
         },
         {
           "year": 1765,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/london/1765-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1765-K-U.gif"
         },
         {
           "year": 1766,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/london/1766-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1766-L-U.gif"
         },
         {
           "year": 1767,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/london/1767-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1767-M-U.gif"
         },
         {
           "year": 1768,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/london/1768-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1768-N-U.gif"
         },
         {
           "year": 1769,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/london/1769-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1769-O-U.gif"
         },
         {
           "year": 1770,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/london/1770-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1770-P-U.gif"
         },
         {
           "year": 1771,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/london/1771-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1771-Q-U.gif"
         },
         {
           "year": 1772,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/london/1772-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1772-R-U.gif"
         },
         {
           "year": 1773,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/london/1773-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1773-S-U.gif"
         },
         {
           "year": 1775,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/london/1775-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1775-U-U.gif"
         },
         {
           "year": 1776,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/london/1776-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1776-A-L.gif"
         },
         {
           "year": 1777,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/london/1777-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1777-B-L.gif"
         },
         {
           "year": 1778,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/london/1778-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1778-C-L.gif"
         },
         {
           "year": 1779,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/london/1779-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1779-D-L.gif"
         },
         {
           "year": 1780,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/london/1780-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1780-E-L.gif"
         }
       ]
     },
@@ -1789,29 +1555,25 @@
           "year": 1781,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/london/1781-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1781-F-L.gif"
         },
         {
           "year": 1782,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/london/1782-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1782-G-L.gif"
         },
         {
           "year": 1783,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/london/1783-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1783-H-L.gif"
         },
         {
           "year": 1784,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/london/1784-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1784-I-L.gif"
         }
       ]
     },
@@ -1825,8 +1587,7 @@
           "year": 1785,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/london/1785-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1785-K-L.gif"
         }
       ]
     },
@@ -1840,253 +1601,217 @@
           "year": 1786,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/london/1786-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1786-L-L.gif"
         },
         {
           "year": 1787,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/london/1787-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1787-M-L.gif"
         },
         {
           "year": 1788,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/london/1788-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1788-N-L.gif"
         },
         {
           "year": 1789,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/london/1789-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1789-O-L.gif"
         },
         {
           "year": 1790,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/london/1790-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1790-P-L.gif"
         },
         {
           "year": 1791,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/london/1791-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1791-Q-L.gif"
         },
         {
           "year": 1792,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/london/1792-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1792-R-L.gif"
         },
         {
           "year": 1793,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/london/1793-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1793-S-L.gif"
         },
         {
           "year": 1794,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/london/1794-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1794-T-L.gif"
         },
         {
           "year": 1795,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/london/1795-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1795-U-L.gif"
         },
         {
           "year": 1796,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/london/1796-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1796-A-U.gif"
         },
         {
           "year": 1797,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/london/1797-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1797-B-U.gif"
         },
         {
           "year": 1798,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/london/1798-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1798-C-U.gif"
         },
         {
           "year": 1799,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/london/1799-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1799-D-U.gif"
         },
         {
           "year": 1800,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/london/1800-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1800-E-U.gif"
         },
         {
           "year": 1801,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/london/1801-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1801-F-U.gif"
         },
         {
           "year": 1802,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/london/1802-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1802-G-U.gif"
         },
         {
           "year": 1803,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/london/1803-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1803-H-U.gif"
         },
         {
           "year": 1804,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/london/1804-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1804-I-U.gif"
         },
         {
           "year": 1805,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/london/1805-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1805-K-U.gif"
         },
         {
           "year": 1806,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/london/1806-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1806-L-U.gif"
         },
         {
           "year": 1807,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/london/1807-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1807-M-U.gif"
         },
         {
           "year": 1808,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/london/1808-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1808-N-U.gif"
         },
         {
           "year": 1809,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/london/1809-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1809-O-U.gif"
         },
         {
           "year": 1810,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/london/1810-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1810-P-U.gif"
         },
         {
           "year": 1811,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/london/1811-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1811-Q-U.gif"
         },
         {
           "year": 1812,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/london/1812-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1812-R-U.gif"
         },
         {
           "year": 1813,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/london/1813-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1813-S-U.gif"
         },
         {
           "year": 1814,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/london/1814-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1814-T-U.gif"
         },
         {
           "year": 1815,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/london/1815-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1815-U-U.gif"
         },
         {
           "year": 1816,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/london/1816-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1816-A-L.gif"
         },
         {
           "year": 1817,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/london/1817-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1817-B-L.gif"
         },
         {
           "year": 1818,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/london/1818-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1818-C-L.gif"
         },
         {
           "year": 1819,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/london/1819-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1819-D-L.gif"
         },
         {
           "year": 1820,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/london/1820-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1820-E-L.gif"
         },
         {
           "year": 1821,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/london/1821-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1821-F-L.gif"
         }
       ]
     },
@@ -2100,85 +1825,73 @@
           "year": 1822,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/london/1822-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1822-G-L.gif"
         },
         {
           "year": 1823,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/london/1823-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1823-H-L.gif"
         },
         {
           "year": 1824,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/london/1824-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1824-I-L.gif"
         },
         {
           "year": 1825,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/london/1825-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1825-K-L.gif"
         },
         {
           "year": 1826,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/london/1826-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1826-L-L.gif"
         },
         {
           "year": 1827,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/london/1827-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1827-M-L.gif"
         },
         {
           "year": 1828,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/london/1828-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1828-N-L.gif"
         },
         {
           "year": 1829,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/london/1829-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1829-O-L.gif"
         },
         {
           "year": 1830,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/london/1830-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1830-P-L.gif"
         },
         {
           "year": 1831,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/london/1831-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1831-Q-L.gif"
         },
         {
           "year": 1832,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/london/1832-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1832-R-L.gif"
         },
         {
           "year": 1833,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/london/1833-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1833-S-L.gif"
         }
       ]
     },
@@ -2192,29 +1905,25 @@
           "year": 1834,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/london/1834-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1834-T-L.gif"
         },
         {
           "year": 1835,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/london/1835-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1835-U-L.gif"
         },
         {
           "year": 1836,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/london/1836-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1836-A-U.gif"
         },
         {
           "year": 1837,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/london/1837-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1837-B-U.gif"
         }
       ]
     },
@@ -2228,358 +1937,307 @@
           "year": 1838,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/london/1838-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1838-C-U.gif"
         },
         {
           "year": 1839,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/london/1839-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1839-D-U.gif"
         },
         {
           "year": 1840,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/london/1840-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1840-E-U.gif"
         },
         {
           "year": 1841,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/london/1841-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1841-F-U.gif"
         },
         {
           "year": 1842,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/london/1842-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1842-G-U.gif"
         },
         {
           "year": 1843,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/london/1843-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1843-H-U.gif"
         },
         {
           "year": 1844,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/london/1844-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1844-I-U.gif"
         },
         {
           "year": 1845,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/london/1845-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1845-K-U.gif"
         },
         {
           "year": 1846,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/london/1846-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1846-L-U.gif"
         },
         {
           "year": 1847,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/london/1847-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1847-M-U.gif"
         },
         {
           "year": 1848,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/london/1848-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1848-N-U.gif"
         },
         {
           "year": 1849,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/london/1849-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1849-O-U.gif"
         },
         {
           "year": 1850,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/london/1850-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1850-P-U.gif"
         },
         {
           "year": 1851,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/london/1851-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1851-Q-U.gif"
         },
         {
           "year": 1852,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/london/1852-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1852-R-U.gif"
         },
         {
           "year": 1853,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/london/1853-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1853-S-U.gif"
         },
         {
           "year": 1854,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/london/1854-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1854-T-U.gif"
         },
         {
           "year": 1855,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/london/1855-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1855-U-U.gif"
         },
         {
           "year": 1856,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/london/1856-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1856-A-L.gif"
         },
         {
           "year": 1857,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/london/1857-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1857-B-L.gif"
         },
         {
           "year": 1858,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/london/1858-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1858-C-L.gif"
         },
         {
           "year": 1859,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/london/1859-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1859-D-L.gif"
         },
         {
           "year": 1860,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/london/1860-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1860-E-L.gif"
         },
         {
           "year": 1861,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/london/1861-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1861-F-L.gif"
         },
         {
           "year": 1862,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/london/1862-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1862-G-L.gif"
         },
         {
           "year": 1863,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/london/1863-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1863-H-L.gif"
         },
         {
           "year": 1864,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/london/1864-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1864-I-L.gif"
         },
         {
           "year": 1865,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/london/1865-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1865-K-L.gif"
         },
         {
           "year": 1866,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/london/1866-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1866-L-L.gif"
         },
         {
           "year": 1867,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/london/1867-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1867-M-L.gif"
         },
         {
           "year": 1868,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/london/1868-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1868-N-L.gif"
         },
         {
           "year": 1869,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/london/1869-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1869-O-L.gif"
         },
         {
           "year": 1870,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/london/1870-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1870-P-L.gif"
         },
         {
           "year": 1871,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/london/1871-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1871-Q-L.gif"
         },
         {
           "year": 1872,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/london/1872-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1872-R-L.gif"
         },
         {
           "year": 1873,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/london/1873-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1873-S-L.gif"
         },
         {
           "year": 1874,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/london/1874-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1874-T-L.gif"
         },
         {
           "year": 1875,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/london/1875-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1875-U-L.gif"
         },
         {
           "year": 1877,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/london/1877-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1877-B-U.gif"
         },
         {
           "year": 1878,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/london/1878-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1878-C-U.gif"
         },
         {
           "year": 1879,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/london/1879-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1879-D-U.gif"
         },
         {
           "year": 1880,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/london/1880-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1880-E-U.gif"
         },
         {
           "year": 1881,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/london/1881-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1881-F-U.gif"
         },
         {
           "year": 1882,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/london/1882-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1882-G-U.gif"
         },
         {
           "year": 1883,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/london/1883-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1883-H-U.gif"
         },
         {
           "year": 1884,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/london/1884-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1884-I-U.gif"
         },
         {
           "year": 1885,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/london/1885-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1885-K-U.gif"
         },
         {
           "year": 1886,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/london/1886-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1886-L-U.gif"
         },
         {
           "year": 1887,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/london/1887-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1887-M-U.gif"
         },
         {
           "year": 1888,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/london/1888-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1888-N-U.gif"
         },
         {
           "year": 1889,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/london/1889-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1889-O-U.gif"
         }
       ]
     },
@@ -2593,43 +2251,37 @@
           "year": 1890,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/london/1890-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1890-P-U.gif"
         },
         {
           "year": 1891,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/london/1891-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1891-Q-U.gif"
         },
         {
           "year": 1892,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/london/1892-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1892-R-U.gif"
         },
         {
           "year": 1893,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/london/1893-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1893-S-U.gif"
         },
         {
           "year": 1894,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/london/1894-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1894-T-U.gif"
         },
         {
           "year": 1895,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/london/1895-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1895-U-U.gif"
         }
       ]
     },
@@ -2643,141 +2295,121 @@
           "year": 1896,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/london/1896-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1896-A-L.gif"
         },
         {
           "year": 1897,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/london/1897-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1897-B-L.gif"
         },
         {
           "year": 1898,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/london/1898-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1898-C-L.gif"
         },
         {
           "year": 1899,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/london/1899-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1899-D-L.gif"
         },
         {
           "year": 1900,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/london/1900-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1900-E-L.gif"
         },
         {
           "year": 1901,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/london/1901-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1901-F-L.gif"
         },
         {
           "year": 1902,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/london/1902-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1902-G-L.gif"
         },
         {
           "year": 1903,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/london/1903-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1903-H-L.gif"
         },
         {
           "year": 1904,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/london/1904-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1904-I-L.gif"
         },
         {
           "year": 1905,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/london/1905-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1905-K-L.gif"
         },
         {
           "year": 1906,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/london/1906-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1906-L-L.gif"
         },
         {
           "year": 1907,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/london/1907-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1907-M-L.gif"
         },
         {
           "year": 1908,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/london/1908-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1908-N-L.gif"
         },
         {
           "year": 1909,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/london/1909-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1909-O-L.gif"
         },
         {
           "year": 1910,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/london/1910-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1910-P-L.gif"
         },
         {
           "year": 1911,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/london/1911-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1911-Q-L.gif"
         },
         {
           "year": 1912,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/london/1912-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1912-R-L.gif"
         },
         {
           "year": 1913,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/london/1913-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1913-S-L.gif"
         },
         {
           "year": 1914,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/london/1914-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1914-T-L.gif"
         },
         {
           "year": 1915,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/london/1915-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1915-U-L.gif"
         }
       ]
     },
@@ -2791,141 +2423,121 @@
           "year": 1916,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/london/1916-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1916-A-L.gif"
         },
         {
           "year": 1917,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/london/1917-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1917-B-L.gif"
         },
         {
           "year": 1918,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/london/1918-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1918-C-L.gif"
         },
         {
           "year": 1919,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/london/1919-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1919-D-L.gif"
         },
         {
           "year": 1920,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/london/1920-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1920-E-L.gif"
         },
         {
           "year": 1921,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/london/1921-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1921-F-L.gif"
         },
         {
           "year": 1922,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/london/1922-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1922-G-L.gif"
         },
         {
           "year": 1923,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/london/1923-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1923-H-L.gif"
         },
         {
           "year": 1924,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/london/1924-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1924-I-L.gif"
         },
         {
           "year": 1925,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/london/1925-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1925-K-L.gif"
         },
         {
           "year": 1926,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/london/1926-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1926-L-L.gif"
         },
         {
           "year": 1927,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/london/1927-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1927-M-L.gif"
         },
         {
           "year": 1928,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/london/1928-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1928-N-L.gif"
         },
         {
           "year": 1929,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/london/1929-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1929-O-L.gif"
         },
         {
           "year": 1930,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/london/1930-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1930-P-L.gif"
         },
         {
           "year": 1931,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/london/1931-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1931-Q-L.gif"
         },
         {
           "year": 1932,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/london/1932-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1932-R-L.gif"
         },
         {
           "year": 1933,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/london/1933-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1933-S-L.gif"
         },
         {
           "year": 1934,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/london/1934-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1934-T-L.gif"
         },
         {
           "year": 1935,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/london/1935-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1935-U-L.gif"
         }
       ]
     },
@@ -2939,141 +2551,121 @@
           "year": 1936,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/london/1936-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1936-A-U.gif"
         },
         {
           "year": 1937,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/london/1937-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1937-B-U.gif"
         },
         {
           "year": 1938,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/london/1938-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1938-C-U.gif"
         },
         {
           "year": 1939,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/london/1939-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1939-D-U.gif"
         },
         {
           "year": 1940,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/london/1940-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1940-E-U.gif"
         },
         {
           "year": 1941,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/london/1941-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1941-F-U.gif"
         },
         {
           "year": 1942,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/london/1942-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1942-G-U.gif"
         },
         {
           "year": 1943,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/london/1943-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1943-H-U.gif"
         },
         {
           "year": 1944,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/london/1944-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1944-I-U.gif"
         },
         {
           "year": 1945,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/london/1945-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1945-K-U.gif"
         },
         {
           "year": 1946,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/london/1946-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1946-L-U.gif"
         },
         {
           "year": 1947,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/london/1947-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1947-M-U.gif"
         },
         {
           "year": 1948,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/london/1948-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1948-N-U.gif"
         },
         {
           "year": 1949,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/london/1949-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1949-O-U.gif"
         },
         {
           "year": 1950,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/london/1950-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1950-P-U.gif"
         },
         {
           "year": 1951,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/london/1951-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1951-Q-U.gif"
         },
         {
           "year": 1952,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/london/1952-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1952-R-U.gif"
         },
         {
           "year": 1953,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/london/1953-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1953-S-U.gif"
         },
         {
           "year": 1954,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/london/1954-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1954-T-U.gif"
         },
         {
           "year": 1955,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/london/1955-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1955-U-U.gif"
         }
       ]
     },
@@ -3087,134 +2679,115 @@
           "year": 1956,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/london/1956-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1956-A-L.gif"
         },
         {
           "year": 1957,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/london/1957-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1957-B-L.gif"
         },
         {
           "year": 1958,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/london/1958-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1958-C-L.gif"
         },
         {
           "year": 1959,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/london/1959-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1959-D-L.gif"
         },
         {
           "year": 1960,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/london/1960-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1960-E-L.gif"
         },
         {
           "year": 1961,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/london/1961-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1961-F-L.gif"
         },
         {
           "year": 1962,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/london/1962-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1962-G-L.gif"
         },
         {
           "year": 1963,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/london/1963-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1963-H-L.gif"
         },
         {
           "year": 1964,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/london/1964-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1964-I-L.gif"
         },
         {
           "year": 1965,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/london/1965-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1965-K-L.gif"
         },
         {
           "year": 1966,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/london/1966-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1966-L-L.gif"
         },
         {
           "year": 1967,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/london/1967-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1967-M-L.gif"
         },
         {
           "year": 1968,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/london/1968-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1968-N-L.gif"
         },
         {
           "year": 1969,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/london/1969-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1969-O-L.gif"
         },
         {
           "year": 1970,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/london/1970-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1970-P-L.gif"
         },
         {
           "year": 1971,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/london/1971-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1971-Q-L.gif"
         },
         {
           "year": 1972,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/london/1972-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1972-R-L.gif"
         },
         {
           "year": 1973,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/london/1973-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1973-S-L.gif"
         },
         {
           "year": 1974,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/london/1974-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1974-T-L.gif"
         }
       ]
     },
@@ -3228,176 +2801,151 @@
           "year": 1975,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/london/1975-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/1975-A-U.gif"
         },
         {
           "year": 1976,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/london/1976-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/1976-B-U.gif"
         },
         {
           "year": 1977,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/london/1977-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/1977-C-U.gif"
         },
         {
           "year": 1978,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/london/1978-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/1978-D-U.gif"
         },
         {
           "year": 1979,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/london/1979-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/1979-E-U.gif"
         },
         {
           "year": 1980,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/london/1980-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/1980-F-U.gif"
         },
         {
           "year": 1981,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/london/1981-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/1981-G-U.gif"
         },
         {
           "year": 1982,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/london/1982-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/1982-H-U.gif"
         },
         {
           "year": 1983,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/london/1983-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20I.html"
+          "glyph": "glyphs/london/1983-I-U.gif"
         },
         {
           "year": 1984,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/london/1984-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/1984-K-U.gif"
         },
         {
           "year": 1985,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/london/1985-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/1985-L-U.gif"
         },
         {
           "year": 1986,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/london/1986-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/1986-M-U.gif"
         },
         {
           "year": 1987,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/london/1987-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/1987-N-U.gif"
         },
         {
           "year": 1988,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/london/1988-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/1988-O-U.gif"
         },
         {
           "year": 1989,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/london/1989-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/1989-P-U.gif"
         },
         {
           "year": 1990,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/london/1990-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/1990-Q-U.gif"
         },
         {
           "year": 1991,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/london/1991-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/1991-R-U.gif"
         },
         {
           "year": 1992,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/london/1992-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/1992-S-U.gif"
         },
         {
           "year": 1993,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/london/1993-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/1993-T-U.gif"
         },
         {
           "year": 1994,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/london/1994-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/1994-U-U.gif"
         },
         {
           "year": 1995,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/london/1995-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20V.html"
+          "glyph": "glyphs/london/1995-V-U.gif"
         },
         {
           "year": 1996,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/london/1996-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20W.html"
+          "glyph": "glyphs/london/1996-W-U.gif"
         },
         {
           "year": 1997,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/london/1997-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20X.html"
+          "glyph": "glyphs/london/1997-X-U.gif"
         },
         {
           "year": 1998,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/london/1998-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Y.html"
+          "glyph": "glyphs/london/1998-Y-U.gif"
         },
         {
           "year": 1999,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/london/1999-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Z.html"
+          "glyph": "glyphs/london/1999-Z-U.gif"
         }
       ]
     },
@@ -3411,176 +2959,151 @@
           "year": 2000,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/london/2000-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/2000-A-L.gif"
         },
         {
           "year": 2001,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/london/2001-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/2001-B-L.gif"
         },
         {
           "year": 2002,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/london/2002-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/2002-C-L.gif"
         },
         {
           "year": 2003,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/london/2003-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/2003-D-L.gif"
         },
         {
           "year": 2004,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/london/2004-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/2004-E-L.gif"
         },
         {
           "year": 2005,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/london/2005-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/2005-F-L.gif"
         },
         {
           "year": 2006,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/london/2006-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20G.html"
+          "glyph": "glyphs/london/2006-G-L.gif"
         },
         {
           "year": 2007,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/london/2007-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20H.html"
+          "glyph": "glyphs/london/2007-H-L.gif"
         },
         {
           "year": 2008,
           "letter": "J",
           "case": "L",
-          "glyph": "glyphs/london/2008-J-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20J.html"
+          "glyph": "glyphs/london/2008-J-L.gif"
         },
         {
           "year": 2009,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/london/2009-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20K.html"
+          "glyph": "glyphs/london/2009-K-L.gif"
         },
         {
           "year": 2010,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/london/2010-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20L.html"
+          "glyph": "glyphs/london/2010-L-L.gif"
         },
         {
           "year": 2011,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/london/2011-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20M.html"
+          "glyph": "glyphs/london/2011-M-L.gif"
         },
         {
           "year": 2012,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/london/2012-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20N.html"
+          "glyph": "glyphs/london/2012-N-L.gif"
         },
         {
           "year": 2013,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/london/2013-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20O.html"
+          "glyph": "glyphs/london/2013-O-L.gif"
         },
         {
           "year": 2014,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/london/2014-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20P.html"
+          "glyph": "glyphs/london/2014-P-L.gif"
         },
         {
           "year": 2015,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/london/2015-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Q.html"
+          "glyph": "glyphs/london/2015-Q-L.gif"
         },
         {
           "year": 2016,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/london/2016-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20R.html"
+          "glyph": "glyphs/london/2016-R-L.gif"
         },
         {
           "year": 2017,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/london/2017-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20S.html"
+          "glyph": "glyphs/london/2017-S-L.gif"
         },
         {
           "year": 2018,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/london/2018-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20T.html"
+          "glyph": "glyphs/london/2018-T-L.gif"
         },
         {
           "year": 2019,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/london/2019-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20U.html"
+          "glyph": "glyphs/london/2019-U-L.gif"
         },
         {
           "year": 2020,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/london/2020-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20V.html"
+          "glyph": "glyphs/london/2020-V-L.gif"
         },
         {
           "year": 2021,
           "letter": "W",
           "case": "L",
-          "glyph": "glyphs/london/2021-W-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20W.html"
+          "glyph": "glyphs/london/2021-W-L.gif"
         },
         {
           "year": 2022,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/london/2022-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20X.html"
+          "glyph": "glyphs/london/2022-X-L.gif"
         },
         {
           "year": 2023,
           "letter": "Y",
           "case": "L",
-          "glyph": "glyphs/london/2023-Y-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Y.html"
+          "glyph": "glyphs/london/2023-Y-L.gif"
         },
         {
           "year": 2024,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/london/2024-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20Z.html"
+          "glyph": "glyphs/london/2024-Z-L.gif"
         }
       ]
     },
@@ -3594,43 +3117,37 @@
           "year": 2025,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/london/2025-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20A.html"
+          "glyph": "glyphs/london/2025-A-U.gif"
         },
         {
           "year": 2026,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/london/2026-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20B.html"
+          "glyph": "glyphs/london/2026-B-U.gif"
         },
         {
           "year": 2027,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/london/2027-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20C.html"
+          "glyph": "glyphs/london/2027-C-U.gif"
         },
         {
           "year": 2028,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/london/2028-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20D.html"
+          "glyph": "glyphs/london/2028-D-U.gif"
         },
         {
           "year": 2029,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/london/2029-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20E.html"
+          "glyph": "glyphs/london/2029-E-U.gif"
         },
         {
           "year": 2030,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/london/2030-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/London/Date%20Letters%20F.html"
+          "glyph": "glyphs/london/2030-F-U.gif"
         }
       ]
     }

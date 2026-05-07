@@ -1,7 +1,5 @@
 {
   "office": "Birmingham",
-  "sourceSite": "silvermakersmarks.co.uk",
-  "sourceIndex": "https://www.silvermakersmarks.co.uk/Dates/Birmingham.html",
   "cycles": [
     {
       "key": "1773-1783",
@@ -13,78 +11,67 @@
           "year": 1774,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/birmingham/1774-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20B.html"
+          "glyph": "glyphs/birmingham/1774-B-U.gif"
         },
         {
           "year": 1775,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/birmingham/1775-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20C.html"
+          "glyph": "glyphs/birmingham/1775-C-U.gif"
         },
         {
           "year": 1776,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/birmingham/1776-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20D.html"
+          "glyph": "glyphs/birmingham/1776-D-U.gif"
         },
         {
           "year": 1777,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/birmingham/1777-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20E.html"
+          "glyph": "glyphs/birmingham/1777-E-U.gif"
         },
         {
           "year": 1778,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/birmingham/1778-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20F.html"
+          "glyph": "glyphs/birmingham/1778-F-U.gif"
         },
         {
           "year": 1779,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/birmingham/1779-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20G.html"
+          "glyph": "glyphs/birmingham/1779-G-U.gif"
         },
         {
           "year": 1780,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/birmingham/1780-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20H.html"
+          "glyph": "glyphs/birmingham/1780-H-U.gif"
         },
         {
           "year": 1781,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/birmingham/1781-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20I.html"
+          "glyph": "glyphs/birmingham/1781-I-U.gif"
         },
         {
           "year": 1782,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/birmingham/1782-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20K.html"
+          "glyph": "glyphs/birmingham/1782-K-U.gif"
         },
         {
           "year": 1783,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/birmingham/1783-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20L.html"
+          "glyph": "glyphs/birmingham/1783-L-U.gif"
         },
         {
           "year": 1784,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/birmingham/1784-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20M.html"
+          "glyph": "glyphs/birmingham/1784-M-U.gif"
         }
       ]
     },
@@ -98,15 +85,13 @@
           "year": 1785,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/birmingham/1785-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20N.html"
+          "glyph": "glyphs/birmingham/1785-N-U.gif"
         },
         {
           "year": 1786,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/birmingham/1786-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20O.html"
+          "glyph": "glyphs/birmingham/1786-O-U.gif"
         }
       ]
     },
@@ -120,162 +105,139 @@
           "year": 1787,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/birmingham/1787-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20P.html"
+          "glyph": "glyphs/birmingham/1787-P-U.gif"
         },
         {
           "year": 1788,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/birmingham/1788-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Q.html"
+          "glyph": "glyphs/birmingham/1788-Q-U.gif"
         },
         {
           "year": 1789,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/birmingham/1789-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20R.html"
+          "glyph": "glyphs/birmingham/1789-R-U.gif"
         },
         {
           "year": 1790,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/birmingham/1790-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20S.html"
+          "glyph": "glyphs/birmingham/1790-S-U.gif"
         },
         {
           "year": 1791,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/birmingham/1791-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20T.html"
+          "glyph": "glyphs/birmingham/1791-T-U.gif"
         },
         {
           "year": 1792,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/birmingham/1792-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20U.html"
+          "glyph": "glyphs/birmingham/1792-U-U.gif"
         },
         {
           "year": 1793,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/birmingham/1793-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20V.html"
+          "glyph": "glyphs/birmingham/1793-V-U.gif"
         },
         {
           "year": 1794,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/birmingham/1794-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20W.html"
+          "glyph": "glyphs/birmingham/1794-W-U.gif"
         },
         {
           "year": 1795,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/birmingham/1795-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20X.html"
+          "glyph": "glyphs/birmingham/1795-X-U.gif"
         },
         {
           "year": 1796,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/birmingham/1796-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Y.html"
+          "glyph": "glyphs/birmingham/1796-Y-U.gif"
         },
         {
           "year": 1797,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/birmingham/1797-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Z.html"
+          "glyph": "glyphs/birmingham/1797-Z-U.gif"
         },
         {
           "year": 1812,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/birmingham/1812-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20O.html"
+          "glyph": "glyphs/birmingham/1812-O-L.gif"
         },
         {
           "year": 1813,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/birmingham/1813-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20P.html"
+          "glyph": "glyphs/birmingham/1813-P-L.gif"
         },
         {
           "year": 1814,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/birmingham/1814-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Q.html"
+          "glyph": "glyphs/birmingham/1814-Q-L.gif"
         },
         {
           "year": 1815,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/birmingham/1815-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20R.html"
+          "glyph": "glyphs/birmingham/1815-R-L.gif"
         },
         {
           "year": 1816,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/birmingham/1816-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20S.html"
+          "glyph": "glyphs/birmingham/1816-S-L.gif"
         },
         {
           "year": 1817,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/birmingham/1817-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20T.html"
+          "glyph": "glyphs/birmingham/1817-T-L.gif"
         },
         {
           "year": 1818,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/birmingham/1818-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20U.html"
+          "glyph": "glyphs/birmingham/1818-U-L.gif"
         },
         {
           "year": 1819,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/birmingham/1819-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20V.html"
+          "glyph": "glyphs/birmingham/1819-V-L.gif"
         },
         {
           "year": 1820,
           "letter": "W",
           "case": "L",
-          "glyph": "glyphs/birmingham/1820-W-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20W.html"
+          "glyph": "glyphs/birmingham/1820-W-L.gif"
         },
         {
           "year": 1821,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/birmingham/1821-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20X.html"
+          "glyph": "glyphs/birmingham/1821-X-L.gif"
         },
         {
           "year": 1822,
           "letter": "Y",
           "case": "L",
-          "glyph": "glyphs/birmingham/1822-Y-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Y.html"
+          "glyph": "glyphs/birmingham/1822-Y-L.gif"
         },
         {
           "year": 1823,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/birmingham/1823-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Z.html"
+          "glyph": "glyphs/birmingham/1823-Z-L.gif"
         }
       ]
     },
@@ -289,99 +251,85 @@
           "year": 1798,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/birmingham/1798-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20A.html"
+          "glyph": "glyphs/birmingham/1798-A-L.gif"
         },
         {
           "year": 1799,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/birmingham/1799-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20B.html"
+          "glyph": "glyphs/birmingham/1799-B-L.gif"
         },
         {
           "year": 1800,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/birmingham/1800-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20C.html"
+          "glyph": "glyphs/birmingham/1800-C-L.gif"
         },
         {
           "year": 1801,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/birmingham/1801-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20D.html"
+          "glyph": "glyphs/birmingham/1801-D-L.gif"
         },
         {
           "year": 1802,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/birmingham/1802-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20E.html"
+          "glyph": "glyphs/birmingham/1802-E-L.gif"
         },
         {
           "year": 1803,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/birmingham/1803-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20F.html"
+          "glyph": "glyphs/birmingham/1803-F-L.gif"
         },
         {
           "year": 1804,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/birmingham/1804-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20G.html"
+          "glyph": "glyphs/birmingham/1804-G-L.gif"
         },
         {
           "year": 1805,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/birmingham/1805-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20H.html"
+          "glyph": "glyphs/birmingham/1805-H-L.gif"
         },
         {
           "year": 1806,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/birmingham/1806-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20I.html"
+          "glyph": "glyphs/birmingham/1806-I-L.gif"
         },
         {
           "year": 1807,
           "letter": "J",
           "case": "L",
-          "glyph": "glyphs/birmingham/1807-J-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20J.html"
+          "glyph": "glyphs/birmingham/1807-J-L.gif"
         },
         {
           "year": 1808,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/birmingham/1808-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20K.html"
+          "glyph": "glyphs/birmingham/1808-K-L.gif"
         },
         {
           "year": 1809,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/birmingham/1809-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20L.html"
+          "glyph": "glyphs/birmingham/1809-L-L.gif"
         },
         {
           "year": 1810,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/birmingham/1810-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20M.html"
+          "glyph": "glyphs/birmingham/1810-M-L.gif"
         },
         {
           "year": 1811,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/birmingham/1811-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20N.html"
+          "glyph": "glyphs/birmingham/1811-N-L.gif"
         }
       ]
     },
@@ -395,36 +343,31 @@
           "year": 1824,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/birmingham/1824-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20A.html"
+          "glyph": "glyphs/birmingham/1824-A-U.gif"
         },
         {
           "year": 1825,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/birmingham/1825-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20B.html"
+          "glyph": "glyphs/birmingham/1825-B-U.gif"
         },
         {
           "year": 1826,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/birmingham/1826-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20C.html"
+          "glyph": "glyphs/birmingham/1826-C-U.gif"
         },
         {
           "year": 1827,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/birmingham/1827-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20D.html"
+          "glyph": "glyphs/birmingham/1827-D-U.gif"
         },
         {
           "year": 1828,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/birmingham/1828-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20E.html"
+          "glyph": "glyphs/birmingham/1828-E-U.gif"
         }
       ]
     },
@@ -438,36 +381,31 @@
           "year": 1829,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/birmingham/1829-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20F.html"
+          "glyph": "glyphs/birmingham/1829-F-U.gif"
         },
         {
           "year": 1830,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/birmingham/1830-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20G.html"
+          "glyph": "glyphs/birmingham/1830-G-U.gif"
         },
         {
           "year": 1831,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/birmingham/1831-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20H.html"
+          "glyph": "glyphs/birmingham/1831-H-U.gif"
         },
         {
           "year": 1832,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/birmingham/1832-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20I.html"
+          "glyph": "glyphs/birmingham/1832-I-U.gif"
         },
         {
           "year": 1833,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/birmingham/1833-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20K.html"
+          "glyph": "glyphs/birmingham/1833-K-U.gif"
         }
       ]
     },
@@ -481,43 +419,37 @@
           "year": 1834,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/birmingham/1834-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20L.html"
+          "glyph": "glyphs/birmingham/1834-L-U.gif"
         },
         {
           "year": 1835,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/birmingham/1835-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20M.html"
+          "glyph": "glyphs/birmingham/1835-M-U.gif"
         },
         {
           "year": 1836,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/birmingham/1836-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20N.html"
+          "glyph": "glyphs/birmingham/1836-N-U.gif"
         },
         {
           "year": 1837,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/birmingham/1837-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20O.html"
+          "glyph": "glyphs/birmingham/1837-O-U.gif"
         },
         {
           "year": 1838,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/birmingham/1838-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20P.html"
+          "glyph": "glyphs/birmingham/1838-P-U.gif"
         },
         {
           "year": 1839,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/birmingham/1839-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Q.html"
+          "glyph": "glyphs/birmingham/1839-Q-U.gif"
         }
       ]
     },
@@ -531,64 +463,55 @@
           "year": 1840,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/birmingham/1840-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20R.html"
+          "glyph": "glyphs/birmingham/1840-R-U.gif"
         },
         {
           "year": 1841,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/birmingham/1841-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20S.html"
+          "glyph": "glyphs/birmingham/1841-S-U.gif"
         },
         {
           "year": 1842,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/birmingham/1842-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20T.html"
+          "glyph": "glyphs/birmingham/1842-T-U.gif"
         },
         {
           "year": 1843,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/birmingham/1843-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20U.html"
+          "glyph": "glyphs/birmingham/1843-U-U.gif"
         },
         {
           "year": 1844,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/birmingham/1844-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20V.html"
+          "glyph": "glyphs/birmingham/1844-V-U.gif"
         },
         {
           "year": 1845,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/birmingham/1845-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20W.html"
+          "glyph": "glyphs/birmingham/1845-W-U.gif"
         },
         {
           "year": 1846,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/birmingham/1846-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20X.html"
+          "glyph": "glyphs/birmingham/1846-X-U.gif"
         },
         {
           "year": 1847,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/birmingham/1847-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Y.html"
+          "glyph": "glyphs/birmingham/1847-Y-U.gif"
         },
         {
           "year": 1848,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/birmingham/1848-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Z.html"
+          "glyph": "glyphs/birmingham/1848-Z-U.gif"
         }
       ]
     },
@@ -602,78 +525,67 @@
           "year": 1849,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/birmingham/1849-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20A.html"
+          "glyph": "glyphs/birmingham/1849-A-U.gif"
         },
         {
           "year": 1850,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/birmingham/1850-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20B.html"
+          "glyph": "glyphs/birmingham/1850-B-U.gif"
         },
         {
           "year": 1851,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/birmingham/1851-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20C.html"
+          "glyph": "glyphs/birmingham/1851-C-U.gif"
         },
         {
           "year": 1852,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/birmingham/1852-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20D.html"
+          "glyph": "glyphs/birmingham/1852-D-U.gif"
         },
         {
           "year": 1853,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/birmingham/1853-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20E.html"
+          "glyph": "glyphs/birmingham/1853-E-U.gif"
         },
         {
           "year": 1854,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/birmingham/1854-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20F.html"
+          "glyph": "glyphs/birmingham/1854-F-U.gif"
         },
         {
           "year": 1855,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/birmingham/1855-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20G.html"
+          "glyph": "glyphs/birmingham/1855-G-U.gif"
         },
         {
           "year": 1856,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/birmingham/1856-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20H.html"
+          "glyph": "glyphs/birmingham/1856-H-U.gif"
         },
         {
           "year": 1857,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/birmingham/1857-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20I.html"
+          "glyph": "glyphs/birmingham/1857-I-U.gif"
         },
         {
           "year": 1858,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/birmingham/1858-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20J.html"
+          "glyph": "glyphs/birmingham/1858-J-U.gif"
         },
         {
           "year": 1859,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/birmingham/1859-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20K.html"
+          "glyph": "glyphs/birmingham/1859-K-U.gif"
         }
       ]
     },
@@ -687,15 +599,13 @@
           "year": 1860,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/birmingham/1860-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20L.html"
+          "glyph": "glyphs/birmingham/1860-L-U.gif"
         },
         {
           "year": 1861,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/birmingham/1861-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20M.html"
+          "glyph": "glyphs/birmingham/1861-M-U.gif"
         }
       ]
     },
@@ -709,190 +619,163 @@
           "year": 1862,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/birmingham/1862-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20N.html"
+          "glyph": "glyphs/birmingham/1862-N-U.gif"
         },
         {
           "year": 1863,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/birmingham/1863-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20O.html"
+          "glyph": "glyphs/birmingham/1863-O-U.gif"
         },
         {
           "year": 1864,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/birmingham/1864-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20P.html"
+          "glyph": "glyphs/birmingham/1864-P-U.gif"
         },
         {
           "year": 1865,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/birmingham/1865-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Q.html"
+          "glyph": "glyphs/birmingham/1865-Q-U.gif"
         },
         {
           "year": 1866,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/birmingham/1866-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20R.html"
+          "glyph": "glyphs/birmingham/1866-R-U.gif"
         },
         {
           "year": 1867,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/birmingham/1867-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20S.html"
+          "glyph": "glyphs/birmingham/1867-S-U.gif"
         },
         {
           "year": 1868,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/birmingham/1868-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20T.html"
+          "glyph": "glyphs/birmingham/1868-T-U.gif"
         },
         {
           "year": 1869,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/birmingham/1869-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20U.html"
+          "glyph": "glyphs/birmingham/1869-U-U.gif"
         },
         {
           "year": 1870,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/birmingham/1870-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20V.html"
+          "glyph": "glyphs/birmingham/1870-V-U.gif"
         },
         {
           "year": 1871,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/birmingham/1871-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20W.html"
+          "glyph": "glyphs/birmingham/1871-W-U.gif"
         },
         {
           "year": 1872,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/birmingham/1872-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20X.html"
+          "glyph": "glyphs/birmingham/1872-X-U.gif"
         },
         {
           "year": 1873,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/birmingham/1873-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Y.html"
+          "glyph": "glyphs/birmingham/1873-Y-U.gif"
         },
         {
           "year": 1874,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/birmingham/1874-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Z.html"
+          "glyph": "glyphs/birmingham/1874-Z-U.gif"
         },
         {
           "year": 1875,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/birmingham/1875-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20A.html"
+          "glyph": "glyphs/birmingham/1875-A-L.gif"
         },
         {
           "year": 1876,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/birmingham/1876-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20B.html"
+          "glyph": "glyphs/birmingham/1876-B-L.gif"
         },
         {
           "year": 1877,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/birmingham/1877-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20C.html"
+          "glyph": "glyphs/birmingham/1877-C-L.gif"
         },
         {
           "year": 1878,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/birmingham/1878-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20D.html"
+          "glyph": "glyphs/birmingham/1878-D-L.gif"
         },
         {
           "year": 1879,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/birmingham/1879-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20E.html"
+          "glyph": "glyphs/birmingham/1879-E-L.gif"
         },
         {
           "year": 1880,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/birmingham/1880-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20F.html"
+          "glyph": "glyphs/birmingham/1880-F-L.gif"
         },
         {
           "year": 1881,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/birmingham/1881-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20G.html"
+          "glyph": "glyphs/birmingham/1881-G-L.gif"
         },
         {
           "year": 1882,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/birmingham/1882-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20H.html"
+          "glyph": "glyphs/birmingham/1882-H-L.gif"
         },
         {
           "year": 1883,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/birmingham/1883-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20I.html"
+          "glyph": "glyphs/birmingham/1883-I-L.gif"
         },
         {
           "year": 1884,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/birmingham/1884-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20K.html"
+          "glyph": "glyphs/birmingham/1884-K-L.gif"
         },
         {
           "year": 1885,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/birmingham/1885-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20L.html"
+          "glyph": "glyphs/birmingham/1885-L-L.gif"
         },
         {
           "year": 1886,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/birmingham/1886-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20M.html"
+          "glyph": "glyphs/birmingham/1886-M-L.gif"
         },
         {
           "year": 1887,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/birmingham/1887-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20N.html"
+          "glyph": "glyphs/birmingham/1887-N-L.gif"
         },
         {
           "year": 1888,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/birmingham/1888-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20O.html"
+          "glyph": "glyphs/birmingham/1888-O-L.gif"
         }
       ]
     },
@@ -906,36 +789,31 @@
           "year": 1895,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/birmingham/1895-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20V.html"
+          "glyph": "glyphs/birmingham/1895-V-L.gif"
         },
         {
           "year": 1896,
           "letter": "W",
           "case": "L",
-          "glyph": "glyphs/birmingham/1896-W-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20W.html"
+          "glyph": "glyphs/birmingham/1896-W-L.gif"
         },
         {
           "year": 1897,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/birmingham/1897-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20X.html"
+          "glyph": "glyphs/birmingham/1897-X-L.gif"
         },
         {
           "year": 1898,
           "letter": "Y",
           "case": "L",
-          "glyph": "glyphs/birmingham/1898-Y-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Y.html"
+          "glyph": "glyphs/birmingham/1898-Y-L.gif"
         },
         {
           "year": 1899,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/birmingham/1899-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Z.html"
+          "glyph": "glyphs/birmingham/1899-Z-L.gif"
         }
       ]
     },
@@ -949,351 +827,301 @@
           "year": 1900,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/birmingham/1900-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20A.html"
+          "glyph": "glyphs/birmingham/1900-A-L.gif"
         },
         {
           "year": 1901,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/birmingham/1901-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20B.html"
+          "glyph": "glyphs/birmingham/1901-B-L.gif"
         },
         {
           "year": 1902,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/birmingham/1902-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20C.html"
+          "glyph": "glyphs/birmingham/1902-C-L.gif"
         },
         {
           "year": 1903,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/birmingham/1903-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20D.html"
+          "glyph": "glyphs/birmingham/1903-D-L.gif"
         },
         {
           "year": 1904,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/birmingham/1904-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20E.html"
+          "glyph": "glyphs/birmingham/1904-E-L.gif"
         },
         {
           "year": 1905,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/birmingham/1905-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20F.html"
+          "glyph": "glyphs/birmingham/1905-F-L.gif"
         },
         {
           "year": 1906,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/birmingham/1906-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20G.html"
+          "glyph": "glyphs/birmingham/1906-G-L.gif"
         },
         {
           "year": 1907,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/birmingham/1907-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20H.html"
+          "glyph": "glyphs/birmingham/1907-H-L.gif"
         },
         {
           "year": 1908,
           "letter": "I",
           "case": "L",
-          "glyph": "glyphs/birmingham/1908-I-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20I.html"
+          "glyph": "glyphs/birmingham/1908-I-L.gif"
         },
         {
           "year": 1909,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/birmingham/1909-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20K.html"
+          "glyph": "glyphs/birmingham/1909-K-L.gif"
         },
         {
           "year": 1910,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/birmingham/1910-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20L.html"
+          "glyph": "glyphs/birmingham/1910-L-L.gif"
         },
         {
           "year": 1911,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/birmingham/1911-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20M.html"
+          "glyph": "glyphs/birmingham/1911-M-L.gif"
         },
         {
           "year": 1912,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/birmingham/1912-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20N.html"
+          "glyph": "glyphs/birmingham/1912-N-L.gif"
         },
         {
           "year": 1913,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/birmingham/1913-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20O.html"
+          "glyph": "glyphs/birmingham/1913-O-L.gif"
         },
         {
           "year": 1914,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/birmingham/1914-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20P.html"
+          "glyph": "glyphs/birmingham/1914-P-L.gif"
         },
         {
           "year": 1915,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/birmingham/1915-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Q.html"
+          "glyph": "glyphs/birmingham/1915-Q-L.gif"
         },
         {
           "year": 1916,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/birmingham/1916-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20R.html"
+          "glyph": "glyphs/birmingham/1916-R-L.gif"
         },
         {
           "year": 1917,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/birmingham/1917-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20S.html"
+          "glyph": "glyphs/birmingham/1917-S-L.gif"
         },
         {
           "year": 1918,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/birmingham/1918-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20T.html"
+          "glyph": "glyphs/birmingham/1918-T-L.gif"
         },
         {
           "year": 1919,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/birmingham/1919-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20U.html"
+          "glyph": "glyphs/birmingham/1919-U-L.gif"
         },
         {
           "year": 1920,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/birmingham/1920-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20V.html"
+          "glyph": "glyphs/birmingham/1920-V-L.gif"
         },
         {
           "year": 1921,
           "letter": "W",
           "case": "L",
-          "glyph": "glyphs/birmingham/1921-W-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20W.html"
+          "glyph": "glyphs/birmingham/1921-W-L.gif"
         },
         {
           "year": 1922,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/birmingham/1922-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20X.html"
+          "glyph": "glyphs/birmingham/1922-X-L.gif"
         },
         {
           "year": 1923,
           "letter": "Y",
           "case": "L",
-          "glyph": "glyphs/birmingham/1923-Y-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Y.html"
+          "glyph": "glyphs/birmingham/1923-Y-L.gif"
         },
         {
           "year": 1924,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/birmingham/1924-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Z.html"
+          "glyph": "glyphs/birmingham/1924-Z-L.gif"
         },
         {
           "year": 1925,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/birmingham/1925-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20A.html"
+          "glyph": "glyphs/birmingham/1925-A-U.gif"
         },
         {
           "year": 1926,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/birmingham/1926-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20B.html"
+          "glyph": "glyphs/birmingham/1926-B-U.gif"
         },
         {
           "year": 1927,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/birmingham/1927-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20C.html"
+          "glyph": "glyphs/birmingham/1927-C-U.gif"
         },
         {
           "year": 1928,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/birmingham/1928-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20D.html"
+          "glyph": "glyphs/birmingham/1928-D-U.gif"
         },
         {
           "year": 1929,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/birmingham/1929-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20E.html"
+          "glyph": "glyphs/birmingham/1929-E-U.gif"
         },
         {
           "year": 1930,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/birmingham/1930-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20F.html"
+          "glyph": "glyphs/birmingham/1930-F-U.gif"
         },
         {
           "year": 1931,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/birmingham/1931-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20G.html"
+          "glyph": "glyphs/birmingham/1931-G-U.gif"
         },
         {
           "year": 1932,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/birmingham/1932-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20H.html"
+          "glyph": "glyphs/birmingham/1932-H-U.gif"
         },
         {
           "year": 1933,
           "letter": "J",
           "case": "U",
-          "glyph": "glyphs/birmingham/1933-J-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20J.html"
+          "glyph": "glyphs/birmingham/1933-J-U.gif"
         },
         {
           "year": 1934,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/birmingham/1934-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20K.html"
+          "glyph": "glyphs/birmingham/1934-K-U.gif"
         },
         {
           "year": 1935,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/birmingham/1935-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20L.html"
+          "glyph": "glyphs/birmingham/1935-L-U.gif"
         },
         {
           "year": 1936,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/birmingham/1936-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20M.html"
+          "glyph": "glyphs/birmingham/1936-M-U.gif"
         },
         {
           "year": 1937,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/birmingham/1937-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20N.html"
+          "glyph": "glyphs/birmingham/1937-N-U.gif"
         },
         {
           "year": 1938,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/birmingham/1938-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20O.html"
+          "glyph": "glyphs/birmingham/1938-O-U.gif"
         },
         {
           "year": 1939,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/birmingham/1939-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20P.html"
+          "glyph": "glyphs/birmingham/1939-P-U.gif"
         },
         {
           "year": 1940,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/birmingham/1940-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Q.html"
+          "glyph": "glyphs/birmingham/1940-Q-U.gif"
         },
         {
           "year": 1941,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/birmingham/1941-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20R.html"
+          "glyph": "glyphs/birmingham/1941-R-U.gif"
         },
         {
           "year": 1942,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/birmingham/1942-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20S.html"
+          "glyph": "glyphs/birmingham/1942-S-U.gif"
         },
         {
           "year": 1943,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/birmingham/1943-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20T.html"
+          "glyph": "glyphs/birmingham/1943-T-U.gif"
         },
         {
           "year": 1944,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/birmingham/1944-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20U.html"
+          "glyph": "glyphs/birmingham/1944-U-U.gif"
         },
         {
           "year": 1945,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/birmingham/1945-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20V.html"
+          "glyph": "glyphs/birmingham/1945-V-U.gif"
         },
         {
           "year": 1946,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/birmingham/1946-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20W.html"
+          "glyph": "glyphs/birmingham/1946-W-U.gif"
         },
         {
           "year": 1947,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/birmingham/1947-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20X.html"
+          "glyph": "glyphs/birmingham/1947-X-U.gif"
         },
         {
           "year": 1948,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/birmingham/1948-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Y.html"
+          "glyph": "glyphs/birmingham/1948-Y-U.gif"
         },
         {
           "year": 1949,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/birmingham/1949-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Z.html"
+          "glyph": "glyphs/birmingham/1949-Z-U.gif"
         }
       ]
     },
@@ -1307,169 +1135,145 @@
           "year": 1950,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/birmingham/1950-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20A.html"
+          "glyph": "glyphs/birmingham/1950-A-U.gif"
         },
         {
           "year": 1951,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/birmingham/1951-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20B.html"
+          "glyph": "glyphs/birmingham/1951-B-U.gif"
         },
         {
           "year": 1952,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/birmingham/1952-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20C.html"
+          "glyph": "glyphs/birmingham/1952-C-U.gif"
         },
         {
           "year": 1953,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/birmingham/1953-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20D.html"
+          "glyph": "glyphs/birmingham/1953-D-U.gif"
         },
         {
           "year": 1954,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/birmingham/1954-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20E.html"
+          "glyph": "glyphs/birmingham/1954-E-U.gif"
         },
         {
           "year": 1955,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/birmingham/1955-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20F.html"
+          "glyph": "glyphs/birmingham/1955-F-U.gif"
         },
         {
           "year": 1956,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/birmingham/1956-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20G.html"
+          "glyph": "glyphs/birmingham/1956-G-U.gif"
         },
         {
           "year": 1957,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/birmingham/1957-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20H.html"
+          "glyph": "glyphs/birmingham/1957-H-U.gif"
         },
         {
           "year": 1958,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/birmingham/1958-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20I.html"
+          "glyph": "glyphs/birmingham/1958-I-U.gif"
         },
         {
           "year": 1959,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/birmingham/1959-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20K.html"
+          "glyph": "glyphs/birmingham/1959-K-U.gif"
         },
         {
           "year": 1960,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/birmingham/1960-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20L.html"
+          "glyph": "glyphs/birmingham/1960-L-U.gif"
         },
         {
           "year": 1961,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/birmingham/1961-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20M.html"
+          "glyph": "glyphs/birmingham/1961-M-U.gif"
         },
         {
           "year": 1962,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/birmingham/1962-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20N.html"
+          "glyph": "glyphs/birmingham/1962-N-U.gif"
         },
         {
           "year": 1963,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/birmingham/1963-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20O.html"
+          "glyph": "glyphs/birmingham/1963-O-U.gif"
         },
         {
           "year": 1964,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/birmingham/1964-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20P.html"
+          "glyph": "glyphs/birmingham/1964-P-U.gif"
         },
         {
           "year": 1965,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/birmingham/1965-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Q.html"
+          "glyph": "glyphs/birmingham/1965-Q-U.gif"
         },
         {
           "year": 1966,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/birmingham/1966-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20R.html"
+          "glyph": "glyphs/birmingham/1966-R-U.gif"
         },
         {
           "year": 1967,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/birmingham/1967-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20S.html"
+          "glyph": "glyphs/birmingham/1967-S-U.gif"
         },
         {
           "year": 1968,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/birmingham/1968-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20T.html"
+          "glyph": "glyphs/birmingham/1968-T-U.gif"
         },
         {
           "year": 1969,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/birmingham/1969-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20U.html"
+          "glyph": "glyphs/birmingham/1969-U-U.gif"
         },
         {
           "year": 1970,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/birmingham/1970-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20V.html"
+          "glyph": "glyphs/birmingham/1970-V-U.gif"
         },
         {
           "year": 1971,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/birmingham/1971-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20W.html"
+          "glyph": "glyphs/birmingham/1971-W-U.gif"
         },
         {
           "year": 1972,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/birmingham/1972-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20X.html"
+          "glyph": "glyphs/birmingham/1972-X-U.gif"
         },
         {
           "year": 1974,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/birmingham/1974-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Z.html"
+          "glyph": "glyphs/birmingham/1974-Z-U.gif"
         }
       ]
     },
@@ -1483,8 +1287,7 @@
           "year": 1973,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/birmingham/1973-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Y.html"
+          "glyph": "glyphs/birmingham/1973-Y-U.gif"
         }
       ]
     },
@@ -1498,176 +1301,151 @@
           "year": 1975,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/birmingham/1975-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20A.html"
+          "glyph": "glyphs/birmingham/1975-A-U.gif"
         },
         {
           "year": 1976,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/birmingham/1976-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20B.html"
+          "glyph": "glyphs/birmingham/1976-B-U.gif"
         },
         {
           "year": 1977,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/birmingham/1977-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20C.html"
+          "glyph": "glyphs/birmingham/1977-C-U.gif"
         },
         {
           "year": 1978,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/birmingham/1978-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20D.html"
+          "glyph": "glyphs/birmingham/1978-D-U.gif"
         },
         {
           "year": 1979,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/birmingham/1979-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20E.html"
+          "glyph": "glyphs/birmingham/1979-E-U.gif"
         },
         {
           "year": 1980,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/birmingham/1980-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20F.html"
+          "glyph": "glyphs/birmingham/1980-F-U.gif"
         },
         {
           "year": 1981,
           "letter": "G",
           "case": "U",
-          "glyph": "glyphs/birmingham/1981-G-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20G.html"
+          "glyph": "glyphs/birmingham/1981-G-U.gif"
         },
         {
           "year": 1982,
           "letter": "H",
           "case": "U",
-          "glyph": "glyphs/birmingham/1982-H-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20H.html"
+          "glyph": "glyphs/birmingham/1982-H-U.gif"
         },
         {
           "year": 1983,
           "letter": "I",
           "case": "U",
-          "glyph": "glyphs/birmingham/1983-I-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20I.html"
+          "glyph": "glyphs/birmingham/1983-I-U.gif"
         },
         {
           "year": 1984,
           "letter": "K",
           "case": "U",
-          "glyph": "glyphs/birmingham/1984-K-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20K.html"
+          "glyph": "glyphs/birmingham/1984-K-U.gif"
         },
         {
           "year": 1985,
           "letter": "L",
           "case": "U",
-          "glyph": "glyphs/birmingham/1985-L-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20L.html"
+          "glyph": "glyphs/birmingham/1985-L-U.gif"
         },
         {
           "year": 1986,
           "letter": "M",
           "case": "U",
-          "glyph": "glyphs/birmingham/1986-M-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20M.html"
+          "glyph": "glyphs/birmingham/1986-M-U.gif"
         },
         {
           "year": 1987,
           "letter": "N",
           "case": "U",
-          "glyph": "glyphs/birmingham/1987-N-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20N.html"
+          "glyph": "glyphs/birmingham/1987-N-U.gif"
         },
         {
           "year": 1988,
           "letter": "O",
           "case": "U",
-          "glyph": "glyphs/birmingham/1988-O-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20O.html"
+          "glyph": "glyphs/birmingham/1988-O-U.gif"
         },
         {
           "year": 1989,
           "letter": "P",
           "case": "U",
-          "glyph": "glyphs/birmingham/1989-P-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20P.html"
+          "glyph": "glyphs/birmingham/1989-P-U.gif"
         },
         {
           "year": 1990,
           "letter": "Q",
           "case": "U",
-          "glyph": "glyphs/birmingham/1990-Q-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Q.html"
+          "glyph": "glyphs/birmingham/1990-Q-U.gif"
         },
         {
           "year": 1991,
           "letter": "R",
           "case": "U",
-          "glyph": "glyphs/birmingham/1991-R-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20R.html"
+          "glyph": "glyphs/birmingham/1991-R-U.gif"
         },
         {
           "year": 1992,
           "letter": "S",
           "case": "U",
-          "glyph": "glyphs/birmingham/1992-S-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20S.html"
+          "glyph": "glyphs/birmingham/1992-S-U.gif"
         },
         {
           "year": 1993,
           "letter": "T",
           "case": "U",
-          "glyph": "glyphs/birmingham/1993-T-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20T.html"
+          "glyph": "glyphs/birmingham/1993-T-U.gif"
         },
         {
           "year": 1994,
           "letter": "U",
           "case": "U",
-          "glyph": "glyphs/birmingham/1994-U-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20U.html"
+          "glyph": "glyphs/birmingham/1994-U-U.gif"
         },
         {
           "year": 1995,
           "letter": "V",
           "case": "U",
-          "glyph": "glyphs/birmingham/1995-V-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20V.html"
+          "glyph": "glyphs/birmingham/1995-V-U.gif"
         },
         {
           "year": 1996,
           "letter": "W",
           "case": "U",
-          "glyph": "glyphs/birmingham/1996-W-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20W.html"
+          "glyph": "glyphs/birmingham/1996-W-U.gif"
         },
         {
           "year": 1997,
           "letter": "X",
           "case": "U",
-          "glyph": "glyphs/birmingham/1997-X-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20X.html"
+          "glyph": "glyphs/birmingham/1997-X-U.gif"
         },
         {
           "year": 1998,
           "letter": "Y",
           "case": "U",
-          "glyph": "glyphs/birmingham/1998-Y-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Y.html"
+          "glyph": "glyphs/birmingham/1998-Y-U.gif"
         },
         {
           "year": 1999,
           "letter": "Z",
           "case": "U",
-          "glyph": "glyphs/birmingham/1999-Z-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Z.html"
+          "glyph": "glyphs/birmingham/1999-Z-U.gif"
         }
       ]
     },
@@ -1681,176 +1459,151 @@
           "year": 2000,
           "letter": "A",
           "case": "L",
-          "glyph": "glyphs/birmingham/2000-A-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20A.html"
+          "glyph": "glyphs/birmingham/2000-A-L.gif"
         },
         {
           "year": 2001,
           "letter": "B",
           "case": "L",
-          "glyph": "glyphs/birmingham/2001-B-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20B.html"
+          "glyph": "glyphs/birmingham/2001-B-L.gif"
         },
         {
           "year": 2002,
           "letter": "C",
           "case": "L",
-          "glyph": "glyphs/birmingham/2002-C-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20C.html"
+          "glyph": "glyphs/birmingham/2002-C-L.gif"
         },
         {
           "year": 2003,
           "letter": "D",
           "case": "L",
-          "glyph": "glyphs/birmingham/2003-D-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20D.html"
+          "glyph": "glyphs/birmingham/2003-D-L.gif"
         },
         {
           "year": 2004,
           "letter": "E",
           "case": "L",
-          "glyph": "glyphs/birmingham/2004-E-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20E.html"
+          "glyph": "glyphs/birmingham/2004-E-L.gif"
         },
         {
           "year": 2005,
           "letter": "F",
           "case": "L",
-          "glyph": "glyphs/birmingham/2005-F-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20F.html"
+          "glyph": "glyphs/birmingham/2005-F-L.gif"
         },
         {
           "year": 2006,
           "letter": "G",
           "case": "L",
-          "glyph": "glyphs/birmingham/2006-G-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20G.html"
+          "glyph": "glyphs/birmingham/2006-G-L.gif"
         },
         {
           "year": 2007,
           "letter": "H",
           "case": "L",
-          "glyph": "glyphs/birmingham/2007-H-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20H.html"
+          "glyph": "glyphs/birmingham/2007-H-L.gif"
         },
         {
           "year": 2008,
           "letter": "J",
           "case": "L",
-          "glyph": "glyphs/birmingham/2008-J-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20J.html"
+          "glyph": "glyphs/birmingham/2008-J-L.gif"
         },
         {
           "year": 2009,
           "letter": "K",
           "case": "L",
-          "glyph": "glyphs/birmingham/2009-K-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20K.html"
+          "glyph": "glyphs/birmingham/2009-K-L.gif"
         },
         {
           "year": 2010,
           "letter": "L",
           "case": "L",
-          "glyph": "glyphs/birmingham/2010-L-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20L.html"
+          "glyph": "glyphs/birmingham/2010-L-L.gif"
         },
         {
           "year": 2011,
           "letter": "M",
           "case": "L",
-          "glyph": "glyphs/birmingham/2011-M-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20M.html"
+          "glyph": "glyphs/birmingham/2011-M-L.gif"
         },
         {
           "year": 2012,
           "letter": "N",
           "case": "L",
-          "glyph": "glyphs/birmingham/2012-N-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20N.html"
+          "glyph": "glyphs/birmingham/2012-N-L.gif"
         },
         {
           "year": 2013,
           "letter": "O",
           "case": "L",
-          "glyph": "glyphs/birmingham/2013-O-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20O.html"
+          "glyph": "glyphs/birmingham/2013-O-L.gif"
         },
         {
           "year": 2014,
           "letter": "P",
           "case": "L",
-          "glyph": "glyphs/birmingham/2014-P-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20P.html"
+          "glyph": "glyphs/birmingham/2014-P-L.gif"
         },
         {
           "year": 2015,
           "letter": "Q",
           "case": "L",
-          "glyph": "glyphs/birmingham/2015-Q-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Q.html"
+          "glyph": "glyphs/birmingham/2015-Q-L.gif"
         },
         {
           "year": 2016,
           "letter": "R",
           "case": "L",
-          "glyph": "glyphs/birmingham/2016-R-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20R.html"
+          "glyph": "glyphs/birmingham/2016-R-L.gif"
         },
         {
           "year": 2017,
           "letter": "S",
           "case": "L",
-          "glyph": "glyphs/birmingham/2017-S-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20S.html"
+          "glyph": "glyphs/birmingham/2017-S-L.gif"
         },
         {
           "year": 2018,
           "letter": "T",
           "case": "L",
-          "glyph": "glyphs/birmingham/2018-T-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20T.html"
+          "glyph": "glyphs/birmingham/2018-T-L.gif"
         },
         {
           "year": 2019,
           "letter": "U",
           "case": "L",
-          "glyph": "glyphs/birmingham/2019-U-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20U.html"
+          "glyph": "glyphs/birmingham/2019-U-L.gif"
         },
         {
           "year": 2020,
           "letter": "V",
           "case": "L",
-          "glyph": "glyphs/birmingham/2020-V-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20V.html"
+          "glyph": "glyphs/birmingham/2020-V-L.gif"
         },
         {
           "year": 2021,
           "letter": "W",
           "case": "L",
-          "glyph": "glyphs/birmingham/2021-W-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20W.html"
+          "glyph": "glyphs/birmingham/2021-W-L.gif"
         },
         {
           "year": 2022,
           "letter": "X",
           "case": "L",
-          "glyph": "glyphs/birmingham/2022-X-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20X.html"
+          "glyph": "glyphs/birmingham/2022-X-L.gif"
         },
         {
           "year": 2023,
           "letter": "Y",
           "case": "L",
-          "glyph": "glyphs/birmingham/2023-Y-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Y.html"
+          "glyph": "glyphs/birmingham/2023-Y-L.gif"
         },
         {
           "year": 2024,
           "letter": "Z",
           "case": "L",
-          "glyph": "glyphs/birmingham/2024-Z-L.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20Z.html"
+          "glyph": "glyphs/birmingham/2024-Z-L.gif"
         }
       ]
     },
@@ -1864,43 +1617,37 @@
           "year": 2025,
           "letter": "A",
           "case": "U",
-          "glyph": "glyphs/birmingham/2025-A-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20A.html"
+          "glyph": "glyphs/birmingham/2025-A-U.gif"
         },
         {
           "year": 2026,
           "letter": "B",
           "case": "U",
-          "glyph": "glyphs/birmingham/2026-B-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20B.html"
+          "glyph": "glyphs/birmingham/2026-B-U.gif"
         },
         {
           "year": 2027,
           "letter": "C",
           "case": "U",
-          "glyph": "glyphs/birmingham/2027-C-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20C.html"
+          "glyph": "glyphs/birmingham/2027-C-U.gif"
         },
         {
           "year": 2028,
           "letter": "D",
           "case": "U",
-          "glyph": "glyphs/birmingham/2028-D-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20D.html"
+          "glyph": "glyphs/birmingham/2028-D-U.gif"
         },
         {
           "year": 2029,
           "letter": "E",
           "case": "U",
-          "glyph": "glyphs/birmingham/2029-E-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20E.html"
+          "glyph": "glyphs/birmingham/2029-E-U.gif"
         },
         {
           "year": 2030,
           "letter": "F",
           "case": "U",
-          "glyph": "glyphs/birmingham/2030-F-U.gif",
-          "sourceUrl": "https://www.silvermakersmarks.co.uk/Dates/Birmingham/Date%20Letters%20F.html"
+          "glyph": "glyphs/birmingham/2030-F-U.gif"
         }
       ]
     }

@@ -1,7 +1,7 @@
 // /tools/wizard.js — UK Silver Hallmark Identifier wizard
 // Loaded statically by /tools/uk-silver-hallmarks.html via <script src="wizard.js"></script>.
 // Self-contained IIFE; no globals leak. Pre-1975 cycle data is loaded async from
-// images/hallmarks/data/cycles.json (built by tools/scrape-silvermakersmarks.js).
+// images/hallmarks/data/cycles.json.
 
 (function () {
     'use strict';
@@ -40,7 +40,8 @@
         'three-castles-newcastle': { name: 'Three castles',          sub: 'Newcastle 1702–1884',  glyph: 'NEW',    office: 'Newcastle', from: 1702, to: 1884, systems: ['english'] },
         'castle-exeter':           { name: 'Three-towered castle',   sub: 'Exeter 1701–1883',     glyph: 'EXE',    office: 'Exeter',    from: 1701, to: 1883, systems: ['english'], note: "Exeter's castle is visually similar to Edinburgh's but English." },
         'lions-york':              { name: 'Five lions on cross',    sub: 'York 1700–1858',       glyph: 'YRK',    office: 'York',      from: 1700, to: 1858, systems: ['english'] },
-        'dublin':                  { name: 'Crowned Harp + Hibernia', sub: 'Dublin 1638+',        glyph: 'DUB',    office: 'Dublin',    from: 1638, to: null, systems: ['irish'], note: "Dublin Assay Office. The crowned harp is both the standard mark and the office mark; Hibernia (seated woman) appears alongside it from 1730 onwards. The Republic of Ireland operates a separate hallmarking system." }
+        'dublin':                  { name: 'Crowned Harp', sub: 'Dublin 1638+',        glyph: 'DUB',    office: 'Dublin',    from: 1638, to: null, systems: ['irish'], note: "Dublin Assay Office. The crowned harp is both the standard mark and the office mark. Pick this if your piece has only the harp (typically pre-1730) or you can't tell whether Hibernia is also present." },
+        'dublin-hibernia':         { name: 'Crowned Harp + Hibernia', sub: 'Dublin 1730+',  glyph: 'DUB+', office: 'Dublin', from: 1730, to: null, systems: ['irish'], note: "Dublin pieces from 1730 onwards carry a seated Hibernia figure alongside the crowned harp. Pick this if you can see both marks — it narrows the date to 1730 or later." }
     };
 
     const DUTY = {
@@ -171,15 +172,55 @@
 
     // -- IMAGE HELPERS -----------------------------------------------------
     const IMG_EXTS = ['png', 'svg', 'jpg'];
-    function tryLoadImage(wrap, paths, idx) {
+    function tryLoadImage(wrap, paths, idx, onLoaded) {
         if (idx >= paths.length) return;
         const img = new Image();
         img.alt = '';
-        img.onload = function () { wrap.innerHTML = ''; wrap.appendChild(img); };
-        img.onerror = function () { tryLoadImage(wrap, paths, idx + 1); };
+        img.onload = function () {
+            wrap.innerHTML = '';
+            wrap.appendChild(img);
+            if (onLoaded) onLoaded(img);
+        };
+        img.onerror = function () { tryLoadImage(wrap, paths, idx + 1, onLoaded); };
         img.src = paths[idx];
     }
-    function buildLegacyImg(category, slug, glyph) {
+
+    // --- LIGHTBOX (click magnifier to enlarge any card image) ------------
+    const $lightbox = document.getElementById('img-lightbox');
+    const $lightboxImg = $lightbox && $lightbox.querySelector('img');
+    const $lightboxCap = document.getElementById('img-lightbox-caption');
+    const $lightboxClose = document.getElementById('img-lightbox-close');
+    function openLightbox(src, caption) {
+        if (!$lightbox || !$lightboxImg) return;
+        $lightboxImg.src = src;
+        if ($lightboxCap) $lightboxCap.textContent = caption || '';
+        $lightbox.hidden = false;
+    }
+    function closeLightbox() { if ($lightbox) $lightbox.hidden = true; }
+    if ($lightbox) {
+        $lightbox.addEventListener('click', e => {
+            if (e.target === $lightbox || e.target === $lightboxImg) closeLightbox();
+        });
+    }
+    if ($lightboxClose) $lightboxClose.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    // Add a magnifier button to a card; click → lightbox with the card's loaded img.
+    function addZoomBadge(card, captionFn) {
+        if (card.querySelector('.zoom-btn')) return;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'zoom-btn';
+        btn.setAttribute('aria-label', 'Show larger image');
+        btn.textContent = '⤢';
+        btn.addEventListener('click', e => {
+            e.stopPropagation();
+            const img = card.querySelector('img');
+            if (img && img.src) openLightbox(img.src, captionFn ? captionFn() : '');
+        });
+        card.appendChild(btn);
+    }
+    function buildLegacyImg(category, slug, glyph, onLoaded) {
         // Legacy slot: images/hallmarks/<category>-<slug>.{png,svg,jpg}
         const wrap = document.createElement('div');
         wrap.className = 'wiz-img';
@@ -188,10 +229,10 @@
         fallback.textContent = glyph || '·';
         wrap.appendChild(fallback);
         const paths = IMG_EXTS.map(e => 'images/hallmarks/' + category + '-' + slug + '.' + e);
-        tryLoadImage(wrap, paths, 0);
+        tryLoadImage(wrap, paths, 0, onLoaded);
         return wrap;
     }
-    function buildDirectImg(srcPath, fallbackText, className) {
+    function buildDirectImg(srcPath, fallbackText, className, onLoaded) {
         // For pre-built relative paths from data files, e.g. "frames/london/1697-1715.gif"
         const wrap = document.createElement('div');
         wrap.className = className || 'wiz-img';
@@ -199,7 +240,7 @@
         fallback.className = 'wiz-glyph';
         fallback.textContent = fallbackText || '·';
         wrap.appendChild(fallback);
-        if (srcPath) tryLoadImage(wrap, ['images/hallmarks/' + srcPath], 0);
+        if (srcPath) tryLoadImage(wrap, ['images/hallmarks/' + srcPath], 0, onLoaded);
         return wrap;
     }
 
@@ -240,18 +281,20 @@
 
         if (category === 'cycle') {
             // Cycle card: frame thumbnail + range + style hint + letter count
-            c.appendChild(buildDirectImg(opt.frame, opt.key, 'wiz-cycle-frame'));
-            const range = document.createElement('div');
-            range.className = 'wiz-card-name';
-            range.textContent = opt.from + (opt.to == null ? '–present' : '–' + opt.to);
-            c.appendChild(range);
+            const range = opt.from + (opt.to == null ? '–present' : '–' + opt.to);
+            c.appendChild(buildDirectImg(opt.frame, opt.key, 'wiz-cycle-frame', () => addZoomBadge(c, () => 'Cycle ' + range)));
+            const rangeEl = document.createElement('div');
+            rangeEl.className = 'wiz-card-name';
+            rangeEl.textContent = range;
+            c.appendChild(rangeEl);
             const sub = document.createElement('div');
             sub.className = 'wiz-card-sub';
             sub.textContent = cycleStyleHint(opt) + ' · ' + opt.letters.length + ' letters';
             c.appendChild(sub);
         } else if (category === 'dateletter') {
             // Date letter card: glyph image + letter + year
-            c.appendChild(buildDirectImg(opt.glyph, opt.letter, 'wiz-letter-img'));
+            const cap = '"' + opt.letter + '" (' + (opt.case === 'U' ? 'uppercase' : 'lowercase') + ') — ' + opt.year;
+            c.appendChild(buildDirectImg(opt.glyph, opt.letter, 'wiz-letter-img', () => addZoomBadge(c, () => cap)));
             const letter = document.createElement('div');
             letter.className = 'wiz-letter';
             letter.textContent = opt.letter + (opt.case === 'L' ? ' (lowercase)' : '');
@@ -265,7 +308,7 @@
             hint.textContent = letterStyleHint(opt.letter, opt.year, opt.case);
             c.appendChild(hint);
         } else {
-            c.appendChild(buildLegacyImg(category, id, opt.glyph));
+            c.appendChild(buildLegacyImg(category, id, opt.glyph, () => addZoomBadge(c, () => opt.name + (opt.sub ? ' — ' + opt.sub : ''))));
             const name = document.createElement('div');
             name.className = 'wiz-card-name';
             name.textContent = opt.name;
@@ -402,23 +445,383 @@
         }
     }
 
-    function dl(term, defn) {
-        const dt = document.createElement('dt');
-        dt.textContent = term;
-        const dd = document.createElement('dd');
-        dd.textContent = defn;
-        $details.appendChild(dt);
-        $details.appendChild(dd);
+    // Build a rich row (image + label + title + sub + optional note) and append.
+    function pushDetailRow(item) {
+        const row = document.createElement('div');
+        row.className = 'result-row';
+        // image: prefer a single direct path (cycle/letter) else legacy slot fallback (try png/svg/jpg)
+        const imgWrap = document.createElement('div');
+        imgWrap.className = 'result-row-img';
+        const fallback = document.createElement('span');
+        fallback.textContent = item.glyph || '·';
+        imgWrap.appendChild(fallback);
+        if (item.imgCandidates && item.imgCandidates.length) {
+            tryLoadImage(imgWrap, item.imgCandidates, 0);
+        }
+        row.appendChild(imgWrap);
+        const text = document.createElement('div');
+        text.className = 'result-row-text';
+        const lbl = document.createElement('span');
+        lbl.className = 'result-row-label';
+        lbl.textContent = item.label;
+        text.appendChild(lbl);
+        const ttl = document.createElement('span');
+        ttl.className = 'result-row-title';
+        ttl.textContent = item.title;
+        text.appendChild(ttl);
+        if (item.sub) {
+            const sub = document.createElement('span');
+            sub.className = 'result-row-sub';
+            sub.textContent = item.sub;
+            text.appendChild(sub);
+        }
+        if (item.note) {
+            const note = document.createElement('span');
+            note.className = 'result-row-note';
+            note.textContent = item.note;
+            text.appendChild(note);
+        }
+        row.appendChild(text);
+        $details.appendChild(row);
     }
 
     const $verdict = document.getElementById('verdict');
     const $details = document.getElementById('details');
     const $caveats = document.getElementById('caveats');
+    const $actions = document.getElementById('hallmarks-actions');
+    const $copyBtn = document.getElementById('copy-result');
+    const $imgBtn  = document.getElementById('download-result-img');
     const fmt = n => n == null ? 'present' : String(n);
+
+    // --- EXPORT (copy + image) -------------------------------------------
+    function pickedItems() {
+        const items = [];
+        if (state.standard) {
+            const s = STANDARD[state.standard];
+            items.push({
+                label: 'Standard mark',
+                title: s.name,
+                sub: s.purity + ' · ' + s.region + ' (in use from ' + s.from + ')',
+                note: s.note || '',
+                imgCandidates: IMG_EXTS.map(e => 'images/hallmarks/standard-' + state.standard + '.' + e),
+                glyph: s.glyph,
+            });
+        }
+        if (state.town) {
+            const t = TOWN[state.town];
+            items.push({
+                label: 'Town mark (Assay Office)',
+                title: t.name,
+                sub: t.office + ' · ' + t.from + '–' + (t.to == null ? 'present' : t.to),
+                note: t.note || '',
+                imgCandidates: IMG_EXTS.map(e => 'images/hallmarks/town-' + state.town + '.' + e),
+                glyph: t.glyph,
+            });
+        }
+        if (state.duty) {
+            const d = DUTY[state.duty];
+            const sub = d.monarch === 'unidentified'
+                ? 'Sovereign’s head present (monarch unclear). 1784–1890.'
+                : d.monarch + ' · ' + d.from + '–' + d.to + ' (duty paid)';
+            items.push({
+                label: 'Duty mark',
+                title: d.name,
+                sub: sub,
+                imgCandidates: IMG_EXTS.map(e => 'images/hallmarks/duty-' + state.duty + '.' + e),
+                glyph: d.glyph,
+            });
+        }
+        if (state.commemorative) {
+            const c = COMMEM[state.commemorative];
+            const period = c.from === c.to ? String(c.from) : c.from + '–' + c.to;
+            items.push({
+                label: 'Commemorative',
+                title: c.label || c.name,
+                sub: 'Voluntary mark · applied ' + period,
+                imgCandidates: IMG_EXTS.map(e => 'images/hallmarks/commemorative-' + state.commemorative + '.' + e),
+                glyph: c.glyph,
+            });
+        }
+        if (state.cycle) {
+            const c = getSource('cycle')[state.cycle];
+            if (c) {
+                const range = c.from + (c.to == null ? '–present' : (c.from === c.to ? '' : '–' + c.to));
+                items.push({
+                    label: 'Date letter cycle',
+                    title: range,
+                    sub: cycleStyleHint(c) + ' · ' + (c.letters ? c.letters.length : 0) + ' letters',
+                    imgCandidates: c.frame ? ['images/hallmarks/' + c.frame] : [],
+                    glyph: '',
+                });
+            }
+        }
+        if (state.dateletter) {
+            const l = getSource('dateletter')[state.dateletter];
+            if (l) {
+                items.push({
+                    label: 'Date letter — exact year ' + l.year,
+                    title: '“' + l.letter + '” ' + (l.case === 'U' ? '(uppercase)' : '(lowercase)'),
+                    sub: letterStyleHint(l.letter, l.year, l.case),
+                    imgCandidates: l.glyph ? ['images/hallmarks/' + l.glyph] : [],
+                    glyph: l.letter,
+                });
+            }
+        }
+        return items;
+    }
+
+    function buildResultText() {
+        const parts = [];
+        parts.push((($verdict && $verdict.textContent) || '').trim());
+        parts.push('');
+        const dts = [...$details.querySelectorAll('dt')];
+        for (const dt of dts) {
+            const dd = dt.nextElementSibling;
+            parts.push('• ' + dt.textContent.trim() + ': ' + (dd ? dd.textContent.trim() : ''));
+        }
+        parts.push('');
+        parts.push('Generated with https://flipperhelper.app');
+        return parts.filter((s, i, arr) => !(s === '' && arr[i-1] === '')).join('\n');
+    }
+
+    function loadImageAsync(srcs) {
+        return new Promise(resolve => {
+            let i = 0;
+            function tryNext() {
+                if (i >= srcs.length) return resolve(null);
+                const img = new Image();
+                img.onload = () => resolve(img);
+                img.onerror = () => { i++; tryNext(); };
+                img.src = srcs[i];
+            }
+            tryNext();
+        });
+    }
+
+    function wrapText(ctx, text, maxWidth) {
+        const words = String(text || '').split(/\s+/);
+        const lines = [];
+        let line = '';
+        for (const w of words) {
+            const test = line ? line + ' ' + w : w;
+            if (ctx.measureText(test).width > maxWidth && line) {
+                lines.push(line);
+                line = w;
+            } else {
+                line = test;
+            }
+        }
+        if (line) lines.push(line);
+        return lines;
+    }
+
+    async function buildResultImage() {
+        const items = pickedItems();
+        const W = 720;
+        const PAD = 36;
+        const HEADER_H = 130;
+        const VERDICT_PAD_X = PAD;
+        const ROW_GAP = 14;
+        const ROW_INNER_PAD = 16;
+        const CHIP = 72;
+        const FOOTER_H = 70;
+
+        // Pre-load images
+        const loadedImages = await Promise.all(items.map(it => it.imgCandidates.length ? loadImageAsync(it.imgCandidates) : Promise.resolve(null)));
+
+        // Verdict text + measure
+        const verdictText = (($verdict && $verdict.textContent) || '').trim() || 'UK silver hallmark identification';
+        const measureCanvas = document.createElement('canvas');
+        const m = measureCanvas.getContext('2d');
+        m.font = 'bold 22px -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif';
+        const verdictLines = wrapText(m, verdictText, W - PAD * 2 - 28);
+        const verdictH = 28 + verdictLines.length * 30 + 28; // padding + lines + padding
+
+        m.font = '16px -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif';
+        // Each row: chip (72) + label/title/sub. Sub may wrap.
+        const rowHeights = items.map((it, i) => {
+            const subLines = wrapText(m, it.sub || '', W - PAD * 2 - CHIP - 24 - ROW_INNER_PAD * 2);
+            // label (14) + 6 + title (20) + 4 + sub (subLines * 18)
+            const textH = 14 + 6 + 22 + 4 + subLines.length * 18;
+            return Math.max(CHIP + ROW_INNER_PAD * 2, textH + ROW_INNER_PAD * 2);
+        });
+        const rowsTotal = rowHeights.reduce((a, b) => a + b + ROW_GAP, 0);
+
+        const H = HEADER_H + verdictH + 16 + rowsTotal + FOOTER_H;
+
+        const canvas = document.createElement('canvas');
+        canvas.width = W;
+        canvas.height = H;
+        const ctx = canvas.getContext('2d');
+
+        // Background
+        ctx.fillStyle = '#0F0F12';
+        ctx.fillRect(0, 0, W, H);
+
+        // Header
+        ctx.fillStyle = '#FAFAFA';
+        ctx.font = 'bold 32px -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif';
+        ctx.fillText('UK Silver Hallmark', PAD, 56);
+        ctx.fillStyle = '#8E8E99';
+        ctx.font = '15px -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif';
+        ctx.fillText('Identification result · flipperhelper.app', PAD, 86);
+        // separator
+        ctx.fillStyle = 'rgba(255,255,255,0.08)';
+        ctx.fillRect(PAD, HEADER_H - 14, W - PAD * 2, 1);
+
+        // Verdict block
+        const vY = HEADER_H;
+        ctx.fillStyle = 'rgba(0, 122, 255, 0.18)';
+        roundRect(ctx, PAD, vY, W - PAD * 2, verdictH, 10, true);
+        ctx.strokeStyle = '#007AFF';
+        ctx.lineWidth = 1;
+        roundRect(ctx, PAD, vY, W - PAD * 2, verdictH, 10, false, true);
+        ctx.fillStyle = '#FAFAFA';
+        ctx.font = 'bold 22px -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif';
+        verdictLines.forEach((line, i) => {
+            ctx.fillText(line, PAD + 14, vY + 28 + 22 + i * 30);
+        });
+
+        // Rows
+        let y = HEADER_H + verdictH + 16;
+        for (let i = 0; i < items.length; i++) {
+            const it = items[i];
+            const img = loadedImages[i];
+            const rowH = rowHeights[i];
+            // row card
+            ctx.fillStyle = '#1C1C20';
+            roundRect(ctx, PAD, y, W - PAD * 2, rowH, 8, true);
+            ctx.strokeStyle = 'rgba(255,255,255,0.13)';
+            ctx.lineWidth = 1;
+            roundRect(ctx, PAD, y, W - PAD * 2, rowH, 8, false, true);
+            // chip
+            const chipX = PAD + ROW_INNER_PAD;
+            const chipY = y + (rowH - CHIP) / 2;
+            ctx.fillStyle = '#f4ead6';
+            roundRect(ctx, chipX, chipY, CHIP, CHIP, 6, true);
+            if (img) {
+                // fit image inside chip with padding
+                const fitW = CHIP - 8;
+                const fitH = CHIP - 8;
+                const ratio = Math.min(fitW / img.width, fitH / img.height);
+                const dW = img.width * ratio;
+                const dH = img.height * ratio;
+                ctx.drawImage(img, chipX + (CHIP - dW) / 2, chipY + (CHIP - dH) / 2, dW, dH);
+            } else if (it.glyph) {
+                // Fallback text glyph
+                ctx.fillStyle = '#6a4a1a';
+                ctx.font = 'bold 14px -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText(String(it.glyph).slice(0, 6), chipX + CHIP / 2, chipY + CHIP / 2 + 5);
+                ctx.textAlign = 'left';
+            }
+            // text
+            const tx = chipX + CHIP + 18;
+            const tw = W - PAD - ROW_INNER_PAD - tx;
+            let ty = y + ROW_INNER_PAD;
+            ctx.fillStyle = '#8E8E99';
+            ctx.font = '12px -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif';
+            ctx.fillText(String(it.label).toUpperCase(), tx, ty + 12);
+            ty += 12 + 8;
+            ctx.fillStyle = '#FAFAFA';
+            ctx.font = 'bold 18px -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif';
+            ctx.fillText(it.title, tx, ty + 16);
+            ty += 22;
+            ctx.fillStyle = '#C4C4CC';
+            ctx.font = '14px -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif';
+            const subLines = wrapText(ctx, it.sub || '', tw);
+            subLines.forEach((line, j) => ctx.fillText(line, tx, ty + 16 + j * 18));
+
+            y += rowH + ROW_GAP;
+        }
+
+        // Footer
+        ctx.fillStyle = 'rgba(255,255,255,0.08)';
+        ctx.fillRect(PAD, H - FOOTER_H + 6, W - PAD * 2, 1);
+        ctx.fillStyle = '#FAFAFA';
+        ctx.font = 'bold 15px -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif';
+        ctx.fillText('Generated with flipperhelper.app', PAD, H - FOOTER_H + 36);
+        ctx.fillStyle = '#8E8E99';
+        ctx.font = '13px -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif';
+        ctx.fillText('Free UK silver identifier · share with credit', PAD, H - FOOTER_H + 56);
+
+        return canvas.toDataURL('image/png');
+    }
+
+    function roundRect(ctx, x, y, w, h, r, fill, stroke) {
+        ctx.beginPath();
+        ctx.moveTo(x + r, y);
+        ctx.arcTo(x + w, y, x + w, y + h, r);
+        ctx.arcTo(x + w, y + h, x, y + h, r);
+        ctx.arcTo(x, y + h, x, y, r);
+        ctx.arcTo(x, y, x + w, y, r);
+        ctx.closePath();
+        if (fill) ctx.fill();
+        if (stroke) ctx.stroke();
+    }
+
+    function flashButton(btn, text) {
+        const original = btn.dataset.originalLabel || btn.textContent;
+        btn.dataset.originalLabel = original;
+        btn.textContent = text;
+        btn.classList.add('is-success');
+        setTimeout(() => {
+            btn.textContent = original;
+            btn.classList.remove('is-success');
+        }, 1600);
+    }
+
+    // Capture the original labels at init so flashButton has a stable reference
+    // even when the handler temporarily changed textContent (e.g. "Building image…").
+    if ($copyBtn) $copyBtn.dataset.originalLabel = $copyBtn.textContent;
+    if ($imgBtn)  $imgBtn.dataset.originalLabel  = $imgBtn.textContent;
+
+    if ($copyBtn) {
+        $copyBtn.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(buildResultText());
+                flashButton($copyBtn, 'Copied!');
+            } catch (e) {
+                $copyBtn.textContent = 'Copy failed';
+                console.warn(e);
+                setTimeout(() => $copyBtn.textContent = $copyBtn.dataset.originalLabel, 1600);
+            }
+        });
+    }
+    if ($imgBtn) {
+        $imgBtn.addEventListener('click', async () => {
+            const originalLabel = $imgBtn.dataset.originalLabel;
+            $imgBtn.disabled = true;
+            $imgBtn.textContent = 'Building image…';
+            try {
+                const dataUrl = await buildResultImage();
+                const a = document.createElement('a');
+                a.href = dataUrl;
+                a.download = 'flipperhelper-uk-silver-hallmark.png';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                $imgBtn.textContent = originalLabel; // restore before flash so flash can re-read it
+                flashButton($imgBtn, 'Image saved');
+            } catch (e) {
+                console.warn(e);
+                $imgBtn.textContent = 'Image failed';
+                setTimeout(() => $imgBtn.textContent = originalLabel, 1800);
+            } finally {
+                $imgBtn.disabled = false;
+            }
+        });
+    }
+
+    function setActionsVisible(visible) {
+        if (!$actions) return;
+        $actions.hidden = !visible;
+    }
 
     function render() {
         $details.innerHTML = '';
         $caveats.innerHTML = '';
+        setActionsVisible(false);
 
         if (state.solid === 'plated') {
             $verdict.innerHTML = '<strong>This is silver plate, not solid silver.</strong> Silver-plated items don’t carry UK assay marks. Look for EPNS, A1, Sheffield Plate, or "silver plate" wording.';
@@ -437,6 +840,7 @@
             $verdict.textContent = state.standard ? 'Now pick the town mark (Step 3).' : 'Now pick the standard mark (Step 2).';
             return;
         }
+        setActionsVisible(true);
 
         const std = STANDARD[state.standard];
         const town = TOWN[state.town];
@@ -450,8 +854,7 @@
         let range = intersect({ from: std.from, to: null }, { from: town.from, to: town.to });
         if (!range) {
             $verdict.innerHTML = '<strong>These marks don’t fit together.</strong> The standard mark and town mark you selected weren’t in use at the same time. Double-check the marks.';
-            dl('Standard mark', std.name + ' — ' + std.purity + ', in use from ' + std.from + '.');
-            dl('Town mark', town.name + ' — ' + town.office + ', in use ' + town.from + '–' + fmt(town.to) + '.');
+            pickedItems().forEach(pushDetailRow);
             return;
         }
         if (duty) range = intersect(range, { from: duty.from, to: duty.to });
@@ -460,6 +863,7 @@
         if (letter) range = intersect(range, { from: letter.year, to: letter.year });
         if (!range) {
             $verdict.innerHTML = '<strong>Combination doesn’t add up.</strong> The marks you picked aren’t consistent. Double-check the cycle and letter against your piece.';
+            pickedItems().forEach(pushDetailRow);
             return;
         }
 
@@ -468,12 +872,7 @@
         const dateClause = (range.from === range.to) ? fromTxt : (range.to == null ? 'after ' + fromTxt : fromTxt + '–' + toTxt);
         $verdict.innerHTML = 'This piece appears to be <strong>' + std.purity + '</strong>, assayed at <strong>' + town.office + '</strong>, ' + (range.from === range.to ? 'in <strong>' + dateClause + '</strong>.' : 'between <strong>' + dateClause + '</strong>.');
 
-        dl('Standard mark', std.name + ' — ' + std.purity + ', ' + std.region + '. In use from ' + std.from + '.' + (std.note ? ' ' + std.note : ''));
-        dl('Town mark', town.name + ' — ' + town.office + '. In use ' + town.from + '–' + fmt(town.to) + '.' + (town.note ? ' ' + town.note : ''));
-        if (duty) dl('Duty mark', duty.monarch === 'unidentified' ? 'Sovereign’s head present (monarch unclear). Duty marks were applied 1784–1890.' : duty.monarch + ' profile, in use ' + duty.from + '–' + duty.to + '. Indicates duty was paid.');
-        if (com)  dl('Commemorative', com.label + ' — applied ' + com.from + (com.from === com.to ? '' : '–' + com.to) + '. Voluntary mark.');
-        if (cycle) dl('Date letter cycle', cycle.from + (cycle.to == null ? '–present' : '–' + cycle.to) + ' (' + cycleStyleHint(cycle) + '). Each cycle has its own font and shield shape.');
-        if (letter) dl('Date letter', '“' + letter.letter + '” (' + (letter.case === 'U' ? 'uppercase' : 'lowercase') + ', ' + letterStyleHint(letter.letter, letter.year, letter.case) + ') = ' + letter.year + '.');
+        pickedItems().forEach(pushDetailRow);
 
         const caveats = [];
         if (range.to == null || (range.to - range.from) >= 10) {
@@ -487,7 +886,6 @@
             caveats.push('If the piece dates between 1784 and 1890, it should also carry a sovereign’s head duty mark. Absence may mean it’s not from the UK or the mark has worn off.');
         }
         caveats.push('This tool reads marks; it does not <strong>authenticate</strong> them. For high-value pieces, have an Assay Office or auctioneer examine the piece.');
-        caveats.push('Date letter images courtesy of <a href="https://www.silvermakersmarks.co.uk/" target="_blank" rel="noopener">silvermakersmarks.co.uk</a>.');
         $caveats.innerHTML = caveats.map(c => '<p>' + c + '</p>').join('');
     }
 

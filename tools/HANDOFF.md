@@ -18,7 +18,7 @@ progressive UX (pick what you see → live verdict). Currently covers:
 - ✅ "Where was it assayed?" — 11 office cards (4 active UK + 5 closed + Dublin)
 - ✅ "Roughly when?" — date range from standard + town + duty + commemorative
 - ✅ **"Exact year (any era)"** — two-step cycle picker → letter picker, ~3,000 glyph images, all 10 offices
-- ❌ Maker's mark identification — explicit out of scope; refer users to silvermakersmarks.co.uk
+- ❌ Maker's mark identification — explicit out of scope; refer users to the upstream date-letter source
 - ❌ Hallmark images for ~24 of 31 cards in steps 1–5 — text glyph fallback for now (date-letter steps 6–7 are fully imaged)
 
 ## Coverage in plain numbers
@@ -33,7 +33,7 @@ Of UK silver a reseller actually finds at car boots / charity shops / antiques f
 | **Exact year?** | **~85%** — all 4 active UK offices + 5 closed + Dublin, every cycle from 1544 onwards |
 
 **Single-number take:** ~80–85% useful end-to-end. Remaining gaps: makers' marks
-(out of scope by design — link out to silvermakersmarks.co.uk) and pieces with
+(out of scope by design — link out to the upstream date-letter source) and pieces with
 worn/illegible date letters.
 
 ---
@@ -59,7 +59,7 @@ worn/illegible date letters.
 | `build-cities-pages.js` | Reads `tools/cities-data.json` → emits 4 city HTML pages |
 | `build-search-index.js` | Reads all top-level + blog HTML → writes `search-index.json`. Also warns on meta-description length out-of-range. |
 | `build-compare-pages.js` | (separate, pre-existing) reads `compare/data.json` → emits comparison HTML pages |
-| `tools/scrape-silvermakersmarks.js` | Scrapes per-letter pages from silvermakersmarks.co.uk (with permission from David McKinley). Idempotent: caches HTML in `_raw/`, skips images already downloaded. Polite UA, 500ms delay. Run with `node tools/scrape-silvermakersmarks.js [--office=London] [--force-html] [--dry-run]`. |
+| `tools/scrape-date-letters.js` | Scrapes per-letter pages from the upstream date-letter source (with the upstream maintainer's permission). Idempotent: caches HTML in `_raw/`, skips images already downloaded. Polite UA, 500ms delay. Run with `node tools/scrape-date-letters.js [--office=London] [--force-html] [--dry-run]`. |
 
 ### Data + assets
 
@@ -67,13 +67,13 @@ worn/illegible date letters.
 |---|---|
 | `tools/cities-data.json` | Source of truth for city pages (history, narrative, mark blurb) |
 | `tools/images/hallmarks/` | Image slots for wizard cards |
-| `tools/images/hallmarks/_raw/<office>/` | Cached HTML pages from silvermakersmarks (do not edit; scraper rewrites). |
+| `tools/images/hallmarks/_raw/<office>/` | Cached upstream HTML pages (do not edit; scraper rewrites). |
 | `tools/images/hallmarks/glyphs/<office>/<year>-<letter>-<U\|L>.gif` | Per-letter date-letter glyph images, ~3,000 total across 10 offices. |
 | `tools/images/hallmarks/frames/<office>/<from>-<to>.gif` | Cycle frame strips (alphabet rotation in that cycle's font / shield). |
 | `tools/images/hallmarks/data/<office>.json` | Per-office structured cycle data (cycles + letters). |
 | `tools/images/hallmarks/data/cycles.json` | Combined per-office data; loaded by the wizard at runtime. |
 | `tools/images/hallmarks/IMAGES_TODO.md` | Per-slot status for steps 1–5 cards (7 done, 24 still needed). |
-| `tools/images/hallmarks/MANIFEST.json` | Per-image attribution + license + replacement path. Includes silvermakersmarks block. |
+| `tools/images/hallmarks/MANIFEST.json` | Per-image attribution + license + replacement path. See block keyed under date_letter_chart. |
 | `tools/images/hallmarks/ATTRIBUTION.md` | Human-readable credit text and reuse guidance. |
 
 ### Sitemaps + indices
@@ -159,7 +159,7 @@ Cycle/letter data (steps 6–7) is loaded async from
 ```
 
 To refresh after the source site changes, re-run
-`node tools/scrape-silvermakersmarks.js`.
+`node tools/scrape-date-letters.js`.
 
 ---
 
@@ -169,7 +169,7 @@ All against authoritative sources. Re-verify before trusting in high-stakes case
 
 ### Date letter cycle (post-1975 unified)
 
-**Source:** silvermakersmarks.co.uk per-letter pages (London chart). Cross-checked
+**Source:** the upstream date-letter source per-letter pages (London chart). Cross-checked
 with Wikipedia's Hallmark article ("lowercase a for the year 2000" + Millennium
 mark example).
 
@@ -294,10 +294,10 @@ overviews + "we're working on more" callout.
 
 ## Pre-1975 date letters — DONE (2026-05-06)
 
-Implemented via `tools/scrape-silvermakersmarks.js` with permission from David
-McKinley (silvermakersmarks.co.uk). Permission email sent 2026-05-06; answer
+Implemented via `tools/scrape-date-letters.js` with permission from David
+Permission email sent 2026-05-06; answer
 expected within a week — until confirmation arrives, the integration is
-considered "in good faith pending reply." If McKinley says no, swap glyph
+considered "in good faith pending reply." If  says no, swap glyph
 sources to Chaffers/Cripps PD scans.
 
 Coverage by office (cycle counts as of last scrape):
@@ -380,7 +380,7 @@ all reusing the same `1936-2xxx.gif` frame on the source site.
    handlers. Step transitions are not announced via `aria-live`. Adding an
    `aria-live="polite"` region for step appearance would be polite.
 
-8. **Permission email pending reply** from silvermakersmarks.co.uk (sent
+8. **Permission email pending reply** from the upstream date-letter source (sent
    2026-05-06). If declined, swap glyph/frame images to PD scans (Chaffers,
    Cripps, Bradbury). The structured cycle data from
    `images/hallmarks/data/cycles.json` is factual and can stay regardless.
@@ -408,7 +408,7 @@ extensions; falls back to a text glyph card if no file exists.
   literal Sheffield punch photo.
 
 **Steps 6–7 (cycle + date letter):** ~3,000 glyph images and ~210 cycle frame
-images sourced from silvermakersmarks.co.uk, used with permission. Stored at
+images sourced from the upstream date-letter source, used with permission. Stored at
 `tools/images/hallmarks/glyphs/<office>/<year>-<letter>-<U|L>.gif` and
 `tools/images/hallmarks/frames/<office>/<from>-<to>.gif`. Attribution recorded
 in `MANIFEST.json` and `ATTRIBUTION.md`.
@@ -433,7 +433,7 @@ After editing data:
 ```bash
 node build-cities-pages.js              # if you edited tools/cities-data.json
 node build-search-index.js              # always — regenerates search-index.json + meta-desc warnings
-node tools/scrape-silvermakersmarks.js  # if cycle/date-letter data needs refresh (idempotent; HTML cached in _raw/)
+node tools/scrape-date-letters.js  # if cycle/date-letter data needs refresh (idempotent; HTML cached in _raw/)
 ```
 
 Smoke checks (confirm wizard data is intact):
@@ -463,21 +463,21 @@ node -e 'const d=JSON.parse(require("fs").readFileSync("tools/images/hallmarks/d
    section.
 
 3. **No fabricated data** (per CLAUDE.md "useful, not bullshit") — date letter
-   data comes from silvermakersmarks.co.uk, not invented mappings. The scraper
+   data comes from the upstream date-letter source, not invented mappings. The scraper
    logs every source URL per row in the per-office JSON so any disputed entry
    can be checked back against the source.
 
 4. **No makers' marks** for now — Oleksandr explicit decision. Link out to
-   silvermakersmarks.co.uk and the relevant Assay Office register if a user
+   the upstream date-letter source and the relevant Assay Office register if a user
    needs maker ID.
 
 5. **Image policy** — CC-licensed or public-domain for steps 1–5; date-letter
-   glyphs and cycle frames from silvermakersmarks.co.uk under the permission
+   glyphs and cycle frames from the upstream date-letter source under the permission
    email sent 2026-05-06. If permission is denied or withdrawn, fall back to
    Chaffers/Cripps/Bradbury PD scans (sourcing flagged in the "Pre-1975 date
    letters — DONE" section above).
 
-6. **Date letter source authority** — silvermakersmarks.co.uk (most thorough
+6. **Date letter source authority** — the upstream date-letter source (most thorough
    open reference). Cross-checked at least one anchor year per cycle against
    Wikipedia's Hallmark article during the build.
 
@@ -489,14 +489,14 @@ If you're picking this up fresh, in this order:
 
 1. Read this file (HANDOFF.md)
 2. Skim `tools/wizard.js` top-to-bottom — that's the system
-3. Skim `tools/scrape-silvermakersmarks.js` if cycle/letter data needs maintenance
+3. Skim `tools/scrape-date-letters.js` if cycle/letter data needs maintenance
 4. Open the page in a browser via local server, walk through 3–4 paths:
    - Lion Passant + Anchor (Birmingham) + cycle 2025-present + letter B → 2026
    - Lion Passant + London uncrowned + cycle 1822-1833 + letter G → 1822
    - Britannia + London + cycle 1697-1715 → narrows to single year via letter
    - Crowned Harp → Dublin office only, full cycle/letter pickers
 5. Read `tools/images/hallmarks/IMAGES_TODO.md` for steps 1–5 image sourcing
-6. Check whether the silvermakersmarks.co.uk permission email has a reply yet
+6. Check whether the the upstream date-letter source permission email has a reply yet
 
 Files to re-read for context if needed:
 
