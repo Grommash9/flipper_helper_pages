@@ -1,0 +1,34 @@
+# OS / Finder
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local tooling state
+.claude/
+.playwright-mcp/
+*.log
+*.tmp
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Node (preventive — repo currently has no package.json)
+node_modules/
+
+# Working folders kept locally only
+new_images/
+keywords/
+
+# Scraper HTML cache — regeneratable via `node tools/scrape-date-letters.js`,
+# so don't commit
+tools/images/hallmarks/_raw/
+
+# Probe / scratch dirs left behind by experiments
+tools/images/hallmarks/_probe/

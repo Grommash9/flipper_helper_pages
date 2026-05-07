@@ -1,0 +1,66 @@
+{
+  "_doc": "Single source of truth for /tools/silver-hallmarks-{city}.html pages. Update facts here, then run `node build-cities-pages.js` from repo root. Each `narrative` field is hand-written from cited public-domain sources (Wikipedia, Goldsmiths' Company, the Assay Offices' own sites) — verify before changing.",
+  "_last_verified": "2026-05-06",
+  "cities": [
+    {
+      "slug": "london",
+      "name": "London",
+      "country": "England",
+      "mark_name": "Leopard's Head",
+      "mark_blurb": "A leopard's head, originally crowned (1478–1821), uncrowned since 1822.",
+      "active_from": 1478,
+      "active_to": null,
+      "office_url": "https://www.theassayofficelondon.co.uk/",
+      "office_url_label": "The Assay Office London",
+      "date_letter_chart_url": "https://www.theassayofficelondon.co.uk/about/history/date-letters/",
+      "narrative_history": "London is the oldest continuously operating Assay Office in the UK. The leopard's head town mark predates the formal date-letter system by nearly two centuries, first appearing on silver in 1300. The Assay Office at Goldsmiths' Hall was established in 1478, the same year the date-letter cycle began. The leopard's head was crowned from 1478 to 1821 and uncrowned from 1822 onwards — a single visual cue that splits London silver into two large eras.",
+      "narrative_marks": "London Lion Passant + Leopard's Head is the most common combination on UK sterling silver. From 1697 to 1720 the Lion Passant was replaced by the Britannia figure as part of the compulsory higher-purity standard; pieces from those years carry the Britannia mark and a Lion's Head Erased instead of the leopard's head. Sterling and the leopard's head returned in 1720, with Britannia silver remaining as an optional higher standard.",
+      "narrative_dating": "Date-letter cycles have run continuously in London since 1478, with each cycle lasting roughly 20–25 years and the font, case (uppercase or lowercase), and shield shape changing each cycle. The combination of letter, font, case, and shield together identifies the year — there is no shortcut around using the official chart. From 1975 all four UK Assay Offices adopted a shared sequence; before then London's cycle was independent."
+    },
+    {
+      "slug": "birmingham",
+      "name": "Birmingham",
+      "country": "England",
+      "mark_name": "Anchor",
+      "mark_blurb": "An upright anchor, sometimes with a coiled rope. Unchanged since 1773.",
+      "active_from": 1773,
+      "active_to": null,
+      "office_url": "https://www.theassayoffice.co.uk/",
+      "office_url_label": "Birmingham Assay Office",
+      "date_letter_chart_url": "https://www.theassayoffice.co.uk/services/identification/silver-hallmarks/",
+      "narrative_history": "Birmingham Assay Office was established by the Hallmarking Act of 1773, alongside Sheffield. Local manufacturer Matthew Boulton lobbied Parliament for the office, frustrated at having to send pieces to Chester or London for assay. Legend has it that the anchor town mark was chosen because Boulton and the Sheffield silversmiths met to negotiate at the Crown and Anchor pub on the Strand — Birmingham took the anchor, Sheffield took the crown. Birmingham is now the largest UK Assay Office by volume.",
+      "narrative_marks": "Birmingham silver carries the Lion Passant for sterling 925 and the anchor town mark. From 1973 the anchor became the office's only mark, accompanying the Lion Passant. Birmingham assays the most reseller-grade Edwardian and Victorian silver of any UK office, partly because its founding date aligns with the Industrial Revolution and the rise of mass-produced silver tableware.",
+      "narrative_dating": "Birmingham's date-letter cycle runs from 1773. Cycles are typically 25 letters with the font and shield shape changing each cycle. From 1975 Birmingham uses the same date-letter sequence as London, Sheffield and Edinburgh. The Birmingham Assay Office publishes a complete chart on its identification pages."
+    },
+    {
+      "slug": "sheffield",
+      "name": "Sheffield",
+      "country": "England",
+      "mark_name": "Yorkshire Rose (1975+) or Crown (1773–1974)",
+      "mark_blurb": "A crown until 1974; a Yorkshire Rose from 1975 onwards.",
+      "active_from": 1773,
+      "active_to": null,
+      "office_url": "https://www.assayoffice.co.uk/",
+      "office_url_label": "The Sheffield Assay Office",
+      "date_letter_chart_url": "https://www.assayoffice.co.uk/about/history-of-the-sheffield-assay-office/",
+      "narrative_history": "Sheffield was established in 1773 alongside Birmingham. The crown town mark was used until 1974, after which the office switched to the Yorkshire Rose. Sheffield is closely associated with the cutlery trade and with Sheffield Plate — the fused-silver-on-copper technique invented in the city in the 1740s and used widely before electroplating took over in the 1840s.",
+      "narrative_marks": "Sheffield silver from 1773 to 1974 carries the crown town mark together with the Lion Passant for sterling 925. From 1975 the mark changed to the Yorkshire Rose. Both marks appear on pieces in resale circulation today: anything labelled with a crown is pre-1975, anything with a rose is post-1975. The mark change is one of the most precise dating shortcuts in UK silver — if you see Sheffield + Yorkshire Rose, the piece is from 1975 onwards.",
+      "narrative_dating": "Sheffield's pre-1975 cycle was independent of London and Birmingham. From 1975 onwards, all four UK Assay Offices share the same date-letter sequence. Sheffield publishes its full historical chart on the Assay Office website."
+    },
+    {
+      "slug": "edinburgh",
+      "name": "Edinburgh",
+      "country": "Scotland",
+      "mark_name": "Three-towered castle",
+      "mark_blurb": "A three-towered castle, representing Edinburgh Castle. In use since at least 1457.",
+      "active_from": 1457,
+      "active_to": null,
+      "office_url": "https://www.edinburghassayoffice.co.uk/",
+      "office_url_label": "Edinburgh Assay Office",
+      "date_letter_chart_url": "https://www.edinburghassayoffice.co.uk/hallmarking/date-letters/",
+      "narrative_history": "Edinburgh's Assay Office is the older of the two historically active Scottish offices (the other, Glasgow, closed in 1964). The three-towered castle town mark predates London's continuous date-letter system; record-keeping is patchy before 1681 but the mark itself is documented from 1457. The Incorporation of Goldsmiths of the City of Edinburgh remains the governing body.",
+      "narrative_marks": "Scottish silver does not use the Lion Passant. Historically Edinburgh's standard mark was the Thistle (1759–1974), then the Lion Rampant from 1975 onwards, alongside the three-towered castle town mark. Pre-1759 pieces use a deacon's mark — this is a cycle-specific mark that varies by year and requires expert reference for accurate dating. From 1975 the Lion Rampant signals sterling silver assayed in Scotland.",
+      "narrative_dating": "Edinburgh ran an independent date-letter cycle until 1975, when it joined the unified UK sequence. Pre-1759 dating relies on the deacon's mark rather than a date letter. The Edinburgh Assay Office publishes its chart on its hallmarking pages."
+    }
+  ]
+}

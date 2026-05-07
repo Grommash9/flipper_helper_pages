@@ -1,0 +1,2266 @@
+{
+  "office": "Edinburgh",
+  "cycles": [
+    {
+      "key": "1681-1681",
+      "from": 1681,
+      "to": 1681,
+      "frame": "frames/edinburgh/1681-1681.gif",
+      "letters": [
+        {
+          "year": 1681,
+          "letter": "A",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1681-A-L.gif"
+        }
+      ]
+    },
+    {
+      "key": "1682-1695",
+      "from": 1682,
+      "to": 1695,
+      "frame": "frames/edinburgh/1682-1695.gif",
+      "letters": [
+        {
+          "year": 1682,
+          "letter": "B",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1682-B-L.gif"
+        },
+        {
+          "year": 1683,
+          "letter": "C",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1683-C-L.gif"
+        },
+        {
+          "year": 1684,
+          "letter": "D",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1684-D-L.gif"
+        },
+        {
+          "year": 1685,
+          "letter": "E",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1685-E-L.gif"
+        },
+        {
+          "year": 1686,
+          "letter": "F",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1686-F-L.gif"
+        },
+        {
+          "year": 1687,
+          "letter": "G",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1687-G-L.gif"
+        },
+        {
+          "year": 1688,
+          "letter": "H",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1688-H-L.gif"
+        },
+        {
+          "year": 1689,
+          "letter": "I",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1689-I-L.gif"
+        },
+        {
+          "year": 1690,
+          "letter": "K",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1690-K-L.gif"
+        },
+        {
+          "year": 1691,
+          "letter": "L",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1691-L-L.gif"
+        },
+        {
+          "year": 1692,
+          "letter": "M",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1692-M-L.gif"
+        },
+        {
+          "year": 1693,
+          "letter": "N",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1693-N-L.gif"
+        },
+        {
+          "year": 1694,
+          "letter": "O",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1694-O-L.gif"
+        },
+        {
+          "year": 1695,
+          "letter": "P",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1695-P-L.gif"
+        }
+      ]
+    },
+    {
+      "key": "1696-1707",
+      "from": 1696,
+      "to": 1707,
+      "frame": "frames/edinburgh/1696-1707.gif",
+      "letters": [
+        {
+          "year": 1696,
+          "letter": "Q",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1696-Q-L.gif"
+        },
+        {
+          "year": 1697,
+          "letter": "R",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1697-R-L.gif"
+        },
+        {
+          "year": 1698,
+          "letter": "S",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1698-S-L.gif"
+        },
+        {
+          "year": 1699,
+          "letter": "T",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1699-T-L.gif"
+        },
+        {
+          "year": 1700,
+          "letter": "V",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1700-V-L.gif"
+        },
+        {
+          "year": 1701,
+          "letter": "W",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1701-W-L.gif"
+        },
+        {
+          "year": 1702,
+          "letter": "X",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1702-X-L.gif"
+        },
+        {
+          "year": 1703,
+          "letter": "Y",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1703-Y-L.gif"
+        },
+        {
+          "year": 1704,
+          "letter": "Z",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1704-Z-L.gif"
+        },
+        {
+          "year": 1705,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1705-A-U.gif"
+        },
+        {
+          "year": 1706,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1706-B-U.gif"
+        },
+        {
+          "year": 1707,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1707-C-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1708-1729",
+      "from": 1708,
+      "to": 1729,
+      "frame": "frames/edinburgh/1708-1729.gif",
+      "letters": [
+        {
+          "year": 1708,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1708-D-U.gif"
+        },
+        {
+          "year": 1709,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1709-E-U.gif"
+        },
+        {
+          "year": 1710,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1710-F-U.gif"
+        },
+        {
+          "year": 1711,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1711-G-U.gif"
+        },
+        {
+          "year": 1712,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1712-H-U.gif"
+        },
+        {
+          "year": 1713,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1713-I-U.gif"
+        },
+        {
+          "year": 1714,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1714-K-U.gif"
+        },
+        {
+          "year": 1715,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1715-L-U.gif"
+        },
+        {
+          "year": 1716,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1716-M-U.gif"
+        },
+        {
+          "year": 1717,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1717-N-U.gif"
+        },
+        {
+          "year": 1720,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1720-Q-U.gif"
+        },
+        {
+          "year": 1721,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1721-R-U.gif"
+        },
+        {
+          "year": 1722,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1722-S-U.gif"
+        },
+        {
+          "year": 1723,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1723-T-U.gif"
+        },
+        {
+          "year": 1724,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1724-U-U.gif"
+        },
+        {
+          "year": 1726,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1726-W-U.gif"
+        },
+        {
+          "year": 1727,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1727-X-U.gif"
+        },
+        {
+          "year": 1728,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1728-Y-U.gif"
+        },
+        {
+          "year": 1729,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1729-Z-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1718-1719",
+      "from": 1718,
+      "to": 1719,
+      "frame": "frames/edinburgh/1718-1719.gif",
+      "letters": [
+        {
+          "year": 1718,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1718-O-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1730-1739",
+      "from": 1730,
+      "to": 1739,
+      "frame": "frames/edinburgh/1730-1739.gif",
+      "letters": [
+        {
+          "year": 1730,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1730-A-U.gif"
+        },
+        {
+          "year": 1731,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1731-B-U.gif"
+        },
+        {
+          "year": 1732,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1732-C-U.gif"
+        },
+        {
+          "year": 1733,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1733-D-U.gif"
+        },
+        {
+          "year": 1734,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1734-E-U.gif"
+        },
+        {
+          "year": 1735,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1735-F-U.gif"
+        },
+        {
+          "year": 1736,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1736-G-U.gif"
+        },
+        {
+          "year": 1737,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1737-H-U.gif"
+        },
+        {
+          "year": 1738,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1738-I-U.gif"
+        },
+        {
+          "year": 1739,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1739-K-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1740-1741",
+      "from": 1740,
+      "to": 1741,
+      "frame": "frames/edinburgh/1740-1741.gif",
+      "letters": [
+        {
+          "year": 1740,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1740-L-U.gif"
+        },
+        {
+          "year": 1741,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1741-M-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1742-1743",
+      "from": 1742,
+      "to": 1743,
+      "frame": "frames/edinburgh/1742-1743.gif",
+      "letters": [
+        {
+          "year": 1742,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1742-N-U.gif"
+        },
+        {
+          "year": 1743,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1743-O-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1744-1758",
+      "from": 1744,
+      "to": 1758,
+      "frame": "frames/edinburgh/1744-1758.gif",
+      "letters": [
+        {
+          "year": 1744,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1744-P-U.gif"
+        },
+        {
+          "year": 1745,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1745-Q-U.gif"
+        },
+        {
+          "year": 1746,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1746-R-U.gif"
+        },
+        {
+          "year": 1747,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1747-S-U.gif"
+        },
+        {
+          "year": 1748,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1748-T-U.gif"
+        },
+        {
+          "year": 1749,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1749-U-U.gif"
+        },
+        {
+          "year": 1750,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1750-V-U.gif"
+        },
+        {
+          "year": 1751,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1751-W-U.gif"
+        },
+        {
+          "year": 1752,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1752-X-U.gif"
+        },
+        {
+          "year": 1753,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1753-Y-U.gif"
+        },
+        {
+          "year": 1754,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1754-Z-U.gif"
+        },
+        {
+          "year": 1755,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1755-A-U.gif"
+        },
+        {
+          "year": 1756,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1756-B-U.gif"
+        },
+        {
+          "year": 1757,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1757-C-U.gif"
+        },
+        {
+          "year": 1758,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1758-D-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1759-1779",
+      "from": 1759,
+      "to": 1779,
+      "frame": "frames/edinburgh/1759-1779.gif",
+      "letters": [
+        {
+          "year": 1759,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1759-E-U.gif"
+        },
+        {
+          "year": 1760,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1760-F-U.gif"
+        },
+        {
+          "year": 1761,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1761-G-U.gif"
+        },
+        {
+          "year": 1762,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1762-H-U.gif"
+        },
+        {
+          "year": 1764,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1764-K-U.gif"
+        },
+        {
+          "year": 1765,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1765-L-U.gif"
+        },
+        {
+          "year": 1766,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1766-M-U.gif"
+        },
+        {
+          "year": 1767,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1767-N-U.gif"
+        },
+        {
+          "year": 1768,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1768-O-U.gif"
+        },
+        {
+          "year": 1769,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1769-P-U.gif"
+        },
+        {
+          "year": 1770,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1770-Q-U.gif"
+        },
+        {
+          "year": 1771,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1771-R-U.gif"
+        },
+        {
+          "year": 1772,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1772-S-U.gif"
+        },
+        {
+          "year": 1773,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1773-T-U.gif"
+        },
+        {
+          "year": 1774,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1774-U-U.gif"
+        },
+        {
+          "year": 1775,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1775-V-U.gif"
+        },
+        {
+          "year": 1776,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1776-X-U.gif"
+        },
+        {
+          "year": 1777,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1777-Y-U.gif"
+        },
+        {
+          "year": 1778,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1778-Z-U.gif"
+        },
+        {
+          "year": 1779,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1779-V-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1780-1783",
+      "from": 1780,
+      "to": 1783,
+      "frame": "frames/edinburgh/1780-1783.gif",
+      "letters": [
+        {
+          "year": 1780,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1780-A-U.gif"
+        },
+        {
+          "year": 1781,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1781-B-U.gif"
+        },
+        {
+          "year": 1782,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1782-C-U.gif"
+        },
+        {
+          "year": 1783,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1783-D-U.gif"
+        },
+        {
+          "year": 1784,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1784-E-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1784-1785",
+      "from": 1784,
+      "to": 1785,
+      "frame": "frames/edinburgh/1784-1785.gif",
+      "letters": [
+        {
+          "year": 1785,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1785-F-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1786-1796",
+      "from": 1786,
+      "to": 1796,
+      "frame": "frames/edinburgh/1786-1796.gif",
+      "letters": [
+        {
+          "year": 1786,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1786-G-U.gif"
+        },
+        {
+          "year": 1788,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1788-H-U.gif"
+        },
+        {
+          "year": 1789,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1789-I-U.gif"
+        },
+        {
+          "year": 1789,
+          "letter": "J",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1789-J-U.gif"
+        },
+        {
+          "year": 1790,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1790-K-U.gif"
+        },
+        {
+          "year": 1791,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1791-L-U.gif"
+        },
+        {
+          "year": 1792,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1792-M-U.gif"
+        },
+        {
+          "year": 1793,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1793-N-U.gif"
+        },
+        {
+          "year": 1794,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1794-O-U.gif"
+        },
+        {
+          "year": 1795,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1795-P-U.gif"
+        },
+        {
+          "year": 1796,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1796-Q-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1797-1801",
+      "from": 1797,
+      "to": 1801,
+      "frame": "frames/edinburgh/1797-1801.gif",
+      "letters": [
+        {
+          "year": 1797,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1797-R-U.gif"
+        },
+        {
+          "year": 1798,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1798-S-U.gif"
+        },
+        {
+          "year": 1799,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1799-T-U.gif"
+        },
+        {
+          "year": 1800,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1800-U-U.gif"
+        },
+        {
+          "year": 1801,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1801-V-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1802-1807",
+      "from": 1802,
+      "to": 1807,
+      "frame": "frames/edinburgh/1802-1807.gif",
+      "letters": [
+        {
+          "year": 1802,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1802-W-U.gif"
+        },
+        {
+          "year": 1803,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1803-X-U.gif"
+        },
+        {
+          "year": 1804,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1804-Y-U.gif"
+        },
+        {
+          "year": 1805,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1805-Z-U.gif"
+        },
+        {
+          "year": 1806,
+          "letter": "A",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1806-A-L.gif"
+        },
+        {
+          "year": 1807,
+          "letter": "B",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1807-B-L.gif"
+        }
+      ]
+    },
+    {
+      "key": "1808-1822",
+      "from": 1808,
+      "to": 1822,
+      "frame": "frames/edinburgh/1808-1822.gif",
+      "letters": [
+        {
+          "year": 1808,
+          "letter": "C",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1808-C-L.gif"
+        },
+        {
+          "year": 1809,
+          "letter": "D",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1809-D-L.gif"
+        },
+        {
+          "year": 1810,
+          "letter": "E",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1810-E-L.gif"
+        },
+        {
+          "year": 1811,
+          "letter": "F",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1811-F-L.gif"
+        },
+        {
+          "year": 1812,
+          "letter": "G",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1812-G-L.gif"
+        },
+        {
+          "year": 1813,
+          "letter": "H",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1813-H-L.gif"
+        },
+        {
+          "year": 1814,
+          "letter": "I",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1814-I-L.gif"
+        },
+        {
+          "year": 1815,
+          "letter": "J",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1815-J-L.gif"
+        },
+        {
+          "year": 1816,
+          "letter": "K",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1816-K-L.gif"
+        },
+        {
+          "year": 1817,
+          "letter": "L",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1817-L-L.gif"
+        },
+        {
+          "year": 1818,
+          "letter": "M",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1818-M-L.gif"
+        },
+        {
+          "year": 1819,
+          "letter": "N",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1819-N-L.gif"
+        },
+        {
+          "year": 1820,
+          "letter": "O",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1820-O-L.gif"
+        },
+        {
+          "year": 1821,
+          "letter": "P",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1821-P-L.gif"
+        },
+        {
+          "year": 1822,
+          "letter": "Q",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1822-Q-L.gif"
+        }
+      ]
+    },
+    {
+      "key": "1823-1831",
+      "from": 1823,
+      "to": 1831,
+      "frame": "frames/edinburgh/1823-1831.gif",
+      "letters": [
+        {
+          "year": 1823,
+          "letter": "R",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1823-R-L.gif"
+        },
+        {
+          "year": 1824,
+          "letter": "S",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1824-S-L.gif"
+        },
+        {
+          "year": 1825,
+          "letter": "T",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1825-T-L.gif"
+        },
+        {
+          "year": 1826,
+          "letter": "U",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1826-U-L.gif"
+        },
+        {
+          "year": 1827,
+          "letter": "V",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1827-V-L.gif"
+        },
+        {
+          "year": 1828,
+          "letter": "W",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1828-W-L.gif"
+        },
+        {
+          "year": 1829,
+          "letter": "X",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1829-X-L.gif"
+        },
+        {
+          "year": 1830,
+          "letter": "Y",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1830-Y-L.gif"
+        },
+        {
+          "year": 1831,
+          "letter": "Z",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1831-Z-L.gif"
+        }
+      ]
+    },
+    {
+      "key": "1832-1841",
+      "from": 1832,
+      "to": 1841,
+      "frame": "frames/edinburgh/1832-1841.gif",
+      "letters": [
+        {
+          "year": 1832,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1832-A-U.gif"
+        },
+        {
+          "year": 1833,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1833-B-U.gif"
+        },
+        {
+          "year": 1834,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1834-C-U.gif"
+        },
+        {
+          "year": 1835,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1835-D-U.gif"
+        },
+        {
+          "year": 1836,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1836-E-U.gif"
+        },
+        {
+          "year": 1837,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1837-F-U.gif"
+        },
+        {
+          "year": 1838,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1838-G-U.gif"
+        },
+        {
+          "year": 1839,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1839-H-U.gif"
+        },
+        {
+          "year": 1840,
+          "letter": "J",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1840-J-U.gif"
+        },
+        {
+          "year": 1841,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1841-K-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1841-1889",
+      "from": 1841,
+      "to": 1889,
+      "frame": "frames/edinburgh/1841-1889.gif",
+      "letters": [
+        {
+          "year": 1842,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1842-L-U.gif"
+        },
+        {
+          "year": 1843,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1843-M-U.gif"
+        },
+        {
+          "year": 1844,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1844-N-U.gif"
+        },
+        {
+          "year": 1845,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1845-O-U.gif"
+        },
+        {
+          "year": 1846,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1846-P-U.gif"
+        },
+        {
+          "year": 1847,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1847-Q-U.gif"
+        },
+        {
+          "year": 1848,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1848-R-U.gif"
+        },
+        {
+          "year": 1849,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1849-S-U.gif"
+        },
+        {
+          "year": 1850,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1850-T-U.gif"
+        },
+        {
+          "year": 1851,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1851-U-U.gif"
+        },
+        {
+          "year": 1852,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1852-V-U.gif"
+        },
+        {
+          "year": 1853,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1853-W-U.gif"
+        },
+        {
+          "year": 1854,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1854-X-U.gif"
+        },
+        {
+          "year": 1855,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1855-Y-U.gif"
+        },
+        {
+          "year": 1856,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1856-Z-U.gif"
+        },
+        {
+          "year": 1857,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1857-A-U.gif"
+        },
+        {
+          "year": 1858,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1858-B-U.gif"
+        },
+        {
+          "year": 1859,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1859-C-U.gif"
+        },
+        {
+          "year": 1860,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1860-D-U.gif"
+        },
+        {
+          "year": 1861,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1861-E-U.gif"
+        },
+        {
+          "year": 1862,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1862-F-U.gif"
+        },
+        {
+          "year": 1863,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1863-G-U.gif"
+        },
+        {
+          "year": 1864,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1864-H-U.gif"
+        },
+        {
+          "year": 1865,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1865-I-U.gif"
+        },
+        {
+          "year": 1866,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1866-K-U.gif"
+        },
+        {
+          "year": 1867,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1867-L-U.gif"
+        },
+        {
+          "year": 1868,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1868-M-U.gif"
+        },
+        {
+          "year": 1869,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1869-N-U.gif"
+        },
+        {
+          "year": 1870,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1870-O-U.gif"
+        },
+        {
+          "year": 1871,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1871-P-U.gif"
+        },
+        {
+          "year": 1872,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1872-Q-U.gif"
+        },
+        {
+          "year": 1873,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1873-R-U.gif"
+        },
+        {
+          "year": 1874,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1874-S-U.gif"
+        },
+        {
+          "year": 1875,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1875-T-U.gif"
+        },
+        {
+          "year": 1876,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1876-U-U.gif"
+        },
+        {
+          "year": 1877,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1877-V-U.gif"
+        },
+        {
+          "year": 1878,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1878-W-U.gif"
+        },
+        {
+          "year": 1879,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1879-X-U.gif"
+        },
+        {
+          "year": 1880,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1880-Y-U.gif"
+        },
+        {
+          "year": 1881,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1881-Z-U.gif"
+        },
+        {
+          "year": 1882,
+          "letter": "A",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1882-A-L.gif"
+        },
+        {
+          "year": 1883,
+          "letter": "B",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1883-B-L.gif"
+        },
+        {
+          "year": 1884,
+          "letter": "C",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1884-C-L.gif"
+        },
+        {
+          "year": 1885,
+          "letter": "D",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1885-D-L.gif"
+        },
+        {
+          "year": 1886,
+          "letter": "E",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1886-E-L.gif"
+        },
+        {
+          "year": 1887,
+          "letter": "F",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1887-F-L.gif"
+        },
+        {
+          "year": 1888,
+          "letter": "G",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1888-G-L.gif"
+        },
+        {
+          "year": 1889,
+          "letter": "H",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1889-H-L.gif"
+        }
+      ]
+    },
+    {
+      "key": "1890-1974",
+      "from": 1890,
+      "to": 1974,
+      "frame": "frames/edinburgh/1890-1974.gif",
+      "letters": [
+        {
+          "year": 1890,
+          "letter": "I",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1890-I-L.gif"
+        },
+        {
+          "year": 1891,
+          "letter": "K",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1891-K-L.gif"
+        },
+        {
+          "year": 1892,
+          "letter": "L",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1892-L-L.gif"
+        },
+        {
+          "year": 1893,
+          "letter": "M",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1893-M-L.gif"
+        },
+        {
+          "year": 1894,
+          "letter": "N",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1894-N-L.gif"
+        },
+        {
+          "year": 1895,
+          "letter": "O",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1895-O-L.gif"
+        },
+        {
+          "year": 1896,
+          "letter": "P",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1896-P-L.gif"
+        },
+        {
+          "year": 1897,
+          "letter": "Q",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1897-Q-L.gif"
+        },
+        {
+          "year": 1898,
+          "letter": "R",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1898-R-L.gif"
+        },
+        {
+          "year": 1899,
+          "letter": "S",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1899-S-L.gif"
+        },
+        {
+          "year": 1900,
+          "letter": "T",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1900-T-L.gif"
+        },
+        {
+          "year": 1901,
+          "letter": "V",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1901-V-L.gif"
+        },
+        {
+          "year": 1902,
+          "letter": "W",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1902-W-L.gif"
+        },
+        {
+          "year": 1903,
+          "letter": "X",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1903-X-L.gif"
+        },
+        {
+          "year": 1904,
+          "letter": "Y",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1904-Y-L.gif"
+        },
+        {
+          "year": 1905,
+          "letter": "Z",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/1905-Z-L.gif"
+        },
+        {
+          "year": 1906,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1906-A-U.gif"
+        },
+        {
+          "year": 1907,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1907-B-U.gif"
+        },
+        {
+          "year": 1908,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1908-C-U.gif"
+        },
+        {
+          "year": 1909,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1909-D-U.gif"
+        },
+        {
+          "year": 1910,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1910-E-U.gif"
+        },
+        {
+          "year": 1911,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1911-F-U.gif"
+        },
+        {
+          "year": 1912,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1912-G-U.gif"
+        },
+        {
+          "year": 1913,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1913-H-U.gif"
+        },
+        {
+          "year": 1914,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1914-I-U.gif"
+        },
+        {
+          "year": 1915,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1915-K-U.gif"
+        },
+        {
+          "year": 1916,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1916-L-U.gif"
+        },
+        {
+          "year": 1917,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1917-M-U.gif"
+        },
+        {
+          "year": 1918,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1918-N-U.gif"
+        },
+        {
+          "year": 1919,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1919-O-U.gif"
+        },
+        {
+          "year": 1920,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1920-P-U.gif"
+        },
+        {
+          "year": 1921,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1921-Q-U.gif"
+        },
+        {
+          "year": 1922,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1922-R-U.gif"
+        },
+        {
+          "year": 1923,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1923-S-U.gif"
+        },
+        {
+          "year": 1924,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1924-T-U.gif"
+        },
+        {
+          "year": 1925,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1925-U-U.gif"
+        },
+        {
+          "year": 1926,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1926-V-U.gif"
+        },
+        {
+          "year": 1927,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1927-W-U.gif"
+        },
+        {
+          "year": 1928,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1928-X-U.gif"
+        },
+        {
+          "year": 1929,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1929-Y-U.gif"
+        },
+        {
+          "year": 1930,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1930-Z-U.gif"
+        },
+        {
+          "year": 1931,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1931-A-U.gif"
+        },
+        {
+          "year": 1932,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1932-B-U.gif"
+        },
+        {
+          "year": 1933,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1933-C-U.gif"
+        },
+        {
+          "year": 1934,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1934-D-U.gif"
+        },
+        {
+          "year": 1935,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1935-E-U.gif"
+        },
+        {
+          "year": 1936,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1936-F-U.gif"
+        },
+        {
+          "year": 1937,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1937-G-U.gif"
+        },
+        {
+          "year": 1938,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1938-H-U.gif"
+        },
+        {
+          "year": 1939,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1939-I-U.gif"
+        },
+        {
+          "year": 1940,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1940-K-U.gif"
+        },
+        {
+          "year": 1941,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1941-L-U.gif"
+        },
+        {
+          "year": 1942,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1942-M-U.gif"
+        },
+        {
+          "year": 1943,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1943-N-U.gif"
+        },
+        {
+          "year": 1944,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1944-O-U.gif"
+        },
+        {
+          "year": 1945,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1945-P-U.gif"
+        },
+        {
+          "year": 1946,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1946-Q-U.gif"
+        },
+        {
+          "year": 1947,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1947-R-U.gif"
+        },
+        {
+          "year": 1948,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1948-S-U.gif"
+        },
+        {
+          "year": 1949,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1949-T-U.gif"
+        },
+        {
+          "year": 1950,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1950-U-U.gif"
+        },
+        {
+          "year": 1951,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1951-V-U.gif"
+        },
+        {
+          "year": 1952,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1952-W-U.gif"
+        },
+        {
+          "year": 1953,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1953-X-U.gif"
+        },
+        {
+          "year": 1954,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1954-Y-U.gif"
+        },
+        {
+          "year": 1955,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1955-Z-U.gif"
+        },
+        {
+          "year": 1956,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1956-A-U.gif"
+        },
+        {
+          "year": 1957,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1957-B-U.gif"
+        },
+        {
+          "year": 1958,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1958-C-U.gif"
+        },
+        {
+          "year": 1959,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1959-D-U.gif"
+        },
+        {
+          "year": 1960,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1960-E-U.gif"
+        },
+        {
+          "year": 1961,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1961-F-U.gif"
+        },
+        {
+          "year": 1962,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1962-G-U.gif"
+        },
+        {
+          "year": 1963,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1963-H-U.gif"
+        },
+        {
+          "year": 1964,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1964-I-U.gif"
+        },
+        {
+          "year": 1965,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1965-K-U.gif"
+        },
+        {
+          "year": 1966,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1966-L-U.gif"
+        },
+        {
+          "year": 1967,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1967-M-U.gif"
+        },
+        {
+          "year": 1968,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1968-N-U.gif"
+        },
+        {
+          "year": 1969,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1969-O-U.gif"
+        },
+        {
+          "year": 1970,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1970-P-U.gif"
+        },
+        {
+          "year": 1971,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1971-Q-U.gif"
+        },
+        {
+          "year": 1972,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1972-R-U.gif"
+        },
+        {
+          "year": 1973,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1973-S-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1975-1999",
+      "from": 1975,
+      "to": 1999,
+      "frame": "frames/edinburgh/1975-2xxx.gif",
+      "letters": [
+        {
+          "year": 1975,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1975-A-U.gif"
+        },
+        {
+          "year": 1976,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1976-B-U.gif"
+        },
+        {
+          "year": 1977,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1977-C-U.gif"
+        },
+        {
+          "year": 1978,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1978-D-U.gif"
+        },
+        {
+          "year": 1979,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1979-E-U.gif"
+        },
+        {
+          "year": 1980,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1980-F-U.gif"
+        },
+        {
+          "year": 1981,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1981-G-U.gif"
+        },
+        {
+          "year": 1982,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1982-H-U.gif"
+        },
+        {
+          "year": 1983,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1983-I-U.gif"
+        },
+        {
+          "year": 1984,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1984-K-U.gif"
+        },
+        {
+          "year": 1985,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1985-L-U.gif"
+        },
+        {
+          "year": 1986,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1986-M-U.gif"
+        },
+        {
+          "year": 1987,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1987-N-U.gif"
+        },
+        {
+          "year": 1988,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1988-O-U.gif"
+        },
+        {
+          "year": 1989,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1989-P-U.gif"
+        },
+        {
+          "year": 1990,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1990-Q-U.gif"
+        },
+        {
+          "year": 1991,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1991-R-U.gif"
+        },
+        {
+          "year": 1992,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1992-S-U.gif"
+        },
+        {
+          "year": 1993,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1993-T-U.gif"
+        },
+        {
+          "year": 1994,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1994-U-U.gif"
+        },
+        {
+          "year": 1995,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1995-V-U.gif"
+        },
+        {
+          "year": 1996,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1996-W-U.gif"
+        },
+        {
+          "year": 1997,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1997-X-U.gif"
+        },
+        {
+          "year": 1998,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1998-Y-U.gif"
+        },
+        {
+          "year": 1999,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/1999-Z-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "2000-2024",
+      "from": 2000,
+      "to": 2024,
+      "frame": "frames/edinburgh/1975-2xxx.gif",
+      "letters": [
+        {
+          "year": 2000,
+          "letter": "A",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2000-A-L.gif"
+        },
+        {
+          "year": 2001,
+          "letter": "B",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2001-B-L.gif"
+        },
+        {
+          "year": 2002,
+          "letter": "C",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2002-C-L.gif"
+        },
+        {
+          "year": 2003,
+          "letter": "D",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2003-D-L.gif"
+        },
+        {
+          "year": 2004,
+          "letter": "E",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2004-E-L.gif"
+        },
+        {
+          "year": 2005,
+          "letter": "F",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2005-F-L.gif"
+        },
+        {
+          "year": 2006,
+          "letter": "G",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2006-G-L.gif"
+        },
+        {
+          "year": 2007,
+          "letter": "H",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2007-H-L.gif"
+        },
+        {
+          "year": 2008,
+          "letter": "J",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2008-J-L.gif"
+        },
+        {
+          "year": 2009,
+          "letter": "K",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2009-K-L.gif"
+        },
+        {
+          "year": 2010,
+          "letter": "L",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2010-L-L.gif"
+        },
+        {
+          "year": 2011,
+          "letter": "M",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2011-M-L.gif"
+        },
+        {
+          "year": 2012,
+          "letter": "N",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2012-N-L.gif"
+        },
+        {
+          "year": 2013,
+          "letter": "O",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2013-O-L.gif"
+        },
+        {
+          "year": 2014,
+          "letter": "P",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2014-P-L.gif"
+        },
+        {
+          "year": 2015,
+          "letter": "Q",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2015-Q-L.gif"
+        },
+        {
+          "year": 2016,
+          "letter": "R",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2016-R-L.gif"
+        },
+        {
+          "year": 2017,
+          "letter": "S",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2017-S-L.gif"
+        },
+        {
+          "year": 2018,
+          "letter": "T",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2018-T-L.gif"
+        },
+        {
+          "year": 2019,
+          "letter": "U",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2019-U-L.gif"
+        },
+        {
+          "year": 2020,
+          "letter": "V",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2020-V-L.gif"
+        },
+        {
+          "year": 2021,
+          "letter": "W",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2021-W-L.gif"
+        },
+        {
+          "year": 2022,
+          "letter": "X",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2022-X-L.gif"
+        },
+        {
+          "year": 2023,
+          "letter": "Y",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2023-Y-L.gif"
+        },
+        {
+          "year": 2024,
+          "letter": "Z",
+          "case": "L",
+          "glyph": "glyphs/edinburgh/2024-Z-L.gif"
+        }
+      ]
+    },
+    {
+      "key": "2025-present",
+      "from": 2025,
+      "to": null,
+      "frame": "frames/edinburgh/1975-2xxx.gif",
+      "letters": [
+        {
+          "year": 2025,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/2025-A-U.gif"
+        },
+        {
+          "year": 2026,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/2026-B-U.gif"
+        },
+        {
+          "year": 2027,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/2027-C-U.gif"
+        },
+        {
+          "year": 2028,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/2028-D-U.gif"
+        },
+        {
+          "year": 2029,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/2029-E-U.gif"
+        },
+        {
+          "year": 2030,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/edinburgh/2030-F-U.gif"
+        }
+      ]
+    }
+  ],
+  "tuplesCount": 346
+}

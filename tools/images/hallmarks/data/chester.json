@@ -1,0 +1,1686 @@
+{
+  "office": "Chester",
+  "cycles": [
+    {
+      "key": "1701-1718",
+      "from": 1701,
+      "to": 1718,
+      "frame": "frames/chester/1701-1718.gif",
+      "letters": [
+        {
+          "year": 1701,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/chester/1701-A-U.gif"
+        },
+        {
+          "year": 1702,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/chester/1702-B-U.gif"
+        },
+        {
+          "year": 1703,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/chester/1703-C-U.gif"
+        },
+        {
+          "year": 1704,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/chester/1704-D-U.gif"
+        },
+        {
+          "year": 1705,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/chester/1705-E-U.gif"
+        },
+        {
+          "year": 1706,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/chester/1706-F-U.gif"
+        },
+        {
+          "year": 1707,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/chester/1707-G-U.gif"
+        },
+        {
+          "year": 1708,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/chester/1708-H-U.gif"
+        },
+        {
+          "year": 1709,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/chester/1709-I-U.gif"
+        },
+        {
+          "year": 1710,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/chester/1710-K-U.gif"
+        },
+        {
+          "year": 1711,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/chester/1711-L-U.gif"
+        },
+        {
+          "year": 1712,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/chester/1712-M-U.gif"
+        },
+        {
+          "year": 1713,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/chester/1713-N-U.gif"
+        },
+        {
+          "year": 1714,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/chester/1714-O-U.gif"
+        },
+        {
+          "year": 1715,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/chester/1715-P-U.gif"
+        },
+        {
+          "year": 1716,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/chester/1716-Q-U.gif"
+        },
+        {
+          "year": 1717,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/chester/1717-R-U.gif"
+        },
+        {
+          "year": 1718,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/chester/1718-S-U.gif"
+        },
+        {
+          "year": 1719,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/chester/1719-T-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1719-1725",
+      "from": 1719,
+      "to": 1725,
+      "frame": "frames/chester/1719-1725.gif",
+      "letters": [
+        {
+          "year": 1720,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/chester/1720-U-U.gif"
+        },
+        {
+          "year": 1721,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/chester/1721-V-U.gif"
+        },
+        {
+          "year": 1722,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/chester/1722-W-U.gif"
+        },
+        {
+          "year": 1723,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/chester/1723-X-U.gif"
+        },
+        {
+          "year": 1724,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/chester/1724-Y-U.gif"
+        },
+        {
+          "year": 1725,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/chester/1725-Z-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1726-1778",
+      "from": 1726,
+      "to": 1778,
+      "frame": "frames/chester/1726-1778.gif",
+      "letters": [
+        {
+          "year": 1726,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/chester/1726-A-U.gif"
+        },
+        {
+          "year": 1727,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/chester/1727-B-U.gif"
+        },
+        {
+          "year": 1728,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/chester/1728-C-U.gif"
+        },
+        {
+          "year": 1729,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/chester/1729-D-U.gif"
+        },
+        {
+          "year": 1730,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/chester/1730-E-U.gif"
+        },
+        {
+          "year": 1731,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/chester/1731-F-U.gif"
+        },
+        {
+          "year": 1732,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/chester/1732-G-U.gif"
+        },
+        {
+          "year": 1733,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/chester/1733-H-U.gif"
+        },
+        {
+          "year": 1734,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/chester/1734-I-U.gif"
+        },
+        {
+          "year": 1735,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/chester/1735-K-U.gif"
+        },
+        {
+          "year": 1736,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/chester/1736-L-U.gif"
+        },
+        {
+          "year": 1737,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/chester/1737-M-U.gif"
+        },
+        {
+          "year": 1738,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/chester/1738-N-U.gif"
+        },
+        {
+          "year": 1739,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/chester/1739-O-U.gif"
+        },
+        {
+          "year": 1740,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/chester/1740-P-U.gif"
+        },
+        {
+          "year": 1741,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/chester/1741-Q-U.gif"
+        },
+        {
+          "year": 1742,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/chester/1742-R-U.gif"
+        },
+        {
+          "year": 1743,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/chester/1743-S-U.gif"
+        },
+        {
+          "year": 1744,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/chester/1744-T-U.gif"
+        },
+        {
+          "year": 1745,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/chester/1745-U-U.gif"
+        },
+        {
+          "year": 1746,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/chester/1746-V-U.gif"
+        },
+        {
+          "year": 1747,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/chester/1747-W-U.gif"
+        },
+        {
+          "year": 1748,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/chester/1748-X-U.gif"
+        },
+        {
+          "year": 1750,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/chester/1750-Z-U.gif"
+        },
+        {
+          "year": 1751,
+          "letter": "A",
+          "case": "L",
+          "glyph": "glyphs/chester/1751-A-L.gif"
+        },
+        {
+          "year": 1752,
+          "letter": "B",
+          "case": "L",
+          "glyph": "glyphs/chester/1752-B-L.gif"
+        },
+        {
+          "year": 1753,
+          "letter": "C",
+          "case": "L",
+          "glyph": "glyphs/chester/1753-C-L.gif"
+        },
+        {
+          "year": 1754,
+          "letter": "D",
+          "case": "L",
+          "glyph": "glyphs/chester/1754-D-L.gif"
+        },
+        {
+          "year": 1755,
+          "letter": "E",
+          "case": "L",
+          "glyph": "glyphs/chester/1755-E-L.gif"
+        },
+        {
+          "year": 1756,
+          "letter": "F",
+          "case": "L",
+          "glyph": "glyphs/chester/1756-F-L.gif"
+        },
+        {
+          "year": 1757,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/chester/1757-G-U.gif"
+        },
+        {
+          "year": 1758,
+          "letter": "H",
+          "case": "L",
+          "glyph": "glyphs/chester/1758-H-L.gif"
+        },
+        {
+          "year": 1759,
+          "letter": "I",
+          "case": "L",
+          "glyph": "glyphs/chester/1759-I-L.gif"
+        },
+        {
+          "year": 1760,
+          "letter": "K",
+          "case": "L",
+          "glyph": "glyphs/chester/1760-K-L.gif"
+        },
+        {
+          "year": 1761,
+          "letter": "L",
+          "case": "L",
+          "glyph": "glyphs/chester/1761-L-L.gif"
+        },
+        {
+          "year": 1762,
+          "letter": "M",
+          "case": "L",
+          "glyph": "glyphs/chester/1762-M-L.gif"
+        },
+        {
+          "year": 1763,
+          "letter": "N",
+          "case": "L",
+          "glyph": "glyphs/chester/1763-N-L.gif"
+        },
+        {
+          "year": 1764,
+          "letter": "O",
+          "case": "L",
+          "glyph": "glyphs/chester/1764-O-L.gif"
+        },
+        {
+          "year": 1765,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/chester/1765-P-U.gif"
+        },
+        {
+          "year": 1766,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/chester/1766-Q-U.gif"
+        },
+        {
+          "year": 1767,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/chester/1767-R-U.gif"
+        },
+        {
+          "year": 1768,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/chester/1768-S-U.gif"
+        },
+        {
+          "year": 1769,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/chester/1769-T-U.gif"
+        },
+        {
+          "year": 1770,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/chester/1770-U-U.gif"
+        },
+        {
+          "year": 1771,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/chester/1771-V-U.gif"
+        },
+        {
+          "year": 1772,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/chester/1772-W-U.gif"
+        },
+        {
+          "year": 1773,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/chester/1773-X-U.gif"
+        },
+        {
+          "year": 1774,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/chester/1774-Y-U.gif"
+        },
+        {
+          "year": 1775,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/chester/1775-Z-U.gif"
+        },
+        {
+          "year": 1776,
+          "letter": "A",
+          "case": "L",
+          "glyph": "glyphs/chester/1776-A-L.gif"
+        },
+        {
+          "year": 1777,
+          "letter": "B",
+          "case": "L",
+          "glyph": "glyphs/chester/1777-B-L.gif"
+        },
+        {
+          "year": 1778,
+          "letter": "C",
+          "case": "L",
+          "glyph": "glyphs/chester/1778-C-L.gif"
+        }
+      ]
+    },
+    {
+      "key": "1779-1783",
+      "from": 1779,
+      "to": 1783,
+      "frame": "frames/chester/1779-1783.gif",
+      "letters": [
+        {
+          "year": 1779,
+          "letter": "D",
+          "case": "L",
+          "glyph": "glyphs/chester/1779-D-L.gif"
+        },
+        {
+          "year": 1780,
+          "letter": "E",
+          "case": "L",
+          "glyph": "glyphs/chester/1780-E-L.gif"
+        },
+        {
+          "year": 1781,
+          "letter": "F",
+          "case": "L",
+          "glyph": "glyphs/chester/1781-F-L.gif"
+        },
+        {
+          "year": 1782,
+          "letter": "G",
+          "case": "L",
+          "glyph": "glyphs/chester/1782-G-L.gif"
+        },
+        {
+          "year": 1783,
+          "letter": "H",
+          "case": "L",
+          "glyph": "glyphs/chester/1783-H-L.gif"
+        }
+      ]
+    },
+    {
+      "key": "1784-1785",
+      "from": 1784,
+      "to": 1785,
+      "frame": "frames/chester/1784-1785.gif",
+      "letters": [
+        {
+          "year": 1784,
+          "letter": "I",
+          "case": "L",
+          "glyph": "glyphs/chester/1784-I-L.gif"
+        },
+        {
+          "year": 1785,
+          "letter": "K",
+          "case": "L",
+          "glyph": "glyphs/chester/1785-K-L.gif"
+        }
+      ]
+    },
+    {
+      "key": "1786-1796",
+      "from": 1786,
+      "to": 1796,
+      "frame": "frames/chester/1786-1796.gif",
+      "letters": [
+        {
+          "year": 1786,
+          "letter": "L",
+          "case": "L",
+          "glyph": "glyphs/chester/1786-L-L.gif"
+        },
+        {
+          "year": 1787,
+          "letter": "M",
+          "case": "L",
+          "glyph": "glyphs/chester/1787-M-L.gif"
+        },
+        {
+          "year": 1788,
+          "letter": "N",
+          "case": "L",
+          "glyph": "glyphs/chester/1788-N-L.gif"
+        },
+        {
+          "year": 1789,
+          "letter": "O",
+          "case": "L",
+          "glyph": "glyphs/chester/1789-O-L.gif"
+        },
+        {
+          "year": 1790,
+          "letter": "P",
+          "case": "L",
+          "glyph": "glyphs/chester/1790-P-L.gif"
+        },
+        {
+          "year": 1791,
+          "letter": "Q",
+          "case": "L",
+          "glyph": "glyphs/chester/1791-Q-L.gif"
+        },
+        {
+          "year": 1792,
+          "letter": "R",
+          "case": "L",
+          "glyph": "glyphs/chester/1792-R-L.gif"
+        },
+        {
+          "year": 1793,
+          "letter": "S",
+          "case": "L",
+          "glyph": "glyphs/chester/1793-S-L.gif"
+        },
+        {
+          "year": 1794,
+          "letter": "T",
+          "case": "L",
+          "glyph": "glyphs/chester/1794-T-L.gif"
+        },
+        {
+          "year": 1795,
+          "letter": "U",
+          "case": "L",
+          "glyph": "glyphs/chester/1795-U-L.gif"
+        },
+        {
+          "year": 1796,
+          "letter": "V",
+          "case": "L",
+          "glyph": "glyphs/chester/1796-V-L.gif"
+        }
+      ]
+    },
+    {
+      "key": "1797-1799",
+      "from": 1797,
+      "to": 1799,
+      "frame": "frames/chester/1797-1799.gif",
+      "letters": [
+        {
+          "year": 1797,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/chester/1797-A-U.gif"
+        },
+        {
+          "year": 1798,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/chester/1798-B-U.gif"
+        },
+        {
+          "year": 1799,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/chester/1799-C-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1800-1806",
+      "from": 1800,
+      "to": 1806,
+      "frame": "frames/chester/1800-1806.gif",
+      "letters": [
+        {
+          "year": 1800,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/chester/1800-D-U.gif"
+        },
+        {
+          "year": 1801,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/chester/1801-E-U.gif"
+        },
+        {
+          "year": 1802,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/chester/1802-F-U.gif"
+        },
+        {
+          "year": 1803,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/chester/1803-G-U.gif"
+        },
+        {
+          "year": 1804,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/chester/1804-H-U.gif"
+        },
+        {
+          "year": 1805,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/chester/1805-I-U.gif"
+        },
+        {
+          "year": 1806,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/chester/1806-K-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1807-1822",
+      "from": 1807,
+      "to": 1822,
+      "frame": "frames/chester/1807-1822.gif",
+      "letters": [
+        {
+          "year": 1807,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/chester/1807-L-U.gif"
+        },
+        {
+          "year": 1808,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/chester/1808-M-U.gif"
+        },
+        {
+          "year": 1809,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/chester/1809-N-U.gif"
+        },
+        {
+          "year": 1810,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/chester/1810-O-U.gif"
+        },
+        {
+          "year": 1811,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/chester/1811-P-U.gif"
+        },
+        {
+          "year": 1812,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/chester/1812-Q-U.gif"
+        },
+        {
+          "year": 1813,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/chester/1813-R-U.gif"
+        },
+        {
+          "year": 1814,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/chester/1814-S-U.gif"
+        },
+        {
+          "year": 1815,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/chester/1815-T-U.gif"
+        },
+        {
+          "year": 1816,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/chester/1816-U-U.gif"
+        },
+        {
+          "year": 1817,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/chester/1817-V-U.gif"
+        },
+        {
+          "year": 1818,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/chester/1818-A-U.gif"
+        },
+        {
+          "year": 1819,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/chester/1819-B-U.gif"
+        },
+        {
+          "year": 1820,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/chester/1820-C-U.gif"
+        },
+        {
+          "year": 1821,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/chester/1821-D-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1823-1833",
+      "from": 1823,
+      "to": 1833,
+      "frame": "frames/chester/1823-1833.gif",
+      "letters": [
+        {
+          "year": 1823,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/chester/1823-E-U.gif"
+        },
+        {
+          "year": 1824,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/chester/1824-F-U.gif"
+        },
+        {
+          "year": 1825,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/chester/1825-G-U.gif"
+        },
+        {
+          "year": 1826,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/chester/1826-H-U.gif"
+        },
+        {
+          "year": 1827,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/chester/1827-I-U.gif"
+        },
+        {
+          "year": 1828,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/chester/1828-K-U.gif"
+        },
+        {
+          "year": 1829,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/chester/1829-L-U.gif"
+        },
+        {
+          "year": 1830,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/chester/1830-M-U.gif"
+        },
+        {
+          "year": 1831,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/chester/1831-N-U.gif"
+        },
+        {
+          "year": 1832,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/chester/1832-O-U.gif"
+        },
+        {
+          "year": 1833,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/chester/1833-P-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1834-1836",
+      "from": 1834,
+      "to": 1836,
+      "frame": "frames/chester/1834-1836.gif",
+      "letters": [
+        {
+          "year": 1834,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/chester/1834-Q-U.gif"
+        },
+        {
+          "year": 1835,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/chester/1835-R-U.gif"
+        },
+        {
+          "year": 1836,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/chester/1836-S-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1837-1838",
+      "from": 1837,
+      "to": 1838,
+      "frame": "frames/chester/1837-1838.gif",
+      "letters": [
+        {
+          "year": 1837,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/chester/1837-T-U.gif"
+        },
+        {
+          "year": 1838,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/chester/1838-U-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1839-1883",
+      "from": 1839,
+      "to": 1883,
+      "frame": "frames/chester/1839-1883.gif",
+      "letters": [
+        {
+          "year": 1839,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/chester/1839-A-U.gif"
+        },
+        {
+          "year": 1840,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/chester/1840-B-U.gif"
+        },
+        {
+          "year": 1841,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/chester/1841-C-U.gif"
+        },
+        {
+          "year": 1842,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/chester/1842-D-U.gif"
+        },
+        {
+          "year": 1843,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/chester/1843-E-U.gif"
+        },
+        {
+          "year": 1844,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/chester/1844-F-U.gif"
+        },
+        {
+          "year": 1845,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/chester/1845-G-U.gif"
+        },
+        {
+          "year": 1846,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/chester/1846-H-U.gif"
+        },
+        {
+          "year": 1847,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/chester/1847-I-U.gif"
+        },
+        {
+          "year": 1848,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/chester/1848-K-U.gif"
+        },
+        {
+          "year": 1849,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/chester/1849-L-U.gif"
+        },
+        {
+          "year": 1850,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/chester/1850-M-U.gif"
+        },
+        {
+          "year": 1851,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/chester/1851-N-U.gif"
+        },
+        {
+          "year": 1852,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/chester/1852-O-U.gif"
+        },
+        {
+          "year": 1853,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/chester/1853-P-U.gif"
+        },
+        {
+          "year": 1854,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/chester/1854-Q-U.gif"
+        },
+        {
+          "year": 1855,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/chester/1855-R-U.gif"
+        },
+        {
+          "year": 1856,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/chester/1856-S-U.gif"
+        },
+        {
+          "year": 1857,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/chester/1857-T-U.gif"
+        },
+        {
+          "year": 1858,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/chester/1858-U-U.gif"
+        },
+        {
+          "year": 1859,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/chester/1859-V-U.gif"
+        },
+        {
+          "year": 1860,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/chester/1860-W-U.gif"
+        },
+        {
+          "year": 1861,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/chester/1861-X-U.gif"
+        },
+        {
+          "year": 1862,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/chester/1862-Y-U.gif"
+        },
+        {
+          "year": 1863,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/chester/1863-Z-U.gif"
+        },
+        {
+          "year": 1864,
+          "letter": "A",
+          "case": "L",
+          "glyph": "glyphs/chester/1864-A-L.gif"
+        },
+        {
+          "year": 1865,
+          "letter": "B",
+          "case": "L",
+          "glyph": "glyphs/chester/1865-B-L.gif"
+        },
+        {
+          "year": 1866,
+          "letter": "C",
+          "case": "L",
+          "glyph": "glyphs/chester/1866-C-L.gif"
+        },
+        {
+          "year": 1867,
+          "letter": "D",
+          "case": "L",
+          "glyph": "glyphs/chester/1867-D-L.gif"
+        },
+        {
+          "year": 1868,
+          "letter": "E",
+          "case": "L",
+          "glyph": "glyphs/chester/1868-E-L.gif"
+        },
+        {
+          "year": 1869,
+          "letter": "F",
+          "case": "L",
+          "glyph": "glyphs/chester/1869-F-L.gif"
+        },
+        {
+          "year": 1870,
+          "letter": "G",
+          "case": "L",
+          "glyph": "glyphs/chester/1870-G-L.gif"
+        },
+        {
+          "year": 1871,
+          "letter": "H",
+          "case": "L",
+          "glyph": "glyphs/chester/1871-H-L.gif"
+        },
+        {
+          "year": 1872,
+          "letter": "I",
+          "case": "L",
+          "glyph": "glyphs/chester/1872-I-L.gif"
+        },
+        {
+          "year": 1873,
+          "letter": "K",
+          "case": "L",
+          "glyph": "glyphs/chester/1873-K-L.gif"
+        },
+        {
+          "year": 1874,
+          "letter": "L",
+          "case": "L",
+          "glyph": "glyphs/chester/1874-L-L.gif"
+        },
+        {
+          "year": 1875,
+          "letter": "M",
+          "case": "L",
+          "glyph": "glyphs/chester/1875-M-L.gif"
+        },
+        {
+          "year": 1876,
+          "letter": "N",
+          "case": "L",
+          "glyph": "glyphs/chester/1876-N-L.gif"
+        },
+        {
+          "year": 1877,
+          "letter": "O",
+          "case": "L",
+          "glyph": "glyphs/chester/1877-O-L.gif"
+        },
+        {
+          "year": 1878,
+          "letter": "P",
+          "case": "L",
+          "glyph": "glyphs/chester/1878-P-L.gif"
+        },
+        {
+          "year": 1879,
+          "letter": "Q",
+          "case": "L",
+          "glyph": "glyphs/chester/1879-Q-L.gif"
+        },
+        {
+          "year": 1880,
+          "letter": "R",
+          "case": "L",
+          "glyph": "glyphs/chester/1880-R-L.gif"
+        },
+        {
+          "year": 1881,
+          "letter": "S",
+          "case": "L",
+          "glyph": "glyphs/chester/1881-S-L.gif"
+        },
+        {
+          "year": 1882,
+          "letter": "T",
+          "case": "L",
+          "glyph": "glyphs/chester/1882-T-L.gif"
+        },
+        {
+          "year": 1883,
+          "letter": "U",
+          "case": "L",
+          "glyph": "glyphs/chester/1883-U-L.gif"
+        }
+      ]
+    },
+    {
+      "key": "1884-1889",
+      "from": 1884,
+      "to": 1889,
+      "frame": "frames/chester/1884-1889.gif",
+      "letters": [
+        {
+          "year": 1884,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/chester/1884-A-U.gif"
+        },
+        {
+          "year": 1885,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/chester/1885-B-U.gif"
+        },
+        {
+          "year": 1886,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/chester/1886-C-U.gif"
+        },
+        {
+          "year": 1887,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/chester/1887-D-U.gif"
+        },
+        {
+          "year": 1888,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/chester/1888-E-U.gif"
+        },
+        {
+          "year": 1889,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/chester/1889-F-U.gif"
+        }
+      ]
+    },
+    {
+      "key": "1890-1962",
+      "from": 1890,
+      "to": 1962,
+      "frame": "frames/chester/1890-1962.gif",
+      "letters": [
+        {
+          "year": 1890,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/chester/1890-G-U.gif"
+        },
+        {
+          "year": 1891,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/chester/1891-H-U.gif"
+        },
+        {
+          "year": 1892,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/chester/1892-I-U.gif"
+        },
+        {
+          "year": 1893,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/chester/1893-K-U.gif"
+        },
+        {
+          "year": 1894,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/chester/1894-L-U.gif"
+        },
+        {
+          "year": 1895,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/chester/1895-M-U.gif"
+        },
+        {
+          "year": 1896,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/chester/1896-N-U.gif"
+        },
+        {
+          "year": 1897,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/chester/1897-O-U.gif"
+        },
+        {
+          "year": 1898,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/chester/1898-P-U.gif"
+        },
+        {
+          "year": 1899,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/chester/1899-Q-U.gif"
+        },
+        {
+          "year": 1900,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/chester/1900-R-U.gif"
+        },
+        {
+          "year": 1901,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/chester/1901-A-U.gif"
+        },
+        {
+          "year": 1902,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/chester/1902-B-U.gif"
+        },
+        {
+          "year": 1903,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/chester/1903-C-U.gif"
+        },
+        {
+          "year": 1904,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/chester/1904-D-U.gif"
+        },
+        {
+          "year": 1905,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/chester/1905-E-U.gif"
+        },
+        {
+          "year": 1906,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/chester/1906-F-U.gif"
+        },
+        {
+          "year": 1907,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/chester/1907-G-U.gif"
+        },
+        {
+          "year": 1908,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/chester/1908-H-U.gif"
+        },
+        {
+          "year": 1909,
+          "letter": "I",
+          "case": "U",
+          "glyph": "glyphs/chester/1909-I-U.gif"
+        },
+        {
+          "year": 1910,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/chester/1910-K-U.gif"
+        },
+        {
+          "year": 1911,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/chester/1911-L-U.gif"
+        },
+        {
+          "year": 1912,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/chester/1912-M-U.gif"
+        },
+        {
+          "year": 1913,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/chester/1913-N-U.gif"
+        },
+        {
+          "year": 1914,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/chester/1914-O-U.gif"
+        },
+        {
+          "year": 1915,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/chester/1915-P-U.gif"
+        },
+        {
+          "year": 1916,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/chester/1916-Q-U.gif"
+        },
+        {
+          "year": 1917,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/chester/1917-R-U.gif"
+        },
+        {
+          "year": 1918,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/chester/1918-S-U.gif"
+        },
+        {
+          "year": 1919,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/chester/1919-T-U.gif"
+        },
+        {
+          "year": 1920,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/chester/1920-U-U.gif"
+        },
+        {
+          "year": 1921,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/chester/1921-V-U.gif"
+        },
+        {
+          "year": 1922,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/chester/1922-W-U.gif"
+        },
+        {
+          "year": 1923,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/chester/1923-X-U.gif"
+        },
+        {
+          "year": 1924,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/chester/1924-Y-U.gif"
+        },
+        {
+          "year": 1925,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/chester/1925-Z-U.gif"
+        },
+        {
+          "year": 1926,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/chester/1926-A-U.gif"
+        },
+        {
+          "year": 1927,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/chester/1927-B-U.gif"
+        },
+        {
+          "year": 1928,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/chester/1928-C-U.gif"
+        },
+        {
+          "year": 1929,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/chester/1929-D-U.gif"
+        },
+        {
+          "year": 1930,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/chester/1930-E-U.gif"
+        },
+        {
+          "year": 1931,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/chester/1931-F-U.gif"
+        },
+        {
+          "year": 1932,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/chester/1932-G-U.gif"
+        },
+        {
+          "year": 1933,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/chester/1933-H-U.gif"
+        },
+        {
+          "year": 1934,
+          "letter": "J",
+          "case": "U",
+          "glyph": "glyphs/chester/1934-J-U.gif"
+        },
+        {
+          "year": 1935,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/chester/1935-K-U.gif"
+        },
+        {
+          "year": 1936,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/chester/1936-L-U.gif"
+        },
+        {
+          "year": 1937,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/chester/1937-M-U.gif"
+        },
+        {
+          "year": 1938,
+          "letter": "N",
+          "case": "U",
+          "glyph": "glyphs/chester/1938-N-U.gif"
+        },
+        {
+          "year": 1939,
+          "letter": "O",
+          "case": "U",
+          "glyph": "glyphs/chester/1939-O-U.gif"
+        },
+        {
+          "year": 1940,
+          "letter": "P",
+          "case": "U",
+          "glyph": "glyphs/chester/1940-P-U.gif"
+        },
+        {
+          "year": 1941,
+          "letter": "Q",
+          "case": "U",
+          "glyph": "glyphs/chester/1941-Q-U.gif"
+        },
+        {
+          "year": 1942,
+          "letter": "R",
+          "case": "U",
+          "glyph": "glyphs/chester/1942-R-U.gif"
+        },
+        {
+          "year": 1943,
+          "letter": "S",
+          "case": "U",
+          "glyph": "glyphs/chester/1943-S-U.gif"
+        },
+        {
+          "year": 1944,
+          "letter": "T",
+          "case": "U",
+          "glyph": "glyphs/chester/1944-T-U.gif"
+        },
+        {
+          "year": 1945,
+          "letter": "U",
+          "case": "U",
+          "glyph": "glyphs/chester/1945-U-U.gif"
+        },
+        {
+          "year": 1946,
+          "letter": "V",
+          "case": "U",
+          "glyph": "glyphs/chester/1946-V-U.gif"
+        },
+        {
+          "year": 1947,
+          "letter": "W",
+          "case": "U",
+          "glyph": "glyphs/chester/1947-W-U.gif"
+        },
+        {
+          "year": 1948,
+          "letter": "X",
+          "case": "U",
+          "glyph": "glyphs/chester/1948-X-U.gif"
+        },
+        {
+          "year": 1949,
+          "letter": "Y",
+          "case": "U",
+          "glyph": "glyphs/chester/1949-Y-U.gif"
+        },
+        {
+          "year": 1950,
+          "letter": "Z",
+          "case": "U",
+          "glyph": "glyphs/chester/1950-Z-U.gif"
+        },
+        {
+          "year": 1951,
+          "letter": "A",
+          "case": "U",
+          "glyph": "glyphs/chester/1951-A-U.gif"
+        },
+        {
+          "year": 1952,
+          "letter": "B",
+          "case": "U",
+          "glyph": "glyphs/chester/1952-B-U.gif"
+        },
+        {
+          "year": 1953,
+          "letter": "C",
+          "case": "U",
+          "glyph": "glyphs/chester/1953-C-U.gif"
+        },
+        {
+          "year": 1954,
+          "letter": "D",
+          "case": "U",
+          "glyph": "glyphs/chester/1954-D-U.gif"
+        },
+        {
+          "year": 1955,
+          "letter": "E",
+          "case": "U",
+          "glyph": "glyphs/chester/1955-E-U.gif"
+        },
+        {
+          "year": 1956,
+          "letter": "F",
+          "case": "U",
+          "glyph": "glyphs/chester/1956-F-U.gif"
+        },
+        {
+          "year": 1957,
+          "letter": "G",
+          "case": "U",
+          "glyph": "glyphs/chester/1957-G-U.gif"
+        },
+        {
+          "year": 1958,
+          "letter": "H",
+          "case": "U",
+          "glyph": "glyphs/chester/1958-H-U.gif"
+        },
+        {
+          "year": 1959,
+          "letter": "J",
+          "case": "U",
+          "glyph": "glyphs/chester/1959-J-U.gif"
+        },
+        {
+          "year": 1960,
+          "letter": "K",
+          "case": "U",
+          "glyph": "glyphs/chester/1960-K-U.gif"
+        },
+        {
+          "year": 1961,
+          "letter": "L",
+          "case": "U",
+          "glyph": "glyphs/chester/1961-L-U.gif"
+        },
+        {
+          "year": 1962,
+          "letter": "M",
+          "case": "U",
+          "glyph": "glyphs/chester/1962-M-U.gif"
+        }
+      ]
+    }
+  ],
+  "tuplesCount": 260
+}
