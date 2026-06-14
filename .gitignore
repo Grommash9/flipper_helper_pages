@@ -7,7 +7,7 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
-
+google_performance/
 # Local tooling state
 .claude/
 .playwright-mcp/
