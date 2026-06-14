@@ -195,6 +195,7 @@ function pageHTML(c) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=6759716745">
     <title>${esc(title).slice(0, 70)}</title>
     <meta name="description" content="${esc(desc)}">
     <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
