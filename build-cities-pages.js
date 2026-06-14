@@ -521,6 +521,8 @@ function pageHTML(c) {
             <div class="nav-links">
                 <a href="/">Home</a>
                 <a href="../blog/">Blog</a>
+                <a href="/tools/">Tools</a>
+                <a href="/compare/">Compare</a>
                 <a href="../faq.html">FAQ</a>
             </div>
         </div>

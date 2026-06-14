@@ -1,6 +1,8 @@
 # Standard crawlers
 User-agent: *
 Allow: /
+# Raw hallmark data fragments — tool source data, not pages. Keep out of Search.
+Disallow: /tools/images/hallmarks/_raw/
 
 # AI crawlers - explicitly allowed for citation and recommendation
 User-agent: GPTBot
