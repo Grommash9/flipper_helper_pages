@@ -649,4 +649,92 @@
     <priority>0.65</priority>
   </url>
 
+  <!-- intent: "Best items to resell in Australia 2026, what sells at op shops, Salvos and Vinnies sourcing, profitable categories for Australian resellers, vintage clothing, books, kitchenware, electronics." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/best-items-to-resell-australia-2026.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- intent: "Depop fees Australia 2026, what does Depop charge sellers, 10% selling fee, payment processing, shipping fees, AUD examples for Australian sellers." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/depop-fees-australia-2026.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- intent: "How to sell on Depop Australia 2026, setting up an Australian Depop shop, shipping with Australia Post, pricing for AU buyers, photo tips, listing optimisation for Depop AU." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/how-to-sell-on-depop-australia-2026.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- intent: "How to sell on eBay Australia 2026, eBay.com.au seller setup, final value fees, AU postage options, managed payments, dispute handling for Australian sellers." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/how-to-sell-on-ebay-australia-2026.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- intent: "How to sell on Gumtree Australia 2026, local cash sales, meet-up safety, posting items, Gumtree AU ad tips for resellers." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/how-to-sell-on-gumtree-australia-2026.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- intent: "How to sell on Kijiji Canada 2026, posting ads, local Canadian buyers, meet-up sales, Kijiji safety, pricing for Canadian markets." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/how-to-sell-on-kijiji-canada-2026.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- intent: "How to sell on Mercari Canada 2026, Canadian Mercari setup, shipping options, fees, listing tips for Canadian resellers." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/how-to-sell-on-mercari-canada-2026.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- intent: "How to sell on Poshmark Canada 2026, setting up a Canadian Posh closet, Canada Post shipping, parties and sharing, growing followers in Canada." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/how-to-sell-on-poshmark-canada-2026.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- intent: "Poshmark Canada complete guide 2026, full overview for Canadian sellers — account setup, fees, shipping, parties, sharing strategy, scaling a Canadian Posh closet." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/poshmark-canada-complete-guide-2026.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- intent: "Poshmark Canada fees 2026, what Poshmark charges Canadian sellers, flat fee under $20, 20% over $20, shipping costs, CAD examples." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/poshmark-fees-canada-2026.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- intent: "Thrift store finds Canada 2026, what to look for at Value Village, Salvation Army, Talize, ARC and Canadian charity thrift stores, profitable categories for Canadian resellers." -->
+  <url>
+    <loc>https://flipperhelper.app/blog/thrift-store-finds-canada-2026.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
 </urlset>
