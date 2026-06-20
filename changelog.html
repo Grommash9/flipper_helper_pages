@@ -104,9 +104,14 @@
     <main class="legal-page">
         <div class="container">
             <div class="legal-content blog-post">
-                <p class="blog-updated">Last updated: 16 April 2026</p>
+                <p class="blog-updated">Last updated: 20 June 2026</p>
                 <h1>FlipperHelper Changelog</h1>
                 <p>Public release notes for FlipperHelper, the iOS reselling tracker. First commit on 20 February 2026. Shipped by a solo developer based in London, active weekly, with a full test suite gating every build.</p>
+
+                <section>
+                    <h2>June 2026</h2>
+                    <p><strong>20 June</strong> &mdash; <strong>New Zealand Dollar support.</strong> NZD (NZ$) is now one of the supported home currencies, bringing the total to six: USD, EUR, GBP, CAD, AUD, and NZD. New Zealand resellers can now set NZD as their home currency, and items bought or sold in NZD convert automatically using the same daily exchange rates as every other currency. The app also picks NZD by default on first launch for iPhones set to a New Zealand region.</p>
+                </section>
 
                 <section>
                     <h2>April 2026</h2>
@@ -126,7 +131,7 @@
                         <li><strong>Listing reminder notifications</strong> &mdash; optional local push reminders for unlisted items. Configurable per day of week and time. No server involved; processed entirely on device.</li>
                         <li><strong>Entry fee lifecycle per market</strong> &mdash; entry fees are now linked to markets. Add a fee once; it auto-suggests for the next visit. Option to disable a market from prompting for entry fees.</li>
                         <li><strong>Multi-platform listing flow</strong> &mdash; list the same item across eBay, Vinted, Depop, Facebook, and others in one pass. Dates and asking prices tracked per platform.</li>
-                        <li><strong>Device currency on first login</strong> &mdash; the app now picks your iPhone's region currency by default (GBP, EUR, USD, CAD, AUD) instead of asking.</li>
+                        <li><strong>Device currency on first login</strong> &mdash; the app now picks your iPhone's region currency by default (GBP, EUR, USD, CAD, AUD, NZD) instead of asking.</li>
                         <li><strong>Exchange rates</strong> &mdash; auto-updated daily, stored for 365 days locally, used for multi-currency profit calculation.</li>
                         <li><strong>Data backup and restore</strong> &mdash; full backup as ZIP archive, including items, markets, sellers, expenses, settings, and photos. Restore works on a fresh install.</li>
                         <li><strong>SKU display</strong> &mdash; tap-to-copy SKU on item details (Crockford Base32 format, e.g. <code>FH-20D6G0NR</code>).</li>
