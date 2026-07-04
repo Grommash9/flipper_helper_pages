@@ -14,13 +14,13 @@
   {
     "url": "/faq.html",
     "title": "FAQ - FlipperHelper | Everything About the Reseller Tracking App",
-    "description": "46 questions answered about FlipperHelper, the free iOS profit tracker for UK resellers. Items, hauls, expenses, multi-currency, 16 platforms.",
+    "description": "46 questions answered about FlipperHelper, the free iOS and Android profit tracker for UK resellers. Items, hauls, expenses, multi-currency, 16 platforms.",
     "type": "page"
   },
   {
     "url": "/changelog.html",
     "title": "Changelog - FlipperHelper | Release Notes, Testing & QA",
-    "description": "Public release notes for FlipperHelper, the iOS reselling tracker. Every release since February 2026, plus the test suite that gates each build.",
+    "description": "Release notes for FlipperHelper (iOS and Android). Every release since February 2026, plus the test suite that gates each build.",
     "type": "page"
   },
   {
@@ -92,7 +92,7 @@
   {
     "url": "/press/index.html",
     "title": "Press Kit",
-    "description": "FlipperHelper press kit. Download app screenshots, logos, app icon, and key facts about the free iOS reselling tracker app.",
+    "description": "FlipperHelper press kit. Download app screenshots, logos, app icon, and key facts about the free iOS and Android reselling tracker app.",
     "type": "page"
   },
   {
@@ -110,13 +110,13 @@
   {
     "url": "/blog/antiques-fair-profit-tracker-app.html",
     "title": "Antiques Fair Profit Tracker App for UK Resellers",
-    "description": "Best app to track antiques fair and vintage market profits. Log entry fees, transport, per-item profit on iPhone — offline, Google Sheets export.",
+    "description": "Track antiques fair and vintage market profits on iPhone and Android — entry fees, transport, per-item profit. Works offline.",
     "type": "post"
   },
   {
     "url": "/blog/app-to-track-inventory-and-sales.html",
-    "title": "App to Track Inventory and Sales for Resellers (Free, iOS)",
-    "description": "An app to track inventory and sales for resellers — one record from purchase to sale, with real profit after fees and expenses. Free on iOS.",
+    "title": "App to Track Inventory and Sales for Resellers (Free, iOS & Android)",
+    "description": "An app to track inventory and sales for resellers — one record from purchase to sale, with real profit after fees and expenses. Free on iOS and Android.",
     "type": "post"
   },
   {
@@ -229,7 +229,7 @@
   },
   {
     "url": "/blog/estate-sale-garage-sale-tracker-app.html",
-    "title": "Estate Sale & Garage Sale Reseller App for iPhone",
+    "title": "Estate Sale & Garage Sale Reseller App for iPhone & Android",
     "description": "Best app to track estate sale and garage sale finds. Log items at the sale, track eBay and Facebook listings, see real profit after fuel.",
     "type": "post"
   },
@@ -451,8 +451,8 @@
   },
   {
     "url": "/blog/thrift-store-flipping-app.html",
-    "title": "Thrift Store Flipping App for iPhone (2026)",
-    "description": "Best thrift store flipping app for iPhone. Log thrift store purchases, track items listed on eBay and Depop, see real profit after fees — works offline.",
+    "title": "Thrift Store Flipping App for iPhone & Android (2026)",
+    "description": "Thrift store flipping app for iPhone and Android. Log purchases, track eBay and Depop listings, see real profit after fees. Works offline.",
     "type": "post"
   },
   {
@@ -464,7 +464,7 @@
   {
     "url": "/blog/track-sourcing-trip-profit.html",
     "title": "How to Track Whether a Sourcing Trip Was Worth It",
-    "description": "Track profit per sourcing trip by grouping items and expenses into Hauls. See which car-boot runs actually made money. Free on iOS.",
+    "description": "Track profit per sourcing trip by grouping items and expenses into Hauls. See which car-boot runs actually made money. Free on iOS and Android.",
     "type": "post"
   },
   {
@@ -488,7 +488,7 @@
   {
     "url": "/blog/vinted-ebay-profit-calculator-offline.html",
     "title": "Vinted & eBay Profit Calculator: Offline UK App",
-    "description": "Free Vinted and eBay profit calculator that works offline. Log items at car boots and charity shops, see profit after fees and travel — on iPhone.",
+    "description": "Free Vinted and eBay profit calculator for iPhone and Android. Works offline — log items at car boots, see profit after fees and travel.",
     "type": "post"
   },
   {

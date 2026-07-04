@@ -32,7 +32,7 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 - **Expense Tracking**: Three expense categories — entry fees (per market visit), transport expenses (car with gas/service/parking subcategories, bus, train, taxi, van, bike rental), and other expenses (custom with memo description). All expenses support multi-currency.
 - **Market Management**: Save markets with GPS coordinates and configurable detection radius (default 5 km). When near a saved market, the app auto-suggests it for new items.
 - **Seller Tracking**: Save sellers and associate them with items to track which sellers provide the best stock.
-- **Google Drive Backup**: Optional photo sync to Google Drive (folder: FlipperHelper_App/images/). Uses the drive.file and email OAuth scopes — drive.file limits access to files created by FlipperHelper, and email is used to display your account info in Settings.
+- **Google Drive Export**: Optional photo sync to Google Drive (folder: FlipperHelper_App/images/). Uses the drive.file and email OAuth scopes — drive.file limits access to files created by FlipperHelper, and email is used to display your account info in Settings.
 - **Google Sheets Export**: Items and expenses exported as CSV files to Google Drive, which auto-converts them to Google Sheets. No Sheets API is used.
 - **Offline-First**: Fully functional without internet. All data stored locally on device. Google Drive sync is optional and happens when connectivity is available.
 - **Invested-in-Inventory Philosophy**: The Home screen stock value reframes unsold inventory as money converted from cash into stock — not money spent. This helps resellers see their unsold items as future profit rather than sunk cost, encouraging them to keep listing and selling.
@@ -46,7 +46,7 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 - **Private Sale**: Listing platform option for hand-to-hand sales, items sold to friends, or sales through informal channels outside online marketplaces.
 - **Automatic Backup**: On iPhone, automatic iCloud backup of all data, offering restore on a new device with a manual trigger in Settings. On Android (no iCloud), automatic backup to a folder you choose — anywhere on the phone or a cloud-synced folder like Google Drive/Dropbox — keeping the five most recent copies. Both are independent of Google Drive sync and the ZIP export.
 - **Smart Entry Fee Suggestions**: When adding entry fees for previously visited markets, shows past amounts as quick-select options.
-- **Data Backup & Restore**: Full data backup downloadable as ZIP archive. Restore from previous backups to transfer data between devices, including between iPhone and Android (the ZIP format is shared and cross-platform compatible). Between automatic backup, Google Drive, and ZIP export, data is protected in multiple independent locations and survives even if the app is deleted.
+- **Data Backup & Restore**: Full data backup downloadable as ZIP archive. Restore from previous backups to transfer data between devices, including between iPhone and Android (the ZIP format is shared and cross-platform compatible). Between automatic backup (iCloud on iPhone / a chosen folder on Android) and the ZIP export, data is protected in multiple independent locations and survives even if the app is deleted.
 - **Payment Methods**: Cash (default for physical markets like car boot sales) and Card (default for online platforms).
 
 ## How It Works
