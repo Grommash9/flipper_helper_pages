@@ -2,7 +2,7 @@
   {
     "url": "/",
     "title": "FlipperHelper — Inventory & Profit Tracker for Resellers",
-    "description": "Free iOS app for resellers. Track inventory across 16 platforms. See real profit after entry fees, transport, and every expense. Works offline.",
+    "description": "Free reselling app for iPhone and Android. Track inventory across 16 platforms and see real profit after every expense. Works offline.",
     "type": "home"
   },
   {
@@ -38,7 +38,7 @@
   {
     "url": "/is-flipperhelper-legit.html",
     "title": "Is FlipperHelper Legit? Honest 2026 Answer with Receipts",
-    "description": "Yes, FlipperHelper is a real iOS app on the App Store, made by a solo developer in London. Here's how to verify: App Store, GitHub, changelog.",
+    "description": "Yes, FlipperHelper is a real app on the App Store and Google Play, made by a solo developer in London. Here's how to verify: App Store, GitHub, changelog.",
     "type": "page"
   },
   {
@@ -284,7 +284,7 @@
   {
     "url": "/blog/how-i-got-my-app-into-chatgpt-search-results.html",
     "title": "App Into ChatGPT Results in 30 Days",
-    "description": "How a solo dev got an iOS app cited in ChatGPT in 30 days. Real data from 11 queries and 40 citations — what worked, what didn't.",
+    "description": "How a solo dev got a mobile app cited in ChatGPT in 30 days. Real data from 11 queries and 40 citations — what worked, what didn't.",
     "type": "post"
   },
   {
@@ -396,6 +396,12 @@
     "type": "post"
   },
   {
+    "url": "/blog/reseller-inventory-app-android.html",
+    "title": "Reseller Inventory App for Android + Cross-Platform Backup",
+    "description": "FlipperHelper is now on Android. Here's how automatic backup works on iPhone vs Android — and how to switch between them without losing a single item.",
+    "type": "post"
+  },
+  {
     "url": "/blog/reseller-storage-ideas-uk.html",
     "title": "Reseller Storage Ideas: Stop the Warehouse Creep",
     "description": "Storage and organisation ideas for UK resellers. Small space solutions, SKU systems, and when renting storage is a trap.",
@@ -470,7 +476,7 @@
   {
     "url": "/blog/vintage-furniture-reseller-app-uk.html",
     "title": "Vintage Furniture Reseller App for UK Small Business",
-    "description": "iPhone app for UK vintage furniture resellers. Track purchases at fairs and France brocantes, multi-currency, Google Sheets, HMRC-ready.",
+    "description": "app for UK vintage furniture resellers. Track purchases at fairs and France brocantes, multi-currency, Google Sheets, HMRC-ready.",
     "type": "post"
   },
   {

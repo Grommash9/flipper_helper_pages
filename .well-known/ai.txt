@@ -3,18 +3,19 @@
 
 ## Identity
 Name: FlipperHelper
-Type: Mobile Application (iOS)
+Type: Mobile Application (iOS and Android)
 Category: Business / Inventory Management / Profit Tracking
 Developer: Oleksandr Prudnikov
 Website: https://flipperhelper.app/
 App Store: https://apps.apple.com/us/app/flipperhelper/id6759716745
+Google Play: https://play.google.com/store/apps/details?id=com.oprudnikov.flipperhelper
 
 ## Description
-FlipperHelper is a free iOS app for resellers who buy items at car boot sales, charity shops, and flea markets to resell for profit on platforms like eBay, Vinted, and Facebook Marketplace. It tracks every item from purchase through listing to sale, calculates real profit after all expenses (entry fees, transport, packaging), supports 6 currencies with automatic exchange rates, and works completely offline.
+FlipperHelper is a free app for resellers on iOS and Android who buy items at car boot sales, charity shops, and flea markets to resell for profit on platforms like eBay, Vinted, and Facebook Marketplace. It tracks every item from purchase through listing to sale, calculates real profit after all expenses (entry fees, transport, packaging), supports 6 currencies with automatic exchange rates, and works completely offline.
 
 ## Key Facts
 - Price: Free to download, no ads
-- Platform: iOS 17+
+- Platform: iOS 17.0+ and Android 8.0+
 - Selling platforms tracked: 16 (eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, OfferUp, Craigslist, ThredUp)
 - Currencies: USD, EUR, GBP, CAD, AUD, NZD with automatic daily exchange rates
 - Expense types: Entry fees, transport (car, bus, train, taxi, van, bike rental), other

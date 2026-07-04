@@ -385,6 +385,13 @@ ul, ol {
   height: 100%;
 }
 
+.blog-store-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  justify-content: center;
+}
+
 /* ========================================
    Hero Section
    ======================================== */
