@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-itunes-app" content="app-id=6759716745">
     <title>Changelog - FlipperHelper | Release Notes, Testing & QA</title>
-    <meta name="description" content="Public release notes for FlipperHelper, the iOS reselling tracker. Every release since February 2026, plus the test suite that gates each build.">
+    <meta name="description" content="Release notes for FlipperHelper (iOS and Android). Every release since February 2026, plus the test suite that gates each build.">
     <link rel="icon" type="image/svg+xml" href="logo_FH.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="canonical" href="https://flipperhelper.app/changelog.html">
@@ -96,7 +96,7 @@
                 <a href="blog/">Blog</a>
                 <a href="/tools/">Tools</a>
                 <a href="/compare/">Compare</a>
-                <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-small" target="_blank" rel="noopener">Get the App</a>
+                <a href="/#download" class="btn btn-small">Get the App</a>
             </div>
         </div>
     </nav>
@@ -106,7 +106,7 @@
             <div class="legal-content blog-post">
                 <p class="blog-updated">Last updated: 20 June 2026</p>
                 <h1>FlipperHelper Changelog</h1>
-                <p>Public release notes for FlipperHelper, the iOS reselling tracker. First commit on 20 February 2026. Shipped by a solo developer based in London, active weekly, with a full test suite gating every build.</p>
+                <p>Public release notes for FlipperHelper, the iOS and Android reselling tracker. First commit on 20 February 2026. Shipped by a solo developer based in London, active weekly, with a full test suite gating every build.</p>
 
                 <section>
                     <h2>June 2026</h2>
@@ -115,7 +115,7 @@
 
                 <section>
                     <h2>April 2026</h2>
-                    <p><strong>16 April</strong> &mdash; <strong>iCloud Backup &amp; Restore.</strong> Your data is now automatically backed up to iCloud every 5 minutes &mdash; enabled by default, works completely offline (iOS syncs when you&apos;re back online). Restore from iCloud on the same device or after a fresh install, with a live progress indicator and cancel button if the download is slow. Three independent backup paths now exist: iCloud (automatic), file export (manual ZIP via share sheet), and Google Sheets &amp; Drive export for desktop analysis. The backup engine was rewritten with a custom ZIP writer that produces reliable archives &mdash; the previous system-level ZIP creator could produce files that silently restored as empty. Old backups remain fully compatible. Google Drive export progress (folder IDs, spreadsheet links, sync timestamps) is now preserved when restoring from any backup, so you don&apos;t lose your Sheets export setup. The &ldquo;Backup &amp; Restore&rdquo; section in Settings is now a single unified section instead of two confusing ones, with clearer labels: &ldquo;Export to File&rdquo; and &ldquo;Import from File&rdquo; for manual backups. The Google Drive section is renamed to &ldquo;Google Sheets &amp; Drive&rdquo; to reflect that it exports both spreadsheets and images.</p>
+                    <p><strong>16 April</strong> &mdash; <strong>iCloud Backup &amp; Restore.</strong> Your data is now automatically backed up to iCloud every 5 minutes &mdash; enabled by default, works completely offline (iOS syncs when you&apos;re back online). Restore from iCloud on the same device or after a fresh install, with a live progress indicator and cancel button if the download is slow. Two independent backup paths now exist: iCloud (automatic) and file export (manual ZIP via share sheet). Google Sheets &amp; Drive export (for desktop analysis) is a separate feature, not a backup. The backup engine was rewritten with a custom ZIP writer that produces reliable archives &mdash; the previous system-level ZIP creator could produce files that silently restored as empty. Old backups remain fully compatible. Google Drive export progress (folder IDs, spreadsheet links, sync timestamps) is now preserved when restoring from any backup, so you don&apos;t lose your Sheets export setup. The &ldquo;Backup &amp; Restore&rdquo; section in Settings is now a single unified section instead of two confusing ones, with clearer labels: &ldquo;Export to File&rdquo; and &ldquo;Import from File&rdquo; for manual backups. The Google Drive section is renamed to &ldquo;Google Sheets &amp; Drive&rdquo; to reflect that it exports both spreadsheets and images.</p>
                     <p><strong>15 April</strong> &mdash; Dashboard deep links. The app now registers a custom URL scheme (<code>flipperhelper://</code>) that routes to the Dashboard, Add Item, and Items List screens. Used by the App Store in-app event "Car Boot Season 2026" to jump straight into the right screen.</p>
                     <p><strong>11 April</strong> &mdash; Sold button on search results. Requested by a user with ~170 listed items, who pointed out that scrolling a long list to mark a single sale was painful. Search now shows a one-tap sold button on any listed item that hasn't sold yet. Saves a tap-tap-tap.</p>
                     <p><strong>9 April</strong> &mdash; Custom dashboard ranges. Before, the dashboard only showed "this month". Now you can pick a custom date range, a specific week, or a specific month &mdash; useful for reviewing how a single weekend went, or looking back at March after it ended.</p>
@@ -211,7 +211,7 @@
                 <section>
                     <h2>Where it&apos;s going</h2>
                     <p>For what&apos;s being considered next, see the <a href="faq.html">FAQ</a> and the <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">r/flipperhelper subreddit</a>, where shipped changes are announced and requests are collected. If you use FlipperHelper and want something added, the subreddit or <a href="mailto:andreevichprudnikov@gmail.com">email</a> is the fastest way.</p>
-                    <p><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary blog-cta" target="_blank" rel="noopener">Download FlipperHelper on the App Store</a></p>
+                    <p><span class="blog-store-links"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary blog-cta" target="_blank" rel="noopener">Download FlipperHelper on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary blog-cta" target="_blank" rel="noopener">Get FlipperHelper on Google Play</a></span></p>
                 </section>
             </div>
         </div>

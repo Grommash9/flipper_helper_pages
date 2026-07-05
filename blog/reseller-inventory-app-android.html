@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=6759716745">
+    <title>Reseller Inventory App for Android + Cross-Platform Backup | FlipperHelper Blog</title>
+    <meta name="description" content="FlipperHelper is now on Android. Here's how automatic backup works on iPhone vs Android — and how to switch between them without losing a single item.">
+    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="canonical" href="https://flipperhelper.app/blog/reseller-inventory-app-android.html">
+    <!-- OpenGraph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="FlipperHelper Is Now on Android — and Your Data Moves With You">
+    <meta property="og:description" content="A free reseller inventory app for Android. How automatic backup differs on iPhone and Android, and how to switch phones without losing any items.">
+    <meta property="og:url" content="https://flipperhelper.app/blog/reseller-inventory-app-android.html">
+    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
+    <meta property="og:site_name" content="FlipperHelper">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:published_time" content="2026-07-04">
+    <meta property="article:author" content="Oleksandr Prudnikov">
+    <meta property="article:section" content="Product">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="FlipperHelper Is Now on Android — and Your Data Moves With You">
+    <meta name="twitter:description" content="A free reseller inventory app for Android. Cross-platform backup means you can switch between iPhone and Android without losing anything.">
+    <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+    <!-- BreadcrumbList JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flipperhelper.app/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://flipperhelper.app/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "Reseller Inventory App for Android", "item": "https://flipperhelper.app/blog/reseller-inventory-app-android.html"}
+      ]
+    }
+    </script>
+    <!-- Article JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "FlipperHelper Is Now on Android — and Your Data Moves With You",
+      "description": "A free reseller inventory app for Android. How automatic backup works on iPhone (iCloud) vs Android (folder backup), and how to switch phones without losing any items, photos, or history.",
+      "datePublished": "2026-07-04",
+      "dateModified": "2026-07-04",
+      "author": {"@type": "Person", "name": "Oleksandr Prudnikov", "url": "https://flipperhelper.app/about.html"},
+      "publisher": {
+        "@type": "Organization",
+        "name": "FlipperHelper",
+        "url": "https://flipperhelper.app/",
+        "logo": {"@type": "ImageObject", "url": "https://flipperhelper.app/logo_FH.png"}
+      },
+      "mainEntityOfPage": "https://flipperhelper.app/blog/reseller-inventory-app-android.html"
+    }
+    </script>
+    <!-- FAQPage JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is there a FlipperHelper app for Android?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. FlipperHelper is available on Google Play as a full native Android app with feature parity with the iPhone app — the same inventory tracking, expense logging, multi-currency profit calculation, and Google Sheets export. It is also on the App Store for iOS 17 and later. Both versions are free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I move my reseller data from iPhone to Android?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and it is guaranteed. Both apps read and write the exact same backup file — a single ZIP containing your database and all photos. Export a backup on your iPhone, open it on Android, and everything comes across: items, photos, listing history, expenses, hauls, and settings. It works in both directions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does automatic backup differ between iPhone and Android?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On iPhone, FlipperHelper backs up automatically to iCloud and offers to restore when you set up a new iPhone. Android has no iCloud, so the Android app backs up to a folder you choose once — anywhere on your phone, or inside a cloud-synced folder such as Google Drive, Dropbox, or OneDrive — writing a fresh backup ZIP there in the background and keeping the five most recent copies. Both run automatically and work offline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the Android version cost money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Like the iPhone app, the FlipperHelper Android app is free to download with no ads and no subscription. Every feature is included at no cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do I need to do to switch phones safely?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a backup ZIP on your old phone (Settings, then Backup, then Export), move that file to your new phone by any method — AirDrop, email, a messaging app, or a shared cloud folder — and use Import from File in the new app. Keep both apps updated so a backup from a newer version is never opened by an older one."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../" class="nav-logo">
+                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
+                <span>FlipperHelper</span>
+            </a>
+            <div class="nav-links">
+                <a href="../">Home</a>
+                <a href="../faq.html">FAQ</a>
+                <a href="./">Blog</a>
+                <a href="/tools/">Tools</a>
+                <a href="/compare/">Compare</a>
+                <a href="/#download" class="btn btn-small">Get the App</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="legal-page">
+        <div class="container">
+            <div class="legal-content blog-post">
+                <a href="./" class="blog-back">&larr; Back to Blog</a>
+                <p class="blog-updated">Last updated: 4 July 2026</p>
+                <h1>FlipperHelper Is Now on Android — and Your Data Moves With You</h1>
+                <div class="blog-meta">
+                    <span class="blog-date">4 July 2026</span>
+                    <span class="blog-tag">Product</span>
+                    <span class="blog-reading-time">6 min read</span>
+                </div>
+
+                <section>
+                    <p><strong>FlipperHelper is now available on Android.</strong> It's a full native rebuild with feature parity with the iPhone app &mdash; the same photo-first item tracking, expense logging, multi-currency profit calculation, and Google Sheets export that resellers already use on iOS. It's free, with no ads and no subscription, just like the iPhone version.</p>
+                    <p>But the question resellers actually ask when a second platform arrives isn't "what features does it have" &mdash; it's <em>"if I switch phones, will I lose everything?"</em> The answer is no, and this post explains exactly why, including how automatic backup works differently on iPhone and Android and how to move your data between them without losing a single item.</p>
+                    <!-- TODO: verify Google Play URL before publishing (expected from applicationId com.oprudnikov.flipperhelper). -->
+                    <p class="blog-store-links">
+                        <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download on the App Store</a>
+                        <a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it on Google Play</a>
+                    </p>
+                    <blockquote><p>"Your reselling records are worth months of work. The whole point of building the Android app on the same backup format as iPhone is so that switching platforms is a non-event &mdash; export a file, import it, done." &mdash; Oleksandr Prudnikov, FlipperHelper developer</p></blockquote>
+                </section>
+
+                <section>
+                    <h2>What you get on Android</h2>
+                    <p><strong>The Android app isn't a stripped-down companion &mdash; it's the same app, rebuilt natively for Android.</strong> Everything the iPhone version does, the Android version does:</p>
+                    <ul>
+                        <li><strong>Photo-first item tracking</strong> with automatic SKU generation</li>
+                        <li><strong>16 listing platforms</strong> &mdash; eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree and more (tracked manually, not automated cross-listing)</li>
+                        <li><strong>Full expense tracking</strong> &mdash; entry fees, six transport types, packaging, and custom costs</li>
+                        <li><strong>Automatic profit calculation</strong> after every expense, per item and across your business</li>
+                        <li><strong>Multi-currency</strong> &mdash; USD, EUR, GBP, CAD, AUD, NZD with daily exchange rates</li>
+                        <li><strong>Money Flow dashboard</strong>, Hauls (sourcing-trip tracking), and share cards</li>
+                        <li><strong>Google Sheets export</strong> and offline-first operation</li>
+                    </ul>
+                    <p>It's free, and it works offline at the market the same way the iPhone app does. <a href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener">Get it on Google Play</a>.</p>
+                </section>
+
+                <section>
+                    <h2>How automatic backup works on iPhone</h2>
+                    <p><strong>On iPhone, FlipperHelper backs up automatically to iCloud.</strong> You don't have to think about it &mdash; the app keeps a current copy of all your data in your own iCloud account. When you set up a new iPhone and open FlipperHelper, it offers to restore everything automatically. You can also trigger a manual iCloud backup from Settings at any time.</p>
+                    <p>This sits alongside two other safety nets: optional <a href="../faq.html">Google Drive sync</a> (which mirrors your photos and Google Sheets exports) and the portable ZIP export (a single file you can save anywhere). Between them, your data lives in several independent places.</p>
+                </section>
+
+                <section>
+                    <h2>How automatic backup works on Android</h2>
+                    <p><strong>Android has no iCloud, so the Android app backs up differently &mdash; but just as automatically.</strong> Instead of a system cloud, you choose a backup folder once. That folder can be anywhere on your phone, or &mdash; better &mdash; inside a cloud-synced folder such as Google Drive, Dropbox, or OneDrive.</p>
+                    <p>From then on, FlipperHelper writes a fresh backup ZIP into that folder in the background, keeping the five most recent copies and cleaning up older ones automatically. This runs on-device, works offline, and is completely independent of the Google Sheets export &mdash; it doesn't need you to be signed into Google at all.</p>
+                    <p>The practical tip: point the backup folder at a cloud-synced location. Your backups then get mirrored off your phone automatically, giving you the same "it just happens" protection iPhone users get from iCloud, without depending on any one account.</p>
+                    <div class="comparison-table-wrapper">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>iPhone</th>
+                                    <th>Android</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Automatic backup</strong></td>
+                                    <td>iCloud, on by default</td>
+                                    <td>To a folder you choose (phone or cloud-synced)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>How many kept</strong></td>
+                                    <td>Latest iCloud copy</td>
+                                    <td>Five most recent ZIPs</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Works offline</strong></td>
+                                    <td>Yes</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Needs a Google account</strong></td>
+                                    <td>No</td>
+                                    <td>No (folder backup is independent of Google sync)</td>
+                                </tr>
+                                <tr class="highlight-col">
+                                    <td><strong>Portable ZIP export</strong></td>
+                                    <td>Yes</td>
+                                    <td>Yes &mdash; same format</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>One backup file, both platforms</h2>
+                    <p><strong>The piece that makes switching painless is the portable backup file.</strong> A FlipperHelper backup is a single ZIP archive containing your database and every photo &mdash; all your items, markets, sellers, expenses, hauls, and settings. Both the iPhone app and the Android app read and write that exact same format.</p>
+                    <p>Because the format is shared, a backup made on one platform restores cleanly on the other. If you made the backup on an older version of the app, the newer app upgrades it automatically during restore. This isn't "export to CSV and hope the columns line up" &mdash; it's a complete, byte-for-byte transfer of your reselling history. <strong>Cross-platform compatibility is guaranteed.</strong></p>
+                </section>
+
+                <section>
+                    <h2>How to switch from iPhone to Android (or back)</h2>
+                    <p><strong>Moving between platforms is a three-step job, and it works in either direction.</strong></p>
+                    <h3>1. Export a backup on your old phone</h3>
+                    <p>Open <strong>Settings &rarr; Backup &rarr; Export</strong>. FlipperHelper builds a single backup ZIP with all your data and photos.</p>
+                    <h3>2. Move the file to your new phone</h3>
+                    <p>Use whatever's easiest: AirDrop or a cable, email it to yourself, send it through a messaging app, or drop it in a shared cloud folder (Google Drive, Dropbox, iCloud Drive) that both phones can see.</p>
+                    <h3>3. Import it in the new app</h3>
+                    <p>Open the new app, go to <strong>Settings &rarr; Backup &rarr; Import from File</strong>, and pick the ZIP. Everything is restored &mdash; items, photos, listing history, expenses, hauls, and your preferences.</p>
+                    <p>The only rule: <strong>keep both apps updated</strong>. A backup made on a newer version is designed not to be opened by an older one (to protect your data), so update both apps before you migrate and you'll never hit that edge.</p>
+                </section>
+
+                <section>
+                    <h2>Frequently asked questions</h2>
+
+                    <h3>Is there a FlipperHelper app for Android?</h3>
+                    <p>Yes &mdash; FlipperHelper is on <a href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener">Google Play</a>, a full native rebuild with feature parity with the iPhone app. It's also on the <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">App Store</a> for iOS 17 and later. Both are free.</p>
+
+                    <h3>Can I move my reseller data from iPhone to Android?</h3>
+                    <p>Yes, and it's guaranteed. Both apps use the exact same backup file. Export on one, import on the other, and everything comes across &mdash; in both directions.</p>
+
+                    <h3>How does automatic backup differ between iPhone and Android?</h3>
+                    <p>iPhone backs up to iCloud automatically. Android has no iCloud, so it backs up to a folder you choose once (ideally a cloud-synced one), keeping the five most recent copies. Both are automatic and work offline.</p>
+
+                    <h3>Does the Android version cost money?</h3>
+                    <p>No. It's free with no ads and no subscription, exactly like the iPhone app.</p>
+
+                    <h3>What do I need to do to switch phones safely?</h3>
+                    <p>Export a backup ZIP on the old phone, move the file to the new phone, and use Import from File. Keep both apps updated first.</p>
+                </section>
+
+                <section>
+                    <h2>Related reading</h2>
+                    <ul>
+                        <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers in 2026</a> &mdash; full comparison of reseller tools, free and paid</li>
+                        <li><a href="free-inventory-app-for-resellers.html">Free Inventory App for Resellers</a> &mdash; what "free" actually means and what to look for</li>
+                        <li><a href="app-to-track-inventory-and-sales.html">App to Track Inventory and Sales</a> &mdash; the full purchase-to-sale workflow</li>
+                        <li><a href="../faq.html">FlipperHelper FAQ</a> &mdash; backup, restore, and cross-platform questions answered in detail</li>
+                    </ul>
+                </section>
+
+                <section class="blog-cta">
+                    <h2>Try FlipperHelper free</h2>
+                    <p>Free reselling app for iPhone and Android. Track unlimited items, manage listings across 16 platforms, log every expense, and see your real profit. Your data backs up automatically and moves with you between devices. Works offline.</p>
+                    <p class="blog-store-links">
+                        <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download on the App Store</a>
+                        <a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it on Google Play</a>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>About the author</h2>
+                    <p><strong>Written by Oleksandr Prudnikov</strong> &mdash; developer of FlipperHelper. The app started as a tracking tool for his wife's reselling at UK car boot sales, charity shops, and antiques fairs. The Android version was built on a shared backup format from day one specifically so that resellers are never locked to one phone &mdash; a design decision that comes from watching real people dread switching devices and losing their records.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer footer-compact">
+        <div class="container">
+            <div class="footer-row">
+                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
+                <div class="footer-links-inline">
+                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
+                    <a href="../privacy.html">Privacy</a>
+                    <a href="../terms.html">Terms</a>
+                    <a href="mailto:andreevichprudnikov@gmail.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script data-goatcounter="https://grommash9.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

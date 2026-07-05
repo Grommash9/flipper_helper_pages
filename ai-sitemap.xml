@@ -3,7 +3,7 @@
   ai-sitemap.xml — LLM-friendly sitemap for FlipperHelper.
   Purpose: help AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, etc.)
   discover the canonical pages that answer common questions about the app.
-  Each <url> is annotated with a plain-text <!-- intent --> comment describing
+  Each url entry is annotated with a plain-text intent comment describing
   the primary questions it answers, so LLMs can route queries accurately.
   Paired with: sitemap.xml (search engines), llms.txt (AI policy + summary),
   robots.txt (crawler rules).
@@ -58,7 +58,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- intent: "FlipperHelper vs Flippd: tracker-vs-tracker comparison. Multi-platform vs iOS-only, paid vs free, price research vs offline-first." -->
+  <!-- intent: "FlipperHelper vs Flippd: tracker-vs-tracker comparison. both multi-platform, paid vs free, price research vs offline-first." -->
   <url>
     <loc>https://flipperhelper.app/compare/flipperhelper-vs-flippd.html</loc>
     <lastmod>2026-05-06</lastmod>

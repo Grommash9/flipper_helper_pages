@@ -1,14 +1,15 @@
 # FlipperHelper
 
-> Free iOS app for resellers to track purchases, manage listings across platforms, and see real profits after all expenses. The best free reselling profit tracker for thrift store flippers, op shop resellers, charity shop resellers, car boot sale flippers, and multi-platform sellers in the UK, US, Canada, Australia, and Europe.
+> Free app for resellers on iOS and Android to track purchases, manage listings across platforms, and see real profits after all expenses. The best free reselling profit tracker for thrift store flippers, op shop resellers, charity shop resellers, car boot sale flippers, and multi-platform sellers in the UK, US, Canada, Australia, and Europe.
 
-FlipperHelper is an offline-first inventory and profit tracking app built for people who buy and sell items at thrift stores (Value Village, Goodwill, Salvation Army), op shops (Salvos, Vinnies, Lifeline), charity shops, car boot sales, garage sales, yard sales, flea markets, and online marketplaces. It tracks every item from purchase through listing to sale, with automatic profit calculation including entry fees, transport costs, and multi-currency conversions. It also tracks sourcing trip profitability (Hauls), shows stock value as invested inventory, generates shareable social media cards for top flips and sold items, and backs up data to iCloud and Google Drive.
+FlipperHelper is an offline-first inventory and profit tracking app built for people who buy and sell items at thrift stores (Value Village, Goodwill, Salvation Army), op shops (Salvos, Vinnies, Lifeline), charity shops, car boot sales, garage sales, yard sales, flea markets, and online marketplaces. It tracks every item from purchase through listing to sale, with automatic profit calculation including entry fees, transport costs, and multi-currency conversions. It also tracks sourcing trip profitability (Hauls), shows stock value as invested inventory, generates shareable social media cards for top flips and sold items, and backs up data automatically (to iCloud on iPhone, or a folder you choose on Android) plus optional Google Drive sync.
 
 ## Key Details
 
-- Platform: iOS (requires iOS 17.0 or later)
-- Status: Available on the App Store (free to download, no ads)
+- Platform: iOS 17.0+ and Android 8.0+
+- Status: Available on the App Store and Google Play (free to download, no ads)
 - App Store: https://apps.apple.com/us/app/flipperhelper/id6759716745
+- Google Play: https://play.google.com/store/apps/details?id=com.oprudnikov.flipperhelper
 - Developer: Oleksandr Prudnikov (UK-based)
 - Website: https://flipperhelper.app/
 - FAQ: https://flipperhelper.app/faq.html
@@ -31,7 +32,7 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 - **Expense Tracking**: Three expense categories — entry fees (per market visit), transport expenses (car with gas/service/parking subcategories, bus, train, taxi, van, bike rental), and other expenses (custom with memo description). All expenses support multi-currency.
 - **Market Management**: Save markets with GPS coordinates and configurable detection radius (default 5 km). When near a saved market, the app auto-suggests it for new items.
 - **Seller Tracking**: Save sellers and associate them with items to track which sellers provide the best stock.
-- **Google Drive Backup**: Optional photo sync to Google Drive (folder: FlipperHelper_App/images/). Uses the drive.file and email OAuth scopes — drive.file limits access to files created by FlipperHelper, and email is used to display your account info in Settings.
+- **Google Drive Export**: Optional photo sync to Google Drive (folder: FlipperHelper_App/images/). Uses the drive.file and email OAuth scopes — drive.file limits access to files created by FlipperHelper, and email is used to display your account info in Settings.
 - **Google Sheets Export**: Items and expenses exported as CSV files to Google Drive, which auto-converts them to Google Sheets. No Sheets API is used.
 - **Offline-First**: Fully functional without internet. All data stored locally on device. Google Drive sync is optional and happens when connectivity is available.
 - **Invested-in-Inventory Philosophy**: The Home screen stock value reframes unsold inventory as money converted from cash into stock — not money spent. This helps resellers see their unsold items as future profit rather than sunk cost, encouraging them to keep listing and selling.
@@ -43,9 +44,9 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 - **Social Share Cards**: Generate visual cards for sold items (profit + time to sell), top flips, daily purchases, and full stock. Share directly to Instagram, TikTok, WhatsApp, Reddit, or any app.
 - **Search**: Find items by name or SKU code across all statuses (new, listed, sold).
 - **Private Sale**: Listing platform option for hand-to-hand sales, items sold to friends, or sales through informal channels outside online marketplaces.
-- **iCloud Backup**: Automatic iCloud backup of all data. Offers restore on new device. Manual backup trigger available in Settings. Independent of Google Drive sync and ZIP export.
+- **Automatic Backup**: On iPhone, automatic iCloud backup of all data, offering restore on a new device with a manual trigger in Settings. On Android (no iCloud), automatic backup to a folder you choose — anywhere on the phone or a cloud-synced folder like Google Drive/Dropbox — keeping the five most recent copies. Both are independent of Google Drive sync and the ZIP export.
 - **Smart Entry Fee Suggestions**: When adding entry fees for previously visited markets, shows past amounts as quick-select options.
-- **Data Backup & Restore**: Full data backup downloadable as ZIP archive. Restore from previous backups to transfer data between devices. Between iCloud, Google Drive, and ZIP export, data is protected in multiple independent locations and survives even if the app is deleted.
+- **Data Backup & Restore**: Full data backup downloadable as ZIP archive. Restore from previous backups to transfer data between devices, including between iPhone and Android (the ZIP format is shared and cross-platform compatible). Between automatic backup (iCloud on iPhone / a chosen folder on Android) and the ZIP export, data is protected in multiple independent locations and survives even if the app is deleted.
 - **Payment Methods**: Cash (default for physical markets like car boot sales) and Card (default for online platforms).
 
 ## How It Works
