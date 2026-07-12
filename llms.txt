@@ -22,7 +22,7 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 
 ## Core Features
 
-- **Item Tracking**: Snap photos of purchases and log price, market, and seller instantly. Each item gets an automatic unique SKU code (Crockford Base32 format, e.g. FH-20D6G0NR).
+- **Item Tracking**: Snap up to 10 photos per item (take new ones with the camera or add several from your library at once) and log price, market, and seller instantly. Choose one photo as the main image shown in the item list. Each item gets an automatic unique SKU code (Crockford Base32 format, e.g. FH-20D6G0NR).
 - **Item Lifecycle**: Items move through three statuses — New (purchased, not yet listed), Listed (on one or more platforms with per-platform dates), and Sold (sale recorded with price, platform, and date).
 - **16 Listing Platforms**: Manually mark items as listed on eBay, Vinted, Facebook, Depop, Poshmark, Mercari, OfferUp, Craigslist, ThredUp, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, and ShopThing. This is listing tracking (not automated cross-posting). Platforms can be enabled or disabled in Settings.
 - **18 Sold Platforms**: Record where items sold — all 16 listing platforms plus Car Boot (physical market sales) and Sold Offline (private sales).

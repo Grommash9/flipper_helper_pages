@@ -76,7 +76,15 @@
           "name": "How do I add items to FlipperHelper?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "To add an item, tap the plus button, take a photo or choose from your camera roll, enter the purchase price, and optionally select the market and seller. The app automatically generates a unique SKU code for each item using Crockford Base32 encoding (e.g. FH-20D6G0NR) for easy human-readable identification."
+            "text": "To add an item, tap the plus button, add up to 10 photos (take new ones with the camera or pick several from your camera roll at once), enter the purchase price, and optionally select the market and seller. The app automatically generates a unique SKU code for each item using Crockford Base32 encoding (e.g. FH-20D6G0NR) for easy human-readable identification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I add multiple photos to an item?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Each item can hold up to 10 photos, so you can capture the front, back, label, and any flaws before you list it. Take new photos with the camera or add several from your camera roll at once, and choose which photo is the main image shown in your item list. Tap any photo to view it full-screen and zoom in. All of an item's photos sync to Google Drive, and every photo link is included in the Google Sheets export."
           }
         },
         {
@@ -196,7 +204,7 @@
           "name": "How does data export to Google Sheets work in FlipperHelper?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "FlipperHelper exports your items and expenses as two separate CSV files uploaded to Google Drive. Google Drive automatically converts these CSVs to Google Sheets format. No Google Sheets API is used. The items CSV includes columns for SKU, photo URL, prices, currencies, exchange rates, market, seller, listing dates per platform, sale details, profit, and days to sell. The expenses CSV includes type, subtype, date, amount, market, and memo."
+            "text": "FlipperHelper exports your items and expenses as two separate CSV files uploaded to Google Drive. Google Drive automatically converts these CSVs to Google Sheets format. No Google Sheets API is used. The items CSV includes columns for SKU, photo URLs (every photo for the item, main image first), prices, currencies, exchange rates, market, seller, listing dates per platform, sale details, profit, and days to sell. The expenses CSV includes type, subtype, date, amount, market, and memo."
           }
         },
         {
@@ -228,7 +236,7 @@
           "name": "What data does FlipperHelper store?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "FlipperHelper stores item records (photo, purchase price, SKU, market, seller, platform listings with dates, sale info), market locations with GPS coordinates, seller names, expense records (entry fees, transport expenses, other expenses), exchange rate history (365 days), and app settings. Everything is stored locally in a SQLite database on your iPhone."
+            "text": "FlipperHelper stores item records (photos, purchase price, SKU, market, seller, platform listings with dates, sale info), market locations with GPS coordinates, seller names, expense records (entry fees, transport expenses, other expenses), exchange rate history (365 days), and app settings. Everything is stored locally in a SQLite database on your iPhone."
           }
         },
         {
@@ -456,7 +464,7 @@
     <main class="legal-page">
         <div class="legal-content">
             <h1>FlipperHelper FAQ</h1>
-            <p class="legal-updated">Last updated: June 20, 2026</p>
+            <p class="legal-updated">Last updated: July 12, 2026</p>
 
             <p>Everything you need to know about FlipperHelper, the free app for iOS and Android for tracking reselling inventory, profits, and expenses across 16 selling platforms.</p>
 
@@ -507,7 +515,16 @@
                 <h3 itemprop="name">How do I add items to FlipperHelper?</h3>
                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div itemprop="text">
-                        <p>To add an item, tap the plus button, take a photo or choose from your camera roll, enter the purchase price, and optionally select the market and seller. The app automatically generates a unique SKU code for each item using Crockford Base32 encoding (e.g. FH-20D6G0NR) for easy human-readable identification.</p>
+                        <p>To add an item, tap the plus button, add up to 10 photos (take new ones with the camera or pick several from your camera roll at once), enter the purchase price, and optionally select the market and seller. The app automatically generates a unique SKU code for each item using Crockford Base32 encoding (e.g. FH-20D6G0NR) for easy human-readable identification.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Can I add multiple photos to an item?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Yes. Each item can hold up to 10 photos, so you can capture the front, back, label, and any flaws before you list it. Take new photos with the camera or add several from your camera roll at once, and choose which photo is the main image shown in your item list. Tap any photo to view it full-screen and zoom in. All of an item's photos sync to Google Drive, and every photo link is included in the Google Sheets export.</p>
                     </div>
                 </div>
             </div>
@@ -796,7 +813,7 @@
                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div itemprop="text">
                         <p>FlipperHelper exports your items and expenses as two separate CSV files uploaded to Google Drive. Google Drive automatically converts these CSVs to Google Sheets format. No Google Sheets API is used.</p>
-                        <p>The items CSV includes columns for SKU, photo URL, prices (buy and sell with currencies and exchange rates), market, seller, listing dates per platform, sale details, payment method, profit in home currency, days to sell, and title. The expenses CSV includes type, subtype, date, amount, market, and memo.</p>
+                        <p>The items CSV includes columns for SKU, photo URLs (every photo for the item, main image first), prices (buy and sell with currencies and exchange rates), market, seller, listing dates per platform, sale details, payment method, profit in home currency, days to sell, and title. The expenses CSV includes type, subtype, date, amount, market, and memo.</p>
                     </div>
                 </div>
             </div>
@@ -876,7 +893,7 @@
                 <h3 itemprop="name">What data does FlipperHelper store?</h3>
                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div itemprop="text">
-                        <p>FlipperHelper stores item records (photo, purchase price, SKU, market, seller, platform listings with dates, sale info), market locations with GPS coordinates, seller names, expense records (entry fees, transport expenses, other expenses), exchange rate history (365 days), and app settings. Everything is stored locally in a SQLite database on your iPhone.</p>
+                        <p>FlipperHelper stores item records (photos, purchase price, SKU, market, seller, platform listings with dates, sale info), market locations with GPS coordinates, seller names, expense records (entry fees, transport expenses, other expenses), exchange rate history (365 days), and app settings. Everything is stored locally in a SQLite database on your iPhone.</p>
                     </div>
                 </div>
             </div>
