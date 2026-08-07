@@ -176,7 +176,9 @@ function pageHTML(c) {
                 name: `Where is the ${c.name} Assay Office today?`,
                 acceptedAnswer: {
                     '@type': 'Answer',
-                    text: `${c.office_url_label} is still active. Their official website is ${c.office_url}.`
+                    text: c.office_url
+                        ? `${c.office_url_label} is still active. Their official website is ${c.office_url}.`
+                        : `${c.office_url_label} is still active.`
                 }
             },
             {
@@ -580,7 +582,7 @@ ${siblingLinks(c.slug)}
                     <h2>Related</h2>
                     <ul>
                         <li><a href="uk-silver-hallmarks.html">Main UK Silver Hallmarks Identifier</a> (multi-office wizard)</li>
-                        <li>Official site: <a href="${esc(c.office_url)}" target="_blank" rel="noopener">${esc(c.office_url_label)}</a></li>
+                        <li>Official site: ${c.office_url ? `<a href="${esc(c.office_url)}" target="_blank" rel="noopener">${esc(c.office_url_label)}</a>` : esc(c.office_url_label)}</li>
                         <li><a href="https://www.thegoldsmiths.co.uk/" target="_blank" rel="noopener">Goldsmiths&rsquo; Company</a> &mdash; the compulsory hallmarking authority for England and Wales</li>
                     </ul>
                 </section>

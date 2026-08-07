@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=6759716745">
+    <meta name="color-scheme" content="light">
+    <title>Vinyl Matrix &amp; Runout Code Decoder — Free Tool | FlipperHelper</title>
+    <meta name="description" content="Type what you can read in your record's runout — worn, faint, partial is fine, use ? for unclear characters. Get ranked, honestly-uncertain matches for mastering engineer initials, plant codes, and more.">
+    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="canonical" href="https://flipperhelper.app/tools/vinyl-decoder.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Vinyl Matrix &amp; Runout Code Decoder — Free Tool">
+    <meta property="og:description" content="Type what you can read in your record's runout, ? for unclear characters. Ranked matches with honest confidence, not fake certainty.">
+    <meta property="og:url" content="https://flipperhelper.app/tools/vinyl-decoder.html">
+    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
+    <meta property="og:site_name" content="FlipperHelper">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Vinyl Matrix &amp; Runout Code Decoder">
+    <meta name="twitter:description" content="Free tool — type your runout, ? for unclear characters, get ranked honest matches.">
+    <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+    <!-- BreadcrumbList JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flipperhelper.app/"},
+        {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://flipperhelper.app/tools/"},
+        {"@type": "ListItem", "position": 3, "name": "Vinyl Matrix & Runout Code Decoder", "item": "https://flipperhelper.app/tools/vinyl-decoder.html"}
+      ]
+    }
+    </script>
+    <!-- FAQPage JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does RL mean on a vinyl runout?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RL etched into the runout is the mastering credit for Bob (Robert) Ludwig, one of the most widely credited mastering engineers in vinyl and CD. It's a well-documented mark, not a guess."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between a Mould SID and a Mastering SID?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both are IFPI-registered SID (Source Identification) codes, but they answer different questions. A Mastering SID identifies where the disc was mastered. A Mould SID identifies where it was physically pressed. A real decoded example: a Cinram-pressed Canadian disc carried Mastering SID LT40 and Mould SID IFPI 6000 — two different codes on the same disc, answering two different questions. Neither one tells you the release date."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a low matrix number mean an early pressing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — this is a common beginner mix-up. The matrix number is tied to the catalog number and the mastering, so it's normally identical across every copy of that release regardless of when it was pressed. It's the stamper number that can vary copy to copy and sometimes (not always) correlates with press order — and even that correlation isn't reliable. Individually numbered stampers weren't used for every release; Thriller is a cited example where they weren't used at all."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do side A and side B matrix numbers have to match?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It's a reasonable-sounding assumption, but collectors have documented real copies — a Cream Disraeli Gears pressing among them — where the two sides came from mismatched plates or generations. A claim that they \"have to match\" was posted in a vinyl collecting community and got corrected. Don't treat a mismatch between sides as automatic proof of a fake or a mixed-up copy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my record have a scratched-out number in the runout?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We don't have one settled answer for this — it's a genuinely open question in the collecting community depending on the specific disc. Two documented, separate explanations exist: sometimes a plant replaced a worn pressing master with a new one cut from the same mother, leaving old etching partly visible under the new marks; other times it's an internal metalworking tracking mark scratched onto the physical stamper tool itself, not meant to be read by the end buyer at all. Without more context on your specific pressing we can't tell you which applies — cross-referencing that exact catalog number on Discogs is the most reliable next step."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the ? mean when I type my runout into this tool?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Type ? for any character you genuinely can't make out, the same way collectors already write these down by hand — for example k(10? the 10 is so faint might not even be there). The decoder treats ? as a wildcard and still checks the characters you were able to read."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why doesn't the tool recognize my runout code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because this space is only partially documented anywhere, even on the best specialist sites. No match doesn't mean your code is fake or meaningless — it means it isn't in our documented set yet. Try searching the exact text (keep the ?) on Discogs, where someone may have already catalogued that specific pressing even without a named general convention."
+          }
+        }
+      ]
+    }
+    </script>
+    <style>
+        .callout {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-left: 3px solid var(--color-primary);
+            padding: 0.85rem 1rem;
+            margin: 1rem 0;
+            color: var(--text-secondary);
+            border-radius: var(--radius-sm);
+        }
+        .callout strong, .callout em, .callout b { color: var(--text-primary); }
+        .callout a { color: var(--color-primary-text); }
+
+        .vinyl-tool {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            color: var(--text-primary);
+        }
+        .vinyl-tool h2 { margin-top: 0; }
+        .vinyl-field { margin-bottom: 1.25rem; }
+        .vinyl-field label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.35rem;
+            color: var(--text-primary);
+        }
+        .vinyl-field .vinyl-hint {
+            font-size: 0.88rem;
+            color: var(--text-tertiary);
+            margin: 0 0 0.5rem 0;
+            line-height: 1.4;
+        }
+        .vinyl-field textarea,
+        .vinyl-field input[type="text"] {
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 1rem;
+            font-family: var(--font-mono);
+            padding: 0.7rem 0.85rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-default);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            min-height: 44px;
+        }
+        .vinyl-field textarea { min-height: 72px; resize: vertical; }
+        .vinyl-field textarea:focus,
+        .vinyl-field input[type="text"]:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+        .vinyl-examples {
+            margin-top: 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+        .vinyl-example {
+            background: var(--bg-card);
+            border: 1px solid var(--border-default);
+            border-radius: var(--radius-full);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            font-family: var(--font-mono);
+            padding: 0.5rem 0.9rem;
+            cursor: pointer;
+            min-height: 40px;
+        }
+        .vinyl-example:hover { border-color: var(--border-hover); background: var(--bg-card-hover); }
+
+        #vinyl-symbol-picker {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .symbol-chip {
+            background: var(--bg-card);
+            border: 1px solid var(--border-default);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-size: 0.85rem;
+            padding: 0.6rem 0.85rem;
+            cursor: pointer;
+            min-height: 44px;
+            text-align: left;
+            line-height: 1.3;
+        }
+        .symbol-chip:hover { border-color: var(--border-hover); background: var(--bg-card-hover); }
+        .symbol-chip.selected {
+            border-color: var(--color-primary);
+            background: var(--color-primary-light);
+            color: var(--color-primary-text);
+        }
+
+        .vinyl-output {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 1.25rem 1.5rem;
+            margin-top: 1.25rem;
+            color: var(--text-primary);
+        }
+        .vinyl-output h3 { margin-top: 0; }
+        #vinyl-results { display: flex; flex-direction: column; gap: 0.75rem; }
+        .vinyl-result-row {
+            background: var(--bg-card);
+            border: 1px solid var(--border-default);
+            border-radius: var(--radius-sm);
+            padding: 0.85rem 1rem;
+        }
+        .vinyl-result-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.3rem;
+        }
+        .vinyl-result-code {
+            font-family: var(--font-mono);
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .vinyl-confidence {
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding: 0.25rem 0.6rem;
+            border-radius: var(--radius-full);
+            white-space: nowrap;
+        }
+        .vinyl-confidence-3 { background: rgba(52, 199, 89, 0.18); color: #34C759; }
+        .vinyl-confidence-2 { background: rgba(255, 159, 10, 0.18); color: #FF9F0A; }
+        .vinyl-confidence-1 { background: rgba(255, 69, 58, 0.18); color: #FF453A; }
+        .vinyl-result-title { font-weight: 600; margin-bottom: 0.3rem; }
+        .vinyl-result-explanation { color: var(--text-secondary); font-size: 0.94rem; line-height: 1.5; margin-bottom: 0.3rem; }
+        .vinyl-result-note { color: #FF9F0A; font-size: 0.85rem; margin-bottom: 0.3rem; }
+        .vinyl-result-caveat { color: var(--text-tertiary); font-size: 0.85rem; line-height: 1.4; margin-bottom: 0.3rem; }
+        .vinyl-result-source { color: var(--text-muted); font-size: 0.78rem; }
+        .vinyl-empty { color: var(--text-secondary); }
+        .vinyl-empty ul { margin: 0.5rem 0 0 0; }
+        .vinyl-empty a { color: var(--color-primary-text); }
+
+        .vinyl-figure {
+            margin: 1.25rem 0;
+            text-align: center;
+        }
+        .vinyl-figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-subtle);
+        }
+        .vinyl-figure figcaption {
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
+            margin-top: 0.5rem;
+            line-height: 1.4;
+        }
+        .vinyl-figure figcaption a { color: var(--color-primary-text); }
+
+        @media (max-width: 480px) {
+            .vinyl-tool { padding: 1rem; }
+            .vinyl-result-head { flex-direction: row; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
+                <span>FlipperHelper</span>
+            </a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="../blog/">Blog</a>
+                <a href="/tools/">Tools</a>
+                <a href="/compare/">Compare</a>
+                <a href="../faq.html">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="legal-page">
+        <div class="container">
+            <article class="legal-content">
+                <h1>Vinyl Matrix &amp; Runout Code Decoder</h1>
+                <p class="legal-updated">Last verified: 6 August 2026</p>
+
+                <section>
+                    <p>The runout — the blank ring between the last groove and the label, sometimes called the &ldquo;dead wax&rdquo; — often has a hand-etched or machine-stamped code in it. Type what you can actually read below and this tool checks it against a documented set of mastering-engineer initials, pressing-plant codes, and formatting conventions, and gives you ranked, honestly-uncertain matches. It won&rsquo;t pretend to know things nobody has written down.</p>
+                    <p class="callout">
+                        <strong>Scope:</strong> this covers <strong>commonly-documented codes</strong> &mdash; mostly US and UK, spanning several eras from the mid-20th century to modern reissues. Runout conventions are crowd-sourced, regional, and genuinely full of gaps even in the best specialist references. If your code doesn&rsquo;t match anything, that means it isn&rsquo;t in our documented set yet &mdash; not that it&rsquo;s fake or meaningless.
+                    </p>
+                </section>
+
+                <figure class="vinyl-figure">
+                    <img src="images/vinyl/runout-area-label-context.jpg" alt="A vinyl record's label and the surrounding runout groove area, where the matrix number etching is visible" width="900" loading="lazy">
+                    <figcaption>The runout (dead wax) sits between the label and the last groove of music — where the matrix number lives. Photo: Ann-Sophie Qvarnström, <a href="https://commons.wikimedia.org/wiki/File:Matrix_number_on_LP_album_with_James_Bond_007_Diamonds_are_forever_soundtrack.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, resized for web.</figcaption>
+                </figure>
+
+                <!-- DECODER TOOL -->
+                <div class="vinyl-tool" id="vinyl-tool" aria-labelledby="vinyl-tool-heading">
+                    <h2 id="vinyl-tool-heading">Decode your runout</h2>
+
+                    <div class="vinyl-field">
+                        <label for="vinyl-runout-input">Runout / matrix text</label>
+                        <p class="vinyl-hint">Type what you can actually read, in order. Use <code>?</code> for any single character you genuinely can&rsquo;t make out &mdash; the same way collectors already write these down, e.g. <code>k(10? the 10 is so faint might not even be there)</code>. Don&rsquo;t worry about spacing or capitalisation.</p>
+                        <textarea id="vinyl-runout-input" placeholder="e.g. RL 1234-A, or 7? if a digit is worn" aria-label="Runout or matrix text"></textarea>
+                        <div class="vinyl-examples">
+                            <button type="button" class="vinyl-example" data-example="RL">Try: RL</button>
+                            <button type="button" class="vinyl-example" data-example="7?">Try: 7?</button>
+                            <button type="button" class="vinyl-example" data-example="A Porky Prime Cut">Try: A Porky Prime Cut</button>
+                            <button type="button" class="vinyl-example" data-example="MPO 19 123456">Try: MPO 19 123456</button>
+                            <button type="button" class="vinyl-example" data-example="1234-A">Try: 1234-A</button>
+                        </div>
+                    </div>
+
+                    <div class="vinyl-field">
+                        <label>Symbols you can see (optional)</label>
+                        <p class="vinyl-hint">Some plant marks are glyphs rather than typeable text. Tap any you can see on the disc.</p>
+                        <div id="vinyl-symbol-picker"></div>
+                    </div>
+
+                    <div class="vinyl-field">
+                        <label for="vinyl-sid-input">SID code (optional)</label>
+                        <p class="vinyl-hint">If your disc has an IFPI-prefixed SID code (Mould or Mastering), type it here &mdash; e.g. <code>IFPI 6000</code> or <code>LT40</code>.</p>
+                        <input type="text" id="vinyl-sid-input" placeholder="e.g. IFPI 6000" aria-label="SID code">
+                    </div>
+                </div>
+
+                <!-- LIVE OUTPUT -->
+                <div class="vinyl-output" id="vinyl-output" aria-live="polite" aria-atomic="true">
+                    <h3>Matches</h3>
+                    <div id="vinyl-results">
+                        <div class="vinyl-empty"><p>Type something above to see matches.</p></div>
+                    </div>
+                </div>
+
+                <section>
+                    <h2>Before you type it in — how to actually read a worn runout</h2>
+                    <p>Getting the characters off the disc is usually the hard part, decoding them is the easy part. Collectors lean on a few low-tech tricks: a jeweler&rsquo;s loupe or a simple magnifying glass held under a light angled across the surface (not straight down) makes shallow etching cast a shadow and pop out far more than it does to the naked eye. This matters enough that people specifically ask for magnifier recommendations when their eyesight makes reading runouts hard &mdash; it&rsquo;s a genuine bottleneck before you ever get to decoding.</p>
+                    <figure class="vinyl-figure">
+                        <img src="images/vinyl/matrix-number-example.jpg" alt="Close-up photo of a matrix number etched into the runout groove of a vinyl record" width="900" loading="lazy">
+                        <figcaption>A close-up of runout etching &mdash; this is the kind of text to transcribe, worn characters and all. Photo: Tashi, <a href="https://commons.wikimedia.org/wiki/File:Vinyl_record_matrix_number.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, resized for web.</figcaption>
+                    </figure>
+                </section>
+
+                <section>
+                    <h2>The runout is one clue, not the only one</h2>
+                    <p>It&rsquo;s tempting to treat the runout as the single source of truth, but experienced collectors cross-check it against the label, the jacket printing, and the barcode before drawing conclusions &mdash; because any one of those can be swapped or misprinted on its own. A documented real case: a copy of Megadeth&rsquo;s <em>Peace Sells&hellip; But Who&rsquo;s Buying?</em> had a runout matching a 1991 Greek pressing, but the jacket was printed for a Holland release, carried a barcode belonging to a different 1986 Holland pressing, and had the artist&rsquo;s name misspelled on the label. No single clue proved anything on its own &mdash; it was the combination of mismatches across runout, jacket, barcode, and label together that exposed the copy as a counterfeit.</p>
+                    <p>The practical takeaway: if a match here doesn&rsquo;t line up with what&rsquo;s printed on the sleeve or the barcode, that mismatch is worth chasing before you trust either one in isolation.</p>
+                </section>
+
+                <section>
+                    <h2>Why some runouts look scratched-out or altered</h2>
+                    <p>It&rsquo;s a common thing to see &mdash; a number or mark that looks partially crossed out or overwritten &mdash; and there isn&rsquo;t one universal explanation. Two separate, documented ones exist:</p>
+                    <ul>
+                        <li>The plant sometimes replaced a worn pressing master with a fresh one cut from the same mother, and the old etching stayed partly visible underneath the new marks.</li>
+                        <li>Other times it&rsquo;s an internal metalworking tracking mark scratched directly onto the physical stamper tool itself &mdash; never meant to be read or interpreted by the person who eventually buys the record.</li>
+                    </ul>
+                    <p>In our own research we came across a case where only one side of a disc carried this kind of mark and the other didn&rsquo;t, and nobody in the discussion could pin down why. Treat an unexplained scratch-out as a genuinely open question rather than something this tool (or anyone else) can always resolve from the text alone.</p>
+                </section>
+
+                <section>
+                    <h2>From lacquer to stamper — why some copies genuinely sound better</h2>
+                    <p>Every vinyl pressing traces back through a short chain of physical parts, and understanding it explains why collectors chase specific stampers rather than just a catalog number:</p>
+                    <ol>
+                        <li><strong>Lacquer (master)</strong> &mdash; the original cut. One lacquer can produce roughly 2&ndash;10 mothers (sources disagree on the exact range, some say as few as 2&ndash;4 &mdash; it varies by era and plant).</li>
+                        <li><strong>Mother</strong> &mdash; a positive copy used to make stampers, not to press records directly. Each mother can typically produce another 4&ndash;10 stampers.</li>
+                        <li><strong>Stamper</strong> &mdash; the actual negative that presses records. Each one wears down after roughly 1,000 pressings or so.</li>
+                    </ol>
+                    <p>A numerically &ldquo;later&rdquo; stamper isn&rsquo;t inherently worse &mdash; it&rsquo;s just a different physical part from the same lineage. What actually matters for sound quality is wear: a heavily-worn stamper, whatever its number, presses audibly softer, duller-sounding copies than a fresh one. That&rsquo;s the real reason stamper numbers matter to collectors, not the number itself.</p>
+                </section>
+
+                <section>
+                    <h2>Myth: a low matrix number means an early pressing</h2>
+                    <p>This trips up a lot of people new to runout-reading, and it got corrected directly in a vinyl collecting community thread we came across in our research. The matrix number is tied to the mastering and the catalog number, not to any individual disc &mdash; so it is normally <strong>identical across every copy</strong> of that release, whether it was pressed on day one or five years later. A &ldquo;low&rdquo; matrix number tells you nothing about press order by itself.</p>
+                    <p>What can vary copy to copy is the <strong>stamper number</strong>, and even that correlation with press order isn&rsquo;t reliable &mdash; some releases didn&rsquo;t use individually numbered stampers at all. Thriller is a cited example where they weren&rsquo;t used. If you want to estimate how early a copy is, the stamper (and its wear) is a far better signal than the matrix number &mdash; and even then, treat it as a lead, not proof.</p>
+                </section>
+
+                <section>
+                    <h2>Myth: side A and side B matrix numbers have to match</h2>
+                    <p>Another reasonable-sounding assumption that doesn&rsquo;t hold up: that both sides of a record should show matching or obviously-related plate/matrix generations, and that a mismatch signals something wrong with the copy. Collectors have documented real counter-examples &mdash; a Cream <em>Disraeli Gears</em> pressing among them &mdash; where the two sides genuinely came from different plates or generations. A post claiming the sides &ldquo;have to match&rdquo; was made in a vinyl collecting community and got downvoted for it. Don&rsquo;t assume a mismatch between sides means one side is fake or wrong.</p>
+                </section>
+
+                <section>
+                    <h2>What this tool can and can&rsquo;t do</h2>
+                    <p><strong>What it does:</strong> scores your transcribed runout text (partial and worn input included) against a documented set of mastering-engineer marks, pressing-plant codes, and formatting conventions, and gives you ranked candidates with an honest confidence level and any known caveats.</p>
+                    <p><strong>What it doesn&rsquo;t do:</strong></p>
+                    <ul>
+                        <li>It isn&rsquo;t a Discogs lookup or a full pressing database &mdash; it's a plain-language decoder for the conventions themselves.</li>
+                        <li>It can&rsquo;t confirm anything with certainty. Even a &ldquo;well-documented&rdquo; match is a documented convention, not a guarantee about your specific disc.</li>
+                        <li>It can&rsquo;t authenticate a pressing or catch a counterfeit by itself &mdash; cross-check the jacket, barcode, and label too.</li>
+                        <li>It doesn&rsquo;t cover every regional or era-specific convention that exists. This space has real, acknowledged gaps.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Further reading</h2>
+                    <p>These are the specialist references this tool's data draws from. For deeper research on a specific pressing, they're worth going to directly:</p>
+                    <ul>
+                        <li><a href="https://onrelease.net/dead-wax/" target="_blank" rel="noopener">onrelease.net/dead-wax</a> &mdash; mastering-engineer initials and pressing-plant symbol glossary.</li>
+                        <li><a href="https://londonjazzcollector.wordpress.com/" target="_blank" rel="noopener">londonjazzcollector.wordpress.com</a> &mdash; deep coverage of 1950s&ndash;60s US jazz-era Columbia pressings, including hand-etched plant letters.</li>
+                        <li><a href="https://vinyldiscovery.blogspot.com/" target="_blank" rel="noopener">vinyldiscovery.blogspot.com</a> &mdash; US/Canada pressing-plant matrix format conventions.</li>
+                        <li><a href="https://www.discogs.com/" target="_blank" rel="noopener">Discogs</a> &mdash; for looking up a specific catalog number's actual submitted runout transcriptions.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Track flips with FlipperHelper</h2>
+                    <p>If you flip vinyl, FlipperHelper logs each record with photos, tracks listings across eBay, Discogs, Vinted, and 14 other platforms, and shows real profit per item after every expense. Free on the App Store.</p>
+                    <p style="text-align:center; margin-top:1.5em;">
+                        <span class="blog-store-links"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download FlipperHelper Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get FlipperHelper Free on Google Play</a></span>
+                    </p>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer footer-compact">
+        <div class="container">
+            <div class="footer-row">
+                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
+                <div class="footer-links-inline">
+                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
+                    <a href="../privacy.html">Privacy</a>
+                    <a href="../terms.html">Terms</a>
+                    <a href="mailto:andreevichprudnikov@gmail.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="vinyl-decoder.js?v=1" defer></script>
+    <script data-goatcounter="https://grommash9.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
