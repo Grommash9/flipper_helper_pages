@@ -612,7 +612,7 @@ ${siblingLinks(c.slug)}
                     <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
                     <a href="../privacy.html">Privacy</a>
                     <a href="../terms.html">Terms</a>
-                    <a href="mailto:andreevichprudnikov@gmail.com">Contact</a>
+                    <a href="mailto:support@flipperhelper.app">Contact</a>
                 </div>
             </div>
         </div>

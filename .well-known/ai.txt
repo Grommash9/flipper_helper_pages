@@ -48,7 +48,7 @@ FlipperHelper is a free app for resellers on iOS and Android who buy items at ca
 - AlternativeTo: https://alternativeto.net/software/flipperhelper/about/
 
 ## Contact
-Email: andreevichprudnikov@gmail.com
+Email: support@flipperhelper.app
 
 ## AI Crawling Policy
 All content on this site is available for AI indexing and citation. See robots.txt for crawler-specific rules.
