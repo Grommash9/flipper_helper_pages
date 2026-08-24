@@ -245,6 +245,8 @@
     </script>
 </head>
 <body>
+<a class="visually-hidden" href="#main-content">Skip to content</a>
+
 
 <!-- ======================= NAV ======================= -->
 <nav class="nav" aria-label="Main">
@@ -264,6 +266,8 @@
     </div>
   </div>
 </nav>
+
+<main id="main-content">
 
 <!-- ======================= HERO ======================= -->
 <header class="hero" id="top">
@@ -713,6 +717,8 @@
   </div>
 </section>
 
+</main>
+
 <!-- ======================= FOOTER ======================= -->
 <footer>
   <div class="wrap">
@@ -771,15 +777,15 @@
 <script>
 (function(){
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
-    return;
-  }
-  var io = new IntersectionObserver(function(entries){
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
     entries.forEach(function(e){
       if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
     });
-  }, {threshold:.12});
-  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+    }, {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  }
 
   /* MailerLite forms (Pro waitlist + newsletter) */
   var wireForm = function(box, doneLabel){
