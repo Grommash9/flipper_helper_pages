@@ -1,0 +1,40 @@
+#!/bin/sh
+# Fills in the two steps that are easy to forget on every commit:
+#   1. stages edits to files that are already in the repo, so a commit never
+#      goes out half-saved;
+#   2. regenerates search-index.json when any HTML changed, so site search
+#      never points at old titles.
+# New files are never staged automatically — they are only listed as a warning.
+#
+# Set FH_NO_AUTOSTAGE=1 to commit exactly what you staged yourself.
+
+set -e
+cd "$(git rev-parse --show-toplevel)"
+
+if [ "$FH_NO_AUTOSTAGE" != "1" ]; then
+    # git decides "nothing to commit" from the index as it was before this hook
+    # ran, so a commit with nothing staged still stops — but the edits are now
+    # staged and the same command works the second time.
+    if git diff --cached --quiet; then
+        git add -u
+        git diff --cached --quiet ||
+            echo "pre-commit: your edits are staged now — run the same commit command again." >&2
+    else
+        git add -u
+    fi
+fi
+
+if git diff --cached --name-only | grep -q '\.html$'; then
+    if command -v node >/dev/null 2>&1; then
+        node build-search-index.js >/dev/null
+        git add search-index.json
+    else
+        echo "pre-commit: node not found, search-index.json left as it is" >&2
+    fi
+fi
+
+untracked=$(git ls-files --others --exclude-standard)
+if [ -n "$untracked" ]; then
+    echo "pre-commit: these NEW files are not in this commit (add them with 'git add <file>'):" >&2
+    echo "$untracked" | sed 's/^/    /' >&2
+fi
