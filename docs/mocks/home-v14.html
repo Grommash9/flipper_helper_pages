@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlipperHelper — Real Profit Tracker for Resellers Who Source In Person</title>
+<meta name="description" content="Free inventory &amp; profit tracker for car boot, charity shop and flea market resellers. Every find tracked from purchase to sale — real profit after every fee. Works offline. iPhone &amp; Android.">
+<meta name="apple-itunes-app" content="app-id=6759716745">
+<link rel="icon" type="image/svg+xml" href="/logo_FH.svg">
+<link rel="canonical" href="https://flipperhelper.app/">
+<!-- OpenGraph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="FlipperHelper — Real Profit Tracker for Resellers Who Source In Person">
+<meta property="og:description" content="Free inventory &amp; profit tracker for car boot, charity shop and flea market resellers. Every find tracked from purchase to sale — real profit after every fee.">
+<meta property="og:url" content="https://flipperhelper.app/">
+<meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
+<meta property="og:site_name" content="FlipperHelper">
+<meta property="og:locale" content="en_GB">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FlipperHelper — Real Profit Tracker for Resellers">
+<meta name="twitter:description" content="Every find tracked from purchase to sale — real profit after every fee. Works offline. Free on iPhone and Android.">
+<meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- SoftwareApplication JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FlipperHelper",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "iOS 17+, Android 8+",
+  "description": "Free inventory and real-profit tracker for resellers who source in person — car boots, charity shops and flea markets. Tracks each item from purchase to sale and calculates real profit after every fee and expense. Works offline.",
+  "url": "https://flipperhelper.app/",
+  "downloadUrl": [
+    "https://apps.apple.com/us/app/flipperhelper/id6759716745",
+    "https://play.google.com/store/apps/details?id=com.oprudnikov.flipperhelper"
+  ],
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "GBP"},
+  "author": {"@type": "Person", "name": "Oleksandr Prudnikov", "url": "https://flipperhelper.app/about.html"},
+  "publisher": {
+    "@type": "Organization",
+    "name": "FlipperHelper",
+    "url": "https://flipperhelper.app/",
+    "logo": {"@type": "ImageObject", "url": "https://flipperhelper.app/logo_FH.png"}
+  }
+}
+</script>
+<!-- FAQPage JSON-LD — mirrors the visible FAQ section -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is FlipperHelper really free?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. Everything in the app today — item tracking, expenses, profit calculation, multi-currency, backups, Google Sheets export, offline mode — is free with no ads, and stays free. We're building a paid Pro tier on top (web portal, eBay connect) for resellers who want more automation."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work offline at the market?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes — FlipperHelper is offline-first. Your data is stored on your device, so you can log finds, mark listings and record sales with no internet. Sync catches up when you're back online — and Pro's cloud sync will follow the same rule."}
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from Vendoo?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Different category. Vendoo posts your listings to multiple marketplaces — FlipperHelper tracks each item's path and your real profit after every expense. Many resellers use a cross-lister and a tracker together."}
+    },
+    {
+      "@type": "Question",
+      "name": "What platforms can I track listings on?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Sixteen: eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, OfferUp, Craigslist and ThredUp — plus offline sales at boots and fairs."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can I switch between iPhone and Android without losing data?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. Both apps share the same backup format — a single ZIP with your database and every photo. Export on one platform, import on the other. Switching phones is a three-step, five-minute job."}
+    },
+    {
+      "@type": "Question",
+      "name": "Will it help with my tax records?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It keeps a dated record of every purchase, sale and expense, and exports the lot to Google Sheets — a solid foundation for the HMRC trading allowance and Self Assessment."}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  /* App palette */
+  --bg:#F8FAFB;                 /* page background — same as the app */
+  --card:#FFFFFF;
+  --ink:#000000;                /* primary text */
+  --ink-66:rgba(0,0,0,.66);     /* secondary text / inactive nav */
+  --ink-45:rgba(0,0,0,.45);
+  --ink-30:rgba(0,0,0,.30);
+  --profit:#32D347;             /* income / data highlight, "Sold" green */
+  --action:#1E76F1;             /* clickable text, selected state */
+  --accent:#E58025;             /* "Add New Item" orange — primary buttons */
+  --accent-hover:#F08F38;
+  --cat:#BBCBF7;                /* small category header bg / chip outline */
+  --loss:#E14B4B;
+  --line:rgba(0,0,0,.08);
+  --line-strong:rgba(0,0,0,.14);
+
+  /* NEUMORPHISM1 — exactly as in the app */
+  --neu:5px 5px 30px rgba(174,174,174,.40), -10px -10px 30px rgba(255,255,255,.71);
+  --neu-soft:4px 4px 22px rgba(174,174,174,.30), -8px -8px 22px rgba(255,255,255,.71);
+
+  --font-body:'Roboto Flex', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono:'Roboto Mono','SF Mono',ui-monospace,Menlo,monospace;
+
+  --radius-sm:8px; --radius-md:14px; --radius-lg:20px;
+  --max:1080px;
+
+  /* type scale — one ladder for the whole site */
+  --fs-3xs:.68rem;   /* micro mono: pills, column headers */
+  --fs-2xs:.75rem;   /* eyebrow, labels, footnotes */
+  --fs-xs:.85rem;    /* nav, footer links, hints */
+  --fs-sm:.95rem;    /* card body text */
+  --fs-base:1rem;    /* buttons, brand, ui */
+  --fs-md:1.0625rem; /* body copy */
+  --fs-lede:1.125rem;/* section ledes + hero sub */
+  --fs-h3:1.05rem;   /* card titles */
+  --fs-h3-lg:1.25rem;/* feature-card title */
+  --fs-xl:1.2rem;    /* large ui accents */
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  background:var(--bg);color:var(--ink-66);
+  font-family:var(--font-body);font-size:var(--fs-md);line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--action);color:#fff}
+img{max-width:100%;display:block}
+a{color:var(--action);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{
+  font-family:var(--font-body);color:var(--ink);line-height:1.16;
+  font-weight:700;letter-spacing:-.015em;
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:68px 0}
+section#get{padding-bottom:46px} /* .revs carousel carries 22px internal bottom padding */
+@media(max-width:720px){section{padding:48px 0}section#get{padding-bottom:26px}}
+
+.eyebrow{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+  display:block;margin-bottom:12px;
+}
+.section-title{font-size:clamp(1.8rem,3.6vw,2.4rem);margin-bottom:12px;letter-spacing:-.02em}
+.section-lede{max-width:600px;font-size:var(--fs-lede);color:var(--ink-66);margin-bottom:38px;font-weight:400}
+.mono{font-family:var(--font-mono)}
+
+.tear{
+  border:none;height:1px;margin:0 auto;max-width:var(--max);
+  background-image:linear-gradient(90deg,var(--line-strong) 55%,transparent 45%);
+  background-size:14px 1px;
+}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--font-body);font-weight:600;font-size:var(--fs-base);letter-spacing:.01em;
+  padding:13px 22px;border-radius:12px;cursor:pointer;border:1px solid transparent;
+  transition:transform .15s ease,background .15s ease,border-color .15s ease,box-shadow .15s ease;
+  text-decoration:none!important;
+}
+.btn:active{transform:translateY(1px);box-shadow:2px 2px 14px rgba(174,174,174,.4)}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--neu)}
+.btn-primary:hover{background:var(--accent-hover)}
+.btn-ghost{background:var(--card);color:var(--ink);border-color:var(--line-strong);box-shadow:var(--neu-soft)}
+.btn-ghost:hover{border-color:var(--action);color:var(--action)}
+.store-row{display:flex;gap:18px;flex-wrap:wrap}
+/* side-by-side buttons: tighter shadow so one button's glow never lands on its neighbour
+   (extent ≈ offset 4px + blur/2 = 11px < 18px gap) */
+.store-row .btn{box-shadow:4px 4px 14px rgba(174,174,174,.35), -4px -4px 14px rgba(255,255,255,.6)}
+.store-row .btn:active{box-shadow:2px 2px 8px rgba(174,174,174,.35)}
+
+.trust-trio{
+  display:flex;gap:10px 28px;flex-wrap:wrap;
+  font-size:var(--fs-sm);color:var(--ink-66);font-weight:500;
+}
+@media(min-width:720px){
+  .trust-trio{flex-wrap:nowrap;gap:24px;min-width:0}
+  .trust-trio span{white-space:nowrap}
+  .trust-trio{font-size:clamp(.8rem,1.2vw,.9rem)}
+}
+.trust-trio span{display:inline-flex;align-items:center;gap:8px}
+.trust-trio i{width:7px;height:7px;border-radius:50%;background:var(--profit);flex:none}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(248,250,251,.86);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:var(--max);margin:0 auto;padding:8px 24px;
+  display:flex;align-items:center;gap:22px;
+}
+.brand{display:flex;align-items:center;gap:8px;font-weight:500;font-size:var(--fs-base);color:var(--ink);text-decoration:none!important;letter-spacing:-.01em}
+.fh-logo{width:19px;height:20px;display:block;color:var(--ink)}
+.nav-links{display:flex;gap:18px;margin-left:auto;align-items:center}
+.nav-links a:not(.btn){
+  color:#000000;opacity:.45;font-size:var(--fs-xs);font-weight:500;
+  transition:opacity .12s ease;
+  display:inline-flex;align-items:center;min-height:44px;padding:0 2px;
+}
+.nav-links a:not(.btn):hover,
+.nav-links a:not(.btn)[aria-current="page"],
+.nav-links a:not(.btn).active{color:#000000;opacity:1;text-decoration:none}
+.nav .btn{padding:5px 11px;font-size:var(--fs-xs);border-radius:9px}
+@media(max-width:860px){.nav-links a:not(.btn){display:none}}
+
+/* ---------- hero ---------- */
+.hero{padding:76px 0 64px;position:relative;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;top:-220px;right:-160px;width:560px;height:560px;
+  background:radial-gradient(circle,rgba(229,128,37,.08),transparent 62%);
+  pointer-events:none;
+}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr;gap:48px}}
+.hero .trust-trio{margin-bottom:20px}
+.hero h1{font-size:clamp(2.2rem,5vw,3.4rem);margin-bottom:18px;font-weight:800;letter-spacing:-.025em}
+.hero h1 em{font-style:normal;color:var(--profit)}
+.hero-sub{font-size:var(--fs-lede);color:var(--ink-66);max-width:530px;margin-bottom:30px}
+.hero-sub strong{color:var(--ink);font-weight:600}
+
+/* ---------- receipt (signature) ---------- */
+.receipt{
+  background:#FDFBF4;color:#26241E;
+  font-family:var(--font-mono);font-size:var(--fs-xs);line-height:1.5;
+  border-radius:6px;padding:28px 26px 20px;max-width:380px;margin:0 auto;
+  box-shadow:var(--neu), 0 14px 34px rgba(0,0,0,.10);
+  transform:rotate(-1.4deg);position:relative;
+}
+.receipt::after{
+  content:"";position:absolute;left:0;right:0;bottom:-9px;height:10px;
+  background:radial-gradient(circle at 9px -2px,transparent 7px,#FDFBF4 7.5px);
+  background-size:18px 10px;background-repeat:repeat-x;
+}
+.receipt h3{
+  font-family:var(--font-mono);color:#26241E;font-size:var(--fs-xs);font-weight:600;
+  text-align:center;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px;
+}
+.receipt .r-sub{text-align:center;font-size:var(--fs-2xs);color:#8B8676;margin-bottom:14px}
+.receipt table{width:100%;border-collapse:collapse}
+.receipt td{padding:3px 0;vertical-align:top}
+.receipt td:last-child{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.receipt .r-dash td{border-top:1px dashed #B9B4A3;padding-top:8px}
+.receipt .r-total td{border-top:2px solid #26241E;padding-top:8px;font-weight:600;font-size:var(--fs-base)}
+.receipt .r-total td:last-child{color:#1B9A34}
+.receipt .r-neg{color:#A4433B}
+.receipt .r-note{font-size:var(--fs-3xs);color:#8B8676;text-align:center;margin-top:14px}
+.receipt-caption{
+  text-align:center;margin-top:22px;font-size:var(--fs-xs);color:var(--ink-45);
+  max-width:380px;margin-left:auto;margin-right:auto;
+}
+
+/* ---------- day timeline ---------- */
+.day{position:relative}
+.day::before{ /* vertical dashed line — black 45% */
+  content:"";position:absolute;left:11px;top:8px;bottom:8px;width:1px;
+  background-image:linear-gradient(180deg,rgba(0,0,0,.45) 55%,transparent 45%);
+  background-size:1px 12px;
+}
+.moment{position:relative;padding:0 0 56px 56px}
+.moment:last-child{padding-bottom:0}
+.moment::before{ /* dot — app blue */
+  content:"";position:absolute;left:5px;top:8px;width:13px;height:13px;border-radius:50%;
+  background:var(--bg);border:2px solid var(--action);
+}
+.moment .when{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--action);display:block;margin-bottom:8px;
+}
+.moment h3{font-size:clamp(1.25rem,2.4vw,1.5rem);margin-bottom:12px;max-width:560px;font-weight:700}
+.moment .scene{color:var(--ink-66);max-width:560px;margin-bottom:14px;font-size:var(--fs-base)}
+.moment .answer{max-width:560px;color:var(--ink-66);font-size:var(--fs-base)}
+.moment .answer strong{color:var(--ink);font-weight:600}
+.moment .chip-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.chip{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-66);
+  border:1.5px solid var(--cat);border-radius:999px;padding:5px 12px;background:var(--card);
+}
+@media(max-width:600px){.moment{padding-left:40px}}
+
+/* eyebrow of the day section — app blue */
+#day .eyebrow{color:var(--action)}
+
+/* ---------- screenshots carousel ---------- */
+.shots-viewport{position:relative}
+.shots{
+  display:flex;gap:18px;overflow-x:auto;padding:8px 4px 22px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+.shots::-webkit-scrollbar{display:none}
+/* header row: lede/summary on the left, carousel arrows on the right */
+.carousel-head{display:flex;justify-content:space-between;align-items:flex-end;gap:14px 24px;flex-wrap:wrap;margin-bottom:6px}
+.carousel-head .section-lede,.carousel-head .rev-summary{margin-bottom:0}
+.carousel-head .shots-arrows{margin:0 0 2px;flex:none}
+.shot{
+  flex:0 0 auto;width:240px;scroll-snap-align:start;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  padding:12px;transition:transform .18s ease;box-shadow:var(--neu-soft);
+}
+@media(max-width:520px){.shot{width:200px}}
+.shot:hover{transform:translateY(-4px)}
+/* placeholder for a 1179 × 2556 app screenshot */
+.shot .ph{
+  aspect-ratio:1179/2556;width:100%;border-radius:14px;
+  background:repeating-linear-gradient(45deg,#EDF1F5 0 12px,#F4F7FA 12px 24px);
+  border:1px dashed var(--line-strong);
+  display:grid;place-items:center;text-align:center;
+}
+.shot .ph span{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);color:var(--ink-45);
+  letter-spacing:.08em;line-height:1.7;padding:0 14px;
+}
+.shot figcaption{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink);
+  text-align:center;margin-top:10px;letter-spacing:.08em;text-transform:uppercase;
+  background:var(--cat);border-radius:6px;padding:6px 4px;
+}
+.shots-arrows{display:flex;gap:10px;justify-content:flex-end;margin-top:4px}
+.shots-arrows button{
+  width:40px;height:40px;border-radius:50%;border:1px solid var(--line-strong);
+  background:var(--card);color:var(--action);font-size:var(--fs-h3);cursor:pointer;
+  box-shadow:var(--neu-soft);display:grid;place-items:center;
+  transition:transform .12s ease,color .12s ease;
+}
+.shots-arrows button:hover{color:var(--ink)}
+.shots-arrows button:active{transform:translateY(1px)}
+
+/* ---------- story ---------- */
+.story{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+@media(max-width:920px){.story-grid{grid-template-columns:1fr;gap:44px}}
+.story p{margin-bottom:16px;color:var(--ink-66)}
+.story .rule{
+  border-left:3px solid var(--accent);padding:6px 0 6px 18px;margin:22px 0;
+  font-weight:700;font-size:var(--fs-lede);color:var(--ink);line-height:1.4;letter-spacing:-.01em;
+}
+.ledger{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:30px;font-family:var(--font-mono);box-shadow:var(--neu-soft);
+}
+.ledger h3{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink);margin-bottom:20px;font-weight:600;
+  background:var(--cat);display:inline-block;padding:6px 12px;border-radius:6px;
+}
+.ledger-row{
+  display:flex;justify-content:space-between;gap:16px;align-items:baseline;
+  padding:13px 0;border-bottom:1px dashed var(--line-strong);font-size:var(--fs-sm);
+}
+.ledger-row:last-of-type{border-bottom:none}
+.ledger-row .when{color:var(--ink-45);font-size:var(--fs-2xs);flex:none;width:110px}
+.ledger-row .what{color:var(--ink-66);flex:1}
+.ledger-row .amt{color:var(--profit);font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.ledger .foot{font-size:var(--fs-2xs);color:var(--ink-45);margin-top:18px;font-family:var(--font-body)}
+
+/* ---------- workbench: today (free) + pro ---------- */
+.group-label{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);
+  display:flex;align-items:center;gap:14px;margin:0 0 18px;
+}
+.group-label::after{content:"";flex:1;height:1px;background-image:linear-gradient(90deg,var(--line-strong) 55%,transparent 45%);background-size:14px 1px}
+.group-label b{color:var(--ink);font-weight:600}
+.merged-gap{margin-top:40px}
+
+ul.today-grid,dl.pro-rows{list-style:none;margin:0}
+.today-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:860px){.today-grid{grid-template-columns:1fr}}
+.today-card{
+  border:1px solid var(--line);border-radius:var(--radius-md);
+  padding:22px;background:var(--card);box-shadow:var(--neu-soft);
+  display:flex;flex-direction:column;gap:12px;
+}
+.today-ic{width:46px;height:46px;border-radius:12px;flex:none;display:grid;place-items:center}
+.today-ic svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ic-profit{background:rgba(50,211,71,.13);color:#1FA234}
+.ic-speed{background:rgba(229,128,37,.13);color:var(--accent)}
+.ic-data{background:rgba(30,118,241,.11);color:var(--action)}
+.today-card h3{font-size:var(--fs-h3);font-weight:700}
+.today-card p{font-size:var(--fs-sm);color:var(--ink-66);line-height:1.55}
+.bench-card p,.pro-row .v,.pro-intro{line-height:1.55}
+
+.pro-card{
+  border:1px solid var(--line);border-radius:var(--radius-md);
+  background:var(--card);box-shadow:var(--neu);
+  padding:26px 22px;position:relative;overflow:hidden;
+}
+.pro-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent);border-radius:4px 0 0 4px}
+.pro-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.pro-card h3{font-size:var(--fs-h3-lg);margin-bottom:8px;font-weight:700;letter-spacing:-.01em}
+.pro-intro{font-size:var(--fs-sm);color:var(--ink-66);max-width:640px;margin-bottom:20px}
+.pro-rows{border-top:1px dashed var(--line-strong)}
+.pro-row{display:grid;grid-template-columns:190px 1fr;gap:8px 24px;align-items:baseline;padding:13px 0;border-bottom:1px dashed var(--line-strong)}
+@media(max-width:640px){.pro-row{grid-template-columns:1fr;gap:4px}}
+.pro-row .k{font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
+.pro-row .v{font-size:var(--fs-sm);color:var(--ink-66)}
+.pro-row .v strong{color:var(--ink);font-weight:600}
+.pro-foot{margin-top:18px;font-size:var(--fs-xs);color:var(--ink-45);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pro-foot i{width:7px;height:7px;border-radius:50%;background:var(--profit);flex:none}
+
+/* pro waitlist */
+.waitlist{margin-top:24px;padding-top:22px;border-top:1px dashed var(--line-strong)}
+.waitlist-label{font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:12px}
+.waitlist-form{display:flex;gap:12px;flex-wrap:wrap;max-width:560px}
+.waitlist-form input[type="email"]{
+  flex:1;min-width:220px;padding:13px 16px;font:inherit;font-size:var(--fs-base);color:var(--ink);
+  background:var(--card);border:1px solid var(--line-strong);border-radius:12px;
+  box-shadow:inset 2px 2px 8px rgba(174,174,174,.18), inset -2px -2px 8px rgba(255,255,255,.7);
+}
+.waitlist-form input[type="email"]::placeholder{color:var(--ink-30)}
+.waitlist-form input[type="email"]:focus{outline:2px solid var(--action);outline-offset:1px;border-color:transparent}
+.waitlist-form input[aria-invalid="true"]{border-color:var(--loss);outline-color:var(--loss)}
+.waitlist .hint{display:block;margin-top:12px;font-size:var(--fs-xs);color:var(--ink-66)}
+.waitlist .ok{display:none;font-size:var(--fs-sm);color:var(--ink);font-weight:600;padding:13px 0}
+.waitlist .ok i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--profit);margin-right:9px}
+.waitlist.done .waitlist-form,.waitlist.done .hint{display:none}
+.waitlist.done .ok{display:block}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+.btn:focus-visible,.waitlist-form button:focus-visible{outline:2px solid var(--action);outline-offset:2px}
+
+/* ---------- workbench (roadmap) ---------- */
+/* RESERVED — no bench grid is rendered yet (one .bench-card ships standalone).
+   Kept so the next roadmap card drops in without re-deriving the grid. */
+.bench-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:860px){.bench-grid{grid-template-columns:1fr}}
+.bench-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  padding:22px;position:relative;box-shadow:var(--neu-soft);
+}
+.bench-card .status{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;display:inline-flex;align-items:center;gap:7px;
+  padding:5px 12px;border-radius:999px;margin-bottom:14px;
+}
+/* RESERVED — .status-building (and @keyframes pulse below) is unused today;
+   it is the third roadmap state, alongside .status-next and .status-idea. */
+.status-building{background:rgba(50,211,71,.14);color:#1FA234}
+.status-next{background:rgba(229,128,37,.12);color:var(--accent)}
+.status-idea{background:var(--cat);color:var(--ink-66)}
+.status i{width:6px;height:6px;border-radius:50%;background:currentColor;flex:none}
+.status-building i{animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.bench-card h3{font-size:var(--fs-h3);margin-bottom:8px;font-weight:700}
+.bench-card p{font-size:var(--fs-sm);color:var(--ink-66)}
+.bench-note{margin-top:22px;font-size:var(--fs-sm);color:var(--ink-45);max-width:640px}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:760px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:center;
+  padding:17px 2px;color:var(--ink);font-weight:600;font-size:var(--fs-base);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-mono);color:var(--action);font-size:var(--fs-xl);flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 2px 18px;color:var(--ink-66);font-size:var(--fs-sm);max-width:640px}
+.faq-more{margin-top:22px;font-size:var(--fs-sm)}
+
+/* ---------- reviews carousel ---------- */
+.rev-head{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  gap:24px 40px;flex-wrap:wrap;margin-bottom:8px;
+}
+.rev-head-left{flex:1;min-width:260px}
+.rev-head-right{display:flex;flex-direction:column;gap:12px;align-items:flex-end;text-align:right;padding-bottom:6px}
+.rev-head-right .store-row{justify-content:flex-end}
+.rev-note{font-size:var(--fs-2xs);color:var(--ink-45)}
+.rev-summary{
+  display:flex;align-items:center;gap:10px 22px;flex-wrap:wrap;
+  margin:0 0 18px;font-size:var(--fs-sm);color:var(--ink-66);
+}
+.rev-summary .score{
+  font-family:var(--font-mono);font-weight:600;font-size:var(--fs-h3-lg);
+  color:var(--ink);letter-spacing:-.01em;font-variant-numeric:tabular-nums;
+}
+.rev-summary .stars{letter-spacing:2px;font-size:var(--fs-base)}
+.rev-summary .s-full{color:var(--accent)}
+.rev-summary .s-part{
+  background:linear-gradient(90deg,var(--accent) 60%,rgba(0,0,0,.16) 60%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.rev-summary .of{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);letter-spacing:.08em;text-transform:uppercase}
+.revs-viewport{position:relative;overflow:hidden;transition:height .35s ease}
+.revs{
+  display:flex;gap:18px;overflow-x:auto;padding:8px 4px 18px;
+  align-items:flex-start;
+  scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+.revs::-webkit-scrollbar{display:none}
+/* exactly 3 cards per viewport width; an opened long review spans 2 slots */
+.rev-card{
+  flex:0 0 calc((100% - 36px)/3);scroll-snap-align:start;
+  border:1px solid var(--line);border-radius:var(--radius-md);
+  padding:18px;background:var(--card);box-shadow:var(--neu-soft);
+  display:flex;flex-direction:column;gap:9px;
+  transition:flex-basis .3s ease;
+}
+.rev-card.open{flex-basis:calc((100% - 36px)/3*2 + 18px)}
+@media(max-width:860px){
+  .rev-card{flex-basis:280px}
+  .rev-card.open{flex-basis:578px;max-width:calc(100vw - 56px)}
+}
+.rev-card.long{cursor:pointer}
+.rev-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.rev-stars{color:var(--accent);letter-spacing:1.5px;font-size:var(--fs-xs)}
+.rev-store{
+  font-family:var(--font-mono);font-size:.62rem;font-weight:600;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--ink-66);
+  background:var(--cat);border-radius:6px;padding:4px 8px;
+  display:inline-flex;align-items:center;gap:5px;flex:none;
+}
+.rev-store svg{width:11px;height:11px;fill:currentColor;flex:none}
+.rev-card h3{font-size:var(--fs-sm);font-weight:700}
+.rev-card .rev-text{font-size:var(--fs-xs);color:var(--ink-66);line-height:1.5}
+.rev-card.open .rev-text{columns:2;column-gap:26px}
+@media(max-width:520px){.rev-card.open .rev-text{columns:1}}
+.rev-card .rev-full{display:none}
+.rev-card.open .rev-full{display:inline}
+.rev-card.open .rev-short{display:none}
+.rev-more{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+  letter-spacing:.08em;color:var(--action);
+}
+.rev-card.open .rev-more::after{content:"Show less ←"}
+.rev-card:not(.open) .rev-more::after{content:"Read in full →"}
+.rev-meta{
+  margin-top:auto;padding-top:10px;border-top:1px dashed var(--line-strong);
+  font-family:var(--font-mono);font-size:var(--fs-3xs);color:var(--ink-45);
+  display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+}
+/* RESERVED — developer reply block; no review currently carries one. */
+.rev-reply{
+  padding:10px 12px;border-left:3px solid var(--cat);
+  background:rgba(187,203,247,.14);border-radius:0 8px 8px 0;
+  font-size:var(--fs-2xs);color:var(--ink-66);line-height:1.5;
+}
+.rev-reply b{display:block;font-family:var(--font-mono);font-size:var(--fs-3xs);
+  letter-spacing:.08em;text-transform:uppercase;color:var(--ink-45);margin-bottom:4px;font-weight:600}
+
+/* ---------- final ---------- */
+.final{text-align:center}
+.final h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:14px;letter-spacing:-.02em}
+.final p{color:var(--ink-66);max-width:520px;margin:0 auto 30px}
+.final .store-row{justify-content:center}
+.final .trust-trio{justify-content:center;margin-top:20px}
+.newsletter{
+  margin-top:52px;padding-top:38px;border-top:1px dashed var(--line-strong);
+  max-width:520px;margin-left:auto;margin-right:auto;
+}
+.newsletter h3{font-size:var(--fs-h3);margin-bottom:6px;font-weight:700}
+.newsletter p{font-size:var(--fs-sm);margin-bottom:18px}
+.newsletter form{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.newsletter input{
+  flex:1;min-width:220px;background:var(--card);border:1px solid var(--line-strong);
+  border-radius:12px;padding:13px 16px;color:var(--ink);font-size:var(--fs-sm);font-family:var(--font-body);
+  box-shadow:inset 2px 2px 8px rgba(174,174,174,.18);
+}
+.newsletter input:focus{outline:2px solid var(--action);outline-offset:1px;border-color:transparent}
+.newsletter .fine{font-size:var(--fs-2xs);color:var(--ink-45);margin-top:12px}
+
+/* ---------- featured on ---------- */
+.badges{padding:46px 0;text-align:center}
+.badges-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px}
+.badge-card{
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  min-height:56px;padding:8px 12px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  color:var(--ink-66);font-size:var(--fs-sm);font-weight:600;
+  transition:transform .15s ease,border-color .15s ease,color .15s ease;
+  text-decoration:none!important;
+  /* same reasoning as .store-row: tighter shadow so one card's glow never lands on its
+     neighbour (extent = offset 4px + blur/2 = 11px < 16px gap) */
+  box-shadow:4px 4px 14px rgba(174,174,174,.35), -4px -4px 14px rgba(255,255,255,.6);
+}
+.badge-card:hover{transform:translateY(-2px);border-color:var(--line-strong);color:var(--ink)}
+.badge-card:active{transform:translateY(1px);box-shadow:2px 2px 8px rgba(174,174,174,.35)}
+/* height-driven so every badge scales the same; object-fit keeps the artwork undistorted
+   if a narrow cell forces max-width to clamp the box */
+.badge-card img{height:44px;width:auto;max-width:100%;object-fit:contain;flex:none}
+.badge-card .badge-ico{width:24px;height:24px;opacity:.7;transition:opacity .15s ease}
+.badge-card:hover .badge-ico{opacity:1}
+@media(max-width:520px){
+  .badges{padding:34px 0}
+  .badges-row{gap:12px}
+}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:26px 0 24px;font-size:var(--fs-xs);color:var(--ink-66);background:var(--card)}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:24px;align-items:start}
+@media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.foot-grid{grid-template-columns:1fr}}
+.foot-left p{margin-top:8px;max-width:300px;font-size:var(--fs-xs);line-height:1.5}
+.foot-col h4{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);margin:4px 0 6px;
+}
+.foot-col a{color:var(--ink-66);display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 2px;font-size:var(--fs-xs)}
+.foot-col a:hover{color:var(--action);text-decoration:none}
+.foot-col svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.foot-col nav{display:flex;flex-direction:column}
+.foot-bottom{
+  margin-top:20px;padding-top:14px;border-top:1px dashed var(--line);
+  display:flex;justify-content:space-between;gap:8px 24px;flex-wrap:wrap;
+  font-size:var(--fs-2xs);color:var(--ink-66);
+}
+.foot-bottom a{color:var(--ink-66);text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:2px}
+.foot-bottom a:hover{text-decoration-color:var(--action)}
+
+a:focus-visible,button:focus-visible,summary:focus-visible{
+  outline:2px solid var(--action);outline-offset:3px;border-radius:6px;
+}
+
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
+  background:var(--card);color:var(--ink);border:1px solid var(--line-strong);
+  border-radius:12px;padding:10px 16px;box-shadow:var(--neu-soft);
+}
+.skip:focus{left:24px;top:8px;text-decoration:none}
+.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ======================= NAV ======================= -->
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+      FlipperHelper
+    </a>
+    <div class="nav-links">
+      <a href="#day">Your Sunday</a>
+      <a href="#story">Our story</a>
+      <a href="#workbench">What's next</a>
+      <a href="#faq">FAQ</a>
+      <a href="/blog/">Blog</a>
+      <a href="/tools/">Free tools</a>
+      <a class="btn btn-primary" href="#get">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================= HERO ======================= -->
+<main id="main">
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="trust-trio">
+        <span><i></i>Works offline at the market</span>
+        <span><i></i>10 seconds per find</span>
+        <span><i></i>Real profit after every fee</span>
+      </div>
+      <h1>Every find, <em>tracked</em>. Your real profit, counted.</h1>
+      <p class="hero-sub">
+        The free app that follows each item's path — from the stall where you found it
+        to the platform where it sold — and shows what you actually made
+        after every fee, fare and entry ticket. No spreadsheet gymnastics.
+      </p>
+      <div class="store-row">
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/flipperhelper/id6759716745">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          App Store
+        </a>
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.oprudnikov.flipperhelper">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+          Google Play
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="receipt" role="img" aria-label="Receipt showing the true costs and profit of one resold item">
+        <h3>One find, honestly</h3>
+        <p class="r-sub">Chessington car boot · Sunday, 06:40</p>
+        <table>
+          <tr><td>Art-deco mirror</td><td>−£4.00</td></tr>
+          <tr><td>Entry fee (share)</td><td>−£0.50</td></tr>
+          <tr><td>Fuel (share of trip)</td><td>−£1.20</td></tr>
+          <tr class="r-dash"><td>Sold on eBay · day 9</td><td>+£28.00</td></tr>
+          <tr><td>eBay fees</td><td class="r-neg">−£3.64</td></tr>
+          <tr class="r-total"><td>Real profit</td><td>£18.66</td></tr>
+        </table>
+        <p class="r-note">The full path of one item — tracked in FlipperHelper</p>
+      </div>
+      <p class="receipt-caption">The maths most of us skip. The app doesn't.</p>
+    </div>
+  </div>
+</header>
+
+<hr class="tear">
+
+<!-- ======================= YOUR SUNDAY, SORTED (day timeline) ======================= -->
+<section id="day" aria-labelledby="day-title">
+  <div class="wrap">
+    <span class="eyebrow">A day in the life — sorted</span>
+    <h2 class="section-title" id="day-title">You know this Sunday. So does the app.</h2>
+    <p class="section-lede">FlipperHelper was built around one real sourcing day, repeated hundreds of times. Follow it through, and you'll see exactly where it earns its place in your pocket.</p>
+
+    <div class="day">
+
+      <div class="moment reveal">
+        <span class="when">05:50 · The boot opens</span>
+        <h3>Muddy field. No signal. Three finds in ten minutes.</h3>
+        <p class="scene">This is the moment records usually don't happen. Hands full, queue moving, "I'll log it when I get home" — and by evening the prices have blurred together.</p>
+        <p class="answer">FlipperHelper works fully offline. <strong>Snap a photo, type the price, done</strong> — the app fills in the market by GPS and gives the item its own SKU. Ten seconds per find, at the moment of purchase, not from memory.</p>
+        <div class="chip-row">
+          <span class="chip">offline-first</span><span class="chip">photo-first entry</span><span class="chip">auto SKU</span><span class="chip">GPS markets</span>
+        </div>
+      </div>
+
+      <div class="moment reveal">
+        <span class="when">11:30 · Home with the haul</span>
+        <h3>£3.50 entry, £12 of fuel, a bacon roll. Who's paying for that?</h3>
+        <p class="scene">Trip costs are where spreadsheet profit quietly turns into fiction — they never make it into the per-item maths.</p>
+        <p class="answer">Log the day's expenses once, and the app <strong>splits them across everything you bought</strong>. Entry fees, transport — car, train, even the van rental for the France run. Each find carries its true cost from day one, in any of 6 currencies with daily rates. Your numbers, your call.</p>
+        <div class="chip-row">
+          <span class="chip">hauls &amp; trips</span><span class="chip">expense split</span><span class="chip">multi-currency</span>
+        </div>
+      </div>
+
+      <div class="moment reveal">
+        <span class="when">Tuesday evening · Listing night</span>
+        <h3>"Wait — is the teapot on eBay or Vinted?"</h3>
+        <p class="scene">Fifty live listings across four platforms is where memory gives up. Items sit forgotten in drawers while their listings quietly expire.</p>
+        <p class="answer">Mark where each item is listed — across <strong>16 platforms</strong> — with dates and asking prices. Platform badges show the state of every find at a glance, and a reminder nudges you about the ones still waiting in the drawer. Your call when.</p>
+        <div class="chip-row">
+          <span class="chip">16 platforms</span><span class="chip">listing badges</span><span class="chip">gentle reminders</span><span class="chip">instant search</span>
+        </div>
+      </div>
+
+      <div class="moment reveal">
+        <span class="when">Day 9 · It sells</span>
+        <h3>Sold for £28. But what did you make?</h3>
+        <p class="scene">Turnover is what resellers brag about. Profit — after the platform's cut, the postage, the trip that found it — is what pays for anything.</p>
+        <p class="answer">Record the sale and the app closes the item's path: purchase, trip share, fees — one honest number, in green. <strong>Real profit, correctly counted.</strong> And when it's a good one, a share card is ready for your socials.</p>
+        <div class="chip-row">
+          <span class="chip">real profit</span><span class="chip">days to sell</span><span class="chip">share cards</span>
+        </div>
+      </div>
+
+      <div class="moment reveal">
+        <span class="when">Month end · The honest look</span>
+        <h3>Which markets are worth the 5am alarm?</h3>
+        <p class="scene">Without the numbers it's all gut feel — you keep going back to markets that stopped paying months ago, and tax season arrives as a shoebox of guesses.</p>
+        <p class="answer">The Money Flow dashboard shows what you made, what it cost, and how much cash is sitting in unsold stock — by week, month or any range. Per-market and per-trip totals tell you <strong>which Sundays earn their alarm</strong>. And one tap exports the lot to Google Sheets — a tidy, dated record when Self Assessment comes calling.</p>
+        <div class="chip-row">
+          <span class="chip">money flow</span><span class="chip">stock value</span><span class="chip">per-trip profit</span><span class="chip">sheets export</span>
+        </div>
+      </div>
+
+      <div class="moment reveal">
+        <span class="when">Any day · New phone</span>
+        <h3>Months of records. One device. Sleep well anyway.</h3>
+        <p class="scene">The quiet fear of every tracker: drop the phone in a puddle at the boot, and a year of your business goes with it.</p>
+        <p class="answer">Backups run automatically — iCloud on iPhone, a folder you choose on Android — and everything exports as <strong>one file that works on both platforms</strong>. Switching phones, or even switching sides between iPhone and Android, is a five-minute non-event.</p>
+        <div class="chip-row">
+          <span class="chip">automatic backup</span><span class="chip">iPhone ↔ Android</span><span class="chip">no account needed</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SCREENSHOTS (carousel) ======================= -->
+<section aria-labelledby="shots-title" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Real app, real screenshots</span>
+    <h2 class="section-title" id="shots-title">The same day, on screen</h2>
+    <div class="carousel-head">
+      <p class="section-lede">Straight from the iPhone app — Android keeps the same layout. Swipe through the steps of one working day.</p>
+      <div class="shots-arrows">
+        <button type="button" id="shots-prev" aria-label="Previous screenshots">←</button>
+        <button type="button" id="shots-next" aria-label="Next screenshots">→</button>
+      </div>
+    </div>
+
+    <div class="shots-viewport">
+      <div class="shots" id="shots-track" tabindex="0" aria-label="App screenshots, horizontally scrollable">
+        <figure class="shot">
+          <div class="ph"><span>APP SCREENSHOT<br>1179 × 2556<br>— New Item —</span></div>
+          <figcaption>05:50 · Snap &amp; save</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="ph"><span>APP SCREENSHOT<br>1179 × 2556<br>— Haul &amp; expenses —</span></div>
+          <figcaption>11:30 · Trip costs</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="ph"><span>APP SCREENSHOT<br>1179 × 2556<br>— Listed items —</span></div>
+          <figcaption>Tuesday · Listings</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="ph"><span>APP SCREENSHOT<br>1179 × 2556<br>— Sold —</span></div>
+          <figcaption>Day 9 · Sold</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="ph"><span>APP SCREENSHOT<br>1179 × 2556<br>— Money Flow —</span></div>
+          <figcaption>Month end · Money Flow</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="ph"><span>APP SCREENSHOT<br>1179 × 2556<br>— Backup —</span></div>
+          <figcaption>Any day · Backup</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="tear">
+
+<!-- ======================= REVIEWS + GET THE APP ======================= -->
+<section id="get" aria-labelledby="reviews-title">
+  <div class="wrap">
+    <div class="rev-head">
+      <div class="rev-head-left">
+        <span class="eyebrow">From the stores</span>
+        <h2 class="section-title" id="reviews-title">What resellers say</h2>
+        <p class="section-lede" style="margin-bottom:0">Real reviews from the App Store and Google Play — unedited, exactly as posted.</p>
+      </div>
+      <div class="rev-head-right">
+        <div class="store-row">
+          <a class="btn btn-primary" href="https://apps.apple.com/us/app/flipperhelper/id6759716745">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+            App Store
+          </a>
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.oprudnikov.flipperhelper">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+            Google Play
+          </a>
+        </div>
+        <p class="rev-note">iOS 17+ and Android 8+ · works offline.</p>
+      </div>
+    </div>
+
+    <p class="group-label"><b>Reviews</b>&nbsp;· App Store &amp; Google Play</p>
+
+    <div class="carousel-head">
+      <div class="rev-summary">
+        <span class="score">4.6</span>
+        <span class="stars" aria-label="Rated 4.6 out of 5"><span class="s-full">★★★★</span><span class="s-part">★</span></span>
+        <span class="of">App Store · 10 ratings</span>
+      </div>
+      <div class="shots-arrows">
+        <button type="button" id="revs-prev" aria-label="Previous reviews">←</button>
+        <button type="button" id="revs-next" aria-label="Next reviews">→</button>
+      </div>
+    </div>
+
+    <div class="revs-viewport">
+      <div class="revs" id="revs-track" tabindex="0" aria-label="User reviews, horizontally scrollable">
+
+        <article class="rev-card reveal">
+          <div class="rev-top">
+            <span class="rev-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <span class="rev-store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+          </div>
+          <h3>Very useful!</h3>
+          <p class="rev-text">This app will help me keep organised with my flips. Easy to use — intuitive and conventional. Keep up the great work!</p>
+          <p class="rev-meta"><span>franskens</span><span>11 Aug</span></p>
+        </article>
+
+        <article class="rev-card reveal">
+          <div class="rev-top">
+            <span class="rev-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <span class="rev-store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Google Play</span>
+          </div>
+          <p class="rev-text">Very good job. I was looking for an app like this for a long time. It is recently enough for me to keep in track with my flipping business. I wish the developer big success and please keep developing the app for good. — Emre, Helsinki</p>
+          <p class="rev-meta"><span>Emre Denizhan</span><span>10 Aug</span></p>
+        </article>
+
+        <article class="rev-card reveal">
+          <div class="rev-top">
+            <span class="rev-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <span class="rev-store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Google Play</span>
+          </div>
+          <p class="rev-text">Great stock take app so far, fast and simple.</p>
+          <p class="rev-meta"><span>Foden Anderson</span><span>5 Aug</span></p>
+        </article>
+
+        <article class="rev-card reveal">
+          <div class="rev-top">
+            <span class="rev-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <span class="rev-store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+          </div>
+          <h3>Amazing app</h3>
+          <p class="rev-text">Best free reselling app out there, no complaints.</p>
+          <p class="rev-meta"><span>Finley4435</span><span>30 Jul</span></p>
+        </article>
+
+        <article class="rev-card long reveal" role="button" tabindex="0" aria-expanded="false">
+          <div class="rev-top">
+            <span class="rev-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <span class="rev-store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+          </div>
+          <h3>The Best Reselling App I've Used</h3>
+          <p class="rev-text"><span class="rev-short">I've tried a lot of inventory and reselling apps over the years, and FlipperHelper is easily one of the most simple and useful I've come across. It's really easy to use, with clear sections showing what's unlisted, listed, and sold — and you can set reminders for the unlisted items. It…</span><span class="rev-full">I've tried a lot of inventory and reselling apps over the years, and FlipperHelper is easily one of the most simple and useful I've come across. It's really easy to use, with clear sections showing what's unlisted, listed, and sold — and you can set reminders for the unlisted items. It has a great search function to quickly find items. It also shows you exact profit and how many days it took for an item to sell, which is great for making better buying decisions. The multi-platform support is excellent too, as you can easily see what's been listed where, making crosslisting much easier. On top of that, the app owner is open to suggestions and ideas, which is invaluable and shows they genuinely care about improving the app. If you buy and sell regularly, I'd definitely recommend giving FlipperHelper a try.</span></p>
+          <span class="rev-more" aria-hidden="true"></span>
+          <p class="rev-meta"><span>Becky049423</span><span>3 Apr</span></p>
+        </article>
+
+        <!-- Add new reviews here: copy a card above, swap the .rev-store badge
+             to Google Play with this icon when the review is from Play:
+             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Google Play -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= STORY ======================= -->
+<section class="story" id="story" aria-labelledby="story-title">
+  <div class="wrap story-grid">
+    <div>
+      <span class="eyebrow">Why this exists</span>
+      <h2 class="section-title" id="story-title">Built at the car boot, not in a boardroom</h2>
+      <p>FlipperHelper started because my wife Valentina needed a better way to run her reselling business. Her spreadsheet kept getting in the way: a buy logged at the stall, then a forgotten listing, a missed fee, per-item maths gone wrong.</p>
+      <p>So I built her an app. She's been the lead tester ever since — every Sunday, boot after boot.</p>
+      <div class="rule">"If a feature doesn't survive a Sunday morning at a car boot, it doesn't ship."</div>
+      <p>We source around England, drive to France for vintage, and sell on eBay, Vinted and Facebook Marketplace. Everything on this site — the app, the <a href="/blog/">guides</a>, the <a href="/tools/">free tools</a> — comes from that real business, not market research.</p>
+      <p style="color:rgba(0,0,0,.45);font-size:.95rem">— Oleksandr Prudnikov, developer · London · <a href="/about.html">more about us</a></p>
+    </div>
+
+    <div class="ledger reveal" role="figure" aria-label="Valentina's reselling growth, tracked in FlipperHelper">
+      <h3>Valentina's numbers</h3>
+      <div class="ledger-row"><span class="when">Month 1</span><span class="what">First target: £200 turnover, charity-shop test runs</span><span class="amt">£200</span></div>
+      <div class="ledger-row"><span class="when">After that</span><span class="what">Hit the target → double it</span><span class="amt">×2</span></div>
+      <div class="ledger-row"><span class="when">Year 1</span><span class="what">Regular monthly clearings</span><span class="amt">£1,300–1,900</span></div>
+      <div class="ledger-row"><span class="when">Best month</span><span class="what">Profit, tracked to the penny</span><span class="amt">~£1,700</span></div>
+      <div class="ledger-row"><span class="when">Now</span><span class="what">Yearly income from reselling</span><span class="amt">£18–25k</span></div>
+      <p class="foot">Real figures from our own business — same screens you get, no special version. Her business now pays for the car that gets her to the boots.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="tear">
+
+<!-- ======================= WORKBENCH (today free + Pro next) ======================= -->
+<section id="workbench" aria-labelledby="bench-title">
+  <div class="wrap">
+    <span class="eyebrow">On the workbench</span>
+    <h2 class="section-title" id="bench-title">What it handles today — and what's next</h2>
+    <p class="section-lede">The app grows the same way it started — from real problems at real markets. Same rule applies to everything below: if it doesn't survive a Sunday at a car boot, it doesn't ship.</p>
+
+    <!-- Today, free -->
+    <p class="group-label"><b>Handled today</b>&nbsp;· free in the app</p>
+    <ul class="today-grid">
+      <li class="today-card reveal">
+        <span class="today-ic ic-profit" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8"/><path d="M15 8h5v5"/></svg>
+        </span>
+        <h3>Real profit, not a gut feeling</h3>
+        <p>Buy price, fees, expenses — counted from purchase to sale, in 6 currencies.</p>
+      </li>
+      <li class="today-card reveal">
+        <span class="today-ic ic-speed" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5"/><path d="M9.5 2h5"/></svg>
+        </span>
+        <h3>10 seconds per find</h3>
+        <p>Snap a photo, set a price, done — right at the stall, offline.</p>
+      </li>
+      <li class="today-card reveal">
+        <span class="today-ic ic-data" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3v11"/><path d="M8 10l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+        </span>
+        <h3>Your numbers, your call</h3>
+        <p>Auto backup, cloud sync, export to Google Sheets or ZIP — anytime.</p>
+      </li>
+    </ul>
+
+    <!-- Next: Pro -->
+    <div class="merged-gap">
+      <p class="group-label"><b>On the bench now</b>&nbsp;· FlipperHelper Pro</p>
+      <div class="pro-card reveal">
+        <div class="pro-head">
+          <h3>Same tracker, less work</h3>
+          <span class="status status-next"><i></i>In development</span>
+        </div>
+        <p class="pro-intro">Pro is a subscription for when the business grows: your records on every screen, and sales that record themselves.</p>
+
+        <dl class="pro-rows">
+          <div class="pro-row">
+            <dt class="k">Web portal</dt>
+            <dd class="v"><strong>Your whole business on a big screen.</strong> Items, hauls, expenses, real profit — in the browser. 20 finds after a Sunday boot? Type them on a proper keyboard, eBay open in the next tab.</dd>
+          </div>
+          <div class="pro-row">
+            <dt class="k">eBay connect</dt>
+            <dd class="v"><strong>Sales record themselves.</strong> Link your eBay account — sold orders land in the app with fees broken down per item. Real profit after every fee, no spreadsheet gymnastics. eBay first, other platforms to follow.</dd>
+          </div>
+          <div class="pro-row">
+            <dt class="k">One account</dt>
+            <dd class="v"><strong>Sign in with Apple or Google.</strong> One account keeps your phone and the web portal on the same page. Set up in seconds.</dd>
+          </div>
+          <div class="pro-row">
+            <dt class="k">Every device</dt>
+            <dd class="v"><strong>Phone, tablet and web — at the same time, even offline.</strong> Log finds on any device with no signal; everything syncs up the moment you're back online. No conflicts, no double entry.</dd>
+          </div>
+        </dl>
+
+        <p class="pro-foot"><i></i>Everything that's free today stays free. Pro only adds on top.</p>
+
+        <div class="waitlist" id="pro-waitlist">
+          <label class="waitlist-label" for="wl-email">Pro waitlist</label>
+          <form class="waitlist-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID" novalidate>
+            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input type="email" id="wl-email" name="email" required placeholder="you@example.com" autocomplete="email">
+            <button type="submit" class="btn btn-primary">Join the waitlist</button>
+          </form>
+          <p class="ok" role="status"><i></i>You're on the list. One email when Pro is ready — early access first.</p>
+          <span class="hint">One email when Pro is ready, early access first. No spam — your call to leave anytime.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Your call -->
+    <div class="merged-gap">
+      <div class="bench-card reveal">
+        <span class="status status-idea"><i></i>Your call</span>
+        <h3>The next one might be yours</h3>
+        <p>Most features started as an email from a reseller (or a complaint from Valentina). If something would save you time at the boot or at the kitchen table — <a href="mailto:support@flipperhelper.app">tell us</a>. We read every message.</p>
+      </div>
+    </div>
+
+    <p class="bench-note">We build in the open — progress notes go out in <a href="#final">The Weekly Flip</a> and on <a href="https://reddit.com/r/flipperhelper">r/flipperhelper</a> first.</p>
+  </div>
+</section>
+
+<hr class="tear">
+
+<!-- ======================= FAQ ======================= -->
+<section id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <span class="eyebrow">Common questions</span>
+    <h2 class="section-title" id="faq-title">Quick answers</h2>
+    <div class="faq">
+      <details>
+        <summary>Is FlipperHelper really free?</summary>
+        <p>Yes. Everything in the app today — item tracking, expenses, profit calculation, multi-currency, backups, Google Sheets export, offline mode — is free with no ads, and stays free. We're building a paid Pro tier on top (web portal, eBay connect) for resellers who want more automation.</p>
+      </details>
+      <details>
+        <summary>Does it work offline at the market?</summary>
+        <p>Yes — FlipperHelper is offline-first. Your data is stored on your device, so you can log finds, mark listings and record sales with no internet. Sync catches up when you're back online — and Pro's cloud sync will follow the same rule.</p>
+      </details>
+      <details>
+        <summary>How is this different from Vendoo?</summary>
+        <p>Different category. Vendoo posts your listings to multiple marketplaces — FlipperHelper tracks each item's path and your real profit after every expense. Many resellers use a cross-lister and a tracker together. See the full comparison for an honest breakdown.</p>
+      </details>
+      <details>
+        <summary>What platforms can I track listings on?</summary>
+        <p>Sixteen: eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, OfferUp, Craigslist and ThredUp — plus offline sales at boots and fairs.</p>
+      </details>
+      <details>
+        <summary>Can I switch between iPhone and Android without losing data?</summary>
+        <p>Yes. Both apps share the same backup format — a single ZIP with your database and every photo. Export on one platform, import on the other. Switching phones is a three-step, five-minute job.</p>
+      </details>
+      <details>
+        <summary>Will it help with my tax records?</summary>
+        <p>It keeps a dated record of every purchase, sale and expense, and exports the lot to Google Sheets — a solid foundation for the HMRC trading allowance and Self Assessment. Our blog covers how UK resellers use it for tax season.</p>
+      </details>
+    </div>
+    <p class="faq-more"><a href="/faq.html">All 49 questions, answered honestly →</a></p>
+  </div>
+</section>
+
+<!-- ======================= FINAL CTA ======================= -->
+<section class="final" id="final" aria-labelledby="final-title">
+  <div class="wrap">
+    <h2 id="final-title">Your next haul deserves honest numbers.</h2>
+    <p>Free on iOS 17+ and Android 8+. Set it up in the car park if you like — works offline from the first minute.</p>
+    <div class="store-row">
+      <a class="btn btn-primary" href="https://apps.apple.com/us/app/flipperhelper/id6759716745">Download on the App Store</a>
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.oprudnikov.flipperhelper">Get it on Google Play</a>
+    </div>
+    <div class="trust-trio">
+      <span><i></i>Works offline</span>
+      <span><i></i>10 seconds per find</span>
+      <span><i></i>Real profit after every fee</span>
+    </div>
+
+    <div class="newsletter">
+      <h3>The Weekly Flip</h3>
+      <p>Car boot tips, market finds and real profit numbers — straight to your inbox.</p>
+      <form action="#" method="post" onsubmit="return false">
+        <label for="nl-email" class="visually-hidden">Email address</label>
+        <input type="email" id="nl-email" name="email" placeholder="you@example.com" required>
+        <button class="btn btn-ghost" type="submit">Subscribe</button>
+      </form>
+      <p class="fine">Unsubscribe anytime. See our <a href="/privacy.html">privacy policy</a>.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="tear">
+
+<!-- ======================= FEATURED ON ======================= -->
+<section class="badges" aria-labelledby="featured-title">
+  <div class="wrap">
+    <p class="eyebrow" id="featured-title">Featured on</p>
+    <div class="badges-row reveal">
+      <a class="badge-card" href="https://fazier.com" target="_blank" rel="noopener">
+        <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&amp;theme=light" width="103" height="44" alt="Launched on Fazier" loading="lazy">
+      </a>
+      <a class="badge-card" href="https://alternativeto.net/software/flipperhelper/about/" target="_blank" rel="noopener">
+        <img class="badge-ico" src="https://cdn.simpleicons.org/alternativeto/black" width="20" height="20" alt="" loading="lazy">
+        <span>AlternativeTo</span>
+      </a>
+      <a class="badge-card" href="https://www.indiehackers.com/product/flipperhelper" target="_blank" rel="noopener">
+        <img class="badge-ico" src="https://cdn.simpleicons.org/indiehackers/black" width="20" height="20" alt="" loading="lazy">
+        <span>Indie Hackers</span>
+      </a>
+      <a class="badge-card" href="https://openhunts.com" target="_blank" rel="noopener">
+        <img src="https://cdn.openhunts.com/badges/club.webp" width="486" height="105" alt="OpenHunts Club Member" loading="lazy">
+      </a>
+      <a class="badge-card" href="https://indiehunt.io/project/flipperhelper-track-your-flipping-business" target="_blank" rel="noopener">
+        <img src="https://indiehunt.io/badges/indiehunt-badge-light.svg" width="200" height="58" alt="Featured on IndieHunt" loading="lazy">
+      </a>
+      <a class="badge-card" href="https://startupfa.me/s/flipperhelper?utm_source=flipperhelper.app" target="_blank" rel="noopener">
+        <img src="https://startupfa.me/badges/featured-badge-small.webp" width="655" height="105" alt="FlipperHelper — featured on Startup Fame" loading="lazy">
+      </a>
+      <a class="badge-card" href="https://www.startupinspire.com" target="_blank" rel="noopener">
+        <img src="https://www.startupinspire.com/images/badge_2.svg" width="149" height="43" alt="FlipperHelper — featured on Startup Inspire" loading="lazy">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FOOTER ======================= -->
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-left">
+        <a class="brand" href="#top" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+        <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <nav aria-label="Footer — explore">
+          <a href="/blog/">Blog</a>
+          <a href="/tools/">Free tools</a>
+          <a href="/about.html">About</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Follow</h4>
+        <nav aria-label="Footer — follow">
+          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Help &amp; legal</h4>
+        <nav aria-label="Footer — help and legal">
+          <a href="mailto:support@flipperhelper.app">Support</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Community at <a href="https://reddit.com/r/flipperhelper">r/flipperhelper</a></span>
+      <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  /* Pro waitlist */
+  var wl = document.getElementById('pro-waitlist');
+  if (wl) {
+    var wlForm = wl.querySelector('.waitlist-form');
+    wlForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var email = wlForm.querySelector('input[type=email]');
+      if (!email.checkValidity()){ email.focus(); email.setAttribute('aria-invalid','true'); return; }
+      email.removeAttribute('aria-invalid');
+      var btn = wlForm.querySelector('button');
+      btn.disabled = true; btn.textContent = 'Joining\u2026';
+      fetch(wlForm.action, {method:'POST', headers:{'Accept':'application/json'}, body:new FormData(wlForm)})
+        .then(function(r){ if (r.ok){ wl.classList.add('done'); } else { throw 0; } })
+        .catch(function(){
+          window.location.href = 'mailto:support@flipperhelper.app?subject=Pro%20waitlist&body=' + encodeURIComponent(email.value + ' \u2014 add me to the Pro waitlist');
+          btn.disabled = false; btn.textContent = 'Join the waitlist';
+        });
+    });
+  }
+
+  /* screenshots carousel arrows */
+  var track = document.getElementById('shots-track');
+  if (track) {
+    var step = function(){ var card = track.querySelector('.shot'); return card ? card.getBoundingClientRect().width + 18 : 260; };
+    var prev = document.getElementById('shots-prev');
+    var next = document.getElementById('shots-next');
+    if (prev) prev.addEventListener('click', function(){ track.scrollBy({left:-step()*2, behavior:'smooth'}); });
+    if (next) next.addEventListener('click', function(){ track.scrollBy({left: step()*2, behavior:'smooth'}); });
+  }
+
+  /* reviews carousel arrows */
+  var rtrack = document.getElementById('revs-track');
+  if (rtrack) {
+    var rstep = function(){ var card = rtrack.querySelector('.rev-card'); return card ? card.getBoundingClientRect().width + 18 : 358; };
+    var rprev = document.getElementById('revs-prev');
+    var rnext = document.getElementById('revs-next');
+    if (rprev) rprev.addEventListener('click', function(){ rtrack.scrollBy({left:-rstep(), behavior:'smooth'}); });
+    if (rnext) rnext.addEventListener('click', function(){ rtrack.scrollBy({left: rstep(), behavior:'smooth'}); });
+
+    /* long reviews: expand sideways on click, scroll the card fully into view */
+    var revealCard = function(card){
+      /* wait for the flex-basis transition, then bring the whole card into view */
+      setTimeout(function(){
+        var pad = 4; /* track side padding */
+        var left = card.offsetLeft - rtrack.offsetLeft;
+        var right = left + card.offsetWidth;
+        var viewL = rtrack.scrollLeft;
+        var viewR = viewL + rtrack.clientWidth;
+        if (right > viewR) rtrack.scrollTo({left: right - rtrack.clientWidth + pad, behavior:'smooth'});
+        else if (left < viewL) rtrack.scrollTo({left: left - pad, behavior:'smooth'});
+      }, 320);
+    };
+    var toggle = function(card){
+      var opening = !card.classList.contains('open');
+      rtrack.querySelectorAll('.rev-card.open').forEach(function(c){ c.classList.remove('open'); c.setAttribute('aria-expanded','false'); });
+      if (opening){
+        card.classList.add('open');
+        card.setAttribute('aria-expanded','true');
+        revealCard(card);
+      }
+    };
+    rtrack.querySelectorAll('.rev-card.long').forEach(function(card){
+      card.addEventListener('click', function(){ toggle(card); });
+      card.addEventListener('keydown', function(e){
+        if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); toggle(card); }
+      });
+    });
+
+    /* adaptive height: the viewport hugs the tallest card currently in view;
+       it grows (animated) only when you scroll to a taller review */
+    var rview = rtrack.parentElement; /* .revs-viewport */
+    var setRevsHeight = function(){
+      var cards = rtrack.querySelectorAll('.rev-card');
+      if (!cards.length) return;
+      var viewL = rtrack.scrollLeft;
+      var viewR = viewL + rtrack.clientWidth;
+      var maxH = 0, maxAll = 0;
+      cards.forEach(function(c){
+        var h = c.offsetHeight;
+        if (h > maxAll && !c.classList.contains('open')) maxAll = h;
+        var l = c.offsetLeft, r = l + c.offsetWidth;
+        /* count a card as visible if at least 60px of it is in view */
+        var overlap = Math.min(r, viewR) - Math.max(l, viewL);
+        if (overlap > 60 && h > maxH) maxH = h;
+      });
+      if (!maxH) maxH = maxAll;
+      /* cap at the tallest collapsed card; an opened long card may exceed the cap */
+      var openCard = rtrack.querySelector('.rev-card.open');
+      var cap = openCard ? Math.max(maxAll, openCard.offsetHeight) : maxAll;
+      var target = Math.min(maxH, cap);
+      var cs = getComputedStyle(rtrack);
+      target += parseFloat(cs.paddingTop) + parseFloat(cs.paddingBottom);
+      rview.style.height = target + 'px';
+    };
+    var rafId = null;
+    var queueRevsHeight = function(){
+      if (rafId) return;
+      rafId = requestAnimationFrame(function(){ rafId = null; setRevsHeight(); });
+    };
+    rtrack.addEventListener('scroll', queueRevsHeight, {passive:true});
+    window.addEventListener('resize', queueRevsHeight);
+    rtrack.querySelectorAll('.rev-card.long').forEach(function(card){
+      card.addEventListener('click', function(){ setTimeout(setRevsHeight, 340); });
+    });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(setRevsHeight);
+    window.addEventListener('load', setRevsHeight);
+    setRevsHeight();
+  }
+
+  /* highlight current nav section while scrolling */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a[href^="#"]'));
+  var map = {};
+  links.forEach(function(l){ var id = l.getAttribute('href').slice(1); var el = document.getElementById(id); if (el) map[id] = l; });
+  var so = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      var l = map[e.target.id]; if (!l) return;
+      if (e.isIntersecting){ links.forEach(function(x){ x.classList.remove('active'); }); l.classList.add('active'); }
+    });
+  }, {rootMargin:'-40% 0px -55% 0px'});
+  Object.keys(map).forEach(function(id){ so.observe(document.getElementById(id)); });
+})();
+</script>
+</body>
+</html>
