@@ -378,6 +378,57 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 }
 .post .shot--phone{max-width:320px;margin-left:auto;margin-right:auto}
 
+/* A photograph here is supporting evidence, not hero art, so it never runs
+   the full measure. Three placements, in order of preference:
+
+   .figure-row    beside its paragraphs — the homepage .story-grid split,
+                  alternating sides down the article so the page has more
+                  than one left edge
+   .figure-grid   two unpaired photographs sharing a line
+   .shot--diagram charts and explainers: centred and whole, because they are
+                  read rather than glanced at
+*/
+.post .figure-row{
+  display:grid;grid-template-columns:1fr .78fr;gap:44px;align-items:center;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-row > div > :last-child{margin-bottom:0}
+.post .figure-row .shot{margin:0}
+.post .figure-row .shot img{max-height:320px;width:auto}
+.post .figure-row--flip > .shot{order:-1}
+.post .figure-row--phone{grid-template-columns:1fr .46fr;gap:38px}
+.post .figure-row--phone .shot img{max-height:420px}
+@media(max-width:760px){
+  .post .figure-row,.post .figure-row--phone{grid-template-columns:1fr;gap:22px}
+  .post .figure-row--flip > .shot{order:0}
+}
+
+.post .figure-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-grid .shot{margin:0}
+.post .figure-grid .shot img{max-height:300px;width:auto}
+@media(max-width:600px){.post .figure-grid{grid-template-columns:1fr}}
+
+.post .shot--diagram{max-width:620px;margin-left:auto;margin-right:auto}
+.post .shot--solo{max-width:520px;margin-left:auto;margin-right:auto}
+.post .shot--solo img{max-height:420px;width:auto}
+
+/* a nine-step procedure would run three screens at the homepage's 56px
+   step gap, so long timelines tighten to the article's 26px rhythm */
+.post .day--long .moment{padding-bottom:30px}
+
+/* ---------- FAQ ----------
+   Question and answer step in behind a dashed rule, so the tail of the
+   article reads as a list of exchanges rather than more flush-left prose. */
+.post .faq-item{
+  padding-left:22px;border-left:1px dashed var(--line-strong);
+  margin:22px 0;max-width:var(--measure);
+}
+.post .faq-item h3{margin:0 0 8px}
+.post .faq-item > :last-child{margin-bottom:0}
+
 /* ---------- spreadsheet formulas ---------- */
 .formula-block{
   background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
@@ -500,6 +551,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 .calc-line.calc-loss{font-size:var(--fs-base);font-weight:700;color:var(--loss)}
 .calc-note{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);margin-top:8px}
 </style>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 
 <body>
@@ -571,15 +623,43 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 
       <section>
         <h2>How Poshmark Canada works (step-by-step selling flow)</h2>
-        <ol>
-            <li><strong>Set up</strong> — download the app, sign up, pick a username, connect a Canadian bank account.</li>
-            <li><strong>List items</strong> — photos, brand, size, condition, price.</li>
-            <li><strong>Share</strong> — share your own closet daily, share other people's closets for reciprocity, attend Posh Parties.</li>
-            <li><strong>Sale</strong> — buyer commits at full price or accepts your counter-offer. Poshmark charges them.</li>
-            <li><strong>Ship</strong> — Poshmark emails you a prepaid Canada Post label. Pack the item, stick the label, drop at any Canada Post location.</li>
-            <li><strong>Funds release</strong> — once delivered, buyer has 3 days to accept (or stay silent). Then funds land in your Poshmark balance.</li>
-            <li><strong>Withdraw</strong> — direct deposit to your Canadian bank account in CAD, processed in 1–3 business days.</li>
-        </ol>
+        <div class="day day--long">
+      <div class="moment reveal">
+      <span class="when">Step 1</span>
+      <h3>Set up</h3>
+      <p>download the app, sign up, pick a username, connect a Canadian bank account.</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 2</span>
+      <h3>List items</h3>
+      <p>photos, brand, size, condition, price.</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 3</span>
+      <h3>Share</h3>
+      <p>share your own closet daily, share other people's closets for reciprocity, attend Posh Parties.</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 4</span>
+      <h3>Sale</h3>
+      <p>buyer commits at full price or accepts your counter-offer. Poshmark charges them.</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 5</span>
+      <h3>Ship</h3>
+      <p>Poshmark emails you a prepaid Canada Post label. Pack the item, stick the label, drop at any Canada Post location.</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 6</span>
+      <h3>Funds release</h3>
+      <p>once delivered, buyer has 3 days to accept (or stay silent). Then funds land in your Poshmark balance.</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 7</span>
+      <h3>Withdraw</h3>
+      <p>direct deposit to your Canadian bank account in CAD, processed in 1–3 business days.</p>
+      </div>
+      </div>
       </section>
 
       <hr class="tear">
@@ -657,21 +737,22 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section>
         <h2>FAQ</h2>
 
-        <h3>Can I sell to US buyers from Poshmark Canada?</h3>
+        <div class="faq-item">
+      <h3>Can I sell to US buyers from Poshmark Canada?</h3>
         <p>No. Poshmark Canada and Poshmark US are separate marketplaces with separate inventories. Cross-border requires a separate US account, US shipping infrastructure, and US payout.</p>
-
-        <h3>How do I withdraw my Poshmark Canada earnings?</h3>
+      </div><div class="faq-item">
+      <h3>How do I withdraw my Poshmark Canada earnings?</h3>
         <p>Direct deposit to your Canadian bank account in CAD. Available once your balance is $1+. Processing 1–3 business days. No fee.</p>
-
-        <h3>Does Poshmark Canada issue tax slips (T4A) to sellers?</h3>
+      </div><div class="faq-item">
+      <h3>Does Poshmark Canada issue tax slips (T4A) to sellers?</h3>
         <p>No — Poshmark does not currently issue a T4A. You're responsible for tracking your sales for CRA reporting. The $30,000 CAD GST/HST registration threshold (rolling 4 quarters) applies to your total taxable supplies — Poshmark + Mercari + Kijiji + eBay + cash sales. Speak to your accountant.</p>
-
-        <h3>What is a Posh Party and how do I use it?</h3>
+      </div><div class="faq-item">
+      <h3>What is a Posh Party and how do I use it?</h3>
         <p>A 2-hour themed event Poshmark runs (e.g. "Winter Layers Party", "Denim Party"). During the party window, you share relevant listings to the party feed for boosted visibility.</p>
-
-        <h3>Can I buy from Poshmark Canada to resell?</h3>
+      </div><div class="faq-item">
+      <h3>Can I buy from Poshmark Canada to resell?</h3>
         <p>Technically yes but the math rarely works. Resale-margin items are usually sourced from thrift, not from other Poshmark closets where prices reflect Poshmark pricing already.</p>
-      </section>
+      </div></section>
 
       <hr class="tear">
 
@@ -696,7 +777,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section class="post-cta">
         <h2>Track your Poshmark Canada listings in CAD</h2>
         <p>Log each thrift find, mark listed on Poshmark Canada + Mercari + Kijiji + 13 more, see real CAD profit per item after 20% commission, HST, and shipping. Free on iOS and Android, no account.</p>
-        <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it on Google Play</a></span>
+        <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it on Google Play</a></span>
       </section>
 
     </article>
@@ -742,6 +823,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
   </div>
 </footer>
 
+<script>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+})();
+</script>
 <script data-goatcounter="https://grommash9.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

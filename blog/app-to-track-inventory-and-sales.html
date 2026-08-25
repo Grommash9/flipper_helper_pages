@@ -417,6 +417,57 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 }
 .post .shot--phone{max-width:320px;margin-left:auto;margin-right:auto}
 
+/* A photograph here is supporting evidence, not hero art, so it never runs
+   the full measure. Three placements, in order of preference:
+
+   .figure-row    beside its paragraphs — the homepage .story-grid split,
+                  alternating sides down the article so the page has more
+                  than one left edge
+   .figure-grid   two unpaired photographs sharing a line
+   .shot--diagram charts and explainers: centred and whole, because they are
+                  read rather than glanced at
+*/
+.post .figure-row{
+  display:grid;grid-template-columns:1fr .78fr;gap:44px;align-items:center;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-row > div > :last-child{margin-bottom:0}
+.post .figure-row .shot{margin:0}
+.post .figure-row .shot img{max-height:320px;width:auto}
+.post .figure-row--flip > .shot{order:-1}
+.post .figure-row--phone{grid-template-columns:1fr .46fr;gap:38px}
+.post .figure-row--phone .shot img{max-height:420px}
+@media(max-width:760px){
+  .post .figure-row,.post .figure-row--phone{grid-template-columns:1fr;gap:22px}
+  .post .figure-row--flip > .shot{order:0}
+}
+
+.post .figure-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-grid .shot{margin:0}
+.post .figure-grid .shot img{max-height:300px;width:auto}
+@media(max-width:600px){.post .figure-grid{grid-template-columns:1fr}}
+
+.post .shot--diagram{max-width:620px;margin-left:auto;margin-right:auto}
+.post .shot--solo{max-width:520px;margin-left:auto;margin-right:auto}
+.post .shot--solo img{max-height:420px;width:auto}
+
+/* a nine-step procedure would run three screens at the homepage's 56px
+   step gap, so long timelines tighten to the article's 26px rhythm */
+.post .day--long .moment{padding-bottom:30px}
+
+/* ---------- FAQ ----------
+   Question and answer step in behind a dashed rule, so the tail of the
+   article reads as a list of exchanges rather than more flush-left prose. */
+.post .faq-item{
+  padding-left:22px;border-left:1px dashed var(--line-strong);
+  margin:22px 0;max-width:var(--measure);
+}
+.post .faq-item h3{margin:0 0 8px}
+.post .faq-item > :last-child{margin-bottom:0}
+
 /* ---------- spreadsheet formulas ---------- */
 .formula-block{
   background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
@@ -539,6 +590,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 .calc-line.calc-loss{font-size:var(--fs-base);font-weight:700;color:var(--loss)}
 .calc-note{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);margin-top:8px}
 </style>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 
 <body>
@@ -657,12 +709,28 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 <p><strong>FlipperHelper is a free app for iOS and Android where each item is a single record that updates as its status changes.</strong></p>
 
                 <h3>The workflow</h3>
-                <ol>
-                    <li><strong>At the market</strong> &mdash; tap +, snap a photo, type the price (&pound;3), pick the market (auto-suggested by GPS if it's a saved one). Item saves with status New. Takes 8 seconds</li>
-                    <li><strong>At home, listing day</strong> &mdash; open the item, mark as Listed on eBay and Vinted (with today's date). Status changes to Listed. The item still counts in your stock value but is visibly "out for sale"</li>
-                    <li><strong>When it sells</strong> &mdash; open the item, tap Mark Sold, enter the sold price (&pound;28) and platform (Vinted). Status changes to Sold. Profit is calculated automatically. Stock value drops by the &pound;3 you originally paid</li>
-                    <li><strong>End of month</strong> &mdash; open Money Flow. See revenue, costs, expenses, and real profit by week, month, or custom date. Filter by platform or market</li>
-                </ol>
+                <div class="day">
+      <div class="moment reveal">
+      <span class="when">Step 1</span>
+      <h3>At the market</h3>
+      <p>tap +, snap a photo, type the price (&pound;3), pick the market (auto-suggested by GPS if it's a saved one). Item saves with status New. Takes 8 seconds</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 2</span>
+      <h3>At home, listing day</h3>
+      <p>open the item, mark as Listed on eBay and Vinted (with today's date). Status changes to Listed. The item still counts in your stock value but is visibly "out for sale"</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 3</span>
+      <h3>When it sells</h3>
+      <p>open the item, tap Mark Sold, enter the sold price (&pound;28) and platform (Vinted). Status changes to Sold. Profit is calculated automatically. Stock value drops by the &pound;3 you originally paid</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 4</span>
+      <h3>End of month</h3>
+      <p>open Money Flow. See revenue, costs, expenses, and real profit by week, month, or custom date. Filter by platform or market</p>
+      </div>
+      </div>
 
                 <h3>Inventory + sales together &mdash; what you can see</h3>
                 <ul>
@@ -693,21 +761,22 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section>
                 <h2>Frequently asked questions</h2>
 
-                <h3>What's the simplest free app to track inventory and sales?</h3>
+                <div class="faq-item">
+      <h3>What's the simplest free app to track inventory and sales?</h3>
                 <p>FlipperHelper for iOS &mdash; one record per item, three states (New/Listed/Sold), profit calculated automatically. No item cap, no ads, no subscription. For Android users, the simplest free option is currently a Google Sheets template, though it's painful on mobile at markets.</p>
-
-                <h3>How many items can the app track?</h3>
+      </div><div class="faq-item">
+      <h3>How many items can the app track?</h3>
                 <p>FlipperHelper has no item cap &mdash; active resellers track thousands of items over time. Many free inventory apps cap at 100&ndash;500 items, so check before committing.</p>
-
-                <h3>Can I track multiple platforms in one inventory record?</h3>
+      </div><div class="faq-item">
+      <h3>Can I track multiple platforms in one inventory record?</h3>
                 <p>Yes &mdash; an item can be marked listed on eBay and Vinted simultaneously, with the sale recorded against whichever platform it eventually sells on. This is the main reason a unified tracker beats single-platform tools.</p>
-
-                <h3>Does the app calculate profit including fees?</h3>
+      </div><div class="faq-item">
+      <h3>Does the app calculate profit including fees?</h3>
                 <p>Profit = sold price &minus; purchase price &minus; allocated expenses (entry fees, transport, packaging). Platform fees can be entered as expenses per item or as totals per period. <a href="how-to-track-reselling-profits.html">Real-profit tracking explained</a>.</p>
-
-                <h3>What happens if I reinstall the app?</h3>
+      </div><div class="faq-item">
+      <h3>What happens if I reinstall the app?</h3>
                 <p>FlipperHelper backs up automatically — iCloud on iPhone, a folder you choose on Android — and offers restore on a new device. Optional Google Drive sync also stores photos and CSV exports. ZIP file export is available manually. Data survives device changes and app reinstalls.</p>
-            </section>
+      </div></section>
 
       <hr class="tear">
 
@@ -723,11 +792,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 </ul>
             </section>
 
-            <section class="post-cta">
+      <section class="post-cta">
                 <h2>Track inventory and sales free with FlipperHelper</h2>
                 <p>Free reselling app for iOS and Android. One record per item, from purchase through listing to sale. Real profit after fees and expenses. Works offline at every car boot. No item cap, no ads, no subscription.</p>
                 <p><em>Not right for you if:</em> you want automated cross-listing instead of tracking, or you only sell under 20 items per month and a Google Sheets template is doing the job &mdash; in that last case, switching tools costs more time than it saves.</p>
-                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it Free on Google Play</a></span>
             </section>
 
       <hr class="tear">
@@ -781,6 +850,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
   </div>
 </footer>
 
+<script>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+})();
+</script>
 <script data-goatcounter="https://grommash9.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

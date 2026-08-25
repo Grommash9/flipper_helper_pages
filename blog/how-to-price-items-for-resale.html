@@ -404,6 +404,57 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 }
 .post .shot--phone{max-width:320px;margin-left:auto;margin-right:auto}
 
+/* A photograph here is supporting evidence, not hero art, so it never runs
+   the full measure. Three placements, in order of preference:
+
+   .figure-row    beside its paragraphs — the homepage .story-grid split,
+                  alternating sides down the article so the page has more
+                  than one left edge
+   .figure-grid   two unpaired photographs sharing a line
+   .shot--diagram charts and explainers: centred and whole, because they are
+                  read rather than glanced at
+*/
+.post .figure-row{
+  display:grid;grid-template-columns:1fr .78fr;gap:44px;align-items:center;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-row > div > :last-child{margin-bottom:0}
+.post .figure-row .shot{margin:0}
+.post .figure-row .shot img{max-height:320px;width:auto}
+.post .figure-row--flip > .shot{order:-1}
+.post .figure-row--phone{grid-template-columns:1fr .46fr;gap:38px}
+.post .figure-row--phone .shot img{max-height:420px}
+@media(max-width:760px){
+  .post .figure-row,.post .figure-row--phone{grid-template-columns:1fr;gap:22px}
+  .post .figure-row--flip > .shot{order:0}
+}
+
+.post .figure-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-grid .shot{margin:0}
+.post .figure-grid .shot img{max-height:300px;width:auto}
+@media(max-width:600px){.post .figure-grid{grid-template-columns:1fr}}
+
+.post .shot--diagram{max-width:620px;margin-left:auto;margin-right:auto}
+.post .shot--solo{max-width:520px;margin-left:auto;margin-right:auto}
+.post .shot--solo img{max-height:420px;width:auto}
+
+/* a nine-step procedure would run three screens at the homepage's 56px
+   step gap, so long timelines tighten to the article's 26px rhythm */
+.post .day--long .moment{padding-bottom:30px}
+
+/* ---------- FAQ ----------
+   Question and answer step in behind a dashed rule, so the tail of the
+   article reads as a list of exchanges rather than more flush-left prose. */
+.post .faq-item{
+  padding-left:22px;border-left:1px dashed var(--line-strong);
+  margin:22px 0;max-width:var(--measure);
+}
+.post .faq-item h3{margin:0 0 8px}
+.post .faq-item > :last-child{margin-bottom:0}
+
 /* ---------- spreadsheet formulas ---------- */
 .formula-block{
   background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
@@ -526,6 +577,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 .calc-line.calc-loss{font-size:var(--fs-base);font-weight:700;color:var(--loss)}
 .calc-note{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);margin-top:8px}
 </style>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 
 <body>
@@ -586,14 +638,38 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section>
                 <h2>How to check eBay sold prices (step by step)</h2>
                 <p>eBay is the single best source of comp data for UK resellers because of its volume, its search filters, and the fact that it keeps sold listings visible for 90 days. Here&rsquo;s the process:</p>
-                <ol>
-                    <li><strong>Search for the item.</strong> Use the brand name and key identifiers (model number, colour, size). Be specific but not so specific you get zero results. &ldquo;Barbour Beaufort wax jacket green&rdquo; is better than &ldquo;Barbour jacket&rdquo; or &ldquo;Barbour Beaufort A150 C42/107CM sage green classic tartan lining brass zip&rdquo;.</li>
-                    <li><strong>Filter by &ldquo;Sold items&rdquo;.</strong> On eBay UK, tap <em>Filter</em>, scroll to <em>Show only</em>, and tick <strong>Sold items</strong>. On desktop, the same option is in the left-hand sidebar under &ldquo;Show only&rdquo;. This is the single most important step &mdash; without it, you&rsquo;re looking at asking prices, not real ones.</li>
-                    <li><strong>Sort by &ldquo;Ended: recently first&rdquo;.</strong> Prices shift over time. A sold price from last week is far more relevant than one from three months ago.</li>
-                    <li><strong>Read the prices in green.</strong> Green prices are items that actually sold. Red or struck-through prices are items that failed to sell &mdash; useful context, but not your pricing anchor.</li>
-                    <li><strong>Look at 5&ndash;10 recent sales.</strong> Don&rsquo;t price off a single sale &mdash; it could be an outlier (auction sniped at 2 a.m., heavily damaged item, seller with zero feedback). Look at the range. If the last ten sold between &pound;35 and &pound;55, your item is probably worth &pound;35&ndash;&pound;55. If one sold for &pound;120 and the rest for &pound;40, the &pound;120 is the outlier.</li>
-                    <li><strong>Check condition carefully.</strong> Click into the sold listings. Was the &pound;55 one brand new with tags? Was the &pound;35 one described as &ldquo;used with marks&rdquo;? Condition swings the price. Match your item to the closest condition in the sold results.</li>
-                </ol>
+                <div class="day day--long">
+      <div class="moment reveal">
+      <span class="when">Step 1</span>
+      <h3>Search for the item.</h3>
+      <p>Use the brand name and key identifiers (model number, colour, size). Be specific but not so specific you get zero results. &ldquo;Barbour Beaufort wax jacket green&rdquo; is better than &ldquo;Barbour jacket&rdquo; or &ldquo;Barbour Beaufort A150 C42/107CM sage green classic tartan lining brass zip&rdquo;.</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 2</span>
+      <h3>Filter by &ldquo;Sold items&rdquo;.</h3>
+      <p>On eBay UK, tap <em>Filter</em>, scroll to <em>Show only</em>, and tick <strong>Sold items</strong>. On desktop, the same option is in the left-hand sidebar under &ldquo;Show only&rdquo;. This is the single most important step &mdash; without it, you&rsquo;re looking at asking prices, not real ones.</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 3</span>
+      <h3>Sort by &ldquo;Ended: recently first&rdquo;.</h3>
+      <p>Prices shift over time. A sold price from last week is far more relevant than one from three months ago.</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 4</span>
+      <h3>Read the prices in green.</h3>
+      <p>Green prices are items that actually sold. Red or struck-through prices are items that failed to sell &mdash; useful context, but not your pricing anchor.</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 5</span>
+      <h3>Look at 5&ndash;10 recent sales.</h3>
+      <p>Don&rsquo;t price off a single sale &mdash; it could be an outlier (auction sniped at 2 a.m., heavily damaged item, seller with zero feedback). Look at the range. If the last ten sold between &pound;35 and &pound;55, your item is probably worth &pound;35&ndash;&pound;55. If one sold for &pound;120 and the rest for &pound;40, the &pound;120 is the outlier.</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 6</span>
+      <h3>Check condition carefully.</h3>
+      <p>Click into the sold listings. Was the &pound;55 one brand new with tags? Was the &pound;35 one described as &ldquo;used with marks&rdquo;? Condition swings the price. Match your item to the closest condition in the sold results.</p>
+      </div>
+      </div>
                 <p>That whole process takes about 60 seconds once you&rsquo;ve done it a few times. It&rsquo;s the single highest-value habit in reselling.</p>
             </section>
 
@@ -696,7 +772,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                     <li><strong>Track sourcing trip costs</strong> &mdash; entry fees and transport expenses are logged per trip and automatically factored into your profit calculations, so your margins are always honest.</li>
                 </ul>
                 <p>It&rsquo;s free on the App Store. Offline-first, no account required.</p>
-                <p><span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary post-cta" target="_blank" rel="noopener">Download FlipperHelper on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary post-cta" target="_blank" rel="noopener">Get FlipperHelper on Google Play</a></span></p>
+                <p><span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary post-cta" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download FlipperHelper on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary post-cta" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get FlipperHelper on Google Play</a></span></p>
             </section>
 
       <hr class="tear">
@@ -704,15 +780,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section>
                 <h2>FAQ</h2>
 
-                <h3>How do I check what an item has actually sold for on eBay UK?</h3>
+                <div class="faq-item">
+      <h3>How do I check what an item has actually sold for on eBay UK?</h3>
                 <p>Search for the item, tap <em>Filter</em>, tick <strong>Sold items</strong>, and sort by <em>Ended: recently first</em>. Prices shown in green are actual sales. Ignore red or struck-through prices &mdash; those are items that failed to sell. Look at 5&ndash;10 recent results to get the real price range.</p>
-
-                <h3>How long should I spend researching the price of an item?</h3>
+      </div><div class="faq-item">
+      <h3>How long should I spend researching the price of an item?</h3>
                 <p>In a charity shop or at a car boot, aim for 30 seconds: a quick eBay sold search on your phone for a go/no-go decision. At home before listing, spend 3&ndash;5 minutes checking across two platforms. As you gain experience in your niche, you&rsquo;ll need to check less often because the prices will already be in your head.</p>
-
-                <h3>Should I price to sell quickly or hold out for a higher price?</h3>
+      </div><div class="faq-item">
+      <h3>Should I price to sell quickly or hold out for a higher price?</h3>
                 <p>If everything sells within the first few days, you&rsquo;re almost certainly underpricing. A healthy sell-through rate is 30&ndash;50% of listed items selling within 30 days. If yours is much higher, raise prices by 10&ndash;20%. The exception is seasonal or trend-sensitive stock where speed matters more than margin.</p>
-            </section>
+      </div></section>
 
       <hr class="tear">
 
@@ -771,6 +848,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
   </div>
 </footer>
 
+<script>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+})();
+</script>
 <script data-goatcounter="https://grommash9.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

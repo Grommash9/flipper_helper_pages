@@ -401,6 +401,57 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 }
 .post .shot--phone{max-width:320px;margin-left:auto;margin-right:auto}
 
+/* A photograph here is supporting evidence, not hero art, so it never runs
+   the full measure. Three placements, in order of preference:
+
+   .figure-row    beside its paragraphs — the homepage .story-grid split,
+                  alternating sides down the article so the page has more
+                  than one left edge
+   .figure-grid   two unpaired photographs sharing a line
+   .shot--diagram charts and explainers: centred and whole, because they are
+                  read rather than glanced at
+*/
+.post .figure-row{
+  display:grid;grid-template-columns:1fr .78fr;gap:44px;align-items:center;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-row > div > :last-child{margin-bottom:0}
+.post .figure-row .shot{margin:0}
+.post .figure-row .shot img{max-height:320px;width:auto}
+.post .figure-row--flip > .shot{order:-1}
+.post .figure-row--phone{grid-template-columns:1fr .46fr;gap:38px}
+.post .figure-row--phone .shot img{max-height:420px}
+@media(max-width:760px){
+  .post .figure-row,.post .figure-row--phone{grid-template-columns:1fr;gap:22px}
+  .post .figure-row--flip > .shot{order:0}
+}
+
+.post .figure-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-grid .shot{margin:0}
+.post .figure-grid .shot img{max-height:300px;width:auto}
+@media(max-width:600px){.post .figure-grid{grid-template-columns:1fr}}
+
+.post .shot--diagram{max-width:620px;margin-left:auto;margin-right:auto}
+.post .shot--solo{max-width:520px;margin-left:auto;margin-right:auto}
+.post .shot--solo img{max-height:420px;width:auto}
+
+/* a nine-step procedure would run three screens at the homepage's 56px
+   step gap, so long timelines tighten to the article's 26px rhythm */
+.post .day--long .moment{padding-bottom:30px}
+
+/* ---------- FAQ ----------
+   Question and answer step in behind a dashed rule, so the tail of the
+   article reads as a list of exchanges rather than more flush-left prose. */
+.post .faq-item{
+  padding-left:22px;border-left:1px dashed var(--line-strong);
+  margin:22px 0;max-width:var(--measure);
+}
+.post .faq-item h3{margin:0 0 8px}
+.post .faq-item > :last-child{margin-bottom:0}
+
 /* ---------- spreadsheet formulas ---------- */
 .formula-block{
   background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
@@ -572,17 +623,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 
       <section>
                 <h2>What is the biggest antiques fair in the UK?</h2>
-                <p><strong>Newark IACF</strong> &mdash; up to 2,500 stalls across an 84-acre site at Newark Showground in Nottinghamshire, six events per year. The organiser promotes it as &ldquo;Europe&rsquo;s largest antiques fair&rdquo; and the claim isn&rsquo;t controversial; trade press and dealer guides repeat it consistently. Ardingly IACF is the largest in the South of England (~1,700 stalls), and Sunbury Antiques at Kempton is the largest twice-monthly fair (700+ stalls).</p>
-            </section>
-
-      <hr class="tear">
-
-      <section>
-                <figure class="shot">
+                <div class="figure-row">
+      <div>
+      <p><strong>Newark IACF</strong> &mdash; up to 2,500 stalls across an 84-acre site at Newark Showground in Nottinghamshire, six events per year. The organiser promotes it as &ldquo;Europe&rsquo;s largest antiques fair&rdquo; and the claim isn&rsquo;t controversial; trade press and dealer guides repeat it consistently. Ardingly IACF is the largest in the South of England (~1,700 stalls), and Sunbury Antiques at Kempton is the largest twice-monthly fair (700+ stalls).</p>
+      </div>
+      <figure class="shot">
                     <img src="images/uk-car-boot-vintage-tables-pair.jpg" alt="Pair of vintage tables found at a UK antiques sourcing event — the kind of stock you'd find at Newark or Ardingly trade day">
                     <figcaption>A pair of vintage tables &mdash; the kind of stock that fills vans at Newark and Ardingly trade days. Photo from one of our recent UK sourcing days.</figcaption>
                 </figure>
-            </section>
+      </div>
+      </section>
 
       <hr class="tear">
 
@@ -680,19 +730,18 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 
       <section>
                 <h2>Trade day vs public day: the actual difference</h2>
-                <p><strong>The trade day is when the stock is.</strong> By the time the public day opens (Friday at Newark, Wednesday at Ardingly), the dealers in vans have already worked the rows. The £20 trade-day ticket isn&rsquo;t about prestige &mdash; it&rsquo;s about access.</p>
-                <p>The advice from r/Antiques and UK trade blogs is consistent: <strong>arrive when the gates open</strong> (9am Thursday at Newark, 9am Tuesday at Ardingly). Some serious sourcing dealers turn up at 5:30am to be at the front of the queue. By 11am the easiest finds are already loaded into vans.</p>
-                <p>One UK reseller&rsquo;s rule that comes up repeatedly: <em>&ldquo;Treat trade day like a job. Empty van, empty wallet of small notes, walk fast, don&rsquo;t haggle hard on the first lap &mdash; just buy. Haggle on the second lap if anything&rsquo;s still there.&rdquo;</em></p>
-            </section>
-
-      <hr class="tear">
-
-      <section>
-                <figure class="shot">
+                <div class="figure-row figure-row--flip">
+      <div>
+      <p><strong>The trade day is when the stock is.</strong> By the time the public day opens (Friday at Newark, Wednesday at Ardingly), the dealers in vans have already worked the rows. The £20 trade-day ticket isn&rsquo;t about prestige &mdash; it&rsquo;s about access.</p>
+      <p>The advice from r/Antiques and UK trade blogs is consistent: <strong>arrive when the gates open</strong> (9am Thursday at Newark, 9am Tuesday at Ardingly). Some serious sourcing dealers turn up at 5:30am to be at the front of the queue. By 11am the easiest finds are already loaded into vans.</p>
+      <p>One UK reseller&rsquo;s rule that comes up repeatedly: <em>&ldquo;Treat trade day like a job. Empty van, empty wallet of small notes, walk fast, don&rsquo;t haggle hard on the first lap &mdash; just buy. Haggle on the second lap if anything&rsquo;s still there.&rdquo;</em></p>
+      </div>
+      <figure class="shot">
                     <img src="images/uk-car-boot-vintage-foot-stool.jpg" alt="Vintage foot stool from a UK antiques sourcing event">
                     <figcaption>Smaller pieces like vintage foot stools fit easily into a car &mdash; useful when you don&rsquo;t bring the van.</figcaption>
                 </figure>
-            </section>
+      </div>
+      </section>
 
       <hr class="tear">
 
@@ -714,7 +763,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 
       <section>
                 <h2>Best fair for your stock category</h2>
-                <ul>
+                <div class="figure-row">
+      <div>
+      <ul>
                     <li><strong>Furniture</strong>: Newark or Ardingly trade day. Sunbury for smaller pieces. Decorative Fair Battersea for high-end</li>
                     <li><strong>Smalls (jewellery, ceramics, silver, prints)</strong>: Sunbury at Kempton is gold for this &mdash; twice-monthly cadence keeps stock fresh</li>
                     <li><strong>Vintage clothing &amp; designer</strong>: Sunbury early entry. Vintage clothing also strong at Detling</li>
@@ -722,16 +773,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                     <li><strong>Mid-century furniture (Ercol, G Plan)</strong>: Newark first, Ardingly second. The Decorative Fair if you want already-curated high-margin pieces</li>
                     <li><strong>Beswick, Royal Doulton, Wedgwood</strong>: Sunbury and Detling have specialist dealers. Newark for volume</li>
                 </ul>
-            </section>
-
-      <hr class="tear">
-
-      <section>
-                <figure class="shot">
+      </div>
+      <figure class="shot">
                     <img src="images/furniture-resale-car-loaded-uk.jpg" alt="UK reseller's car loaded after a UK antiques fair — typical Newark or Ardingly trade-day haul">
                     <figcaption>Car loaded after a UK sourcing day &mdash; an estate or van helps, but a hatchback survives surprisingly well if you commit to careful packing.</figcaption>
                 </figure>
-            </section>
+      </div>
+      </section>
 
       <hr class="tear">
 
@@ -760,27 +808,28 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section>
                 <h2>Frequently asked questions</h2>
 
-                <h3>What is the biggest antiques fair in the UK?</h3>
+                <div class="faq-item">
+      <h3>What is the biggest antiques fair in the UK?</h3>
                 <p>Newark IACF at Newark Showground (NG24 2NY) &mdash; up to 2,500 stalls across 84 acres, six times a year. Widely promoted as Europe&rsquo;s largest antiques fair. Ardingly is the largest in the South of England with ~1,700 stalls.</p>
-
-                <h3>When is Newark IACF 2026?</h3>
+      </div><div class="faq-item">
+      <h3>When is Newark IACF 2026?</h3>
                 <p>5&ndash;6 February, 26&ndash;27 March, 4&ndash;5 June, 13&ndash;14 August, 15&ndash;16 October, 10&ndash;11 December. Trade Thursday £20, public Friday £6.</p>
-
-                <h3>When is Ardingly IACF 2026?</h3>
+      </div><div class="faq-item">
+      <h3>When is Ardingly IACF 2026?</h3>
                 <p>20&ndash;21 January, 3&ndash;4 March, 21&ndash;22 April, 23&ndash;24 June, 1&ndash;2 September, 3&ndash;4 November. Trade Tuesday £20, public Wednesday £6.</p>
-
-                <h3>Should I pay for the trade day?</h3>
+      </div><div class="faq-item">
+      <h3>Should I pay for the trade day?</h3>
                 <p>Yes if you&rsquo;re sourcing for resale. £20 trade day at Newark or Ardingly buys you 6 hours&rsquo; head start before the £6 public day. Serious dealers fill vans by 11am Thursday/Tuesday &mdash; by Friday/Wednesday the easy finds are gone.</p>
-
-                <h3>Which UK antiques fair is best for resellers?</h3>
+      </div><div class="faq-item">
+      <h3>Which UK antiques fair is best for resellers?</h3>
                 <p>For furniture and volume: Newark IACF or Ardingly IACF on trade day. For frequency and London accessibility: Sunbury at Kempton, twice-monthly Tuesdays. For curated higher-margin stock: The Decorative Fair Battersea.</p>
-
-                <h3>Is Sunbury Antiques really every Tuesday?</h3>
+      </div><div class="faq-item">
+      <h3>Is Sunbury Antiques really every Tuesday?</h3>
                 <p>The 2nd and last Tuesday of every month, year-round. Free entry from 8am, £5 early-bird from 6:30am, 700+ stalls indoor and outdoor at Kempton Park (TW16 5AQ).</p>
-
-                <h3>Are these fairs cash only?</h3>
+      </div><div class="faq-item">
+      <h3>Are these fairs cash only?</h3>
                 <p>Most dealers take card now but cash is still preferred for haggling and faster on trade day before card readers are set up. Bring £20s and £50s. Detling is cash only at the gate.</p>
-            </section>
+      </div></section>
 
       <hr class="tear">
 
@@ -794,10 +843,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 </ul>
             </section>
 
-            <section class="post-cta">
+      <section class="post-cta">
                 <h2>Track your fair finds with FlipperHelper</h2>
                 <p>Free app for iOS and Android. Log every Newark or Ardingly purchase at the stall &mdash; price, photo, source, listing platform. Works offline because field signal at showgrounds is unreliable. Multi-currency for when your next fair is across the Channel.</p>
-                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it Free on Google Play</a></span>
             </section>
   
 

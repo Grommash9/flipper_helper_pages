@@ -417,6 +417,57 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 }
 .post .shot--phone{max-width:320px;margin-left:auto;margin-right:auto}
 
+/* A photograph here is supporting evidence, not hero art, so it never runs
+   the full measure. Three placements, in order of preference:
+
+   .figure-row    beside its paragraphs — the homepage .story-grid split,
+                  alternating sides down the article so the page has more
+                  than one left edge
+   .figure-grid   two unpaired photographs sharing a line
+   .shot--diagram charts and explainers: centred and whole, because they are
+                  read rather than glanced at
+*/
+.post .figure-row{
+  display:grid;grid-template-columns:1fr .78fr;gap:44px;align-items:center;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-row > div > :last-child{margin-bottom:0}
+.post .figure-row .shot{margin:0}
+.post .figure-row .shot img{max-height:320px;width:auto}
+.post .figure-row--flip > .shot{order:-1}
+.post .figure-row--phone{grid-template-columns:1fr .46fr;gap:38px}
+.post .figure-row--phone .shot img{max-height:420px}
+@media(max-width:760px){
+  .post .figure-row,.post .figure-row--phone{grid-template-columns:1fr;gap:22px}
+  .post .figure-row--flip > .shot{order:0}
+}
+
+.post .figure-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-grid .shot{margin:0}
+.post .figure-grid .shot img{max-height:300px;width:auto}
+@media(max-width:600px){.post .figure-grid{grid-template-columns:1fr}}
+
+.post .shot--diagram{max-width:620px;margin-left:auto;margin-right:auto}
+.post .shot--solo{max-width:520px;margin-left:auto;margin-right:auto}
+.post .shot--solo img{max-height:420px;width:auto}
+
+/* a nine-step procedure would run three screens at the homepage's 56px
+   step gap, so long timelines tighten to the article's 26px rhythm */
+.post .day--long .moment{padding-bottom:30px}
+
+/* ---------- FAQ ----------
+   Question and answer step in behind a dashed rule, so the tail of the
+   article reads as a list of exchanges rather than more flush-left prose. */
+.post .faq-item{
+  padding-left:22px;border-left:1px dashed var(--line-strong);
+  margin:22px 0;max-width:var(--measure);
+}
+.post .faq-item h3{margin:0 0 8px}
+.post .faq-item > :last-child{margin-bottom:0}
+
 /* ---------- spreadsheet formulas ---------- */
 .formula-block{
   background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
@@ -699,21 +750,22 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section>
                 <h2>Frequently asked questions</h2>
 
-                <h3>Is there a free eBay reseller app for iPhone?</h3>
+                <div class="faq-item">
+      <h3>Is there a free eBay reseller app for iPhone?</h3>
                 <p>FlipperHelper is free, no item cap, no ads, no subscription. It tracks eBay listings alongside 15 other platforms. eBay's own Seller Hub app is also free but only manages eBay-side activity &mdash; it doesn't track purchase prices, sourcing expenses, or other platforms.</p>
-
-                <h3>Can a reseller app calculate eBay UK fees automatically?</h3>
+      </div><div class="faq-item">
+      <h3>Can a reseller app calculate eBay UK fees automatically?</h3>
                 <p>Most reseller apps let you record the actual fee deducted from the sale, or apply a percentage. eBay UK fees vary by category (12&ndash;15% for business sellers, free for many private listings in 2026), so a fixed-percentage model is approximate. The most accurate approach is recording the actual fee from your eBay payout.</p>
-
-                <h3>Do I need an app if I only sell on eBay?</h3>
+      </div><div class="faq-item">
+      <h3>Do I need an app if I only sell on eBay?</h3>
                 <p>If you sell under 20 items per month and don't track sourcing expenses, eBay Seller Hub plus a notes app may be enough. The moment you start sourcing at car boots, sell on more than one platform, or want to know real profit after costs, a tracker app saves 2&ndash;3 hours per week and shows numbers Seller Hub can't.</p>
-
-                <h3>How is FlipperHelper different from eBay's own app?</h3>
+      </div><div class="faq-item">
+      <h3>How is FlipperHelper different from eBay's own app?</h3>
                 <p>eBay's app manages eBay listings. FlipperHelper tracks the whole reseller business &mdash; purchases at markets, listings across 16 platforms (including eBay), sales, expenses, and real profit. They're complementary tools.</p>
-
-                <h3>Can I use the same app for eBay and Vinted?</h3>
+      </div><div class="faq-item">
+      <h3>Can I use the same app for eBay and Vinted?</h3>
                 <p>Yes &mdash; FlipperHelper covers both. Each item record can show as listed on eBay and Vinted simultaneously, with the sale recorded against whichever platform it eventually sells on.</p>
-            </section>
+      </div></section>
 
       <hr class="tear">
 
@@ -729,11 +781,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 </ul>
             </section>
 
-            <section class="post-cta">
+      <section class="post-cta">
                 <h2>Track your eBay reselling with FlipperHelper</h2>
                 <p>Free app for iOS and Android for UK resellers. Log items at the car boot, mark them listed on eBay (and Vinted, Facebook, Depop, and 12 more), record sales, and see real profit after fees and expenses. No item cap, no ads, no subscription. Works offline.</p>
                 <p><em>Not right for you if:</em> you need automated eBay-to-Vinted cross-listing (a tool like Vendoo handles that), or you sell only on eBay at high volume and want direct API integration today (on the roadmap).</p>
-                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it Free on Google Play</a></span>
             </section>
 
       <hr class="tear">

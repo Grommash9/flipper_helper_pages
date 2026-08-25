@@ -401,6 +401,57 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 }
 .post .shot--phone{max-width:320px;margin-left:auto;margin-right:auto}
 
+/* A photograph here is supporting evidence, not hero art, so it never runs
+   the full measure. Three placements, in order of preference:
+
+   .figure-row    beside its paragraphs — the homepage .story-grid split,
+                  alternating sides down the article so the page has more
+                  than one left edge
+   .figure-grid   two unpaired photographs sharing a line
+   .shot--diagram charts and explainers: centred and whole, because they are
+                  read rather than glanced at
+*/
+.post .figure-row{
+  display:grid;grid-template-columns:1fr .78fr;gap:44px;align-items:center;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-row > div > :last-child{margin-bottom:0}
+.post .figure-row .shot{margin:0}
+.post .figure-row .shot img{max-height:320px;width:auto}
+.post .figure-row--flip > .shot{order:-1}
+.post .figure-row--phone{grid-template-columns:1fr .46fr;gap:38px}
+.post .figure-row--phone .shot img{max-height:420px}
+@media(max-width:760px){
+  .post .figure-row,.post .figure-row--phone{grid-template-columns:1fr;gap:22px}
+  .post .figure-row--flip > .shot{order:0}
+}
+
+.post .figure-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-grid .shot{margin:0}
+.post .figure-grid .shot img{max-height:300px;width:auto}
+@media(max-width:600px){.post .figure-grid{grid-template-columns:1fr}}
+
+.post .shot--diagram{max-width:620px;margin-left:auto;margin-right:auto}
+.post .shot--solo{max-width:520px;margin-left:auto;margin-right:auto}
+.post .shot--solo img{max-height:420px;width:auto}
+
+/* a nine-step procedure would run three screens at the homepage's 56px
+   step gap, so long timelines tighten to the article's 26px rhythm */
+.post .day--long .moment{padding-bottom:30px}
+
+/* ---------- FAQ ----------
+   Question and answer step in behind a dashed rule, so the tail of the
+   article reads as a list of exchanges rather than more flush-left prose. */
+.post .faq-item{
+  padding-left:22px;border-left:1px dashed var(--line-strong);
+  margin:22px 0;max-width:var(--measure);
+}
+.post .faq-item h3{margin:0 0 8px}
+.post .faq-item > :last-child{margin-bottom:0}
+
 /* ---------- spreadsheet formulas ---------- */
 .formula-block{
   background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
@@ -523,6 +574,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 .calc-line.calc-loss{font-size:var(--fs-base);font-weight:700;color:var(--loss)}
 .calc-note{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);margin-top:8px}
 </style>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 
 <body>
@@ -564,7 +616,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
             <section>
                 <p><strong>Shiply lets you ship UK furniture for £40&ndash;£100 because drivers running empty van space bid against each other for the job.</strong> If you sell furniture on eBay, Vinted, or Facebook Marketplace, this is the cheapest way to get a sofa from London to Bristol or a wardrobe across Yorkshire. Properly used &mdash; with the eBay collection code workflow &mdash; it&rsquo;s also one of the safer ways to do collection sales without scams.</p>
                 <p>This is a practical guide for UK resellers. Real prices, how the auction works, where it goes wrong, the AnyVan comparison, and the workflow that keeps you out of eBay Money Back Guarantee disputes.</p>
-                <figure class="shot">
+                <figure class="shot shot--diagram">
                     <img src="images/shiply-quotes-bedside-tables-uk-example.png" alt="Shiply UK quotes for marble bedside tables — 8 quotes ranging from £70 to £128 inc VAT, all with £25 protection">
                     <figcaption>Real Shiply quotes received for shipping a pair of marble bedside tables I bought in northern France. Eight bids came back ranging £70&ndash;£128, with the cheapest verified driver (501 jobs, 97.8% rating) at £70.</figcaption>
                 </figure>
@@ -611,23 +663,22 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 
       <section>
                 <h2>Shiply&rsquo;s fees and how they get paid</h2>
-                <p>Per Shiply&rsquo;s published terms (UK):</p>
-                <ul>
+                <div class="figure-row">
+      <div>
+      <p>Per Shiply&rsquo;s published terms (UK):</p>
+      <ul>
                     <li><strong>Customer fee</strong>: 3.9&ndash;9.9% of the transaction value, tiered. <strong>Minimum £6</strong></li>
                     <li><strong>Driver fee</strong>: None &mdash; drivers don&rsquo;t pay subscription. Commission is taken from the customer&rsquo;s deposit</li>
                     <li><strong>Payment flow</strong>: When you accept a bid, you pay Shiply a deposit (typically the platform fee, sometimes more). The deposit transfers to the driver&rsquo;s Shiply account; Shiply debits its commission. <strong>You pay the balance directly to the driver on collection</strong>, usually card or cash</li>
                 </ul>
-                <p>Verify VAT treatment on the fee tiers in Shiply&rsquo;s current Terms Part B Section 6 if it matters to your accounting &mdash; the published tier doesn&rsquo;t make VAT inclusion explicit, and similar platforms (AnyVan) charge fee + VAT on top.</p>
-            </section>
-
-      <hr class="tear">
-
-      <section>
-                <figure class="shot">
+      <p>Verify VAT treatment on the fee tiers in Shiply&rsquo;s current Terms Part B Section 6 if it matters to your accounting &mdash; the published tier doesn&rsquo;t make VAT inclusion explicit, and similar platforms (AnyVan) charge fee + VAT on top.</p>
+      </div>
+      <figure class="shot">
                     <img src="images/wheel-wagon-bedside-tables-shiply-collection.jpg" alt="Pair of vintage bedside tables on a wheel wagon, ready for Shiply courier collection">
                     <figcaption>The pair of marble bedside tables from earlier &mdash; loaded onto a wheel wagon for Shiply collection. The driver took both for £70.</figcaption>
                 </figure>
-            </section>
+      </div>
+      </section>
 
       <hr class="tear">
 
@@ -636,22 +687,53 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 <p><strong>This is the key section if you&rsquo;re a reseller.</strong> The wrong workflow gets you scammed; the right one gets you paid.</p>
 
                 <h3>Wrong workflow (avoid)</h3>
-                <ol>
-                    <li>You sell a sofa on eBay with &ldquo;£70 shipping&rdquo;</li>
-                    <li>You pay Shiply yourself, courier collects, delivers</li>
-                    <li>Buyer files &ldquo;item not as described&rdquo;, gets a refund, keeps the sofa</li>
-                    <li>You have no proof of pickup or delivery condition. eBay refunds the buyer. You lose the sofa AND the £70 shipping cost</li>
-                </ol>
+                <div class="day">
+      <div class="moment reveal">
+      <span class="when">Step 1</span>
+      <p>You sell a sofa on eBay with &ldquo;£70 shipping&rdquo;</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 2</span>
+      <p>You pay Shiply yourself, courier collects, delivers</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 3</span>
+      <p>Buyer files &ldquo;item not as described&rdquo;, gets a refund, keeps the sofa</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 4</span>
+      <p>You have no proof of pickup or delivery condition. eBay refunds the buyer. You lose the sofa AND the £70 shipping cost</p>
+      </div>
+      </div>
 
                 <h3>Right workflow</h3>
-                <ol>
-                    <li>Sell as <strong>Local Collection</strong> with a note: &ldquo;Buyer to arrange own courier &mdash; Shiply works well, typical price £40&ndash;£100&rdquo;</li>
-                    <li>Buyer wins the auction, pays via eBay/PayPal</li>
-                    <li>Buyer posts the eBay item ID into Shiply, gets bids, picks one</li>
-                    <li>On collection day, the courier turns up with the buyer&rsquo;s <strong>eBay 6-digit code or QR code</strong></li>
-                    <li><strong>You scan or enter the code in the eBay app to mark Delivered.</strong> This is the moment that locks down the eBay Money Back Guarantee &mdash; the platform records the handover</li>
-                    <li>You hand the item to the courier. Done</li>
-                </ol>
+                <div class="day day--long">
+      <div class="moment reveal">
+      <span class="when">Step 1</span>
+      <p>Sell as <strong>Local Collection</strong> with a note: &ldquo;Buyer to arrange own courier &mdash; Shiply works well, typical price £40&ndash;£100&rdquo;</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 2</span>
+      <p>Buyer wins the auction, pays via eBay/PayPal</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 3</span>
+      <p>Buyer posts the eBay item ID into Shiply, gets bids, picks one</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 4</span>
+      <p>On collection day, the courier turns up with the buyer&rsquo;s <strong>eBay 6-digit code or QR code</strong></p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 5</span>
+      <h3>You scan or enter the code in the eBay app to mark Delivered.</h3>
+      <p>This is the moment that locks down the eBay Money Back Guarantee &mdash; the platform records the handover</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 6</span>
+      <p>You hand the item to the courier. Done</p>
+      </div>
+      </div>
 
                 <p>Two critical rules:</p>
                 <ul>
@@ -683,38 +765,41 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 </table>
       </div>
 
-                <p><strong>Use Shiply when</strong> you have flexible dates and want the cheapest possible price. Use AnyVan when you need a fixed price and a guaranteed date and you don&rsquo;t want to manage a bidding process.</p>
-            </section>
-
-      <hr class="tear">
-
-      <section>
-                <figure class="shot">
+                <div class="figure-row figure-row--flip">
+      <div>
+      <p><strong>Use Shiply when</strong> you have flexible dates and want the cheapest possible price. Use AnyVan when you need a fixed price and a guaranteed date and you don&rsquo;t want to manage a bidding process.</p>
+      </div>
+      <figure class="shot">
                     <img src="images/bicycle-table-funny-furniture-transport.jpg" alt="Furniture being transported on a bicycle with tape — a UK reseller's reality before discovering Shiply">
                     <figcaption>How we used to think about furniture delivery before Shiply &mdash; a real photo from one of our trips.</figcaption>
                 </figure>
-                <figure class="shot">
+      </div>
+      <figure class="shot shot--solo">
                     <img src="images/vintage-chairs-back-seat-cab-transport.jpg" alt="Vintage chairs squeezed into the back seat of a UK black cab — improvised reseller transport">
                     <figcaption>Vintage chairs in the back of a London black cab on the way home from a sourcing run &mdash; before we worked out the Shiply workflow.</figcaption>
                 </figure>
-            </section>
+      </section>
 
       <hr class="tear">
 
       <section>
                 <h2>What Shiply isn&rsquo;t good for &mdash; use parcel couriers instead</h2>
-                <p>For smaller items, Shiply is overkill. Standard parcel couriers:</p>
-                <ul>
+                <div class="figure-row">
+      <div>
+      <p>For smaller items, Shiply is overkill. Standard parcel couriers:</p>
+      <ul>
                     <li><strong>Royal Mail Tracked 24 / Parcelforce 48</strong> &mdash; up to 30 kg, length ≤ 1.35 m (Parcelforce 48 Large goes up to 2.25 m for £95.50). Best for boxed kitchenware, boxed lamps, smaller framed art</li>
                     <li><strong>DPD</strong> &mdash; 30 kg, 1 m max length. Good for smaller homewares</li>
                     <li><strong>Evri</strong> &mdash; 15 kg, 1.2 m max. Cheapest for Vinted-grade items</li>
                     <li><strong>Yodel</strong> &mdash; 10 kg, 60×50×50 cm. Smallest items only</li>
                 </ul>
-                <p>If your item fits in any of these, use them. Shiply&rsquo;s £6 minimum platform fee plus driver bid means you&rsquo;ll never beat Royal Mail or Evri on small parcels.</p>
-                <figure class="shot">
+      <p>If your item fits in any of these, use them. Shiply&rsquo;s £6 minimum platform fee plus driver bid means you&rsquo;ll never beat Royal Mail or Evri on small parcels.</p>
+      </div>
+      <figure class="shot">
                     <img src="images/wheel-wagon-shipping-boxes-delivery.jpg" alt="Two oversized boxes on a foldable wheel cart on a London street — at the absolute size limit of standard parcel couriers">
                     <figcaption>Two boxes from a haul, sat at the absolute size ceiling of Parcelforce 48 Large. They went via standard parcel post in the end &mdash; but anything bigger and Shiply or AnyVan becomes the only viable option.</figcaption>
                 </figure>
+      </div>
             </section>
 
       <hr class="tear">
@@ -770,30 +855,31 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section>
                 <h2>Frequently asked questions</h2>
 
-                <h3>How much does Shiply cost for furniture delivery in the UK?</h3>
+                <div class="faq-item">
+      <h3>How much does Shiply cost for furniture delivery in the UK?</h3>
                 <p>Typically £40&ndash;£100 for a single item. Real Shiply examples: Bristol-to-Lincolnshire antique cabinet £60, London plasma TV £40, Hampshire-to-Plymouth fridge £60. Industry average for large eBay items is £40&ndash;£95.</p>
-
-                <h3>How does the Shiply auction work?</h3>
+      </div><div class="faq-item">
+      <h3>How does the Shiply auction work?</h3>
                 <p>You post the job (item, postcodes, photo). Drivers running existing routes nearby bid lower than standard rates because they&rsquo;re filling empty van space. First quotes within 30 minutes; cheapest within 24 hours. Pick a bid, pay deposit, balance to driver on collection.</p>
-
-                <h3>Is Shiply safe for eBay sellers?</h3>
+      </div><div class="faq-item">
+      <h3>Is Shiply safe for eBay sellers?</h3>
                 <p>Yes when used correctly. List as Local Collection, buyer books Shiply themselves, courier collects with the eBay 6-digit code or QR which you scan in the eBay app to mark Delivered. Don&rsquo;t book Shiply yourself &mdash; it puts you on the hook for damage and no-shows.</p>
-
-                <h3>Shiply vs AnyVan?</h3>
+      </div><div class="faq-item">
+      <h3>Shiply vs AnyVan?</h3>
                 <p>Shiply is reverse auction (cheapest bid wins). AnyVan is fixed-quote with vetted drivers (≥4.7-star Trustpilot). Shiply usually cheaper, AnyVan more reliable. Trustpilot Shiply 4.8/5, AnyVan 4.6/5.</p>
-
-                <h3>Does Shiply offer insurance?</h3>
+      </div><div class="faq-item">
+      <h3>Does Shiply offer insurance?</h3>
                 <p>UK has no automatic cover. Liability sits with the driver&rsquo;s own goods-in-transit insurance, which varies. Shiply&rsquo;s US Protection Plan covers up to $5,000; no UK equivalent. Treat as uninsured by default.</p>
-
-                <h3>What about smaller items &mdash; should I still use Shiply?</h3>
+      </div><div class="faq-item">
+      <h3>What about smaller items &mdash; should I still use Shiply?</h3>
                 <p>No &mdash; for items under 30 kg / 1.35 m use Royal Mail or Parcelforce 48. Under 15 kg use Evri. Shiply&rsquo;s £6 minimum platform fee plus driver bid means it&rsquo;s never the cheapest option for small parcels.</p>
-
-                <h3>Can I cancel a Shiply booking?</h3>
+      </div><div class="faq-item">
+      <h3>Can I cancel a Shiply booking?</h3>
                 <p>Yes but you may incur a cancellation fee. Read the bid&rsquo;s terms before clicking accept &mdash; some drivers state non-refundable holds. Best practice: only accept bids when you&rsquo;re ready to commit.</p>
-
-                <h3>How long does Shiply take to collect?</h3>
+      </div><div class="faq-item">
+      <h3>How long does Shiply take to collect?</h3>
                 <p>Same-day is possible if a driver happens to be on a route through your postcode that day. Realistic norm: 2&ndash;7 days at the cheap end. If you need a guaranteed date, pay more or use AnyVan.</p>
-            </section>
+      </div></section>
 
       <hr class="tear">
 
@@ -807,10 +893,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 </ul>
             </section>
 
-            <section class="post-cta">
+      <section class="post-cta">
                 <h2>Track shipping costs with FlipperHelper</h2>
                 <p>Free app for iOS and Android. Log Shiply quotes as transport expenses against each sold item. See your real profit per sale &mdash; not the misleading sale-price-only number. Works offline so you can update on the go.</p>
-                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it Free on Google Play</a></span>
             </section>
   
 
@@ -857,6 +943,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
   </div>
 </footer>
 
+<script>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+})();
+</script>
 <script data-goatcounter="https://grommash9.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

@@ -411,6 +411,57 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 }
 .post .shot--phone{max-width:320px;margin-left:auto;margin-right:auto}
 
+/* A photograph here is supporting evidence, not hero art, so it never runs
+   the full measure. Three placements, in order of preference:
+
+   .figure-row    beside its paragraphs — the homepage .story-grid split,
+                  alternating sides down the article so the page has more
+                  than one left edge
+   .figure-grid   two unpaired photographs sharing a line
+   .shot--diagram charts and explainers: centred and whole, because they are
+                  read rather than glanced at
+*/
+.post .figure-row{
+  display:grid;grid-template-columns:1fr .78fr;gap:44px;align-items:center;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-row > div > :last-child{margin-bottom:0}
+.post .figure-row .shot{margin:0}
+.post .figure-row .shot img{max-height:320px;width:auto}
+.post .figure-row--flip > .shot{order:-1}
+.post .figure-row--phone{grid-template-columns:1fr .46fr;gap:38px}
+.post .figure-row--phone .shot img{max-height:420px}
+@media(max-width:760px){
+  .post .figure-row,.post .figure-row--phone{grid-template-columns:1fr;gap:22px}
+  .post .figure-row--flip > .shot{order:0}
+}
+
+.post .figure-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-grid .shot{margin:0}
+.post .figure-grid .shot img{max-height:300px;width:auto}
+@media(max-width:600px){.post .figure-grid{grid-template-columns:1fr}}
+
+.post .shot--diagram{max-width:620px;margin-left:auto;margin-right:auto}
+.post .shot--solo{max-width:520px;margin-left:auto;margin-right:auto}
+.post .shot--solo img{max-height:420px;width:auto}
+
+/* a nine-step procedure would run three screens at the homepage's 56px
+   step gap, so long timelines tighten to the article's 26px rhythm */
+.post .day--long .moment{padding-bottom:30px}
+
+/* ---------- FAQ ----------
+   Question and answer step in behind a dashed rule, so the tail of the
+   article reads as a list of exchanges rather than more flush-left prose. */
+.post .faq-item{
+  padding-left:22px;border-left:1px dashed var(--line-strong);
+  margin:22px 0;max-width:var(--measure);
+}
+.post .faq-item h3{margin:0 0 8px}
+.post .faq-item > :last-child{margin-bottom:0}
+
 /* ---------- spreadsheet formulas ---------- */
 .formula-block{
   background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
@@ -572,12 +623,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
             </div>
 
             <section>
-                <p><strong>The Marché aux Puces de Saint-Ouen is the largest antiques market in the world &mdash; about 2,000 dealers spread across 15 named sub-markets in the suburb just north of Paris.</strong> If you&rsquo;re a UK reseller making one trip to France, this is the closest you&rsquo;ll get to a one-stop shop. You can do it in a day from London via Eurostar.</p>
-                <p>This guide is built from the official market data plus over 200 visitor reports from r/ParisTravelGuide and r/Antiques. The interesting stuff isn&rsquo;t in the tourism brochures &mdash; it&rsquo;s things like which Métro stop has the less rough walk in, which sub-market is messiest (and cheapest), and which dealer everyone names when someone asks &ldquo;where do I buy vintage glass at Saint-Ouen?&rdquo;</p>
-                <figure class="shot">
+                <div class="figure-row">
+      <div>
+      <p><strong>The Marché aux Puces de Saint-Ouen is the largest antiques market in the world &mdash; about 2,000 dealers spread across 15 named sub-markets in the suburb just north of Paris.</strong> If you&rsquo;re a UK reseller making one trip to France, this is the closest you&rsquo;ll get to a one-stop shop. You can do it in a day from London via Eurostar.</p>
+      <p>This guide is built from the official market data plus over 200 visitor reports from r/ParisTravelGuide and r/Antiques. The interesting stuff isn&rsquo;t in the tourism brochures &mdash; it&rsquo;s things like which Métro stop has the less rough walk in, which sub-market is messiest (and cheapest), and which dealer everyone names when someone asks &ldquo;where do I buy vintage glass at Saint-Ouen?&rdquo;</p>
+      </div>
+      <figure class="shot">
                     <img src="images/france-marble-bedside-table-antique.jpg" alt="Marble-topped antique bedside table from a French market — the kind of stock Saint-Ouen Paul Bert Serpette specialises in">
                     <figcaption>A marble-topped bedside table found at a French market on one of our sourcing trips &mdash; the kind of piece Paul Bert Serpette and Marché Biron specialise in. Photo from a related French sourcing trip, not Saint-Ouen itself.</figcaption>
                 </figure>
+      </div>
                 <blockquote><p>&ldquo;Saint-Ouen is the world&rsquo;s biggest antiques market, but the practical question for a UK reseller is which of the 15 sub-markets to actually walk &mdash; that&rsquo;s what we set out to answer.&rdquo; &mdash; Oleksandr Prudnikov, FlipperHelper developer and active reseller</p></blockquote>
             </section>
 
@@ -678,26 +733,25 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 <h2>What&rsquo;s at Marché Biron?</h2>
                 <p><strong>Marché Biron sits at the polished end &mdash; 220 dealers specialising in 18th–19th-century furniture, silver, paintings, and fine jewellery.</strong> It&rsquo;s the most expensive hall after Paul Bert Serpette and runs to museum-quality pieces.</p>
                 <p>One visitor described it: <em>&ldquo;The Biron Market at the Porte de Clignancourt Flea is truly a site to behold, and would easily bankrupt us had we not the discipline.&rdquo;</em></p>
-                <p>Stalls named by visitors:</p>
-                <ul>
+                <div class="figure-row figure-row--flip">
+      <div>
+      <p>Stalls named by visitors:</p>
+      <ul>
                     <li><strong>Galerie Laure Édouard</strong> &mdash; silverware, silver table sets</li>
                     <li><strong>Emmanuel Redon Silver Fine Art</strong> &mdash; another silverware specialist</li>
                 </ul>
-                <p>Biron is where to come for <em>investment</em> stock &mdash; the kind of pieces that hold value at UK auction houses. Not where to come for cheap turnover.</p>
-            </section>
-
-      <hr class="tear">
-
-      <section>
-                <figure class="shot">
+      <p>Biron is where to come for <em>investment</em> stock &mdash; the kind of pieces that hold value at UK auction houses. Not where to come for cheap turnover.</p>
+      </div>
+      <figure class="shot">
                     <img src="images/round-marble-table-france-antique.jpg" alt="Round marble-topped antique table — typical of stock found at French sourcing trips and Saint-Ouen Marché Biron">
                     <figcaption>A round marble-topped antique table from a French sourcing trip &mdash; the kind of piece Marché Biron specialises in at Saint-Ouen.</figcaption>
                 </figure>
-                <figure class="shot">
+      </div>
+      <figure class="shot shot--solo">
                     <img src="images/antique-painting-france-sourcing-find.jpg" alt="Antique painting bought at a French market — the kind of stock Saint-Ouen sells across multiple sub-markets">
                     <figcaption>An antique painting from a related French sourcing trip. Saint-Ouen has dedicated art arcades within Paul Bert Serpette and Biron.</figcaption>
                 </figure>
-            </section>
+      </section>
 
       <hr class="tear">
 
@@ -758,18 +812,17 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 
       <section>
                 <h2>Is it worth it as a first-timer?</h2>
-                <p>Mixed but mostly yes. The strongest dissent: <em>&ldquo;personally I don&rsquo;t bother taking the trip unless I&rsquo;m showing it to someone coming out of town.&rdquo;</em> The strongest endorsement: <em>&ldquo;It&rsquo;s a unique flea market, worth it IMO.&rdquo;</em></p>
-                <p>The honest answer for a UK reseller: <strong>yes, once.</strong> It&rsquo;s the world&rsquo;s biggest antiques market and you should see it before deciding it&rsquo;s not your sourcing destination. After that visit you&rsquo;ll have a clear sense of whether it&rsquo;s where your stock comes from, or whether you should focus on the other French brocantes &mdash; the Sunday vide-greniers in Hauts-de-France, the Réderie d&rsquo;Amiens, the Foire de Chatou. See our <a href="best-french-brocantes-2026-uk-sourcing.html">2026 calendar of French brocantes</a> for the alternatives.</p>
-            </section>
-
-      <hr class="tear">
-
-      <section>
-                <figure class="shot">
+                <div class="figure-row">
+      <div>
+      <p>Mixed but mostly yes. The strongest dissent: <em>&ldquo;personally I don&rsquo;t bother taking the trip unless I&rsquo;m showing it to someone coming out of town.&rdquo;</em> The strongest endorsement: <em>&ldquo;It&rsquo;s a unique flea market, worth it IMO.&rdquo;</em></p>
+      <p>The honest answer for a UK reseller: <strong>yes, once.</strong> It&rsquo;s the world&rsquo;s biggest antiques market and you should see it before deciding it&rsquo;s not your sourcing destination. After that visit you&rsquo;ll have a clear sense of whether it&rsquo;s where your stock comes from, or whether you should focus on the other French brocantes &mdash; the Sunday vide-greniers in Hauts-de-France, the Réderie d&rsquo;Amiens, the Foire de Chatou. See our <a href="best-french-brocantes-2026-uk-sourcing.html">2026 calendar of French brocantes</a> for the alternatives.</p>
+      </div>
+      <figure class="shot">
                     <img src="images/oleksandr-france-vintage-shop-tired.jpg" alt="Oleksandr Prudnikov in a French vintage shop after a long sourcing day">
                     <figcaption>A long French sourcing day &mdash; the half-day minimum at Saint-Ouen is real, and so is the post-walk fatigue.</figcaption>
                 </figure>
-            </section>
+      </div>
+      </section>
 
       <hr class="tear">
 
@@ -790,27 +843,28 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section>
                 <h2>Frequently asked questions</h2>
 
-                <h3>What are the Marché aux Puces de Saint-Ouen opening hours?</h3>
+                <div class="faq-item">
+      <h3>What are the Marché aux Puces de Saint-Ouen opening hours?</h3>
                 <p>Saturday 10:00&ndash;18:00, Sunday 10:00&ndash;18:00, Monday 11:00&ndash;17:00. Friday 8:00&ndash;12:00 is reserved for trade buyers. Hours vary slightly by sub-market and by individual dealer &mdash; the larger covered halls (Paul Bert Serpette, Biron, Dauphine) are the most consistent.</p>
-
-                <h3>What is Marché Paul Bert Serpette?</h3>
+      </div><div class="faq-item">
+      <h3>What is Marché Paul Bert Serpette?</h3>
                 <p>Two adjoining sub-markets within Saint-Ouen that operate together &mdash; 14,000 m² with around 370 dealers. The largest single-venue antiques market in the world. Specialises in fine furniture, silver, 20th-century design, and high-end vintage clothing. Vehicle access in the alleys for loading.</p>
-
-                <h3>Which Saint-Ouen sub-market is cheapest?</h3>
+      </div><div class="faq-item">
+      <h3>Which Saint-Ouen sub-market is cheapest?</h3>
                 <p>Marché Vernaison &mdash; the original 1885 hall with about 300 stalls. Messier than Paul Bert Serpette and Biron, with smaller items at lower prices. Best for kitchenalia, books, vintage clothing, and bric-à-brac. Marché Malik is also cheaper but skews toward contemporary clothing for a younger crowd rather than antiques.</p>
-
-                <h3>How do I get to Saint-Ouen flea market from London?</h3>
+      </div><div class="faq-item">
+      <h3>How do I get to Saint-Ouen flea market from London?</h3>
                 <p>Eurostar from London St Pancras to Paris Gare du Nord (~2h15), then Métro line 4 to Porte de Clignancourt (~25 min) or Métro line 13 to Garibaldi. Local advice is to use line 13 if you&rsquo;re uncertain &mdash; the walk in from Garibaldi is less rough. Total London-to-market time about 3h15 by train.</p>
-
-                <h3>Is Saint-Ouen safe for tourists?</h3>
+      </div><div class="faq-item">
+      <h3>Is Saint-Ouen safe for tourists?</h3>
                 <p>The market itself is safe during opening hours. The walk in from Métro Porte de Clignancourt passes through a rough area &mdash; keep your bag closed and don&rsquo;t linger. Avoid the Porte de Clignancourt area after dark. Standard Paris precautions apply.</p>
-
-                <h3>Can I find vintage furniture at Saint-Ouen to drive back to the UK?</h3>
+      </div><div class="faq-item">
+      <h3>Can I find vintage furniture at Saint-Ouen to drive back to the UK?</h3>
                 <p>Yes &mdash; this is the right market for it. Marché Paul Bert Serpette in particular allows vehicle access for loading. Drive in via Eurotunnel and the A1; bring a van or estate car for any pieces over a metre. Watch your customs limits on the way home (20% VAT and import duty apply, see our <a href="sourcing-stock-from-france.html">sourcing from France guide</a>).</p>
-
-                <h3>Can I haggle at Saint-Ouen?</h3>
+      </div><div class="faq-item">
+      <h3>Can I haggle at Saint-Ouen?</h3>
                 <p>Yes, and dealers expect it. Open with a polite question about price (in French if you can &mdash; <em>&ldquo;c&rsquo;est votre meilleur prix?&rdquo;</em> works), be ready to walk away, and consider bundling multiple items for a better deal. Cash makes you the easier customer and unlocks faster discounts than card.</p>
-            </section>
+      </div></section>
 
       <hr class="tear">
 
@@ -825,10 +879,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 </ul>
             </section>
 
-            <section class="post-cta">
+      <section class="post-cta">
                 <h2>Track your Saint-Ouen finds with FlipperHelper</h2>
                 <p>Free app for iOS and Android with multi-currency support. Log purchases in EUR at every stall, track Eurostar and hotels as transport, and see your real profit per trip. Works offline &mdash; useful when the Saint-Ouen WiFi is patchy and the dealer is waiting for you to decide.</p>
-                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it Free on Google Play</a></span>
             </section>
   
 
