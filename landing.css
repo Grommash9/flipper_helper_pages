@@ -542,10 +542,3 @@ a:focus-visible,button:focus-visible,summary:focus-visible{
 .newsletter .ok i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--profit);margin-right:9px}
 .newsletter.done form,.newsletter.done .fine{display:none}
 .newsletter.done .ok{display:block}
-
-/* directory badges kept from the previous page — the listings require the backlink */
-.foot-badges{margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
-.foot-badges-label{font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);display:block;margin-bottom:14px}
-.foot-badges-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px}
-.foot-badges-row img{height:34px;width:auto;opacity:.75;transition:opacity .18s ease}
-.foot-badges-row a:hover img{opacity:1}
