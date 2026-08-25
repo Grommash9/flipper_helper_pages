@@ -56,44 +56,39 @@
 .prose p{margin-bottom:16px}
 .prose p:last-child{margin-bottom:0}
 
-/* VARIATION of .pro-rows: the key-facts list is the same 190px key/value grid on
-   dashed rules, used outside a .pro-card, because this page's single orange
-   stripe is spent on the media contact block, not on the facts. */
-.facts{border-top:1px dashed var(--line-strong);max-width:900px}
+/* VARIATION of .pro-rows: the contact rows are the same 190px key/value grid on
+   dashed rules, used outside a .pro-card — this page spends its single orange
+   stripe on the feature card. */
+.facts{border-top:1px dashed var(--line-strong);max-width:900px;margin-top:26px}
 
-/* Requested change: the row keys take --accent instead of --ink, so the labels
-   read as the site's orange machine layer. Contrast note — #E58025 on white
-   measures ~2.8:1, under WCAG AA for small text (style guide 2.6); this is the
-   same deliberate brand trade-off the orange .eyebrow already makes. */
+/* Requested change: row keys and the timeline labels take --accent instead of
+   --ink / --action. Contrast note — #E58025 on white measures ~2.8:1, under
+   WCAG AA for small text (style guide 2.6); the same deliberate brand
+   trade-off the orange .eyebrow already makes. */
 .pro-row .k{color:var(--accent)}
 
-/* Core features are a plain list on the current site and stay one. Dashed rules
-   instead of bullets keep the same rhythm as .pro-rows above. */
+/* VARIATION of .moment: the key facts are a timeline of labels, not the
+   homepage's lived moments, so the marker and its label move from --action blue
+   (which on this site means interactive) to --accent, and the value carries the
+   row instead of an h3. Dot, dashed spine, spacing and collapse are untouched. */
+.day .moment::before{border-color:var(--accent)}
+.day .moment .when{color:var(--accent)}
+.day .moment{padding-bottom:34px}
+
+/* Feature list inside the emphasis card — dashed rules instead of bullets, same
+   13px rhythm as .pro-rows. Also carries the links list. */
 .feature-list{list-style:none;margin:0;max-width:900px;border-top:1px dashed var(--line-strong)}
 .feature-list li{padding:13px 0;border-bottom:1px dashed var(--line-strong);
   font-size:var(--fs-sm);color:var(--ink-66);line-height:1.55}
 
-/* VARIATION of .today-card: laid out horizontally — asset preview left, name and
-   format in the middle, download on the right, as on the current site. Radius,
-   border, shadow and 22px padding are the card's own, unchanged. */
-.asset-row{display:flex;align-items:center;gap:18px;padding:22px;margin-bottom:18px;
-  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
-  box-shadow:var(--neu-soft)}
-.asset-row:last-child{margin-bottom:0}
-.asset-row img{width:64px;height:64px;flex:none;border-radius:14px}
-.asset-row img.logo-preview{border-radius:0;object-fit:contain}
-.asset-info{flex:1;min-width:0}
-.asset-info h3{font-size:var(--fs-h3);font-weight:700;margin-bottom:4px}
-.asset-info .card-meta{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-66);
-  letter-spacing:.08em;text-transform:uppercase;font-variant-numeric:tabular-nums}
-.asset-row .btn{flex:none}
-@media(max-width:520px){.asset-row{flex-wrap:wrap}.asset-row .btn{width:100%;justify-content:center}}
-
-/* VARIATION of .ledger-row .amt: these are version numbers, not money, so they
-   keep the tabular mono treatment but drop --profit green, which on this site
-   means earnings only. */
-.ledger-row .ver{color:var(--ink);font-weight:700;white-space:nowrap;
-  font-family:var(--font-mono);font-size:var(--fs-2xs);font-variant-numeric:tabular-nums}
+/* VARIATION of .today-card: an asset card opens with a 64px preview of the file
+   it offers instead of the 46px icon tile, and closes with a download button.
+   Radius, border, shadow, 22px padding and the 12px stack are the card's own. */
+.asset-card img{width:64px;height:64px;border-radius:14px;flex:none}
+.asset-card img.logo-preview{border-radius:0;object-fit:contain}
+.asset-card .card-meta{margin-top:auto;font-family:var(--font-mono);font-size:var(--fs-2xs);
+  color:var(--ink-66);letter-spacing:.08em;text-transform:uppercase;font-variant-numeric:tabular-nums}
+.asset-card .btn{align-self:flex-start}
 
 /* The shots on this page are downloads, not decoration: the caption carries the
    link, and the whole figure is the hit area. Same stretched-::after as /tools/. */
@@ -155,16 +150,40 @@
       <span class="eyebrow">Checkable</span>
       <h2 class="section-title" id="facts-title">Key Facts</h2>
 
-      <dl class="facts pro-rows">
-        <div class="pro-row"><dt class="k">Price</dt><dd class="v">Free. No ads, no subscriptions, no in-app purchases.</dd></div>
-        <div class="pro-row"><dt class="k">Platform</dt><dd class="v">iPhone (iOS 17+) and Android (Android 8+)</dd></div>
-        <div class="pro-row"><dt class="k">Selling Platforms Tracked</dt><dd class="v">16: eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, OfferUp, Craigslist, ThredUp</dd></div>
-        <div class="pro-row"><dt class="k">Currencies</dt><dd class="v">6: GBP (£), USD ($), EUR (€), CAD (CA$), AUD (A$), NZD (NZ$) with automatic daily exchange rates</dd></div>
-        <div class="pro-row"><dt class="k">Offline</dt><dd class="v">Works fully offline — important at markets with no signal</dd></div>
-        <div class="pro-row"><dt class="k">Launched</dt><dd class="v">February 2026</dd></div>
-        <div class="pro-row"><dt class="k">Built With</dt><dd class="v">Swift and SwiftUI on iOS, Kotlin and Jetpack Compose on Android</dd></div>
-        <div class="pro-row"><dt class="k">Developer</dt><dd class="v">Oleksandr Prudnikov, Wandsworth, London</dd></div>
-      </dl>
+      <div class="day">
+        <div class="moment reveal">
+          <span class="when">Price</span>
+          <p class="answer">Free. No ads, no subscriptions, no in-app purchases.</p>
+        </div>
+        <div class="moment reveal">
+          <span class="when">Platform</span>
+          <p class="answer">iPhone (iOS 17+) and Android (Android 8+)</p>
+        </div>
+        <div class="moment reveal">
+          <span class="when">Selling Platforms Tracked</span>
+          <p class="answer">16: eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, OfferUp, Craigslist, ThredUp</p>
+        </div>
+        <div class="moment reveal">
+          <span class="when">Currencies</span>
+          <p class="answer">6: GBP (£), USD ($), EUR (€), CAD (CA$), AUD (A$), NZD (NZ$) with automatic daily exchange rates</p>
+        </div>
+        <div class="moment reveal">
+          <span class="when">Offline</span>
+          <p class="answer">Works fully offline — important at markets with no signal</p>
+        </div>
+        <div class="moment reveal">
+          <span class="when">Launched</span>
+          <p class="answer">February 2026</p>
+        </div>
+        <div class="moment reveal">
+          <span class="when">Built With</span>
+          <p class="answer">Swift and SwiftUI on iOS, Kotlin and Jetpack Compose on Android</p>
+        </div>
+        <div class="moment reveal">
+          <span class="when">Developer</span>
+          <p class="answer">Oleksandr Prudnikov, Wandsworth, London</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -174,22 +193,24 @@
       <span class="eyebrow">The short version</span>
       <h2 class="section-title" id="features-title">Core Features</h2>
 
-      <ul class="feature-list">
-        <li>Photo-first item tracking with automatic SKU generation</li>
-        <li>Track listings across 16 selling platforms with per-platform dates</li>
-        <li>Automatic profit calculation per item</li>
-        <li>Expense tracking: entry fees, transport (car, bus, train, taxi, van, bike rental), and custom expenses</li>
-        <li>Multi-currency support — 6 currencies (USD, EUR, GBP, CAD, AUD, NZD) with automatic daily exchange rates</li>
-        <li>Market management with GPS auto-detection</li>
-        <li>Money Flow dashboard with weekly, monthly, and custom range revenue, profit, and expense breakdown</li>
-        <li>Hauls — group items and expenses by sourcing trip with per-trip profit tracking</li>
-        <li>5 share card types (Flip Card, Monthly Recap, Top Flips, Daily Haul, My Stock) for social sharing</li>
-        <li>Automatic backup enabled by default — iCloud on iPhone, folder backup on Android</li>
-        <li>Google Drive photo sync and CSV export to Google Sheets (drive.file scope only)</li>
-        <li>Full data backup and restore as ZIP archive</li>
-        <li>Listing reminders via configurable push notifications</li>
-        <li>Works completely offline — no account required</li>
-      </ul>
+      <div class="pro-card reveal">
+        <ul class="feature-list">
+          <li>Photo-first item tracking with automatic SKU generation</li>
+          <li>Track listings across 16 selling platforms with per-platform dates</li>
+          <li>Automatic profit calculation per item</li>
+          <li>Expense tracking: entry fees, transport (car, bus, train, taxi, van, bike rental), and custom expenses</li>
+          <li>Multi-currency support — 6 currencies (USD, EUR, GBP, CAD, AUD, NZD) with automatic daily exchange rates</li>
+          <li>Market management with GPS auto-detection</li>
+          <li>Money Flow dashboard with weekly, monthly, and custom range revenue, profit, and expense breakdown</li>
+          <li>Hauls — group items and expenses by sourcing trip with per-trip profit tracking</li>
+          <li>5 share card types (Flip Card, Monthly Recap, Top Flips, Daily Haul, My Stock) for social sharing</li>
+          <li>Automatic backup enabled by default — iCloud on iPhone, folder backup on Android</li>
+          <li>Google Drive photo sync and CSV export to Google Sheets (drive.file scope only)</li>
+          <li>Full data backup and restore as ZIP archive</li>
+          <li>Listing reminders via configurable push notifications</li>
+          <li>Works completely offline — no account required</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -241,55 +262,43 @@
       <span class="eyebrow">Logos</span>
       <h2 class="section-title" id="assets-title">Brand Assets</h2>
 
-      <div class="asset-row">
-        <img src="app-icon-1024.png" alt="FlipperHelper app icon" width="64" height="64" loading="lazy" decoding="async">
-        <div class="asset-info">
+      <ul class="today-grid">
+        <li class="today-card asset-card reveal">
+          <img class="" src="app-icon-1024.png" alt="FlipperHelper app icon" width="64" height="64" loading="lazy" decoding="async">
           <h3>App Icon</h3>
           <span class="card-meta">1024 x 1024 px, PNG</span>
-        </div>
-        <a class="btn btn-ghost" href="app-icon-1024.png" download>Download</a>
-      </div>
-      <div class="asset-row">
-        <img class="logo-preview" src="logo.svg" alt="FlipperHelper logo" width="64" height="64" loading="lazy" decoding="async">
-        <div class="asset-info">
+          <a class="btn btn-ghost" href="app-icon-1024.png" download>Download</a>
+        </li>
+        <li class="today-card asset-card reveal">
+          <img class="logo-preview" src="logo.svg" alt="FlipperHelper logo" width="64" height="64" loading="lazy" decoding="async">
           <h3>Logo (SVG)</h3>
           <span class="card-meta">Vector, scalable</span>
-        </div>
-        <a class="btn btn-ghost" href="logo.svg" download>Download</a>
-      </div>
-      <div class="asset-row">
-        <img class="logo-preview" src="logo.png" alt="FlipperHelper logo" width="64" height="64" loading="lazy" decoding="async">
-        <div class="asset-info">
+          <a class="btn btn-ghost" href="logo.svg" download>Download</a>
+        </li>
+        <li class="today-card asset-card reveal">
+          <img class="logo-preview" src="logo.png" alt="FlipperHelper logo" width="64" height="64" loading="lazy" decoding="async">
           <h3>Logo (PNG)</h3>
           <span class="card-meta">Raster, 114 KB</span>
-        </div>
-        <a class="btn btn-ghost" href="logo.png" download>Download</a>
-      </div>
+          <a class="btn btn-ghost" href="logo.png" download>Download</a>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <!-- ======================= STORY BAND: THE DEVELOPER ======================= -->
-  <section class="story" id="developer" aria-labelledby="developer-title">
+  <!-- ======================= THE DEVELOPER + MEDIA CONTACT ======================= -->
+  <section id="developer" aria-labelledby="developer-title">
     <div class="wrap">
-      <div class="story-grid">
-        <div>
-          <span class="eyebrow">The developer</span>
-          <h2 class="section-title" id="developer-title">About the Developer</h2>
-          <h3>Oleksandr Prudnikov</h3>
-          <p>Software developer from Ukraine, living in Wandsworth, South West London. Built FlipperHelper after his wife started buying items at car boot sales and charity shops to resell on eBay and Vinted. She turned it into a proper business but had no way to track what she paid, where things were listed, or what her real profit was. So he built her an app.</p>
-          <p>FlipperHelper took about six weeks to build and is completely free. No ads, no subscriptions. Just a useful tool for regular people who flip things on the side and want to know if they're actually making money.</p>
-        </div>
-
-        <div class="ledger">
-          <h3>Release timeline</h3>
-          <div class="ledger-row"><span class="when">20 Feb 2026</span><span class="what">First commit</span></div>
-          <div class="ledger-row"><span class="when">26 Feb 2026</span><span class="what">First TestFlight build</span><span class="ver">v1.0</span></div>
-          <div class="ledger-row"><span class="when">17 Jul 2026</span><span class="what">Return dates, flexible days to sell, customisable Add Item</span><span class="ver">v1.3.0</span></div>
-          <div class="ledger-row"><span class="when">31 Jul 2026</span><span class="what">Android leaves early access, live on Google Play</span></div>
-          <div class="ledger-row"><span class="when">6 Aug 2026</span><span class="what">Notification and location permissions asked only when they matter</span></div>
-          <p class="foot">Every release since the first commit is listed in the public <a href="/changelog.html">changelog</a>.</p>
-        </div>
+      <span class="eyebrow">The developer</span>
+      <h2 class="section-title" id="developer-title">About the Developer</h2>
+      <div class="prose">
+        <p>Oleksandr Prudnikov, a software developer from Ukraine, living in Wandsworth, South West London. He built FlipperHelper for his wife after she started buying at car boot sales and charity shops to resell on eBay and Vinted, with no way to track what she paid or what her real profit was. It is free — no ads, no subscriptions.</p>
       </div>
+
+      <dl class="facts pro-rows">
+        <div class="pro-row"><dt class="k">Email</dt><dd class="v"><a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a></dd></div>
+        <div class="pro-row"><dt class="k">Location</dt><dd class="v">Wandsworth, South West London</dd></div>
+        <div class="pro-row"><dt class="k">Available for</dt><dd class="v">Interviews, phone calls, or in-person meetings in London.</dd></div>
+      </dl>
     </div>
   </section>
 
@@ -306,25 +315,6 @@
         <li><a href="https://www.reddit.com/r/flipperhelper/" rel="noopener">Reddit (r/flipperhelper)</a></li>
         <li><a href="https://medium.com/@andreevichprudnikov" rel="noopener">Medium (development blog)</a></li>
       </ul>
-    </div>
-  </section>
-
-  <!-- ======================= MEDIA CONTACT (the page's one emphasis card) ======================= -->
-  <section id="contact" aria-labelledby="contact-title">
-    <div class="wrap">
-      <span class="eyebrow">Ask anything</span>
-      <h2 class="section-title" id="contact-title">Media Contact</h2>
-
-      <div class="pro-card">
-        <div class="pro-head">
-          <h3>Oleksandr Prudnikov</h3>
-        </div>
-        <dl class="pro-rows">
-          <div class="pro-row"><dt class="k">Email</dt><dd class="v"><a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a></dd></div>
-          <div class="pro-row"><dt class="k">Location</dt><dd class="v">Wandsworth, South West London</dd></div>
-          <div class="pro-row"><dt class="k">Available for</dt><dd class="v">Interviews, phone calls, or in-person meetings in London.</dd></div>
-        </dl>
-      </div>
     </div>
   </section>
 
