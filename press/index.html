@@ -40,6 +40,10 @@
     }
     </script>
 <style>
+/* --measure is the site's article text measure (style guide 5.2); landing.css
+   never declared it because the home page has no long-form prose column. */
+:root{--measure:900px}
+
 /* Page-only additions to landing.css. Nav, cards, grid, shots carousel, story
    band, ledger, emphasis card, final, newsletter and footer all come from the
    shared stylesheet unchanged. */
@@ -51,15 +55,16 @@
   margin-bottom:12px;max-width:760px}
 @media(max-width:720px){.page-head{padding:44px 0 0}}
 
-/* Plain prose block — the one-liner section is text, not cards. */
-.prose{max-width:720px}
+/* Plain prose block — the one-liner section is text, not cards. 900px is the
+   site's single text measure (style guide 5.2), not a narrower column. */
+.prose{max-width:var(--measure)}
 .prose p{margin-bottom:16px}
 .prose p:last-child{margin-bottom:0}
 
 /* VARIATION of .pro-rows: the contact rows are the same 190px key/value grid on
    dashed rules, used outside a .pro-card — this page spends its single orange
    stripe on the feature card. */
-.facts{border-top:1px dashed var(--line-strong);max-width:900px;margin-top:26px}
+.facts{border-top:1px dashed var(--line-strong);margin-top:26px}
 
 /* Requested change: row keys and the timeline labels take --accent instead of
    --ink / --action. Contrast note — #E58025 on white measures ~2.8:1, under
@@ -70,14 +75,17 @@
 /* VARIATION of .moment: the key facts are a timeline of labels, not the
    homepage's lived moments, so the marker and its label move from --action blue
    (which on this site means interactive) to --accent, and the value carries the
-   row instead of an h3. Dot, dashed spine, spacing and collapse are untouched. */
+   row instead of an h3. Dot, dashed spine and collapse are untouched; the value
+   drops the 560px cap the homepage moments use, because these are single lines
+   that would otherwise wrap three times inside a 1080px frame. */
 .day .moment::before{border-color:var(--accent)}
 .day .moment .when{color:var(--accent)}
 .day .moment{padding-bottom:34px}
+.day .moment .answer{max-width:none}
 
 /* Feature list inside the emphasis card — dashed rules instead of bullets, same
    13px rhythm as .pro-rows. Also carries the links list. */
-.feature-list{list-style:none;margin:0;max-width:900px;border-top:1px dashed var(--line-strong)}
+.feature-list{list-style:none;margin:0;border-top:1px dashed var(--line-strong)}
 .feature-list li{padding:13px 0;border-bottom:1px dashed var(--line-strong);
   font-size:var(--fs-sm);color:var(--ink-66);line-height:1.55}
 
