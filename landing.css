@@ -481,6 +481,34 @@ ul.today-grid,dl.pro-rows{list-style:none;margin:0}
 .newsletter .fine{font-size:var(--fs-2xs);color:var(--ink-45);margin-top:12px}
 
 /* ---------- footer ---------- */
+/* ---------- featured on ---------- */
+.badges{padding:46px 0;text-align:center}
+.badges-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px}
+.badge-card{
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  min-height:56px;padding:8px 12px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  color:var(--ink-66);font-size:var(--fs-sm);font-weight:600;
+  transition:transform .15s ease,border-color .15s ease,color .15s ease;
+  text-decoration:none!important;
+  /* same reasoning as .store-row: tighter shadow so one card's glow never lands on its
+     neighbour (extent = offset 4px + blur/2 = 11px < 16px gap) */
+  box-shadow:4px 4px 14px rgba(174,174,174,.35), -4px -4px 14px rgba(255,255,255,.6);
+}
+.badge-card:hover{transform:translateY(-2px);border-color:var(--line-strong);color:var(--ink)}
+.badge-card:active{transform:translateY(1px);box-shadow:2px 2px 8px rgba(174,174,174,.35)}
+/* height-driven so every badge scales the same; object-fit keeps the artwork undistorted
+   if a narrow cell forces max-width to clamp the box */
+.badge-card img{height:44px;width:auto;max-width:100%;object-fit:contain;flex:none}
+.badge-card .badge-ico{width:24px;height:24px;opacity:.7;transition:opacity .15s ease}
+.badge-card:hover .badge-ico{opacity:1}
+@media(max-width:520px){
+  .badges{padding:34px 0}
+  .badges-row{gap:12px}
+}
+
+/* ---------- footer ---------- */
+
 footer{border-top:1px solid var(--line);padding:26px 0 24px;font-size:var(--fs-xs);color:var(--ink-66);background:var(--card)}
 .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:24px;align-items:start}
 @media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
