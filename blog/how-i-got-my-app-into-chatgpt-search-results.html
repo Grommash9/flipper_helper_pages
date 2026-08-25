@@ -1,295 +1,788 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-itunes-app" content="app-id=6759716745">
-    <title>App Into ChatGPT Results in 30 Days | FlipperHelper</title>
-    <meta name="description" content="How a solo dev got a mobile app cited in ChatGPT in 30 days. Real data from 11 queries and 40 citations — what worked, what didn't.">
-    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="canonical" href="https://flipperhelper.app/blog/how-i-got-my-app-into-chatgpt-search-results.html">
-    <!-- OpenGraph -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="How I Got My Reselling App Into ChatGPT Search Results in 30 Days">
-    <meta property="og:description" content="Answer Engine Optimisation for indie apps — real data from automated LLM audits, citation analysis, and the fixes that actually moved the needle.">
-    <meta property="og:url" content="https://flipperhelper.app/blog/how-i-got-my-app-into-chatgpt-search-results.html">
-    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
-    <meta property="og:site_name" content="FlipperHelper">
-    <meta property="og:locale" content="en_GB">
-    <meta property="article:published_time" content="2026-04-16">
-    <meta property="article:author" content="Oleksandr Prudnikov">
-    <meta property="article:section" content="Marketing">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="How I Got My Reselling App Into ChatGPT Search Results in 30 Days">
-    <meta name="twitter:description" content="AEO for indie apps — automated LLM audits, citation analysis, and the fixes that moved the needle.">
-    <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
-    <!-- BreadcrumbList JSON-LD -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-itunes-app" content="app-id=6759716745">
+<title>App Into ChatGPT Results in 30 Days | FlipperHelper</title>
+<meta name="description" content="How a solo dev got a mobile app cited in ChatGPT in 30 days. Real data from 11 queries and 40 citations — what worked, what didn't.">
+<link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
+<link rel="canonical" href="https://flipperhelper.app/blog/how-i-got-my-app-into-chatgpt-search-results.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- OpenGraph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="How I Got My Reselling App Into ChatGPT Search Results in 30 Days">
+<meta property="og:description" content="Answer Engine Optimisation for indie apps — real data from automated LLM audits, citation analysis, and the fixes that actually moved the needle.">
+<meta property="og:url" content="https://flipperhelper.app/blog/how-i-got-my-app-into-chatgpt-search-results.html">
+<meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
+<meta property="og:site_name" content="FlipperHelper">
+<meta property="og:locale" content="en_GB">
+<meta property="article:published_time" content="2026-04-16">
+<meta property="article:author" content="Oleksandr Prudnikov">
+<meta property="article:section" content="Marketing">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How I Got My Reselling App Into ChatGPT Search Results in 30 Days">
+<meta name="twitter:description" content="AEO for indie apps — automated LLM audits, citation analysis, and the fixes that moved the needle.">
+<meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+<!-- BreadcrumbList JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flipperhelper.app/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://flipperhelper.app/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "How I Got My App Into ChatGPT Search Results", "item": "https://flipperhelper.app/blog/how-i-got-my-app-into-chatgpt-search-results.html"}
+  ]
+}
+</script>
+<!-- Article JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How I Got My Reselling App Into ChatGPT Search Results in 30 Days",
+  "description": "A solo developer's guide to Answer Engine Optimisation (AEO) — using LLMs to find out why they don't recommend your app, then fixing the actual problems.",
+  "datePublished": "2026-04-16",
+  "dateModified": "2026-04-16",
+  "author": {"@type": "Person", "name": "Oleksandr Prudnikov"},
+  "publisher": {"@type": "Person", "name": "Oleksandr Prudnikov"},
+  "mainEntityOfPage": "https://flipperhelper.app/blog/how-i-got-my-app-into-chatgpt-search-results.html"
+}
+</script>
+<!-- FAQPage JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flipperhelper.app/"},
-        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://flipperhelper.app/blog/"},
-        {"@type": "ListItem", "position": 3, "name": "How I Got My App Into ChatGPT Search Results", "item": "https://flipperhelper.app/blog/how-i-got-my-app-into-chatgpt-search-results.html"}
-      ]
-    }
-    </script>
-    <!-- Article JSON-LD -->
-    <script type="application/ld+json">
+      "@type": "Question",
+      "name": "What is Answer Engine Optimisation (AEO)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AEO is the practice of optimising your product's visibility in AI-powered answer engines like ChatGPT, Perplexity, and Google AI Overviews. Instead of optimising for search rankings (SEO), you optimise for the answers LLMs give when users ask 'what's the best app for X.' This includes improving your App Store description, structured data, content clarity, and monitoring how LLMs describe your product."
+      }
+    },
     {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "How I Got My Reselling App Into ChatGPT Search Results in 30 Days",
-      "description": "A solo developer's guide to Answer Engine Optimisation (AEO) — using LLMs to find out why they don't recommend your app, then fixing the actual problems.",
-      "datePublished": "2026-04-16",
-      "dateModified": "2026-04-16",
-      "author": {"@type": "Person", "name": "Oleksandr Prudnikov"},
-      "publisher": {"@type": "Person", "name": "Oleksandr Prudnikov"},
-      "mainEntityOfPage": "https://flipperhelper.app/blog/how-i-got-my-app-into-chatgpt-search-results.html"
-    }
-    </script>
-    <!-- FAQPage JSON-LD -->
-    <script type="application/ld+json">
+      "@type": "Question",
+      "name": "How do I check if ChatGPT recommends my app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can manually ask ChatGPT questions your users would ask and see if your app appears. For a more systematic approach, use the ChatGPT API to send multiple queries programmatically, check whether your app is mentioned, and ask follow-up questions about why competitors rank higher or why your app isn't recommended."
+      }
+    },
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is Answer Engine Optimisation (AEO)?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "AEO is the practice of optimising your product's visibility in AI-powered answer engines like ChatGPT, Perplexity, and Google AI Overviews. Instead of optimising for search rankings (SEO), you optimise for the answers LLMs give when users ask 'what's the best app for X.' This includes improving your App Store description, structured data, content clarity, and monitoring how LLMs describe your product."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I check if ChatGPT recommends my app?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You can manually ask ChatGPT questions your users would ask and see if your app appears. For a more systematic approach, use the ChatGPT API to send multiple queries programmatically, check whether your app is mentioned, and ask follow-up questions about why competitors rank higher or why your app isn't recommended."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What sources does ChatGPT use to recommend apps?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Based on our audit of 40 web citations across 11 queries, apps.apple.com accounted for 32.5% of all citations — making it the single most important source. Competitor websites, review sites, and app directories made up the rest. Our own blog and content marketing sites had zero citations for app recommendation queries, suggesting the App Store listing is the primary source of truth for LLM app recommendations."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does Bing indexing help with ChatGPT visibility?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "ChatGPT's web search mode uses Bing as its search provider. By registering your site with Bing Webmaster Tools and setting up IndexNow (an open protocol that pings Bing when you update your site), you can speed up how quickly ChatGPT discovers your new content. Bing Webmaster Tools also has an AI Performance tab (beta) that shows how often Microsoft Copilot cites your pages."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does saving pages to the Wayback Machine help with AI visibility?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Potentially, yes. LLMs that search the live web are covered by Bing indexing. But statically trained models (the next generation of base models) use web archive data including the Internet Archive for training. Archiving your key pages on the Wayback Machine ensures they're available for future model training, giving you visibility in both live-search and training-data-based models."
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "What sources does ChatGPT use to recommend apps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Based on our audit of 40 web citations across 11 queries, apps.apple.com accounted for 32.5% of all citations — making it the single most important source. Competitor websites, review sites, and app directories made up the rest. Our own blog and content marketing sites had zero citations for app recommendation queries, suggesting the App Store listing is the primary source of truth for LLM app recommendations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Bing indexing help with ChatGPT visibility?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ChatGPT's web search mode uses Bing as its search provider. By registering your site with Bing Webmaster Tools and setting up IndexNow (an open protocol that pings Bing when you update your site), you can speed up how quickly ChatGPT discovers your new content. Bing Webmaster Tools also has an AI Performance tab (beta) that shows how often Microsoft Copilot cites your pages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does saving pages to the Wayback Machine help with AI visibility?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Potentially, yes. LLMs that search the live web are covered by Bing indexing. But statically trained models (the next generation of base models) use web archive data including the Internet Archive for training. Archiving your key pages on the Wayback Machine ensures they're available for future model training, giving you visibility in both live-search and training-data-based models."
+      }
     }
-    </script>
+  ]
+}
+</script>
+
+<style>
+:root{
+  /* App palette */
+  --bg:#F8FAFB;                 /* page background — same as the app */
+  --card:#FFFFFF;
+  --ink:#000000;                /* primary text */
+  --ink-66:rgba(0,0,0,.66);     /* secondary text / inactive nav */
+  --ink-45:rgba(0,0,0,.45);
+  --ink-30:rgba(0,0,0,.30);
+  --profit:#32D347;             /* income / data highlight, "Sold" green */
+  --action:#1E76F1;             /* clickable text, selected state */
+  --accent:#E58025;             /* "Add New Item" orange — primary buttons */
+  --accent-hover:#F08F38;
+  --cat:#BBCBF7;                /* small category header bg / chip outline */
+  --loss:#E14B4B;
+  --line:rgba(0,0,0,.08);
+  --line-strong:rgba(0,0,0,.14);
+
+  /* NEUMORPHISM1 — exactly as in the app */
+  --neu:5px 5px 30px rgba(174,174,174,.40), -10px -10px 30px rgba(255,255,255,.71);
+  --neu-soft:4px 4px 22px rgba(174,174,174,.30), -8px -8px 22px rgba(255,255,255,.71);
+
+  --font-body:'Roboto Flex', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono:'Roboto Mono','SF Mono',ui-monospace,Menlo,monospace;
+
+  --radius-sm:8px; --radius-md:14px; --radius-lg:20px;
+  --max:1080px;
+
+  /* type scale — one ladder for the whole site */
+  --fs-3xs:.68rem;   /* micro mono: pills, column headers */
+  --fs-2xs:.75rem;   /* eyebrow, labels, footnotes */
+  --fs-xs:.85rem;    /* nav, footer links, hints */
+  --fs-sm:.95rem;    /* card body text */
+  --fs-base:1rem;    /* buttons, brand, ui */
+  --fs-md:1.0625rem; /* body copy */
+  --fs-lede:1.125rem;/* section ledes + hero sub */
+  --fs-h3:1.05rem;   /* card titles */
+  --fs-h3-lg:1.25rem;/* feature-card title */
+  --fs-xl:1.2rem;    /* large ui accents */
+
+  /* the article uses the homepage frame: .wrap gives 1032 of content.
+     --measure is the one text measure inside it — the only narrower width on the page. */
+  --measure:900px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  background:var(--bg);color:var(--ink-66);
+  font-family:var(--font-body);font-size:var(--fs-md);line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--action);color:#fff}
+img{max-width:100%;display:block}
+a{color:var(--action);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{
+  font-family:var(--font-body);color:var(--ink);line-height:1.16;
+  font-weight:700;letter-spacing:-.015em;
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+.tear{
+  border:none;height:1px;margin:0 auto;max-width:var(--max);
+  background-image:linear-gradient(90deg,var(--line-strong) 55%,transparent 45%);
+  background-size:14px 1px;
+}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--font-body);font-weight:600;font-size:var(--fs-base);letter-spacing:.01em;
+  padding:13px 22px;border-radius:12px;cursor:pointer;border:1px solid transparent;
+  transition:transform .15s ease,background .15s ease,border-color .15s ease,box-shadow .15s ease;
+  text-decoration:none!important;
+}
+.btn:active{transform:translateY(1px);box-shadow:2px 2px 14px rgba(174,174,174,.4)}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--neu)}
+.btn-primary:hover{background:var(--accent-hover)}
+.store-row{display:flex;gap:18px;flex-wrap:wrap}
+/* side-by-side buttons: tighter shadow so one button's glow never lands on its neighbour
+   (extent ≈ offset 4px + blur/2 = 11px < 18px gap) */
+.store-row .btn{box-shadow:4px 4px 14px rgba(174,174,174,.35), -4px -4px 14px rgba(255,255,255,.6)}
+.store-row .btn:active{box-shadow:2px 2px 8px rgba(174,174,174,.35)}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(248,250,251,.86);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:var(--max);margin:0 auto;padding:8px 24px;
+  display:flex;align-items:center;gap:22px;
+}
+.brand{display:flex;align-items:center;gap:8px;font-weight:500;font-size:var(--fs-base);color:var(--ink);text-decoration:none!important;letter-spacing:-.01em}
+.fh-logo{width:19px;height:20px;display:block;color:var(--ink)}
+.nav-links{display:flex;gap:18px;margin-left:auto;align-items:center}
+.nav-links a:not(.btn){
+  color:#000000;opacity:.45;font-size:var(--fs-xs);font-weight:500;
+  transition:opacity .12s ease;
+  display:inline-flex;align-items:center;min-height:44px;padding:0 2px;
+}
+.nav-links a:not(.btn):hover,
+.nav-links a:not(.btn)[aria-current="page"],
+.nav-links a:not(.btn).active{color:#000000;opacity:1;text-decoration:none}
+.nav .btn{padding:5px 11px;font-size:var(--fs-xs);border-radius:9px}
+@media(max-width:860px){.nav-links a:not(.btn){display:none}}
+
+/* ============================================================
+   ARTICLE
+   Two widths only — the same two-tier system the homepage uses:
+     · structure (headings, tears, the CTA card) fills the 1032 frame
+     · prose and the table stop at --measure, and every one of them shares
+       that single right edge, so the text edge never moves
+   Rhythm uses the homepage steps only:
+   68 page padding · 48 between sections · 22 heading→body · 16 paragraph.
+   ============================================================ */
+.post{padding:68px 0}
+@media(max-width:720px){.post{padding:48px 0}}
+
+/* article head — no homepage hero here, just the title block */
+.post-back{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;
+  letter-spacing:.08em;color:var(--action);
+  display:inline-block;margin-bottom:22px;
+}
+.post-updated{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);margin-bottom:12px;
+}
+.post h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.post-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px}
+.art-date,.art-read{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.art-tag{
+  font-family:var(--font-mono);font-size:.62rem;font-weight:600;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--ink-66);
+  background:var(--cat);border-radius:6px;padding:4px 8px;
+  display:inline-flex;align-items:center;flex:none;
+}
+
+/* sections + prose */
+.post section + section{margin-top:48px}
+.post hr.tear{margin:48px auto}
+.post h2{font-size:clamp(1.35rem,2.6vw,1.6rem);margin-bottom:14px}
+.post h3{font-size:var(--fs-lede);margin:26px 0 8px}
+.post p{margin-bottom:16px;color:var(--ink-66);max-width:var(--measure)}
+.post p:last-child{margin-bottom:0}
+.post strong{color:var(--ink);font-weight:600}
+.post em{font-style:italic}
+.post .store-row{margin:26px 0}
+
+/* bullets — periwinkle marker, the site's quiet metadata colour */
+.post ul{list-style:none;margin:0 0 16px;max-width:var(--measure)}
+.post ul li{position:relative;padding-left:22px;margin-bottom:9px;color:var(--ink-66)}
+.post ul li::before{
+  content:"";position:absolute;left:4px;top:.58em;width:6px;height:6px;border-radius:50%;
+  background:var(--cat);
+}
+.post ul li:last-child{margin-bottom:0}
+
+/* founder quote — the story-band pull-quote */
+.post blockquote{border-left:3px solid var(--accent);padding:6px 0 6px 18px;margin:26px 0;max-width:var(--measure)}
+.post blockquote p{font-weight:700;font-size:var(--fs-lede);color:var(--ink);line-height:1.4;letter-spacing:-.01em}
+
+/* ---------- comparison table ----------
+   VARIATION of the homepage's .ledger card: same mono machine-layer keys and dashed
+   row rules; only the layout differs (three columns instead of a two-part row). */
+.cmp-wrap{overflow-x:auto;max-width:var(--measure)}
+.cmp{
+  width:100%;min-width:560px;border-collapse:collapse;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  box-shadow:var(--neu-soft);
+}
+.cmp th,.cmp td{padding:14px 18px;text-align:left;vertical-align:top}
+.cmp thead th{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink);
+  background:var(--cat);
+}
+.cmp thead th:first-child{border-radius:var(--radius-md) 0 0 0}
+.cmp thead th:last-child{border-radius:0 var(--radius-md) 0 0}
+.cmp tbody th{
+  font-size:var(--fs-xs);font-weight:600;color:var(--ink);width:34%;white-space:nowrap;
+}
+@media(max-width:640px){.cmp tbody th{white-space:normal}}
+.cmp tbody td{font-size:var(--fs-sm);color:var(--ink-66)}
+.cmp tbody tr{border-top:1px dashed var(--line-strong)}
+.cmp tbody tr:first-child{border-top:none}
+/* the row the source table marked as highlighted */
+.cmp tr.highlight-col td{color:#1FA234;font-weight:600}
+
+/* ---------- the three steps: homepage .day timeline ---------- */
+.day{position:relative;margin:26px 0}
+.day::before{ /* vertical dashed line — black 45% */
+  content:"";position:absolute;left:11px;top:8px;bottom:8px;width:1px;
+  background-image:linear-gradient(180deg,rgba(0,0,0,.45) 55%,transparent 45%);
+  background-size:1px 12px;
+}
+.moment{position:relative;padding:0 0 56px 56px}
+.moment:last-child{padding-bottom:0}
+.moment::before{ /* dot — app blue */
+  content:"";position:absolute;left:5px;top:8px;width:13px;height:13px;border-radius:50%;
+  background:var(--bg);border:2px solid var(--action);
+}
+.moment .when{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--action);display:block;margin-bottom:8px;
+}
+.moment h3{font-size:var(--fs-lede);margin:0 0 8px;font-weight:700;max-width:calc(var(--measure) - 56px)}
+.moment p{color:var(--ink-66);font-size:var(--fs-base);max-width:calc(var(--measure) - 56px)}
+@media(max-width:600px){.moment{padding-left:40px}}
+
+/* ---------- in-article CTA ----------
+   VARIATION of the .pro-card: same white card, --neu shadow and 4px orange stripe. */
+.post-cta{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  box-shadow:var(--neu);padding:26px 22px;position:relative;overflow:hidden;
+}
+.post-cta::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent);border-radius:4px 0 0 4px}
+.post-cta h2{font-size:var(--fs-h3-lg);margin-bottom:12px;letter-spacing:-.01em}
+.post-cta p{font-size:var(--fs-sm);max-width:none}
+.post-cta .store-row{margin:22px 0 0}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:26px 0 24px;font-size:var(--fs-xs);color:var(--ink-66);background:var(--card)}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:24px;align-items:start}
+@media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.foot-grid{grid-template-columns:1fr}}
+.foot-left p{margin-top:8px;max-width:300px;font-size:var(--fs-xs);line-height:1.5}
+.foot-col h4{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);margin:4px 0 6px;
+}
+.foot-col a{color:var(--ink-66);display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 2px;font-size:var(--fs-xs)}
+.foot-col a:hover{color:var(--action);text-decoration:none}
+.foot-col svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.foot-col nav{display:flex;flex-direction:column}
+.foot-bottom{
+  margin-top:20px;padding-top:14px;border-top:1px dashed var(--line);
+  display:flex;justify-content:space-between;gap:8px 24px;flex-wrap:wrap;
+  font-size:var(--fs-2xs);color:var(--ink-66);
+}
+.foot-bottom a{color:var(--ink-66);text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:2px}
+.foot-bottom a:hover{text-decoration-color:var(--action)}
+
+a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-offset:3px;border-radius:6px}
+.btn:focus-visible{outline:2px solid var(--action);outline-offset:2px}
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
+  background:var(--card);color:var(--ink);border:1px solid var(--line-strong);
+  border-radius:12px;padding:10px 16px;box-shadow:var(--neu-soft);
+}
+.skip:focus{left:24px;top:8px;text-decoration:none}
+.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ============================================================
+   EXTENDED ARTICLE COMPONENTS
+   Elements the wider blog library uses that the Android post did not:
+   numbered lists, small headings, figures, spreadsheet formulas,
+   callouts, an author row and the fee calculator. Every one is built
+   from tokens already declared above — no new colour, radius or shadow.
+   ============================================================ */
+
+/* numbered lists — the site's step-number treatment: mono blue digit in a
+   periwinkle ring, matching the .moment dot rather than a browser marker */
+.post ol{list-style:none;margin:0 0 16px;max-width:var(--measure);counter-reset:step}
+.post ol > li{
+  position:relative;padding-left:32px;margin-bottom:9px;color:var(--ink-66);
+  counter-increment:step;
+}
+.post ol > li::before{
+  content:counter(step);position:absolute;left:0;top:.12em;
+  width:21px;height:21px;border:1px solid var(--cat);border-radius:50%;
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;color:var(--action);
+  display:flex;align-items:center;justify-content:center;
+}
+.post ol > li:last-child{margin-bottom:0}
+.post li > ul{margin-top:9px;margin-bottom:0}
+
+/* h4 — smallest heading in the library, so it drops into the mono layer
+   exactly like a footer column label */
+.post h4{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);
+  margin:22px 0 6px;
+}
+
+/* inline code */
+.post code{
+  font-family:var(--font-mono);font-size:.9em;color:var(--ink);
+  background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 6px;
+}
+
+/* ---------- figures ----------
+   VARIATION of the homepage .shot: same white card and soft shadow.
+   The caption stays sentence-case --ink-45 mono rather than the .shot
+   periwinkle pill — these captions are sentences, not one-word labels. */
+.post .shot{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  box-shadow:var(--neu-soft);padding:12px;margin:26px 0;max-width:var(--measure);
+}
+.post .shot img{border-radius:var(--radius-sm);margin:0 auto;height:auto}
+.post .shot figcaption{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);line-height:1.5;
+  color:var(--ink-45);text-align:center;margin-top:12px;
+}
+.post .shot--phone{max-width:320px;margin-left:auto;margin-right:auto}
+
+/* ---------- spreadsheet formulas ---------- */
+.formula-block{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
+  padding:14px 18px;margin:16px 0;max-width:var(--measure);
+}
+.formula-label{
+  display:block;font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);margin-bottom:6px;
+}
+.formula-block code{
+  display:block;background:none;border:none;padding:0;white-space:pre;overflow-x:auto;
+  font-size:var(--fs-sm);color:var(--ink);
+}
+
+/* ---------- callouts ----------
+   The .ledger fill: off-white inside a white page, no border colour. */
+.post .callout{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
+  padding:20px 22px;margin:16px 0;max-width:var(--measure);
+}
+.post .callout p{margin-bottom:6px;font-size:var(--fs-sm)}
+.post .callout p:last-child{margin-bottom:0}
+/* the haul summary reads as a ledger: mono rows, a dashed rule, a green total */
+.post .callout-title{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);margin-bottom:12px;
+}
+.post .callout-row{font-family:var(--font-mono);color:var(--ink-66);font-variant-numeric:tabular-nums}
+.post .callout-total{
+  font-family:var(--font-mono);font-size:var(--fs-base);font-weight:700;color:#1FA234;
+  font-variant-numeric:tabular-nums;
+  margin-top:12px;padding-top:10px;border-top:1px dashed var(--line-strong);
+}
+.post .callout-note{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);margin-top:6px}
+
+/* source attribution under a pull-quote or table */
+.post .cite{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);
+  margin:0 0 16px;max-width:var(--measure);
+}
+
+.private-note{
+  background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:var(--radius-md);padding:16px 20px;margin-top:22px;max-width:var(--measure);
+  color:var(--ink);font-weight:600;font-size:var(--fs-sm);
+}
+
+/* ---------- author card ----------
+   The one article that gave its bio a box keeps it, rebuilt as the site's
+   standard 22px white card. Its heading drops to the card-level H2 size. */
+.post .author-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  box-shadow:var(--neu-soft);padding:22px;max-width:var(--measure);
+}
+.post .author-card h2{font-size:var(--fs-h3-lg);letter-spacing:-.01em}
+
+/* ---------- author row ---------- */
+.author-row{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;margin-top:16px}
+.author-row .avatar{
+  width:120px;height:120px;border-radius:50%;object-fit:cover;flex:none;
+  box-shadow:var(--neu-soft);
+}
+.author-row > div{flex:1;min-width:240px}
+
+/* ---------- table extensions ----------
+   The library's tables lead with a plain <td> rather than a row <th>, and
+   two of them carry spreadsheet column letters and profit figures. */
+.cmp tbody tr > td:first-child{color:var(--ink);font-weight:600}
+.cmp tbody tr > td.col-header{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink);white-space:nowrap;
+}
+.cmp .profit-positive{color:#1FA234;font-weight:600;font-variant-numeric:tabular-nums}
+.post .cmp-wrap{margin:22px 0}
+
+/* ---------- fee calculator ----------
+   A form built out of the site's input rules: white field, --line-strong
+   border, blue focus ring. Results sit in the .ledger's off-white. */
+.calc-container{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  box-shadow:var(--neu-soft);padding:26px 22px;margin:26px 0;max-width:var(--measure);
+}
+.calc-row{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:18px}
+.calc-field{flex:1;min-width:200px}
+.calc-field label{
+  display:block;font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-45);margin-bottom:6px;
+}
+.calc-field input,.calc-field select{
+  width:100%;padding:13px 16px;border:1px solid var(--line-strong);border-radius:12px;
+  background:var(--card);color:var(--ink);
+  font-family:var(--font-mono);font-size:var(--fs-sm);font-variant-numeric:tabular-nums;
+}
+.calc-field select{font-family:var(--font-body)}
+.calc-field input::placeholder{color:var(--ink-30)}
+.calc-field input:focus,.calc-field select:focus{
+  outline:2px solid var(--action);outline-offset:1px;border-color:transparent;
+}
+.calc-section-label{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);
+  margin:22px 0 8px;
+}
+.calc-results{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
+  padding:22px;margin-top:22px;
+}
+.calc-results h3{font-size:var(--fs-h3);margin:0 0 12px}
+.calc-line{
+  display:flex;justify-content:space-between;gap:18px;
+  padding:9px 0;border-bottom:1px dashed var(--line-strong);
+  font-size:var(--fs-sm);color:var(--ink-66);font-variant-numeric:tabular-nums;
+}
+.calc-line:last-child{border-bottom:none}
+.calc-line.calc-total{
+  font-weight:600;color:var(--ink);
+  border-bottom:none;border-top:1px dashed var(--line-strong);margin-top:4px;padding-top:12px;
+}
+.calc-line.calc-profit{font-size:var(--fs-base);font-weight:700;color:#1FA234}
+.calc-line.calc-loss{font-size:var(--fs-base);font-weight:700;color:var(--loss)}
+.calc-note{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);margin-top:8px}
+</style>
 </head>
+
 <body>
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="../" class="nav-logo">
-                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
-                <span>FlipperHelper</span>
-            </a>
-            <div class="nav-links">
-                <a href="../">Home</a>
-                <a href="../faq.html">FAQ</a>
-                <a href="./">Blog</a>
-                <a href="/tools/">Tools</a>
-                <a href="/compare/">Compare</a>
-                <a href="/#download" class="btn btn-small">Get the App</a>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ======================= NAV ======================= -->
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+      FlipperHelper
+    </a>
+    <div class="nav-links">
+      <a href="/#day">Your Sunday</a>
+      <a href="/#story">Our story</a>
+      <a href="/#workbench">What's next</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/tools/">Free tools</a>
+      <a class="btn btn-primary" href="/#get">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================= ARTICLE ======================= -->
+<main class="post" id="main">
+  <div class="wrap">
+    <article>
+
+            <a href="./" class="post-back">&larr; Back to Blog</a>
+            <p class="post-updated">Last updated: 16 April 2026</p>
+            <h1>How I Got My Reselling App Into ChatGPT Search Results in 30 Days</h1>
+            <div class="post-meta">
+                <span class="art-date">16 April 2026</span>
+                <span class="art-tag">Marketing</span>
+                <span class="art-read">8 min read</span>
             </div>
-        </div>
-    </nav>
 
-    <main class="legal-page">
-        <div class="container">
-            <div class="legal-content blog-post">
-                <a href="./" class="blog-back">&larr; Back to Blog</a>
-                <p class="blog-updated">Last updated: 16 April 2026</p>
-                <h1>How I Got My Reselling App Into ChatGPT Search Results in 30 Days</h1>
-                <div class="blog-meta">
-                    <span class="blog-date">16 April 2026</span>
-                    <span class="blog-tag">Marketing</span>
-                    <span class="blog-reading-time">8 min read</span>
-                </div>
+            <section>
+                <p><strong>I launched FlipperHelper &mdash; a free reselling app for iOS and Android &mdash; on March 21, 2026.</strong> Within 25 days I had 56 first-time downloads. Most came from Reddit posts and content marketing. But the last three days had downloads every single day with no new content pushed. Something else was driving discovery.</p>
+                <p>I&rsquo;d been manually checking ChatGPT every week or two, asking it to recommend an app for tracking reselling profits. Sometimes FlipperHelper appeared. Sometimes it didn&rsquo;t. It depended entirely on how I phrased the question. Then I realised I could automate this &mdash; and learn exactly what the model thinks is wrong with my app.</p>
+            </section>
 
-                <section>
-                    <p><strong>I launched FlipperHelper &mdash; a free reselling app for iOS and Android &mdash; on March 21, 2026.</strong> Within 25 days I had 56 first-time downloads. Most came from Reddit posts and content marketing. But the last three days had downloads every single day with no new content pushed. Something else was driving discovery.</p>
-                    <p>I&rsquo;d been manually checking ChatGPT every week or two, asking it to recommend an app for tracking reselling profits. Sometimes FlipperHelper appeared. Sometimes it didn&rsquo;t. It depended entirely on how I phrased the question. Then I realised I could automate this &mdash; and learn exactly what the model thinks is wrong with my app.</p>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>The audit script</h2>
-                    <p>I wrote a Python script that queries ChatGPT&rsquo;s API with 11 different questions a real reseller might ask. Things like &ldquo;best app for tracking reselling profit in 2026,&rdquo; &ldquo;free reselling app for iOS and Android to track inventory across eBay, Vinted, and Depop,&rdquo; or &ldquo;is there a reselling app that works offline at markets?&rdquo;</p>
-                    <p>For each question the script runs two passes:</p>
-                    <ul>
-                        <li><strong>gpt-4o</strong> (no web access) &mdash; baseline, shows what the model learned from training data</li>
-                        <li><strong>gpt-4o-search-preview</strong> (live web search) &mdash; simulates what an actual ChatGPT user sees when browsing is enabled</li>
-                    </ul>
-                    <p>When my app appears but isn&rsquo;t ranked first, the script asks a follow-up: &ldquo;What advantages does the top pick have over FlipperHelper?&rdquo; When it doesn&rsquo;t appear at all, it asks: &ldquo;Why don&rsquo;t you recommend FlipperHelper?&rdquo;</p>
-                </section>
+      <section>
+                <h2>The audit script</h2>
+                <p>I wrote a Python script that queries ChatGPT&rsquo;s API with 11 different questions a real reseller might ask. Things like &ldquo;best app for tracking reselling profit in 2026,&rdquo; &ldquo;free reselling app for iOS and Android to track inventory across eBay, Vinted, and Depop,&rdquo; or &ldquo;is there a reselling app that works offline at markets?&rdquo;</p>
+                <p>For each question the script runs two passes:</p>
+                <ul>
+                    <li><strong>gpt-4o</strong> (no web access) &mdash; baseline, shows what the model learned from training data</li>
+                    <li><strong>gpt-4o-search-preview</strong> (live web search) &mdash; simulates what an actual ChatGPT user sees when browsing is enabled</li>
+                </ul>
+                <p>When my app appears but isn&rsquo;t ranked first, the script asks a follow-up: &ldquo;What advantages does the top pick have over FlipperHelper?&rdquo; When it doesn&rsquo;t appear at all, it asks: &ldquo;Why don&rsquo;t you recommend FlipperHelper?&rdquo;</p>
+            </section>
 
-                <section>
-                    <h2>First audit results &mdash; April 15, 2026</h2>
-                    <table style="width:100%; border-collapse:collapse; margin:1.5rem 0;">
-                        <thead>
-                            <tr style="border-bottom:2px solid #e0e0e0; text-align:left;">
-                                <th style="padding:0.75rem 1rem;">Metric</th>
-                                <th style="padding:0.75rem 1rem;">Value</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="border-bottom:1px solid #f0f0f0;">
-                                <td style="padding:0.75rem 1rem;">Queries tested</td>
-                                <td style="padding:0.75rem 1rem;"><strong>11</strong></td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #f0f0f0;">
-                                <td style="padding:0.75rem 1rem;">Mentioned (training data only)</td>
-                                <td style="padding:0.75rem 1rem;"><strong>4 / 11</strong></td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #f0f0f0;">
-                                <td style="padding:0.75rem 1rem;">Mentioned (live web search)</td>
-                                <td style="padding:0.75rem 1rem;"><strong>5 / 11</strong></td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #f0f0f0;">
-                                <td style="padding:0.75rem 1rem;">Total web citations collected</td>
-                                <td style="padding:0.75rem 1rem;"><strong>40</strong></td>
-                            </tr>
-                            <tr>
-                                <td style="padding:0.75rem 1rem;">Top cited domain</td>
-                                <td style="padding:0.75rem 1rem;"><strong>apps.apple.com (13 / 40 &mdash; 32.5%)</strong></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p><strong>The App Store page is the single most trusted source for how LLMs understand your app.</strong> My blog posts, Medium articles, and dev.to content &mdash; none of them were cited in app recommendation queries. The App Store accounted for nearly a third of all citations on its own.</p>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>What ChatGPT got wrong &mdash; and what I fixed</h2>
+      <section>
+                <h2>First audit results &mdash; April 15, 2026</h2>
+                <div class="cmp-wrap" tabindex="0" role="region" aria-label="First audit results &mdash; April 15, 2026, horizontally scrollable">
+      <table class="cmp">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Queries tested</td>
+                            <td><strong>11</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Mentioned (training data only)</td>
+                            <td><strong>4 / 11</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Mentioned (live web search)</td>
+                            <td><strong>5 / 11</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Total web citations collected</td>
+                            <td><strong>40</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Top cited domain</td>
+                            <td><strong>apps.apple.com (13 / 40 &mdash; 32.5%)</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+      </div>
+                <p><strong>The App Store page is the single most trusted source for how LLMs understand your app.</strong> My blog posts, Medium articles, and dev.to content &mdash; none of them were cited in app recommendation queries. The App Store accounted for nearly a third of all citations on its own.</p>
+            </section>
 
-                    <h3>1. A misunderstanding that was killing recommendations</h3>
-                    <p>My app has optional Google Drive photo sync and CSV export to Google Sheets. ChatGPT interpreted the Google Drive feature as the <em>only</em> backup mechanism and started warning users about &ldquo;risk of data loss&rdquo; without it connected.</p>
-                    <p>In reality, FlipperHelper is <a href="works-without-internet.html">offline-first</a>. Everything is stored locally on the device. No account required. Google Drive is purely optional. But my App Store description didn&rsquo;t make this distinction clearly enough. Since ChatGPT treats the App Store as its primary source, this vague wording was actively hurting recommendations.</p>
-                    <p><strong>Fix:</strong> rewrote the App Store description to explicitly separate local storage, optional cloud photo sync, and optional Sheets export. Shipped an update with changelog noting &ldquo;enhanced backup functionality&rdquo; to trigger re-indexing.</p>
+      <hr class="tear">
 
-                    <h3>2. Tiny missing features that competitors have</h3>
-                    <p>When my app ranked below competitors, the script asked why. One finding: other apps let users add free-text notes to items (e.g. &ldquo;scratched on the back,&rdquo; &ldquo;missing a button&rdquo;). FlipperHelper didn&rsquo;t have this. ChatGPT called it &ldquo;more limited functionality.&rdquo;</p>
-                    <p><strong>Fix:</strong> one optional text field. About three minutes of development. But in the LLM&rsquo;s evaluation, it was a meaningful competitive disadvantage that cost recommendations.</p>
+      <section>
+                <h2>What ChatGPT got wrong &mdash; and what I fixed</h2>
 
-                    <h3>3. The freshness problem</h3>
-                    <p>LLMs favour apps with recent updates and active changelogs. I noticed competitors with changelogs repeating &ldquo;bug fixes&rdquo; every release &mdash; possibly to signal active maintenance. My approach: I have zero production bugs and strong test coverage (10 test files, 3,424 lines of test code, 63 end-to-end QA flows, 100k-item stress tests). Instead of fake bug fixes, I published a structured changelog page highlighting testing quality and stability.</p>
-                </section>
+                <h3>1. A misunderstanding that was killing recommendations</h3>
+                <p>My app has optional Google Drive photo sync and CSV export to Google Sheets. ChatGPT interpreted the Google Drive feature as the <em>only</em> backup mechanism and started warning users about &ldquo;risk of data loss&rdquo; without it connected.</p>
+                <p>In reality, FlipperHelper is <a href="works-without-internet.html">offline-first</a>. Everything is stored locally on the device. No account required. Google Drive is purely optional. But my App Store description didn&rsquo;t make this distinction clearly enough. Since ChatGPT treats the App Store as its primary source, this vague wording was actively hurting recommendations.</p>
+                <p><strong>Fix:</strong> rewrote the App Store description to explicitly separate local storage, optional cloud photo sync, and optional Sheets export. Shipped an update with changelog noting &ldquo;enhanced backup functionality&rdquo; to trigger re-indexing.</p>
 
-                <section>
-                    <h2>Indexing optimisations that help AI find you</h2>
+                <h3>2. Tiny missing features that competitors have</h3>
+                <p>When my app ranked below competitors, the script asked why. One finding: other apps let users add free-text notes to items (e.g. &ldquo;scratched on the back,&rdquo; &ldquo;missing a button&rdquo;). FlipperHelper didn&rsquo;t have this. ChatGPT called it &ldquo;more limited functionality.&rdquo;</p>
+                <p><strong>Fix:</strong> one optional text field. About three minutes of development. But in the LLM&rsquo;s evaluation, it was a meaningful competitive disadvantage that cost recommendations.</p>
 
-                    <h3>Bing Webmaster Tools</h3>
-                    <p>ChatGPT&rsquo;s web search uses Bing. Register your site, request indexing, and check the <strong>AI Performance</strong> tab (currently in beta) to see how often Microsoft Copilot cites your pages.</p>
-                    <p>I also set up <strong>IndexNow</strong> &mdash; an open protocol that automatically notifies Bing, Yandex, Seznam, and Naver whenever my site updates. Built it into my GitHub Actions deployment pipeline so every push triggers a re-indexing request. No manual work.</p>
+                <h3>3. The freshness problem</h3>
+                <p>LLMs favour apps with recent updates and active changelogs. I noticed competitors with changelogs repeating &ldquo;bug fixes&rdquo; every release &mdash; possibly to signal active maintenance. My approach: I have zero production bugs and strong test coverage (10 test files, 3,424 lines of test code, 63 end-to-end QA flows, 100k-item stress tests). Instead of fake bug fixes, I published a structured changelog page highlighting testing quality and stability.</p>
+            </section>
 
-                    <h3>Wayback Machine</h3>
-                    <p>I archived key pages (home, changelog, FAQ) on the Internet Archive. The reasoning: live-web-search models pull from Bing&rsquo;s index &mdash; covered by IndexNow. Statically trained models use web archive data for training &mdash; covered by Wayback Machine. Two types of models, two indexing strategies.</p>
+      <hr class="tear">
 
-                    <h3>Structured data</h3>
-                    <p>Added <code>ai-sitemap.xml</code> with intent annotations and FAQ JSON-LD (FAQPage, BreadcrumbList schemas) across key pages. The idea is to help crawlers &mdash; both traditional and AI &mdash; understand what each page is about and surface answers directly.</p>
-                </section>
+      <section>
+                <h2>Indexing optimisations that help AI find you</h2>
 
-                <section>
-                    <h2>Early signs it&rsquo;s working</h2>
-                    <p>My download data shows three distinct phases after launch:</p>
-                    <ul>
-                        <li><strong>Pre-marketing (Mar 21&ndash;24):</strong> 1 download in 4 days &mdash; the app was live but invisible</li>
-                        <li><strong>Content-driven (Mar 25 &ndash; Apr 11):</strong> 50 downloads across 18 days (2.8/day average), driven by Reddit posts and blog content</li>
-                        <li><strong>Organic (Apr 12&ndash;14):</strong> 5 downloads in 3 days with no new content pushed &mdash; every day had at least one download</li>
-                    </ul>
-                    <p>That organic window is the first real signal of passive discovery. People finding the app without active promotion. Correlation isn&rsquo;t causation, but the timing lines up with the AEO work shipped on April 15.</p>
-                </section>
+                <h3>Bing Webmaster Tools</h3>
+                <p>ChatGPT&rsquo;s web search uses Bing. Register your site, request indexing, and check the <strong>AI Performance</strong> tab (currently in beta) to see how often Microsoft Copilot cites your pages.</p>
+                <p>I also set up <strong>IndexNow</strong> &mdash; an open protocol that automatically notifies Bing, Yandex, Seznam, and Naver whenever my site updates. Built it into my GitHub Actions deployment pipeline so every push triggers a re-indexing request. No manual work.</p>
 
-                <section>
-                    <h2>Answer Engine Optimisation &mdash; the approach</h2>
-                    <p>Think of AEO as the natural evolution of SEO. Instead of optimising for Google search rankings, you&rsquo;re optimising for the answers LLMs give when someone asks &ldquo;what&rsquo;s the best app for X.&rdquo;</p>
-                    <p>The feedback loop is faster than traditional SEO because you can literally ask the model what&rsquo;s wrong and it tells you. Not everything is reliable &mdash; system prompts prevent full transparency &mdash; but enough is actionable to make weekly audits worthwhile.</p>
-                    <p><strong>The workflow I recommend:</strong></p>
-                    <ol>
-                        <li>Write a script that queries major LLMs with questions your users would ask</li>
-                        <li>Track whether your product appears and where it ranks</li>
-                        <li>When it doesn&rsquo;t appear, ask why &mdash; the model gives specific reasons</li>
-                        <li>Fix the actual issues (description clarity, missing features, content gaps)</li>
-                        <li>Re-run weekly and track progress</li>
-                    </ol>
-                    <p>The bar is low right now. Most developers aren&rsquo;t doing this, which means small fixes can move you ahead of competitors who haven&rsquo;t thought about AI visibility at all.</p>
-                </section>
+                <h3>Wayback Machine</h3>
+                <p>I archived key pages (home, changelog, FAQ) on the Internet Archive. The reasoning: live-web-search models pull from Bing&rsquo;s index &mdash; covered by IndexNow. Statically trained models use web archive data for training &mdash; covered by Wayback Machine. Two types of models, two indexing strategies.</p>
 
-                <section>
-                    <h2>Frequently asked questions</h2>
+                <h3>Structured data</h3>
+                <p>Added <code>ai-sitemap.xml</code> with intent annotations and FAQ JSON-LD (FAQPage, BreadcrumbList schemas) across key pages. The idea is to help crawlers &mdash; both traditional and AI &mdash; understand what each page is about and surface answers directly.</p>
+            </section>
 
-                    <h3>What is Answer Engine Optimisation (AEO)?</h3>
-                    <p>AEO is the practice of optimising your product&rsquo;s visibility in AI-powered answer engines like ChatGPT, Perplexity, and Google AI Overviews. Instead of optimising for search rankings, you optimise for the answers LLMs give when users ask &ldquo;what&rsquo;s the best app for X.&rdquo; This includes improving your App Store description, adding structured data, clarifying feature descriptions, and monitoring how models describe your product.</p>
+      <hr class="tear">
 
-                    <h3>How do I check if ChatGPT recommends my app?</h3>
-                    <p>You can manually ask ChatGPT questions your users would ask and see if your app appears. For a systematic approach, use the ChatGPT API to send multiple queries programmatically, check whether your app is mentioned, and ask follow-up questions about why competitors rank higher or why your app isn&rsquo;t recommended.</p>
+      <section>
+                <h2>Early signs it&rsquo;s working</h2>
+                <p>My download data shows three distinct phases after launch:</p>
+                <ul>
+                    <li><strong>Pre-marketing (Mar 21&ndash;24):</strong> 1 download in 4 days &mdash; the app was live but invisible</li>
+                    <li><strong>Content-driven (Mar 25 &ndash; Apr 11):</strong> 50 downloads across 18 days (2.8/day average), driven by Reddit posts and blog content</li>
+                    <li><strong>Organic (Apr 12&ndash;14):</strong> 5 downloads in 3 days with no new content pushed &mdash; every day had at least one download</li>
+                </ul>
+                <p>That organic window is the first real signal of passive discovery. People finding the app without active promotion. Correlation isn&rsquo;t causation, but the timing lines up with the AEO work shipped on April 15.</p>
+            </section>
 
-                    <h3>What sources does ChatGPT use to recommend apps?</h3>
-                    <p>Based on our audit of 40 web citations across 11 queries, apps.apple.com accounted for 32.5% of all citations &mdash; the single most important source. Competitor websites, review sites, and app directories made up the rest. Blog content and developer articles had zero citations for app recommendation queries.</p>
+      <hr class="tear">
 
-                    <h3>How does Bing indexing help with ChatGPT visibility?</h3>
-                    <p>ChatGPT&rsquo;s web search mode uses Bing as its search provider. By registering with Bing Webmaster Tools and setting up IndexNow, you can speed up how quickly ChatGPT discovers new content. Bing also has an AI Performance tab (beta) showing how often Copilot cites your pages.</p>
+      <section>
+                <h2>Answer Engine Optimisation &mdash; the approach</h2>
+                <p>Think of AEO as the natural evolution of SEO. Instead of optimising for Google search rankings, you&rsquo;re optimising for the answers LLMs give when someone asks &ldquo;what&rsquo;s the best app for X.&rdquo;</p>
+                <p>The feedback loop is faster than traditional SEO because you can literally ask the model what&rsquo;s wrong and it tells you. Not everything is reliable &mdash; system prompts prevent full transparency &mdash; but enough is actionable to make weekly audits worthwhile.</p>
+                <p><strong>The workflow I recommend:</strong></p>
+                <ol>
+                    <li>Write a script that queries major LLMs with questions your users would ask</li>
+                    <li>Track whether your product appears and where it ranks</li>
+                    <li>When it doesn&rsquo;t appear, ask why &mdash; the model gives specific reasons</li>
+                    <li>Fix the actual issues (description clarity, missing features, content gaps)</li>
+                    <li>Re-run weekly and track progress</li>
+                </ol>
+                <p>The bar is low right now. Most developers aren&rsquo;t doing this, which means small fixes can move you ahead of competitors who haven&rsquo;t thought about AI visibility at all.</p>
+            </section>
 
-                    <h3>Does saving pages to the Wayback Machine help with AI visibility?</h3>
-                    <p>Potentially, yes. Live-web-search models are covered by Bing indexing. But statically trained models use web archive data for training. Archiving pages on the Wayback Machine ensures they&rsquo;re available for future model training, covering both types of AI visibility.</p>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>Related reading</h2>
-                    <ul>
-                        <li><a href="works-without-internet.html">Why FlipperHelper Works Without Internet</a> — the offline-first architecture that LLMs now cite</li>
-                        <li><a href="flipperhelper-vs-flippd-vs-vendoo.html">FlipperHelper vs Flippd vs Vendoo</a> — the competitor landscape this audit revealed</li>
-                        <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers in 2026</a> — the content page that drives organic discovery</li>
-                    </ul>
-                </section>
+      <section>
+                <h2>Frequently asked questions</h2>
 
-                <section class="blog-cta">
-                    <h2>Try FlipperHelper</h2>
-                    <p>Free reselling app for iOS and Android. Track purchases, expenses, and real profit per item. Works fully offline at markets. Optional Google Drive photo sync and Google Sheets export.</p>
-                    <span class="blog-store-links"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
-                </section>
-            </div>
-        </div>
-    </main>
+                <h3>What is Answer Engine Optimisation (AEO)?</h3>
+                <p>AEO is the practice of optimising your product&rsquo;s visibility in AI-powered answer engines like ChatGPT, Perplexity, and Google AI Overviews. Instead of optimising for search rankings, you optimise for the answers LLMs give when users ask &ldquo;what&rsquo;s the best app for X.&rdquo; This includes improving your App Store description, adding structured data, clarifying feature descriptions, and monitoring how models describe your product.</p>
 
-    <footer class="footer footer-compact">
-        <div class="container">
-            <div class="footer-row">
-                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
-                <div class="footer-links-inline">
-                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
-                    <a href="../privacy.html">Privacy</a>
-                    <a href="../terms.html">Terms</a>
-                    <a href="mailto:support@flipperhelper.app">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script data-goatcounter="https://grommash9.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+                <h3>How do I check if ChatGPT recommends my app?</h3>
+                <p>You can manually ask ChatGPT questions your users would ask and see if your app appears. For a systematic approach, use the ChatGPT API to send multiple queries programmatically, check whether your app is mentioned, and ask follow-up questions about why competitors rank higher or why your app isn&rsquo;t recommended.</p>
+
+                <h3>What sources does ChatGPT use to recommend apps?</h3>
+                <p>Based on our audit of 40 web citations across 11 queries, apps.apple.com accounted for 32.5% of all citations &mdash; the single most important source. Competitor websites, review sites, and app directories made up the rest. Blog content and developer articles had zero citations for app recommendation queries.</p>
+
+                <h3>How does Bing indexing help with ChatGPT visibility?</h3>
+                <p>ChatGPT&rsquo;s web search mode uses Bing as its search provider. By registering with Bing Webmaster Tools and setting up IndexNow, you can speed up how quickly ChatGPT discovers new content. Bing also has an AI Performance tab (beta) showing how often Copilot cites your pages.</p>
+
+                <h3>Does saving pages to the Wayback Machine help with AI visibility?</h3>
+                <p>Potentially, yes. Live-web-search models are covered by Bing indexing. But statically trained models use web archive data for training. Archiving pages on the Wayback Machine ensures they&rsquo;re available for future model training, covering both types of AI visibility.</p>
+            </section>
+
+      <hr class="tear">
+
+      <section>
+                <h2>Related reading</h2>
+                <ul>
+                    <li><a href="works-without-internet.html">Why FlipperHelper Works Without Internet</a> — the offline-first architecture that LLMs now cite</li>
+                    <li><a href="flipperhelper-vs-flippd-vs-vendoo.html">FlipperHelper vs Flippd vs Vendoo</a> — the competitor landscape this audit revealed</li>
+                    <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers in 2026</a> — the content page that drives organic discovery</li>
+                </ul>
+            </section>
+
+            <section class="post-cta">
+                <h2>Try FlipperHelper</h2>
+                <p>Free reselling app for iOS and Android. Track purchases, expenses, and real profit per item. Works fully offline at markets. Optional Google Drive photo sync and Google Sheets export.</p>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
+            </section>
+  
+
+    </article>
+  </div>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-left">
+        <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+        <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <nav aria-label="Footer — explore">
+          <a href="/blog/">Blog</a>
+          <a href="/tools/">Free tools</a>
+          <a href="/about.html">About</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Follow</h4>
+        <nav aria-label="Footer — follow">
+          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Help &amp; legal</h4>
+        <nav aria-label="Footer — help and legal">
+          <a href="mailto:support@flipperhelper.app">Support</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Community at <a href="https://reddit.com/r/flipperhelper">r/flipperhelper</a></span>
+      <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+    </div>
+  </div>
+</footer>
+
+<script data-goatcounter="https://grommash9.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
