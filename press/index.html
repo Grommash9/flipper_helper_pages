@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-itunes-app" content="app-id=6759716745">
     <title>Press Kit | FlipperHelper</title>
-    <meta name="description" content="FlipperHelper press kit: key facts, app screenshots at full resolution, logos and app icon, founder bio, and a media contact who answers his own email.">
+    <meta name="description" content="FlipperHelper press kit. Download app screenshots, logos, app icon, and key facts about the free iOS and Android reselling tracker app.">
     <link rel="icon" type="image/svg+xml" href="/logo_FH.svg">
     <link rel="apple-touch-icon" href="/logo_FH.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,15 +57,37 @@
 .prose p:last-child{margin-bottom:0}
 
 /* VARIATION of .pro-rows: the key-facts list is the same 190px key/value grid on
-   dashed rules, used outside .pro-card. Only the container differs — this page's
-   single orange stripe is spent on the media contact block, not on the facts. */
+   dashed rules, used outside a .pro-card, because this page's single orange
+   stripe is spent on the media contact block, not on the facts. */
 .facts{border-top:1px dashed var(--line-strong);max-width:900px}
 
-/* VARIATION of .today-card: an asset card ends in a download button, so the meta
-   line and the button pin to the bottom and every card in the row lines up. */
-.asset-card .card-meta{margin-top:auto;font-family:var(--font-mono);font-size:var(--fs-2xs);
-  color:var(--ink-66);letter-spacing:.08em;text-transform:uppercase;font-variant-numeric:tabular-nums}
-.asset-card .btn{align-self:flex-start}
+/* Requested change: the row keys take --accent instead of --ink, so the labels
+   read as the site's orange machine layer. Contrast note — #E58025 on white
+   measures ~2.8:1, under WCAG AA for small text (style guide 2.6); this is the
+   same deliberate brand trade-off the orange .eyebrow already makes. */
+.pro-row .k{color:var(--accent)}
+
+/* Core features are a plain list on the current site and stay one. Dashed rules
+   instead of bullets keep the same rhythm as .pro-rows above. */
+.feature-list{list-style:none;margin:0;max-width:900px;border-top:1px dashed var(--line-strong)}
+.feature-list li{padding:13px 0;border-bottom:1px dashed var(--line-strong);
+  font-size:var(--fs-sm);color:var(--ink-66);line-height:1.55}
+
+/* VARIATION of .today-card: laid out horizontally — asset preview left, name and
+   format in the middle, download on the right, as on the current site. Radius,
+   border, shadow and 22px padding are the card's own, unchanged. */
+.asset-row{display:flex;align-items:center;gap:18px;padding:22px;margin-bottom:18px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  box-shadow:var(--neu-soft)}
+.asset-row:last-child{margin-bottom:0}
+.asset-row img{width:64px;height:64px;flex:none;border-radius:14px}
+.asset-row img.logo-preview{border-radius:0;object-fit:contain}
+.asset-info{flex:1;min-width:0}
+.asset-info h3{font-size:var(--fs-h3);font-weight:700;margin-bottom:4px}
+.asset-info .card-meta{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-66);
+  letter-spacing:.08em;text-transform:uppercase;font-variant-numeric:tabular-nums}
+.asset-row .btn{flex:none}
+@media(max-width:520px){.asset-row{flex-wrap:wrap}.asset-row .btn{width:100%;justify-content:center}}
 
 /* VARIATION of .ledger-row .amt: these are version numbers, not money, so they
    keep the tabular mono treatment but drop --profit green, which on this site
@@ -74,8 +96,7 @@
   font-family:var(--font-mono);font-size:var(--fs-2xs);font-variant-numeric:tabular-nums}
 
 /* The shots on this page are downloads, not decoration: the caption carries the
-   link, and the whole figure is the hit area. Same stretched-::after trick as the
-   tool cards on /tools/. */
+   link, and the whole figure is the hit area. Same stretched-::after as /tools/. */
 .shot{position:relative}
 .shot figcaption a{color:var(--ink);text-decoration:none}
 .shot figcaption a::after{content:"";position:absolute;inset:0;border-radius:var(--radius-md)}
@@ -111,8 +132,8 @@
   <header class="page-head">
     <div class="wrap">
       <span class="eyebrow">For journalists</span>
-      <h1>Press kit</h1>
-      <p class="section-lede">Everything you need to write about FlipperHelper: the facts, the screenshots at full resolution, the logos, and one person who answers his own email.</p>
+      <h1>Press Kit</h1>
+      <p class="section-lede">Everything you need to write about FlipperHelper.</p>
     </div>
   </header>
 
@@ -120,11 +141,10 @@
   <section id="what-it-is" aria-labelledby="what-it-is-title">
     <div class="wrap">
       <span class="eyebrow">The one-liner</span>
-      <h2 class="section-title" id="what-it-is-title">What FlipperHelper is</h2>
-      <p class="section-lede">A free app for people who buy second-hand and resell it, and want to know what they actually earned.</p>
+      <h2 class="section-title" id="what-it-is-title">What is FlipperHelper?</h2>
       <div class="prose">
-        <p>FlipperHelper is a free app for iOS and Android for people who buy second-hand items at car boot sales, charity shops and flea markets, then resell them on eBay, Vinted, Facebook Marketplace and a dozen other platforms. <strong>It follows every item from the moment it is bought to the moment it sells, and works out the real profit after all the fees and the petrol.</strong></p>
-        <p>It was built by Oleksandr Prudnikov, a Ukrainian developer living in Wandsworth, south west London. He made it for his wife after she started reselling and had no way to see what she had bought, where it was listed, and whether any of it was making money.</p>
+        <p>FlipperHelper is a free app for iOS and Android for people who buy secondhand items at car boot sales, charity shops, and flea markets, then resell them on platforms like eBay, Vinted, and Facebook Marketplace. It tracks every item from purchase through listing to sale and calculates your real profit after all expenses.</p>
+        <p>Built by Oleksandr Prudnikov, a Ukrainian developer living in Wandsworth, South West London. He made it for his wife after she started reselling and had no way to track what she was buying, where she was listing it, and whether she was actually making money.</p>
       </div>
     </div>
   </section>
@@ -133,73 +153,42 @@
   <section id="facts" aria-labelledby="facts-title">
     <div class="wrap">
       <span class="eyebrow">Checkable</span>
-      <h2 class="section-title" id="facts-title">Key facts</h2>
-      <p class="section-lede">Everything here is on the site somewhere else too — the changelog, the FAQ, or the store listings.</p>
+      <h2 class="section-title" id="facts-title">Key Facts</h2>
 
       <dl class="facts pro-rows">
         <div class="pro-row"><dt class="k">Price</dt><dd class="v">Free. No ads, no subscriptions, no in-app purchases.</dd></div>
-        <div class="pro-row"><dt class="k">Platforms</dt><dd class="v">iPhone on iOS 17+, Android on Android 8+.</dd></div>
-        <div class="pro-row"><dt class="k">First release</dt><dd class="v">First commit 20 February 2026, first TestFlight build six days later. On Google Play since 31 July 2026, when the Android app left early access.</dd></div>
-        <div class="pro-row"><dt class="k">Latest release</dt><dd class="v">v1.3.0 on 17 July 2026, iOS and Android. The most recent change shipped on 6 August 2026 — releases go out several times a month.</dd></div>
-        <div class="pro-row"><dt class="k">Selling platforms</dt><dd class="v">16 tracked: eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, OfferUp, Craigslist, ThredUp. Marked by hand — the app does not cross-post for you.</dd></div>
-        <div class="pro-row"><dt class="k">Currencies</dt><dd class="v">6: GBP, USD, EUR, CAD, AUD, NZD. Rates refresh daily and 365 days of history is cached on the device.</dd></div>
-        <div class="pro-row"><dt class="k">Offline</dt><dd class="v">Works fully offline, with no account. That is the point: most fields have no signal.</dd></div>
-        <div class="pro-row"><dt class="k">Built with</dt><dd class="v">Swift and SwiftUI on iOS, Kotlin and Jetpack Compose on Android. Native on both.</dd></div>
-        <div class="pro-row"><dt class="k">Developer</dt><dd class="v">Oleksandr Prudnikov, working alone, from Wandsworth, London.</dd></div>
+        <div class="pro-row"><dt class="k">Platform</dt><dd class="v">iPhone (iOS 17+) and Android (Android 8+)</dd></div>
+        <div class="pro-row"><dt class="k">Selling Platforms Tracked</dt><dd class="v">16: eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, OfferUp, Craigslist, ThredUp</dd></div>
+        <div class="pro-row"><dt class="k">Currencies</dt><dd class="v">6: GBP (£), USD ($), EUR (€), CAD (CA$), AUD (A$), NZD (NZ$) with automatic daily exchange rates</dd></div>
+        <div class="pro-row"><dt class="k">Offline</dt><dd class="v">Works fully offline — important at markets with no signal</dd></div>
+        <div class="pro-row"><dt class="k">Launched</dt><dd class="v">February 2026</dd></div>
+        <div class="pro-row"><dt class="k">Built With</dt><dd class="v">Swift and SwiftUI on iOS, Kotlin and Jetpack Compose on Android</dd></div>
+        <div class="pro-row"><dt class="k">Developer</dt><dd class="v">Oleksandr Prudnikov, Wandsworth, London</dd></div>
       </dl>
     </div>
   </section>
 
-  <!-- ======================= WHAT IT DOES ======================= -->
+  <!-- ======================= CORE FEATURES ======================= -->
   <section id="features" aria-labelledby="features-title">
     <div class="wrap">
       <span class="eyebrow">The short version</span>
-      <h2 class="section-title" id="features-title">What it does</h2>
-      <p class="section-lede">Six things, in the order a reseller meets them.</p>
+      <h2 class="section-title" id="features-title">Core Features</h2>
 
-      <ul class="today-grid">
-        <li class="today-card reveal">
-          <span class="today-ic ic-speed" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></svg>
-          </span>
-          <h3>A find, logged in seconds</h3>
-          <p>Photo first, then price, market and seller. The SKU is generated for you, so nothing needs naming while you are standing in a field.</p>
-        </li>
-        <li class="today-card reveal">
-          <span class="today-ic ic-profit" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 16l5-5 4 3 7-7"/><path d="M20 7v4h-4"/></svg>
-          </span>
-          <h3>Real profit, after everything</h3>
-          <p>Profit per item after platform fees, entry fees, transport (car, bus, train, taxi, van, bike hire) and any custom expense you add.</p>
-        </li>
-        <li class="today-card reveal">
-          <span class="today-ic ic-data" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="3"/><path d="M3.5 9.5h17M9 4.5v15"/></svg>
-          </span>
-          <h3>16 platforms, one list</h3>
-          <p>Mark where each item is listed, with the date and asking price per platform. Reminders nudge you when something has sat unlisted or unsold too long.</p>
-        </li>
-        <li class="today-card reveal">
-          <span class="today-ic ic-profit" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8"/></svg>
-          </span>
-          <h3>Money Flow dashboard</h3>
-          <p>Revenue, profit and expenses by week, month or a range you pick. Five share cards turn a month's numbers into something postable.</p>
-        </li>
-        <li class="today-card reveal">
-          <span class="today-ic ic-data" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          </span>
-          <h3>Hauls and markets</h3>
-          <p>Group a whole sourcing trip — items and costs together — and see whether the trip paid. Markets are detected by GPS, so the right one is already selected.</p>
-        </li>
-        <li class="today-card reveal">
-          <span class="today-ic ic-speed" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 3v11"/><path d="M8.5 10.5L12 14l3.5-3.5"/><path d="M4.5 15v3.5h15V15"/></svg>
-          </span>
-          <h3>Backup and export</h3>
-          <p>Automatic backup from the start — iCloud on iPhone, a folder on Android. Google Drive photo sync and CSV export to Sheets use the <span class="mono">drive.file</span> scope only, and a full ZIP backup restores everything.</p>
-        </li>
+      <ul class="feature-list">
+        <li>Photo-first item tracking with automatic SKU generation</li>
+        <li>Track listings across 16 selling platforms with per-platform dates</li>
+        <li>Automatic profit calculation per item</li>
+        <li>Expense tracking: entry fees, transport (car, bus, train, taxi, van, bike rental), and custom expenses</li>
+        <li>Multi-currency support — 6 currencies (USD, EUR, GBP, CAD, AUD, NZD) with automatic daily exchange rates</li>
+        <li>Market management with GPS auto-detection</li>
+        <li>Money Flow dashboard with weekly, monthly, and custom range revenue, profit, and expense breakdown</li>
+        <li>Hauls — group items and expenses by sourcing trip with per-trip profit tracking</li>
+        <li>5 share card types (Flip Card, Monthly Recap, Top Flips, Daily Haul, My Stock) for social sharing</li>
+        <li>Automatic backup enabled by default — iCloud on iPhone, folder backup on Android</li>
+        <li>Google Drive photo sync and CSV export to Google Sheets (drive.file scope only)</li>
+        <li>Full data backup and restore as ZIP archive</li>
+        <li>Listing reminders via configurable push notifications</li>
+        <li>Works completely offline — no account required</li>
       </ul>
     </div>
   </section>
@@ -212,7 +201,7 @@
       <span class="eyebrow">Free to use</span>
       <h2 class="section-title" id="screenshots-title">Screenshots</h2>
       <div class="carousel-head">
-        <p class="section-lede">Real screens from the shipping app, 1206 × 2622 px, no device frames. Open one to get the full-resolution file.</p>
+        <p class="section-lede">Click any screenshot to open full resolution (1206 x 2622 px). Right-click to download.</p>
         <div class="shots-arrows">
           <button type="button" id="shots-prev" aria-label="Previous screenshots">←</button>
           <button type="button" id="shots-next" aria-label="Next screenshots">→</button>
@@ -222,24 +211,24 @@
       <div class="shots-viewport">
         <div class="shots" id="shots-track" tabindex="0" aria-label="App screenshots, horizontally scrollable">
           <figure class="shot">
-            <img src="screenshot-dashboard.png" alt="FlipperHelper home dashboard: stock value of £65.18 across 6 items, and a March 2026 Money Flow breakdown of £203.00 sales against costs, leaving £20.24 profit" width="1206" height="2622" loading="lazy" decoding="async">
-            <figcaption><a href="screenshot-dashboard.png">Home &amp; Money Flow</a></figcaption>
+            <img src="screenshot-dashboard.png" alt="FlipperHelper home dashboard with stock value and Money Flow profit breakdown" width="1206" height="2622" loading="lazy" decoding="async">
+            <figcaption><a href="screenshot-dashboard.png">Home Dashboard &amp; Money Flow</a></figcaption>
           </figure>
           <figure class="shot">
-            <img src="screenshot-add-item.png" alt="FlipperHelper add item screen with photo, purchase price, market and seller fields" width="1206" height="2622" loading="lazy" decoding="async">
-            <figcaption><a href="screenshot-add-item.png">Add item</a></figcaption>
+            <img src="screenshot-add-item.png" alt="FlipperHelper add item screen with photo, price, market, and seller fields" width="1206" height="2622" loading="lazy" decoding="async">
+            <figcaption><a href="screenshot-add-item.png">Add Item</a></figcaption>
           </figure>
           <figure class="shot">
-            <img src="screenshot-sold.png" alt="FlipperHelper sold items list showing profit and days to sell for each item" width="1206" height="2622" loading="lazy" decoding="async">
-            <figcaption><a href="screenshot-sold.png">Sold, with profit</a></figcaption>
+            <img src="screenshot-sold.png" alt="FlipperHelper sold items list with profit and days to sell per item" width="1206" height="2622" loading="lazy" decoding="async">
+            <figcaption><a href="screenshot-sold.png">Sold Items with Profit</a></figcaption>
           </figure>
           <figure class="shot">
-            <img src="screenshot-expenses.png" alt="FlipperHelper expense tracking across entry fees, transport and other categories" width="1206" height="2622" loading="lazy" decoding="async">
-            <figcaption><a href="screenshot-expenses.png">Trip expenses</a></figcaption>
+            <img src="screenshot-expenses.png" alt="FlipperHelper expense tracking across entry fees, transport, and other categories" width="1206" height="2622" loading="lazy" decoding="async">
+            <figcaption><a href="screenshot-expenses.png">Expense Tracking</a></figcaption>
           </figure>
           <figure class="shot">
-            <img src="screenshot-market.png" alt="FlipperHelper market editor with GPS location, detection radius and default currency" width="1206" height="2622" loading="lazy" decoding="async">
-            <figcaption><a href="screenshot-market.png">Market &amp; GPS</a></figcaption>
+            <img src="screenshot-market.png" alt="FlipperHelper market editor with GPS geolocation, detection radius, and default currency" width="1206" height="2622" loading="lazy" decoding="async">
+            <figcaption><a href="screenshot-market.png">Market with GPS &amp; Currency</a></figcaption>
           </figure>
         </div>
       </div>
@@ -250,42 +239,45 @@
   <section id="assets" aria-labelledby="assets-title">
     <div class="wrap">
       <span class="eyebrow">Logos</span>
-      <h2 class="section-title" id="assets-title">Brand assets</h2>
-      <p class="section-lede">Use them as they are. Please do not restyle, recolour or stretch the logo.</p>
+      <h2 class="section-title" id="assets-title">Brand Assets</h2>
 
-      <ul class="today-grid">
-        <li class="today-card asset-card reveal">
-          <h3>App icon</h3>
-          <p>The icon as it appears on the App Store and Google Play.</p>
-          <span class="card-meta">PNG · 1024 × 1024</span>
-          <a class="btn btn-ghost" href="app-icon-1024.png" download>Download icon</a>
-        </li>
-        <li class="today-card asset-card reveal">
-          <h3>Logo, vector</h3>
-          <p>The mark on its own. Scales to any size without going soft.</p>
-          <span class="card-meta">SVG · 1.7 KB</span>
-          <a class="btn btn-ghost" href="logo.svg" download>Download SVG</a>
-        </li>
-        <li class="today-card asset-card reveal">
-          <h3>Logo, raster</h3>
-          <p>The same mark as a PNG, for tools that will not take a vector.</p>
-          <span class="card-meta">PNG · 114 KB</span>
-          <a class="btn btn-ghost" href="logo.png" download>Download PNG</a>
-        </li>
-      </ul>
+      <div class="asset-row">
+        <img src="app-icon-1024.png" alt="FlipperHelper app icon" width="64" height="64" loading="lazy" decoding="async">
+        <div class="asset-info">
+          <h3>App Icon</h3>
+          <span class="card-meta">1024 x 1024 px, PNG</span>
+        </div>
+        <a class="btn btn-ghost" href="app-icon-1024.png" download>Download</a>
+      </div>
+      <div class="asset-row">
+        <img class="logo-preview" src="logo.svg" alt="FlipperHelper logo" width="64" height="64" loading="lazy" decoding="async">
+        <div class="asset-info">
+          <h3>Logo (SVG)</h3>
+          <span class="card-meta">Vector, scalable</span>
+        </div>
+        <a class="btn btn-ghost" href="logo.svg" download>Download</a>
+      </div>
+      <div class="asset-row">
+        <img class="logo-preview" src="logo.png" alt="FlipperHelper logo" width="64" height="64" loading="lazy" decoding="async">
+        <div class="asset-info">
+          <h3>Logo (PNG)</h3>
+          <span class="card-meta">Raster, 114 KB</span>
+        </div>
+        <a class="btn btn-ghost" href="logo.png" download>Download</a>
+      </div>
     </div>
   </section>
 
-  <!-- ======================= STORY BAND: WHO BUILT IT ======================= -->
+  <!-- ======================= STORY BAND: THE DEVELOPER ======================= -->
   <section class="story" id="developer" aria-labelledby="developer-title">
     <div class="wrap">
       <div class="story-grid">
         <div>
           <span class="eyebrow">The developer</span>
-          <h2 class="section-title" id="developer-title">Who built it</h2>
-          <p>Oleksandr Prudnikov is a software developer from Ukraine, living in Wandsworth, south west London. He has been a professional engineer since before moving to the UK, mostly on backends, and FlipperHelper is native on both platforms.</p>
-          <p>He built it after his wife started buying at car boot sales and charity shops to resell on eBay and Vinted. <strong>She had turned it into a real business and still could not say what she had paid, where things were listed, or what the profit actually was.</strong> So he built her the app, then kept shipping it.</p>
-          <p>It is free, with no ads and no subscription, and he answers the support email himself.</p>
+          <h2 class="section-title" id="developer-title">About the Developer</h2>
+          <h3>Oleksandr Prudnikov</h3>
+          <p>Software developer from Ukraine, living in Wandsworth, South West London. Built FlipperHelper after his wife started buying items at car boot sales and charity shops to resell on eBay and Vinted. She turned it into a proper business but had no way to track what she paid, where things were listed, or what her real profit was. So he built her an app.</p>
+          <p>FlipperHelper took about six weeks to build and is completely free. No ads, no subscriptions. Just a useful tool for regular people who flip things on the side and want to know if they're actually making money.</p>
         </div>
 
         <div class="ledger">
@@ -301,26 +293,37 @@
     </div>
   </section>
 
+  <!-- ======================= LINKS ======================= -->
+  <section id="links" aria-labelledby="links-title">
+    <div class="wrap">
+      <span class="eyebrow">Elsewhere</span>
+      <h2 class="section-title" id="links-title">Links</h2>
+
+      <ul class="feature-list">
+        <li><a href="https://apps.apple.com/app/id6759716745" rel="noopener">App Store</a></li>
+        <li><a href="https://flipperhelper.app/" rel="noopener">Website</a></li>
+        <li><a href="https://www.instagram.com/flipperhelper" rel="noopener">Instagram (@flipperhelper)</a></li>
+        <li><a href="https://www.reddit.com/r/flipperhelper/" rel="noopener">Reddit (r/flipperhelper)</a></li>
+        <li><a href="https://medium.com/@andreevichprudnikov" rel="noopener">Medium (development blog)</a></li>
+      </ul>
+    </div>
+  </section>
+
   <!-- ======================= MEDIA CONTACT (the page's one emphasis card) ======================= -->
   <section id="contact" aria-labelledby="contact-title">
     <div class="wrap">
       <span class="eyebrow">Ask anything</span>
-      <h2 class="section-title" id="contact-title">Media contact</h2>
+      <h2 class="section-title" id="contact-title">Media Contact</h2>
 
       <div class="pro-card">
         <div class="pro-head">
           <h3>Oleksandr Prudnikov</h3>
         </div>
-        <p class="pro-intro">There is no press office and no agency. Email goes straight to the person who wrote the app, and he will happily talk about the parts that did not work either.</p>
         <dl class="pro-rows">
           <div class="pro-row"><dt class="k">Email</dt><dd class="v"><a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a></dd></div>
-          <div class="pro-row"><dt class="k">Based in</dt><dd class="v">Wandsworth, south west London.</dd></div>
-          <div class="pro-row"><dt class="k">Available for</dt><dd class="v">Interviews, phone calls, or meeting up in London.</dd></div>
-          <div class="pro-row"><dt class="k">Reply time</dt><dd class="v">He reads every email and replies to almost all of them, usually within a day or two.</dd></div>
-          <div class="pro-row"><dt class="k">The app</dt><dd class="v"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.oprudnikov.flipperhelper">Google Play</a> · <a href="/">flipperhelper.app</a></dd></div>
-          <div class="pro-row"><dt class="k">Elsewhere</dt><dd class="v"><a href="https://www.instagram.com/flipperhelper">Instagram</a> · <a href="https://www.reddit.com/r/flipperhelper/">r/flipperhelper</a> · <a href="https://medium.com/@andreevichprudnikov">Medium, development notes</a></dd></div>
+          <div class="pro-row"><dt class="k">Location</dt><dd class="v">Wandsworth, South West London</dd></div>
+          <div class="pro-row"><dt class="k">Available for</dt><dd class="v">Interviews, phone calls, or in-person meetings in London.</dd></div>
         </dl>
-        <p class="pro-foot"><i></i>The screenshots and logos on this page are free to use in any coverage of FlipperHelper.</p>
       </div>
     </div>
   </section>
