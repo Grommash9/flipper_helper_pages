@@ -1,297 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-itunes-app" content="app-id=6759716745">
-    <title>Reseller Inventory App for Android + Cross-Platform Backup | FlipperHelper Blog</title>
-    <meta name="description" content="FlipperHelper is now on Android. Here's how automatic backup works on iPhone vs Android — and how to switch between them without losing a single item.">
-    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="canonical" href="https://flipperhelper.app/blog/reseller-inventory-app-android.html">
-    <!-- OpenGraph -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="FlipperHelper Is Now on Android — and Your Data Moves With You">
-    <meta property="og:description" content="A free reseller inventory app for Android. How automatic backup differs on iPhone and Android, and how to switch phones without losing any items.">
-    <meta property="og:url" content="https://flipperhelper.app/blog/reseller-inventory-app-android.html">
-    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
-    <meta property="og:site_name" content="FlipperHelper">
-    <meta property="og:locale" content="en_GB">
-    <meta property="article:published_time" content="2026-07-04">
-    <meta property="article:author" content="Oleksandr Prudnikov">
-    <meta property="article:section" content="Product">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="FlipperHelper Is Now on Android — and Your Data Moves With You">
-    <meta name="twitter:description" content="A free reseller inventory app for Android. Cross-platform backup means you can switch between iPhone and Android without losing anything.">
-    <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
-    <!-- BreadcrumbList JSON-LD -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-itunes-app" content="app-id=6759716745">
+<title>Reseller Inventory App for Android + Cross-Platform Backup | FlipperHelper Blog</title>
+<meta name="description" content="FlipperHelper is now on Android. Here's how automatic backup works on iPhone vs Android — and how to switch between them without losing a single item.">
+<link rel="icon" type="image/svg+xml" href="/logo_FH.svg">
+<link rel="canonical" href="https://flipperhelper.app/blog/reseller-inventory-app-android.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- OpenGraph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="FlipperHelper Is Now on Android — and Your Data Moves With You">
+<meta property="og:description" content="A free reseller inventory app for Android. How automatic backup differs on iPhone and Android, and how to switch phones without losing any items.">
+<meta property="og:url" content="https://flipperhelper.app/blog/reseller-inventory-app-android.html">
+<meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
+<meta property="og:site_name" content="FlipperHelper">
+<meta property="og:locale" content="en_GB">
+<meta property="article:published_time" content="2026-07-04">
+<meta property="article:author" content="Oleksandr Prudnikov">
+<meta property="article:section" content="Product">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FlipperHelper Is Now on Android — and Your Data Moves With You">
+<meta name="twitter:description" content="A free reseller inventory app for Android. Cross-platform backup means you can switch between iPhone and Android without losing anything.">
+<meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+
+<!-- BreadcrumbList JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flipperhelper.app/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://flipperhelper.app/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "Reseller Inventory App for Android", "item": "https://flipperhelper.app/blog/reseller-inventory-app-android.html"}
+  ]
+}
+</script>
+<!-- Article JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "FlipperHelper Is Now on Android — and Your Data Moves With You",
+  "description": "A free reseller inventory app for Android. How automatic backup works on iPhone (iCloud) vs Android (folder backup), and how to switch phones without losing any items, photos, or history.",
+  "datePublished": "2026-07-04",
+  "dateModified": "2026-07-04",
+  "author": {"@type": "Person", "name": "Oleksandr Prudnikov", "url": "https://flipperhelper.app/about.html"},
+  "publisher": {
+    "@type": "Organization",
+    "name": "FlipperHelper",
+    "url": "https://flipperhelper.app/",
+    "logo": {"@type": "ImageObject", "url": "https://flipperhelper.app/logo_FH.png"}
+  },
+  "mainEntityOfPage": "https://flipperhelper.app/blog/reseller-inventory-app-android.html"
+}
+</script>
+<!-- FAQPage JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flipperhelper.app/"},
-        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://flipperhelper.app/blog/"},
-        {"@type": "ListItem", "position": 3, "name": "Reseller Inventory App for Android", "item": "https://flipperhelper.app/blog/reseller-inventory-app-android.html"}
-      ]
-    }
-    </script>
-    <!-- Article JSON-LD -->
-    <script type="application/ld+json">
+      "@type": "Question",
+      "name": "Is there a FlipperHelper app for Android?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. FlipperHelper is available on Google Play as a full native Android app with feature parity with the iPhone app — the same inventory tracking, expense logging, multi-currency profit calculation, and Google Sheets export. It is also on the App Store for iOS 17 and later. Both versions are free."
+      }
+    },
     {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "FlipperHelper Is Now on Android — and Your Data Moves With You",
-      "description": "A free reseller inventory app for Android. How automatic backup works on iPhone (iCloud) vs Android (folder backup), and how to switch phones without losing any items, photos, or history.",
-      "datePublished": "2026-07-04",
-      "dateModified": "2026-07-04",
-      "author": {"@type": "Person", "name": "Oleksandr Prudnikov", "url": "https://flipperhelper.app/about.html"},
-      "publisher": {
-        "@type": "Organization",
-        "name": "FlipperHelper",
-        "url": "https://flipperhelper.app/",
-        "logo": {"@type": "ImageObject", "url": "https://flipperhelper.app/logo_FH.png"}
-      },
-      "mainEntityOfPage": "https://flipperhelper.app/blog/reseller-inventory-app-android.html"
-    }
-    </script>
-    <!-- FAQPage JSON-LD -->
-    <script type="application/ld+json">
+      "@type": "Question",
+      "name": "Can I move my reseller data from iPhone to Android?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and it is guaranteed. Both apps read and write the exact same backup file — a single ZIP containing your database and all photos. Export a backup on your iPhone, open it on Android, and everything comes across: items, photos, listing history, expenses, hauls, and settings. It works in both directions."
+      }
+    },
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is there a FlipperHelper app for Android?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. FlipperHelper is available on Google Play as a full native Android app with feature parity with the iPhone app — the same inventory tracking, expense logging, multi-currency profit calculation, and Google Sheets export. It is also on the App Store for iOS 17 and later. Both versions are free."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I move my reseller data from iPhone to Android?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, and it is guaranteed. Both apps read and write the exact same backup file — a single ZIP containing your database and all photos. Export a backup on your iPhone, open it on Android, and everything comes across: items, photos, listing history, expenses, hauls, and settings. It works in both directions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does automatic backup differ between iPhone and Android?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "On iPhone, FlipperHelper backs up automatically to iCloud and offers to restore when you set up a new iPhone. Android has no iCloud, so the Android app backs up to a folder you choose once — anywhere on your phone, or inside a cloud-synced folder such as Google Drive, Dropbox, or OneDrive — writing a fresh backup ZIP there in the background and keeping the five most recent copies. Both run automatically and work offline."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does the Android version cost money?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Like the iPhone app, the FlipperHelper Android app is free to download with no ads and no subscription. Every feature is included at no cost."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What do I need to do to switch phones safely?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Create a backup ZIP on your old phone (Settings, then Backup, then Export), move that file to your new phone by any method — AirDrop, email, a messaging app, or a shared cloud folder — and use Import from File in the new app. Keep both apps updated so a backup from a newer version is never opened by an older one."
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "How does automatic backup differ between iPhone and Android?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On iPhone, FlipperHelper backs up automatically to iCloud and offers to restore when you set up a new iPhone. Android has no iCloud, so the Android app backs up to a folder you choose once — anywhere on your phone, or inside a cloud-synced folder such as Google Drive, Dropbox, or OneDrive — writing a fresh backup ZIP there in the background and keeping the five most recent copies. Both run automatically and work offline."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the Android version cost money?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Like the iPhone app, the FlipperHelper Android app is free to download with no ads and no subscription. Every feature is included at no cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do I need to do to switch phones safely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Create a backup ZIP on your old phone (Settings, then Backup, then Export), move that file to your new phone by any method — AirDrop, email, a messaging app, or a shared cloud folder — and use Import from File in the new app. Keep both apps updated so a backup from a newer version is never opened by an older one."
+      }
     }
-    </script>
+  ]
+}
+</script>
+
+<style>
+:root{
+  /* App palette */
+  --bg:#F8FAFB;                 /* page background — same as the app */
+  --card:#FFFFFF;
+  --ink:#000000;                /* primary text */
+  --ink-66:rgba(0,0,0,.66);     /* secondary text / inactive nav */
+  --ink-45:rgba(0,0,0,.45);
+  --ink-30:rgba(0,0,0,.30);
+  --profit:#32D347;             /* income / data highlight, "Sold" green */
+  --action:#1E76F1;             /* clickable text, selected state */
+  --accent:#E58025;             /* "Add New Item" orange — primary buttons */
+  --accent-hover:#F08F38;
+  --cat:#BBCBF7;                /* small category header bg / chip outline */
+  --loss:#E14B4B;
+  --line:rgba(0,0,0,.08);
+  --line-strong:rgba(0,0,0,.14);
+
+  /* NEUMORPHISM1 — exactly as in the app */
+  --neu:5px 5px 30px rgba(174,174,174,.40), -10px -10px 30px rgba(255,255,255,.71);
+  --neu-soft:4px 4px 22px rgba(174,174,174,.30), -8px -8px 22px rgba(255,255,255,.71);
+
+  --font-body:'Roboto Flex', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono:'Roboto Mono','SF Mono',ui-monospace,Menlo,monospace;
+
+  --radius-sm:8px; --radius-md:14px; --radius-lg:20px;
+  --max:1080px;
+
+  /* type scale — one ladder for the whole site */
+  --fs-3xs:.68rem;   /* micro mono: pills, column headers */
+  --fs-2xs:.75rem;   /* eyebrow, labels, footnotes */
+  --fs-xs:.85rem;    /* nav, footer links, hints */
+  --fs-sm:.95rem;    /* card body text */
+  --fs-base:1rem;    /* buttons, brand, ui */
+  --fs-md:1.0625rem; /* body copy */
+  --fs-lede:1.125rem;/* section ledes + hero sub */
+  --fs-h3:1.05rem;   /* card titles */
+  --fs-h3-lg:1.25rem;/* feature-card title */
+  --fs-xl:1.2rem;    /* large ui accents */
+
+  /* the article uses the homepage frame: .wrap gives 1032 of content.
+     --measure is the one text measure inside it — the only narrower width on the page. */
+  --measure:900px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  background:var(--bg);color:var(--ink-66);
+  font-family:var(--font-body);font-size:var(--fs-md);line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--action);color:#fff}
+img{max-width:100%;display:block}
+a{color:var(--action);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{
+  font-family:var(--font-body);color:var(--ink);line-height:1.16;
+  font-weight:700;letter-spacing:-.015em;
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+.tear{
+  border:none;height:1px;margin:0 auto;max-width:var(--max);
+  background-image:linear-gradient(90deg,var(--line-strong) 55%,transparent 45%);
+  background-size:14px 1px;
+}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--font-body);font-weight:600;font-size:var(--fs-base);letter-spacing:.01em;
+  padding:13px 22px;border-radius:12px;cursor:pointer;border:1px solid transparent;
+  transition:transform .15s ease,background .15s ease,border-color .15s ease,box-shadow .15s ease;
+  text-decoration:none!important;
+}
+.btn:active{transform:translateY(1px);box-shadow:2px 2px 14px rgba(174,174,174,.4)}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--neu)}
+.btn-primary:hover{background:var(--accent-hover)}
+.store-row{display:flex;gap:18px;flex-wrap:wrap}
+/* side-by-side buttons: tighter shadow so one button's glow never lands on its neighbour
+   (extent ≈ offset 4px + blur/2 = 11px < 18px gap) */
+.store-row .btn{box-shadow:4px 4px 14px rgba(174,174,174,.35), -4px -4px 14px rgba(255,255,255,.6)}
+.store-row .btn:active{box-shadow:2px 2px 8px rgba(174,174,174,.35)}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(248,250,251,.86);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:var(--max);margin:0 auto;padding:8px 24px;
+  display:flex;align-items:center;gap:22px;
+}
+.brand{display:flex;align-items:center;gap:8px;font-weight:500;font-size:var(--fs-base);color:var(--ink);text-decoration:none!important;letter-spacing:-.01em}
+.fh-logo{width:19px;height:20px;display:block;color:var(--ink)}
+.nav-links{display:flex;gap:18px;margin-left:auto;align-items:center}
+.nav-links a:not(.btn){
+  color:#000000;opacity:.45;font-size:var(--fs-xs);font-weight:500;
+  transition:opacity .12s ease;
+  display:inline-flex;align-items:center;min-height:44px;padding:0 2px;
+}
+.nav-links a:not(.btn):hover,
+.nav-links a:not(.btn)[aria-current="page"],
+.nav-links a:not(.btn).active{color:#000000;opacity:1;text-decoration:none}
+.nav .btn{padding:5px 11px;font-size:var(--fs-xs);border-radius:9px}
+@media(max-width:860px){.nav-links a:not(.btn){display:none}}
+
+/* ============================================================
+   ARTICLE
+   Two widths only — the same two-tier system the homepage uses:
+     · structure (headings, tears, the CTA card) fills the 1032 frame
+     · prose and the table stop at --measure, and every one of them shares
+       that single right edge, so the text edge never moves
+   Rhythm uses the homepage steps only:
+   68 page padding · 48 between sections · 22 heading→body · 16 paragraph.
+   ============================================================ */
+.post{padding:68px 0}
+@media(max-width:720px){.post{padding:48px 0}}
+
+/* article head — no homepage hero here, just the title block */
+.post-back{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;
+  letter-spacing:.08em;color:var(--action);
+  display:inline-block;margin-bottom:22px;
+}
+.post-updated{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);margin-bottom:12px;
+}
+.post h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.post-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px}
+.art-date,.art-read{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.art-tag{
+  font-family:var(--font-mono);font-size:.62rem;font-weight:600;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--ink-66);
+  background:var(--cat);border-radius:6px;padding:4px 8px;
+  display:inline-flex;align-items:center;flex:none;
+}
+
+/* sections + prose */
+.post section + section{margin-top:48px}
+.post hr.tear{margin:48px auto}
+.post h2{font-size:clamp(1.35rem,2.6vw,1.6rem);margin-bottom:14px}
+.post h3{font-size:var(--fs-lede);margin:26px 0 8px}
+.post p{margin-bottom:16px;color:var(--ink-66);max-width:var(--measure)}
+.post p:last-child{margin-bottom:0}
+.post strong{color:var(--ink);font-weight:600}
+.post em{font-style:italic}
+.post .store-row{margin:26px 0}
+
+/* bullets — periwinkle marker, the site's quiet metadata colour */
+.post ul{list-style:none;margin:0 0 16px;max-width:var(--measure)}
+.post ul li{position:relative;padding-left:22px;margin-bottom:9px;color:var(--ink-66)}
+.post ul li::before{
+  content:"";position:absolute;left:4px;top:.58em;width:6px;height:6px;border-radius:50%;
+  background:var(--cat);
+}
+.post ul li:last-child{margin-bottom:0}
+
+/* founder quote — the story-band pull-quote */
+.post blockquote{border-left:3px solid var(--accent);padding:6px 0 6px 18px;margin:26px 0;max-width:var(--measure)}
+.post blockquote p{font-weight:700;font-size:var(--fs-lede);color:var(--ink);line-height:1.4;letter-spacing:-.01em}
+
+/* ---------- comparison table ----------
+   VARIATION of the homepage's .ledger card: same mono machine-layer keys and dashed
+   row rules; only the layout differs (three columns instead of a two-part row). */
+.cmp-wrap{overflow-x:auto;max-width:var(--measure)}
+.cmp{
+  width:100%;min-width:560px;border-collapse:collapse;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  box-shadow:var(--neu-soft);
+}
+.cmp th,.cmp td{padding:14px 18px;text-align:left;vertical-align:top}
+.cmp thead th{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink);
+  background:var(--cat);
+}
+.cmp thead th:first-child{border-radius:var(--radius-md) 0 0 0}
+.cmp thead th:last-child{border-radius:0 var(--radius-md) 0 0}
+.cmp tbody th{
+  font-size:var(--fs-xs);font-weight:600;color:var(--ink);width:34%;white-space:nowrap;
+}
+@media(max-width:640px){.cmp tbody th{white-space:normal}}
+.cmp tbody td{font-size:var(--fs-sm);color:var(--ink-66)}
+.cmp tbody tr{border-top:1px dashed var(--line-strong)}
+.cmp tbody tr:first-child{border-top:none}
+/* the row the source table marked as highlighted */
+.cmp tr.highlight-col td{color:#1FA234;font-weight:600}
+
+/* ---------- the three steps: homepage .day timeline ---------- */
+.day{position:relative;margin:26px 0}
+.day::before{ /* vertical dashed line — black 45% */
+  content:"";position:absolute;left:11px;top:8px;bottom:8px;width:1px;
+  background-image:linear-gradient(180deg,rgba(0,0,0,.45) 55%,transparent 45%);
+  background-size:1px 12px;
+}
+.moment{position:relative;padding:0 0 56px 56px}
+.moment:last-child{padding-bottom:0}
+.moment::before{ /* dot — app blue */
+  content:"";position:absolute;left:5px;top:8px;width:13px;height:13px;border-radius:50%;
+  background:var(--bg);border:2px solid var(--action);
+}
+.moment .when{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--action);display:block;margin-bottom:8px;
+}
+.moment h3{font-size:var(--fs-lede);margin:0 0 8px;font-weight:700;max-width:calc(var(--measure) - 56px)}
+.moment p{color:var(--ink-66);font-size:var(--fs-base);max-width:calc(var(--measure) - 56px)}
+@media(max-width:600px){.moment{padding-left:40px}}
+
+/* ---------- in-article CTA ----------
+   VARIATION of the .pro-card: same white card, --neu shadow and 4px orange stripe. */
+.post-cta{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  box-shadow:var(--neu);padding:26px 22px;position:relative;overflow:hidden;
+}
+.post-cta::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent);border-radius:4px 0 0 4px}
+.post-cta h2{font-size:var(--fs-h3-lg);margin-bottom:12px;letter-spacing:-.01em}
+.post-cta p{font-size:var(--fs-sm);max-width:none}
+.post-cta .store-row{margin:22px 0 0}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:26px 0 24px;font-size:var(--fs-xs);color:var(--ink-66);background:var(--card)}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:24px;align-items:start}
+@media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.foot-grid{grid-template-columns:1fr}}
+.foot-left p{margin-top:8px;max-width:300px;font-size:var(--fs-xs);line-height:1.5}
+.foot-col h4{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);margin:4px 0 6px;
+}
+.foot-col a{color:var(--ink-66);display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 2px;font-size:var(--fs-xs)}
+.foot-col a:hover{color:var(--action);text-decoration:none}
+.foot-col svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.foot-col nav{display:flex;flex-direction:column}
+.foot-bottom{
+  margin-top:20px;padding-top:14px;border-top:1px dashed var(--line);
+  display:flex;justify-content:space-between;gap:8px 24px;flex-wrap:wrap;
+  font-size:var(--fs-2xs);color:var(--ink-66);
+}
+.foot-bottom a{color:var(--ink-66);text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:2px}
+.foot-bottom a:hover{text-decoration-color:var(--action)}
+
+a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-offset:3px;border-radius:6px}
+.btn:focus-visible{outline:2px solid var(--action);outline-offset:2px}
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
+  background:var(--card);color:var(--ink);border:1px solid var(--line-strong);
+  border-radius:12px;padding:10px 16px;box-shadow:var(--neu-soft);
+}
+.skip:focus{left:24px;top:8px;text-decoration:none}
+.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="../" class="nav-logo">
-                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
-                <span>FlipperHelper</span>
-            </a>
-            <div class="nav-links">
-                <a href="../">Home</a>
-                <a href="../faq.html">FAQ</a>
-                <a href="./">Blog</a>
-                <a href="/tools/">Tools</a>
-                <a href="/compare/">Compare</a>
-                <a href="/#download" class="btn btn-small">Get the App</a>
-            </div>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ======================= NAV ======================= -->
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+      FlipperHelper
+    </a>
+    <div class="nav-links">
+      <a href="/#day">Your Sunday</a>
+      <a href="/#story">Our story</a>
+      <a href="/#workbench">What's next</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/tools/">Free tools</a>
+      <a class="btn btn-primary" href="/#get">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================= ARTICLE ======================= -->
+<main class="post" id="main">
+  <div class="wrap">
+    <article>
+
+      <a href="/blog/" class="post-back">← Back to Blog</a>
+      <p class="post-updated">Last updated: 4 July 2026</p>
+      <h1>FlipperHelper Is Now on Android — and Your Data Moves With You</h1>
+      <p class="post-meta">
+        <span class="art-date">4 July 2026</span>
+        <span class="art-tag">Product</span>
+        <span class="art-read">6 min read</span>
+      </p>
+
+      <section>
+        <p><strong>FlipperHelper is now available on Android.</strong> It's a full native rebuild with feature parity with the iPhone app — the same photo-first item tracking, expense logging, multi-currency profit calculation, and Google Sheets export that resellers already use on iOS. It's free, with no ads and no subscription, just like the iPhone version.</p>
+        <p>But the question resellers actually ask when a second platform arrives isn't "what features does it have" — it's <em>"if I switch phones, will I lose everything?"</em> The answer is no, and this post explains exactly why, including how automatic backup works differently on iPhone and Android and how to move your data between them without losing a single item.</p>
+        <!-- TODO: verify Google Play URL before publishing (expected from applicationId com.oprudnikov.flipperhelper). -->
+        <p class="store-row">
+          <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download on the App Store</a>
+          <a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it on Google Play</a>
+        </p>
+        <blockquote><p>"Your reselling records are worth months of work. The whole point of building the Android app on the same backup format as iPhone is so that switching platforms is a non-event — export a file, import it, done." — Oleksandr Prudnikov, FlipperHelper developer</p></blockquote>
+      </section>
+
+      <hr class="tear">
+
+      <section>
+        <h2>What you get on Android</h2>
+        <p><strong>The Android app isn't a stripped-down companion — it's the same app, rebuilt natively for Android.</strong> Everything the iPhone version does, the Android version does:</p>
+        <ul>
+          <li><strong>Photo-first item tracking</strong> with automatic SKU generation</li>
+          <li><strong>16 listing platforms</strong> — eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree and more (tracked manually, not automated cross-listing)</li>
+          <li><strong>Full expense tracking</strong> — entry fees, six transport types, packaging, and custom costs</li>
+          <li><strong>Automatic profit calculation</strong> after every expense, per item and across your business</li>
+          <li><strong>Multi-currency</strong> — USD, EUR, GBP, CAD, AUD, NZD with daily exchange rates</li>
+          <li><strong>Money Flow dashboard</strong>, Hauls (sourcing-trip tracking), and share cards</li>
+          <li><strong>Google Sheets export</strong> and offline-first operation</li>
+        </ul>
+        <p>It's free, and it works offline at the market the same way the iPhone app does. <a href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener">Get it on Google Play</a>.</p>
+      </section>
+
+      <hr class="tear">
+
+      <section>
+        <h2>How automatic backup works on iPhone</h2>
+        <p><strong>On iPhone, FlipperHelper backs up automatically to iCloud.</strong> You don't have to think about it — the app keeps a current copy of all your data in your own iCloud account. When you set up a new iPhone and open FlipperHelper, it offers to restore everything automatically. You can also trigger a manual iCloud backup from Settings at any time.</p>
+        <p>This sits alongside two other safety nets: optional <a href="/faq.html">Google Drive sync</a> (which mirrors your photos and Google Sheets exports) and the portable ZIP export (a single file you can save anywhere). Between them, your data lives in several independent places.</p>
+      </section>
+
+      <hr class="tear">
+
+      <section>
+        <h2>How automatic backup works on Android</h2>
+        <p><strong>Android has no iCloud, so the Android app backs up differently — but just as automatically.</strong> Instead of a system cloud, you choose a backup folder once. That folder can be anywhere on your phone, or — better — inside a cloud-synced folder such as Google Drive, Dropbox, or OneDrive.</p>
+        <p>From then on, FlipperHelper writes a fresh backup ZIP into that folder in the background, keeping the five most recent copies and cleaning up older ones automatically. This runs on-device, works offline, and is completely independent of the Google Sheets export — it doesn't need you to be signed into Google at all.</p>
+        <p>The practical tip: point the backup folder at a cloud-synced location. Your backups then get mirrored off your phone automatically, giving you the same "it just happens" protection iPhone users get from iCloud, without depending on any one account.</p>
+        <div class="cmp-wrap" tabindex="0" role="region" aria-label="Backup on iPhone compared with Android, horizontally scrollable">
+          <table class="cmp">
+            <caption class="visually-hidden">Automatic backup on iPhone compared with Android</caption>
+            <thead>
+              <tr>
+                <th scope="col"><span class="visually-hidden">Feature</span></th>
+                <th scope="col">iPhone</th>
+                <th scope="col">Android</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Automatic backup</th>
+                <td>iCloud, on by default</td>
+                <td>To a folder you choose (phone or cloud-synced)</td>
+              </tr>
+              <tr>
+                <th scope="row">How many kept</th>
+                <td>Latest iCloud copy</td>
+                <td>Five most recent ZIPs</td>
+              </tr>
+              <tr>
+                <th scope="row">Works offline</th>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th scope="row">Needs a Google account</th>
+                <td>No</td>
+                <td>No (folder backup is independent of Google sync)</td>
+              </tr>
+              <tr class="highlight-col">
+                <th scope="row">Portable ZIP export</th>
+                <td>Yes</td>
+                <td>Yes — same format</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-    </nav>
+      </section>
 
-    <main class="legal-page">
-        <div class="container">
-            <div class="legal-content blog-post">
-                <a href="./" class="blog-back">&larr; Back to Blog</a>
-                <p class="blog-updated">Last updated: 4 July 2026</p>
-                <h1>FlipperHelper Is Now on Android — and Your Data Moves With You</h1>
-                <div class="blog-meta">
-                    <span class="blog-date">4 July 2026</span>
-                    <span class="blog-tag">Product</span>
-                    <span class="blog-reading-time">6 min read</span>
-                </div>
+      <hr class="tear">
 
-                <section>
-                    <p><strong>FlipperHelper is now available on Android.</strong> It's a full native rebuild with feature parity with the iPhone app &mdash; the same photo-first item tracking, expense logging, multi-currency profit calculation, and Google Sheets export that resellers already use on iOS. It's free, with no ads and no subscription, just like the iPhone version.</p>
-                    <p>But the question resellers actually ask when a second platform arrives isn't "what features does it have" &mdash; it's <em>"if I switch phones, will I lose everything?"</em> The answer is no, and this post explains exactly why, including how automatic backup works differently on iPhone and Android and how to move your data between them without losing a single item.</p>
-                    <!-- TODO: verify Google Play URL before publishing (expected from applicationId com.oprudnikov.flipperhelper). -->
-                    <p class="blog-store-links">
-                        <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download on the App Store</a>
-                        <a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it on Google Play</a>
-                    </p>
-                    <blockquote><p>"Your reselling records are worth months of work. The whole point of building the Android app on the same backup format as iPhone is so that switching platforms is a non-event &mdash; export a file, import it, done." &mdash; Oleksandr Prudnikov, FlipperHelper developer</p></blockquote>
-                </section>
+      <section>
+        <h2>One backup file, both platforms</h2>
+        <p><strong>The piece that makes switching painless is the portable backup file.</strong> A FlipperHelper backup is a single ZIP archive containing your database and every photo — all your items, markets, sellers, expenses, hauls, and settings. Both the iPhone app and the Android app read and write that exact same format.</p>
+        <p>Because the format is shared, a backup made on one platform restores cleanly on the other. If you made the backup on an older version of the app, the newer app upgrades it automatically during restore. This isn't "export to CSV and hope the columns line up" — it's a complete, byte-for-byte transfer of your reselling history. <strong>Cross-platform compatibility is guaranteed.</strong></p>
+      </section>
 
-                <section>
-                    <h2>What you get on Android</h2>
-                    <p><strong>The Android app isn't a stripped-down companion &mdash; it's the same app, rebuilt natively for Android.</strong> Everything the iPhone version does, the Android version does:</p>
-                    <ul>
-                        <li><strong>Photo-first item tracking</strong> with automatic SKU generation</li>
-                        <li><strong>16 listing platforms</strong> &mdash; eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree and more (tracked manually, not automated cross-listing)</li>
-                        <li><strong>Full expense tracking</strong> &mdash; entry fees, six transport types, packaging, and custom costs</li>
-                        <li><strong>Automatic profit calculation</strong> after every expense, per item and across your business</li>
-                        <li><strong>Multi-currency</strong> &mdash; USD, EUR, GBP, CAD, AUD, NZD with daily exchange rates</li>
-                        <li><strong>Money Flow dashboard</strong>, Hauls (sourcing-trip tracking), and share cards</li>
-                        <li><strong>Google Sheets export</strong> and offline-first operation</li>
-                    </ul>
-                    <p>It's free, and it works offline at the market the same way the iPhone app does. <a href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener">Get it on Google Play</a>.</p>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>How automatic backup works on iPhone</h2>
-                    <p><strong>On iPhone, FlipperHelper backs up automatically to iCloud.</strong> You don't have to think about it &mdash; the app keeps a current copy of all your data in your own iCloud account. When you set up a new iPhone and open FlipperHelper, it offers to restore everything automatically. You can also trigger a manual iCloud backup from Settings at any time.</p>
-                    <p>This sits alongside two other safety nets: optional <a href="../faq.html">Google Drive sync</a> (which mirrors your photos and Google Sheets exports) and the portable ZIP export (a single file you can save anywhere). Between them, your data lives in several independent places.</p>
-                </section>
+      <section>
+        <h2>How to switch from iPhone to Android (or back)</h2>
+        <p><strong>Moving between platforms is a three-step job, and it works in either direction.</strong></p>
 
-                <section>
-                    <h2>How automatic backup works on Android</h2>
-                    <p><strong>Android has no iCloud, so the Android app backs up differently &mdash; but just as automatically.</strong> Instead of a system cloud, you choose a backup folder once. That folder can be anywhere on your phone, or &mdash; better &mdash; inside a cloud-synced folder such as Google Drive, Dropbox, or OneDrive.</p>
-                    <p>From then on, FlipperHelper writes a fresh backup ZIP into that folder in the background, keeping the five most recent copies and cleaning up older ones automatically. This runs on-device, works offline, and is completely independent of the Google Sheets export &mdash; it doesn't need you to be signed into Google at all.</p>
-                    <p>The practical tip: point the backup folder at a cloud-synced location. Your backups then get mirrored off your phone automatically, giving you the same "it just happens" protection iPhone users get from iCloud, without depending on any one account.</p>
-                    <div class="comparison-table-wrapper">
-                        <table class="comparison-table">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th>iPhone</th>
-                                    <th>Android</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Automatic backup</strong></td>
-                                    <td>iCloud, on by default</td>
-                                    <td>To a folder you choose (phone or cloud-synced)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>How many kept</strong></td>
-                                    <td>Latest iCloud copy</td>
-                                    <td>Five most recent ZIPs</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Works offline</strong></td>
-                                    <td>Yes</td>
-                                    <td>Yes</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Needs a Google account</strong></td>
-                                    <td>No</td>
-                                    <td>No (folder backup is independent of Google sync)</td>
-                                </tr>
-                                <tr class="highlight-col">
-                                    <td><strong>Portable ZIP export</strong></td>
-                                    <td>Yes</td>
-                                    <td>Yes &mdash; same format</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>One backup file, both platforms</h2>
-                    <p><strong>The piece that makes switching painless is the portable backup file.</strong> A FlipperHelper backup is a single ZIP archive containing your database and every photo &mdash; all your items, markets, sellers, expenses, hauls, and settings. Both the iPhone app and the Android app read and write that exact same format.</p>
-                    <p>Because the format is shared, a backup made on one platform restores cleanly on the other. If you made the backup on an older version of the app, the newer app upgrades it automatically during restore. This isn't "export to CSV and hope the columns line up" &mdash; it's a complete, byte-for-byte transfer of your reselling history. <strong>Cross-platform compatibility is guaranteed.</strong></p>
-                </section>
-
-                <section>
-                    <h2>How to switch from iPhone to Android (or back)</h2>
-                    <p><strong>Moving between platforms is a three-step job, and it works in either direction.</strong></p>
-                    <h3>1. Export a backup on your old phone</h3>
-                    <p>Open <strong>Settings &rarr; Backup &rarr; Export</strong>. FlipperHelper builds a single backup ZIP with all your data and photos.</p>
-                    <h3>2. Move the file to your new phone</h3>
-                    <p>Use whatever's easiest: AirDrop or a cable, email it to yourself, send it through a messaging app, or drop it in a shared cloud folder (Google Drive, Dropbox, iCloud Drive) that both phones can see.</p>
-                    <h3>3. Import it in the new app</h3>
-                    <p>Open the new app, go to <strong>Settings &rarr; Backup &rarr; Import from File</strong>, and pick the ZIP. Everything is restored &mdash; items, photos, listing history, expenses, hauls, and your preferences.</p>
-                    <p>The only rule: <strong>keep both apps updated</strong>. A backup made on a newer version is designed not to be opened by an older one (to protect your data), so update both apps before you migrate and you'll never hit that edge.</p>
-                </section>
-
-                <section>
-                    <h2>Frequently asked questions</h2>
-
-                    <h3>Is there a FlipperHelper app for Android?</h3>
-                    <p>Yes &mdash; FlipperHelper is on <a href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener">Google Play</a>, a full native rebuild with feature parity with the iPhone app. It's also on the <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">App Store</a> for iOS 17 and later. Both are free.</p>
-
-                    <h3>Can I move my reseller data from iPhone to Android?</h3>
-                    <p>Yes, and it's guaranteed. Both apps use the exact same backup file. Export on one, import on the other, and everything comes across &mdash; in both directions.</p>
-
-                    <h3>How does automatic backup differ between iPhone and Android?</h3>
-                    <p>iPhone backs up to iCloud automatically. Android has no iCloud, so it backs up to a folder you choose once (ideally a cloud-synced one), keeping the five most recent copies. Both are automatic and work offline.</p>
-
-                    <h3>Does the Android version cost money?</h3>
-                    <p>No. It's free with no ads and no subscription, exactly like the iPhone app.</p>
-
-                    <h3>What do I need to do to switch phones safely?</h3>
-                    <p>Export a backup ZIP on the old phone, move the file to the new phone, and use Import from File. Keep both apps updated first.</p>
-                </section>
-
-                <section>
-                    <h2>Related reading</h2>
-                    <ul>
-                        <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers in 2026</a> &mdash; full comparison of reseller tools, free and paid</li>
-                        <li><a href="free-inventory-app-for-resellers.html">Free Inventory App for Resellers</a> &mdash; what "free" actually means and what to look for</li>
-                        <li><a href="app-to-track-inventory-and-sales.html">App to Track Inventory and Sales</a> &mdash; the full purchase-to-sale workflow</li>
-                        <li><a href="../faq.html">FlipperHelper FAQ</a> &mdash; backup, restore, and cross-platform questions answered in detail</li>
-                    </ul>
-                </section>
-
-                <section class="blog-cta">
-                    <h2>Try FlipperHelper free</h2>
-                    <p>Free reselling app for iPhone and Android. Track unlimited items, manage listings across 16 platforms, log every expense, and see your real profit. Your data backs up automatically and moves with you between devices. Works offline.</p>
-                    <p class="blog-store-links">
-                        <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download on the App Store</a>
-                        <a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it on Google Play</a>
-                    </p>
-                </section>
-
-                <section>
-                    <h2>About the author</h2>
-                    <p><strong>Written by Oleksandr Prudnikov</strong> &mdash; developer of FlipperHelper. The app started as a tracking tool for his wife's reselling at UK car boot sales, charity shops, and antiques fairs. The Android version was built on a shared backup format from day one specifically so that resellers are never locked to one phone &mdash; a design decision that comes from watching real people dread switching devices and losing their records.</p>
-                </section>
-            </div>
+        <div class="day">
+          <div class="moment reveal">
+            <span class="when">Step 1</span>
+            <h3>Export a backup on your old phone</h3>
+            <p>Open <strong>Settings → Backup → Export</strong>. FlipperHelper builds a single backup ZIP with all your data and photos.</p>
+          </div>
+          <div class="moment reveal">
+            <span class="when">Step 2</span>
+            <h3>Move the file to your new phone</h3>
+            <p>Use whatever's easiest: AirDrop or a cable, email it to yourself, send it through a messaging app, or drop it in a shared cloud folder (Google Drive, Dropbox, iCloud Drive) that both phones can see.</p>
+          </div>
+          <div class="moment reveal">
+            <span class="when">Step 3</span>
+            <h3>Import it in the new app</h3>
+            <p>Open the new app, go to <strong>Settings → Backup → Import from File</strong>, and pick the ZIP. Everything is restored — items, photos, listing history, expenses, hauls, and your preferences.</p>
+          </div>
         </div>
-    </main>
 
-    <footer class="footer footer-compact">
-        <div class="container">
-            <div class="footer-row">
-                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
-                <div class="footer-links-inline">
-                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
-                    <a href="../privacy.html">Privacy</a>
-                    <a href="../terms.html">Terms</a>
-                    <a href="mailto:support@flipperhelper.app">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script data-goatcounter="https://grommash9.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+        <p>The only rule: <strong>keep both apps updated</strong>. A backup made on a newer version is designed not to be opened by an older one (to protect your data), so update both apps before you migrate and you'll never hit that edge.</p>
+      </section>
+
+      <hr class="tear">
+
+      <section>
+        <h2>Frequently asked questions</h2>
+
+        <h3>Is there a FlipperHelper app for Android?</h3>
+        <p>Yes — FlipperHelper is on <a href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener">Google Play</a>, a full native rebuild with feature parity with the iPhone app. It's also on the <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">App Store</a> for iOS 17 and later. Both are free.</p>
+
+        <h3>Can I move my reseller data from iPhone to Android?</h3>
+        <p>Yes, and it's guaranteed. Both apps use the exact same backup file. Export on one, import on the other, and everything comes across — in both directions.</p>
+
+        <h3>How does automatic backup differ between iPhone and Android?</h3>
+        <p>iPhone backs up to iCloud automatically. Android has no iCloud, so it backs up to a folder you choose once (ideally a cloud-synced one), keeping the five most recent copies. Both are automatic and work offline.</p>
+
+        <h3>Does the Android version cost money?</h3>
+        <p>No. It's free with no ads and no subscription, exactly like the iPhone app.</p>
+
+        <h3>What do I need to do to switch phones safely?</h3>
+        <p>Export a backup ZIP on the old phone, move the file to the new phone, and use Import from File. Keep both apps updated first.</p>
+      </section>
+
+      <hr class="tear">
+
+      <section>
+        <h2>Related reading</h2>
+        <ul>
+          <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers in 2026</a> — full comparison of reseller tools, free and paid</li>
+          <li><a href="free-inventory-app-for-resellers.html">Free Inventory App for Resellers</a> — what "free" actually means and what to look for</li>
+          <li><a href="app-to-track-inventory-and-sales.html">App to Track Inventory and Sales</a> — the full purchase-to-sale workflow</li>
+          <li><a href="/faq.html">FlipperHelper FAQ</a> — backup, restore, and cross-platform questions answered in detail</li>
+        </ul>
+      </section>
+
+      <section class="post-cta">
+        <h2>Keep every find — on either phone.</h2>
+        <p>FlipperHelper for iPhone and Android. Track unlimited items, manage listings across 16 platforms, log every expense, and see your real profit. Your data backs up automatically and moves with you between devices. Works offline.</p>
+        <p class="store-row">
+          <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download on the App Store</a>
+          <a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it on Google Play</a>
+        </p>
+      </section>
+
+      <hr class="tear">
+
+      <section>
+        <h2>About the author</h2>
+        <p><strong>Written by Oleksandr Prudnikov</strong> — developer of FlipperHelper. The app started as a tracking tool for his wife's reselling at UK car boot sales, charity shops, and antiques fairs. The Android version was built on a shared backup format from day one specifically so that resellers are never locked to one phone — a design decision that comes from watching real people dread switching devices and losing their records.</p>
+      </section>
+
+    </article>
+  </div>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-left">
+        <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+        <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <nav aria-label="Footer — explore">
+          <a href="/blog/">Blog</a>
+          <a href="/tools/">Free tools</a>
+          <a href="/about.html">About</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Follow</h4>
+        <nav aria-label="Footer — follow">
+          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Help &amp; legal</h4>
+        <nav aria-label="Footer — help and legal">
+          <a href="mailto:support@flipperhelper.app">Support</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Community at <a href="https://reddit.com/r/flipperhelper">r/flipperhelper</a></span>
+      <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+})();
+</script>
+<script data-goatcounter="https://grommash9.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
