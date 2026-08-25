@@ -426,6 +426,57 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 }
 .post .shot--phone{max-width:320px;margin-left:auto;margin-right:auto}
 
+/* A photograph here is supporting evidence, not hero art, so it never runs
+   the full measure. Three placements, in order of preference:
+
+   .figure-row    beside its paragraphs — the homepage .story-grid split,
+                  alternating sides down the article so the page has more
+                  than one left edge
+   .figure-grid   two unpaired photographs sharing a line
+   .shot--diagram charts and explainers: centred and whole, because they are
+                  read rather than glanced at
+*/
+.post .figure-row{
+  display:grid;grid-template-columns:1fr .78fr;gap:44px;align-items:center;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-row > div > :last-child{margin-bottom:0}
+.post .figure-row .shot{margin:0}
+.post .figure-row .shot img{max-height:320px;width:auto}
+.post .figure-row--flip > .shot{order:-1}
+.post .figure-row--phone{grid-template-columns:1fr .46fr;gap:38px}
+.post .figure-row--phone .shot img{max-height:420px}
+@media(max-width:760px){
+  .post .figure-row,.post .figure-row--phone{grid-template-columns:1fr;gap:22px}
+  .post .figure-row--flip > .shot{order:0}
+}
+
+.post .figure-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-grid .shot{margin:0}
+.post .figure-grid .shot img{max-height:300px;width:auto}
+@media(max-width:600px){.post .figure-grid{grid-template-columns:1fr}}
+
+.post .shot--diagram{max-width:620px;margin-left:auto;margin-right:auto}
+.post .shot--solo{max-width:520px;margin-left:auto;margin-right:auto}
+.post .shot--solo img{max-height:420px;width:auto}
+
+/* a nine-step procedure would run three screens at the homepage's 56px
+   step gap, so long timelines tighten to the article's 26px rhythm */
+.post .day--long .moment{padding-bottom:30px}
+
+/* ---------- FAQ ----------
+   Question and answer step in behind a dashed rule, so the tail of the
+   article reads as a list of exchanges rather than more flush-left prose. */
+.post .faq-item{
+  padding-left:22px;border-left:1px dashed var(--line-strong);
+  margin:22px 0;max-width:var(--measure);
+}
+.post .faq-item h3{margin:0 0 8px}
+.post .faq-item > :last-child{margin-bottom:0}
+
 /* ---------- spreadsheet formulas ---------- */
 .formula-block{
   background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
@@ -588,12 +639,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 
             <section>
                 <p><strong>A brocante is a French flea market or antique fair where second-hand goods, antiques and vintage items are sold by a mix of professional dealers (<em>brocanteurs</em>) and private individuals (<em>particuliers</em>).</strong> The closest English equivalent is a flea market, but a typical brocante is more antique-heavy than a UK car boot sale and less new-stock-driven than a US flea market.</p>
-                <figure class="shot">
+                <div class="figure-row">
+      <div>
+      <p>The word also refers to the trade itself (&ldquo;<em>la brocante</em>&rdquo; is the antiques-and-second-hand business in general) and to permanent antique shops on French high streets, often labelled simply &ldquo;Brocante&rdquo; on the front window.</p>
+      <p>This guide is for UK resellers planning a sourcing trip to France &mdash; once you know which type of event you&rsquo;re looking at, the rest of the trip planning falls into place. We sell on eBay UK and Vinted, we&rsquo;ve been on multiple France runs, and we built a verification database covering ~3,700 events across 8 northern and central French regions for our <a href="best-french-brocantes-2026-uk-sourcing.html">2026 brocante calendar</a>.</p>
+      </div>
+      <figure class="shot">
                     <img src="images/france-brocante-day-market-view.jpg" alt="French brocante flea market stall — antiques and vintage items on a daytime trestle table">
                     <figcaption>A typical French brocante stall &mdash; a mix of vintage decorative pieces, glassware and small furniture. Photo from one of our 2026 sourcing trips.</figcaption>
                 </figure>
-                <p>The word also refers to the trade itself (&ldquo;<em>la brocante</em>&rdquo; is the antiques-and-second-hand business in general) and to permanent antique shops on French high streets, often labelled simply &ldquo;Brocante&rdquo; on the front window.</p>
-                <p>This guide is for UK resellers planning a sourcing trip to France &mdash; once you know which type of event you&rsquo;re looking at, the rest of the trip planning falls into place. We sell on eBay UK and Vinted, we&rsquo;ve been on multiple France runs, and we built a verification database covering ~3,700 events across 8 northern and central French regions for our <a href="best-french-brocantes-2026-uk-sourcing.html">2026 brocante calendar</a>.</p>
+      </div>
                 <blockquote><p>&ldquo;The word &lsquo;brocante&rsquo; is used loosely. It can mean a market, an event, a shop, or the whole trade. UK readers usually want a precise answer to &lsquo;is this thing worth driving to?&rsquo; &mdash; and that depends on which type of event it actually is.&rdquo; &mdash; Oleksandr Prudnikov, FlipperHelper developer and active reseller</p></blockquote>
             </section>
 
@@ -685,12 +740,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section>
                 <h2>What is a braderie?</h2>
                 <p>A <strong>braderie</strong> is a large-scale street sale that takes over a whole town or neighbourhood, mixing brocante stalls with shop discounts, food, music and crowds. It&rsquo;s a brocante that became a public festival.</p>
-                <figure class="shot">
+                <div class="figure-row figure-row--flip">
+      <div>
+      <p>The <strong>Braderie de Lille</strong> is the canonical example &mdash; around 2&ndash;2.5 million visitors over a single weekend in early September, around 10,000 vendors, roughly 100 km of stalls. Confirmed for 5&ndash;6 September 2026 by the <a href="https://www.lille.fr/Braderie-de-Lille" target="_blank" rel="nofollow noopener">Ville de Lille</a>. It&rsquo;s the largest flea market in Europe.</p>
+      <p>Smaller braderies happen across France throughout the year. Many neighbourhood braderies are particuliers-only, which is why UK resellers like them: prices are closer to car-boot levels because dealers can&rsquo;t set up.</p>
+      </div>
+      <figure class="shot">
                     <img src="images/france-street-brocante-event.jpg" alt="French braderie crowd street market — vintage stalls and brocante sellers on a Sunday morning">
                     <figcaption>A French town braderie on a Sunday morning &mdash; the typical scene across northern France from May to September.</figcaption>
                 </figure>
-                <p>The <strong>Braderie de Lille</strong> is the canonical example &mdash; around 2&ndash;2.5 million visitors over a single weekend in early September, around 10,000 vendors, roughly 100 km of stalls. Confirmed for 5&ndash;6 September 2026 by the <a href="https://www.lille.fr/Braderie-de-Lille" target="_blank" rel="nofollow noopener">Ville de Lille</a>. It&rsquo;s the largest flea market in Europe.</p>
-                <p>Smaller braderies happen across France throughout the year. Many neighbourhood braderies are particuliers-only, which is why UK resellers like them: prices are closer to car-boot levels because dealers can&rsquo;t set up.</p>
+      </div>
             </section>
 
       <hr class="tear">
@@ -735,17 +794,21 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 
       <section>
                 <h2>What is a marché aux puces?</h2>
-                <p><strong>Marché aux puces</strong> literally translates to &ldquo;flea market&rdquo; and usually refers to a permanent or recurring market with fixed dealer stalls, as opposed to a one-off event. The most famous examples:</p>
-                <ul>
+                <div class="figure-row">
+      <div>
+      <p><strong>Marché aux puces</strong> literally translates to &ldquo;flea market&rdquo; and usually refers to a permanent or recurring market with fixed dealer stalls, as opposed to a one-off event. The most famous examples:</p>
+      <ul>
                     <li><strong>Marché aux Puces de Saint-Ouen</strong> &mdash; on the edge of Paris, the <strong>world&rsquo;s largest antiques market</strong>. 15 named indoor sub-markets across ~7 hectares. Open Saturday, Sunday and Monday year-round (<a href="https://www.pucesdeparissaintouen.com/en/" target="_blank" rel="nofollow noopener">official site</a>). <a href="marche-aux-puces-saint-ouen-uk-guide.html">UK reseller guide here</a></li>
                     <li><strong>Puces de la Porte de Vanves</strong> &mdash; inside Paris (14e), Saturday and Sunday mornings, ~380 vendors. Smaller and friendlier than Saint-Ouen</li>
                     <li><strong>Puces du Canal (Lyon Villeurbanne)</strong> &mdash; second-largest in France, Thursday/Saturday/Sunday, year-round (<a href="https://www.pucesducanal.com/en/" target="_blank" rel="nofollow noopener">pucesducanal.com</a>)</li>
                 </ul>
-                <p>The word <strong>puces</strong> alone (without &ldquo;marché aux&rdquo;) often refers to the same thing &mdash; e.g. <em>Puces de Montsoreau</em>, the monthly second-Sunday brocante in the Loire.</p>
-                <figure class="shot">
+      <p>The word <strong>puces</strong> alone (without &ldquo;marché aux&rdquo;) often refers to the same thing &mdash; e.g. <em>Puces de Montsoreau</em>, the monthly second-Sunday brocante in the Loire.</p>
+      </div>
+      <figure class="shot">
                     <img src="images/france-brocante-seller-inventory-stall.jpg" alt="French puces market dealer stall — vintage ceramics, glass and decorative pieces">
                     <figcaption>A French dealer&rsquo;s stall &mdash; the kind of inventory typical at a marché aux puces or a mixed brocante. Stock that resells in the UK at 2&ndash;3x.</figcaption>
                 </figure>
+      </div>
             </section>
 
       <hr class="tear">
@@ -786,24 +849,25 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section>
                 <h2>Frequently asked questions</h2>
 
-                <h3>Is a brocante the same as a flea market?</h3>
+                <div class="faq-item">
+      <h3>Is a brocante the same as a flea market?</h3>
                 <p>The closest English translation is yes, but the makeup is different. A typical UK or US flea market is dominated by traders selling new low-cost goods alongside second-hand items. A French brocante is overwhelmingly second-hand and antique, with much less new merchandise. UK resellers used to car boot sales will find brocantes feel similar in atmosphere but with a significantly higher proportion of vintage decorative pieces, glassware, kitchenalia and small furniture.</p>
-
-                <h3>What is a brocante shop?</h3>
+      </div><div class="faq-item">
+      <h3>What is a brocante shop?</h3>
                 <p>A brocante shop is a permanent second-hand and antique store, typically a single proprietor selling a curated mix of furniture, decorative arts, kitchenalia and vintage items. Many small French towns have one. They&rsquo;re different from event-brocantes &mdash; they&rsquo;re open all year, prices are tagged rather than negotiated, and you can come back another day if you want to think about a piece.</p>
-
-                <h3>When are brocantes held in France?</h3>
+      </div><div class="faq-item">
+      <h3>When are brocantes held in France?</h3>
                 <p>Most brocantes happen on Sundays from May to September, with peaks around the May public holidays (1 May, 8 May, Ascension, Pentecost) and a second wave in September around the Braderie de Lille. November to March activity is much lower &mdash; mostly indoor salons des antiquaires and permanent puces markets like Saint-Ouen, Vanves and Puces du Canal in Lyon.</p>
-
-                <h3>Who can sell at a French brocante?</h3>
+      </div><div class="faq-item">
+      <h3>Who can sell at a French brocante?</h3>
                 <p>Depends on the event. <em>Particuliers</em> (private individuals) can sell at any vide-grenier, foire à tout, or particuliers-only braderie &mdash; usually with a cap of two events per year per person under French law. <em>Professionnels</em> (registered antique dealers and brocanteurs) can sell at any brocante, salon des antiquaires, or pro-grade foire. As a UK reseller you&rsquo;re a buyer, not a seller, and there&rsquo;s no restriction on who can buy.</p>
-
-                <h3>Can UK residents buy at French brocantes?</h3>
+      </div><div class="faq-item">
+      <h3>Can UK residents buy at French brocantes?</h3>
                 <p>Yes &mdash; entry is free at most events, no registration needed. The practical considerations are getting there and back (Eurotunnel or Channel ferry), French driving requirements (Crit&rsquo;Air sticker for cities like Lille and Paris, reflective vests, warning triangle), and UK customs declaration on the way back if you&rsquo;re bringing goods home for resale. We cover all of that in our <a href="sourcing-stock-from-france.html">Sourcing Stock from France: UK Driving, Customs and Costs guide</a>.</p>
-
-                <h3>What&rsquo;s the difference between brocante and antique?</h3>
+      </div><div class="faq-item">
+      <h3>What&rsquo;s the difference between brocante and antique?</h3>
                 <p>In French, an &ldquo;antiquit&eacute;&rdquo; legally requires the item to be over 100 years old, and a dealer specialising in antiquit&eacute;s is regulated. &ldquo;Brocante&rdquo; covers everything else &mdash; vintage, decorative, recently second-hand &mdash; with no age requirement. In practical UK terms, this maps roughly to &ldquo;antiques shop&rdquo; vs &ldquo;junk shop / second-hand store&rdquo;, but with much less stigma attached to the brocante side. Most events are mixed.</p>
-            </section>
+      </div></section>
 
       <hr class="tear">
 
@@ -831,10 +895,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 </ul>
             </section>
 
-            <section class="post-cta">
+      <section class="post-cta">
                 <h2>Track your French brocante trips with FlipperHelper</h2>
                 <p>Free app for iOS and Android with multi-currency support and automatic exchange rates. Log purchases in EUR at every brocante, track Eurotunnel and fuel as transport expenses, and read off category totals at the UK customs declaration. Works offline &mdash; useful when you&rsquo;re on a French village square with no signal.</p>
-                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it Free on Google Play</a></span>
             </section>
   
 

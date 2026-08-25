@@ -401,6 +401,57 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 }
 .post .shot--phone{max-width:320px;margin-left:auto;margin-right:auto}
 
+/* A photograph here is supporting evidence, not hero art, so it never runs
+   the full measure. Three placements, in order of preference:
+
+   .figure-row    beside its paragraphs — the homepage .story-grid split,
+                  alternating sides down the article so the page has more
+                  than one left edge
+   .figure-grid   two unpaired photographs sharing a line
+   .shot--diagram charts and explainers: centred and whole, because they are
+                  read rather than glanced at
+*/
+.post .figure-row{
+  display:grid;grid-template-columns:1fr .78fr;gap:44px;align-items:center;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-row > div > :last-child{margin-bottom:0}
+.post .figure-row .shot{margin:0}
+.post .figure-row .shot img{max-height:320px;width:auto}
+.post .figure-row--flip > .shot{order:-1}
+.post .figure-row--phone{grid-template-columns:1fr .46fr;gap:38px}
+.post .figure-row--phone .shot img{max-height:420px}
+@media(max-width:760px){
+  .post .figure-row,.post .figure-row--phone{grid-template-columns:1fr;gap:22px}
+  .post .figure-row--flip > .shot{order:0}
+}
+
+.post .figure-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-grid .shot{margin:0}
+.post .figure-grid .shot img{max-height:300px;width:auto}
+@media(max-width:600px){.post .figure-grid{grid-template-columns:1fr}}
+
+.post .shot--diagram{max-width:620px;margin-left:auto;margin-right:auto}
+.post .shot--solo{max-width:520px;margin-left:auto;margin-right:auto}
+.post .shot--solo img{max-height:420px;width:auto}
+
+/* a nine-step procedure would run three screens at the homepage's 56px
+   step gap, so long timelines tighten to the article's 26px rhythm */
+.post .day--long .moment{padding-bottom:30px}
+
+/* ---------- FAQ ----------
+   Question and answer step in behind a dashed rule, so the tail of the
+   article reads as a list of exchanges rather than more flush-left prose. */
+.post .faq-item{
+  padding-left:22px;border-left:1px dashed var(--line-strong);
+  margin:22px 0;max-width:var(--measure);
+}
+.post .faq-item h3{margin:0 0 8px}
+.post .faq-item > :last-child{margin-bottom:0}
+
 /* ---------- spreadsheet formulas ---------- */
 .formula-block{
   background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
@@ -571,7 +622,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 
       <section>
                 <h2>Quick navigation</h2>
-                <ul>
+                <div class="figure-row">
+      <div>
+      <ul>
                     <li><a href="#what-is-portobello">What is the Portobello Road Market?</a></li>
                     <li><a href="#opening-hours">When is the Notting Hill market open?</a></li>
                     <li><a href="#antique-arcades">The antique arcades &mdash; Saturday morning priority</a></li>
@@ -583,17 +636,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                     <li><a href="#dates-2026">2026 dates UK resellers should know</a></li>
                     <li><a href="#faq">Frequently asked questions</a></li>
                 </ul>
-                <p><em>Last verified: 1 May 2026 against visitportobello.com, Visit London, and the London Museum.</em></p>
-            </section>
-
-      <hr class="tear">
-
-      <section>
-                <figure class="shot">
+      <p><em>Last verified: 1 May 2026 against visitportobello.com, Visit London, and the London Museum.</em></p>
+      </div>
+      <figure class="shot">
                     <img src="images/uk-car-boot-authentic-vintage-items.jpg" alt="Authentic vintage items typical of UK antiques markets including Portobello Road">
                     <figcaption>Authentic vintage stock &mdash; the kind of stall mix you find at the antique end of Portobello Road on a Saturday.</figcaption>
                 </figure>
-            </section>
+      </div>
+      </section>
 
       <hr class="tear">
 
@@ -668,23 +718,22 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section id="getting-there">
                 <h2>How to get there</h2>
                 <p><strong>By tube:</strong></p>
-                <ul>
+                <div class="figure-row figure-row--flip">
+      <div>
+      <ul>
                     <li><strong>Ladbroke Grove</strong> (Hammersmith &amp; City + Circle lines) &mdash; 5 minutes&rsquo; walk to the antiques section. Best for Saturday morning antiques</li>
                     <li><strong>Notting Hill Gate</strong> (Central, District, Circle) &mdash; 10 minutes from the south end. Useful if you&rsquo;re combining with shops on the Notting Hill side</li>
                     <li><strong>Westbourne Park</strong> (Hammersmith &amp; City + Circle) &mdash; 10 minutes to Golborne Road, best for vintage clothing on Friday</li>
                 </ul>
-                <p><strong>By car:</strong> Don&rsquo;t bother on Saturday &mdash; parking is a nightmare and Portobello Road itself is partially closed to traffic. If you must, pre-book a residential bay via JustPark or YourParkingSpace.</p>
-                <p><strong>Address:</strong> Portobello Road, London W10 5RU (north end) / W11 2EU (south end).</p>
-            </section>
-
-      <hr class="tear">
-
-      <section>
-                <figure class="shot">
+      <p><strong>By car:</strong> Don&rsquo;t bother on Saturday &mdash; parking is a nightmare and Portobello Road itself is partially closed to traffic. If you must, pre-book a residential bay via JustPark or YourParkingSpace.</p>
+      <p><strong>Address:</strong> Portobello Road, London W10 5RU (north end) / W11 2EU (south end).</p>
+      </div>
+      <figure class="shot">
                     <img src="images/oleksandr-uk-vintage-shop-lamps.jpg" alt="Oleksandr Prudnikov in a UK vintage shop showing vintage lamps — UK reseller experience">
                     <figcaption>Vintage lamps in a UK vintage shop &mdash; lighting is one of Portobello&rsquo;s consistent strengths in the southern arcades.</figcaption>
                 </figure>
-            </section>
+      </div>
+      </section>
 
       <hr class="tear">
 
@@ -745,27 +794,28 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section id="faq">
                 <h2>Frequently asked questions</h2>
 
-                <h3>What are the Portobello Road Market opening hours?</h3>
+                <div class="faq-item">
+      <h3>What are the Portobello Road Market opening hours?</h3>
                 <p>Saturday is the main day, 9:00&ndash;19:00, with the antique section from 7:00. Friday is the second-busiest, full street trading. Mon&ndash;Wed have limited trading. Thursday is half-day. Sunday is mostly closed apart from limited stalls on Thorpe Close and Acklam Road.</p>
-
-                <h3>Is Portobello Road open on Sunday?</h3>
+      </div><div class="faq-item">
+      <h3>Is Portobello Road open on Sunday?</h3>
                 <p>Mostly closed on Sundays. For a Sunday London antique fix, go to Brick Lane Market (E1) instead &mdash; 10:00&ndash;17:00 Sundays.</p>
-
-                <h3>Which day at Portobello is best for vintage clothing?</h3>
+      </div><div class="faq-item">
+      <h3>Which day at Portobello is best for vintage clothing?</h3>
                 <p>Friday. Officially the vintage clothing day around Portobello Green, the Westway-covered section and Golborne Road. Saturday has more vendors overall but Friday&rsquo;s vintage focus is denser.</p>
-
-                <h3>How big is Portobello Road Market?</h3>
+      </div><div class="faq-item">
+      <h3>How big is Portobello Road Market?</h3>
                 <p>About 1,000 vendors on Saturday across 940 metres of street, plus the named antique arcades. Some sources cite up to 1,500 dealers on busy weekends. UK&rsquo;s largest antiques market by vendor count.</p>
-
-                <h3>What&rsquo;s the closest tube to Portobello Road Market?</h3>
+      </div><div class="faq-item">
+      <h3>What&rsquo;s the closest tube to Portobello Road Market?</h3>
                 <p>Ladbroke Grove (Hammersmith &amp; City + Circle) is closest, ~5 minutes walk. Notting Hill Gate is ~10 minutes from the south end. Westbourne Park is ~10 minutes to Golborne Road.</p>
-
-                <h3>Can I haggle at Portobello?</h3>
+      </div><div class="faq-item">
+      <h3>Can I haggle at Portobello?</h3>
                 <p>Yes, particularly at the antique arcades. Polite framing works better than hard offers (&ldquo;is that your best price?&rdquo;). Bundling multi-item buys gets the best discounts. Cash is still useful even though most dealers take cards. Late Saturday afternoon is when prices drop.</p>
-
-                <h3>Is Portobello a tourist trap?</h3>
+      </div><div class="faq-item">
+      <h3>Is Portobello a tourist trap?</h3>
                 <p>Partly &mdash; the south stretch around the Notting Hill end is dense with souvenir-style stalls and reproduction antiques aimed at first-time visitors. The genuine antique trade is in the named arcades (Admiral Vernon, Chelsea Galleries, Rogers) and at the north end of the market around Portobello Green and Golborne Road. Know which sections to skip and you&rsquo;re fine.</p>
-            </section>
+      </div></section>
 
       <hr class="tear">
 
@@ -779,10 +829,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 </ul>
             </section>
 
-            <section class="post-cta">
+      <section class="post-cta">
                 <h2>Track your Portobello finds with FlipperHelper</h2>
                 <p>Free app for iOS and Android. Multi-currency, offline support, photo + price + source per item. Useful when you&rsquo;re sourcing across London markets and trying to keep your eBay margins straight at the end of the week.</p>
-                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it Free on Google Play</a></span>
             </section>
   
 

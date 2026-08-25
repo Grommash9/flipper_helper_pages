@@ -420,6 +420,57 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 }
 .post .shot--phone{max-width:320px;margin-left:auto;margin-right:auto}
 
+/* A photograph here is supporting evidence, not hero art, so it never runs
+   the full measure. Three placements, in order of preference:
+
+   .figure-row    beside its paragraphs — the homepage .story-grid split,
+                  alternating sides down the article so the page has more
+                  than one left edge
+   .figure-grid   two unpaired photographs sharing a line
+   .shot--diagram charts and explainers: centred and whole, because they are
+                  read rather than glanced at
+*/
+.post .figure-row{
+  display:grid;grid-template-columns:1fr .78fr;gap:44px;align-items:center;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-row > div > :last-child{margin-bottom:0}
+.post .figure-row .shot{margin:0}
+.post .figure-row .shot img{max-height:320px;width:auto}
+.post .figure-row--flip > .shot{order:-1}
+.post .figure-row--phone{grid-template-columns:1fr .46fr;gap:38px}
+.post .figure-row--phone .shot img{max-height:420px}
+@media(max-width:760px){
+  .post .figure-row,.post .figure-row--phone{grid-template-columns:1fr;gap:22px}
+  .post .figure-row--flip > .shot{order:0}
+}
+
+.post .figure-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-grid .shot{margin:0}
+.post .figure-grid .shot img{max-height:300px;width:auto}
+@media(max-width:600px){.post .figure-grid{grid-template-columns:1fr}}
+
+.post .shot--diagram{max-width:620px;margin-left:auto;margin-right:auto}
+.post .shot--solo{max-width:520px;margin-left:auto;margin-right:auto}
+.post .shot--solo img{max-height:420px;width:auto}
+
+/* a nine-step procedure would run three screens at the homepage's 56px
+   step gap, so long timelines tighten to the article's 26px rhythm */
+.post .day--long .moment{padding-bottom:30px}
+
+/* ---------- FAQ ----------
+   Question and answer step in behind a dashed rule, so the tail of the
+   article reads as a list of exchanges rather than more flush-left prose. */
+.post .faq-item{
+  padding-left:22px;border-left:1px dashed var(--line-strong);
+  margin:22px 0;max-width:var(--measure);
+}
+.post .faq-item h3{margin:0 0 8px}
+.post .faq-item > :last-child{margin-bottom:0}
+
 /* ---------- spreadsheet formulas ---------- */
 .formula-block{
   background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
@@ -582,11 +633,15 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 
             <section>
                 <p><strong>Vintage items that cost &pound;30-40 at UK car boot sales and charity shops can be found for &euro;5-10 in French vintage shops</strong> &mdash; roughly 2-3x cheaper for the same goods. We drove to northern France via Eurotunnel for a weekend sourcing trip and came back with a full car.</p>
-                <figure class="shot">
+                <div class="figure-row">
+      <div>
+      <p>Many sellers at UK reselling events already source their stock from France. After hearing this repeatedly, we decided to try it ourselves. This guide covers everything we learned: how to get there, what your car needs, how customs works, and what it actually costs.</p>
+      </div>
+      <figure class="shot">
                     <img src="images/furniture-loaded-car-france-sourcing-trip.jpg" alt="Car loaded with vintage furniture and antiques after a France sourcing trip via Eurotunnel">
                     <figcaption>A car loaded after a France sourcing weekend &mdash; the &ldquo;came back with a full car&rdquo; line is literal.</figcaption>
                 </figure>
-                <p>Many sellers at UK reselling events already source their stock from France. After hearing this repeatedly, we decided to try it ourselves. This guide covers everything we learned: how to get there, what your car needs, how customs works, and what it actually costs.</p>
+      </div>
                 <blockquote><p>"We kept asking sellers where they get their stuff. The answer was always France. So we checked French Facebook Marketplace and local sites &mdash; prices really are much lower for the same items." &mdash; Oleksandr Prudnikov, FlipperHelper developer and active reseller</p></blockquote>
             </section>
 
@@ -617,24 +672,23 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 </ul>
 
                 <h3>Car stickers and equipment</h3>
-                <ul>
+                <div class="figure-row figure-row--flip">
+      <div>
+      <ul>
                     <li><strong>Crit&rsquo;Air ecological sticker</strong> &mdash; required for driving in cities like Lille and Paris (similar to London&rsquo;s ULEZ). Costs about &euro;5 online. Fine without one: &euro;135. The online order confirmation is sufficient while waiting for the physical sticker to arrive by post</li>
                     <li><strong>UK sticker</strong> &mdash; required on the rear of the car, even if your number plate shows GB</li>
                     <li><strong>Headlight deflector stickers</strong> &mdash; to avoid dazzling oncoming drivers with UK-spec headlights</li>
                     <li><strong>Reflective vests</strong> &mdash; one per passenger, legally required in France</li>
                     <li><strong>Warning triangle</strong> &mdash; legally required to carry in the vehicle</li>
                 </ul>
-                <p>Nobody stopped us or checked any of this on our trip, but fines apply if you&rsquo;re pulled over without them. We decided not to risk it.</p>
-            </section>
-
-      <hr class="tear">
-
-      <section>
-                <figure class="shot">
+      <p>Nobody stopped us or checked any of this on our trip, but fines apply if you&rsquo;re pulled over without them. We decided not to risk it.</p>
+      </div>
+      <figure class="shot">
                     <img src="images/belgium-france-border-sourcing-trip.jpg" alt="View from car at Belgium-France border on a UK reseller sourcing trip">
                     <figcaption>Crossing into Belgium during the same trip &mdash; northern France brocantes are close to the Belgian border, and a few well-known events sit on the Belgian side too.</figcaption>
                 </figure>
-            </section>
+      </div>
+      </section>
 
       <hr class="tear">
 
@@ -670,17 +724,21 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 </ul>
 
                 <h3>What taxes apply?</h3>
-                <ul>
+                <div class="figure-row">
+      <div>
+      <ul>
                     <li><strong>20% VAT</strong> on the declared value of all goods</li>
                     <li><strong>Import duty</strong> &mdash; the rate depends on the item category. If you cannot prove the goods were made in the EU, additional duty may apply</li>
                     <li>For goods under &pound;1,000 total value, the process is simplified</li>
                     <li>For a car load under &pound;2,500 and 1,000 kg, you use the simplified customs process</li>
                 </ul>
-                <p>Having all our purchases already tracked with prices and EUR-to-GBP conversion made the declaration straightforward &mdash; we just read off the categories and totals from <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">FlipperHelper</a>.</p>
-                <figure class="shot">
+      <p>Having all our purchases already tracked with prices and EUR-to-GBP conversion made the declaration straightforward &mdash; we just read off the categories and totals from <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">FlipperHelper</a>.</p>
+      </div>
+      <figure class="shot">
                     <img src="images/reseller-car-loaded-with-finds-uk.jpg" alt="Reseller's car loaded with vintage finds after a France sourcing trip — full to the roof">
                     <figcaption>Same trip back in the UK &mdash; the customs declaration becomes manageable when every item was logged in EUR at point of purchase.</figcaption>
                 </figure>
+      </div>
             </section>
 
       <hr class="tear">
@@ -735,21 +793,22 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section>
                 <h2>Frequently asked questions</h2>
 
-                <h3>How much does the Eurotunnel cost for a reselling trip to France?</h3>
+                <div class="faq-item">
+      <h3>How much does the Eurotunnel cost for a reselling trip to France?</h3>
                 <p>Eurotunnel Le Shuttle costs around &pound;160 return for a standard car. Prices vary by booking time and travel date. Booking in advance and avoiding bank holidays will get you a cheaper fare. The crossing takes about 35 minutes.</p>
-
-                <h3>Do I need an EORI number to import reselling stock from France?</h3>
+      </div><div class="faq-item">
+      <h3>Do I need an EORI number to import reselling stock from France?</h3>
                 <p>Yes &mdash; if you are importing goods commercially to resell, you need an EORI number. Apply for free on GOV.UK. Sole traders can use the number immediately with the online confirmation, before the physical letter arrives.</p>
-
-                <h3>What taxes do I pay when importing reselling stock from France to the UK?</h3>
+      </div><div class="faq-item">
+      <h3>What taxes do I pay when importing reselling stock from France to the UK?</h3>
                 <p>You pay 20% VAT on the declared goods value, plus import duty that varies by item category. The declaration is done online at GOV.UK and you pay HMRC directly by card. The whole process takes about 10 minutes.</p>
-
-                <h3>What car requirements do I need for driving in France?</h3>
+      </div><div class="faq-item">
+      <h3>What car requirements do I need for driving in France?</h3>
                 <p>European insurance coverage, original V5C logbook, original driving licence, UK sticker, reflective vests for all passengers, warning triangle, headlight deflector stickers, and a Crit&rsquo;Air ecological sticker for cities like Lille and Paris (&euro;5 online, &euro;135 fine without one).</p>
-
-                <h3>Is it worth driving to France to source reselling stock?</h3>
+      </div><div class="faq-item">
+      <h3>Is it worth driving to France to source reselling stock?</h3>
                 <p>Yes &mdash; vintage items that cost &pound;30-40 at UK car boot sales can be found for &euro;5-10 in French vintage shops. Even after Eurotunnel, fuel, and 20% VAT plus duty, margins are significantly better. The first trip costs more due to one-time car requirements, but every subsequent trip is cheaper.</p>
-            </section>
+      </div></section>
 
       <hr class="tear">
 
@@ -765,10 +824,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 </ul>
             </section>
 
-            <section class="post-cta">
+      <section class="post-cta">
                 <h2>Track your sourcing trips with FlipperHelper</h2>
                 <p>Free app for iOS and Android with multi-currency support and automatic exchange rates. Log purchases in EUR, track Eurotunnel and fuel as transport expenses, and see your real profit per trip. Works offline &mdash; perfect for markets with no signal.</p>
-                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it Free on Google Play</a></span>
             </section>
   
 

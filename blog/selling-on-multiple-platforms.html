@@ -409,6 +409,57 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 }
 .post .shot--phone{max-width:320px;margin-left:auto;margin-right:auto}
 
+/* A photograph here is supporting evidence, not hero art, so it never runs
+   the full measure. Three placements, in order of preference:
+
+   .figure-row    beside its paragraphs — the homepage .story-grid split,
+                  alternating sides down the article so the page has more
+                  than one left edge
+   .figure-grid   two unpaired photographs sharing a line
+   .shot--diagram charts and explainers: centred and whole, because they are
+                  read rather than glanced at
+*/
+.post .figure-row{
+  display:grid;grid-template-columns:1fr .78fr;gap:44px;align-items:center;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-row > div > :last-child{margin-bottom:0}
+.post .figure-row .shot{margin:0}
+.post .figure-row .shot img{max-height:320px;width:auto}
+.post .figure-row--flip > .shot{order:-1}
+.post .figure-row--phone{grid-template-columns:1fr .46fr;gap:38px}
+.post .figure-row--phone .shot img{max-height:420px}
+@media(max-width:760px){
+  .post .figure-row,.post .figure-row--phone{grid-template-columns:1fr;gap:22px}
+  .post .figure-row--flip > .shot{order:0}
+}
+
+.post .figure-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-grid .shot{margin:0}
+.post .figure-grid .shot img{max-height:300px;width:auto}
+@media(max-width:600px){.post .figure-grid{grid-template-columns:1fr}}
+
+.post .shot--diagram{max-width:620px;margin-left:auto;margin-right:auto}
+.post .shot--solo{max-width:520px;margin-left:auto;margin-right:auto}
+.post .shot--solo img{max-height:420px;width:auto}
+
+/* a nine-step procedure would run three screens at the homepage's 56px
+   step gap, so long timelines tighten to the article's 26px rhythm */
+.post .day--long .moment{padding-bottom:30px}
+
+/* ---------- FAQ ----------
+   Question and answer step in behind a dashed rule, so the tail of the
+   article reads as a list of exchanges rather than more flush-left prose. */
+.post .faq-item{
+  padding-left:22px;border-left:1px dashed var(--line-strong);
+  margin:22px 0;max-width:var(--measure);
+}
+.post .faq-item h3{margin:0 0 8px}
+.post .faq-item > :last-child{margin-bottom:0}
+
 /* ---------- spreadsheet formulas ---------- */
 .formula-block{
   background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
@@ -581,19 +632,18 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 <h2>Which platforms to pair</h2>
                 <p>You don&rsquo;t need to be on every platform. In fact, trying to list on all of them is one of the fastest ways to burn out. The right combination depends on what you sell and who buys it.</p>
                 <p><strong><a href="how-to-sell-on-ebay-uk.html">eBay</a> + <a href="how-to-sell-on-vinted-uk.html">Vinted</a></strong> is the most common pairing for UK resellers. eBay has the largest buyer base and works for almost everything. Vinted is strong for clothing, shoes, and accessories with zero seller fees. If you sell fashion, this combination covers most of your market.</p>
-                <p><strong>eBay + <a href="how-to-sell-facebook-marketplace-uk.html">Facebook Marketplace</a></strong> works well if you sell larger items or things buyers want to see in person. Electronics, furniture, vintage pieces, and anything heavy or fragile where postage would kill the margin. Facebook is also good for local-only items where collection makes more sense than shipping.</p>
-                <p><strong>eBay + Depop</strong> suits fashion-focused sellers targeting a younger audience. Depop skews 16&ndash;26 and is strong for vintage, streetwear, and trend-driven items. If you&rsquo;re selling vintage band tees or Y2K fashion, Depop buyers will pay more than eBay buyers for the same item.</p>
-                <p><strong>The general rule:</strong> eBay is almost always your primary. It has the traffic, the search visibility, and the broadest buyer base. Your second platform should be whichever one your specific items perform best on.</p>
-            </section>
-
-      <hr class="tear">
-
-      <section>
-                <figure class="shot">
+                <div class="figure-row">
+      <div>
+      <p><strong>eBay + <a href="how-to-sell-facebook-marketplace-uk.html">Facebook Marketplace</a></strong> works well if you sell larger items or things buyers want to see in person. Electronics, furniture, vintage pieces, and anything heavy or fragile where postage would kill the margin. Facebook is also good for local-only items where collection makes more sense than shipping.</p>
+      <p><strong>eBay + Depop</strong> suits fashion-focused sellers targeting a younger audience. Depop skews 16&ndash;26 and is strong for vintage, streetwear, and trend-driven items. If you&rsquo;re selling vintage band tees or Y2K fashion, Depop buyers will pay more than eBay buyers for the same item.</p>
+      <p><strong>The general rule:</strong> eBay is almost always your primary. It has the traffic, the search visibility, and the broadest buyer base. Your second platform should be whichever one your specific items perform best on.</p>
+      </div>
+      <figure class="shot">
                     <img src="images/facebook-multipost-paintings-listing.jpg" alt="A Facebook Marketplace multi-listing of vintage paintings — UK reseller cross-platform workflow">
                     <figcaption>A real Facebook Marketplace listing of vintage paintings &mdash; multi-platform listing in practice. The same stock cross-posts to eBay and Vinted with format tweaks per platform.</figcaption>
                 </figure>
-            </section>
+      </div>
+      </section>
 
       <hr class="tear">
 
@@ -691,15 +741,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section>
                 <h2>Frequently asked questions</h2>
 
-                <h3>Should I list every item on every platform?</h3>
+                <div class="faq-item">
+      <h3>Should I list every item on every platform?</h3>
                 <p>No. Most resellers find that 80&ndash;90% of their sales come from one primary platform. Cross-list strategically: high-value or slow-moving items benefit most from extra visibility. Listing everything everywhere creates more admin than it&rsquo;s worth, especially when you factor in delisting after a sale.</p>
-
-                <h3>What happens if I sell something on eBay but forget to remove it from Vinted?</h3>
+      </div><div class="faq-item">
+      <h3>What happens if I sell something on eBay but forget to remove it from Vinted?</h3>
                 <p>If someone buys it on Vinted before you delist, you&rsquo;ll have to cancel the order. On Vinted, cancellations hurt your seller metrics and can lead to warnings. On eBay, cancelling because the item is out of stock counts as a seller defect. Either way, you frustrate a buyer and risk negative feedback. The fix is simple: the moment something sells, immediately delist it everywhere else.</p>
-
-                <h3>Is FlipperHelper a cross-listing tool?</h3>
+      </div><div class="faq-item">
+      <h3>Is FlipperHelper a cross-listing tool?</h3>
                 <p>No. FlipperHelper does not post items to selling platforms. It&rsquo;s an inventory tracker &mdash; you record which platforms each item is listed on, mark items as sold, and see which platform performs best for you. You still list items manually on eBay, Vinted, Depop, etc. FlipperHelper just keeps everything organised in one place so you don&rsquo;t lose track.</p>
-            </section>
+      </div></section>
 
       <hr class="tear">
 
@@ -723,10 +774,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 <p><strong>Oleksandr Prudnikov</strong> builds <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">FlipperHelper</a>, a profit-tracking app used by UK resellers. His wife resells at car boot sales and on eBay/Vinted &mdash; the app was built to solve the problems they ran into managing inventory across platforms and tracking what actually makes money.</p>
             </section>
 
-            <section class="post-cta">
+      <section class="post-cta">
                 <h2>Stop losing track of your listings</h2>
                 <p>FlipperHelper gives you one place to see every item, every platform, and every sale. Know what&rsquo;s listed where, what sold, and which platform is actually making you money.</p>
-                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it Free on Google Play</a></span>
             </section>
   
 

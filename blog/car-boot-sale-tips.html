@@ -420,6 +420,57 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 }
 .post .shot--phone{max-width:320px;margin-left:auto;margin-right:auto}
 
+/* A photograph here is supporting evidence, not hero art, so it never runs
+   the full measure. Three placements, in order of preference:
+
+   .figure-row    beside its paragraphs — the homepage .story-grid split,
+                  alternating sides down the article so the page has more
+                  than one left edge
+   .figure-grid   two unpaired photographs sharing a line
+   .shot--diagram charts and explainers: centred and whole, because they are
+                  read rather than glanced at
+*/
+.post .figure-row{
+  display:grid;grid-template-columns:1fr .78fr;gap:44px;align-items:center;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-row > div > :last-child{margin-bottom:0}
+.post .figure-row .shot{margin:0}
+.post .figure-row .shot img{max-height:320px;width:auto}
+.post .figure-row--flip > .shot{order:-1}
+.post .figure-row--phone{grid-template-columns:1fr .46fr;gap:38px}
+.post .figure-row--phone .shot img{max-height:420px}
+@media(max-width:760px){
+  .post .figure-row,.post .figure-row--phone{grid-template-columns:1fr;gap:22px}
+  .post .figure-row--flip > .shot{order:0}
+}
+
+.post .figure-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+  margin:26px 0;max-width:var(--measure);
+}
+.post .figure-grid .shot{margin:0}
+.post .figure-grid .shot img{max-height:300px;width:auto}
+@media(max-width:600px){.post .figure-grid{grid-template-columns:1fr}}
+
+.post .shot--diagram{max-width:620px;margin-left:auto;margin-right:auto}
+.post .shot--solo{max-width:520px;margin-left:auto;margin-right:auto}
+.post .shot--solo img{max-height:420px;width:auto}
+
+/* a nine-step procedure would run three screens at the homepage's 56px
+   step gap, so long timelines tighten to the article's 26px rhythm */
+.post .day--long .moment{padding-bottom:30px}
+
+/* ---------- FAQ ----------
+   Question and answer step in behind a dashed rule, so the tail of the
+   article reads as a list of exchanges rather than more flush-left prose. */
+.post .faq-item{
+  padding-left:22px;border-left:1px dashed var(--line-strong);
+  margin:22px 0;max-width:var(--measure);
+}
+.post .faq-item h3{margin:0 0 8px}
+.post .faq-item > :last-child{margin-bottom:0}
+
 /* ---------- spreadsheet formulas ---------- */
 .formula-block{
   background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
@@ -714,21 +765,22 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
       <section>
                 <h2>Frequently asked questions</h2>
 
-                <h3>What are the best items to buy at car boot sales for reselling?</h3>
+                <div class="faq-item">
+      <h3>What are the best items to buy at car boot sales for reselling?</h3>
                 <p>Retro video games (PS1, PS2, N64, GameCube), branded sportswear (Nike, Adidas, North Face), vintage 80s/90s clothing, niche non-fiction books, vinyl records, Pyrex and retro kitchenware, branded ceramics (Le Creuset, Denby), and LEGO. These categories consistently deliver 3-10x return.</p>
-
-                <h3>What should you avoid buying at car boot sales?</h3>
+      </div><div class="faq-item">
+      <h3>What should you avoid buying at car boot sales?</h3>
                 <p>Furniture (heavy, low margin), fast fashion (Primark, H&M — nobody pays postage), untested electronics (many have faults), DVDs/Blu-rays (collapsed market), and anything without a clear selling platform. If you wouldn't list it, don't buy it.</p>
-
-                <h3>How do you negotiate at car boot sales?</h3>
+      </div><div class="faq-item">
+      <h3>How do you negotiate at car boot sales?</h3>
                 <p>Bundle items together, shop near closing time when prices drop significantly, be genuinely friendly, carry cash in small denominations, and walk away if needed — many sellers call you back with a lower price.</p>
-
-                <h3>What time should you arrive at a car boot sale?</h3>
+      </div><div class="faq-item">
+      <h3>What time should you arrive at a car boot sale?</h3>
                 <p>Arrive 30 minutes before gates open. Most of the best items sell in the first hour. Skip early-bird entry if it costs &pound;5+ versus &pound;1-2 regular — the premium rarely pays off.</p>
-
-                <h3>Are clearance company trucks worth checking at car boot sales?</h3>
+      </div><div class="faq-item">
+      <h3>Are clearance company trucks worth checking at car boot sales?</h3>
                 <p>Yes — clearance companies have already been paid for the clearance job and want to avoid &pound;150-400+/tonne disposal fees. They often sell items for 50p or give them away free. Look for large vans/trucks, buy in bulk for pennies, and check them near closing time when they're most motivated to shift stock.</p>
-            </section>
+      </div></section>
 
       <hr class="tear">
 
@@ -742,10 +794,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
                 </ul>
             </section>
 
-            <section class="post-cta">
+      <section class="post-cta">
                 <h2>Track your car boot finds with FlipperHelper</h2>
                 <p>Free app for iOS and Android built for resellers. Snap photos at the market, log prices, track entry fees and transport, and see your real profit per trip. Works offline — perfect for early morning markets with no signal.</p>
-                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it Free on Google Play</a></span>
             </section>
   
 
