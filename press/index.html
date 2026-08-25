@@ -40,10 +40,6 @@
     }
     </script>
 <style>
-/* --measure is the site's article text measure (style guide 5.2); landing.css
-   never declared it because the home page has no long-form prose column. */
-:root{--measure:900px}
-
 /* Page-only additions to landing.css. Nav, cards, grid, shots carousel, story
    band, ledger, emphasis card, final, newsletter and footer all come from the
    shared stylesheet unchanged. */
@@ -55,9 +51,10 @@
   margin-bottom:12px;max-width:760px}
 @media(max-width:720px){.page-head{padding:44px 0 0}}
 
-/* Plain prose block — the one-liner section is text, not cards. 900px is the
-   site's single text measure (style guide 5.2), not a narrower column. */
-.prose{max-width:var(--measure)}
+/* Plain prose block — the one-liner section is text, not cards. It takes the
+   full frame rather than the style guide's 900px text measure (5.2), so every
+   section on the page shares one left and right edge. */
+.prose{max-width:none}
 .prose p{margin-bottom:16px}
 .prose p:last-child{margin-bottom:0}
 
