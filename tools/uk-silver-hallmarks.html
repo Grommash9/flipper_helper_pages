@@ -11,9 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&amp;family=Roboto+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="/footer.css">
-    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="/landing.css">
     <link rel="canonical" href="https://flipperhelper.app/tools/uk-silver-hallmarks.html">
     <meta property="og:type" content="article">
     <meta property="og:title" content="UK Silver Hallmark Identification — Free Tool">
@@ -168,366 +166,221 @@
     }
     </script>
     <style>
-        .callout {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
-            border-left: 3px solid var(--color-primary);
-            padding: 0.85rem 1rem;
-            margin: 1rem 0;
-            color: var(--text-secondary);
-            border-radius: var(--radius-sm);
-        }
-        .callout strong, .callout em, .callout b { color: var(--text-primary); }
-        .callout a { color: var(--color-primary-text); }
-        .wiz {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-md);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            color: var(--text-primary);
-        }
-        .wiz h2, .wiz #wiz-heading { color: var(--text-primary); }
-        .wiz strong, .wiz b, .wiz em { color: var(--text-primary); }
-        .wiz a { color: var(--color-primary-text); }
-        .wiz .step-hint strong { color: var(--text-primary); }
-        .wiz-step {
-            margin-bottom: 1.75rem;
-        }
-        .wiz-step:last-child { margin-bottom: 0; }
-        .wiz-step h3 {
-            margin: 0 0 0.4rem 0;
-            font-size: 1.05rem;
-            color: var(--text-primary);
-        }
-        .wiz-step .step-hint {
-            color: var(--text-tertiary);
-            font-size: 0.9rem;
-            margin: 0 0 0.85rem 0;
-        }
-        .wiz-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-            gap: 0.6rem;
-        }
-        .wiz-cards-letters {
-            grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
-            gap: 0.4rem;
-        }
-        .wiz-cards-letters .wiz-card {
-            padding: 0.4rem 0.3rem;
-            font-size: 0.78rem;
-            gap: 0.25rem;
-        }
-        .wiz-cards-letters .wiz-letter-img {
-            width: 56px;
-            height: 56px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f4ead6;
-            border-radius: var(--radius-sm);
-        }
-        .wiz-cards-letters .wiz-letter-img img {
-            max-width: 100%;
-            max-height: 100%;
-            image-rendering: -webkit-optimize-contrast;
-        }
-        .wiz-cards-letters .wiz-card .wiz-letter {
-            font-size: 0.92rem;
-            font-weight: 600;
-            line-height: 1.2;
-            color: var(--text-primary);
-        }
-        .wiz-cards-letters .wiz-card-year {
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: var(--text-primary);
-        }
-        .wiz-cards-letters .wiz-card-cycle {
-            font-size: 0.66rem;
-            color: var(--text-tertiary);
-            line-height: 1.3;
-        }
-        .wiz-cards-cycles {
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 0.6rem;
-        }
-        .wiz-cards-cycles .wiz-card {
-            padding: 0.6rem;
-            gap: 0.4rem;
-        }
-        .wiz-cycle-frame {
-            width: 100%;
-            min-height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f4ead6;
-            border-radius: var(--radius-sm);
-            padding: 0.3rem;
-        }
-        .wiz-cycle-frame img {
-            max-height: 44px;
-            max-width: 100%;
-            image-rendering: -webkit-optimize-contrast;
-        }
-        .wiz-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-default);
-            border-radius: var(--radius-sm);
-            padding: 0.75rem;
-            cursor: pointer;
-            transition: border-color var(--transition-fast), background var(--transition-fast), transform 0.05s;
-            text-align: center;
-            font-size: 0.92rem;
-            line-height: 1.35;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.4rem;
-            color: var(--text-primary);
-        }
-        .wiz-card:hover { border-color: var(--border-hover); background: var(--bg-card-hover); }
-        .wiz-card:active { transform: scale(0.98); }
-        .wiz-card.selected {
-            border-color: var(--color-primary);
-            background: var(--color-primary-light);
-        }
-        .wiz-card.selected .wiz-card-name,
-        .wiz-card.selected .wiz-letter,
-        .wiz-card.selected .wiz-card-year { color: var(--color-primary-text); }
-        /*
-          IMAGE SLOT CONVENTION
-          ---------------------
-          Each .wiz-img element auto-loads /tools/images/hallmarks/<slug>.png at runtime
-          when the file exists; otherwise falls back to the text glyph in .wiz-glyph.
-          To upgrade a card with a real image, drop the file at the matching slug.
-          See /tools/images/hallmarks/IMAGES_TODO.md for the list.
-        */
-        .wiz-img {
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f4ead6;
-            border-radius: var(--radius-sm);
-            font-size: 1.5rem;
-            color: #6a4a1a;
-        }
-        .wiz-img img { max-width: 100%; max-height: 100%; }
-        .wiz-glyph {
-            font-weight: 600;
-            font-size: 0.78rem;
-            color: #6a4a1a;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-        }
-        .wiz-card-name { font-weight: 600; color: var(--text-primary); }
-        .wiz-card-sub { color: var(--text-tertiary); font-size: 0.82rem; }
-        .wiz-step.is-locked { opacity: 0.4; pointer-events: none; }
-        .wiz-step.is-hidden { display: none; }
-        .wiz-card { position: relative; }
-        .zoom-btn {
-            position: absolute;
-            top: 4px;
-            right: 4px;
-            width: 22px;
-            height: 22px;
-            background: rgba(0,0,0,0.55);
-            color: #fff;
-            border: 0;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 13px;
-            line-height: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0.55;
-            transition: opacity var(--transition-fast), background var(--transition-fast);
-            padding: 0;
-            z-index: 2;
-        }
-        .zoom-btn:hover { opacity: 1; background: rgba(0,0,0,0.8); }
-        .img-lightbox {
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.85);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            cursor: zoom-out;
-        }
-        .img-lightbox[hidden] { display: none; }
-        .img-lightbox img {
-            background: #f4ead6;
-            padding: 1.5rem;
-            border-radius: 12px;
-            max-width: min(90vw, 520px);
-            max-height: 90vh;
-            image-rendering: -webkit-optimize-contrast;
-        }
-        .img-lightbox-caption {
-            position: absolute;
-            bottom: 1.25rem;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #FAFAFA;
-            font-size: 0.95rem;
-            background: rgba(0,0,0,0.6);
-            padding: 0.5rem 0.85rem;
-            border-radius: var(--radius-sm);
-        }
-        .img-lightbox-close {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: rgba(0,0,0,0.55);
-            color: #fff;
-            border: 0;
-            font-size: 1.6rem;
-            line-height: 1;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .hallmarks-output {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-md);
-            padding: 1.25rem 1.5rem;
-            margin-top: 1.5rem;
-            color: var(--text-primary);
-        }
-        .hallmarks-output h3 { margin-top: 0; color: var(--text-primary); }
-        .hallmarks-output-head {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-            margin-bottom: 0.85rem;
-        }
-        .hallmarks-output-head h3 { margin-bottom: 0; }
-        .hallmarks-actions {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        .hallmarks-actions[hidden] { display: none; }
-        .btn-action {
-            background: var(--bg-card);
-            border: 1px solid var(--border-default);
-            border-radius: var(--radius-sm);
-            color: var(--text-primary);
-            font-size: 0.85rem;
-            padding: 0.5rem 0.85rem;
-            cursor: pointer;
-            transition: border-color var(--transition-fast), background var(--transition-fast);
-        }
-        .btn-action:hover { background: var(--bg-card-hover); border-color: var(--border-hover); }
-        .btn-action:disabled { opacity: 0.5; cursor: not-allowed; }
-        .btn-action-primary {
-            background: var(--color-primary);
-            border-color: var(--color-primary);
-            color: #fff;
-        }
-        .btn-action-primary:hover { background: var(--color-primary-hover); border-color: var(--color-primary-hover); }
-        .btn-action.is-success { background: rgba(52, 199, 89, 0.18); border-color: #34C759; color: #34C759; }
-        .hallmarks-output strong, .hallmarks-output b, .hallmarks-output em { color: var(--text-primary); }
-        .hallmarks-output a { color: var(--color-primary-text); }
-        .hallmarks-output .verdict {
-            font-size: 1.15rem;
-            line-height: 1.5;
-            margin-bottom: 1rem;
-            padding: 0.85rem 1rem;
-            background: var(--color-primary-light);
-            border: 1px solid var(--color-primary);
-            border-radius: var(--radius-sm);
-            color: var(--text-primary);
-        }
-        .result-rows {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            margin: 0.85rem 0 0 0;
-        }
-        .result-row {
-            display: flex;
-            gap: 0.85rem;
-            padding: 0.7rem 0.85rem;
-            background: var(--bg-card);
-            border: 1px solid var(--border-default);
-            border-radius: var(--radius-sm);
-            align-items: center;
-        }
-        .result-row .result-row-img {
-            width: 60px;
-            height: 60px;
-            min-width: 60px;
-            background: #f4ead6;
-            border-radius: var(--radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6a4a1a;
-            font-weight: 600;
-            font-size: 0.78rem;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-        }
-        .result-row .result-row-img img { max-width: 100%; max-height: 100%; }
-        .result-row-text {
-            display: flex;
-            flex-direction: column;
-            gap: 0.18rem;
-            flex: 1;
-            min-width: 0;
-        }
-        .result-row-label {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: var(--text-tertiary);
-        }
-        .result-row-title { font-weight: 600; color: var(--text-primary); }
-        .result-row-sub { font-size: 0.88rem; color: var(--text-secondary); }
-        .result-row-note { font-size: 0.82rem; color: var(--text-tertiary); line-height: 1.4; margin-top: 0.18rem; }
-        .hallmarks-output .caveats {
-            margin-top: 1.2rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border-subtle);
-            font-size: 0.92rem;
-            color: var(--text-tertiary);
-        }
-        .hallmarks-output .caveats strong { color: var(--text-primary); }
-        .city-link-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-            gap: 0.6rem;
-            margin: 1rem 0;
-        }
-        .city-link {
-            background: #fff;
-            border: 1.5px solid #F9DDA5;
-            border-radius: 8px;
-            padding: 0.8rem 1rem;
-            text-decoration: none;
-            color: #4a3a1a;
-            font-weight: 600;
-        }
-        .city-link:hover { background: #fffaf0; }
-        .city-link small { display: block; font-weight: normal; color: #888; margin-top: 0.2rem; font-size: 0.82rem; }
+/* ---- page-specific: everything else comes from /landing.css ---- */
+
+/* skip link — not in landing.css yet; sits above the sticky nav (z-index:100) */
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
+  background:var(--card);color:var(--ink);border:1px solid var(--line-strong);
+  border-radius:12px;padding:10px 16px;box-shadow:var(--neu-soft);
+}
+.skip:focus{left:24px;top:8px;text-decoration:none}
+
+/* page head — title + meta line, no prop and no CTA (design guide §25.2) */
+.page-head{padding:64px 0 0}
+@media(max-width:720px){.page-head{padding:44px 0 0}}
+.page-head h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px;max-width:820px}
+.head-updated{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45)}
+
+/* Body text takes the full 1080px frame rather than the style guide's 900px text
+   measure (§5.2), the way about.html and the press page do, so every section on
+   the page shares one left and right edge with the rest of the site. */
+.prose p{margin-bottom:16px}
+.prose p:last-child{margin-bottom:0}
+.section-title{margin-bottom:20px}
+.sub-title{font-size:var(--fs-h3-lg);margin:30px 0 12px}
+
+/* the site's prose bullet: 6px periwinkle dot, bold term then the detail (§13.5) */
+.answers{list-style:none;margin-bottom:16px}
+.answers:last-child{margin-bottom:0}
+.answers li{position:relative;padding-left:22px;margin-bottom:9px;color:var(--ink-66)}
+.answers li::before{content:"";position:absolute;left:4px;top:.58em;width:6px;height:6px;border-radius:50%;background:var(--cat)}
+.answers strong{color:var(--ink);font-weight:600}
+
+/* ordered prose: the counter sits in the same periwinkle chip the app uses for
+   category headers, so a numbered sequence reads as a sequence, not as bullets */
+.steps{list-style:none;counter-reset:s;margin-bottom:16px}
+.steps:last-child{margin-bottom:0}
+.steps li{position:relative;padding-left:34px;margin-bottom:10px;color:var(--ink-66);counter-increment:s}
+.steps li::before{
+  content:counter(s);position:absolute;left:0;top:.15em;width:22px;height:22px;border-radius:7px;
+  background:var(--cat);color:var(--ink);font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+  display:grid;place-items:center;
+}
+.steps strong{color:var(--ink);font-weight:600}
+
+/* scope notes — .story .rule from landing.css, at body size (§25.5) */
+.callout{border-left:3px solid var(--accent);padding:4px 0 4px 18px;margin:22px 0;color:var(--ink-66)}
+.callout:last-child{margin-bottom:0}
+.callout strong{color:var(--ink);font-weight:600}
+
+/* the parchment plate a hallmark punch is photographed against — a literal, not a
+   token (§2.3); scoped to the three blocks that show punch images */
+.wiz,.hallmarks-output,.img-lightbox{--plate:#F4EAD6;--plate-ink:#6A4A1A}
+
+/* ---------- the wizard ---------- */
+.wiz{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:30px;box-shadow:var(--neu-soft);
+}
+@media(max-width:720px){.wiz{padding:20px}}
+.wiz-step{padding-bottom:24px;margin-bottom:24px;border-bottom:1px dashed var(--line-strong)}
+.wiz-step:last-child{padding-bottom:0;margin-bottom:0;border-bottom:none}
+.wiz-step h3{font-size:var(--fs-h3-lg);margin-bottom:6px}
+.wiz-step .opt{font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:500;letter-spacing:.04em;color:var(--ink-45)}
+.wiz-step .step-hint{font-size:var(--fs-sm);color:var(--ink-66);margin-bottom:16px}
+.wiz-step.is-hidden{display:none}
+
+.wiz-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
+.wiz-card{
+  position:relative;background:var(--bg);border:1px solid var(--line-strong);border-radius:var(--radius-md);
+  padding:14px;cursor:pointer;text-align:center;font-size:var(--fs-sm);line-height:1.35;color:var(--ink-66);
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  transition:border-color .15s ease,background .15s ease,box-shadow .15s ease,transform .15s ease;
+}
+.wiz-card:hover{border-color:var(--action);background:var(--card);box-shadow:var(--neu-soft)}
+.wiz-card:active{transform:translateY(1px)}
+.wiz-card.selected{border-color:var(--action);background:rgba(30,118,241,.07);box-shadow:none}
+.wiz-card.selected .wiz-card-name,
+.wiz-card.selected .wiz-letter,
+.wiz-card.selected .wiz-card-year{color:var(--action)}
+.wiz-card-name{font-weight:600;color:var(--ink)}
+.wiz-card-sub{font-size:var(--fs-2xs);color:var(--ink-45)}
+
+/*
+  IMAGE SLOT CONVENTION
+  ---------------------
+  Each .wiz-img element auto-loads /tools/images/hallmarks/<slug>.png at runtime
+  when the file exists; otherwise falls back to the text glyph in .wiz-glyph.
+  To upgrade a card with a real image, drop the file at the matching slug.
+  See /tools/images/hallmarks/IMAGES_TODO.md for the list.
+*/
+.wiz-img{
+  width:60px;height:60px;display:flex;align-items:center;justify-content:center;
+  background:var(--plate);border-radius:var(--radius-sm);font-size:1.5rem;color:var(--plate-ink);
+}
+.wiz-img img{max-width:100%;max-height:100%}
+.wiz-glyph{
+  font-family:var(--font-mono);font-weight:600;font-size:var(--fs-3xs);color:var(--plate-ink);
+  text-transform:uppercase;letter-spacing:.06em;
+}
+
+.wiz-cards-letters{grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px}
+.wiz-cards-letters .wiz-card{padding:8px 6px;gap:5px}
+.wiz-cards-letters .wiz-letter-img{
+  width:56px;height:56px;display:flex;align-items:center;justify-content:center;
+  background:var(--plate);border-radius:var(--radius-sm);
+}
+.wiz-cards-letters .wiz-letter-img img{max-width:100%;max-height:100%;image-rendering:-webkit-optimize-contrast}
+.wiz-cards-letters .wiz-card .wiz-letter{font-size:var(--fs-sm);font-weight:600;line-height:1.2;color:var(--ink)}
+.wiz-cards-letters .wiz-card-year{font-family:var(--font-mono);font-size:var(--fs-sm);font-weight:600;color:var(--ink)}
+.wiz-cards-letters .wiz-card-cycle{font-size:var(--fs-3xs);color:var(--ink-45);line-height:1.3}
+
+.wiz-cards-cycles{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.wiz-cards-cycles .wiz-card{padding:12px;gap:8px}
+.wiz-cycle-frame{
+  width:100%;min-height:50px;display:flex;align-items:center;justify-content:center;
+  background:var(--plate);border-radius:var(--radius-sm);padding:6px;
+}
+.wiz-cycle-frame img{max-height:44px;max-width:100%;image-rendering:-webkit-optimize-contrast}
+
+.zoom-btn{
+  position:absolute;top:5px;right:5px;width:22px;height:22px;
+  background:rgba(0,0,0,.5);color:#fff;border:0;border-radius:50%;cursor:pointer;
+  font-size:13px;line-height:1;display:flex;align-items:center;justify-content:center;
+  opacity:.5;transition:opacity .15s ease,background .15s ease;padding:0;z-index:2;
+}
+.zoom-btn:hover{opacity:1;background:rgba(0,0,0,.8)}
+
+/* ---------- the summary: read as a receipt (§6.11, §25.6) ---------- */
+.hallmarks-output{
+  margin-top:24px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:30px;box-shadow:var(--neu-soft);color:var(--ink-66);
+}
+@media(max-width:720px){.hallmarks-output{padding:20px}}
+.hallmarks-output-head{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.hallmarks-output h3{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink);font-weight:600;background:var(--cat);display:inline-block;padding:6px 12px;border-radius:6px;
+}
+.hallmarks-actions{display:flex;gap:10px;flex-wrap:wrap}
+.hallmarks-actions[hidden]{display:none}
+.btn-action{
+  font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
+  background:var(--card);color:var(--ink);border:1px solid var(--line-strong);border-radius:9px;
+  padding:8px 14px;cursor:pointer;box-shadow:var(--neu-soft);
+  transition:transform .15s ease,background .15s ease,border-color .15s ease,color .15s ease;
+}
+.btn-action:hover{border-color:var(--action);color:var(--action)}
+.btn-action:active{transform:translateY(1px)}
+.btn-action:disabled{opacity:.5;cursor:not-allowed}
+.btn-action-primary{background:var(--accent);color:#fff;border-color:transparent}
+.btn-action-primary:hover{background:var(--accent-hover);color:#fff;border-color:transparent}
+.btn-action.is-success{background:rgba(50,211,71,.12);border-color:var(--profit);color:var(--ink)}
+.hallmarks-output .verdict{
+  border-left:3px solid var(--accent);padding:6px 0 6px 18px;
+  font-size:var(--fs-lede);font-weight:500;line-height:1.4;color:var(--ink);letter-spacing:-.01em;
+}
+.result-rows{display:flex;flex-direction:column;margin-top:10px}
+.result-row{display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px dashed var(--line-strong)}
+.result-row:last-child{border-bottom:none}
+.result-row .result-row-img{
+  width:60px;height:60px;min-width:60px;background:var(--plate);border-radius:var(--radius-sm);
+  display:flex;align-items:center;justify-content:center;color:var(--plate-ink);
+  font-family:var(--font-mono);font-weight:600;font-size:var(--fs-3xs);text-transform:uppercase;letter-spacing:.06em;
+}
+.result-row .result-row-img img{max-width:100%;max-height:100%}
+.result-row-text{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0}
+.result-row-label{font-family:var(--font-mono);font-size:var(--fs-3xs);text-transform:uppercase;letter-spacing:.14em;color:var(--ink-45)}
+.result-row-title{font-weight:600;color:var(--ink)}
+.result-row-sub{font-size:var(--fs-sm);color:var(--ink-66)}
+.result-row-note{font-size:var(--fs-xs);color:var(--ink-45);line-height:1.45;margin-top:3px}
+.hallmarks-output .caveats{
+  margin-top:20px;padding-top:16px;border-top:1px dashed var(--line-strong);
+  font-size:var(--fs-sm);color:var(--ink-45);
+}
+.hallmarks-output .caveats strong{color:var(--ink)}
+
+/* ---------- the four office pages ---------- */
+.city-link-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px}
+.city-link{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  padding:20px;box-shadow:var(--neu-soft);color:var(--ink);font-weight:600;
+  text-decoration:none!important;transition:border-color .15s ease,color .15s ease,transform .15s ease;
+}
+.city-link:hover{border-color:var(--action);color:var(--action)}
+.city-link:active{transform:translateY(1px)}
+.city-link small{
+  display:block;font-family:var(--font-mono);font-weight:400;font-size:var(--fs-2xs);
+  color:var(--ink-45);margin-top:6px;
+}
+
+/* ---------- punch lightbox ---------- */
+.img-lightbox{
+  position:fixed;inset:0;background:rgba(0,0,0,.85);
+  display:flex;align-items:center;justify-content:center;z-index:9999;cursor:zoom-out;
+}
+.img-lightbox[hidden]{display:none}
+.img-lightbox img{
+  background:var(--plate);padding:24px;border-radius:var(--radius-lg);
+  max-width:min(90vw,520px);max-height:90vh;image-rendering:-webkit-optimize-contrast;
+}
+.img-lightbox-caption{
+  position:absolute;bottom:20px;left:50%;transform:translateX(-50%);
+  color:#fff;font-family:var(--font-mono);font-size:var(--fs-2xs);
+  background:rgba(0,0,0,.6);padding:8px 14px;border-radius:9px;
+}
+.img-lightbox-close{
+  position:absolute;top:16px;right:16px;width:36px;height:36px;
+  background:rgba(0,0,0,.55);color:#fff;border:0;border-radius:50%;cursor:pointer;
+  font-size:1.6rem;line-height:1;display:flex;align-items:center;justify-content:center;
+}
     </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+
     <nav class="nav" aria-label="Main">
       <div class="nav-inner">
         <a class="brand" href="/">
@@ -546,306 +399,398 @@
       </div>
     </nav>
 
-    <main class="legal-page">
-        <div class="container">
-            <article class="legal-content">
-                <h1>UK Silver Hallmark Identification</h1>
-                <p class="legal-updated">Last verified: 6 May 2026</p>
+<main id="main">
 
-                <section>
-                    <p>Pick what you can see on your piece, one step at a time. The summary at the bottom updates as you go. This tool helps you read the marks; it won&rsquo;t authenticate them (forgeries exist) or identify the maker. For the exact year of an Assay Office piece, use the city-specific pages.</p>
-                    <p class="callout">
-                        <strong>Scope:</strong> this tool is built for <strong>UK silver hallmarks</strong> &mdash; the four UK Assay Offices (London, Birmingham, Sheffield, Edinburgh) plus the closed historical offices (Chester, Newcastle, Exeter, York, Glasgow). For Continental and non-European pieces we currently identify <strong>country of origin only</strong> &mdash; full date letters, maker registries, and regional variations are on the roadmap.
-                    </p>
-                </section>
+  <!-- ======================= PAGE HEAD ======================= -->
+  <header class="page-head">
+    <div class="wrap">
+      <h1>UK Silver Hallmark Identification</h1>
+      <p class="head-updated">Last verified: 6 May 2026</p>
+    </div>
+  </header>
 
-                <!-- WIZARD -->
-                <div class="wiz" id="wiz" aria-labelledby="wiz-heading">
-                    <h2 id="wiz-heading" style="margin-top:0;">Identify the marks step by step</h2>
+  <!-- ======================= INTRO ======================= -->
+  <section id="intro">
+    <div class="wrap">
+      <span class="eyebrow">Before you start</span>
+      <div class="prose">
+        <p>Pick what you can see on your piece, one step at a time. The summary at the bottom updates as you go. This tool helps you read the marks; it won&rsquo;t authenticate them (forgeries exist) or identify the maker. For the exact year of an Assay Office piece, use the city-specific pages.</p>
+        <p class="callout">
+          <strong>Scope:</strong> this tool is built for <strong>UK silver hallmarks</strong> &mdash; the four UK Assay Offices (London, Birmingham, Sheffield, Edinburgh) plus the closed historical offices (Chester, Newcastle, Exeter, York, Glasgow). For Continental and non-European pieces we currently identify <strong>country of origin only</strong> &mdash; full date letters, maker registries, and regional variations are on the roadmap.
+        </p>
+      </div>
+    </div>
+  </section>
 
-                    <!-- STEP 1 — solid vs plated gateway -->
-                    <div class="wiz-step" data-step="solid">
-                        <h3>Step 1 — Solid silver or plated?</h3>
-                        <p class="step-hint">Real UK silver carries assay marks (a tiny lion, an anchor, a leopard&rsquo;s head, etc.). Plated items are marked <strong>EPNS</strong>, <strong>A1</strong>, <strong>Sheffield Plate</strong>, or simply &ldquo;silver plate&rdquo; with no assay marks.</p>
-                        <div class="wiz-cards" data-cards="solid"></div>
-                    </div>
+  <!-- ======================= WIZARD ======================= -->
+  <section id="wizard" aria-labelledby="wiz-heading">
+    <div class="wrap">
+      <span class="eyebrow">The tool</span>
+      <h2 class="section-title" id="wiz-heading">Identify the marks step by step</h2>
 
-                    <!-- STEP 2 — standard mark (purity) -->
-                    <div class="wiz-step is-hidden" data-step="standard">
-                        <h3>Step 2 — Standard mark (purity)</h3>
-                        <p class="step-hint">The standard mark tells you the metal and how pure it is. Pick whichever shape or number you can see on your piece.</p>
-                        <div class="wiz-cards" data-cards="standard"></div>
-                    </div>
+      <div class="wiz" id="wiz">
 
-                    <!-- STEP 3 — assay office (town mark) -->
-                    <div class="wiz-step is-hidden" data-step="town">
-                        <h3>Step 3 — Assay Office (town mark)</h3>
-                        <p class="step-hint">The town where the piece was tested and struck. Common: anchor (Birmingham), leopard&rsquo;s head (London), rose or crown (Sheffield), three-towered castle (Edinburgh).</p>
-                        <div class="wiz-cards" data-cards="town"></div>
-                    </div>
-
-                    <!-- STEP 4 — duty mark (optional) -->
-                    <div class="wiz-step is-hidden" data-step="duty">
-                        <h3>Step 4 — Sovereign&rsquo;s head (duty mark) <span style="font-weight:normal;color:#888;font-size:0.85em;">— optional</span></h3>
-                        <p class="step-hint">Only present 1784–1890. A monarch&rsquo;s profile inside an oval. Skip if your piece doesn&rsquo;t have one.</p>
-                        <div class="wiz-cards" data-cards="duty"></div>
-                    </div>
-
-                    <!-- STEP 5 — commemorative (optional) -->
-                    <div class="wiz-step is-hidden" data-step="commemorative">
-                        <h3>Step 5 — Commemorative mark <span style="font-weight:normal;color:#888;font-size:0.85em;">— optional</span></h3>
-                        <p class="step-hint">An additional voluntary mark for specific royal or national events. Skip if not present.</p>
-                        <div class="wiz-cards" data-cards="commemorative"></div>
-                    </div>
-
-                    <!-- STEP 6 — date letter cycle picker -->
-                    <div class="wiz-step is-hidden" data-step="cycle">
-                        <h3>Step 6 — Date letter cycle <span style="font-weight:normal;color:#888;font-size:0.85em;">— pick the matching font / shield</span></h3>
-                        <p class="step-hint">Each Assay Office ran its own date letter cycle every 20–25 years, with a different font and shield shape. Match your piece&rsquo;s overall font style and shield outline to one of the cycle thumbnails.</p>
-                        <div class="wiz-cards wiz-cards-cycles" data-cards="cycle"></div>
-                    </div>
-
-                    <!-- STEP 7 — date letter within selected cycle -->
-                    <div class="wiz-step is-hidden" data-step="dateletter">
-                        <h3>Step 7 — Date letter <span style="font-weight:normal;color:#888;font-size:0.85em;">— pin down the exact year</span></h3>
-                        <p class="step-hint">Pick the letter that matches the one stamped on your piece. The year drops out exactly. Compare the glyph image carefully &mdash; same letter in different cycles can differ in font, case (upper/lower), and shield shape.</p>
-                        <div class="wiz-cards wiz-cards-letters" data-cards="dateletter"></div>
-                    </div>
-                </div>
-
-                <!-- LIVE OUTPUT -->
-                <div class="hallmarks-output" id="output" aria-live="polite" aria-atomic="true">
-                    <div class="hallmarks-output-head">
-                        <h3>Summary</h3>
-                        <div class="hallmarks-actions" id="hallmarks-actions" hidden>
-                            <button type="button" class="btn-action" id="copy-result">Copy text</button>
-                            <button type="button" class="btn-action btn-action-primary" id="download-result-img">Download image</button>
-                        </div>
-                    </div>
-                    <div class="verdict" id="verdict">Make selections in the wizard above to see your summary.</div>
-                    <div id="details" class="result-rows"></div>
-                    <div class="caveats" id="caveats"></div>
-                </div>
-
-                <section>
-                    <h2>For the exact year — use the city-specific pages</h2>
-                    <p>Date letter cycles differ between Assay Offices, so they live on dedicated pages. Pick the office that matches the town mark on your piece:</p>
-                    <div class="city-link-grid">
-                        <a class="city-link" href="silver-hallmarks-london.html">London <small>Leopard&rsquo;s head — 1478–present</small></a>
-                        <a class="city-link" href="silver-hallmarks-birmingham.html">Birmingham <small>Anchor — 1773–present</small></a>
-                        <a class="city-link" href="silver-hallmarks-sheffield.html">Sheffield <small>Crown / Yorkshire Rose — 1773–present</small></a>
-                        <a class="city-link" href="silver-hallmarks-edinburgh.html">Edinburgh <small>Three-towered castle — 1457–present</small></a>
-                    </div>
-                </section>
-                <style>
-                    .city-link-grid {
-                        display: grid;
-                        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-                        gap: 0.6rem;
-                        margin: 1rem 0 1.5rem 0;
-                    }
-                    .city-link, .city-link:link, .city-link:visited, .city-link:hover {
-                        background: var(--bg-card);
-                        border: 1px solid var(--border-default);
-                        border-radius: var(--radius-sm);
-                        padding: 0.85rem 1rem;
-                        text-decoration: none !important;
-                        color: var(--text-primary);
-                        font-weight: 600;
-                        transition: border-color var(--transition-fast), background var(--transition-fast);
-                    }
-                    .city-link:hover { background: var(--bg-card-hover); border-color: var(--border-hover); }
-                    .city-link small { display: block; font-weight: 400; color: var(--text-tertiary); margin-top: 0.2rem; font-size: 0.82rem; text-decoration: none; }
-                </style>
-
-                <section>
-                    <h2>What does 925 mean on silver?</h2>
-                    <p><strong>925 means sterling silver</strong> — 92.5% pure silver, 7.5% other metal (typically copper for hardness). It&rsquo;s the international standard fineness for solid silver and the most common mark you&rsquo;ll see on a UK piece.</p>
-                    <p>Where 925 appears tells you something about the piece:</p>
-                    <ul>
-                        <li><strong>925 alongside the Lion Passant + a town mark</strong> &mdash; UK-assayed sterling silver. The 925 number is a modern numerical reading of the same purity, applied since the 1973 Hallmarking Act and made compulsory under the 1999 amendments.</li>
-                        <li><strong>925 alone, no pictorial assay marks</strong> &mdash; usually modern jewellery, often imported. Still likely real sterling, but not UK-assayed.</li>
-                        <li><strong>&ldquo;.925&rdquo; or &ldquo;Sterling 925&rdquo;</strong> &mdash; common on US and Mexican silver. Different jurisdiction, same fineness.</li>
-                        <li><strong>925 stamped onto a clearly-plated item</strong> &mdash; should not happen and usually indicates a fake. Plated items are stamped EPNS, A1, or similar; not 925.</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Silver plate vs solid silver: how to tell them apart</h2>
-                    <p>Silver-plated items are base metal (often copper alloy or nickel silver) with a thin layer of silver bonded on top. They look very similar to solid silver but are worth a small fraction. The marks tell you which is which.</p>
-                    <h3>Solid silver carries assay marks</h3>
-                    <ul>
-                        <li>A standard mark (Lion Passant, Britannia figure, or 925)</li>
-                        <li>A town mark (anchor, leopard&rsquo;s head, rose, etc.)</li>
-                        <li>Usually a date letter and a maker&rsquo;s mark</li>
-                    </ul>
-                    <h3>Silver plate carries plate-specific marks instead</h3>
-                    <ul>
-                        <li><strong>EPNS</strong> &mdash; Electro-Plated Nickel Silver. The base is nickel silver (a copper-nickel-zinc alloy with no actual silver), then electroplated.</li>
-                        <li><strong>EPBM</strong> &mdash; Electro-Plated Britannia Metal. Base is Britannia metal (a tin alloy), then electroplated.</li>
-                        <li><strong>A1</strong> &mdash; a plate-quality grade meaning &ldquo;heavily plated&rdquo;. <em>Not</em> a hallmark and not a sign of solid silver.</li>
-                        <li><strong>Sheffield Plate</strong> &mdash; older fused-plate technique (silver fused to copper), pre-electroplating. Antique and collectible in its own right, but still not solid silver.</li>
-                        <li><strong>&ldquo;Silver Plate&rdquo;, &ldquo;Silver on Copper&rdquo;, &ldquo;Quadruple Plate&rdquo;</strong> &mdash; explicit plate descriptions in plain English.</li>
-                    </ul>
-                    <p><strong>Quick rule:</strong> if you see EPNS, A1, or any wording with the word &ldquo;plate&rdquo;, it&rsquo;s plated. If you see a Lion Passant + a town mark, it&rsquo;s solid silver. If you see only 925 and nothing else, it&rsquo;s probably solid sterling but not UK-assayed.</p>
-                </section>
-
-                <section>
-                    <h2>Rare UK silver hallmarks worth knowing</h2>
-                    <p>Most UK silver you&rsquo;ll come across at car boots, charity shops, and estate sales is London or Birmingham, plus modern Sheffield. The rarer marks come from Assay Offices that closed or from very early periods — those pieces command a premium with collectors.</p>
-                    <h3>Closed Assay Office marks (collector premium)</h3>
-                    <ul>
-                        <li><strong>York</strong> &mdash; five lions on a cross. Office closed 1858. Pieces are uncommon.</li>
-                        <li><strong>Newcastle</strong> &mdash; three castles. Office closed 1884. Particularly sought after for Georgian pieces.</li>
-                        <li><strong>Exeter</strong> &mdash; three-towered castle (visually similar to Edinburgh&rsquo;s, but English). Closed 1883.</li>
-                        <li><strong>Chester</strong> &mdash; three wheat-sheaves and a sword. Closed 1962. Popular with Edwardian collectors.</li>
-                        <li><strong>Glasgow</strong> &mdash; tree, fish, and bell (from the city&rsquo;s coat of arms). Closed 1964. Scottish silver from this office is collectable.</li>
-                    </ul>
-                    <h3>Early London marks</h3>
-                    <ul>
-                        <li><strong>Pre-1478 uncrowned Leopard&rsquo;s Head</strong> &mdash; the original London mark from 1300 onwards, before the crown was added in 1478. Pieces are extremely rare and usually museum-grade.</li>
-                        <li><strong>1697–1720 compulsory Britannia silver</strong> &mdash; for those years all English silver was 958 fineness, marked with the Britannia figure and a Lion&rsquo;s Head Erased. After 1720 sterling returned and Britannia became optional.</li>
-                    </ul>
-                    <h3>Other unusual marks</h3>
-                    <ul>
-                        <li><strong>Foreign import marks</strong> &mdash; UK-assayed imported silver since 1904 carries a different town-mark variant for each office (the marks are marked &ldquo;F&rdquo; or have alternate shapes). Lower demand than domestic marks.</li>
-                        <li><strong>Commemorative marks</strong> &mdash; Silver Jubilee 1935, Coronation 1953, Silver Jubilee 1977, Millennium 2000, Diamond Jubilee 2012, Platinum Jubilee 2022, Charles III Coronation 2023. Voluntary, but they pin the date to a specific year.</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Continental silver: 800, 833, 900, 950 marks</h2>
-                    <p>If you flip pieces from car boots, charity shops, or France/Belgium sourcing trips, you&rsquo;ll see numerical marks that aren&rsquo;t UK sterling 925. They&rsquo;re still real silver, just at a different fineness, recognised under the International Convention on Hallmarks.</p>
-                    <ul>
-                        <li><strong>800</strong> &mdash; 80% silver. Common on German <em>Reichssilber</em> (often with a half-moon and crown stamp) and Italian Continental pieces.</li>
-                        <li><strong>833</strong> &mdash; 83.3% silver. Common on Portuguese, Scandinavian (Norwegian, Swedish, Danish) and Dutch silver.</li>
-                        <li><strong>900</strong> &mdash; 90% silver. Russian, Eastern European, and historical &ldquo;coin silver&rdquo; pieces (silver coins melted down for tableware).</li>
-                        <li><strong>950</strong> &mdash; 95% silver, the French standard (&ldquo;Premier Titre&rdquo;). French pieces from 1838 onwards usually carry an additional Minerva head punch alongside the 950.</li>
-                    </ul>
-                    <p>All four are below or above UK sterling (925), so cannot legally be sold as &ldquo;sterling silver&rdquo; in the UK without qualification &mdash; describe them honestly as &ldquo;Continental silver, 800 fineness&rdquo; etc.</p>
-
-                    <h3>&ldquo;German silver&rdquo; is not silver</h3>
-                    <p>This trips up resellers regularly. <strong>&ldquo;German silver&rdquo;</strong> &mdash; also called <strong>nickel silver</strong>, <strong>Alpaca</strong>, or <strong>Argentan</strong> &mdash; contains <em>no silver at all</em>. It&rsquo;s an alloy of copper, nickel, and zinc that resembles silver in colour. The name is a centuries-old misnomer.</p>
-                    <p>Quick rule: if a piece is marked &ldquo;German silver&rdquo;, &ldquo;Nickel silver&rdquo;, or &ldquo;Alpaca&rdquo; <em>and</em> has no fineness number, it&rsquo;s base metal. Genuine German solid silver carries a fineness mark (usually 800), often accompanied by a half-moon and crown.</p>
-                </section>
-
-                <section>
-                    <h2>Silver marks from outside Europe — country of origin</h2>
-                    <p class="callout">
-                        <strong>What we cover here:</strong> country of origin only. We&rsquo;re working on adding date letters, maker registries, and regional variations for the systems below &mdash; right now this section just helps you pin down <em>which country</em> a piece is from. For full identification, follow the references at the bottom of each entry.
-                    </p>
-                    <p>Pieces from outside the UK and Continental Europe come up regularly at car boots and estate sales. They use different mark systems &mdash; this is a starter, not a complete reference.</p>
-                    <ul>
-                        <li><strong>Mexican silver</strong> &mdash; usually marked &ldquo;925&rdquo; or &ldquo;Sterling 925&rdquo; with a small letter-and-number assay code (e.g. <em>TL-44</em>) introduced in 1979 to identify the maker. Pre-1979 Mexican silver often carries an &ldquo;eagle assay mark&rdquo; with a number. Taxco silversmiths use specific maker punches.</li>
-                        <li><strong>Russian silver</strong> &mdash; pre-1899: city mark + assay-master initials + standard (84 zolotnik = 875/1000, 88 = 916, 91 = 947). 1899&ndash;1908: Cyrillic woman&rsquo;s head (kokoshnik) facing left. Post-1908: kokoshnik facing right. Soviet era: hammer and sickle. Fabergé pieces are heavily faked.</li>
-                        <li><strong>Persian / Iranian silver</strong> &mdash; often unmarked or with stylised Arabic/Farsi script and figural punches. Many pieces test ~875&ndash;900 fineness via acid kit. No standardised hallmark system pre-1970s.</li>
-                        <li><strong>Chinese silver</strong> &mdash; Export silver (1700s&ndash;1940s) often marked with European-looking pseudo-marks plus a Chinese maker character. Common stamps: &ldquo;CHINA&rdquo;, &ldquo;Made in China&rdquo;, retailer name (Wang Hing, Hung Chong) plus Chinese characters. Modern Chinese silver: numeric fineness (S925, 990).</li>
-                        <li><strong>Indian silver</strong> &mdash; rarely hallmarked historically; modern pieces use a BIS hallmark (since 2000) with a triangle, fineness, jeweller&rsquo;s mark, and date letter.</li>
-                        <li><strong>US silver</strong> &mdash; no national hallmarking system. Sterling silver carries &ldquo;STERLING&rdquo; or &ldquo;925&rdquo;. Coin silver (pre-1860) typically tests 900 fineness, marked &ldquo;COIN&rdquo;, &ldquo;C&rdquo;, &ldquo;PURE COIN&rdquo;, or simply with the maker&rsquo;s name. Major makers: Gorham, Tiffany, Reed &amp; Barton, Towle, Wallace, Kirk &amp; Son.</li>
-                    </ul>
-                    <p>For full identification of non-UK pieces, cross-reference with the relevant national archive or a specialist reference (e.g. <em>Marks of American Silversmiths</em> by Dorothy T. Rainwater, <em>The Encyclopedia of Russian Silversmiths</em>). If there&rsquo;s a country we should add deeper coverage for, <a href="mailto:support@flipperhelper.app">let us know</a>.</p>
-                </section>
-
-                <section>
-                    <h2>Quick at-home tests for real silver</h2>
-                    <p>If the marks are worn, missing, or you suspect a fake, a few simple tests narrow it down before you spend money on professional appraisal. None of these is conclusive on its own &mdash; combine at least two.</p>
-                    <ul>
-                        <li><strong>Magnet test</strong> &mdash; silver is non-magnetic. A strong neodymium magnet should slide off a flat silver surface and not stick. If it sticks firmly, the piece is iron, steel, or a magnetic alloy &mdash; not silver. (Caveat: silver plate <em>over</em> a non-magnetic core also passes this test.)</li>
-                        <li><strong>Ice test</strong> &mdash; silver has the highest thermal conductivity of any metal. An ice cube placed on solid silver melts visibly faster than on most other metals. Best for thick flat pieces.</li>
-                        <li><strong>Ring test</strong> &mdash; a sterling coin or piece tapped against a hard surface produces a clear, ringing tone that lasts 1&ndash;2 seconds. Plated and base metals produce a dull thud.</li>
-                        <li><strong>Smell test</strong> &mdash; real silver has no strong odour. Cheap silver-plate over copper alloys often has a faintly metallic or sour smell when warmed in the hand.</li>
-                        <li><strong>Acid test kit</strong> &mdash; a small dropper bottle of nitric acid, available for &pound;10&ndash;20 from jewellery suppliers. A drop on an inconspicuous spot of solid silver turns creamy white; on plate over copper it turns green; on base metal it foams. Reliable but invasive (small mark left).</li>
-                        <li><strong>XRF scan</strong> &mdash; non-destructive, gives exact fineness. Available at scrap yards, some Assay Offices, and pawnbrokers. The gold standard if you have a piece to verify.</li>
-                    </ul>
-                    <p>For ambiguous high-value pieces, get an Assay Office or auctioneer to examine before scrapping or selling.</p>
-                </section>
-
-                <section>
-                    <h2>What if the marks are worn or missing?</h2>
-                    <p>Worn, partial, or absent marks come up constantly. Some pragmatic approaches:</p>
-                    <ul>
-                        <li><strong>Photograph in side-light against dark background.</strong> Hallmarks are punched into the metal so they cast tiny shadows. A phone torch held at a steep angle (~20&deg; from the surface) makes faint marks legible that look invisible head-on.</li>
-                        <li><strong>Use a 10&times; jeweller&rsquo;s loupe.</strong> Worn marks usually have at least the outline of the original shape preserved. The shield around the date letter is often the last thing to wear away.</li>
-                        <li><strong>Check uncommon spots.</strong> Marks aren&rsquo;t always on the obvious flat surface. Try: the underside of feet, inside the foot rim, the rim&rsquo;s outer edge, on the handle near the join, on the lid&rsquo;s underside.</li>
-                        <li><strong>Pieces with no marks at all.</strong> Could be: pre-1300 (rare), under-weight (UK exemption is &lt;7.78g for silver), illegally unmarked, deliberately unmarked artist pieces, or non-silver mistaken for silver. Run a magnet + acid + XRF if you think it&rsquo;s real.</li>
-                        <li><strong>Crowdsourced ID.</strong> Communities like r/Silverbugs, r/Antiques, and r/whatsthisworth resolve unknown marks well, especially with clear macro photos.</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Should I scrap, sell, or keep?</h2>
-                    <p>This is the most asked question on r/Silverbugs and r/Antiques after &ldquo;is it real?&rdquo;. Quick decision framework:</p>
-                    <ul>
-                        <li><strong>Keep / sell as a piece</strong> if any of: it has a desirable maker (named silversmith, recognisable retailer), it&rsquo;s pre-1900, the form is collected (Georgian flatware, Edwardian tea services, Art Deco jewellery), or it&rsquo;s in good condition and complete (no missing parts).</li>
-                        <li><strong>Scrap (sell to a refiner)</strong> if it&rsquo;s heavily damaged, modern (post-1970) machine-made flatware, no maker premium, broken with missing parts, or it&rsquo;s been polished to the point of losing detail. Scrap price = weight &times; fineness &times; spot price &times; refiner discount (~85&ndash;92% of melt).</li>
-                        <li><strong>Don&rsquo;t over-polish before selling.</strong> Original patina can add value; aggressive polishing removes detail and signals &ldquo;trying to flip&rdquo; to dealers.</li>
-                        <li><strong>Test before deciding.</strong> If you can&rsquo;t confirm it&rsquo;s solid silver via marks + a quick test, get an XRF scan before scrapping. Plated pieces are worth almost nothing as scrap; misidentifying a plated piece as solid is a common mistake.</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>How to read a UK silver hallmark — order and method</h2>
-                    <p>Marks are usually struck close together, often four to six small punches in a row on a flat or hidden surface (the foot of a cup, the underside of a tray, the rim of a bowl). The order they appear in is not fixed, but the typical reading order from the maker&rsquo;s perspective is:</p>
-                    <ol>
-                        <li><strong>Maker&rsquo;s mark</strong> first &mdash; usually initials, sometimes with a symbol or shaped border.</li>
-                        <li><strong>Standard mark</strong> &mdash; the Lion Passant or Britannia figure.</li>
-                        <li><strong>Town mark</strong> &mdash; the Assay Office.</li>
-                        <li><strong>Date letter</strong> &mdash; in a shaped shield.</li>
-                        <li><strong>Optional duty mark</strong> &mdash; sovereign&rsquo;s head, 1784–1890 only.</li>
-                        <li><strong>Optional commemorative mark</strong>.</li>
-                    </ol>
-                    <p>Tips:</p>
-                    <ul>
-                        <li>Use a 10× jeweller&rsquo;s loupe. Marks are usually 1–3 mm tall and worn pieces hide them.</li>
-                        <li>Photograph the marks against a dark background with bright side-lighting. The shadows cast by the punches make them readable.</li>
-                        <li>Compare against the Assay Office&rsquo;s published charts — links in the Resources section below.</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>How the four hallmarks fit together</h2>
-                    <ol>
-                        <li><strong>Standard mark</strong> &mdash; what metal and how pure.</li>
-                        <li><strong>Assay Office mark</strong> &mdash; where it was tested.</li>
-                        <li><strong>Date letter</strong> &mdash; when. Office-specific cycle.</li>
-                        <li><strong>Sponsor&rsquo;s or Maker&rsquo;s mark</strong> &mdash; who registered it.</li>
-                    </ol>
-                    <p>The duty mark and commemorative marks are <em>additional</em>, sitting alongside the four core marks to help narrow the date.</p>
-                </section>
-
-                <section>
-                    <h2>What this tool can and cannot do</h2>
-                    <p><strong>What it does:</strong> reads the marks you select and tells you the metal, the assay office, and the narrowest date range possible without the date letter.</p>
-                    <p><strong>What it doesn&rsquo;t:</strong></p>
-                    <ul>
-                        <li>It cannot identify the <em>exact year</em> &mdash; that needs the date letter. Use the city pages.</li>
-                        <li>It cannot identify the <em>maker</em>. Maker&rsquo;s marks are registered with each Assay Office; matching needs the office&rsquo;s register.</li>
-                        <li>It cannot tell you if marks are <em>genuine</em>. Forgeries exist, especially on plated items struck to look like solid silver.</li>
-                        <li>It cannot give a <em>valuation</em>.</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Resources for date letters and maker&rsquo;s marks</h2>
-                    <ul>
-                        <li>The Assay Office London</li>
-                        <li>Birmingham Assay Office &mdash; <a href="https://www.theassayoffice.co.uk/" target="_blank" rel="noopener">theassayoffice.co.uk</a></li>
-                        <li>The Sheffield Assay Office &mdash; <a href="https://www.assayoffice.co.uk/" target="_blank" rel="noopener">assayoffice.co.uk</a></li>
-                        <li>Edinburgh Assay Office &mdash; <a href="https://www.edinburghassayoffice.co.uk/" target="_blank" rel="noopener">edinburghassayoffice.co.uk</a></li>
-                        <li>Goldsmiths&rsquo; Company &mdash; <a href="https://www.thegoldsmiths.co.uk/" target="_blank" rel="noopener">thegoldsmiths.co.uk</a> (compulsory hallmarking authority)</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Track silver flips with FlipperHelper</h2>
-                    <p>If you flip silver, FlipperHelper logs each piece with photos, tracks listings across eBay, Vinted, and 14 other platforms, and shows real profit per item after every expense. Free on the App Store.</p>
-                    <p style="text-align:center; margin-top:1.5em;">
-                        <span class="blog-store-links"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download FlipperHelper Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get FlipperHelper Free on Google Play</a></span>
-                    </p>
-                </section>
-            </article>
+        <!-- STEP 1 — solid vs plated gateway -->
+        <div class="wiz-step" data-step="solid">
+          <h3>Step 1 &mdash; Solid silver or plated?</h3>
+          <p class="step-hint">Real UK silver carries assay marks (a tiny lion, an anchor, a leopard&rsquo;s head, etc.). Plated items are marked <strong>EPNS</strong>, <strong>A1</strong>, <strong>Sheffield Plate</strong>, or simply &ldquo;silver plate&rdquo; with no assay marks.</p>
+          <div class="wiz-cards" data-cards="solid"></div>
         </div>
-    </main>
+
+        <!-- STEP 2 — standard mark (purity) -->
+        <div class="wiz-step is-hidden" data-step="standard">
+          <h3>Step 2 &mdash; Standard mark (purity)</h3>
+          <p class="step-hint">The standard mark tells you the metal and how pure it is. Pick whichever shape or number you can see on your piece.</p>
+          <div class="wiz-cards" data-cards="standard"></div>
+        </div>
+
+        <!-- STEP 3 — assay office (town mark) -->
+        <div class="wiz-step is-hidden" data-step="town">
+          <h3>Step 3 &mdash; Assay Office (town mark)</h3>
+          <p class="step-hint">The town where the piece was tested and struck. Common: anchor (Birmingham), leopard&rsquo;s head (London), rose or crown (Sheffield), three-towered castle (Edinburgh).</p>
+          <div class="wiz-cards" data-cards="town"></div>
+        </div>
+
+        <!-- STEP 4 — duty mark (optional) -->
+        <div class="wiz-step is-hidden" data-step="duty">
+          <h3>Step 4 &mdash; Sovereign&rsquo;s head (duty mark) <span class="opt">&mdash; optional</span></h3>
+          <p class="step-hint">Only present 1784&ndash;1890. A monarch&rsquo;s profile inside an oval. Skip if your piece doesn&rsquo;t have one.</p>
+          <div class="wiz-cards" data-cards="duty"></div>
+        </div>
+
+        <!-- STEP 5 — commemorative (optional) -->
+        <div class="wiz-step is-hidden" data-step="commemorative">
+          <h3>Step 5 &mdash; Commemorative mark <span class="opt">&mdash; optional</span></h3>
+          <p class="step-hint">An additional voluntary mark for specific royal or national events. Skip if not present.</p>
+          <div class="wiz-cards" data-cards="commemorative"></div>
+        </div>
+
+        <!-- STEP 6 — date letter cycle picker -->
+        <div class="wiz-step is-hidden" data-step="cycle">
+          <h3>Step 6 &mdash; Date letter cycle <span class="opt">&mdash; pick the matching font / shield</span></h3>
+          <p class="step-hint">Each Assay Office ran its own date letter cycle every 20&ndash;25 years, with a different font and shield shape. Match your piece&rsquo;s overall font style and shield outline to one of the cycle thumbnails.</p>
+          <div class="wiz-cards wiz-cards-cycles" data-cards="cycle"></div>
+        </div>
+
+        <!-- STEP 7 — date letter within selected cycle -->
+        <div class="wiz-step is-hidden" data-step="dateletter">
+          <h3>Step 7 &mdash; Date letter <span class="opt">&mdash; pin down the exact year</span></h3>
+          <p class="step-hint">Pick the letter that matches the one stamped on your piece. The year drops out exactly. Compare the glyph image carefully &mdash; same letter in different cycles can differ in font, case (upper/lower), and shield shape.</p>
+          <div class="wiz-cards wiz-cards-letters" data-cards="dateletter"></div>
+        </div>
+      </div>
+
+      <!-- LIVE OUTPUT -->
+      <div class="hallmarks-output" id="output" aria-live="polite" aria-atomic="true">
+        <div class="hallmarks-output-head">
+          <h3>Summary</h3>
+          <div class="hallmarks-actions" id="hallmarks-actions" hidden>
+            <button type="button" class="btn-action" id="copy-result">Copy text</button>
+            <button type="button" class="btn-action btn-action-primary" id="download-result-img">Download image</button>
+          </div>
+        </div>
+        <div class="verdict" id="verdict">Make selections in the wizard above to see your summary.</div>
+        <div id="details" class="result-rows"></div>
+        <div class="caveats" id="caveats"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><hr class="tear"></div>
+
+  <!-- ======================= CITY PAGES ======================= -->
+  <section id="cities" aria-labelledby="cities-title">
+    <div class="wrap">
+      <span class="eyebrow">Date letters</span>
+      <h2 class="section-title" id="cities-title">For the exact year &mdash; use the city-specific pages</h2>
+      <div class="prose">
+        <p>Date letter cycles differ between Assay Offices, so they live on dedicated pages. Pick the office that matches the town mark on your piece:</p>
+      </div>
+      <div class="city-link-grid">
+        <a class="city-link" href="silver-hallmarks-london.html">London <small>Leopard&rsquo;s head — 1478–present</small></a>
+        <a class="city-link" href="silver-hallmarks-birmingham.html">Birmingham <small>Anchor — 1773–present</small></a>
+        <a class="city-link" href="silver-hallmarks-sheffield.html">Sheffield <small>Crown / Yorkshire Rose — 1773–present</small></a>
+        <a class="city-link" href="silver-hallmarks-edinburgh.html">Edinburgh <small>Three-towered castle — 1457–present</small></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 925 ======================= -->
+  <section id="what-is-925" aria-labelledby="what-is-925-title">
+    <div class="wrap">
+      <span class="eyebrow">Purity</span>
+      <h2 class="section-title" id="what-is-925-title">What does 925 mean on silver?</h2>
+      <div class="prose">
+        <p><strong>925 means sterling silver</strong> — 92.5% pure silver, 7.5% other metal (typically copper for hardness). It&rsquo;s the international standard fineness for solid silver and the most common mark you&rsquo;ll see on a UK piece.</p>
+        <p>Where 925 appears tells you something about the piece:</p>
+      </div>
+      <ul class="answers">
+        <li><strong>925 alongside the Lion Passant + a town mark</strong> &mdash; UK-assayed sterling silver. The 925 number is a modern numerical reading of the same purity, applied since the 1973 Hallmarking Act and made compulsory under the 1999 amendments.</li>
+        <li><strong>925 alone, no pictorial assay marks</strong> &mdash; usually modern jewellery, often imported. Still likely real sterling, but not UK-assayed.</li>
+        <li><strong>&ldquo;.925&rdquo; or &ldquo;Sterling 925&rdquo;</strong> &mdash; common on US and Mexican silver. Different jurisdiction, same fineness.</li>
+        <li><strong>925 stamped onto a clearly-plated item</strong> &mdash; should not happen and usually indicates a fake. Plated items are stamped EPNS, A1, or similar; not 925.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================= PLATE VS SOLID ======================= -->
+  <section class="story" id="plate-vs-solid" aria-labelledby="plate-vs-solid-title">
+    <div class="wrap">
+      <span class="eyebrow">Plate vs solid</span>
+      <h2 class="section-title" id="plate-vs-solid-title">Silver plate vs solid silver: how to tell them apart</h2>
+      <div class="prose">
+        <p>Silver-plated items are base metal (often copper alloy or nickel silver) with a thin layer of silver bonded on top. They look very similar to solid silver but are worth a small fraction. The marks tell you which is which.</p>
+      </div>
+      <h3 class="sub-title">Solid silver carries assay marks</h3>
+      <ul class="answers">
+        <li>A standard mark (Lion Passant, Britannia figure, or 925)</li>
+        <li>A town mark (anchor, leopard&rsquo;s head, rose, etc.)</li>
+        <li>Usually a date letter and a maker&rsquo;s mark</li>
+      </ul>
+      <h3 class="sub-title">Silver plate carries plate-specific marks instead</h3>
+      <ul class="answers">
+        <li><strong>EPNS</strong> &mdash; Electro-Plated Nickel Silver. The base is nickel silver (a copper-nickel-zinc alloy with no actual silver), then electroplated.</li>
+        <li><strong>EPBM</strong> &mdash; Electro-Plated Britannia Metal. Base is Britannia metal (a tin alloy), then electroplated.</li>
+        <li><strong>A1</strong> &mdash; a plate-quality grade meaning &ldquo;heavily plated&rdquo;. <em>Not</em> a hallmark and not a sign of solid silver.</li>
+        <li><strong>Sheffield Plate</strong> &mdash; older fused-plate technique (silver fused to copper), pre-electroplating. Antique and collectible in its own right, but still not solid silver.</li>
+        <li><strong>&ldquo;Silver Plate&rdquo;, &ldquo;Silver on Copper&rdquo;, &ldquo;Quadruple Plate&rdquo;</strong> &mdash; explicit plate descriptions in plain English.</li>
+      </ul>
+      <p class="callout"><strong>Quick rule:</strong> if you see EPNS, A1, or any wording with the word &ldquo;plate&rdquo;, it&rsquo;s plated. If you see a Lion Passant + a town mark, it&rsquo;s solid silver. If you see only 925 and nothing else, it&rsquo;s probably solid sterling but not UK-assayed.</p>
+    </div>
+  </section>
+
+  <!-- ======================= RARE MARKS ======================= -->
+  <section id="rare-marks" aria-labelledby="rare-marks-title">
+    <div class="wrap">
+      <span class="eyebrow">Rarity</span>
+      <h2 class="section-title" id="rare-marks-title">Rare UK silver hallmarks worth knowing</h2>
+      <div class="prose">
+        <p>Most UK silver you&rsquo;ll come across at car boots, charity shops, and estate sales is London or Birmingham, plus modern Sheffield. The rarer marks come from Assay Offices that closed or from very early periods — those pieces command a premium with collectors.</p>
+      </div>
+      <h3 class="sub-title">Closed Assay Office marks (collector premium)</h3>
+      <ul class="answers">
+        <li><strong>York</strong> &mdash; five lions on a cross. Office closed 1858. Pieces are uncommon.</li>
+        <li><strong>Newcastle</strong> &mdash; three castles. Office closed 1884. Particularly sought after for Georgian pieces.</li>
+        <li><strong>Exeter</strong> &mdash; three-towered castle (visually similar to Edinburgh&rsquo;s, but English). Closed 1883.</li>
+        <li><strong>Chester</strong> &mdash; three wheat-sheaves and a sword. Closed 1962. Popular with Edwardian collectors.</li>
+        <li><strong>Glasgow</strong> &mdash; tree, fish, and bell (from the city&rsquo;s coat of arms). Closed 1964. Scottish silver from this office is collectable.</li>
+      </ul>
+      <h3 class="sub-title">Early London marks</h3>
+      <ul class="answers">
+        <li><strong>Pre-1478 uncrowned Leopard&rsquo;s Head</strong> &mdash; the original London mark from 1300 onwards, before the crown was added in 1478. Pieces are extremely rare and usually museum-grade.</li>
+        <li><strong>1697–1720 compulsory Britannia silver</strong> &mdash; for those years all English silver was 958 fineness, marked with the Britannia figure and a Lion&rsquo;s Head Erased. After 1720 sterling returned and Britannia became optional.</li>
+      </ul>
+      <h3 class="sub-title">Other unusual marks</h3>
+      <ul class="answers">
+        <li><strong>Foreign import marks</strong> &mdash; UK-assayed imported silver since 1904 carries a different town-mark variant for each office (the marks are marked &ldquo;F&rdquo; or have alternate shapes). Lower demand than domestic marks.</li>
+        <li><strong>Commemorative marks</strong> &mdash; Silver Jubilee 1935, Coronation 1953, Silver Jubilee 1977, Millennium 2000, Diamond Jubilee 2012, Platinum Jubilee 2022, Charles III Coronation 2023. Voluntary, but they pin the date to a specific year.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="wrap"><hr class="tear"></div>
+
+  <!-- ======================= CONTINENTAL ======================= -->
+  <section id="continental" aria-labelledby="continental-title">
+    <div class="wrap">
+      <span class="eyebrow">Continental</span>
+      <h2 class="section-title" id="continental-title">Continental silver: 800, 833, 900, 950 marks</h2>
+      <div class="prose">
+        <p>If you flip pieces from car boots, charity shops, or France/Belgium sourcing trips, you&rsquo;ll see numerical marks that aren&rsquo;t UK sterling 925. They&rsquo;re still real silver, just at a different fineness, recognised under the International Convention on Hallmarks.</p>
+      </div>
+      <ul class="answers">
+        <li><strong>800</strong> &mdash; 80% silver. Common on German <em>Reichssilber</em> (often with a half-moon and crown stamp) and Italian Continental pieces.</li>
+        <li><strong>833</strong> &mdash; 83.3% silver. Common on Portuguese, Scandinavian (Norwegian, Swedish, Danish) and Dutch silver.</li>
+        <li><strong>900</strong> &mdash; 90% silver. Russian, Eastern European, and historical &ldquo;coin silver&rdquo; pieces (silver coins melted down for tableware).</li>
+        <li><strong>950</strong> &mdash; 95% silver, the French standard (&ldquo;Premier Titre&rdquo;). French pieces from 1838 onwards usually carry an additional Minerva head punch alongside the 950.</li>
+      </ul>
+      <div class="prose">
+        <p>All four are below or above UK sterling (925), so cannot legally be sold as &ldquo;sterling silver&rdquo; in the UK without qualification &mdash; describe them honestly as &ldquo;Continental silver, 800 fineness&rdquo; etc.</p>
+      </div>
+      <h3 class="sub-title">&ldquo;German silver&rdquo; is not silver</h3>
+      <div class="prose">
+        <p>This trips up resellers regularly. <strong>&ldquo;German silver&rdquo;</strong> &mdash; also called <strong>nickel silver</strong>, <strong>Alpaca</strong>, or <strong>Argentan</strong> &mdash; contains <em>no silver at all</em>. It&rsquo;s an alloy of copper, nickel, and zinc that resembles silver in colour. The name is a centuries-old misnomer.</p>
+      </div>
+      <p class="callout">Quick rule: if a piece is marked &ldquo;German silver&rdquo;, &ldquo;Nickel silver&rdquo;, or &ldquo;Alpaca&rdquo; <em>and</em> has no fineness number, it&rsquo;s base metal. Genuine German solid silver carries a fineness mark (usually 800), often accompanied by a half-moon and crown.</p>
+    </div>
+  </section>
+
+  <!-- ======================= OUTSIDE EUROPE ======================= -->
+  <section id="outside-europe" aria-labelledby="outside-europe-title">
+    <div class="wrap">
+      <span class="eyebrow">Rest of the world</span>
+      <h2 class="section-title" id="outside-europe-title">Silver marks from outside Europe &mdash; country of origin</h2>
+      <p class="callout">
+        <strong>What we cover here:</strong> country of origin only. We&rsquo;re working on adding date letters, maker registries, and regional variations for the systems below &mdash; right now this section just helps you pin down <em>which country</em> a piece is from. For full identification, follow the references at the bottom of each entry.
+      </p>
+      <div class="prose">
+        <p>Pieces from outside the UK and Continental Europe come up regularly at car boots and estate sales. They use different mark systems &mdash; this is a starter, not a complete reference.</p>
+      </div>
+      <ul class="answers">
+        <li><strong>Mexican silver</strong> &mdash; usually marked &ldquo;925&rdquo; or &ldquo;Sterling 925&rdquo; with a small letter-and-number assay code (e.g. <em>TL-44</em>) introduced in 1979 to identify the maker. Pre-1979 Mexican silver often carries an &ldquo;eagle assay mark&rdquo; with a number. Taxco silversmiths use specific maker punches.</li>
+        <li><strong>Russian silver</strong> &mdash; pre-1899: city mark + assay-master initials + standard (84 zolotnik = 875/1000, 88 = 916, 91 = 947). 1899&ndash;1908: Cyrillic woman&rsquo;s head (kokoshnik) facing left. Post-1908: kokoshnik facing right. Soviet era: hammer and sickle. Fabergé pieces are heavily faked.</li>
+        <li><strong>Persian / Iranian silver</strong> &mdash; often unmarked or with stylised Arabic/Farsi script and figural punches. Many pieces test ~875&ndash;900 fineness via acid kit. No standardised hallmark system pre-1970s.</li>
+        <li><strong>Chinese silver</strong> &mdash; Export silver (1700s&ndash;1940s) often marked with European-looking pseudo-marks plus a Chinese maker character. Common stamps: &ldquo;CHINA&rdquo;, &ldquo;Made in China&rdquo;, retailer name (Wang Hing, Hung Chong) plus Chinese characters. Modern Chinese silver: numeric fineness (S925, 990).</li>
+        <li><strong>Indian silver</strong> &mdash; rarely hallmarked historically; modern pieces use a BIS hallmark (since 2000) with a triangle, fineness, jeweller&rsquo;s mark, and date letter.</li>
+        <li><strong>US silver</strong> &mdash; no national hallmarking system. Sterling silver carries &ldquo;STERLING&rdquo; or &ldquo;925&rdquo;. Coin silver (pre-1860) typically tests 900 fineness, marked &ldquo;COIN&rdquo;, &ldquo;C&rdquo;, &ldquo;PURE COIN&rdquo;, or simply with the maker&rsquo;s name. Major makers: Gorham, Tiffany, Reed &amp; Barton, Towle, Wallace, Kirk &amp; Son.</li>
+      </ul>
+      <div class="prose">
+        <p>For full identification of non-UK pieces, cross-reference with the relevant national archive or a specialist reference (e.g. <em>Marks of American Silversmiths</em> by Dorothy T. Rainwater, <em>The Encyclopedia of Russian Silversmiths</em>). If there&rsquo;s a country we should add deeper coverage for, <a href="mailto:support@flipperhelper.app">let us know</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= HOME TESTS ======================= -->
+  <section class="story" id="home-tests" aria-labelledby="home-tests-title">
+    <div class="wrap">
+      <span class="eyebrow">Testing</span>
+      <h2 class="section-title" id="home-tests-title">Quick at-home tests for real silver</h2>
+      <div class="prose">
+        <p>If the marks are worn, missing, or you suspect a fake, a few simple tests narrow it down before you spend money on professional appraisal. None of these is conclusive on its own &mdash; combine at least two.</p>
+      </div>
+      <ul class="answers">
+        <li><strong>Magnet test</strong> &mdash; silver is non-magnetic. A strong neodymium magnet should slide off a flat silver surface and not stick. If it sticks firmly, the piece is iron, steel, or a magnetic alloy &mdash; not silver. (Caveat: silver plate <em>over</em> a non-magnetic core also passes this test.)</li>
+        <li><strong>Ice test</strong> &mdash; silver has the highest thermal conductivity of any metal. An ice cube placed on solid silver melts visibly faster than on most other metals. Best for thick flat pieces.</li>
+        <li><strong>Ring test</strong> &mdash; a sterling coin or piece tapped against a hard surface produces a clear, ringing tone that lasts 1&ndash;2 seconds. Plated and base metals produce a dull thud.</li>
+        <li><strong>Smell test</strong> &mdash; real silver has no strong odour. Cheap silver-plate over copper alloys often has a faintly metallic or sour smell when warmed in the hand.</li>
+        <li><strong>Acid test kit</strong> &mdash; a small dropper bottle of nitric acid, available for &pound;10&ndash;20 from jewellery suppliers. A drop on an inconspicuous spot of solid silver turns creamy white; on plate over copper it turns green; on base metal it foams. Reliable but invasive (small mark left).</li>
+        <li><strong>XRF scan</strong> &mdash; non-destructive, gives exact fineness. Available at scrap yards, some Assay Offices, and pawnbrokers. The gold standard if you have a piece to verify.</li>
+      </ul>
+      <div class="prose">
+        <p>For ambiguous high-value pieces, get an Assay Office or auctioneer to examine before scrapping or selling.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= WORN MARKS ======================= -->
+  <section id="worn-marks" aria-labelledby="worn-marks-title">
+    <div class="wrap">
+      <span class="eyebrow">Worn marks</span>
+      <h2 class="section-title" id="worn-marks-title">What if the marks are worn or missing?</h2>
+      <div class="prose">
+        <p>Worn, partial, or absent marks come up constantly. Some pragmatic approaches:</p>
+      </div>
+      <ul class="answers">
+        <li><strong>Photograph in side-light against dark background.</strong> Hallmarks are punched into the metal so they cast tiny shadows. A phone torch held at a steep angle (~20&deg; from the surface) makes faint marks legible that look invisible head-on.</li>
+        <li><strong>Use a 10&times; jeweller&rsquo;s loupe.</strong> Worn marks usually have at least the outline of the original shape preserved. The shield around the date letter is often the last thing to wear away.</li>
+        <li><strong>Check uncommon spots.</strong> Marks aren&rsquo;t always on the obvious flat surface. Try: the underside of feet, inside the foot rim, the rim&rsquo;s outer edge, on the handle near the join, on the lid&rsquo;s underside.</li>
+        <li><strong>Pieces with no marks at all.</strong> Could be: pre-1300 (rare), under-weight (UK exemption is &lt;7.78g for silver), illegally unmarked, deliberately unmarked artist pieces, or non-silver mistaken for silver. Run a magnet + acid + XRF if you think it&rsquo;s real.</li>
+        <li><strong>Crowdsourced ID.</strong> Communities like r/Silverbugs, r/Antiques, and r/whatsthisworth resolve unknown marks well, especially with clear macro photos.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================= SCRAP OR SELL ======================= -->
+  <section id="scrap-or-sell" aria-labelledby="scrap-or-sell-title">
+    <div class="wrap">
+      <span class="eyebrow">The decision</span>
+      <h2 class="section-title" id="scrap-or-sell-title">Should I scrap, sell, or keep?</h2>
+      <div class="prose">
+        <p>This is the most asked question on r/Silverbugs and r/Antiques after &ldquo;is it real?&rdquo;. Quick decision framework:</p>
+      </div>
+      <ul class="answers">
+        <li><strong>Keep / sell as a piece</strong> if any of: it has a desirable maker (named silversmith, recognisable retailer), it&rsquo;s pre-1900, the form is collected (Georgian flatware, Edwardian tea services, Art Deco jewellery), or it&rsquo;s in good condition and complete (no missing parts).</li>
+        <li><strong>Scrap (sell to a refiner)</strong> if it&rsquo;s heavily damaged, modern (post-1970) machine-made flatware, no maker premium, broken with missing parts, or it&rsquo;s been polished to the point of losing detail. Scrap price = weight &times; fineness &times; spot price &times; refiner discount (~85&ndash;92% of melt).</li>
+        <li><strong>Don&rsquo;t over-polish before selling.</strong> Original patina can add value; aggressive polishing removes detail and signals &ldquo;trying to flip&rdquo; to dealers.</li>
+        <li><strong>Test before deciding.</strong> If you can&rsquo;t confirm it&rsquo;s solid silver via marks + a quick test, get an XRF scan before scrapping. Plated pieces are worth almost nothing as scrap; misidentifying a plated piece as solid is a common mistake.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="wrap"><hr class="tear"></div>
+
+  <!-- ======================= METHOD ======================= -->
+  <section id="how-to-read" aria-labelledby="how-to-read-title">
+    <div class="wrap">
+      <span class="eyebrow">Method</span>
+      <h2 class="section-title" id="how-to-read-title">How to read a UK silver hallmark &mdash; order and method</h2>
+      <div class="prose">
+        <p>Marks are usually struck close together, often four to six small punches in a row on a flat or hidden surface (the foot of a cup, the underside of a tray, the rim of a bowl). The order they appear in is not fixed, but the typical reading order from the maker&rsquo;s perspective is:</p>
+      </div>
+      <ol class="steps">
+        <li><strong>Maker&rsquo;s mark</strong> first &mdash; usually initials, sometimes with a symbol or shaped border.</li>
+        <li><strong>Standard mark</strong> &mdash; the Lion Passant or Britannia figure.</li>
+        <li><strong>Town mark</strong> &mdash; the Assay Office.</li>
+        <li><strong>Date letter</strong> &mdash; in a shaped shield.</li>
+        <li><strong>Optional duty mark</strong> &mdash; sovereign&rsquo;s head, 1784–1890 only.</li>
+        <li><strong>Optional commemorative mark</strong>.</li>
+      </ol>
+      <div class="prose">
+        <p>Tips:</p>
+      </div>
+      <ul class="answers">
+        <li>Use a 10× jeweller&rsquo;s loupe. Marks are usually 1–3 mm tall and worn pieces hide them.</li>
+        <li>Photograph the marks against a dark background with bright side-lighting. The shadows cast by the punches make them readable.</li>
+        <li>Compare against the Assay Office&rsquo;s published charts — links in the Resources section below.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================= THE FOUR MARKS ======================= -->
+  <section id="four-marks" aria-labelledby="four-marks-title">
+    <div class="wrap">
+      <span class="eyebrow">The four marks</span>
+      <h2 class="section-title" id="four-marks-title">How the four hallmarks fit together</h2>
+      <ol class="steps">
+        <li><strong>Standard mark</strong> &mdash; what metal and how pure.</li>
+        <li><strong>Assay Office mark</strong> &mdash; where it was tested.</li>
+        <li><strong>Date letter</strong> &mdash; when. Office-specific cycle.</li>
+        <li><strong>Sponsor&rsquo;s or Maker&rsquo;s mark</strong> &mdash; who registered it.</li>
+      </ol>
+      <div class="prose">
+        <p>The duty mark and commemorative marks are <em>additional</em>, sitting alongside the four core marks to help narrow the date.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= LIMITS ======================= -->
+  <section class="story" id="tool-limits" aria-labelledby="tool-limits-title">
+    <div class="wrap">
+      <span class="eyebrow">Scope</span>
+      <h2 class="section-title" id="tool-limits-title">What this tool can and cannot do</h2>
+      <div class="prose">
+        <p><strong>What it does:</strong> reads the marks you select and tells you the metal, the assay office, and the narrowest date range possible without the date letter.</p>
+        <p><strong>What it doesn&rsquo;t:</strong></p>
+      </div>
+      <ul class="answers">
+        <li>It cannot identify the <em>exact year</em> &mdash; that needs the date letter. Use the city pages.</li>
+        <li>It cannot identify the <em>maker</em>. Maker&rsquo;s marks are registered with each Assay Office; matching needs the office&rsquo;s register.</li>
+        <li>It cannot tell you if marks are <em>genuine</em>. Forgeries exist, especially on plated items struck to look like solid silver.</li>
+        <li>It cannot give a <em>valuation</em>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================= RESOURCES ======================= -->
+  <section id="resources" aria-labelledby="resources-title">
+    <div class="wrap">
+      <span class="eyebrow">References</span>
+      <h2 class="section-title" id="resources-title">Resources for date letters and maker&rsquo;s marks</h2>
+      <ul class="answers">
+        <li>The Assay Office London</li>
+        <li>Birmingham Assay Office &mdash; <a href="https://www.theassayoffice.co.uk/" target="_blank" rel="noopener">theassayoffice.co.uk</a></li>
+        <li>The Sheffield Assay Office &mdash; <a href="https://www.assayoffice.co.uk/" target="_blank" rel="noopener">assayoffice.co.uk</a></li>
+        <li>Edinburgh Assay Office &mdash; <a href="https://www.edinburghassayoffice.co.uk/" target="_blank" rel="noopener">edinburghassayoffice.co.uk</a></li>
+        <li>Goldsmiths&rsquo; Company &mdash; <a href="https://www.thegoldsmiths.co.uk/" target="_blank" rel="noopener">thegoldsmiths.co.uk</a> (compulsory hallmarking authority)</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="wrap"><hr class="tear"></div>
+
+  <!-- ======================= FINAL CTA ======================= -->
+  <section class="final" id="track" aria-labelledby="final-title">
+    <div class="wrap">
+      <h2 id="final-title">Track silver flips with FlipperHelper</h2>
+      <p>If you flip silver, FlipperHelper logs each piece with photos, tracks listings across eBay, Vinted, and 14 other platforms, and shows real profit per item after every expense. Free on the App Store.</p>
+      <div class="store-row">
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">Download FlipperHelper Free on the App Store</a>
+        <a class="btn btn-primary" href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener">Get FlipperHelper Free on Google Play</a>
+      </div>
+    </div>
+  </section>
+
+</main>
 
     <div class="img-lightbox" id="img-lightbox" hidden role="dialog" aria-label="Enlarged hallmark image" aria-modal="true">
         <button type="button" class="img-lightbox-close" id="img-lightbox-close" aria-label="Close">×</button>
