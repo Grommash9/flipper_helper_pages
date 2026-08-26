@@ -18,6 +18,18 @@ const esc = (s) => String(s)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'];
+
+// The site writes dates as "6 May 2026" (design guide §14.1 — British English).
+function ukDate(iso) {
+    const [y, m, d] = iso.split('-').map(Number);
+    return `${d} ${MONTHS[m - 1]} ${y}`;
+}
+
+// "a London piece" but "an Edinburgh piece"
+const indefArticle = (name) => (/^[AEIOU]/i.test(name) ? 'an' : 'a');
+
 function metaDesc(c) {
     const s = `${c.name} silver hallmarks: the ${c.mark_name.toLowerCase()} town mark, history from ${c.active_from}, full date letter chart, and how to read your piece.`;
     if (s.length > 155) return s.slice(0, 152) + '…';
@@ -69,13 +81,13 @@ function dateLetterChartHTML(officeData, cityName) {
         const buttons = sortedKeys(caseTag).map(b => {
             const k = `${b.letter}-${b.case}`;
             const display = caseTag === 'U' ? b.letter : b.letter.toLowerCase();
-            return `<button class="letter-pick" data-pick="${esc(k)}">${esc(display)}<span class="letter-pick-count">${b.entries.length}</span></button>`;
+            return `<button type="button" class="letter-pick" data-pick="${esc(k)}" aria-pressed="false">${esc(display)}<span class="letter-pick-count">${b.entries.length}</span></button>`;
         }).join('');
         return `
-                        <div class="letter-picker-row">
-                            <span class="letter-picker-label">${label}</span>
-                            <div class="letter-picker-buttons">${buttons}</div>
-                        </div>`;
+          <div class="letter-picker-row">
+            <span class="letter-picker-label">${label}</span>
+            <div class="letter-picker-buttons">${buttons}</div>
+          </div>`;
     }
 
     function bucketBlock(b) {
@@ -93,11 +105,11 @@ function dateLetterChartHTML(officeData, cityName) {
         }).join('');
         // Hidden by default — picker reveals one bucket at a time.
         return `
-                    <div class="letter-bucket is-hidden" data-letter="${esc(k)}">
-                        <h3 class="letter-bucket-heading">${esc(display)} <small>${headingCase} · ${b.entries.length} year${b.entries.length === 1 ? '' : 's'}</small></h3>
-                        <div class="letter-cards">${cards}
-                        </div>
-                    </div>`;
+          <div class="letter-bucket is-hidden" data-letter="${esc(k)}">
+            <h3 class="letter-bucket-heading"><span class="letter-bucket-glyph">${esc(display)}</span> <small>${headingCase} · ${b.entries.length} year${b.entries.length === 1 ? '' : 's'}</small></h3>
+            <div class="letter-cards">${cards}
+            </div>
+          </div>`;
     }
 
     const orderedBuckets = [
@@ -110,18 +122,23 @@ function dateLetterChartHTML(officeData, cityName) {
     const defaultStatus = `Pick a letter above to see the years ${cityName} used it (${totalEntries} year-letter pairs across ${orderedBuckets.length} letters).`;
 
     return `
-                <section id="date-letter-chart">
-                    <h2>${esc(cityName)} date letter — pick the letter on your piece</h2>
-                    <p>Click the letter stamped on your piece. The chart below shows every year ${esc(cityName)} used that letter, with the actual glyph image alongside — match the font and shield shape to narrow to one year.</p>
-                    <div class="letter-picker">${pickerRow('U', 'UPPERCASE')}${pickerRow('L', 'lowercase')}
-                        <div class="letter-picker-actions">
-                            <button class="letter-pick-clear" type="button">Clear</button>
-                            <span class="letter-picker-status" data-default-text="${esc(defaultStatus)}">${esc(defaultStatus)}</span>
-                        </div>
-                    </div>
-                    <div class="letter-buckets">${blocks}
-                    </div>
-                </section>`;
+  <section id="date-letter-chart" aria-labelledby="chart-title">
+    <div class="wrap">
+      <span class="eyebrow">Date letters</span>
+      <h2 class="section-title" id="chart-title">${esc(cityName)} date letter &mdash; pick the letter on your piece</h2>
+      <div class="prose">
+        <p>Click the letter stamped on your piece. The chart below shows every year ${esc(cityName)} used that letter, with the actual glyph image alongside &mdash; match the font and shield shape to narrow it to one year.</p>
+      </div>
+      <div class="letter-picker">${pickerRow('U', 'Uppercase')}${pickerRow('L', 'Lowercase')}
+        <div class="letter-picker-actions">
+          <button class="btn-action letter-pick-clear" type="button">Clear</button>
+          <span class="letter-picker-status" data-default-text="${esc(defaultStatus)}">${esc(defaultStatus)}</span>
+        </div>
+      </div>
+      <div class="letter-buckets">${blocks}
+      </div>
+    </div>
+  </section>`;
 }
 
 function pageHTML(c) {
@@ -198,11 +215,14 @@ function pageHTML(c) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-itunes-app" content="app-id=6759716745">
+    <meta name="color-scheme" content="light">
     <title>${esc(title).slice(0, 70)}</title>
     <meta name="description" content="${esc(desc)}">
     <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&amp;family=Roboto+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/landing.css">
     <link rel="canonical" href="${url}">
     <meta property="og:type" content="article">
     <meta property="og:title" content="${esc(c.name)} silver hallmarks — ${esc(c.mark_name)}">
@@ -214,6 +234,7 @@ function pageHTML(c) {
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="${esc(c.name)} Silver Hallmarks">
     <meta name="twitter:description" content="${esc(desc)}">
+    <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
     <script type="application/ld+json">${JSON.stringify(breadcrumbs, null, 2)}</script>
     <script type="application/ld+json">${JSON.stringify(article, null, 2)}</script>
     <script type="application/ld+json">${JSON.stringify(faq, null, 2)}</script>

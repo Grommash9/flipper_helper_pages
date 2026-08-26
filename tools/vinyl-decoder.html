@@ -161,6 +161,15 @@ code{
 /* in a .story-grid the figure IS the column, so it takes the column's width and the
    grid's own gap supplies the separation */
 .story .vinyl-figure{max-width:none;margin:0}
+
+/* the intro band, after the home page's .story (index.html:535): copy left, photo
+   right, and the two columns the same height. landing.css:256 pins .story-grid to
+   align-items:start, so the stretch is opted into here; the figure then becomes a
+   column flex box whose photo takes whatever the caption leaves and crops to fill
+   it, which keeps the ratio while both columns end level. */
+#intro .story-grid{align-items:stretch}
+#intro .vinyl-figure{display:flex;flex-direction:column}
+#intro .vinyl-figure img{flex:1;min-height:180px;object-fit:cover}
 .vinyl-figure img{
   /* height:auto is load-bearing: each img carries a height attribute for CLS, and that
      attribute is a presentation hint on the CSS height — without this the box is
@@ -295,16 +304,17 @@ code{
     </div>
   </header>
 
-  <!-- ======================= INTRO ======================= -->
-  <section id="intro">
-    <div class="wrap">
-      <span class="eyebrow">Before you start</span>
-      <div class="prose">
+  <!-- ======================= INTRO — story band (index.html:535) ======================= -->
+  <section class="story" id="intro">
+    <div class="wrap story-grid">
+      <div>
+        <span class="eyebrow">Before you start</span>
         <p>The runout — the blank ring between the last groove and the label, sometimes called the &ldquo;dead wax&rdquo; — often has a hand-etched or machine-stamped code in it. Type what you can actually read below and this tool checks it against a documented set of mastering-engineer initials, pressing-plant codes, and formatting conventions, and gives you ranked, honestly-uncertain matches. It won&rsquo;t pretend to know things nobody has written down.</p>
         <p class="callout">
           <strong>Scope:</strong> this covers <strong>commonly-documented codes</strong> &mdash; mostly US and UK, spanning several eras from the mid-20th century to modern reissues. Runout conventions are crowd-sourced, regional, and genuinely full of gaps even in the best specialist references. If your code doesn&rsquo;t match anything, that means it isn&rsquo;t in our documented set yet &mdash; not that it&rsquo;s fake or meaningless.
         </p>
       </div>
+
       <figure class="vinyl-figure">
         <img src="images/vinyl/runout-area-label-context.jpg" alt="A vinyl record's label and the surrounding runout groove area, where the matrix number etching is visible" width="900" height="900" loading="lazy">
         <figcaption>The runout (dead wax) sits between the label and the last groove of music — where the matrix number lives. Photo: Ann-Sophie Qvarnström, <a href="https://commons.wikimedia.org/wiki/File:Matrix_number_on_LP_album_with_James_Bond_007_Diamonds_are_forever_soundtrack.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, resized for web.</figcaption>
