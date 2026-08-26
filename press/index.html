@@ -86,14 +86,27 @@
 .feature-list li{padding:13px 0;border-bottom:1px dashed var(--line-strong);
   font-size:var(--fs-sm);color:var(--ink-66);line-height:1.55}
 
-/* VARIATION of .today-card: an asset card opens with a 64px preview of the file
-   it offers instead of the 46px icon tile, and closes with a download button.
-   Radius, border, shadow, 22px padding and the 12px stack are the card's own. */
-.asset-card img{width:64px;height:64px;border-radius:14px;flex:none}
+/* The shared .section-title clamps to 2.4rem, near enough the page h1's 2.8rem
+   that the two read as one level. Dropping it to 1.75rem restores the step. */
+.section-title{font-size:clamp(1.4rem,2.6vw,1.75rem)}
+
+/* VARIATION of .today-card: an asset card is a horizontal row — file preview on
+   the left, name / size / download stacked on the right. The preview is 96px
+   because that is what the name + size + button stack measures, so the two
+   columns come out level and the card is one preview tall instead of five
+   stacked blocks. Border, radius and shadow are the card's own; the 22px
+   padding tightens to 18px and the 12px column stack becomes a 16px row gap. */
+.asset-card{flex-direction:row;align-items:stretch;gap:16px;padding:18px}
+.asset-card img{width:96px;height:96px;border-radius:14px;flex:none}
 .asset-card img.logo-preview{border-radius:0;object-fit:contain}
-.asset-card .card-meta{margin-top:auto;font-family:var(--font-mono);font-size:var(--fs-2xs);
-  color:var(--ink-66);letter-spacing:.08em;text-transform:uppercase;font-variant-numeric:tabular-nums}
-.asset-card .btn{align-self:flex-start}
+.asset-card .asset-body{flex:1;min-width:0;display:flex;flex-direction:column;
+  justify-content:space-between;gap:6px}
+.asset-card .card-meta{font-family:var(--font-mono);font-size:var(--fs-3xs);
+  color:var(--ink-66);letter-spacing:.06em;text-transform:uppercase;font-variant-numeric:tabular-nums}
+/* Smaller than the page's other buttons: at a 332px card the text column has
+   ~184px, and the default 13px/22px button would push the stack past the 96px
+   preview it has to match. */
+.asset-card .btn{align-self:flex-start;font-size:var(--fs-xs);padding:7px 14px;border-radius:10px}
 
 /* The shots on this page are downloads, not decoration: the caption carries the
    link, and the whole figure is the hit area. Same stretched-::after as /tools/. */
@@ -269,22 +282,28 @@
 
       <ul class="today-grid">
         <li class="today-card asset-card reveal">
-          <img class="" src="app-icon-1024.png" alt="FlipperHelper app icon" width="64" height="64" loading="lazy" decoding="async">
-          <h3>App Icon</h3>
-          <span class="card-meta">1024 x 1024 px, PNG</span>
-          <a class="btn btn-ghost" href="app-icon-1024.png" download>Download</a>
+          <img class="" src="app-icon-1024.png" alt="FlipperHelper app icon" width="96" height="96" loading="lazy" decoding="async">
+          <div class="asset-body">
+            <h3>App Icon</h3>
+            <span class="card-meta">1024 x 1024 px, PNG</span>
+            <a class="btn btn-ghost" href="app-icon-1024.png" download>Download</a>
+          </div>
         </li>
         <li class="today-card asset-card reveal">
-          <img class="logo-preview" src="logo.svg" alt="FlipperHelper logo" width="64" height="64" loading="lazy" decoding="async">
-          <h3>Logo (SVG)</h3>
-          <span class="card-meta">Vector, scalable</span>
-          <a class="btn btn-ghost" href="logo.svg" download>Download</a>
+          <img class="logo-preview" src="logo.svg" alt="FlipperHelper logo" width="96" height="96" loading="lazy" decoding="async">
+          <div class="asset-body">
+            <h3>Logo (SVG)</h3>
+            <span class="card-meta">Vector, scalable</span>
+            <a class="btn btn-ghost" href="logo.svg" download>Download</a>
+          </div>
         </li>
         <li class="today-card asset-card reveal">
-          <img class="logo-preview" src="logo.png" alt="FlipperHelper logo" width="64" height="64" loading="lazy" decoding="async">
-          <h3>Logo (PNG)</h3>
-          <span class="card-meta">Raster, 114 KB</span>
-          <a class="btn btn-ghost" href="logo.png" download>Download</a>
+          <img class="logo-preview" src="logo.png" alt="FlipperHelper logo" width="96" height="96" loading="lazy" decoding="async">
+          <div class="asset-body">
+            <h3>Logo (PNG)</h3>
+            <span class="card-meta">Raster, 114 KB</span>
+            <a class="btn btn-ghost" href="logo.png" download>Download</a>
+          </div>
         </li>
       </ul>
     </div>
