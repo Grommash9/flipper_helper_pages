@@ -542,3 +542,15 @@ a:focus-visible,button:focus-visible,summary:focus-visible{
 .newsletter .ok i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--profit);margin-right:9px}
 .newsletter.done form,.newsletter.done .fine{display:none}
 .newsletter.done .ok{display:block}
+
+/* Three-column footer — Follow moves into the brand block.
+   Link columns are content-sized and spread with space-between, so the last one
+   lands flush with the right edge of .wrap, level with the copyright line. */
+.ft-c3 .foot-grid{
+  grid-template-columns:minmax(0,300px) max-content max-content max-content;
+  justify-content:space-between;
+}
+.ft-c3 .foot-left h4{margin-top:14px}
+.ft-c3 .row-nav{display:flex;flex-direction:row;gap:16px}
+@media(max-width:860px){.ft-c3 .foot-grid{grid-template-columns:1fr 1fr;justify-content:normal}}
+@media(max-width:520px){.ft-c3 .foot-grid{grid-template-columns:1fr}}

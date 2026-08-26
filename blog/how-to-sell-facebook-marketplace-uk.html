@@ -621,6 +621,18 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 .calc-line.calc-profit{font-size:var(--fs-base);font-weight:700;color:#1FA234}
 .calc-line.calc-loss{font-size:var(--fs-base);font-weight:700;color:var(--loss)}
 .calc-note{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);margin-top:8px}
+
+/* Three-column footer — Follow moves into the brand block.
+   Link columns are content-sized and spread with space-between, so the last one
+   lands flush with the right edge of .wrap, level with the copyright line. */
+.ft-c3 .foot-grid{
+  grid-template-columns:minmax(0,300px) max-content max-content max-content;
+  justify-content:space-between;
+}
+.ft-c3 .foot-left h4{margin-top:14px}
+.ft-c3 .row-nav{display:flex;flex-direction:row;gap:16px}
+@media(max-width:860px){.ft-c3 .foot-grid{grid-template-columns:1fr 1fr;justify-content:normal}}
+@media(max-width:520px){.ft-c3 .foot-grid{grid-template-columns:1fr}}
 </style>
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
@@ -971,30 +983,35 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--action);outline-off
 </main>
 
 <!-- ======================= FOOTER ======================= -->
-<footer>
+<footer class="ft-c3">
   <div class="wrap">
     <div class="foot-grid">
-      <div class="foot-left">
+      <div class="foot-left foot-col">
         <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
         <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+        <h4>Follow</h4>
+        <nav class="row-nav" aria-label="Footer — follow">
+          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+        </nav>
       </div>
       <div class="foot-col">
-        <h4>Explore</h4>
-        <nav aria-label="Footer — explore">
-          <a href="/blog/">Blog</a>
+        <h4>Product</h4>
+        <nav aria-label="Footer — product">
           <a href="/tools/">Free tools</a>
           <a href="/compare/">Compare apps</a>
           <a href="/changelog.html">Changelog</a>
           <a href="/sources.html">Supported platforms</a>
-          <a href="/press/">Press kit</a>
-          <a href="/about.html">About</a>
         </nav>
       </div>
       <div class="foot-col">
-        <h4>Follow</h4>
-        <nav aria-label="Footer — follow">
-          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
-          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+        <h4>Company</h4>
+        <nav aria-label="Footer — company">
+          <a href="/about.html">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/press/">Press kit</a>
+          <a href="/is-flipperhelper-legit.html">Is FlipperHelper legit?</a>
+          <a href="/flipperhelper-review.html">Review</a>
         </nav>
       </div>
       <div class="foot-col">
