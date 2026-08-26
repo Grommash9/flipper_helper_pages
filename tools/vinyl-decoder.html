@@ -162,7 +162,10 @@ code{
    grid's own gap supplies the separation */
 .story .vinyl-figure{max-width:none;margin:0}
 .vinyl-figure img{
-  width:100%;border-radius:var(--radius-md);border:1px solid var(--line-strong);
+  /* height:auto is load-bearing: each img carries a height attribute for CLS, and that
+     attribute is a presentation hint on the CSS height — without this the box is
+     width:100% by the file's pixel height, i.e. vertically stretched. */
+  width:100%;height:auto;border-radius:var(--radius-md);border:1px solid var(--line-strong);
   background:var(--card);box-shadow:var(--neu-soft);
 }
 .vinyl-figure figcaption{
