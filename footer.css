@@ -18,6 +18,8 @@ footer{
   --fs-2xs:.75rem;
   --fs-3xs:.68rem;
   --font-mono:'Roboto Mono','SF Mono',ui-monospace,Menlo,monospace;
+  --font-body:'Roboto Flex', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-family:var(--font-body);
   border-top:1px solid var(--line);padding:26px 0 24px;font-size:var(--fs-xs);color:var(--ink-66);background:var(--card);
 }
 footer .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
