@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FAQ — FlipperHelper | Everything About the Reseller Tracking App</title>
-<meta name="description" content="53 questions answered about FlipperHelper, the free iOS and Android profit tracker for resellers who source in person. Features, offline use, backups, multi-currency, tax records and how it compares.">
+<meta name="description" content="55 questions answered about FlipperHelper, the free iOS and Android profit tracker for resellers who source in person. Features, offline use, backups, multi-currency, tax records and how it compares.">
 <meta name="apple-itunes-app" content="app-id=6759716745">
 <link rel="icon" type="image/svg+xml" href="/logo_FH.svg">
 <link rel="apple-touch-icon" href="/logo_FH.png">
@@ -95,7 +95,7 @@
       "name": "Can I choose which fields appear when adding an item?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. On the Add Item screen, tap \"Customise fields\" to open a sheet where you turn individual fields on or off — title, market, seller, purchase date, and return date — each with a short description of what it's for. Show only what you actually use so adding an item stays fast. The photo and price always show. Turning a field off clears any value you'd entered for it, so nothing hidden is saved by mistake, and your choice is remembered for the next item."
+        "text": "Yes. On the Add Item screen, tap \"Customise fields\" to open a sheet where you turn individual fields on or off — title, market, seller, purchase date, return date, and notes — each with a short description of what it's for. Show only what you actually use so adding an item stays fast. The photo and price always show. Turning a field off clears any value you'd entered for it, so nothing hidden is saved by mistake, and your choice is remembered for the next item."
       }
     },
     {
@@ -135,7 +135,15 @@
       "name": "How does FlipperHelper calculate profit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "FlipperHelper calculates profit per item as sold price minus purchase price. If the buy and sell currencies differ, the exchange rates captured at the time of each transaction are used to convert both amounts to your home currency before calculating. Entry fees, transport costs, and other expenses are tracked separately and shown in the Money Flow dashboard for your overall business profit picture."
+        "text": "FlipperHelper calculates profit per item as sold price minus purchase price, minus any expenses you've linked directly to that item. If the buy and sell currencies differ, the exchange rates captured at the time of each transaction are used to convert both amounts to your home currency before calculating. Entry fees, transport, delivery, and other expenses can also be tracked without linking them to a specific item, in which case they're shown in the Money Flow dashboard for your overall business profit picture instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I add notes to an item in FlipperHelper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every item has a free-text Notes field for anything that doesn't fit the structured fields — condition details, a reminder to check before listing, or context from a conversation with the seller. Notes is one of the optional fields you can show or hide via \"Customise fields\" on the Add Item screen, and it syncs between iPhone and Android like the rest of the item's data."
       }
     },
     {
@@ -207,7 +215,15 @@
       "name": "What types of expenses can I track in FlipperHelper?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "FlipperHelper tracks three expense categories: Entry fees — admission costs for market visits, linked to specific markets Transport expenses — Car (with subcategories for Gas, Service, and Parking), Bus, Train, Taxi, Van, and Bike Rental Other expenses — any custom expense with a memo description (e.g. packaging tape, supplies, postage) All expense types support multi-currency input."
+        "text": "FlipperHelper tracks four expense categories: Entry fees — admission costs for market visits, linked to specific markets Transport expenses — Car (with subcategories for Gas, Service, and Parking), Bus, Train, Taxi, Van, and Bike Rental Delivery — postage and courier costs, optionally linked directly to an item Other expenses — any custom expense with a memo description (e.g. packaging tape, supplies, storage) All expense types support multi-currency input, and entry fees, transport, delivery, and other expenses can all be linked directly to an item so their cost is included in that item's profit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I link an expense to a specific item in FlipperHelper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Entry fees, transport, delivery, and other expenses can all be linked directly to the item they relate to, not just to a market or haul. Once linked, that expense's cost is automatically included in the item's own profit — sold price minus purchase price minus every linked expense — so you don't have to work out afterwards which costs applied to which sale. Link an expense from the item's own detail screen, or attach it while adding a new expense."
       }
     },
     {
@@ -287,7 +303,7 @@
       "name": "How does data export to Google Sheets work in FlipperHelper?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "FlipperHelper exports your items and expenses as two separate CSV files uploaded to Google Drive. Google Drive automatically converts these CSVs to Google Sheets format. No Google Sheets API is used. The items CSV includes columns for SKU, photo URLs (every photo for the item, main image first), prices (buy and sell with currencies and exchange rates), market, seller, listing dates per platform, sale details, payment method, profit in home currency, days to sell, and title. The expenses CSV includes type, subtype, date, amount, market, and memo."
+        "text": "FlipperHelper exports your items and expenses as two separate CSV files uploaded to Google Drive. Google Drive automatically converts these CSVs to Google Sheets format. No Google Sheets API is used. The items CSV includes columns for SKU, photo URLs (every photo for the item, main image first), prices (buy and sell with currencies and exchange rates), market, seller, listing dates per platform, sale details, payment method, profit in home currency, days to sell, and title. The expenses CSV includes type, subtype, date, amount, market, memo, and the item it's linked to, if any."
       }
     },
     {
@@ -608,7 +624,7 @@
       Android that tracks your reselling inventory, profit and expenses across 16 selling platforms.
     </p>
     <div class="head-meta">
-      <span class="head-updated">53 questions · Last updated: 12 July 2026</span>
+      <span class="head-updated">55 questions · Last updated: 26 August 2026</span>
     </div>
   </div>
 </header>
@@ -625,7 +641,7 @@
           <input type="search" id="q" placeholder="Search answers…" autocomplete="off">
         </div>
       </div>
-      <p class="filter-count" id="count">53 questions</p>
+      <p class="filter-count" id="count">55 questions</p>
 
       <section class="faq-group" data-cat="about-flipperhelper" data-name="About FlipperHelper">
         <h2 class="group-label" id="about-flipperhelper"><b>About FlipperHelper</b></h2>
@@ -661,9 +677,9 @@
           <summary>Can I add multiple photos to an item?</summary>
           <div class="ans"><p>Yes. Each item can hold up to 10 photos, so you can capture the front, back, label, and any flaws before you list it. Take new photos with the camera or add several from your camera roll at once, and choose which photo is the main image shown in your item list. Tap any photo to view it full-screen and zoom in. All of an item's photos sync to Google Drive, and every photo link is included in the Google Sheets export.</p></div>
         </details>
-        <details id="can-i-choose-which-fields-appear-when-adding-an-item" data-s="can i choose which fields appear when adding an item? yes. on the add item screen, tap &quot;customise fields&quot; to open a sheet where you turn individual fields on or off — title, market, seller, purchase date, and return date — each with a short description of what it's for. show only what you actually use so adding an item stays fast. the photo and price always show. turning a field off clears any value you'd entered for it, so nothing hidden is saved by mistake, and your choice is remembered for the next item.">
+        <details id="can-i-choose-which-fields-appear-when-adding-an-item" data-s="can i choose which fields appear when adding an item? yes. on the add item screen, tap &quot;customise fields&quot; to open a sheet where you turn individual fields on or off — title, market, seller, purchase date, return date, and notes — each with a short description of what it's for. show only what you actually use so adding an item stays fast. the photo and price always show. turning a field off clears any value you'd entered for it, so nothing hidden is saved by mistake, and your choice is remembered for the next item.">
           <summary>Can I choose which fields appear when adding an item?</summary>
-          <div class="ans"><p>Yes. On the Add Item screen, tap "Customise fields" to open a sheet where you turn individual fields on or off — title, market, seller, purchase date, and return date — each with a short description of what it's for. Show only what you actually use so adding an item stays fast. The photo and price always show. Turning a field off clears any value you'd entered for it, so nothing hidden is saved by mistake, and your choice is remembered for the next item.</p></div>
+          <div class="ans"><p>Yes. On the Add Item screen, tap "Customise fields" to open a sheet where you turn individual fields on or off — title, market, seller, purchase date, return date, and notes — each with a short description of what it's for. Show only what you actually use so adding an item stays fast. The photo and price always show. Turning a field off clears any value you'd entered for it, so nothing hidden is saved by mistake, and your choice is remembered for the next item.</p></div>
         </details>
         <details id="can-i-track-return-deadlines-for-items" data-s="can i track return deadlines for items? yes. turn on the return date field and set a deadline for any item you could take back if it doesn't sell — useful for shop stock bought on a returns policy. your item list then shows how many days you have left to return it. the countdown turns red when three days or fewer remain, and switches to &quot;too late&quot; once the window has passed, so you can spot at a glance which unsold items still have a return window open.">
           <summary>Can I track return deadlines for items?</summary>
@@ -705,10 +721,14 @@
                         </ul>
                         <p>The app auto-suggests the appropriate payment method (Cash for physical sales, Card for online platforms).</p></div>
         </details>
-        <details id="how-does-flipperhelper-calculate-profit" data-s="how does flipperhelper calculate profit? flipperhelper calculates profit per item as sold price minus purchase price. if the buy and sell currencies differ, the exchange rates captured at the time of each transaction are used to convert both amounts to your home currency before calculating. entry fees, transport costs, and other expenses are tracked separately and shown in the money flow dashboard for your overall business profit picture.">
+        <details id="how-does-flipperhelper-calculate-profit" data-s="how does flipperhelper calculate profit? flipperhelper calculates profit per item as sold price minus purchase price, minus any expenses you've linked directly to that item. if the buy and sell currencies differ, the exchange rates captured at the time of each transaction are used to convert both amounts to your home currency before calculating. entry fees, transport, delivery, and other expenses can also be tracked without linking them to a specific item, in which case they're shown in the money flow dashboard for your overall business profit picture instead.">
           <summary>How does FlipperHelper calculate profit?</summary>
-          <div class="ans"><p>FlipperHelper calculates profit per item as sold price minus purchase price. If the buy and sell currencies differ, the exchange rates captured at the time of each transaction are used to convert both amounts to your home currency before calculating.</p>
-                        <p>Entry fees, transport costs, and other expenses are tracked separately and shown in the Money Flow dashboard for your overall business profit picture.</p></div>
+          <div class="ans"><p>FlipperHelper calculates profit per item as sold price minus purchase price, minus any expenses you've linked directly to that item. If the buy and sell currencies differ, the exchange rates captured at the time of each transaction are used to convert both amounts to your home currency before calculating.</p>
+                        <p>Entry fees, transport, delivery, and other expenses can also be tracked without linking them to a specific item, in which case they're shown in the Money Flow dashboard for your overall business profit picture instead.</p></div>
+        </details>
+        <details id="can-i-add-notes-to-an-item-in-flipperhelper" data-s="can i add notes to an item in flipperhelper? yes. every item has a free-text notes field for anything that doesn't fit the structured fields — condition details, a reminder to check before listing, or context from a conversation with the seller. notes is one of the optional fields you can show or hide via &quot;customise fields&quot; on the add item screen, and it syncs between iphone and android like the rest of the item's data.">
+          <summary>Can I add notes to an item in FlipperHelper?</summary>
+          <div class="ans"><p>Yes. Every item has a free-text Notes field for anything that doesn't fit the structured fields — condition details, a reminder to check before listing, or context from a conversation with the seller. Notes is one of the optional fields you can show or hide via "Customise fields" on the Add Item screen, and it syncs between iPhone and Android like the rest of the item's data.</p></div>
         </details>
         <details id="what-is-the-item-lifecycle-in-flipperhelper" data-s="what is the item lifecycle in flipperhelper? each item moves through three statuses: new — purchased but not yet listed for sale listed — listed on one or more selling platforms, with the listing date tracked for each platform individually sold — sale recorded with the sell price, platform where it sold, date, and payment method (cash or card) the status updates automatically as you take actions on the item.">
           <summary>What is the item lifecycle in FlipperHelper?</summary>
@@ -784,15 +804,20 @@
       <section class="faq-group" data-cat="expense-tracking" data-name="Expense Tracking">
         <h2 class="group-label" id="expense-tracking"><b>Expense Tracking</b></h2>
         <div class="faq">
-        <details id="what-types-of-expenses-can-i-track-in-flipperhelper" data-s="what types of expenses can i track in flipperhelper? flipperhelper tracks three expense categories: entry fees — admission costs for market visits, linked to specific markets transport expenses — car (with subcategories for gas, service, and parking), bus, train, taxi, van, and bike rental other expenses — any custom expense with a memo description (e.g. packaging tape, supplies, postage) all expense types support multi-currency input.">
+        <details id="what-types-of-expenses-can-i-track-in-flipperhelper" data-s="what types of expenses can i track in flipperhelper? flipperhelper tracks four expense categories: entry fees — admission costs for market visits, linked to specific markets transport expenses — car (with subcategories for gas, service, and parking), bus, train, taxi, van, and bike rental delivery — postage and courier costs, optionally linked directly to an item other expenses — any custom expense with a memo description (e.g. packaging tape, supplies, storage) all expense types support multi-currency input, and entry fees, transport, delivery, and other expenses can all be linked directly to an item so their cost is included in that item's profit.">
           <summary>What types of expenses can I track in FlipperHelper?</summary>
-          <div class="ans"><p>FlipperHelper tracks three expense categories:</p>
+          <div class="ans"><p>FlipperHelper tracks four expense categories:</p>
                         <ul>
                             <li><strong>Entry fees</strong> — admission costs for market visits, linked to specific markets</li>
                             <li><strong>Transport expenses</strong> — Car (with subcategories for Gas, Service, and Parking), Bus, Train, Taxi, Van, and Bike Rental</li>
-                            <li><strong>Other expenses</strong> — any custom expense with a memo description (e.g. packaging tape, supplies, postage)</li>
+                            <li><strong>Delivery</strong> — postage and courier costs, optionally linked directly to an item</li>
+                            <li><strong>Other expenses</strong> — any custom expense with a memo description (e.g. packaging tape, supplies, storage)</li>
                         </ul>
-                        <p>All expense types support multi-currency input.</p></div>
+                        <p>All expense types support multi-currency input, and entry fees, transport, delivery, and other expenses can all be linked directly to an item so their cost is included in that item's profit.</p></div>
+        </details>
+        <details id="can-i-link-an-expense-to-a-specific-item-in-flipperhelper" data-s="can i link an expense to a specific item in flipperhelper? yes. entry fees, transport, delivery, and other expenses can all be linked directly to the item they relate to, not just to a market or haul. once linked, that expense's cost is automatically included in the item's own profit — sold price minus purchase price minus every linked expense — so you don't have to work out afterwards which costs applied to which sale. link an expense from the item's own detail screen, or attach it while adding a new expense.">
+          <summary>Can I link an expense to a specific item in FlipperHelper?</summary>
+          <div class="ans"><p>Yes. Entry fees, transport, delivery, and other expenses can all be linked directly to the item they relate to, not just to a market or haul. Once linked, that expense's cost is automatically included in the item's own profit — sold price minus purchase price minus every linked expense — so you don't have to work out afterwards which costs applied to which sale. Link an expense from the item's own detail screen, or attach it while adding a new expense.</p></div>
         </details>
         <details id="how-do-entry-fees-work-in-flipperhelper" data-s="how do entry fees work in flipperhelper? entry fees are admission charges for visiting a market or car boot sale. each entry fee is linked to a specific market and records the amount, date, and optional currency. the app can prompt you to log entry fees when you visit a market, and you can disable this prompt per market with a &quot;don't ask again&quot; toggle. for markets you've visited before, flipperhelper shows your previously entered amounts as quick-select options — if the entry is always £6, just tap £6 instead of typing it again.">
           <summary>How do entry fees work in FlipperHelper?</summary>
@@ -868,10 +893,10 @@
           <summary>How does Google Drive export work in FlipperHelper?</summary>
           <div class="ans"><p>FlipperHelper optionally syncs your item photos to Google Drive in a folder called FlipperHelper_App/images/. It uses the drive.file and email OAuth scopes — drive.file limits access to files created by FlipperHelper, and email is used to display your account info in Settings. Photo sync continues in the background via iOS background task continuation even when the app is suspended.</p></div>
         </details>
-        <details id="how-does-data-export-to-google-sheets-work-in-flipperhelper" data-s="how does data export to google sheets work in flipperhelper? flipperhelper exports your items and expenses as two separate csv files uploaded to google drive. google drive automatically converts these csvs to google sheets format. no google sheets api is used. the items csv includes columns for sku, photo urls (every photo for the item, main image first), prices (buy and sell with currencies and exchange rates), market, seller, listing dates per platform, sale details, payment method, profit in home currency, days to sell, and title. the expenses csv includes type, subtype, date, amount, market, and memo.">
+        <details id="how-does-data-export-to-google-sheets-work-in-flipperhelper" data-s="how does data export to google sheets work in flipperhelper? flipperhelper exports your items and expenses as two separate csv files uploaded to google drive. google drive automatically converts these csvs to google sheets format. no google sheets api is used. the items csv includes columns for sku, photo urls (every photo for the item, main image first), prices (buy and sell with currencies and exchange rates), market, seller, listing dates per platform, sale details, payment method, profit in home currency, days to sell, and title. the expenses csv includes type, subtype, date, amount, market, memo, and the item it's linked to, if any.">
           <summary>How does data export to Google Sheets work in FlipperHelper?</summary>
           <div class="ans"><p>FlipperHelper exports your items and expenses as two separate CSV files uploaded to Google Drive. Google Drive automatically converts these CSVs to Google Sheets format. No Google Sheets API is used.</p>
-                        <p>The items CSV includes columns for SKU, photo URLs (every photo for the item, main image first), prices (buy and sell with currencies and exchange rates), market, seller, listing dates per platform, sale details, payment method, profit in home currency, days to sell, and title. The expenses CSV includes type, subtype, date, amount, market, and memo.</p></div>
+                        <p>The items CSV includes columns for SKU, photo URLs (every photo for the item, main image first), prices (buy and sell with currencies and exchange rates), market, seller, listing dates per platform, sale details, payment method, profit in home currency, days to sell, and title. The expenses CSV includes type, subtype, date, amount, market, memo, and the item it's linked to, if any.</p></div>
         </details>
         <details id="can-i-backup-and-restore-all-my-data-in-flipperhelper" data-s="can i backup and restore all my data in flipperhelper? yes, flipperhelper supports full data backup and restore as a single zip archive. the backup includes all your items, markets, sellers, expenses, hauls, settings, and photos. you can use it to create a safety copy or to transfer your data between devices. the zip uses exactly the same format on iphone and on the android app, so a backup made on one platform restores cleanly on the other. cross-platform compatibility is guaranteed.">
           <summary>Can I backup and restore all my data in FlipperHelper?</summary>
@@ -1142,8 +1167,8 @@
       g.classList.toggle('hide', visible === 0);
       shown += visible;
     });
-    count.textContent = shown === 53
-      ? '53 questions'
+    count.textContent = shown === 55
+      ? '55 questions'
       : shown + (shown === 1 ? ' question matches' : ' questions match');
     empty.classList.toggle('show', shown === 0);
   }

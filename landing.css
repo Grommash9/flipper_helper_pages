@@ -398,7 +398,7 @@ ul.today-grid,dl.pro-rows{list-style:none;margin:0}
 .rev-summary .stars{letter-spacing:2px;font-size:var(--fs-base)}
 .rev-summary .s-full{color:var(--accent)}
 .rev-summary .s-part{
-  background:linear-gradient(90deg,var(--accent) 60%,rgba(0,0,0,.16) 60%);
+  background:linear-gradient(90deg,var(--accent) 80%,rgba(0,0,0,.16) 80%);
   -webkit-background-clip:text;background-clip:text;color:transparent;
 }
 .rev-summary .of{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);letter-spacing:.08em;text-transform:uppercase}
