@@ -59,8 +59,8 @@
 .prose p:last-child{margin-bottom:0}
 
 /* VARIATION of .pro-rows: the contact rows are the same 190px key/value grid on
-   dashed rules, used outside a .pro-card — this page spends its single orange
-   stripe on the feature card. */
+   dashed rules, used outside a .pro-card, so the contact block carries no orange
+   stripe — the feature and links cards do. */
 .facts{border-top:1px dashed var(--line-strong);margin-top:26px}
 
 /* Requested change: row keys and the timeline labels take --accent instead of
@@ -107,6 +107,18 @@
    ~184px, and the default 13px/22px button would push the stack past the 96px
    preview it has to match. */
 .asset-card .btn{align-self:flex-start;font-size:var(--fs-xs);padding:7px 14px;border-radius:10px}
+
+/* Same band treatment as the homepage's .story section (landing.css:255): the
+   --card surface with a hairline top and bottom, so Key Facts lifts out of the
+   run of prose around it. Not the .story class itself — that also carries a
+   two-column grid and paragraph colours this section has no use for. */
+#facts{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+/* Links belongs to the developer block above it, so the two share one gap
+   instead of a full section break: 40px, the same step .merged-gap uses on the
+   homepage, in place of 68px + 68px of section padding. */
+#developer{padding-bottom:0}
+#links{padding-top:40px}
 
 /* The shots on this page are downloads, not decoration: the caption carries the
    link, and the whole figure is the hit area. Same stretched-::after as /tools/. */
@@ -274,6 +286,8 @@
     </div>
   </section>
 
+  <div class="wrap"><hr class="tear"></div>
+
   <!-- ======================= BRAND ASSETS ======================= -->
   <section id="assets" aria-labelledby="assets-title">
     <div class="wrap">
@@ -332,13 +346,15 @@
       <span class="eyebrow">Elsewhere</span>
       <h2 class="section-title" id="links-title">Links</h2>
 
-      <ul class="feature-list">
-        <li><a href="https://apps.apple.com/app/id6759716745" rel="noopener">App Store</a></li>
-        <li><a href="https://flipperhelper.app/" rel="noopener">Website</a></li>
-        <li><a href="https://www.instagram.com/flipperhelper" rel="noopener">Instagram (@flipperhelper)</a></li>
-        <li><a href="https://www.reddit.com/r/flipperhelper/" rel="noopener">Reddit (r/flipperhelper)</a></li>
-        <li><a href="https://medium.com/@andreevichprudnikov" rel="noopener">Medium (development blog)</a></li>
-      </ul>
+      <div class="pro-card reveal">
+        <ul class="feature-list">
+          <li><a href="https://apps.apple.com/app/id6759716745" rel="noopener">App Store</a></li>
+          <li><a href="https://flipperhelper.app/" rel="noopener">Website</a></li>
+          <li><a href="https://www.instagram.com/flipperhelper" rel="noopener">Instagram (@flipperhelper)</a></li>
+          <li><a href="https://www.reddit.com/r/flipperhelper/" rel="noopener">Reddit (r/flipperhelper)</a></li>
+          <li><a href="https://medium.com/@andreevichprudnikov" rel="noopener">Medium (development blog)</a></li>
+        </ul>
+      </div>
     </div>
   </section>
 
