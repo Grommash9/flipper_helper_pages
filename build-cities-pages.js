@@ -38,7 +38,7 @@ function metaDesc(c) {
 
 function siblingLinks(currentSlug) {
     return data.cities.filter(c => c.slug !== currentSlug).map(c =>
-        `                        <a class="city-link" href="silver-hallmarks-${c.slug}.html">${esc(c.name)} <small>${esc(c.mark_name)}</small></a>`
+        `        <a class="city-link" href="silver-hallmarks-${c.slug}.html">${esc(c.name)} <small>${esc(c.mark_name)}</small></a>`
     ).join('\n');
 }
 
@@ -97,11 +97,11 @@ function dateLetterChartHTML(officeData, cityName) {
         const cards = b.entries.map(e => {
             const cycleLabel = e.cycleTo == null ? `${e.cycleFrom}–present` : (e.cycleFrom === e.cycleTo ? `${e.cycleFrom}` : `${e.cycleFrom}–${e.cycleTo}`);
             return `
-                            <div class="letter-card">
-                                <div class="letter-card-img"><img src="images/hallmarks/${esc(e.glyph)}" alt="${esc(cityName)} ${esc(e.year)} date letter ${esc(b.letter)}" loading="lazy"></div>
-                                <div class="letter-card-year">${e.year}</div>
-                                <div class="letter-card-cycle">cycle ${cycleLabel}</div>
-                            </div>`;
+              <div class="letter-card">
+                <div class="letter-card-img"><img src="images/hallmarks/${esc(e.glyph)}" alt="${esc(cityName)} ${esc(e.year)} date letter ${esc(b.letter)}" loading="lazy"></div>
+                <div class="letter-card-year">${e.year}</div>
+                <div class="letter-card-cycle">cycle ${cycleLabel}</div>
+              </div>`;
         }).join('');
         // Hidden by default — picker reveals one bucket at a time.
         return `
@@ -121,7 +121,11 @@ function dateLetterChartHTML(officeData, cityName) {
     const totalEntries = orderedBuckets.reduce((n, b) => n + b.entries.length, 0);
     const defaultStatus = `Pick a letter above to see the years ${cityName} used it (${totalEntries} year-letter pairs across ${orderedBuckets.length} letters).`;
 
+    // The dividers belong to the chart: an office with no cycle data drops the whole
+    // block, and two adjacent .tear rules would leave a doubled divider behind.
     return `
+  <div class="wrap"><hr class="tear"></div>
+
   <section id="date-letter-chart" aria-labelledby="chart-title">
     <div class="wrap">
       <span class="eyebrow">Date letters</span>
@@ -138,7 +142,9 @@ function dateLetterChartHTML(officeData, cityName) {
       <div class="letter-buckets">${blocks}
       </div>
     </div>
-  </section>`;
+  </section>
+
+  <div class="wrap"><hr class="tear"></div>`;
 }
 
 function pageHTML(c) {
@@ -239,304 +245,196 @@ function pageHTML(c) {
     <script type="application/ld+json">${JSON.stringify(article, null, 2)}</script>
     <script type="application/ld+json">${JSON.stringify(faq, null, 2)}</script>
     <style>
-        .callout {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
-            border-left: 3px solid var(--color-primary);
-            padding: 0.85rem 1rem;
-            margin: 0.9rem 0;
-            color: var(--text-secondary);
-            border-radius: var(--radius-sm);
-        }
-        .callout strong, .callout em, .callout b { color: var(--text-primary); }
-        .callout a { color: var(--color-primary-text); }
-        .mark-hero {
-            display: flex;
-            gap: 1.25rem;
-            align-items: center;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-md);
-            padding: 1.25rem;
-            margin: 1.5rem 0;
-        }
-        .mark-hero .mark-img {
-            width: 100px;
-            height: 100px;
-            min-width: 100px;
-            background: #f4ead6;
-            border-radius: var(--radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6a4a1a;
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-align: center;
-            padding: 0.5rem;
-        }
-        .mark-hero .mark-img img { max-width: 100%; max-height: 100%; }
-        .mark-hero h2 { margin: 0 0 0.4rem 0; color: var(--text-primary); }
-        .mark-hero p { margin: 0; color: var(--text-secondary); }
-        .mark-hero p strong { color: var(--text-primary); }
-        .city-link-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 0.6rem;
-            margin: 1rem 0;
-        }
-        .city-link, .city-link:link, .city-link:visited, .city-link:hover {
-            background: var(--bg-card);
-            border: 1px solid var(--border-default);
-            border-radius: var(--radius-sm);
-            padding: 0.85rem 1rem;
-            text-decoration: none !important;
-            color: var(--text-primary);
-            font-weight: 600;
-            transition: border-color var(--transition-fast), background var(--transition-fast);
-        }
-        .city-link:hover {
-            background: var(--bg-card-hover);
-            border-color: var(--border-hover);
-        }
-        .city-link small {
-            display: block;
-            font-weight: normal;
-            color: var(--text-tertiary);
-            margin-top: 0.2rem;
-            font-size: 0.82rem;
-            text-decoration: none;
-        }
-        /* Date-letter chart — letter picker + buckets */
-        .letter-picker {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-md);
-            padding: 1rem;
-            margin: 1.25rem 0 0.75rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 5;
-        }
-        .letter-picker-row {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 0.5rem;
-            flex-wrap: wrap;
-        }
-        .letter-picker-row:last-of-type { margin-bottom: 0; }
-        .letter-picker-label {
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            color: var(--text-tertiary);
-            min-width: 78px;
-        }
-        .letter-picker-buttons {
-            display: flex;
-            gap: 0.3rem;
-            flex-wrap: wrap;
-            flex: 1;
-        }
-        .letter-pick {
-            background: var(--bg-card);
-            border: 1px solid var(--border-default);
-            border-radius: var(--radius-sm);
-            color: var(--text-primary);
-            font-family: 'Georgia', serif;
-            font-weight: 700;
-            font-size: 1.1rem;
-            line-height: 1;
-            padding: 0.45rem 0.6rem;
-            cursor: pointer;
-            transition: border-color var(--transition-fast), background var(--transition-fast);
-            display: inline-flex;
-            align-items: baseline;
-            gap: 0.25rem;
-            min-width: 38px;
-            justify-content: center;
-        }
-        .letter-pick:hover {
-            background: var(--bg-card-hover);
-            border-color: var(--border-hover);
-        }
-        .letter-pick.is-active {
-            background: var(--color-primary-light);
-            border-color: var(--color-primary);
-            color: var(--color-primary-text);
-        }
-        .letter-pick-count {
-            font-family: var(--font-sans);
-            font-size: 0.65rem;
-            font-weight: 500;
-            color: var(--text-tertiary);
-        }
-        .letter-pick.is-active .letter-pick-count { color: var(--color-primary-text); }
-        .letter-picker-actions {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            margin-top: 0.85rem;
-            padding-top: 0.75rem;
-            border-top: 1px solid var(--border-subtle);
-            flex-wrap: wrap;
-        }
-        .letter-pick-clear {
-            background: transparent;
-            border: 1px solid var(--border-default);
-            border-radius: var(--radius-sm);
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            padding: 0.4rem 0.85rem;
-            cursor: pointer;
-            transition: border-color var(--transition-fast), color var(--transition-fast);
-        }
-        .letter-pick-clear:hover {
-            color: var(--text-primary);
-            border-color: var(--border-hover);
-        }
-        .letter-picker-status {
-            color: var(--text-tertiary);
-            font-size: 0.85rem;
-        }
-        .letter-bucket {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-md);
-            padding: 1rem;
-            margin: 0.75rem 0;
-        }
-        .letter-bucket.is-hidden { display: none; }
-        .letter-bucket-heading {
-            margin: 0 0 0.75rem 0;
-            font-size: 1.5rem;
-            font-family: 'Georgia', serif;
-            color: var(--text-primary);
-            display: flex;
-            align-items: baseline;
-            gap: 0.6rem;
-        }
-        .letter-bucket-heading small {
-            font-family: var(--font-sans);
-            font-size: 0.78rem;
-            font-weight: 400;
-            color: var(--text-tertiary);
-        }
-        .letter-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-            gap: 0.5rem;
-        }
-        .letter-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-default);
-            border-radius: var(--radius-sm);
-            padding: 0.55rem 0.4rem;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.3rem;
-        }
-        .letter-card-img {
-            width: 60px;
-            height: 60px;
-            background: #f4ead6;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .letter-card-img img {
-            max-width: 100%;
-            max-height: 100%;
-            image-rendering: -webkit-optimize-contrast;
-        }
-        .letter-card-year {
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            line-height: 1;
-        }
-        .letter-card-cycle {
-            font-size: 0.68rem;
-            color: var(--text-tertiary);
-            line-height: 1.2;
-        }
-        .letter-card { position: relative; }
-        .zoom-btn {
-            position: absolute;
-            top: 4px;
-            right: 4px;
-            width: 22px;
-            height: 22px;
-            background: rgba(0,0,0,0.55);
-            color: #fff;
-            border: 0;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 13px;
-            line-height: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0.55;
-            transition: opacity var(--transition-fast), background var(--transition-fast);
-            padding: 0;
-            z-index: 2;
-        }
-        .zoom-btn:hover { opacity: 1; background: rgba(0,0,0,0.8); }
-        .img-lightbox {
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.85);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            cursor: zoom-out;
-        }
-        .img-lightbox[hidden] { display: none; }
-        .img-lightbox img {
-            background: #f4ead6;
-            padding: 1.5rem;
-            border-radius: 12px;
-            max-width: min(90vw, 520px);
-            max-height: 90vh;
-            image-rendering: -webkit-optimize-contrast;
-        }
-        .img-lightbox-caption {
-            position: absolute;
-            bottom: 1.25rem;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #FAFAFA;
-            font-size: 0.95rem;
-            background: rgba(0,0,0,0.6);
-            padding: 0.5rem 0.85rem;
-            border-radius: var(--radius-sm);
-        }
-        .img-lightbox-close {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: rgba(0,0,0,0.55);
-            color: #fff;
-            border: 0;
-            font-size: 1.6rem;
-            line-height: 1;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+/* ---- page-specific: everything else comes from /landing.css ---- */
+
+/* skip link — not in landing.css yet; sits above the sticky nav (z-index:100) */
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
+  background:var(--card);color:var(--ink);border:1px solid var(--line-strong);
+  border-radius:12px;padding:10px 16px;box-shadow:var(--neu-soft);
+}
+.skip:focus{left:24px;top:8px;text-decoration:none}
+
+/* page head — title + meta line, same as the UK identifier page (§25.2) */
+.page-head{padding:64px 0 0}
+@media(max-width:720px){.page-head{padding:44px 0 0}}
+.page-head h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px;max-width:820px}
+.head-updated{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);font-variant-numeric:tabular-nums}
+.backlink{display:inline-block;margin-top:14px;font-family:var(--font-mono);font-size:var(--fs-2xs);letter-spacing:.08em}
+
+/* Body text takes the full 1080px frame rather than the style guide's 900px text
+   measure (§5.2), the way uk-silver-hallmarks.html does, so every section on this
+   page shares one left and right edge with the rest of the site. */
+.prose p{margin-bottom:16px}
+.prose p:last-child{margin-bottom:0}
+.section-title{margin-bottom:20px}
+
+/* the site's prose bullet: 6px periwinkle dot, bold term then the detail (§13.5) */
+.answers{list-style:none}
+.answers li{position:relative;padding-left:22px;margin-bottom:9px;color:var(--ink-66)}
+.answers li:last-child{margin-bottom:0}
+.answers li::before{content:"";position:absolute;left:4px;top:.58em;width:6px;height:6px;border-radius:50%;background:var(--cat)}
+
+/* scope notes — .story .rule from landing.css, at body size (§25.5) */
+.callout{border-left:3px solid var(--accent);padding:4px 0 4px 18px;margin:22px 0 0;color:var(--ink-66)}
+.callout strong{color:var(--ink);font-weight:600}
+
+/* the parchment plate a hallmark punch is photographed against — a literal, not a
+   token (§2.3); scoped to the three blocks that show punch images */
+.mark-hero,.letter-card-img,.img-lightbox{--plate:#F4EAD6;--plate-ink:#6A4A1A}
+
+/* ---------- the town mark: this page's one emphasis card (§6.3) ---------- */
+.mark-hero{
+  display:flex;gap:22px;align-items:center;flex-wrap:wrap;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  padding:26px 22px;box-shadow:var(--neu);position:relative;overflow:hidden;
+}
+.mark-hero::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent);border-radius:4px 0 0 4px}
+.mark-hero .mark-img{
+  width:100px;height:100px;min-width:100px;background:var(--plate);border-radius:var(--radius-sm);
+  display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;
+  font-family:var(--font-mono);font-weight:600;font-size:var(--fs-3xs);
+  text-transform:uppercase;letter-spacing:.06em;line-height:1.3;color:var(--plate-ink);
+}
+.mark-hero .mark-img img{max-width:100%;max-height:100%}
+.mark-hero-text{flex:1;min-width:240px}
+.mark-hero h3{font-size:var(--fs-h3-lg);margin-bottom:8px;letter-spacing:-.01em}
+.mark-hero p{color:var(--ink-66)}
+.mark-hero .mark-meta{
+  display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;padding-top:18px;
+  border-top:1px dashed var(--line-strong);
+  font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:500;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink-45);font-variant-numeric:tabular-nums;
+}
+.mark-hero .mark-meta b{color:var(--ink);font-weight:600}
+
+/* ---------- small ghost control, same recipe as the UK identifier page ---------- */
+.btn-action{
+  font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
+  background:var(--card);color:var(--ink);border:1px solid var(--line-strong);border-radius:9px;
+  padding:8px 14px;cursor:pointer;box-shadow:var(--neu-soft);
+  transition:transform .15s ease,border-color .15s ease,color .15s ease;
+}
+.btn-action:hover{border-color:var(--action);color:var(--action)}
+.btn-action:active{transform:translateY(1px)}
+
+/* ---------- date-letter picker ---------- */
+/* Not sticky, unlike the pre-redesign version: only one bucket is ever open, so the
+   cards never run more than two rows and the picker stays on screen anyway. Sticking
+   it would have meant hard-coding the nav's height, which differs above and below the
+   860px breakpoint where landing.css drops the nav text links. */
+.letter-picker{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:22px;box-shadow:var(--neu-soft);
+}
+.letter-picker-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:12px}
+.letter-picker-row:last-of-type{margin-bottom:0}
+.letter-picker-label{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);min-width:82px;
+}
+.letter-picker-buttons{display:flex;gap:8px;flex-wrap:wrap;flex:1}
+/* VARIATION of .filters button (§6.4): same interactive-pill semantics — blue when
+   selected, periwinkle never — but a 12px control radius instead of 999px, because
+   the label is a single glyph the reader compares against a punch. It has to read
+   as type, not as a tag. */
+.letter-pick{
+  display:inline-flex;align-items:baseline;justify-content:center;gap:5px;min-width:40px;
+  background:var(--card);border:1px solid var(--line-strong);border-radius:12px;
+  padding:6px 10px;cursor:pointer;box-shadow:var(--neu-soft);
+  font-family:var(--font-mono);font-weight:600;font-size:var(--fs-base);line-height:1.2;color:var(--ink);
+  transition:transform .15s ease,border-color .15s ease,color .15s ease,background .15s ease;
+}
+.letter-pick:hover{border-color:var(--action);color:var(--action)}
+.letter-pick:active{transform:translateY(1px)}
+.letter-pick[aria-pressed="true"]{border-color:var(--action);color:var(--action);background:rgba(30,118,241,.07);box-shadow:none}
+.letter-pick-count{font-size:var(--fs-3xs);font-weight:400;color:var(--ink-45)}
+.letter-pick[aria-pressed="true"] .letter-pick-count{color:var(--action)}
+.letter-picker-actions{
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  margin-top:18px;padding-top:18px;border-top:1px dashed var(--line-strong);
+}
+.letter-picker-status{font-size:var(--fs-sm);color:var(--ink-66)}
+
+/* ---------- one bucket per letter, revealed by the picker ---------- */
+.letter-buckets{margin-top:18px}
+.letter-bucket{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  padding:22px;box-shadow:var(--neu-soft);
+}
+.letter-bucket.is-hidden{display:none}
+.letter-bucket-heading{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.letter-bucket-glyph{font-family:var(--font-mono);font-size:var(--fs-h3-lg);font-weight:600}
+.letter-bucket-heading small{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:400;
+  letter-spacing:.08em;color:var(--ink-45);
+}
+.letter-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:12px}
+/* inset tiles inside the bucket card — no shadow of their own; the card carries it,
+   and at a 12px gap two shadowed tiles would bleed into each other anyway (§7.2) */
+.letter-card{
+  position:relative;background:var(--bg);border:1px solid var(--line-strong);border-radius:var(--radius-md);
+  padding:12px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px;
+}
+.letter-card-img{
+  width:60px;height:60px;background:var(--plate);border-radius:var(--radius-sm);
+  display:flex;align-items:center;justify-content:center;
+}
+.letter-card-img img{max-width:100%;max-height:100%;image-rendering:-webkit-optimize-contrast}
+.letter-card-year{
+  font-family:var(--font-mono);font-size:var(--fs-sm);font-weight:600;color:var(--ink);
+  line-height:1.2;font-variant-numeric:tabular-nums;
+}
+.letter-card-cycle{font-family:var(--font-mono);font-size:var(--fs-3xs);color:var(--ink-45);line-height:1.3}
+
+.zoom-btn{
+  position:absolute;top:5px;right:5px;width:22px;height:22px;
+  background:rgba(0,0,0,.5);color:#fff;border:0;border-radius:50%;cursor:pointer;
+  font-size:13px;line-height:1;display:flex;align-items:center;justify-content:center;
+  opacity:.5;transition:opacity .15s ease,background .15s ease;padding:0;z-index:2;
+}
+.zoom-btn:hover{opacity:1;background:rgba(0,0,0,.8)}
+
+/* ---------- the sibling office pages ---------- */
+.city-link-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px;margin-bottom:22px}
+.city-link{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  padding:20px;box-shadow:var(--neu-soft);color:var(--ink);font-weight:600;
+  text-decoration:none!important;transition:border-color .15s ease,color .15s ease,transform .15s ease;
+}
+.city-link:hover{border-color:var(--action);color:var(--action)}
+.city-link:active{transform:translateY(1px)}
+.city-link small{
+  display:block;font-family:var(--font-mono);font-weight:400;font-size:var(--fs-2xs);
+  color:var(--ink-45);margin-top:6px;
+}
+
+/* ---------- punch lightbox ---------- */
+.img-lightbox{
+  position:fixed;inset:0;background:rgba(0,0,0,.85);
+  display:flex;align-items:center;justify-content:center;z-index:9999;cursor:zoom-out;
+}
+.img-lightbox[hidden]{display:none}
+.img-lightbox img{
+  background:var(--plate);padding:24px;border-radius:var(--radius-lg);
+  max-width:min(90vw,520px);max-height:90vh;image-rendering:-webkit-optimize-contrast;
+}
+.img-lightbox-caption{
+  position:absolute;bottom:20px;left:50%;transform:translateX(-50%);
+  color:#fff;font-family:var(--font-mono);font-size:var(--fs-2xs);
+  background:rgba(0,0,0,.6);padding:8px 14px;border-radius:9px;
+}
+.img-lightbox-close{
+  position:absolute;top:16px;right:16px;width:36px;height:36px;
+  background:rgba(0,0,0,.55);color:#fff;border:0;border-radius:50%;cursor:pointer;
+  font-size:1.6rem;line-height:1;display:flex;align-items:center;justify-content:center;
+}
     </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+
     <nav class="nav" aria-label="Main">
       <div class="nav-inner">
         <a class="brand" href="/">
@@ -555,71 +453,121 @@ function pageHTML(c) {
       </div>
     </nav>
 
-    <main class="legal-page">
-        <div class="container">
-            <article class="legal-content">
-                <h1>${esc(c.name)} Silver Hallmarks</h1>
-                <p class="legal-updated">Last verified: ${data._last_verified}</p>
+    <main id="main">
 
-                <p><a href="uk-silver-hallmarks.html">&larr; Back to the UK Silver Hallmarks Identifier</a></p>
+  <!-- ======================= PAGE HEAD ======================= -->
+  <header class="page-head">
+    <div class="wrap">
+      <h1>${esc(c.name)} Silver Hallmarks</h1>
+      <p class="head-updated">Last verified: ${ukDate(data._last_verified)}</p>
+      <a class="backlink" href="uk-silver-hallmarks.html">&larr; Back to the UK Silver Hallmarks Identifier</a>
+    </div>
+  </header>
 
-                <div class="mark-hero">
-                    <div class="mark-img" id="hero-img" data-slug="${esc(c.slug)}">
-                        <span>${esc(c.mark_name.split(' (')[0])}</span>
-                    </div>
-                    <div>
-                        <h2>${esc(c.mark_name)}</h2>
-                        <p>${esc(c.mark_blurb)}</p>
-                        <p style="margin-top:0.5rem;font-size:0.92rem;">In use since <strong>${c.active_from}</strong> &middot; ${c.active_to ? 'Closed ' + c.active_to : 'Still active'} &middot; ${esc(c.country)}${cycleCount ? ` &middot; <strong>${cycleCount}</strong> cycles, <strong>${letterCount}</strong> dated letters on this page` : ''}</p>
-                    </div>
-                </div>
+  <!-- ======================= TOWN MARK ======================= -->
+  <section id="town-mark" aria-labelledby="town-mark-title">
+    <div class="wrap">
+      <span class="eyebrow">Town mark</span>
+      <h2 class="section-title" id="town-mark-title">${esc(c.name)}&rsquo;s town mark</h2>
+      <div class="mark-hero">
+        <div class="mark-img" id="hero-img" data-slug="${esc(c.slug)}">
+          <span>${esc(c.mark_name.split(' (')[0])}</span>
+        </div>
+        <div class="mark-hero-text">
+          <h3>${esc(c.mark_name)}</h3>
+          <p>${esc(c.mark_blurb)}</p>
+          <p class="mark-meta">
+            <span>In use since <b>${c.active_from}</b></span>
+            <span>${c.active_to ? `Closed <b>${c.active_to}</b>` : 'Still active'}</span>
+            <span>${esc(c.country)}</span>${cycleCount ? `
+            <span><b>${cycleCount}</b> cycles</span>
+            <span><b>${letterCount}</b> dated letters on this page</span>` : ''}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <section>
-                    <h2>History</h2>
-                    <p>${esc(c.narrative_history)}</p>
-                </section>
+  <!-- ======================= HISTORY ======================= -->
+  <section id="history" aria-labelledby="history-title">
+    <div class="wrap">
+      <span class="eyebrow">History</span>
+      <h2 class="section-title" id="history-title">The ${esc(c.name)} Assay Office</h2>
+      <div class="prose">
+        <p>${esc(c.narrative_history)}</p>
+      </div>
+    </div>
+  </section>
 
-                <section>
-                    <h2>Reading the marks on a ${esc(c.name)} piece</h2>
-                    <p>${esc(c.narrative_marks)}</p>
-                </section>
+  <!-- ======================= READING THE MARKS ======================= -->
+  <section class="story" id="reading" aria-labelledby="reading-title">
+    <div class="wrap">
+      <span class="eyebrow">Reading the marks</span>
+      <h2 class="section-title" id="reading-title">Reading the marks on ${indefArticle(c.name)} ${esc(c.name)} piece</h2>
+      <div class="prose">
+        <p>${esc(c.narrative_marks)}</p>
+      </div>
+    </div>
+  </section>
 
-                <section>
-                    <h2>Identifying the date — using the date letter</h2>
-                    <p>${esc(c.narrative_dating)}</p>
-                    <p class="callout">
-                        <strong>Faster:</strong> the <a href="uk-silver-hallmarks.html#wiz">main UK Silver Hallmarks Identifier</a> walks you through standard mark, town mark, cycle, and letter step-by-step and prints the year. Use the chart further down this page if you prefer to scan visually.
-                    </p>
-                </section>
+  <!-- ======================= DATING ======================= -->
+  <section id="dating" aria-labelledby="dating-title">
+    <div class="wrap">
+      <span class="eyebrow">Dating</span>
+      <h2 class="section-title" id="dating-title">Identifying the date &mdash; using the date letter</h2>
+      <div class="prose">
+        <p>${esc(c.narrative_dating)}</p>
+        <p class="callout"><strong>Faster:</strong> the <a href="uk-silver-hallmarks.html#wiz">main UK Silver Hallmarks Identifier</a> walks you through standard mark, town mark, cycle, and letter step by step and prints the year. Use the chart further down this page if you prefer to scan visually.</p>
+      </div>
+    </div>
+  </section>
+
 ${dateLetterChartHTML(officeData, c.name)}
 
-                <section>
-                    <h2>The other UK Assay Offices</h2>
-                    <p>If your piece&rsquo;s town mark doesn&rsquo;t match the ${esc(c.mark_name)}, try one of the other active offices:</p>
-                    <div class="city-link-grid">
+  <!-- ======================= OTHER OFFICES ======================= -->
+  <section id="other-offices" aria-labelledby="other-offices-title">
+    <div class="wrap">
+      <span class="eyebrow">Other offices</span>
+      <h2 class="section-title" id="other-offices-title">The other UK Assay Offices</h2>
+      <div class="prose">
+        <p>If your piece&rsquo;s town mark doesn&rsquo;t match the ${esc(c.mark_name)}, try one of the other active offices:</p>
+      </div>
+      <div class="city-link-grid">
 ${siblingLinks(c.slug)}
-                    </div>
-                    <p>For closed historical offices &mdash; Chester, Newcastle, Exeter, York, Glasgow &mdash; and Dublin, see the <a href="uk-silver-hallmarks.html#wiz">main identifier</a>; full per-office cycle data is wired into the wizard for those too.</p>
-                </section>
+      </div>
+      <div class="prose">
+        <p>For closed historical offices &mdash; Chester, Newcastle, Exeter, York, Glasgow &mdash; and Dublin, see the <a href="uk-silver-hallmarks.html#wiz">main identifier</a>; full per-office cycle data is wired into the wizard for those too.</p>
+      </div>
+    </div>
+  </section>
 
-                <section>
-                    <h2>Related</h2>
-                    <ul>
-                        <li><a href="uk-silver-hallmarks.html">Main UK Silver Hallmarks Identifier</a> (multi-office wizard)</li>
-                        <li>Official site: ${c.office_url ? `<a href="${esc(c.office_url)}" target="_blank" rel="noopener">${esc(c.office_url_label)}</a>` : esc(c.office_url_label)}</li>
-                        <li><a href="https://www.thegoldsmiths.co.uk/" target="_blank" rel="noopener">Goldsmiths&rsquo; Company</a> &mdash; the compulsory hallmarking authority for England and Wales</li>
-                    </ul>
-                </section>
+  <!-- ======================= RELATED ======================= -->
+  <section id="related" aria-labelledby="related-title">
+    <div class="wrap">
+      <span class="eyebrow">References</span>
+      <h2 class="section-title" id="related-title">Related pages and official sources</h2>
+      <ul class="answers">
+        <li><a href="uk-silver-hallmarks.html">Main UK Silver Hallmarks Identifier</a> &mdash; the multi-office wizard</li>
+        <li>Official site: ${c.office_url ? `<a href="${esc(c.office_url)}" target="_blank" rel="noopener">${esc(c.office_url_label)}</a>` : esc(c.office_url_label)}</li>
+        <li><a href="https://www.thegoldsmiths.co.uk/" target="_blank" rel="noopener">Goldsmiths&rsquo; Company</a> &mdash; the compulsory hallmarking authority for England and Wales</li>
+      </ul>
+    </div>
+  </section>
 
-                <section>
-                    <h2>Track silver flips with FlipperHelper</h2>
-                    <p>FlipperHelper logs each piece with photos, tracks listings across eBay, Vinted, and 14 other platforms, and shows real profit per item after every expense. Free on the App Store.</p>
-                    <p style="text-align:center; margin-top:1.5em;">
-                        <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download FlipperHelper Free on the App Store</a>
-                    </p>
-                </section>
-            </article>
-        </div>
+  <div class="wrap"><hr class="tear"></div>
+
+  <!-- ======================= FINAL CTA ======================= -->
+  <section class="final" id="track" aria-labelledby="final-title">
+    <div class="wrap">
+      <h2 id="final-title">Track silver flips with FlipperHelper</h2>
+      <p>If you flip silver, FlipperHelper logs each piece with photos, tracks listings across eBay, Vinted, and 14 other platforms, and shows real profit per item after every expense. Free on the App Store.</p>
+      <div class="store-row">
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">Download FlipperHelper Free on the App Store</a>
+        <a class="btn btn-primary" href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener">Get FlipperHelper Free on Google Play</a>
+      </div>
+    </div>
+  </section>
+
     </main>
 
     <div class="img-lightbox" id="img-lightbox" hidden role="dialog" aria-label="Enlarged hallmark image" aria-modal="true">
@@ -717,11 +665,11 @@ ${siblingLinks(c.slug)}
 
         function clear() {
             buckets.forEach(b => b.classList.add('is-hidden'));
-            buttons.forEach(b => b.classList.remove('is-active'));
+            buttons.forEach(b => b.setAttribute('aria-pressed', 'false'));
             if (status) status.textContent = defaultStatus;
         }
         function pick(key, btn) {
-            buttons.forEach(b => b.classList.toggle('is-active', b === btn));
+            buttons.forEach(b => b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'));
             let count = 0;
             buckets.forEach(b => {
                 const match = b.dataset.letter === key;
