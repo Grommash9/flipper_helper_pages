@@ -146,6 +146,11 @@
 .mark-hero,.letter-card-img,.img-lightbox{--plate:#F4EAD6;--plate-ink:#6A4A1A}
 
 /* ---------- the town mark: this page's one emphasis card (§6.3) ---------- */
+/* Tighter than the 68/48px section rhythm: the card continues the page head rather
+   than opening a new idea, and the guide sanctions a reduced section padding in
+   exactly that case (§5.6). Same idiom landing.css uses for section#get. */
+section#town-mark{padding:38px 0}
+@media(max-width:720px){section#town-mark{padding:26px 0}}
 .mark-hero{
   display:flex;gap:22px;align-items:center;flex-wrap:wrap;
   background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
