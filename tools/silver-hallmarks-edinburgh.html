@@ -151,6 +151,14 @@
    exactly that case (§5.6). Same idiom landing.css uses for section#get. */
 section#town-mark{padding:38px 0}
 @media(max-width:720px){section#town-mark{padding:26px 0}}
+/* History drops its own top padding so #town-mark's bottom padding is the entire gap.
+   Otherwise the two stack (38 + 68 = 106px) and the card sits much further from the
+   text below it than from the page head above. This is §5.6's padding-top:0 case —
+   the same trick the home page's screenshot section uses to stay joined to the
+   timeline. It needs no mobile variant: the id outranks landing.css's bare section
+   rule inside the 720px media query on specificity, so 0 holds at every width and the
+   gap tracks #town-mark's padding-bottom (38px, 26px mobile) on its own. */
+section#history{padding-top:0}
 .mark-hero{
   display:flex;gap:22px;align-items:center;flex-wrap:wrap;
   background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
