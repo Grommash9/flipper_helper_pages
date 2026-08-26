@@ -101,12 +101,17 @@
 .asset-card img.logo-preview{border-radius:0;object-fit:contain}
 .asset-card .asset-body{flex:1;min-width:0;display:flex;flex-direction:column;
   justify-content:space-between;gap:6px}
-.asset-card .card-meta{font-family:var(--font-mono);font-size:var(--fs-3xs);
-  color:var(--ink-66);letter-spacing:.06em;text-transform:uppercase;font-variant-numeric:tabular-nums}
+.asset-card .card-meta{font-family:var(--font-mono);font-size:var(--fs-2xs);
+  color:var(--ink-66);letter-spacing:.08em;text-transform:uppercase;font-variant-numeric:tabular-nums}
 /* Smaller than the page's other buttons: at a 332px card the text column has
    ~184px, and the default 13px/22px button would push the stack past the 96px
    preview it has to match. */
 .asset-card .btn{align-self:flex-start;font-size:var(--fs-xs);padding:7px 14px;border-radius:10px}
+/* Three across need 303px each (96px preview + 16px gap + the 155px size line +
+   36px padding), so the row only fits from ~993px of viewport up. Below that go
+   single-column early — landing.css waits until 860px, and in between the size
+   line would wrap and push the text column past the preview it has to match. */
+@media(max-width:1000px){.today-grid{grid-template-columns:1fr}}
 
 /* Core Features and Links put their section title inside the card, the way the
    homepage's .merged-gap blocks do (index.html:595) — mono label outside the
@@ -123,6 +128,10 @@
    run of prose around it. Not the .story class itself — that also carries a
    two-column grid and paragraph colours this section has no use for. */
 #facts{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+/* The dot punches a hole in the dashed spine by filling itself with the page
+   surface (landing.css:196 uses --bg). Inside the band that surface is --card,
+   so without this the ring sits on a grey disc. */
+#facts .moment::before{background:var(--card)}
 
 /* Links belongs to the developer block above it, so the two share one gap
    instead of a full section break: 40px, the same step .merged-gap uses on the
@@ -306,7 +315,7 @@
 
       <ul class="today-grid">
         <li class="today-card asset-card reveal">
-          <img class="" src="app-icon-1024.png" alt="FlipperHelper app icon" width="96" height="96" loading="lazy" decoding="async">
+          <img src="app-icon-1024.png" alt="FlipperHelper app icon" width="96" height="96" loading="lazy" decoding="async">
           <div class="asset-body">
             <h3>App Icon</h3>
             <span class="card-meta">1024 x 1024 px, PNG</span>
