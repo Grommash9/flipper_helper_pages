@@ -85,9 +85,9 @@
 .page-head h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px;max-width:760px}
 .head-updated{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45)}
 
-/* one article measure for every run of body text on the page (§5.2) */
-:root{--measure:900px}
-.measure,.prose{max-width:var(--measure)}
+/* Body text takes the full 1080px frame rather than the style guide's 900px text
+   measure (§5.2), the way faq.html:536 and the press page do, so every section on
+   the page shares one left and right edge with the rest of the site. */
 .prose p{margin-bottom:16px}
 .prose p:last-child{margin-bottom:0}
 
@@ -96,11 +96,11 @@
 .section-title{margin-bottom:26px}
 
 /* The intro: photo left, identity and the opening paragraphs right. The photo is
-   148px — small enough that the text column keeps the 900px measure the rest of
-   the page reads at, instead of the old 280px portrait that pushed the copy below
-   the fold. The ring is the app's own neumorphic surface, so the shadow sits on
-   the frame and never on the image itself (§9.2). */
-.bio{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:start;max-width:var(--measure)}
+   148px instead of the old 280px portrait, which pushed the copy below the fold;
+   at this size it centres against the text column rather than towering over it.
+   The ring is the app's own neumorphic surface, so the shadow sits on the frame
+   and never on the image itself (§9.2). */
+.bio{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center}
 .bio-photo{width:164px;height:164px;padding:8px;border-radius:50%;flex:none;background:var(--card);box-shadow:var(--neu-soft)}
 .bio-photo img{width:100%;height:100%;border-radius:50%;object-fit:cover}
 .bio .section-title{margin-bottom:8px}
@@ -119,11 +119,11 @@
 .answers li{position:relative;padding-left:22px;margin-bottom:9px;color:var(--ink-66)}
 .answers li::before{content:"";position:absolute;left:4px;top:.58em;width:6px;height:6px;border-radius:50%;background:var(--cat)}
 .answers strong{color:var(--ink);font-weight:600}
-.answers + p{margin-top:16px;max-width:var(--measure)}
+.answers + p{margin-top:16px}
 
 /* contact rows — .pro-rows from landing.css used outside a .pro-card, so the block
    carries no orange stripe: nothing here outranks the rest of the page (§25.5) */
-.contact{max-width:var(--measure);margin-bottom:26px}
+.contact{margin-bottom:26px}
 .contact .pro-row:last-child{border-bottom:none}
 </style>
 </head>
@@ -204,7 +204,7 @@
     <div class="wrap">
       <span class="eyebrow">The business</span>
       <h2 class="section-title" id="work-title">What we actually do</h2>
-      <ul class="answers measure">
+      <ul class="answers">
         <li><strong>Source from UK car boots</strong> &mdash; Surrey, Suffolk, North London. Sundays mostly. Hardstanding venues in winter</li>
         <li><strong>Source from charity shops</strong> &mdash; the original learning ground. Now mostly for specific brands and ceramics</li>
         <li><strong>Source from France</strong> &mdash; we drove via Eurotunnel for our first sourcing trip in spring 2026 and came back with a car full of vintage. We&rsquo;ve been back since</li>
@@ -237,7 +237,7 @@
       <div class="prose">
         <p>The blog at <a href="blog/">flipperhelper.app/blog</a> is where I write up what we learn as a UK reseller couple. Topics tend to be:</p>
       </div>
-      <ul class="answers measure" style="margin-top:16px">
+      <ul class="answers" style="margin-top:16px">
         <li><strong>Where to source</strong> &mdash; <a href="blog/uk-car-boot-sales-near-me-2026.html">UK car boots</a>, <a href="blog/best-uk-antiques-fairs-2026.html">UK antiques fairs</a>, <a href="blog/portobello-road-market-uk-reseller-guide.html">Portobello Road</a>, <a href="blog/marche-aux-puces-saint-ouen-uk-guide.html">Saint-Ouen</a>, <a href="blog/best-french-brocantes-2026-uk-sourcing.html">French brocantes</a></li>
         <li><strong>How to actually run trips</strong> &mdash; <a href="blog/sourcing-stock-from-france.html">driving to France for stock</a>, <a href="blog/best-uk-online-auction-sites-resellers.html">UK online auctions</a></li>
         <li><strong>The boring but profitable bits</strong> &mdash; <a href="blog/shiply-furniture-delivery-uk-resellers.html">Shiply for furniture delivery</a>, <a href="blog/how-to-track-reselling-profits.html">tracking profits</a>, <a href="blog/hmrc-1000-trading-allowance-resellers-uk.html">HMRC trading allowance</a></li>
@@ -276,7 +276,7 @@
         <div class="pro-row"><dt class="k">LinkedIn</dt><dd class="v"><a href="https://www.linkedin.com/in/o-prudnikov/" target="_blank" rel="noopener">o-prudnikov</a></dd></div>
       </dl>
 
-      <p class="measure">I read every email and reply to almost all of them, usually within a day or two.</p>
+      <p>I read every email and reply to almost all of them, usually within a day or two.</p>
     </div>
   </section>
 
