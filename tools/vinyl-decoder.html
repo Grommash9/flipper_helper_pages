@@ -155,9 +155,11 @@ code{
   background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:1px 5px;
 }
 
-/* the two reference photos. Deliberately capped far below their 900px source so the
-   figure plus the block it belongs to still fit one screen (Valentina, 2026-08-26). */
-.vinyl-figure{max-width:380px;margin:26px auto 0}
+/* the two reference photos, at their 900px source width, centred in the 1032px frame */
+.vinyl-figure{max-width:900px;margin:26px auto 0}
+/* in a .story-grid the figure IS the column, so it takes the column's width and the
+   grid's own gap supplies the separation */
+.story .vinyl-figure{max-width:none;margin:0}
 .vinyl-figure img{
   width:100%;border-radius:var(--radius-md);border:1px solid var(--line-strong);
   background:var(--card);box-shadow:var(--neu-soft);
@@ -348,25 +350,28 @@ code{
     </div>
   </section>
 
-  <div class="wrap"><hr class="tear"></div>
-
-  <!-- ======================= READING THE DISC ======================= -->
-  <section id="reading" aria-labelledby="reading-title">
+  <!-- ======================= READING THE DISC — story band (§25.6) ======================= -->
+  <section class="story" id="reading" aria-labelledby="reading-title">
     <div class="wrap">
-      <span class="eyebrow">Reading the disc</span>
-      <h2 class="section-title" id="reading-title">Before you type it in — how to actually read a worn runout</h2>
-      <div class="prose">
-        <p>Getting the characters off the disc is usually the hard part, decoding them is the easy part. Collectors lean on a few low-tech tricks: a jeweler&rsquo;s loupe or a simple magnifying glass held under a light angled across the surface (not straight down) makes shallow etching cast a shadow and pop out far more than it does to the naked eye. This matters enough that people specifically ask for magnifier recommendations when their eyesight makes reading runouts hard &mdash; it&rsquo;s a genuine bottleneck before you ever get to decoding.</p>
+      <div class="story-grid">
+        <div>
+          <span class="eyebrow">Reading the disc</span>
+          <h2 class="section-title" id="reading-title">Before you type it in — how to actually read a worn runout</h2>
+          <p>Getting the characters off the disc is usually the hard part, decoding them is the easy part. Collectors lean on a few low-tech tricks: a jeweler&rsquo;s loupe or a simple magnifying glass held under a light angled across the surface (not straight down) makes shallow etching cast a shadow and pop out far more than it does to the naked eye. This matters enough that people specifically ask for magnifier recommendations when their eyesight makes reading runouts hard &mdash; it&rsquo;s a genuine bottleneck before you ever get to decoding.</p>
+        </div>
+
+        <div>
+          <figure class="vinyl-figure">
+            <img src="images/vinyl/matrix-number-example.jpg" alt="Close-up photo of a matrix number etched into the runout groove of a vinyl record" width="900" height="390" loading="lazy">
+            <figcaption>A close-up of runout etching &mdash; this is the kind of text to transcribe, worn characters and all. Photo: Tashi, <a href="https://commons.wikimedia.org/wiki/File:Vinyl_record_matrix_number.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, resized for web.</figcaption>
+          </figure>
+        </div>
       </div>
-      <figure class="vinyl-figure">
-        <img src="images/vinyl/matrix-number-example.jpg" alt="Close-up photo of a matrix number etched into the runout groove of a vinyl record" width="900" height="390" loading="lazy">
-        <figcaption>A close-up of runout etching &mdash; this is the kind of text to transcribe, worn characters and all. Photo: Tashi, <a href="https://commons.wikimedia.org/wiki/File:Vinyl_record_matrix_number.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, resized for web.</figcaption>
-      </figure>
     </div>
   </section>
 
   <!-- ======================= CROSS-CHECKING ======================= -->
-  <section class="story" id="cross-check" aria-labelledby="cross-check-title">
+  <section id="cross-check" aria-labelledby="cross-check-title">
     <div class="wrap">
       <span class="eyebrow">Cross-checking</span>
       <h2 class="section-title" id="cross-check-title">The runout is one clue, not the only one</h2>
