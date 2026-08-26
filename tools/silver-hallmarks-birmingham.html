@@ -160,7 +160,8 @@
 }
 .mark-hero .mark-img img{max-width:100%;max-height:100%}
 .mark-hero-text{flex:1;min-width:240px}
-.mark-hero h3{font-size:var(--fs-h3-lg);margin-bottom:8px;letter-spacing:-.01em}
+/* card-level H2 — the guide's .featured h2 / .post-cta h2 size, not a page-level one */
+.mark-hero h2{font-size:var(--fs-h3-lg);margin-bottom:8px;letter-spacing:-.01em}
 .mark-hero p{color:var(--ink-66)}
 .mark-hero .mark-meta{
   display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;padding-top:18px;
@@ -258,7 +259,14 @@
 .zoom-btn:hover{opacity:1;background:rgba(0,0,0,.8)}
 
 /* ---------- the sibling office pages ---------- */
-.city-link-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px;margin-bottom:22px}
+/* There are always exactly three siblings, so name three columns rather than letting
+   auto-fill pack them — the row then spans the full 1032px frame like the rest of the
+   page. Collapses straight to one column, the way the site's other 3-up card grids do;
+   no intermediate 2-column state (§16.3).
+   The 26px top margin is the gap to the intro line above: that paragraph is :last-child
+   in its .prose block, so its own margin-bottom is 0 and the grid has to carry it. */
+.city-link-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:26px 0}
+@media(max-width:860px){.city-link-grid{grid-template-columns:1fr}}
 .city-link{
   background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
   padding:20px;box-shadow:var(--neu-soft);color:var(--ink);font-weight:600;
@@ -326,16 +334,17 @@
   </header>
 
   <!-- ======================= TOWN MARK ======================= -->
+  <!-- No eyebrow or .section-title here: the mark name is the card's own heading, as
+       it was before the redesign. The card is this page's proof object, the way the
+       receipt opens the home page. -->
   <section id="town-mark" aria-labelledby="town-mark-title">
     <div class="wrap">
-      <span class="eyebrow">Town mark</span>
-      <h2 class="section-title" id="town-mark-title">Birmingham&rsquo;s town mark</h2>
       <div class="mark-hero">
         <div class="mark-img" id="hero-img" data-slug="birmingham">
           <span>Anchor</span>
         </div>
         <div class="mark-hero-text">
-          <h3>Anchor</h3>
+          <h2 id="town-mark-title">Anchor</h2>
           <p>An upright anchor, sometimes with a coiled rope. Unchanged since 1773.</p>
           <p class="mark-meta">
             <span>In use since <b>1773</b></span>
@@ -352,8 +361,8 @@
   <!-- ======================= HISTORY ======================= -->
   <section id="history" aria-labelledby="history-title">
     <div class="wrap">
-      <span class="eyebrow">History</span>
-      <h2 class="section-title" id="history-title">The Birmingham Assay Office</h2>
+      <span class="eyebrow">Background</span>
+      <h2 class="section-title" id="history-title">History</h2>
       <div class="prose">
         <p>Birmingham Assay Office was established by the Hallmarking Act of 1773, alongside Sheffield. Local manufacturer Matthew Boulton lobbied Parliament for the office, frustrated at having to send pieces to Chester or London for assay. Legend has it that the anchor town mark was chosen because Boulton and the Sheffield silversmiths met to negotiate at the Crown and Anchor pub on the Strand — Birmingham took the anchor, Sheffield took the crown. Birmingham is now the largest UK Assay Office by volume.</p>
       </div>
@@ -1952,7 +1961,7 @@
   <section id="related" aria-labelledby="related-title">
     <div class="wrap">
       <span class="eyebrow">References</span>
-      <h2 class="section-title" id="related-title">Related pages and official sources</h2>
+      <h2 class="section-title" id="related-title">Related</h2>
       <ul class="answers">
         <li><a href="uk-silver-hallmarks.html">Main UK Silver Hallmarks Identifier</a> &mdash; the multi-office wizard</li>
         <li>Official site: <a href="https://www.theassayoffice.co.uk/" target="_blank" rel="noopener">Birmingham Assay Office</a></li>
