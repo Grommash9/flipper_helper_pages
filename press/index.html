@@ -108,6 +108,16 @@
    preview it has to match. */
 .asset-card .btn{align-self:flex-start;font-size:var(--fs-xs);padding:7px 14px;border-radius:10px}
 
+/* Core Features and Links put their section title inside the card, the way the
+   homepage's .merged-gap blocks do (index.html:595) — mono label outside the
+   frame, title in it. The title keeps .section-title so all six sections read at
+   one size; only the 12px bottom margin grows to clear the list's top rule. */
+.pro-card > .section-title{margin-bottom:18px}
+
+/* Brand Assets is now fenced by a tear above and below, so it needs less of its
+   own padding to read as a separate block. */
+#assets{padding:44px 0}
+
 /* Same band treatment as the homepage's .story section (landing.css:255): the
    --card surface with a hairline top and bottom, so Key Facts lifts out of the
    run of prose around it. Not the .story class itself — that also carries a
@@ -221,9 +231,9 @@
   <section id="features" aria-labelledby="features-title">
     <div class="wrap">
       <span class="eyebrow">The short version</span>
-      <h2 class="section-title" id="features-title">Core Features</h2>
 
       <div class="pro-card reveal">
+        <h2 class="section-title" id="features-title">Core Features</h2>
         <ul class="feature-list">
           <li>Photo-first item tracking with automatic SKU generation</li>
           <li>Track listings across 16 selling platforms with per-platform dates</li>
@@ -323,6 +333,8 @@
     </div>
   </section>
 
+  <div class="wrap"><hr class="tear"></div>
+
   <!-- ======================= THE DEVELOPER + MEDIA CONTACT ======================= -->
   <section id="developer" aria-labelledby="developer-title">
     <div class="wrap">
@@ -344,9 +356,9 @@
   <section id="links" aria-labelledby="links-title">
     <div class="wrap">
       <span class="eyebrow">Elsewhere</span>
-      <h2 class="section-title" id="links-title">Links</h2>
 
       <div class="pro-card reveal">
+        <h2 class="section-title" id="links-title">Links</h2>
         <ul class="feature-list">
           <li><a href="https://apps.apple.com/app/id6759716745" rel="noopener">App Store</a></li>
           <li><a href="https://flipperhelper.app/" rel="noopener">Website</a></li>
