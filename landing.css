@@ -610,7 +610,6 @@ ul.today-grid,dl.pro-rows{list-style:none;margin:0}
 footer{border-top:1px solid var(--line);padding:26px 0 24px;font-size:var(--fs-xs);color:var(--ink-66);background:var(--card)}
 .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:24px;align-items:start}
 @media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.foot-grid{grid-template-columns:1fr}}
 .foot-left p{margin-top:8px;max-width:300px;font-size:var(--fs-xs);line-height:1.5}
 .foot-col h4{
   font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
@@ -651,4 +650,3 @@ a:focus-visible,button:focus-visible,summary:focus-visible{
 .ft-c3 .foot-left h4{margin-top:14px}
 .ft-c3 .row-nav{display:flex;flex-direction:row;gap:16px}
 @media(max-width:860px){.ft-c3 .foot-grid{grid-template-columns:1fr 1fr;justify-content:normal}}
-@media(max-width:520px){.ft-c3 .foot-grid{grid-template-columns:1fr}}

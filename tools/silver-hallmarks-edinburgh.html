@@ -210,6 +210,10 @@ section#history{padding-top:0}
   letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);min-width:82px;
 }
 .letter-picker-buttons{display:flex;gap:8px;flex-wrap:wrap;flex:1}
+@media(max-width:600px){
+  .letter-picker-row{flex-direction:column;align-items:flex-start;gap:8px}
+  .letter-picker-label{min-width:0}
+}
 /* VARIATION of .filters button (§6.4): same interactive-pill semantics — blue when
    selected, periwinkle never — but a 12px control radius instead of 999px, because
    the label is a single glyph the reader compares against a punch. It has to read
