@@ -131,7 +131,7 @@
       "name": "Is FlipperHelper really free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Everything in the app today — item tracking, expenses, profit calculation, multi-currency, backups, Google Sheets export, offline mode — is free with no ads, and stays free. We're building a paid Pro tier on top (web portal, eBay connect) for resellers who want more automation."
+        "text": "Yes — FlipperHelper is 100% free today, with no ads and no in-app purchases. Every core feature is included: item tracking with photos, expense logging (entry fees, transport, and other costs), automatic profit calculation, multi-currency support with daily exchange rates, iCloud and Google Drive backups, one-tap Google Sheets export, and full offline mode. Nothing is gated behind a paywall or a trial period. It stays this way because the app started as a tool built to help my wife track her own car boot sale flips, not as a funded product with investors to satisfy. We are building an optional paid Pro tier on top — a web portal and direct eBay account connection — for resellers who want more automation than manual logging. But that's additive: everything currently free stays free, and Pro will never take features away from the free tier."
       }
     },
     {
@@ -139,7 +139,7 @@
       "name": "Does it work offline at the market?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — FlipperHelper is offline-first. Your data is stored on your device, so you can log finds, mark listings and record sales with no internet. Sync catches up when you're back online — and Pro's cloud sync will follow the same rule."
+        "text": "Yes — FlipperHelper is built offline-first, not offline-as-an-afterthought. Every feature works with zero internet connection: logging a new find, taking photos, marking an item as listed, recording a sale, and checking your profit dashboard. This matters because most car boot sales, flea markets, and rural venues have poor or no signal, and losing a purchase record because an app needed a network call is a real failure mode we designed around. Your data lives locally on your device, then backs up automatically to iCloud (or Google Drive for photos) once you're back on WiFi or mobile data — you never have to remember to sync manually. The upcoming Pro tier's cloud features (web portal, eBay account connect) will follow the same principle: the app never blocks on a network call, connectivity only adds convenience on top of a fully working offline core."
       }
     },
     {
@@ -147,7 +147,7 @@
       "name": "How is this different from Vendoo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Different category. Vendoo posts your listings to multiple marketplaces — FlipperHelper tracks each item's path and your real profit after every expense. Many resellers use a cross-lister and a tracker together. See the full comparison for an honest breakdown."
+        "text": "They solve different problems. Vendoo is a cross-lister — it posts one listing to multiple marketplaces simultaneously and syncs when an item sells on one platform so you can delist it elsewhere. FlipperHelper doesn't post or cross-list anything; it's a profit tracker. You log what you paid for an item plus entry fees and transport, mark which of 16 platforms you're listing it on, and when it sells, FlipperHelper calculates your real profit after every cost — not just sale price minus purchase price. The two tools are complementary rather than competing: Vendoo saves you time getting an item listed everywhere at once, FlipperHelper tells you afterward whether that item, and that sourcing trip, actually made you money. Many resellers who buy at in-person markets use a tracker like FlipperHelper alongside a cross-lister like Vendoo — one handles distribution, the other handles the numbers. See the full comparison for a detailed, feature-by-feature breakdown."
       }
     },
     {
@@ -155,7 +155,7 @@
       "name": "What platforms can I track listings on?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sixteen: eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, OfferUp, Craigslist and ThredUp — plus offline sales at boots and fairs."
+        "text": "Sixteen selling platforms are supported for tracking: eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, OfferUp, Craigslist, and ThredUp — plus a separate category for in-person sales at car boot sales, flea markets, and swap meets where there's no platform at all. 'Tracking' here means manual toggles, not automated cross-posting: for each item you mark which platforms it's listed on and when it sells. This is a deliberate design choice, not a missing feature — automated cross-listing APIs break constantly as marketplaces change their terms, and a broken auto-sync silently corrupting your sold/unsold status is worse than the ten seconds it takes to tap a toggle yourself. If you want automated cross-listing in addition to profit tracking, pair FlipperHelper with a dedicated cross-lister like Vendoo — see our comparison pages for how the two types of tools fit together."
       }
     },
     {
@@ -163,7 +163,7 @@
       "name": "Can I switch between iPhone and Android without losing data?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Both apps share the same backup format — a single ZIP with your database and every photo. Export on one platform, import on the other. Switching phones is a three-step, five-minute job."
+        "text": "Yes. FlipperHelper's iOS and Android apps share an identical backup format: a single portable ZIP archive containing your full item database and every photo you've taken, exported via your phone's normal share sheet. Switching is a three-step process — export the ZIP on your old phone, transfer it however you like (AirDrop, email, cloud storage, USB), then import it on the new phone through the same menu. The whole thing typically takes under five minutes, and nothing is lost: every item, expense, sale, and photo carries over exactly as it was. This matters for a genuinely common scenario in the reselling world — sellers switch between iPhone and Android more often than average, whether for a better camera, a work phone, or just because a good deal came up on a new device. We built the export format vendor-agnostic from the start specifically so a change of phone brand would never mean losing months of tracked inventory history."
       }
     },
     {
@@ -171,7 +171,7 @@
       "name": "Will it help with my tax records?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It keeps a dated record of every purchase, sale and expense, and exports the lot to Google Sheets — a solid foundation for the HMRC trading allowance and Self Assessment. Our blog covers how UK resellers use it for tax season."
+        "text": "Yes, as a record-keeping tool — not as tax advice. FlipperHelper timestamps every purchase, sale, and expense the moment you log it, and one tap exports the complete history to Google Sheets in a format that separates income from allowable expenses. For UK resellers, that export is a solid foundation for tracking whether you're under the HMRC trading allowance or need to file Self Assessment, and for keeping Making Tax Digital-compliant records if your reselling grows into a registered business. We deliberately don't calculate your tax liability inside the app — tax rules depend on your total income, allowances, and personal circumstances beyond what a reselling app can see, and getting that wrong has real consequences. What FlipperHelper gives you is the accurate, dated underlying data; you or your accountant handle the actual tax calculation from there. Our blog has a full walkthrough of how UK resellers use the export for tax season."
       }
     }
   ]
@@ -661,27 +661,27 @@
     <div class="faq">
       <details>
         <summary>Is FlipperHelper really free?</summary>
-        <p>Yes. Everything in the app today — item tracking, expenses, profit calculation, multi-currency, backups, Google Sheets export, offline mode — is free with no ads, and stays free. We're building a paid Pro tier on top (web portal, eBay connect) for resellers who want more automation.</p>
+        <p>Yes — FlipperHelper is 100% free today, with no ads and no in-app purchases. Every core feature is included: item tracking with photos, expense logging (entry fees, transport, and other costs), automatic profit calculation, multi-currency support with daily exchange rates, iCloud and Google Drive backups, one-tap Google Sheets export, and full offline mode. Nothing is gated behind a paywall or a trial period. It stays this way because the app started as a tool built to help my wife track her own car boot sale flips, not as a funded product with investors to satisfy. We are building an optional paid Pro tier on top — a web portal and direct eBay account connection — for resellers who want more automation than manual logging. But that's additive: everything currently free stays free, and Pro will never take features away from the free tier.</p>
       </details>
       <details>
         <summary>Does it work offline at the market?</summary>
-        <p>Yes — FlipperHelper is offline-first. Your data is stored on your device, so you can log finds, mark listings and record sales with no internet. Sync catches up when you're back online — and Pro's cloud sync will follow the same rule.</p>
+        <p>Yes — FlipperHelper is built offline-first, not offline-as-an-afterthought. Every feature works with zero internet connection: logging a new find, taking photos, marking an item as listed, recording a sale, and checking your profit dashboard. This matters because most car boot sales, flea markets, and rural venues have poor or no signal, and losing a purchase record because an app needed a network call is a real failure mode we designed around. Your data lives locally on your device, then backs up automatically to iCloud (or Google Drive for photos) once you're back on WiFi or mobile data — you never have to remember to sync manually. The upcoming Pro tier's cloud features (web portal, eBay account connect) will follow the same principle: the app never blocks on a network call, connectivity only adds convenience on top of a fully working offline core.</p>
       </details>
       <details>
         <summary>How is this different from Vendoo?</summary>
-        <p>Different category. Vendoo posts your listings to multiple marketplaces — FlipperHelper tracks each item's path and your real profit after every expense. Many resellers use a cross-lister and a tracker together. See the <a href="/compare/flipperhelper-vs-vendoo.html">full comparison</a> for an honest breakdown.</p>
+        <p>They solve different problems. Vendoo is a cross-lister — it posts one listing to multiple marketplaces simultaneously and syncs when an item sells on one platform so you can delist it elsewhere. FlipperHelper doesn't post or cross-list anything; it's a profit tracker. You log what you paid for an item plus entry fees and transport, mark which of 16 platforms you're listing it on, and when it sells, FlipperHelper calculates your real profit after every cost — not just sale price minus purchase price. The two tools are complementary rather than competing: Vendoo saves you time getting an item listed everywhere at once, FlipperHelper tells you afterward whether that item, and that sourcing trip, actually made you money. Many resellers who buy at in-person markets use a tracker like FlipperHelper alongside a cross-lister like Vendoo — one handles distribution, the other handles the numbers. See the <a href="/compare/flipperhelper-vs-vendoo.html">full comparison</a> for a detailed, feature-by-feature breakdown.</p>
       </details>
       <details>
         <summary>What platforms can I track listings on?</summary>
-        <p>Sixteen: eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, OfferUp, Craigslist and ThredUp — plus offline sales at boots and fairs.</p>
+        <p>Sixteen selling platforms are supported for tracking: eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, OfferUp, Craigslist, and ThredUp — plus a separate category for in-person sales at car boot sales, flea markets, and swap meets where there's no platform at all. "Tracking" here means manual toggles, not automated cross-posting: for each item you mark which platforms it's listed on and when it sells. This is a deliberate design choice, not a missing feature — automated cross-listing APIs break constantly as marketplaces change their terms, and a broken auto-sync silently corrupting your sold/unsold status is worse than the ten seconds it takes to tap a toggle yourself. If you want automated cross-listing in addition to profit tracking, pair FlipperHelper with a dedicated cross-lister like Vendoo — see our comparison pages for how the two types of tools fit together.</p>
       </details>
       <details>
         <summary>Can I switch between iPhone and Android without losing data?</summary>
-        <p>Yes. Both apps share the same backup format — a single ZIP with your database and every photo. Export on one platform, import on the other. Switching phones is a three-step, five-minute job.</p>
+        <p>Yes. FlipperHelper's iOS and Android apps share an identical backup format: a single portable ZIP archive containing your full item database and every photo you've taken, exported via your phone's normal share sheet. Switching is a three-step process — export the ZIP on your old phone, transfer it however you like (AirDrop, email, cloud storage, USB), then import it on the new phone through the same menu. The whole thing typically takes under five minutes, and nothing is lost: every item, expense, sale, and photo carries over exactly as it was. This matters for a genuinely common scenario in the reselling world — sellers switch between iPhone and Android more often than average, whether for a better camera, a work phone, or just because a good deal came up on a new device. We built the export format vendor-agnostic from the start specifically so a change of phone brand would never mean losing months of tracked inventory history.</p>
       </details>
       <details>
         <summary>Will it help with my tax records?</summary>
-        <p>It keeps a dated record of every purchase, sale and expense, and exports the lot to Google Sheets — a solid foundation for the HMRC trading allowance and Self Assessment. Our blog covers how UK resellers use it for tax season.</p>
+        <p>Yes, as a record-keeping tool — not as tax advice. FlipperHelper timestamps every purchase, sale, and expense the moment you log it, and one tap exports the complete history to Google Sheets in a format that separates income from allowable expenses. For UK resellers, that export is a solid foundation for tracking whether you're under the HMRC trading allowance or need to file Self Assessment, and for keeping Making Tax Digital-compliant records if your reselling grows into a registered business. We deliberately don't calculate your tax liability inside the app — tax rules depend on your total income, allowances, and personal circumstances beyond what a reselling app can see, and getting that wrong has real consequences. What FlipperHelper gives you is the accurate, dated underlying data; you or your accountant handle the actual tax calculation from there. Our blog has a full walkthrough of how UK resellers use the export for tax season.</p>
       </details>
     </div>
     <p class="faq-more"><a href="/faq.html">All 49 questions, answered honestly →</a></p>
