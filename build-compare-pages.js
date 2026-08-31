@@ -407,12 +407,15 @@ function indexHTML() {
         ]
     };
 
-    const cards = data.pairs.map(([aSlug, bSlug]) => {
+    const pairCount = data.pairs.length;
+    const pairWord = pairCount === 1 ? 'pairing' : 'pairings';
+
+    const rows = data.pairs.map(([aSlug, bSlug]) => {
         const a = data.apps[aSlug], b = data.apps[bSlug];
-        return `        <li class="today-card">
-          <h3><a href="${aSlug}-vs-${bSlug}.html">${esc(a.name)} vs ${esc(b.name)}</a></h3>
-          <p>${esc(a.applicationSubCategory)} vs ${esc(b.applicationSubCategory)}</p>
-        </li>`;
+        return `        <div class="pro-row">
+          <dt class="k"><a href="${aSlug}-vs-${bSlug}.html">${esc(a.name)} vs ${esc(b.name)}</a></dt>
+          <dd class="v">${esc(a.applicationSubCategory)} <span class="vs">vs</span> ${esc(b.applicationSubCategory)}</dd>
+        </div>`;
     }).join('\n');
 
     return `<!DOCTYPE html>
@@ -434,48 +437,99 @@ function indexHTML() {
     <meta property="og:title" content="Compare Reseller Apps">
     <meta property="og:description" content="Side-by-side comparisons of reseller apps. Tracker vs cross-lister, free vs paid, iOS vs multi-platform.">
     <meta property="og:url" content="https://flipperhelper.app/compare/">
-    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
     <meta property="og:site_name" content="FlipperHelper">
+    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
     <meta property="og:locale" content="en_GB">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Compare Reseller Apps">
     <meta name="twitter:description" content="Side-by-side comparisons of reseller apps. Tracker vs cross-lister, free vs paid, iOS vs multi-platform.">
     <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
     <script type="application/ld+json">${JSON.stringify(breadcrumbs, null, 2)}</script>
-    <style>
-/* ---- page-specific: everything else comes from /landing.css ---- */
-.skip{
-  position:absolute;left:-9999px;top:0;z-index:200;
-  font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
-  background:var(--card);color:var(--ink);border:1px solid var(--line-strong);
-  border-radius:12px;padding:10px 16px;box-shadow:var(--neu-soft);
-}
-.skip:focus{left:24px;top:8px;text-decoration:none}
+<style>
+    /* ---- page-specific: everything else comes from /landing.css ---- */
 
-.page-head{padding:64px 0 0}
-@media(max-width:720px){.page-head{padding:44px 0 0}}
-.page-head h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px;max-width:760px}
+    /* skip link — not in landing.css yet; sits above the sticky nav (z-index:100) */
+    .skip{
+      position:absolute;left:-9999px;top:0;z-index:200;
+      font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
+      background:var(--card);color:var(--ink);border:1px solid var(--line-strong);
+      border-radius:12px;padding:10px 16px;box-shadow:var(--neu-soft);
+    }
+    .skip:focus{left:24px;top:8px;text-decoration:none}
 
-.prose p{margin-bottom:16px}
-.prose p:last-child{margin-bottom:0}
-.section-title{margin-bottom:20px}
+    /* page head — the hero-variant without the prop (design guide §25.2) */
+    .page-head{padding:64px 0 0}
+    @media(max-width:720px){.page-head{padding:44px 0 0}}
+    .page-head h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px;max-width:760px}
 
-.answers{list-style:none}
-.answers li{position:relative;padding-left:22px;margin-bottom:9px;color:var(--ink-66)}
-.answers li:last-child{margin-bottom:0}
-.answers li::before{content:"";position:absolute;left:4px;top:.58em;width:6px;height:6px;border-radius:50%;background:var(--cat)}
+    /* The two opening paragraphs are the page's argument, not a section of their own —
+       there is no heading for them and a port does not invent one, so they stay in the
+       head, at the h1's 760px so the head reads as one column. */
+    .head-prose{max-width:760px;margin-top:16px}
+    .head-prose p{margin-bottom:16px;color:var(--ink-66);line-height:1.6}
+    .head-prose p:last-child{margin-bottom:0}
+    .head-prose em{color:var(--ink)}
 
-/* link variation of .today-card: the whole card is the hit area, matching the
-   /tools/ index page's card-as-link recipe */
-.today-card{position:relative;transition:transform .15s ease,border-color .15s ease}
-.today-card h3 a{color:var(--ink)}
-.today-card h3 a::after{content:"";position:absolute;inset:0;border-radius:var(--radius-md)}
-.today-card:hover{transform:translateY(-2px);border-color:var(--line-strong)}
-.today-card:hover h3 a{color:var(--action);text-decoration:none}
-@media(prefers-reduced-motion:reduce){.today-card:hover{transform:none}}
-    </style>
+    /* The comparisons block is index.html:596's "On the bench now · FlipperHelper Pro":
+       group label, emphasis card, k/v rows on dashed rules. The card's title is the
+       section's own h2 rather than a new h3, so it keeps its place in the heading
+       order — .pro-card h3 can't reach it, hence the one rule. */
+    .pro-card .pro-title{font-size:var(--fs-h3-lg);margin-bottom:0;font-weight:700;letter-spacing:-.01em}
+    /* the lede sits at section level, so the card has no .pro-intro to open the gap
+       above its rows — the head carries it, at the intro's 20px */
+    .pro-card .pro-head{margin-bottom:20px}
+
+    /* landing.css:353 gives the chip its pill shape under .bench-card only, so inside a
+       .pro-card the same markup renders as unpadded square-cornered text on a tint — and
+       the 6px dot, being an inline <i>, collapses. Same rule, scoped to this head.
+       (index.html:598's "In development" chip has the same gap — flagged, not touched.) */
+    .pro-head .status{
+      font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;letter-spacing:.12em;
+      text-transform:uppercase;display:inline-flex;align-items:center;gap:7px;
+      padding:6px 14px;border-radius:999px;
+    }
+
+    /* The pairing name is the row's subject and must not wrap: at landing.css:319's 190px
+       "FlipperHelper vs Flippd" breaks over two lines and the description starts above its
+       own key. 23 characters of Roboto Mono at --fs-2xs is 23 x (.6em advance + .1em
+       letter-spacing) x 12px = 193px, so 190px misses it by three.
+
+       max-content does NOT fix it: every .pro-row is its own grid, so each row would size
+       its column to its own key and "Flippd vs Vendoo" — seven characters shorter — would
+       pull its description left of the other two. A floor of 212px is the same track in
+       all three rows, which is what puts the descriptions on one line; max-content is kept
+       as the ceiling so a fallback mono with a wider advance pushes the column out instead
+       of wrapping. Scoped above landing.css:320's 640px collapse — unmediated, this rule
+       outranks that media query and would break the mobile stack. */
+    @media(min-width:641px){
+      .pro-card .pro-row{grid-template-columns:minmax(212px,max-content) 1fr}
+    }
+
+    /* Each value is one "A vs B" sentence; mono lifts the pivot out of it so the two
+       halves can be told apart at a glance. The sentence itself is untouched. */
+    .pro-row .v .vs{
+      font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;
+      letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);padding:0 3px;
+    }
+
+    /* See-also rows — .pro-rows from landing.css used outside a .pro-card, the same block
+       about.html:275 uses for Get in touch. No orange stripe: a list of further reading
+       must not outrank the comparisons above it (design guide §25.5). */
+    .link-rows .pro-row:last-child{border-bottom:none}
+
+    /* That section opens straight onto its rows with no lede between, so the heading
+       carries the gap the lede would normally open — same device as sources.html. */
+    .section-title{margin-bottom:26px}
+
+    a:focus-visible,button:focus-visible{
+      outline:2px solid var(--action);outline-offset:3px;border-radius:6px;
+    }
+    .btn:focus-visible{outline:2px solid var(--action);outline-offset:2px}
+</style>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
+
 <a class="skip" href="#main">Skip to content</a>
 
     <nav class="nav" aria-label="Main">
@@ -496,46 +550,61 @@ function indexHTML() {
       </div>
     </nav>
 
-    <main id="main">
+<main id="main">
 
-  <!-- ======================= PAGE HEAD ======================= -->
-  <header class="page-head">
-    <div class="wrap">
-      <h1>Compare Reseller Apps</h1>
-      <p class="section-lede">Side-by-side comparisons of reseller apps. Each page covers category, platforms, pricing, strengths, and honest limitations.</p>
-      <p class="head-updated">Last verified: ${data._last_verified}</p>
+<!-- ======================= PAGE HEAD ======================= -->
+<header class="page-head">
+  <div class="wrap">
+    <h1>Compare Reseller Apps</h1>
+    <div class="head-prose">
+      <p>The first thing worth knowing is that these apps aren&rsquo;t all the same kind of tool. A tracker (like FlipperHelper) records what you bought, what you sold it for, and your real profit per item &mdash; it does not list anything for you. A cross-lister (like Vendoo) posts one item to several marketplaces at once but doesn&rsquo;t focus on profit accounting. Picking the wrong category is the most common mistake, so each comparison below states plainly what the app <em>is</em>, what it costs, and where it falls short &mdash; including where FlipperHelper itself isn&rsquo;t the right fit.</p>
+      <p>We keep these honest on purpose: if you only sell on one platform and care about profit, a tracker wins; if you list the same stock across eBay, Vinted, and Depop daily, a cross-lister may be worth the subscription. Use the pages below to match the tool to how you actually sell.</p>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- ======================= AVAILABLE COMPARISONS ======================= -->
-  <section id="available" aria-labelledby="available-title">
-    <div class="wrap">
-      <h2 class="section-title" id="available-title">Available comparisons</h2>
-      <ul class="today-grid">
-${cards}
-      </ul>
-    </div>
-  </section>
+<!-- ======================= THE COMPARISONS ======================= -->
+<section aria-labelledby="available-title">
+  <div class="wrap">
+    <span class="eyebrow">Head to head</span>
+    <p class="section-lede">Side-by-side comparisons of reseller apps. Each page covers category, platforms, pricing, strengths, and honest limitations.</p>
 
-  <div class="wrap"><hr class="tear"></div>
-
-  <!-- ======================= ABOUT ======================= -->
-  <section id="about" aria-labelledby="about-title">
-    <div class="wrap">
-      <h2 class="section-title" id="about-title">Not all reseller apps are the same</h2>
-      <div class="prose">
-        <p>The first thing worth knowing is that these apps aren&rsquo;t all the same kind of tool. A <strong>tracker</strong> (like FlipperHelper) records what you bought, what you sold it for, and your real profit per item &mdash; it does not list anything for you. A <strong>cross-lister</strong> (like Vendoo) posts one item to several marketplaces at once but doesn&rsquo;t focus on profit accounting. Picking the wrong category is the most common mistake, so each comparison below states plainly what the app <em>is</em>, what it costs, and where it falls short &mdash; including where FlipperHelper itself isn&rsquo;t the right fit.</p>
-        <p>We keep these honest on purpose: if you only sell on one platform and care about profit, a tracker wins; if you list the same stock across eBay, Vinted, and Depop daily, a cross-lister may be worth the subscription. Use the pages below to match the tool to how you actually sell.</p>
+    <p class="group-label"><b>Compared side by side</b>&nbsp;&middot; ${pairCount} ${pairWord}</p>
+    <div class="pro-card reveal">
+      <div class="pro-head">
+        <h2 class="pro-title" id="available-title">Available comparisons</h2>
+        <span class="status status-idea"><i></i>Last verified: ${data._last_verified}</span>
       </div>
-      <ul class="answers">
-        <li><a href="../blog/flipperhelper-vs-flippd-vs-vendoo.html">Three-app comparison post</a></li>
-        <li><a href="../flipperhelper-alternatives.html">All FlipperHelper alternatives</a> &mdash; including spreadsheets, Notion, and paper</li>
-      </ul>
+
+      <dl class="pro-rows">
+${rows}
+      </dl>
     </div>
-  </section>
+  </div>
+</section>
 
-    </main>
+<div class="wrap"><hr class="tear"></div>
 
+<!-- ======================= LOOKING FOR MORE ======================= -->
+<section aria-labelledby="more-title">
+  <div class="wrap">
+    <span class="eyebrow">Wider view</span>
+    <h2 class="section-title" id="more-title">Looking for more?</h2>
+
+    <dl class="pro-rows link-rows reveal">
+      <div class="pro-row">
+        <dt class="k">Blog</dt>
+        <dd class="v"><a href="../blog/flipperhelper-vs-flippd-vs-vendoo.html">Three-app comparison post</a></dd>
+      </div>
+      <div class="pro-row">
+        <dt class="k">Alternatives</dt>
+        <dd class="v"><a href="../flipperhelper-alternatives.html">All FlipperHelper alternatives</a> (including spreadsheets, Notion, and paper)</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+</main>
     <footer class="ft-c3">
       <div class="wrap">
         <div class="foot-grid">
@@ -584,8 +653,23 @@ ${cards}
         </div>
       </div>
     </footer>
-    <script data-goatcounter="https://grommash9.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+
+<script>
+/* reveal (§10) */
+(function(){
+  var rev = [].slice.call(document.querySelectorAll('.reveal'));
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches){
+    rev.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:.12});
+    rev.forEach(function(el){ io.observe(el); });
+  }
+})();
+</script>
+<script data-goatcounter="https://grommash9.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
 `;
