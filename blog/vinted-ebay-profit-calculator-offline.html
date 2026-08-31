@@ -1,198 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-itunes-app" content="app-id=6759716745">
-    <title>Vinted & eBay Profit Calculator: Offline UK App | FlipperHelper</title>
-    <meta name="description" content="Free Vinted and eBay profit calculator for iPhone and Android. Works offline — log items at car boots, see profit after fees and travel.">
-    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="canonical" href="https://flipperhelper.app/blog/vinted-ebay-profit-calculator-offline.html">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Vinted & eBay Profit Calculator: Offline App for UK Sellers">
-    <meta property="og:description" content="Vinted and eBay profit calculator on iPhone and Android. Logs purchases, tracks fees and expenses, works offline at markets.">
-    <meta property="og:url" content="https://flipperhelper.app/blog/vinted-ebay-profit-calculator-offline.html">
-    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
-    <meta property="og:site_name" content="FlipperHelper">
-    <meta property="og:locale" content="en_GB">
-    <meta property="article:published_time" content="2026-04-26">
-    <meta property="article:author" content="Oleksandr Prudnikov">
-    <meta property="article:section" content="App">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Vinted & eBay Profit Calculator: Offline App for UK Sellers">
-    <meta name="twitter:description" content="Vinted and eBay profit calculator that works offline at markets.">
-    <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://flipperhelper.app/"},
-        {"@type":"ListItem","position":2,"name":"Blog","item":"https://flipperhelper.app/blog/"},
-        {"@type":"ListItem","position":3,"name":"Vinted & eBay Profit Calculator (Offline)","item":"https://flipperhelper.app/blog/vinted-ebay-profit-calculator-offline.html"}
-    ]}
-    </script>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Article",
-      "headline":"Vinted & eBay Profit Calculator: Offline App for UK Sellers",
-      "description":"Vinted and eBay profit calculator on iPhone and Android. Tracks fees, expenses, and works offline at markets.",
-      "datePublished":"2026-04-26","dateModified":"2026-04-26",
-      "author":{"@type":"Person","name":"Oleksandr Prudnikov"},
-      "publisher":{"@type":"Person","name":"Oleksandr Prudnikov"},
-      "mainEntityOfPage":"https://flipperhelper.app/blog/vinted-ebay-profit-calculator-offline.html"
-    }
-    </script>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"Is there a Vinted and eBay profit calculator that works offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. FlipperHelper is an app that combines a Vinted and eBay profit calculator with full reseller tracking — and it works offline. You can log a purchase at a car boot or charity shop with no signal, enter the expected sale price, and see the calculated profit after platform fees and your costs. Everything stores locally; no internet required at the point of use."}},
-      {"@type":"Question","name":"What's the difference between a calculator and a tracker?","acceptedAnswer":{"@type":"Answer","text":"A calculator gives you a single number for one transaction — 'if I sell this for £25 on eBay, my profit is £18'. A tracker remembers every item over time — what you bought, where, when, what you paid, where you listed it, when it sold, what you actually netted. FlipperHelper does both. Many UK sellers start using it as a calculator and stay because the tracking accumulates a useful dataset over months."}},
-      {"@type":"Question","name":"Does it calculate Vinted seller fees correctly?","acceptedAnswer":{"@type":"Answer","text":"Vinted's seller fee structure changed in 2024 — UK and many EU sellers no longer pay a per-item fee, with buyer protection passed to the buyer instead. The Vinted fees blog post on this site has the full current breakdown. In the app, you record what you sold for and what you paid; for any seller-side platform charges in your region, you can include them as expenses on the item."}},
-      {"@type":"Question","name":"Does it calculate eBay fees correctly?","acceptedAnswer":{"@type":"Answer","text":"eBay UK fees vary by category, sale price, and seller status (private vs business). The eBay fees blog post and interactive eBay fee calculator on this site cover the current rates. In the FlipperHelper app, you record the sale price and your purchase price; for category-based eBay fees, you can include them as expenses per item or use the interactive calculator on the website to estimate them ahead of time."}},
-      {"@type":"Question","name":"How does it compare to web-based calculators like DashVue, FlipLytics, or MarginWise?","acceptedAnswer":{"@type":"Answer","text":"Web calculators are good for one-off 'should I buy this' decisions. They don't accumulate data — each calculation is forgotten. FlipperHelper's calculator is part of a tracker: every calculation becomes a logged item with photo, source, expected profit, and eventually actual profit. After three months you have a real picture of your business; after a web calculator session you have nothing."}}
-    ]}
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-itunes-app" content="app-id=6759716745">
+<title>Vinted & eBay Profit Calculator: Offline UK App | FlipperHelper</title>
+<meta name="description" content="Free Vinted and eBay profit calculator for iPhone and Android. Works offline — log items at car boots, see profit after fees and travel.">
+<link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
+<link rel="canonical" href="https://flipperhelper.app/blog/vinted-ebay-profit-calculator-offline.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vinted & eBay Profit Calculator: Offline App for UK Sellers">
+<meta property="og:description" content="Vinted and eBay profit calculator on iPhone and Android. Logs purchases, tracks fees and expenses, works offline at markets.">
+<meta property="og:url" content="https://flipperhelper.app/blog/vinted-ebay-profit-calculator-offline.html">
+<meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
+<meta property="og:site_name" content="FlipperHelper">
+<meta property="og:locale" content="en_GB">
+<meta property="article:published_time" content="2026-04-26">
+<meta property="article:author" content="Oleksandr Prudnikov">
+<meta property="article:section" content="App">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vinted & eBay Profit Calculator: Offline App for UK Sellers">
+<meta name="twitter:description" content="Vinted and eBay profit calculator that works offline at markets.">
+<meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://flipperhelper.app/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://flipperhelper.app/blog/"},
+    {"@type":"ListItem","position":3,"name":"Vinted & eBay Profit Calculator (Offline)","item":"https://flipperhelper.app/blog/vinted-ebay-profit-calculator-offline.html"}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+  "headline":"Vinted & eBay Profit Calculator: Offline App for UK Sellers",
+  "description":"Vinted and eBay profit calculator on iPhone and Android. Tracks fees, expenses, and works offline at markets.",
+  "datePublished":"2026-04-26","dateModified":"2026-04-26",
+  "author":{"@type":"Person","name":"Oleksandr Prudnikov"},
+  "publisher":{"@type":"Person","name":"Oleksandr Prudnikov"},
+  "mainEntityOfPage":"https://flipperhelper.app/blog/vinted-ebay-profit-calculator-offline.html"
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Is there a Vinted and eBay profit calculator that works offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. FlipperHelper is an app that combines a Vinted and eBay profit calculator with full reseller tracking — and it works offline. You can log a purchase at a car boot or charity shop with no signal, enter the expected sale price, and see the calculated profit after platform fees and your costs. Everything stores locally; no internet required at the point of use."}},
+  {"@type":"Question","name":"What's the difference between a calculator and a tracker?","acceptedAnswer":{"@type":"Answer","text":"A calculator gives you a single number for one transaction — 'if I sell this for £25 on eBay, my profit is £18'. A tracker remembers every item over time — what you bought, where, when, what you paid, where you listed it, when it sold, what you actually netted. FlipperHelper does both. Many UK sellers start using it as a calculator and stay because the tracking accumulates a useful dataset over months."}},
+  {"@type":"Question","name":"Does it calculate Vinted seller fees correctly?","acceptedAnswer":{"@type":"Answer","text":"Vinted's seller fee structure changed in 2024 — UK and many EU sellers no longer pay a per-item fee, with buyer protection passed to the buyer instead. The Vinted fees blog post on this site has the full current breakdown. In the app, you record what you sold for and what you paid; for any seller-side platform charges in your region, you can include them as expenses on the item."}},
+  {"@type":"Question","name":"Does it calculate eBay fees correctly?","acceptedAnswer":{"@type":"Answer","text":"eBay UK fees vary by category, sale price, and seller status (private vs business). The eBay fees blog post and interactive eBay fee calculator on this site cover the current rates. In the FlipperHelper app, you record the sale price and your purchase price; for category-based eBay fees, you can include them as expenses per item or use the interactive calculator on the website to estimate them ahead of time."}},
+  {"@type":"Question","name":"How does it compare to web-based calculators like DashVue, FlipLytics, or MarginWise?","acceptedAnswer":{"@type":"Answer","text":"Web calculators are good for one-off 'should I buy this' decisions. They don't accumulate data — each calculation is forgotten. FlipperHelper's calculator is part of a tracker: every calculation becomes a logged item with photo, source, expected profit, and eventually actual profit. After three months you have a real picture of your business; after a web calculator session you have nothing."}}
+]}
+</script>
+
+<link rel="stylesheet" href="article.css">
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
+
 <body>
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="../" class="nav-logo">
-                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
-                <span>FlipperHelper</span>
-            </a>
-            <div class="nav-links">
-                <a href="../">Home</a>
-                <a href="../faq.html">FAQ</a>
-                <a href="./">Blog</a>
-                <a href="/tools/">Tools</a>
-                <a href="/compare/">Compare</a>
-                <a href="/#download" class="btn btn-small">Get the App</a>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ======================= NAV ======================= -->
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+      FlipperHelper
+    </a>
+    <div class="nav-links">
+        <a href="/tools/">Free tools</a>
+        <a href="/compare/">Compare</a>
+        <a href="/#workbench">What's next</a>
+        <a href="/blog/" aria-current="page">Blog</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/about.html">About</a>
+        <a class="btn btn-primary" href="/#get">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================= ARTICLE ======================= -->
+<main class="post" id="main">
+  <div class="wrap">
+    <article>
+
+            <a href="./" class="post-back">&larr; Back to Blog</a>
+            <p class="post-updated">Last updated: 26 April 2026</p>
+            <h1>Vinted & eBay Profit Calculator: Offline App for UK Sellers (2026)</h1>
+            <div class="post-meta">
+                <span class="art-date">26 April 2026</span>
+                <span class="art-tag">App</span>
+                <span class="art-read">6 min read</span>
             </div>
-        </div>
-    </nav>
-    <main class="legal-page">
-        <div class="container">
-            <div class="legal-content blog-post">
-                <a href="./" class="blog-back">&larr; Back to Blog</a>
-                <p class="blog-updated">Last updated: 26 April 2026</p>
-                <h1>Vinted & eBay Profit Calculator: Offline App for UK Sellers (2026)</h1>
-                <div class="blog-meta">
-                    <span class="blog-date">26 April 2026</span>
-                    <span class="blog-tag">App</span>
-                    <span class="blog-reading-time">6 min read</span>
-                </div>
 
-                <section>
-                    <p><strong>If you're at a car boot, charity shop, or flea market and need a Vinted/eBay profit calculator that works without signal — FlipperHelper is the app for that.</strong> It combines a profit calculator with a full reseller tracker, runs entirely offline, and works in the UK, US, and other regions.</p>
-                    <p>Web-based calculators (DashVue, FlipLytics, MarginWise) work fine on WiFi at home. They're useless when you're standing in the rain at 8am at a Wimbledon car boot with two bars of signal trying to decide whether £6 for a Karen Millen jacket is worth it. FlipperHelper handles the calculator part of that decision <em>and</em> remembers the answer for next month's dashboard.</p>
-                </section>
+            <section>
+                <p><strong>If you're at a car boot, charity shop, or flea market and need a Vinted/eBay profit calculator that works without signal — FlipperHelper is the app for that.</strong> It combines a profit calculator with a full reseller tracker, runs entirely offline, and works in the UK, US, and other regions.</p>
+                <p>Web-based calculators (DashVue, FlipLytics, MarginWise) work fine on WiFi at home. They're useless when you're standing in the rain at 8am at a Wimbledon car boot with two bars of signal trying to decide whether £6 for a Karen Millen jacket is worth it. FlipperHelper handles the calculator part of that decision <em>and</em> remembers the answer for next month's dashboard.</p>
+            </section>
 
-                <section>
-                    <h2>Why an offline profit calculator matters for UK sellers</h2>
-                    <p>Most "decide whether to buy" calculations happen in the worst connectivity environments — markets, charity shops, jumble sales, indoor antique malls, rural estate sales. The calculator that works at home doesn't help you there. UK sellers in particular face this constantly: half the country's best sourcing locations are church halls, school car parks, and farm fields with no signal.</p>
-                    <p>What an offline calculator needs to do:</p>
-                    <ul>
-                        <li><strong>Calculate profit instantly</strong> — purchase price, expected sale price, platform fees, postage, expected profit</li>
-                        <li><strong>Work fully offline</strong> — no API calls, no waiting for a slow data connection</li>
-                        <li><strong>Remember the calculation</strong> — so it becomes a logged item, not just a one-off number</li>
-                        <li><strong>Handle multiple platforms</strong> — Vinted, eBay, Depop, Facebook Marketplace each have different fee structures</li>
-                        <li><strong>Stay accurate</strong> — fee structures change; your records should reflect what was true at the time</li>
-                    </ul>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>How FlipperHelper handles the calculator + tracker workflow</h2>
+      <section>
+                <h2>Why an offline profit calculator matters for UK sellers</h2>
+                <p>Most "decide whether to buy" calculations happen in the worst connectivity environments — markets, charity shops, jumble sales, indoor antique malls, rural estate sales. The calculator that works at home doesn't help you there. UK sellers in particular face this constantly: half the country's best sourcing locations are church halls, school car parks, and farm fields with no signal.</p>
+                <p>What an offline calculator needs to do:</p>
+                <ul>
+                    <li><strong>Calculate profit instantly</strong> — purchase price, expected sale price, platform fees, postage, expected profit</li>
+                    <li><strong>Work fully offline</strong> — no API calls, no waiting for a slow data connection</li>
+                    <li><strong>Remember the calculation</strong> — so it becomes a logged item, not just a one-off number</li>
+                    <li><strong>Handle multiple platforms</strong> — Vinted, eBay, Depop, Facebook Marketplace each have different fee structures</li>
+                    <li><strong>Stay accurate</strong> — fee structures change; your records should reflect what was true at the time</li>
+                </ul>
+            </section>
 
-                    <h3>At the source — quick decision</h3>
-                    <p>You're at a car boot. There's a £6 Karen Millen jacket. You open the app, snap a photo, enter £6 as the price. You can also enter an expected sale price (say £25 on Vinted) — the app calculates expected profit based on your saved fee structure and any expenses you've added.</p>
+      <hr class="tear">
 
-                    <h3>If the maths works — buy it</h3>
-                    <p>The item is now logged. When you get home, toggle the platforms you list it on. The app records the listing date. When it sells, mark it sold and enter the actual sale price. The expected profit you calculated at the boot becomes the actual profit on the dashboard.</p>
+      <section>
+                <h2>How FlipperHelper handles the calculator + tracker workflow</h2>
 
-                    <h3>Over time — your real numbers</h3>
-                    <p>After three months you have data, not estimates. You can see: average profit per item from the local Wandsworth car boot is £8.40. Average profit from your Tuesday charity shop loop is £4.20. Vinted clothing sales close in 18 days on average; Depop closes in 32. This is what a calculator alone can't give you.</p>
+                <h3>At the source — quick decision</h3>
+                <p>You're at a car boot. There's a £6 Karen Millen jacket. You open the app, snap a photo, enter £6 as the price. You can also enter an expected sale price (say £25 on Vinted) — the app calculates expected profit based on your saved fee structure and any expenses you've added.</p>
 
-                    <h3>Offline, end-to-end</h3>
-                    <p>Every step works without internet. Photos store locally first; they sync to Google Drive when you have signal. The dashboard updates immediately, even on a flight or in a rural showground. You never lose a decision because the venue had no signal.</p>
-                </section>
+                <h3>If the maths works — buy it</h3>
+                <p>The item is now logged. When you get home, toggle the platforms you list it on. The app records the listing date. When it sells, mark it sold and enter the actual sale price. The expected profit you calculated at the boot becomes the actual profit on the dashboard.</p>
 
-                <section>
-                    <h2>How FlipperHelper compares to web calculators and tracker apps</h2>
+                <h3>Over time — your real numbers</h3>
+                <p>After three months you have data, not estimates. You can see: average profit per item from the local Wandsworth car boot is £8.40. Average profit from your Tuesday charity shop loop is £4.20. Vinted clothing sales close in 18 days on average; Depop closes in 32. This is what a calculator alone can't give you.</p>
 
-                    <h3>DashVue, FlipLytics, MarginWise (web calculators)</h3>
-                    <p>These are useful for one-off "should I buy this on eBay clearance" decisions at home. They typically have category-aware fee logic for eBay. They don't accumulate data — each calculation is forgotten. They don't work offline. And they don't track your actual outcomes once items sell, so you never learn how accurate your estimates were.</p>
+                <h3>Offline, end-to-end</h3>
+                <p>Every step works without internet. Photos store locally first; they sync to Google Drive when you have signal. The dashboard updates immediately, even on a flight or in a rural showground. You never lose a decision because the venue had no signal.</p>
+            </section>
 
-                    <h3>FlipperHelper's interactive eBay fee calculator</h3>
-                    <p>The <a href="ebay-fee-calculator-uk.html">interactive eBay fee calculator on this site</a> is web-based — useful for category-aware fee estimation when you have WiFi. It complements the FlipperHelper app, which is the offline workhorse for actual logging at markets.</p>
+      <hr class="tear">
 
-                    <h3>Resellr, ResellTrackr, Profit Prophet</h3>
-                    <p>These are mobile reseller-tracker apps with overlapping feature sets. They each handle the basic per-item profit math. The differentiators are usually around expense tracking depth, platform coverage, and dashboard presentation. FlipperHelper's specific edges for the calculator-at-the-source use case: full offline mode, GPS market detection (so the source auto-fills), entry/transport expense tracking, and Google Sheets export.</p>
+      <section>
+                <h2>How FlipperHelper compares to web calculators and tracker apps</h2>
 
-                    <h3>Spreadsheet templates</h3>
-                    <p><a href="reselling-spreadsheet-template-uk.html">A free reselling spreadsheet template is available on this site</a>. Useful for analysis and tax records at the desk. Painful for offline calculations at a market — phone spreadsheet entry is slow and error-prone. Many resellers use a sheet template <em>plus</em> a mobile app.</p>
-                </section>
+                <h3>DashVue, FlipLytics, MarginWise (web calculators)</h3>
+                <p>These are useful for one-off "should I buy this on eBay clearance" decisions at home. They typically have category-aware fee logic for eBay. They don't accumulate data — each calculation is forgotten. They don't work offline. And they don't track your actual outcomes once items sell, so you never learn how accurate your estimates were.</p>
 
-                <section>
-                    <h2>Vinted and eBay fee specifics in the UK</h2>
-                    <p>The current fee picture for UK sellers (subject to platform changes — always check the latest):</p>
-                    <ul>
-                        <li><strong>Vinted</strong> — UK sellers no longer pay a per-item seller fee. Buyer protection is added to the buyer's price. Postage is integrated through Vinted's selected couriers. <a href="vinted-fees-uk.html">Full breakdown in the Vinted fees post.</a></li>
-                        <li><strong>eBay UK</strong> — fees vary by private vs business account, by category, and by sale price. The interactive <a href="ebay-fee-calculator-uk.html">eBay fee calculator</a> handles the maths for you.</li>
-                        <li><strong>Depop</strong> — 10% selling fee plus payment processing. <a href="how-to-sell-facebook-marketplace-uk.html">Facebook Marketplace</a> is fee-free for local pickup, with shipping fees for posted items.</li>
-                    </ul>
-                </section>
+                <h3>FlipperHelper's interactive eBay fee calculator</h3>
+                <p>The <a href="ebay-fee-calculator-uk.html">interactive eBay fee calculator on this site</a> is web-based — useful for category-aware fee estimation when you have WiFi. It complements the FlipperHelper app, which is the offline workhorse for actual logging at markets.</p>
 
-                <section>
-                    <h2>FAQ</h2>
-                    <h3>Does the app calculate Vinted profit if I'm sourcing in the UK?</h3>
-                    <p>Yes. Record the purchase price and expected sale price; the app handles the maths. For category-specific fees on platforms like eBay, include them as expenses on the item or use the interactive calculator on this site for ahead-of-purchase estimation.</p>
+                <h3>Resellr, ResellTrackr, Profit Prophet</h3>
+                <p>These are mobile reseller-tracker apps with overlapping feature sets. They each handle the basic per-item profit math. The differentiators are usually around expense tracking depth, platform coverage, and dashboard presentation. FlipperHelper's specific edges for the calculator-at-the-source use case: full offline mode, GPS market detection (so the source auto-fills), entry/transport expense tracking, and Google Sheets export.</p>
 
-                    <h3>Is the app actually free?</h3>
-                    <p>Yes, the core app is free with no ads. A paid tier with eBay API integration is planned.</p>
+                <h3>Spreadsheet templates</h3>
+                <p><a href="reselling-spreadsheet-template-uk.html">A free reselling spreadsheet template is available on this site</a>. Useful for analysis and tax records at the desk. Painful for offline calculations at a market — phone spreadsheet entry is slow and error-prone. Many resellers use a sheet template <em>plus</em> a mobile app.</p>
+            </section>
 
-                    <h3>Does it support USD or EUR?</h3>
-                    <p>Yes. Multi-currency is built in — useful for France brocantes, Spanish flea markets, or US sellers using the same app.</p>
+      <hr class="tear">
 
-                    <h3>Can I see how accurate my expected profit estimates are over time?</h3>
-                    <p>Yes. The dashboard shows actual profit per item once it sells. Compare this to what you estimated at the source — you'll quickly learn whether you're consistently optimistic, accurate, or pessimistic about resale prices.</p>
-                </section>
+      <section>
+                <h2>Vinted and eBay fee specifics in the UK</h2>
+                <p>The current fee picture for UK sellers (subject to platform changes — always check the latest):</p>
+                <ul>
+                    <li><strong>Vinted</strong> — UK sellers no longer pay a per-item seller fee. Buyer protection is added to the buyer's price. Postage is integrated through Vinted's selected couriers. <a href="vinted-fees-uk.html">Full breakdown in the Vinted fees post.</a></li>
+                    <li><strong>eBay UK</strong> — fees vary by private vs business account, by category, and by sale price. The interactive <a href="ebay-fee-calculator-uk.html">eBay fee calculator</a> handles the maths for you.</li>
+                    <li><strong>Depop</strong> — 10% selling fee plus payment processing. <a href="how-to-sell-facebook-marketplace-uk.html">Facebook Marketplace</a> is fee-free for local pickup, with shipping fees for posted items.</li>
+                </ul>
+            </section>
 
-                <section>
-                    <h2>About the author</h2>
-                    <p><strong>Oleksandr Prudnikov</strong> builds <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">FlipperHelper</a>. The app was originally built for his wife, who resells full-time across UK car boot sales, charity shops, antiques fairs, and France brocantes. The offline-first architecture comes directly from her experience — too many markets and brocantes have no signal at all.</p>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>Related reading</h2>
-                    <ul>
-                        <li><a href="ebay-fee-calculator-uk.html">eBay Fee Calculator UK 2026</a> — interactive web calculator for category-aware estimation</li>
-                        <li><a href="vinted-fees-uk.html">Vinted Fees UK Explained</a> — current seller fee structure</li>
-                        <li><a href="ebay-selling-fees-uk-2026.html">eBay Selling Fees UK 2026</a> — full breakdown by category</li>
-                        <li><a href="works-without-internet.html">Why FlipperHelper Works Without Internet at Car Boot Sales</a> — offline-first explainer</li>
-                        <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers 2026</a> — full comparison</li>
-                    </ul>
-                </section>
+      <section>
+                <h2>FAQ</h2>
+                <div class="faq-item">
+      <h3>Does the app calculate Vinted profit if I'm sourcing in the UK?</h3>
+                <p>Yes. Record the purchase price and expected sale price; the app handles the maths. For category-specific fees on platforms like eBay, include them as expenses on the item or use the interactive calculator on this site for ahead-of-purchase estimation.</p>
+      </div><div class="faq-item">
+      <h3>Is the app actually free?</h3>
+                <p>Yes, the core app is free with no ads. A paid tier with eBay API integration is planned.</p>
+      </div><div class="faq-item">
+      <h3>Does it support USD or EUR?</h3>
+                <p>Yes. Multi-currency is built in — useful for France brocantes, Spanish flea markets, or US sellers using the same app.</p>
+      </div><div class="faq-item">
+      <h3>Can I see how accurate my expected profit estimates are over time?</h3>
+                <p>Yes. The dashboard shows actual profit per item once it sells. Compare this to what you estimated at the source — you'll quickly learn whether you're consistently optimistic, accurate, or pessimistic about resale prices.</p>
+      </div></section>
 
-                <section class="blog-cta">
-                    <h2>Calculate profit and track every flip</h2>
-                    <p>Free app for iOS and Android. Works offline at car boots and charity shops. Vinted, eBay, Depop and 13+ other platforms.</p>
-                    <span class="blog-store-links"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it on Google Play</a></span>
-                </section>
-            </div>
-        </div>
-    </main>
-    <footer class="footer footer-compact">
-        <div class="container">
-            <div class="footer-row">
-                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
-                <div class="footer-links-inline">
-                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
-                    <a href="../privacy.html">Privacy</a>
-                    <a href="../terms.html">Terms</a>
-                    <a href="mailto:support@flipperhelper.app">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script data-goatcounter="https://grommash9.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+      <hr class="tear">
+
+      <section>
+                <h2>About the author</h2>
+                <p><strong>Oleksandr Prudnikov</strong> builds <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">FlipperHelper</a>. The app was originally built for his wife, who resells full-time across UK car boot sales, charity shops, antiques fairs, and France brocantes. The offline-first architecture comes directly from her experience — too many markets and brocantes have no signal at all.</p>
+            </section>
+
+      <hr class="tear">
+
+      <section>
+                <h2>Related reading</h2>
+                <ul>
+                    <li><a href="ebay-fee-calculator-uk.html">eBay Fee Calculator UK 2026</a> — interactive web calculator for category-aware estimation</li>
+                    <li><a href="vinted-fees-uk.html">Vinted Fees UK Explained</a> — current seller fee structure</li>
+                    <li><a href="ebay-selling-fees-uk-2026.html">eBay Selling Fees UK 2026</a> — full breakdown by category</li>
+                    <li><a href="works-without-internet.html">Why FlipperHelper Works Without Internet at Car Boot Sales</a> — offline-first explainer</li>
+                    <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers 2026</a> — full comparison</li>
+                </ul>
+            </section>
+
+      <section class="post-cta">
+                <h2>Calculate profit and track every flip</h2>
+                <p>Free app for iOS and Android. Works offline at car boots and charity shops. Vinted, eBay, Depop and 13+ other platforms.</p>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it on Google Play</a></span>
+            </section>
+  
+
+    </article>
+  </div>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="ft-c3">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-left foot-col">
+        <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+        <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+        <h4>Follow</h4>
+        <nav class="row-nav" aria-label="Footer — follow">
+          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Product</h4>
+        <nav aria-label="Footer — product">
+          <a href="/flipperhelper-pricing.html">Pricing</a>
+          <a href="/tools/">Free tools</a>
+          <a href="/compare/">Compare apps</a>
+          <a href="/changelog.html">Changelog</a>
+          <a href="/sources.html">Supported platforms</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <nav aria-label="Footer — company">
+          <a href="/about.html">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/press/">Press kit</a>
+          <a href="/is-flipperhelper-legit.html">Is FlipperHelper legit?</a>
+          <a href="/flipperhelper-review.html">Review</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Help &amp; legal</h4>
+        <nav aria-label="Footer — help and legal">
+          <a href="mailto:support@flipperhelper.app">Support</a>
+          <a href="/faq.html">FAQ</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Community at <a href="https://www.reddit.com/r/flipperhelper/">r/flipperhelper</a></span>
+      <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+    </div>
+  </div>
+</footer>
+
+<script data-goatcounter="https://grommash9.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

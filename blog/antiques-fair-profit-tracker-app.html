@@ -1,200 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-itunes-app" content="app-id=6759716745">
-    <title>Antiques Fair Profit Tracker App for UK Resellers | FlipperHelper</title>
-    <meta name="description" content="Track antiques fair and vintage market profits on iPhone and Android — entry fees, transport, per-item profit. Works offline.">
-    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="canonical" href="https://flipperhelper.app/blog/antiques-fair-profit-tracker-app.html">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Antiques Fair Profit Tracker App for UK Resellers (2026)">
-    <meta property="og:description" content="Best app for resellers buying at antiques fairs and vintage markets. Track entry fees, transport, and real profit per fair.">
-    <meta property="og:url" content="https://flipperhelper.app/blog/antiques-fair-profit-tracker-app.html">
-    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
-    <meta property="og:site_name" content="FlipperHelper">
-    <meta property="og:locale" content="en_GB">
-    <meta property="article:published_time" content="2026-04-26">
-    <meta property="article:author" content="Oleksandr Prudnikov">
-    <meta property="article:section" content="App">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Antiques Fair Profit Tracker App for UK Resellers (2026)">
-    <meta name="twitter:description" content="Track antiques fair and vintage market profits on iPhone and Android — entry fees, transport, real profit.">
-    <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://flipperhelper.app/"},
-        {"@type":"ListItem","position":2,"name":"Blog","item":"https://flipperhelper.app/blog/"},
-        {"@type":"ListItem","position":3,"name":"Antiques Fair Profit Tracker App","item":"https://flipperhelper.app/blog/antiques-fair-profit-tracker-app.html"}
-    ]}
-    </script>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Article",
-      "headline":"Antiques Fair Profit Tracker App for UK Resellers (2026)",
-      "description":"Best app to track profits from antiques fairs and vintage markets on iPhone and Android.",
-      "datePublished":"2026-04-26","dateModified":"2026-04-26",
-      "author":{"@type":"Person","name":"Oleksandr Prudnikov"},
-      "publisher":{"@type":"Person","name":"Oleksandr Prudnikov"},
-      "mainEntityOfPage":"https://flipperhelper.app/blog/antiques-fair-profit-tracker-app.html"
-    }
-    </script>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"What is the best app to track profits from antiques fairs?","acceptedAnswer":{"@type":"Answer","text":"FlipperHelper is the app most aligned with the antiques fair workflow — it logs each item with a photo, the fair's entry fee, transport costs, and the eventual sale price across 16+ platforms including eBay, Vinted, Etsy, and Facebook Marketplace. It works offline at fairs with no signal, syncs photos to Google Drive, and exports a full breakdown to Google Sheets."}},
-      {"@type":"Question","name":"Can I track entry fees and transport costs to antiques fairs?","acceptedAnswer":{"@type":"Answer","text":"Yes. FlipperHelper has dedicated entry fee and transport expense tracking. You link an entry fee to a specific fair, choose transport mode (car, taxi, train, bus, or other), and the dashboard subtracts these from your real profit automatically. This is the difference between thinking you made £200 at a fair and knowing you made £140 after the £15 entry, £35 fuel, and platform fees."}},
-      {"@type":"Question","name":"How is FlipperHelper different from Flippd, Vendoo or Profit Prophet?","acceptedAnswer":{"@type":"Answer","text":"Flippd, Vendoo and similar tools focus on cross-listing — pushing the same item to multiple platforms. FlipperHelper focuses on the sourcing-to-sale workflow that antiques fair resellers actually run: photo at the stall, expense tracking per fair, profit per item after all costs. It does not auto-list to platforms; you mark which platforms each item is listed on manually."}},
-      {"@type":"Question","name":"Does the app work offline at fairs with no signal?","acceptedAnswer":{"@type":"Answer","text":"Yes. FlipperHelper is offline-first. Everything you log at a fair is stored on your iPhone — photos, prices, sellers, expenses. When you get back to WiFi, photos sync to Google Drive in the background and your dashboard updates. You never lose a purchase because the venue had no signal."}},
-      {"@type":"Question","name":"Can I see which antiques fairs are most profitable?","acceptedAnswer":{"@type":"Answer","text":"Yes. The dashboard breaks down profit by market — so you can compare antiques fairs side by side and see which ones are worth the trip. Filter by week, month, or a custom date range. If a fair costs you £20 entry plus £30 transport and you only sold £80 of stock, the dashboard will show you that fair was barely break-even."}}
-    ]}
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-itunes-app" content="app-id=6759716745">
+<title>Antiques Fair Profit Tracker App for UK Resellers | FlipperHelper</title>
+<meta name="description" content="Track antiques fair and vintage market profits on iPhone and Android — entry fees, transport, per-item profit. Works offline.">
+<link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
+<link rel="canonical" href="https://flipperhelper.app/blog/antiques-fair-profit-tracker-app.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Antiques Fair Profit Tracker App for UK Resellers (2026)">
+<meta property="og:description" content="Best app for resellers buying at antiques fairs and vintage markets. Track entry fees, transport, and real profit per fair.">
+<meta property="og:url" content="https://flipperhelper.app/blog/antiques-fair-profit-tracker-app.html">
+<meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
+<meta property="og:site_name" content="FlipperHelper">
+<meta property="og:locale" content="en_GB">
+<meta property="article:published_time" content="2026-04-26">
+<meta property="article:author" content="Oleksandr Prudnikov">
+<meta property="article:section" content="App">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Antiques Fair Profit Tracker App for UK Resellers (2026)">
+<meta name="twitter:description" content="Track antiques fair and vintage market profits on iPhone and Android — entry fees, transport, real profit.">
+<meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://flipperhelper.app/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://flipperhelper.app/blog/"},
+    {"@type":"ListItem","position":3,"name":"Antiques Fair Profit Tracker App","item":"https://flipperhelper.app/blog/antiques-fair-profit-tracker-app.html"}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+  "headline":"Antiques Fair Profit Tracker App for UK Resellers (2026)",
+  "description":"Best app to track profits from antiques fairs and vintage markets on iPhone and Android.",
+  "datePublished":"2026-04-26","dateModified":"2026-04-26",
+  "author":{"@type":"Person","name":"Oleksandr Prudnikov"},
+  "publisher":{"@type":"Person","name":"Oleksandr Prudnikov"},
+  "mainEntityOfPage":"https://flipperhelper.app/blog/antiques-fair-profit-tracker-app.html"
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"What is the best app to track profits from antiques fairs?","acceptedAnswer":{"@type":"Answer","text":"FlipperHelper is the app most aligned with the antiques fair workflow — it logs each item with a photo, the fair's entry fee, transport costs, and the eventual sale price across 16+ platforms including eBay, Vinted, Etsy, and Facebook Marketplace. It works offline at fairs with no signal, syncs photos to Google Drive, and exports a full breakdown to Google Sheets."}},
+  {"@type":"Question","name":"Can I track entry fees and transport costs to antiques fairs?","acceptedAnswer":{"@type":"Answer","text":"Yes. FlipperHelper has dedicated entry fee and transport expense tracking. You link an entry fee to a specific fair, choose transport mode (car, taxi, train, bus, or other), and the dashboard subtracts these from your real profit automatically. This is the difference between thinking you made £200 at a fair and knowing you made £140 after the £15 entry, £35 fuel, and platform fees."}},
+  {"@type":"Question","name":"How is FlipperHelper different from Flippd, Vendoo or Profit Prophet?","acceptedAnswer":{"@type":"Answer","text":"Flippd, Vendoo and similar tools focus on cross-listing — pushing the same item to multiple platforms. FlipperHelper focuses on the sourcing-to-sale workflow that antiques fair resellers actually run: photo at the stall, expense tracking per fair, profit per item after all costs. It does not auto-list to platforms; you mark which platforms each item is listed on manually."}},
+  {"@type":"Question","name":"Does the app work offline at fairs with no signal?","acceptedAnswer":{"@type":"Answer","text":"Yes. FlipperHelper is offline-first. Everything you log at a fair is stored on your iPhone — photos, prices, sellers, expenses. When you get back to WiFi, photos sync to Google Drive in the background and your dashboard updates. You never lose a purchase because the venue had no signal."}},
+  {"@type":"Question","name":"Can I see which antiques fairs are most profitable?","acceptedAnswer":{"@type":"Answer","text":"Yes. The dashboard breaks down profit by market — so you can compare antiques fairs side by side and see which ones are worth the trip. Filter by week, month, or a custom date range. If a fair costs you £20 entry plus £30 transport and you only sold £80 of stock, the dashboard will show you that fair was barely break-even."}}
+]}
+</script>
+
+<link rel="stylesheet" href="article.css">
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
+
 <body>
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="../" class="nav-logo">
-                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
-                <span>FlipperHelper</span>
-            </a>
-            <div class="nav-links">
-                <a href="../">Home</a>
-                <a href="../faq.html">FAQ</a>
-                <a href="./">Blog</a>
-                <a href="/tools/">Tools</a>
-                <a href="/compare/">Compare</a>
-                <a href="/#download" class="btn btn-small">Get the App</a>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ======================= NAV ======================= -->
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+      FlipperHelper
+    </a>
+    <div class="nav-links">
+        <a href="/tools/">Free tools</a>
+        <a href="/compare/">Compare</a>
+        <a href="/#workbench">What's next</a>
+        <a href="/blog/" aria-current="page">Blog</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/about.html">About</a>
+        <a class="btn btn-primary" href="/#get">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================= ARTICLE ======================= -->
+<main class="post" id="main">
+  <div class="wrap">
+    <article>
+
+            <a href="./" class="post-back">&larr; Back to Blog</a>
+            <p class="post-updated">Last updated: 26 April 2026</p>
+            <h1>Antiques Fair Profit Tracker App for UK Resellers (2026)</h1>
+            <div class="post-meta">
+                <span class="art-date">26 April 2026</span>
+                <span class="art-tag">App</span>
+                <span class="art-read">7 min read</span>
             </div>
-        </div>
-    </nav>
-    <main class="legal-page">
-        <div class="container">
-            <div class="legal-content blog-post">
-                <a href="./" class="blog-back">&larr; Back to Blog</a>
-                <p class="blog-updated">Last updated: 26 April 2026</p>
-                <h1>Antiques Fair Profit Tracker App for UK Resellers (2026)</h1>
-                <div class="blog-meta">
-                    <span class="blog-date">26 April 2026</span>
-                    <span class="blog-tag">App</span>
-                    <span class="blog-reading-time">7 min read</span>
-                </div>
 
-                <section>
-                    <p><strong>If you buy at antiques fairs and vintage markets to resell on eBay, Etsy, or Vinted — FlipperHelper is the app built for that exact workflow.</strong> It logs each item with a photo at the stall, tracks the fair's entry fee and your transport costs, then shows your real profit after everything sells.</p>
-                    <p>Most reseller apps were built for cross-listing or for warehouse inventory. Antiques fair resellers need something different: fast logging while standing at a stall, expense tracking per fair, and a dashboard that tells you which fairs are actually worth the trip.</p>
-                </section>
+            <section>
+                <p><strong>If you buy at antiques fairs and vintage markets to resell on eBay, Etsy, or Vinted — FlipperHelper is the app built for that exact workflow.</strong> It logs each item with a photo at the stall, tracks the fair's entry fee and your transport costs, then shows your real profit after everything sells.</p>
+                <p>Most reseller apps were built for cross-listing or for warehouse inventory. Antiques fair resellers need something different: fast logging while standing at a stall, expense tracking per fair, and a dashboard that tells you which fairs are actually worth the trip.</p>
+            </section>
 
-                <section>
-                    <h2>What does an antiques fair profit tracker need to do?</h2>
-                    <p>If you've spent a Sunday at <strong>Newark Antiques Fair</strong> or <strong>Ardingly</strong> and tried to remember every purchase later, you already know the answer. The app needs to log items <em>at the stall</em>, not from memory the next day. Specifically:</p>
-                    <ul>
-                        <li><strong>Photo + price in under 10 seconds</strong> — your hands are full of bubble wrap and you're walking to the next stall</li>
-                        <li><strong>Entry fee tracking per fair</strong> — Newark, Ardingly, Sunbury all have different fees and you need to know which ones make sense</li>
-                        <li><strong>Transport cost tracking</strong> — fuel, train tickets, parking — these eat into profit fast on long drives</li>
-                        <li><strong>Multi-platform listing tracking</strong> — antiques sell across eBay, Etsy, Facebook Marketplace, Vinted, and specialist sites — you need to track which item is listed where</li>
-                        <li><strong>Offline-first</strong> — many fairs are in old buildings or rural showgrounds with no signal</li>
-                        <li><strong>Per-item profit after all costs</strong> — so you can see whether that £40 vintage lamp made £60 net or £15 net</li>
-                    </ul>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>How FlipperHelper handles antiques fair tracking</h2>
-                    <p>FlipperHelper was built for exactly this kind of multi-source, multi-platform reselling. Here's what it does for antiques fair resellers specifically:</p>
+      <section>
+                <h2>What does an antiques fair profit tracker need to do?</h2>
+                <p>If you've spent a Sunday at <strong>Newark Antiques Fair</strong> or <strong>Ardingly</strong> and tried to remember every purchase later, you already know the answer. The app needs to log items <em>at the stall</em>, not from memory the next day. Specifically:</p>
+                <ul>
+                    <li><strong>Photo + price in under 10 seconds</strong> — your hands are full of bubble wrap and you're walking to the next stall</li>
+                    <li><strong>Entry fee tracking per fair</strong> — Newark, Ardingly, Sunbury all have different fees and you need to know which ones make sense</li>
+                    <li><strong>Transport cost tracking</strong> — fuel, train tickets, parking — these eat into profit fast on long drives</li>
+                    <li><strong>Multi-platform listing tracking</strong> — antiques sell across eBay, Etsy, Facebook Marketplace, Vinted, and specialist sites — you need to track which item is listed where</li>
+                    <li><strong>Offline-first</strong> — many fairs are in old buildings or rural showgrounds with no signal</li>
+                    <li><strong>Per-item profit after all costs</strong> — so you can see whether that £40 vintage lamp made £60 net or £15 net</li>
+                </ul>
+            </section>
 
-                    <h3>Log items at the stall</h3>
-                    <p>Open the app, tap "+", take a photo, enter the price, choose the fair from your saved markets, optionally tag the seller. Done in under ten seconds. You can keep walking. Photos store locally first, sync to Google Drive later when you have signal.</p>
+      <hr class="tear">
 
-                    <h3>Entry fees and transport per fair</h3>
-                    <p>Save the fair as a market with its GPS location. When you arrive, FlipperHelper auto-suggests it. Add the entry fee for that visit (£10 for early bird at Sunbury, £6 standard at Sunbury, £15 at Newark — different each time). Log transport: car (with mileage), train, bus, taxi, or "other". The dashboard subtracts all of this from your gross profit.</p>
+      <section>
+                <h2>How FlipperHelper handles antiques fair tracking</h2>
+                <p>FlipperHelper was built for exactly this kind of multi-source, multi-platform reselling. Here's what it does for antiques fair resellers specifically:</p>
 
-                    <h3>Track listings across 16+ platforms</h3>
-                    <p>Each item has a row of platform toggles: eBay, Etsy, Vinted, Depop, Facebook Marketplace, Gumtree, Shpock, Mercari, Poshmark, and more. Tap each platform when you list. Tap again when you mark it sold. The app records the listing date and the days-to-sell for every item — useful for spotting which items are worth it and which are dead stock.</p>
+                <h3>Log items at the stall</h3>
+                <p>Open the app, tap "+", take a photo, enter the price, choose the fair from your saved markets, optionally tag the seller. Done in under ten seconds. You can keep walking. Photos store locally first, sync to Google Drive later when you have signal.</p>
 
-                    <h3>See which fairs are profitable</h3>
-                    <p>The dashboard groups everything by market. Open Newark, see total spend, total revenue, total expenses, and net profit across every visit. If Ardingly is making you £180 average and Sunbury is making you £45, you'll know within three trips and can stop wasting Sundays.</p>
-                </section>
+                <h3>Entry fees and transport per fair</h3>
+                <p>Save the fair as a market with its GPS location. When you arrive, FlipperHelper auto-suggests it. Add the entry fee for that visit (£10 for early bird at Sunbury, £6 standard at Sunbury, £15 at Newark — different each time). Log transport: car (with mileage), train, bus, taxi, or "other". The dashboard subtracts all of this from your gross profit.</p>
 
-                <section>
-                    <h2>How FlipperHelper compares to other reseller apps for antiques fairs</h2>
-                    <p>A few apps come up when people search for antiques fair tracking — Flippd, Vendoo, Profit Prophet, ResellTrackr, Stoqit. Here's where each one fits versus FlipperHelper.</p>
+                <h3>Track listings across 16+ platforms</h3>
+                <p>Each item has a row of platform toggles: eBay, Etsy, Vinted, Depop, Facebook Marketplace, Gumtree, Shpock, Mercari, Poshmark, and more. Tap each platform when you list. Tap again when you mark it sold. The app records the listing date and the days-to-sell for every item — useful for spotting which items are worth it and which are dead stock.</p>
 
-                    <h3>Flippd vs FlipperHelper</h3>
-                    <p>Flippd is a cross-lister — it pushes the same item to multiple platforms automatically. That's useful if you're listing 50 items a day from a warehouse. It's not the right tool if your bottleneck is logging at fairs and tracking expenses per visit. FlipperHelper does not cross-list; it tracks where you've manually listed and what you've actually made.</p>
+                <h3>See which fairs are profitable</h3>
+                <p>The dashboard groups everything by market. Open Newark, see total spend, total revenue, total expenses, and net profit across every visit. If Ardingly is making you £180 average and Sunbury is making you £45, you'll know within three trips and can stop wasting Sundays.</p>
+            </section>
 
-                    <h3>Vendoo vs FlipperHelper</h3>
-                    <p>Vendoo is also a cross-lister, with a stronger focus on bulk import from existing eBay/Poshmark inventories. Same shape as Flippd — built for the listing problem, not the sourcing-to-profit problem. Antiques fair resellers usually source one-of-a-kind items where bulk listing isn't relevant.</p>
+      <hr class="tear">
 
-                    <h3>Profit Prophet, ResellTrackr, Resellr</h3>
-                    <p>These are smaller profit-tracking apps with overlapping feature sets. None of them have entry-fee or transport tracking baked in — they're built around per-item cost-of-goods. Antiques fair resellers spend serious money on entry fees and fuel; if your tracker can't model those costs, your "profit" number is wrong.</p>
+      <section>
+                <h2>How FlipperHelper compares to other reseller apps for antiques fairs</h2>
+                <p>A few apps come up when people search for antiques fair tracking — Flippd, Vendoo, Profit Prophet, ResellTrackr, Stoqit. Here's where each one fits versus FlipperHelper.</p>
 
-                    <h3>Spreadsheets</h3>
-                    <p>Spreadsheets work — until you're at a stall in the rain at 9am trying to type "Victorian brass candlestick £8 from blue van seller" into a phone keyboard. <a href="best-apps-for-resellers-2026.html">Most resellers switch to a dedicated app within six months</a>. FlipperHelper exports to Google Sheets, so you keep the spreadsheet view if you like it for analysis.</p>
-                </section>
+                <h3>Flippd vs FlipperHelper</h3>
+                <p>Flippd is a cross-lister — it pushes the same item to multiple platforms automatically. That's useful if you're listing 50 items a day from a warehouse. It's not the right tool if your bottleneck is logging at fairs and tracking expenses per visit. FlipperHelper does not cross-list; it tracks where you've manually listed and what you've actually made.</p>
 
-                <section>
-                    <h2>What FlipperHelper doesn't do</h2>
-                    <p>Honest list, since this matters when you're choosing a tool:</p>
-                    <ul>
-                        <li><strong>Available on iPhone and Android.</strong> No web app yet. Automatic backup is built in.</li>
-                        <li><strong>No platform API integration.</strong> The app does not auto-fetch sales from eBay or Vinted — you mark items sold manually. This is the biggest limitation. eBay API integration is on the roadmap as the first paid feature.</li>
-                        <li><strong>No barcode scanning.</strong> Antiques rarely have barcodes anyway, but worth knowing if you also do retail arbitrage.</li>
-                        <li><strong>No team / multi-user mode.</strong> Single seller, single device with automatic backup.</li>
-                    </ul>
-                </section>
+                <h3>Vendoo vs FlipperHelper</h3>
+                <p>Vendoo is also a cross-lister, with a stronger focus on bulk import from existing eBay/Poshmark inventories. Same shape as Flippd — built for the listing problem, not the sourcing-to-profit problem. Antiques fair resellers usually source one-of-a-kind items where bulk listing isn't relevant.</p>
 
-                <section>
-                    <h2>FAQ</h2>
-                    <h3>Is FlipperHelper free?</h3>
-                    <p>Yes, the core app is free with no ads. A paid tier with eBay API integration is planned.</p>
+                <h3>Profit Prophet, ResellTrackr, Resellr</h3>
+                <p>These are smaller profit-tracking apps with overlapping feature sets. None of them have entry-fee or transport tracking baked in — they're built around per-item cost-of-goods. Antiques fair resellers spend serious money on entry fees and fuel; if your tracker can't model those costs, your "profit" number is wrong.</p>
 
-                    <h3>Can I export my antiques fair data?</h3>
-                    <p>Yes. One-tap export to Google Sheets — every item, every expense, every sale, full column structure. You can do your own pivot tables, charts, or accounting from there.</p>
+                <h3>Spreadsheets</h3>
+                <p>Spreadsheets work — until you're at a stall in the rain at 9am trying to type "Victorian brass candlestick £8 from blue van seller" into a phone keyboard. <a href="best-apps-for-resellers-2026.html">Most resellers switch to a dedicated app within six months</a>. FlipperHelper exports to Google Sheets, so you keep the spreadsheet view if you like it for analysis.</p>
+            </section>
 
-                    <h3>Does it work without an account?</h3>
-                    <p>You only need to sign in to Google Drive if you want photo sync or Google Sheets export. The core tracking — items, prices, expenses, profit — works fully without any account.</p>
+      <hr class="tear">
 
-                    <h3>How do I record antique purchases without WiFi at the venue?</h3>
-                    <p>Just use the app normally. Everything is stored on your iPhone first. Photos and exports sync when you get back online — no manual step required.</p>
-                </section>
+      <section>
+                <h2>What FlipperHelper doesn't do</h2>
+                <p>Honest list, since this matters when you're choosing a tool:</p>
+                <ul>
+                    <li><strong>Available on iPhone and Android.</strong> No web app yet. Automatic backup is built in.</li>
+                    <li><strong>No platform API integration.</strong> The app does not auto-fetch sales from eBay or Vinted — you mark items sold manually. This is the biggest limitation. eBay API integration is on the roadmap as the first paid feature.</li>
+                    <li><strong>No barcode scanning.</strong> Antiques rarely have barcodes anyway, but worth knowing if you also do retail arbitrage.</li>
+                    <li><strong>No team / multi-user mode.</strong> Single seller, single device with automatic backup.</li>
+                </ul>
+            </section>
 
-                <section>
-                    <h2>About the author</h2>
-                    <p><strong>Oleksandr Prudnikov</strong> builds <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">FlipperHelper</a>. His wife resells full-time, sourcing from car boot sales, charity shops, and antiques fairs across the South of England — the app was built to solve the problems they actually ran into tracking what makes money.</p>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>Related reading</h2>
-                    <ul>
-                        <li><a href="antiques-fair-flipping-guide.html">Antiques Fair Flipping Guide</a> — sourcing strategies, niche selection, what to buy</li>
-                        <li><a href="vintage-market-reselling-guide.html">Vintage Market Reselling Guide</a> — sourcing and selling vintage in the UK</li>
-                        <li><a href="track-sourcing-trip-profit.html">Track Sourcing Trip Profit</a> — see whether each fair was worth the trip</li>
-                        <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers 2026</a> — full comparison of reseller tracking tools</li>
-                    </ul>
-                </section>
+      <section>
+                <h2>FAQ</h2>
+                <div class="faq-item">
+      <h3>Is FlipperHelper free?</h3>
+                <p>Yes, the core app is free with no ads. A paid tier with eBay API integration is planned.</p>
+      </div><div class="faq-item">
+      <h3>Can I export my antiques fair data?</h3>
+                <p>Yes. One-tap export to Google Sheets — every item, every expense, every sale, full column structure. You can do your own pivot tables, charts, or accounting from there.</p>
+      </div><div class="faq-item">
+      <h3>Does it work without an account?</h3>
+                <p>You only need to sign in to Google Drive if you want photo sync or Google Sheets export. The core tracking — items, prices, expenses, profit — works fully without any account.</p>
+      </div><div class="faq-item">
+      <h3>How do I record antique purchases without WiFi at the venue?</h3>
+                <p>Just use the app normally. Everything is stored on your iPhone first. Photos and exports sync when you get back online — no manual step required.</p>
+      </div></section>
 
-                <section class="blog-cta">
-                    <h2>Track your antiques fair profits</h2>
-                    <p>Log items at the stall, track entry fees and transport, see which fairs make you money. FlipperHelper handles the maths so you can focus on sourcing.</p>
-                    <span class="blog-store-links"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it on Google Play</a></span>
-                </section>
-            </div>
-        </div>
-    </main>
-    <footer class="footer footer-compact">
-        <div class="container">
-            <div class="footer-row">
-                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
-                <div class="footer-links-inline">
-                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
-                    <a href="../privacy.html">Privacy</a>
-                    <a href="../terms.html">Terms</a>
-                    <a href="mailto:support@flipperhelper.app">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script data-goatcounter="https://grommash9.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+      <hr class="tear">
+
+      <section>
+                <h2>About the author</h2>
+                <p><strong>Oleksandr Prudnikov</strong> builds <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">FlipperHelper</a>. His wife resells full-time, sourcing from car boot sales, charity shops, and antiques fairs across the South of England — the app was built to solve the problems they actually ran into tracking what makes money.</p>
+            </section>
+
+      <hr class="tear">
+
+      <section>
+                <h2>Related reading</h2>
+                <ul>
+                    <li><a href="antiques-fair-flipping-guide.html">Antiques Fair Flipping Guide</a> — sourcing strategies, niche selection, what to buy</li>
+                    <li><a href="vintage-market-reselling-guide.html">Vintage Market Reselling Guide</a> — sourcing and selling vintage in the UK</li>
+                    <li><a href="track-sourcing-trip-profit.html">Track Sourcing Trip Profit</a> — see whether each fair was worth the trip</li>
+                    <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers 2026</a> — full comparison of reseller tracking tools</li>
+                </ul>
+            </section>
+
+      <section class="post-cta">
+                <h2>Track your antiques fair profits</h2>
+                <p>Log items at the stall, track entry fees and transport, see which fairs make you money. FlipperHelper handles the maths so you can focus on sourcing.</p>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it on Google Play</a></span>
+            </section>
+  
+
+    </article>
+  </div>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="ft-c3">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-left foot-col">
+        <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+        <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+        <h4>Follow</h4>
+        <nav class="row-nav" aria-label="Footer — follow">
+          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Product</h4>
+        <nav aria-label="Footer — product">
+          <a href="/flipperhelper-pricing.html">Pricing</a>
+          <a href="/tools/">Free tools</a>
+          <a href="/compare/">Compare apps</a>
+          <a href="/changelog.html">Changelog</a>
+          <a href="/sources.html">Supported platforms</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <nav aria-label="Footer — company">
+          <a href="/about.html">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/press/">Press kit</a>
+          <a href="/is-flipperhelper-legit.html">Is FlipperHelper legit?</a>
+          <a href="/flipperhelper-review.html">Review</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Help &amp; legal</h4>
+        <nav aria-label="Footer — help and legal">
+          <a href="mailto:support@flipperhelper.app">Support</a>
+          <a href="/faq.html">FAQ</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Community at <a href="https://www.reddit.com/r/flipperhelper/">r/flipperhelper</a></span>
+      <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+    </div>
+  </div>
+</footer>
+
+<script data-goatcounter="https://grommash9.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

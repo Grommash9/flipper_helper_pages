@@ -40,6 +40,7 @@ FlipperHelper is a free app for resellers on iOS and Android who buy items at ca
 
 ## Social & Directory Profiles
 - Instagram: https://www.instagram.com/flipperhelper
+- YouTube: https://www.youtube.com/@FlipperHelper
 - Reddit: https://www.reddit.com/r/flipperhelper/
 - Medium: https://medium.com/@andreevichprudnikov
 - Indie Hackers: https://www.indiehackers.com/product/flipperhelper

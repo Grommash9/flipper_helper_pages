@@ -1,197 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-itunes-app" content="app-id=6759716745">
-    <title>Charity Shop to Vinted Profit Tracker App (UK 2026) | FlipperHelper</title>
-    <meta name="description" content="Best app to track charity-shop spending and Vinted profit. Logs purchases, Vinted fees, real profit per item — built for UK resellers.">
-    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="canonical" href="https://flipperhelper.app/blog/charity-shop-vinted-tracker-app.html">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Charity Shop to Vinted Profit Tracker App (UK 2026)">
-    <meta property="og:description" content="Track what you spend at charity shops and your profit on Vinted — purpose-built for UK resellers.">
-    <meta property="og:url" content="https://flipperhelper.app/blog/charity-shop-vinted-tracker-app.html">
-    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
-    <meta property="og:site_name" content="FlipperHelper">
-    <meta property="og:locale" content="en_GB">
-    <meta property="article:published_time" content="2026-04-26">
-    <meta property="article:author" content="Oleksandr Prudnikov">
-    <meta property="article:section" content="App">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Charity Shop to Vinted Profit Tracker App (UK 2026)">
-    <meta name="twitter:description" content="Track charity shop spend and Vinted profit on iPhone and Android — built for UK resellers.">
-    <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://flipperhelper.app/"},
-        {"@type":"ListItem","position":2,"name":"Blog","item":"https://flipperhelper.app/blog/"},
-        {"@type":"ListItem","position":3,"name":"Charity Shop to Vinted Tracker App","item":"https://flipperhelper.app/blog/charity-shop-vinted-tracker-app.html"}
-    ]}
-    </script>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Article",
-      "headline":"Charity Shop to Vinted Profit Tracker App (UK 2026)",
-      "description":"Best app to track charity shop purchases and Vinted profit on iPhone and Android.",
-      "datePublished":"2026-04-26","dateModified":"2026-04-26",
-      "author":{"@type":"Person","name":"Oleksandr Prudnikov"},
-      "publisher":{"@type":"Person","name":"Oleksandr Prudnikov"},
-      "mainEntityOfPage":"https://flipperhelper.app/blog/charity-shop-vinted-tracker-app.html"
-    }
-    </script>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"What is the best app for charity shop to Vinted resellers?","acceptedAnswer":{"@type":"Answer","text":"FlipperHelper is the app most aligned with the charity shop to Vinted workflow. You log each item with a photo and the charity shop price, mark it listed on Vinted (and any other platform), then mark it sold when it goes — the dashboard shows your real profit after Vinted's buyer protection fee, postage, and your sourcing costs."}},
-      {"@type":"Question","name":"Does it track Vinted fees correctly?","acceptedAnswer":{"@type":"Answer","text":"Vinted's fee structure changed in 2024 — sellers no longer pay a per-item fee in most regions, but buyer protection costs are passed to the buyer and shipping is offered through Vinted's integrated postage. FlipperHelper records the price you sold for and the price you paid; you can include any seller-side platform charges in the expenses if your region applies them. The Vinted fee blog post on this site explains the current structure in detail."}},
-      {"@type":"Question","name":"How does FlipperHelper compare to Vinta.app or VinTracker?","acceptedAnswer":{"@type":"Answer","text":"Vinta.app and VinTracker are Vinted-only tools — they focus on bulk listing, Vinted analytics, and managing your Vinted shop. FlipperHelper is platform-agnostic: it tracks what you bought (charity shops, car boots, anywhere), what you listed it on (Vinted plus 15+ other platforms), and what you actually made after expenses. If you sell only on Vinted, a Vinted-specific tool may add value. If you also sell on eBay, Depop, Facebook, or others, you need a tracker that follows the item across platforms."}},
-      {"@type":"Question","name":"Can I track charity shops separately from car boots and other sources?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can save each charity shop, charity shop chain, or charity shop area as a market. The dashboard then groups items by source — so you can see whether your local Oxfam is making you more profit than the British Heart Foundation up the road, or whether weekend car boots beat both. Filter by week, month, or custom date range."}},
-      {"@type":"Question","name":"What if I source from multiple charity shops in one trip?","acceptedAnswer":{"@type":"Answer","text":"You can set up each shop as a separate saved market, or group them as a single area (e.g. 'Wandsworth charity loop'). When you log an item, choose the right source. The app's GPS feature can auto-suggest the closest saved market when you arrive — useful if you do regular charity shop loops."}}
-    ]}
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-itunes-app" content="app-id=6759716745">
+<title>Charity Shop to Vinted Profit Tracker App (UK 2026) | FlipperHelper</title>
+<meta name="description" content="Best app to track charity-shop spending and Vinted profit. Logs purchases, Vinted fees, real profit per item — built for UK resellers.">
+<link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
+<link rel="canonical" href="https://flipperhelper.app/blog/charity-shop-vinted-tracker-app.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Charity Shop to Vinted Profit Tracker App (UK 2026)">
+<meta property="og:description" content="Track what you spend at charity shops and your profit on Vinted — purpose-built for UK resellers.">
+<meta property="og:url" content="https://flipperhelper.app/blog/charity-shop-vinted-tracker-app.html">
+<meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
+<meta property="og:site_name" content="FlipperHelper">
+<meta property="og:locale" content="en_GB">
+<meta property="article:published_time" content="2026-04-26">
+<meta property="article:author" content="Oleksandr Prudnikov">
+<meta property="article:section" content="App">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Charity Shop to Vinted Profit Tracker App (UK 2026)">
+<meta name="twitter:description" content="Track charity shop spend and Vinted profit on iPhone and Android — built for UK resellers.">
+<meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://flipperhelper.app/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://flipperhelper.app/blog/"},
+    {"@type":"ListItem","position":3,"name":"Charity Shop to Vinted Tracker App","item":"https://flipperhelper.app/blog/charity-shop-vinted-tracker-app.html"}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+  "headline":"Charity Shop to Vinted Profit Tracker App (UK 2026)",
+  "description":"Best app to track charity shop purchases and Vinted profit on iPhone and Android.",
+  "datePublished":"2026-04-26","dateModified":"2026-04-26",
+  "author":{"@type":"Person","name":"Oleksandr Prudnikov"},
+  "publisher":{"@type":"Person","name":"Oleksandr Prudnikov"},
+  "mainEntityOfPage":"https://flipperhelper.app/blog/charity-shop-vinted-tracker-app.html"
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"What is the best app for charity shop to Vinted resellers?","acceptedAnswer":{"@type":"Answer","text":"FlipperHelper is the app most aligned with the charity shop to Vinted workflow. You log each item with a photo and the charity shop price, mark it listed on Vinted (and any other platform), then mark it sold when it goes — the dashboard shows your real profit after Vinted's buyer protection fee, postage, and your sourcing costs."}},
+  {"@type":"Question","name":"Does it track Vinted fees correctly?","acceptedAnswer":{"@type":"Answer","text":"Vinted's fee structure changed in 2024 — sellers no longer pay a per-item fee in most regions, but buyer protection costs are passed to the buyer and shipping is offered through Vinted's integrated postage. FlipperHelper records the price you sold for and the price you paid; you can include any seller-side platform charges in the expenses if your region applies them. The Vinted fee blog post on this site explains the current structure in detail."}},
+  {"@type":"Question","name":"How does FlipperHelper compare to Vinta.app or VinTracker?","acceptedAnswer":{"@type":"Answer","text":"Vinta.app and VinTracker are Vinted-only tools — they focus on bulk listing, Vinted analytics, and managing your Vinted shop. FlipperHelper is platform-agnostic: it tracks what you bought (charity shops, car boots, anywhere), what you listed it on (Vinted plus 15+ other platforms), and what you actually made after expenses. If you sell only on Vinted, a Vinted-specific tool may add value. If you also sell on eBay, Depop, Facebook, or others, you need a tracker that follows the item across platforms."}},
+  {"@type":"Question","name":"Can I track charity shops separately from car boots and other sources?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can save each charity shop, charity shop chain, or charity shop area as a market. The dashboard then groups items by source — so you can see whether your local Oxfam is making you more profit than the British Heart Foundation up the road, or whether weekend car boots beat both. Filter by week, month, or custom date range."}},
+  {"@type":"Question","name":"What if I source from multiple charity shops in one trip?","acceptedAnswer":{"@type":"Answer","text":"You can set up each shop as a separate saved market, or group them as a single area (e.g. 'Wandsworth charity loop'). When you log an item, choose the right source. The app's GPS feature can auto-suggest the closest saved market when you arrive — useful if you do regular charity shop loops."}}
+]}
+</script>
+
+<link rel="stylesheet" href="article.css">
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
+
 <body>
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="../" class="nav-logo">
-                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
-                <span>FlipperHelper</span>
-            </a>
-            <div class="nav-links">
-                <a href="../">Home</a>
-                <a href="../faq.html">FAQ</a>
-                <a href="./">Blog</a>
-                <a href="/tools/">Tools</a>
-                <a href="/compare/">Compare</a>
-                <a href="/#download" class="btn btn-small">Get the App</a>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ======================= NAV ======================= -->
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+      FlipperHelper
+    </a>
+    <div class="nav-links">
+        <a href="/tools/">Free tools</a>
+        <a href="/compare/">Compare</a>
+        <a href="/#workbench">What's next</a>
+        <a href="/blog/" aria-current="page">Blog</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/about.html">About</a>
+        <a class="btn btn-primary" href="/#get">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================= ARTICLE ======================= -->
+<main class="post" id="main">
+  <div class="wrap">
+    <article>
+
+            <a href="./" class="post-back">&larr; Back to Blog</a>
+            <p class="post-updated">Last updated: 26 April 2026</p>
+            <h1>Charity Shop to Vinted Profit Tracker App (UK 2026)</h1>
+            <div class="post-meta">
+                <span class="art-date">26 April 2026</span>
+                <span class="art-tag">App</span>
+                <span class="art-read">7 min read</span>
             </div>
-        </div>
-    </nav>
-    <main class="legal-page">
-        <div class="container">
-            <div class="legal-content blog-post">
-                <a href="./" class="blog-back">&larr; Back to Blog</a>
-                <p class="blog-updated">Last updated: 26 April 2026</p>
-                <h1>Charity Shop to Vinted Profit Tracker App (UK 2026)</h1>
-                <div class="blog-meta">
-                    <span class="blog-date">26 April 2026</span>
-                    <span class="blog-tag">App</span>
-                    <span class="blog-reading-time">7 min read</span>
-                </div>
 
-                <section>
-                    <p><strong>If you source clothes and small items from charity shops to flip on Vinted, FlipperHelper is the app built for that pipeline.</strong> It logs each charity shop purchase with a photo and price, tracks which Vinted listing it ended up on, and shows your real profit after sourcing costs and any platform charges.</p>
-                    <p>Most Vinted-specific tools focus on bulk listing inside the Vinted app. Most "profit tracker" apps focus on per-item costs without understanding sourcing. The charity-shop-to-Vinted reseller needs both — and that's exactly the workflow this app was built for.</p>
-                </section>
+            <section>
+                <p><strong>If you source clothes and small items from charity shops to flip on Vinted, FlipperHelper is the app built for that pipeline.</strong> It logs each charity shop purchase with a photo and price, tracks which Vinted listing it ended up on, and shows your real profit after sourcing costs and any platform charges.</p>
+                <p>Most Vinted-specific tools focus on bulk listing inside the Vinted app. Most "profit tracker" apps focus on per-item costs without understanding sourcing. The charity-shop-to-Vinted reseller needs both — and that's exactly the workflow this app was built for.</p>
+            </section>
 
-                <section>
-                    <h2>What does a charity shop to Vinted reseller need from a tracker?</h2>
-                    <p>Sourcing volume is high. You walk into a charity shop with 3,000 items on rails and walk out with five things in a carrier bag. Multiply that by three shops on a Saturday and you're trying to remember 15 purchases by the time you get home. The app needs to:</p>
-                    <ul>
-                        <li><strong>Log items in seconds</strong> — at the till or in the car after, before you forget</li>
-                        <li><strong>Track each charity shop separately</strong> — so you know which ones are actually worth visiting</li>
-                        <li><strong>Track listing status on Vinted</strong> — and any other platforms you cross-list to (eBay, Depop, Facebook)</li>
-                        <li><strong>Record sale price and date</strong> — so days-to-sell becomes visible</li>
-                        <li><strong>Calculate real profit</strong> — after Vinted's buyer protection structure, postage costs, and any seller-side fees in your region</li>
-                        <li><strong>Handle multiple currencies</strong> — useful if you also do French brocantes or Spanish flea markets</li>
-                    </ul>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>How FlipperHelper handles the charity shop to Vinted workflow</h2>
+      <section>
+                <h2>What does a charity shop to Vinted reseller need from a tracker?</h2>
+                <p>Sourcing volume is high. You walk into a charity shop with 3,000 items on rails and walk out with five things in a carrier bag. Multiply that by three shops on a Saturday and you're trying to remember 15 purchases by the time you get home. The app needs to:</p>
+                <ul>
+                    <li><strong>Log items in seconds</strong> — at the till or in the car after, before you forget</li>
+                    <li><strong>Track each charity shop separately</strong> — so you know which ones are actually worth visiting</li>
+                    <li><strong>Track listing status on Vinted</strong> — and any other platforms you cross-list to (eBay, Depop, Facebook)</li>
+                    <li><strong>Record sale price and date</strong> — so days-to-sell becomes visible</li>
+                    <li><strong>Calculate real profit</strong> — after Vinted's buyer protection structure, postage costs, and any seller-side fees in your region</li>
+                    <li><strong>Handle multiple currencies</strong> — useful if you also do French brocantes or Spanish flea markets</li>
+                </ul>
+            </section>
 
-                    <h3>Sourcing — at the charity shop</h3>
-                    <p>Open the app, snap a photo of the garment, enter what you paid (£3, £4, £8 — whatever was on the tag). Choose the charity shop from your saved list. The app auto-suggests it if you have GPS market detection on. Done. You can keep walking the rails.</p>
+      <hr class="tear">
 
-                    <h3>Listing — when you get home</h3>
-                    <p>Tap the item, toggle "Vinted" on, optionally toggle other platforms if you cross-list. The app records the listing date for every platform separately. Now you can see at a glance: how many of your items are listed, how many are still in the "to list" pile, how long they've been sitting unlisted.</p>
+      <section>
+                <h2>How FlipperHelper handles the charity shop to Vinted workflow</h2>
 
-                    <h3>Sold — when Vinted notifies you</h3>
-                    <p>When Vinted tells you it sold, mark the item sold in FlipperHelper and enter the sale price. The dashboard immediately recalculates your profit. The app records days-to-sell — so over time you build up data on which charity shops produce fast-selling stock and which produce dead stock.</p>
+                <h3>Sourcing — at the charity shop</h3>
+                <p>Open the app, snap a photo of the garment, enter what you paid (£3, £4, £8 — whatever was on the tag). Choose the charity shop from your saved list. The app auto-suggests it if you have GPS market detection on. Done. You can keep walking the rails.</p>
 
-                    <h3>Dashboard — which charity shops are actually worth it</h3>
-                    <p>Open the dashboard. Filter by month. Look at profit grouped by market. If your local British Heart Foundation produced £180 net last month and the smaller Mind shop two streets away produced £42 net, you'll see it. Most resellers visit the same shops on autopilot — this is the data that breaks the autopilot.</p>
-                </section>
+                <h3>Listing — when you get home</h3>
+                <p>Tap the item, toggle "Vinted" on, optionally toggle other platforms if you cross-list. The app records the listing date for every platform separately. Now you can see at a glance: how many of your items are listed, how many are still in the "to list" pile, how long they've been sitting unlisted.</p>
 
-                <section>
-                    <h2>How FlipperHelper compares to Vinted-specific tools</h2>
+                <h3>Sold — when Vinted notifies you</h3>
+                <p>When Vinted tells you it sold, mark the item sold in FlipperHelper and enter the sale price. The dashboard immediately recalculates your profit. The app records days-to-sell — so over time you build up data on which charity shops produce fast-selling stock and which produce dead stock.</p>
 
-                    <h3>Vinta.app and VinTracker</h3>
-                    <p>These are Vinted-only — they help you bulk list, manage your Vinted shop, and analyse your Vinted-specific stats. They're useful if Vinted is your only platform. The limitation: they don't know what you paid for items at charity shops, and they can't track items you've also listed on eBay, Depop, or Facebook Marketplace. So your "profit" inside those tools is missing the cost-of-goods half.</p>
+                <h3>Dashboard — which charity shops are actually worth it</h3>
+                <p>Open the dashboard. Filter by month. Look at profit grouped by market. If your local British Heart Foundation produced £180 net last month and the smaller Mind shop two streets away produced £42 net, you'll see it. Most resellers visit the same shops on autopilot — this is the data that breaks the autopilot.</p>
+            </section>
 
-                    <h3>FreshBooks and Zoho Expense</h3>
-                    <p>These are accounting tools, not reseller trackers. They handle invoices, expense receipts, and tax-time reports. They don't understand the per-item, per-platform, per-source workflow that resellers run. You can use them <em>alongside</em> a tracker for tax purposes, but not instead of one.</p>
+      <hr class="tear">
 
-                    <h3>Resellr, Reseller Profit Tracker, Profit Prophet</h3>
-                    <p>These are smaller cross-platform profit-tracking apps with overlapping features. They each handle the basic per-item profit math. The differentiators are usually around platform coverage, expense tracking depth, and how the dashboard presents data over time. FlipperHelper's specific edges are entry-fee tracking (relevant if you also do car boots), GPS market detection, and Google Sheets export with full column structure.</p>
+      <section>
+                <h2>How FlipperHelper compares to Vinted-specific tools</h2>
 
-                    <h3>Spreadsheets</h3>
-                    <p>You can do all of this in Google Sheets — many resellers start there. The friction is mobile data entry. <a href="best-apps-for-resellers-2026.html">A typical reseller switches off spreadsheets within 6 months</a> because it kills consistency. FlipperHelper exports to Google Sheets — so you keep the spreadsheet view if you need it for tax or analysis, but the app is what you actually use at the till.</p>
-                </section>
+                <h3>Vinta.app and VinTracker</h3>
+                <p>These are Vinted-only — they help you bulk list, manage your Vinted shop, and analyse your Vinted-specific stats. They're useful if Vinted is your only platform. The limitation: they don't know what you paid for items at charity shops, and they can't track items you've also listed on eBay, Depop, or Facebook Marketplace. So your "profit" inside those tools is missing the cost-of-goods half.</p>
 
-                <section>
-                    <h2>What FlipperHelper doesn't do</h2>
-                    <ul>
-                        <li><strong>Not a Vinted bulk lister.</strong> You list manually on Vinted; the app records what you've listed and where.</li>
-                        <li><strong>Available on iPhone and Android.</strong> No web app yet.</li>
-                        <li><strong>No automatic sales import.</strong> You mark items sold manually after Vinted notifies you.</li>
-                        <li><strong>No team mode.</strong> Single user, single device with automatic backup.</li>
-                    </ul>
-                </section>
+                <h3>FreshBooks and Zoho Expense</h3>
+                <p>These are accounting tools, not reseller trackers. They handle invoices, expense receipts, and tax-time reports. They don't understand the per-item, per-platform, per-source workflow that resellers run. You can use them <em>alongside</em> a tracker for tax purposes, but not instead of one.</p>
 
-                <section>
-                    <h2>FAQ</h2>
-                    <h3>Does FlipperHelper handle Vinted's fee changes?</h3>
-                    <p>Vinted's seller fee structure has changed multiple times — see <a href="vinted-fees-uk.html">Vinted fees UK explained</a> for the current breakdown. FlipperHelper records the price you sold for and the price you paid; for any seller-side platform charges in your region, you can include them as expenses on the item.</p>
+                <h3>Resellr, Reseller Profit Tracker, Profit Prophet</h3>
+                <p>These are smaller cross-platform profit-tracking apps with overlapping features. They each handle the basic per-item profit math. The differentiators are usually around platform coverage, expense tracking depth, and how the dashboard presents data over time. FlipperHelper's specific edges are entry-fee tracking (relevant if you also do car boots), GPS market detection, and Google Sheets export with full column structure.</p>
 
-                    <h3>Can I track Depop and eBay sales of charity shop finds at the same time?</h3>
-                    <p>Yes. Each item has toggles for 16+ platforms. You can have an item listed on Vinted, Depop, and eBay simultaneously, and mark it sold on whichever platform actually closes.</p>
+                <h3>Spreadsheets</h3>
+                <p>You can do all of this in Google Sheets — many resellers start there. The friction is mobile data entry. <a href="best-apps-for-resellers-2026.html">A typical reseller switches off spreadsheets within 6 months</a> because it kills consistency. FlipperHelper exports to Google Sheets — so you keep the spreadsheet view if you need it for tax or analysis, but the app is what you actually use at the till.</p>
+            </section>
 
-                    <h3>Does the app work without an account?</h3>
-                    <p>Yes. The core tracking — items, prices, expenses, profit, dashboard — works without any sign-in. You only sign into Google if you want photo sync to Google Drive or one-tap export to Google Sheets.</p>
+      <hr class="tear">
 
-                    <h3>How is the data stored?</h3>
-                    <p>Locally on your device first, with automatic backup (iCloud on iPhone, a folder you choose on Android) so it survives a phone reset. Photos can also sync to your Google Drive in the background.</p>
-                </section>
+      <section>
+                <h2>What FlipperHelper doesn't do</h2>
+                <ul>
+                    <li><strong>Not a Vinted bulk lister.</strong> You list manually on Vinted; the app records what you've listed and where.</li>
+                    <li><strong>Available on iPhone and Android.</strong> No web app yet.</li>
+                    <li><strong>No automatic sales import.</strong> You mark items sold manually after Vinted notifies you.</li>
+                    <li><strong>No team mode.</strong> Single user, single device with automatic backup.</li>
+                </ul>
+            </section>
 
-                <section>
-                    <h2>About the author</h2>
-                    <p><strong>Oleksandr Prudnikov</strong> builds <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">FlipperHelper</a>. His wife resells full-time across Vinted, eBay and Depop, sourcing from charity shops and car boots in South London — the app was built around her actual workflow.</p>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>Related reading</h2>
-                    <ul>
-                        <li><a href="charity-shop-reselling-uk.html">Charity Shop Reselling UK</a> — sourcing strategies and what to look for</li>
-                        <li><a href="how-to-sell-on-vinted-uk.html">How to Sell on Vinted UK</a> — listing tips and pricing</li>
-                        <li><a href="vinted-fees-uk.html">Vinted Fees UK Explained</a> — current fee structure</li>
-                        <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers 2026</a> — full comparison of tracker tools</li>
-                    </ul>
-                </section>
+      <section>
+                <h2>FAQ</h2>
+                <div class="faq-item">
+      <h3>Does FlipperHelper handle Vinted's fee changes?</h3>
+                <p>Vinted's seller fee structure has changed multiple times — see <a href="vinted-fees-uk.html">Vinted fees UK explained</a> for the current breakdown. FlipperHelper records the price you sold for and the price you paid; for any seller-side platform charges in your region, you can include them as expenses on the item.</p>
+      </div><div class="faq-item">
+      <h3>Can I track Depop and eBay sales of charity shop finds at the same time?</h3>
+                <p>Yes. Each item has toggles for 16+ platforms. You can have an item listed on Vinted, Depop, and eBay simultaneously, and mark it sold on whichever platform actually closes.</p>
+      </div><div class="faq-item">
+      <h3>Does the app work without an account?</h3>
+                <p>Yes. The core tracking — items, prices, expenses, profit, dashboard — works without any sign-in. You only sign into Google if you want photo sync to Google Drive or one-tap export to Google Sheets.</p>
+      </div><div class="faq-item">
+      <h3>How is the data stored?</h3>
+                <p>Locally on your device first, with automatic backup (iCloud on iPhone, a folder you choose on Android) so it survives a phone reset. Photos can also sync to your Google Drive in the background.</p>
+      </div></section>
 
-                <section class="blog-cta">
-                    <h2>Track your charity shop to Vinted profit</h2>
-                    <p>Log each charity shop purchase, mark items listed on Vinted, see your real profit after costs. FlipperHelper handles the maths so you can focus on sourcing.</p>
-                    <span class="blog-store-links"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it on Google Play</a></span>
-                </section>
-            </div>
-        </div>
-    </main>
-    <footer class="footer footer-compact">
-        <div class="container">
-            <div class="footer-row">
-                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
-                <div class="footer-links-inline">
-                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
-                    <a href="../privacy.html">Privacy</a>
-                    <a href="../terms.html">Terms</a>
-                    <a href="mailto:support@flipperhelper.app">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script data-goatcounter="https://grommash9.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+      <hr class="tear">
+
+      <section>
+                <h2>About the author</h2>
+                <p><strong>Oleksandr Prudnikov</strong> builds <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">FlipperHelper</a>. His wife resells full-time across Vinted, eBay and Depop, sourcing from charity shops and car boots in South London — the app was built around her actual workflow.</p>
+            </section>
+
+      <hr class="tear">
+
+      <section>
+                <h2>Related reading</h2>
+                <ul>
+                    <li><a href="charity-shop-reselling-uk.html">Charity Shop Reselling UK</a> — sourcing strategies and what to look for</li>
+                    <li><a href="how-to-sell-on-vinted-uk.html">How to Sell on Vinted UK</a> — listing tips and pricing</li>
+                    <li><a href="vinted-fees-uk.html">Vinted Fees UK Explained</a> — current fee structure</li>
+                    <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers 2026</a> — full comparison of tracker tools</li>
+                </ul>
+            </section>
+
+      <section class="post-cta">
+                <h2>Track your charity shop to Vinted profit</h2>
+                <p>Log each charity shop purchase, mark items listed on Vinted, see your real profit after costs. FlipperHelper handles the maths so you can focus on sourcing.</p>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it on Google Play</a></span>
+            </section>
+  
+
+    </article>
+  </div>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="ft-c3">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-left foot-col">
+        <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+        <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+        <h4>Follow</h4>
+        <nav class="row-nav" aria-label="Footer — follow">
+          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Product</h4>
+        <nav aria-label="Footer — product">
+          <a href="/flipperhelper-pricing.html">Pricing</a>
+          <a href="/tools/">Free tools</a>
+          <a href="/compare/">Compare apps</a>
+          <a href="/changelog.html">Changelog</a>
+          <a href="/sources.html">Supported platforms</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <nav aria-label="Footer — company">
+          <a href="/about.html">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/press/">Press kit</a>
+          <a href="/is-flipperhelper-legit.html">Is FlipperHelper legit?</a>
+          <a href="/flipperhelper-review.html">Review</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Help &amp; legal</h4>
+        <nav aria-label="Footer — help and legal">
+          <a href="mailto:support@flipperhelper.app">Support</a>
+          <a href="/faq.html">FAQ</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Community at <a href="https://www.reddit.com/r/flipperhelper/">r/flipperhelper</a></span>
+      <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+    </div>
+  </div>
+</footer>
+
+<script data-goatcounter="https://grommash9.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

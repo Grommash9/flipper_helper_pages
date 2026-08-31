@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-itunes-app" content="app-id=6759716745">
-    <title>Press Kit - FlipperHelper</title>
+    <title>Press Kit | FlipperHelper</title>
     <meta name="description" content="FlipperHelper press kit. Download app screenshots, logos, app icon, and key facts about the free iOS and Android reselling tracker app.">
-    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/svg+xml" href="/logo_FH.svg">
+    <link rel="apple-touch-icon" href="/logo_FH.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&amp;family=Roboto+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/landing.css">
+    <meta name="author" content="Oleksandr Prudnikov">
     <link rel="canonical" href="https://flipperhelper.app/press/">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <!-- OpenGraph -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:site_name" content="FlipperHelper">
     <meta property="og:title" content="FlipperHelper Press Kit">
-    <meta property="og:description" content="Download screenshots, logos, and key facts about FlipperHelper — the free reselling app for iOS and Android.">
+    <meta property="og:description" content="Key facts, full-resolution screenshots, logos and founder bio for FlipperHelper — the free reselling tracker for iOS and Android.">
     <meta property="og:url" content="https://flipperhelper.app/press/">
     <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
-    <meta property="og:site_name" content="FlipperHelper">
-    <meta property="og:locale" content="en_GB">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="FlipperHelper Press Kit">
-    <meta name="twitter:description" content="Download screenshots, logos, and key facts about FlipperHelper — the free reselling app for iOS and Android.">
+    <meta name="twitter:description" content="Key facts, full-resolution screenshots, logos and founder bio for FlipperHelper.">
     <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
     <!-- BreadcrumbList JSON-LD -->
     <script type="application/ld+json">
@@ -33,346 +39,457 @@
       ]
     }
     </script>
-    <style>
-        .press-hero {
-            display: flex;
-            align-items: center;
-            gap: var(--space-xl);
-            margin-bottom: var(--space-3xl);
-        }
-        .press-hero img {
-            width: 96px;
-            height: 96px;
-            border-radius: 22px;
-            flex-shrink: 0;
-        }
-        .press-hero-text h1 {
-            margin-bottom: var(--space-xs);
-        }
-        .press-hero-text p {
-            font-size: var(--text-lg);
-            color: var(--text-secondary);
-            margin: 0;
-        }
-        .fact-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: var(--space-md);
-            margin-bottom: var(--space-xl);
-        }
-        @media (min-width: 640px) {
-            .fact-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        .fact-card {
-            padding: var(--space-lg);
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
-            border-radius: 12px;
-        }
-        .fact-card dt {
-            font-size: var(--text-sm);
-            color: var(--text-tertiary);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: var(--space-xs);
-        }
-        .fact-card dd {
-            font-size: var(--text-base);
-            color: var(--text-primary);
-            font-weight: 500;
-            margin: 0;
-        }
-        .screenshot-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: var(--space-lg);
-            margin-bottom: var(--space-xl);
-        }
-        @media (min-width: 768px) {
-            .screenshot-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        .screenshot-grid a {
-            display: block;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid var(--border-subtle);
-            transition: border-color var(--transition-fast);
-        }
-        .screenshot-grid a:hover {
-            border-color: var(--color-primary);
-        }
-        .screenshot-grid img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .screenshot-caption {
-            font-size: var(--text-sm);
-            color: var(--text-tertiary);
-            text-align: center;
-            padding: var(--space-sm) 0;
-        }
-        .asset-row {
-            display: flex;
-            align-items: center;
-            gap: var(--space-lg);
-            padding: var(--space-lg);
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
-            border-radius: 12px;
-            margin-bottom: var(--space-md);
-        }
-        .asset-row img {
-            width: 64px;
-            height: 64px;
-            border-radius: 14px;
-            flex-shrink: 0;
-        }
-        .asset-row img.logo-preview {
-            border-radius: 0;
-            background: transparent;
-        }
-        .asset-info {
-            flex: 1;
-        }
-        .asset-info strong {
-            display: block;
-            color: var(--text-primary);
-            margin-bottom: 2px;
-        }
-        .asset-info span {
-            font-size: var(--text-sm);
-            color: var(--text-tertiary);
-        }
-        .asset-row .btn {
-            flex-shrink: 0;
-        }
-        .bio-section {
-            padding: var(--space-xl);
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
-            border-radius: 12px;
-            margin-bottom: var(--space-xl);
-        }
-        .bio-section h3 {
-            margin-top: 0;
-        }
-        .bio-section p {
-            color: var(--text-secondary);
-            line-height: var(--leading-relaxed);
-        }
-        .bio-section p:last-child {
-            margin-bottom: 0;
-        }
-    </style>
+<style>
+/* Page-only additions to landing.css. Nav, cards, grid, shots carousel, story
+   band, ledger, emphasis card, final, newsletter and footer all come from the
+   shared stylesheet unchanged. */
+
+/* .page-head: landing.css has no title-and-lede head, because the homepage opens
+   with .hero instead. Values from the style guide §25.2, same block as /tools/. */
+.page-head{padding:64px 0 0}
+.page-head h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;
+  margin-bottom:12px;max-width:760px}
+@media(max-width:720px){.page-head{padding:44px 0 0}}
+
+/* Plain prose block — the one-liner section is text, not cards. It takes the
+   full frame rather than the style guide's 900px text measure (5.2), so every
+   section on the page shares one left and right edge. */
+.prose{max-width:none}
+.prose p{margin-bottom:16px}
+.prose p:last-child{margin-bottom:0}
+
+/* VARIATION of .pro-rows: the contact rows are the same 190px key/value grid on
+   dashed rules, used outside a .pro-card, so the contact block carries no orange
+   stripe — the feature and links cards do. */
+.facts{border-top:1px dashed var(--line-strong);margin-top:26px}
+
+/* Requested change: row keys and the timeline labels take --accent instead of
+   --ink / --action. Contrast note — #E58025 on white measures ~2.8:1, under
+   WCAG AA for small text (style guide 2.6); the same deliberate brand
+   trade-off the orange .eyebrow already makes. */
+.pro-row .k{color:var(--accent)}
+
+/* VARIATION of .moment: the key facts are a timeline of labels, not the
+   homepage's lived moments, so the marker and its label move from --action blue
+   (which on this site means interactive) to --accent, and the value carries the
+   row instead of an h3. Dot, dashed spine and collapse are untouched; the value
+   drops the 560px cap the homepage moments use, because these are single lines
+   that would otherwise wrap three times inside a 1080px frame. */
+.day .moment::before{border-color:var(--accent)}
+.day .moment .when{color:var(--accent)}
+.day .moment{padding-bottom:34px}
+.day .moment .answer{max-width:none}
+
+/* Feature list inside the emphasis card — dashed rules instead of bullets, same
+   13px rhythm as .pro-rows. Also carries the links list. */
+.feature-list{list-style:none;margin:0;border-top:1px dashed var(--line-strong)}
+.feature-list li{padding:13px 0;border-bottom:1px dashed var(--line-strong);
+  font-size:var(--fs-sm);color:var(--ink-66);line-height:1.55}
+
+/* The shared .section-title clamps to 2.4rem, near enough the page h1's 2.8rem
+   that the two read as one level. Dropping it to 1.75rem restores the step. */
+.section-title{font-size:clamp(1.4rem,2.6vw,1.75rem)}
+
+/* VARIATION of .today-card: an asset card is a horizontal row — file preview on
+   the left, name / size / download stacked on the right. The preview is 96px
+   because that is what the name + size + button stack measures, so the two
+   columns come out level and the card is one preview tall instead of five
+   stacked blocks. Border, radius and shadow are the card's own; the 22px
+   padding tightens to 18px and the 12px column stack becomes a 16px row gap. */
+.asset-card{flex-direction:row;align-items:stretch;gap:16px;padding:18px}
+.asset-card img{width:96px;height:96px;border-radius:14px;flex:none}
+.asset-card img.logo-preview{border-radius:0;object-fit:contain}
+.asset-card .asset-body{flex:1;min-width:0;display:flex;flex-direction:column;
+  justify-content:space-between;gap:6px}
+.asset-card .card-meta{font-family:var(--font-mono);font-size:var(--fs-2xs);
+  color:var(--ink-66);letter-spacing:.08em;text-transform:uppercase;font-variant-numeric:tabular-nums}
+/* Smaller than the page's other buttons: at a 332px card the text column has
+   ~184px, and the default 13px/22px button would push the stack past the 96px
+   preview it has to match. */
+.asset-card .btn{align-self:flex-start;font-size:var(--fs-xs);padding:7px 14px;border-radius:10px}
+/* Three across need 303px each (96px preview + 16px gap + the 155px size line +
+   36px padding), so the row only fits from ~993px of viewport up. Below that go
+   single-column early — landing.css waits until 860px, and in between the size
+   line would wrap and push the text column past the preview it has to match. */
+@media(max-width:1000px){.today-grid{grid-template-columns:1fr}}
+
+/* Core Features and Links put their section title inside the card, the way the
+   homepage's .merged-gap blocks do (index.html:595) — mono label outside the
+   frame, title in it. The title keeps .section-title so all six sections read at
+   one size; only the 12px bottom margin grows to clear the list's top rule. */
+.pro-card > .section-title{margin-bottom:18px}
+
+/* Brand Assets is now fenced by a tear above and below, so it needs less of its
+   own padding to read as a separate block. */
+#assets{padding:44px 0}
+
+/* Same band treatment as the homepage's .story section (landing.css:255): the
+   --card surface with a hairline top and bottom, so Key Facts lifts out of the
+   run of prose around it. Not the .story class itself — that also carries a
+   two-column grid and paragraph colours this section has no use for. */
+#facts{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+/* The dot punches a hole in the dashed spine by filling itself with the page
+   surface (landing.css:196 uses --bg). Inside the band that surface is --card,
+   so without this the ring sits on a grey disc. */
+#facts .moment::before{background:var(--card)}
+
+/* Links belongs to the developer block above it, so the two share one gap
+   instead of a full section break: 40px, the same step .merged-gap uses on the
+   homepage, in place of 68px + 68px of section padding. */
+#developer{padding-bottom:0}
+#links{padding-top:40px}
+
+/* The shots on this page are downloads, not decoration: the caption carries the
+   link, and the whole figure is the hit area. Same stretched-::after as /tools/. */
+.shot{position:relative}
+.shot figcaption a{color:var(--ink);text-decoration:none}
+.shot figcaption a::after{content:"";position:absolute;inset:0;border-radius:var(--radius-md)}
+.shot:hover figcaption a{color:var(--action)}
+</style>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="../" class="nav-logo">
-                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
-                <span>FlipperHelper</span>
-            </a>
-            <div class="nav-links">
-                <a href="../">Home</a>
-                <a href="../faq.html">FAQ</a>
-                <a href="../blog/">Blog</a>
-                <a href="/tools/">Tools</a>
-                <a href="/compare/">Compare</a>
-                <a href="/#download" class="btn btn-small">Get the App</a>
-            </div>
+<a class="visually-hidden" href="#main-content">Skip to content</a>
+
+
+<!-- ======================= NAV ======================= -->
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+      FlipperHelper
+    </a>
+    <div class="nav-links">
+        <a href="/tools/">Free tools</a>
+        <a href="/compare/">Compare</a>
+        <a href="/#workbench">What's next</a>
+        <a href="/blog/">Blog</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/about.html">About</a>
+        <a class="btn btn-primary" href="/#get">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+  <!-- ======================= PAGE HEAD ======================= -->
+  <header class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">For journalists</span>
+      <h1>Press Kit</h1>
+      <p class="section-lede">Everything you need to write about FlipperHelper.</p>
+    </div>
+  </header>
+
+  <!-- ======================= WHAT IT IS ======================= -->
+  <section id="what-it-is" aria-labelledby="what-it-is-title">
+    <div class="wrap">
+      <span class="eyebrow">The one-liner</span>
+      <h2 class="section-title" id="what-it-is-title">What is FlipperHelper?</h2>
+      <div class="prose">
+        <p>FlipperHelper is a free app for iOS and Android for people who buy secondhand items at car boot sales, charity shops, and flea markets, then resell them on platforms like eBay, Vinted, and Facebook Marketplace. It tracks every item from purchase through listing to sale and calculates your real profit after all expenses.</p>
+        <p>Built by Oleksandr Prudnikov, a Ukrainian developer living in Wandsworth, South West London. He made it for his wife after she started reselling and had no way to track what she was buying, where she was listing it, and whether she was actually making money.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= KEY FACTS ======================= -->
+  <section id="facts" aria-labelledby="facts-title">
+    <div class="wrap">
+      <span class="eyebrow">Checkable</span>
+      <h2 class="section-title" id="facts-title">Key Facts</h2>
+
+      <div class="day">
+        <div class="moment reveal">
+          <span class="when">Price</span>
+          <p class="answer">Free. No ads, no subscriptions, no in-app purchases.</p>
         </div>
-    </nav>
-
-    <main class="legal-page">
-        <div class="legal-content">
-
-            <!-- Hero -->
-            <div class="press-hero">
-                <img src="app-icon-1024.png" alt="FlipperHelper app icon">
-                <div class="press-hero-text">
-                    <h1>Press Kit</h1>
-                    <p>Everything you need to write about FlipperHelper.</p>
-                </div>
-            </div>
-
-            <!-- One-liner -->
-            <section>
-                <h2>What is FlipperHelper?</h2>
-                <p>FlipperHelper is a free app for iOS and Android for people who buy secondhand items at car boot sales, charity shops, and flea markets, then resell them on platforms like eBay, Vinted, and Facebook Marketplace. It tracks every item from purchase through listing to sale and calculates your real profit after all expenses.</p>
-                <p>Built by Oleksandr Prudnikov, a Ukrainian developer living in Wandsworth, South West London. He made it for his wife after she started reselling and had no way to track what she was buying, where she was listing it, and whether she was actually making money.</p>
-            </section>
-
-            <!-- Key Facts -->
-            <section>
-                <h2>Key Facts</h2>
-                <div class="fact-grid">
-                    <dl class="fact-card">
-                        <dt>Price</dt>
-                        <dd>Free. No ads, no subscriptions, no in-app purchases.</dd>
-                    </dl>
-                    <dl class="fact-card">
-                        <dt>Platform</dt>
-                        <dd>iPhone (iOS 17+)</dd>
-                    </dl>
-                    <dl class="fact-card">
-                        <dt>Selling Platforms Tracked</dt>
-                        <dd>16: eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, OfferUp, Craigslist, ThredUp</dd>
-                    </dl>
-                    <dl class="fact-card">
-                        <dt>Currencies</dt>
-                        <dd>6: GBP (£), USD ($), EUR (€), CAD (CA$), AUD (A$), NZD (NZ$) with automatic daily exchange rates</dd>
-                    </dl>
-                    <dl class="fact-card">
-                        <dt>Offline</dt>
-                        <dd>Works fully offline — important at markets with no signal</dd>
-                    </dl>
-                    <dl class="fact-card">
-                        <dt>Launched</dt>
-                        <dd>February 2025</dd>
-                    </dl>
-                    <dl class="fact-card">
-                        <dt>Built With</dt>
-                        <dd>Swift and SwiftUI, native iOS</dd>
-                    </dl>
-                    <dl class="fact-card">
-                        <dt>Developer</dt>
-                        <dd>Oleksandr Prudnikov, Wandsworth, London</dd>
-                    </dl>
-                </div>
-            </section>
-
-            <!-- Features (compact) -->
-            <section>
-                <h2>Core Features</h2>
-                <ul>
-                    <li>Photo-first item tracking with automatic SKU generation</li>
-                    <li>Track listings across 16 selling platforms with per-platform dates</li>
-                    <li>Automatic profit calculation per item</li>
-                    <li>Expense tracking: entry fees, transport (car, bus, train, taxi, van, bike rental), and custom expenses</li>
-                    <li>Multi-currency support — 6 currencies (USD, EUR, GBP, CAD, AUD, NZD) with automatic daily exchange rates from the European Central Bank</li>
-                    <li>Market management with GPS auto-detection</li>
-                    <li>Money Flow dashboard with weekly, monthly, and custom range revenue, profit, and expense breakdown</li>
-                    <li>Hauls — group items and expenses by sourcing trip with per-trip profit tracking</li>
-                    <li>5 share card types (Flip Card, Monthly Recap, Top Flips, Daily Haul, My Stock) for social sharing</li>
-                    <li>Automatic backup enabled by default — iCloud on iPhone, folder backup on Android</li>
-                    <li>Google Drive photo sync and CSV export to Google Sheets (drive.file scope only)</li>
-                    <li>Full data backup and restore as ZIP archive</li>
-                    <li>Listing reminders via configurable push notifications</li>
-                    <li>Works completely offline — no account required</li>
-                </ul>
-            </section>
-
-            <!-- Screenshots -->
-            <section>
-                <h2>Screenshots</h2>
-                <p>Click any screenshot to open full resolution (1206 x 2622 px). Right-click to download.</p>
-                <div class="screenshot-grid">
-                    <div>
-                        <a href="screenshot-dashboard.png" target="_blank"><img src="screenshot-dashboard.png" alt="FlipperHelper home dashboard with stock value and Money Flow profit breakdown" loading="lazy"></a>
-                        <div class="screenshot-caption">Home Dashboard &amp; Money Flow</div>
-                    </div>
-                    <div>
-                        <a href="screenshot-add-item.png" target="_blank"><img src="screenshot-add-item.png" alt="FlipperHelper add item screen with photo, price, market, and seller fields" loading="lazy"></a>
-                        <div class="screenshot-caption">Add Item</div>
-                    </div>
-                    <div>
-                        <a href="screenshot-sold.png" target="_blank"><img src="screenshot-sold.png" alt="FlipperHelper sold items list with profit and days to sell per item" loading="lazy"></a>
-                        <div class="screenshot-caption">Sold Items with Profit</div>
-                    </div>
-                    <div>
-                        <a href="screenshot-expenses.png" target="_blank"><img src="screenshot-expenses.png" alt="FlipperHelper expense tracking across entry fees, transport, and other categories" loading="lazy"></a>
-                        <div class="screenshot-caption">Expense Tracking</div>
-                    </div>
-                    <div>
-                        <a href="screenshot-market.png" target="_blank"><img src="screenshot-market.png" alt="FlipperHelper market editor with GPS geolocation, detection radius, and default currency" loading="lazy"></a>
-                        <div class="screenshot-caption">Market with GPS &amp; Currency</div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Downloadable Assets -->
-            <section>
-                <h2>Brand Assets</h2>
-                <div class="asset-row">
-                    <img src="app-icon-1024.png" alt="App icon">
-                    <div class="asset-info">
-                        <strong>App Icon</strong>
-                        <span>1024 x 1024 px, PNG</span>
-                    </div>
-                    <a href="app-icon-1024.png" download class="btn btn-small btn-primary">Download</a>
-                </div>
-                <div class="asset-row">
-                    <img src="logo.svg" alt="FlipperHelper logo" class="logo-preview">
-                    <div class="asset-info">
-                        <strong>Logo (SVG)</strong>
-                        <span>Vector, scalable</span>
-                    </div>
-                    <a href="logo.svg" download class="btn btn-small btn-primary">Download</a>
-                </div>
-                <div class="asset-row">
-                    <img src="logo.png" alt="FlipperHelper logo" class="logo-preview">
-                    <div class="asset-info">
-                        <strong>Logo (PNG)</strong>
-                        <span>Raster, 114 KB</span>
-                    </div>
-                    <a href="logo.png" download class="btn btn-small btn-primary">Download</a>
-                </div>
-            </section>
-
-            <!-- About the Developer -->
-            <section>
-                <h2>About the Developer</h2>
-                <div class="bio-section">
-                    <h3>Oleksandr Prudnikov</h3>
-                    <p>Software developer from Ukraine, living in Wandsworth, South West London. Built FlipperHelper after his wife started buying items at car boot sales and charity shops to resell on eBay and Vinted. She turned it into a proper business but had no way to track what she paid, where things were listed, or what her real profit was. So he built her an app.</p>
-                    <p>FlipperHelper took about six weeks to build and is completely free. No ads, no subscriptions. Just a useful tool for regular people who flip things on the side and want to know if they're actually making money.</p>
-                </div>
-            </section>
-
-            <!-- Links -->
-            <section>
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="https://apps.apple.com/app/id6759716745" target="_blank" rel="noopener">App Store</a></li>
-                    <li><a href="https://flipperhelper.app/" target="_blank" rel="noopener">Website</a></li>
-                    <li><a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram (@flipperhelper)</a></li>
-                    <li><a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit (r/flipperhelper)</a></li>
-                    <li><a href="https://medium.com/@andreevichprudnikov" target="_blank" rel="noopener">Medium (development blog)</a></li>
-                </ul>
-            </section>
-
-            <!-- Contact -->
-            <section>
-                <h2>Media Contact</h2>
-                <p><strong>Oleksandr Prudnikov</strong><br>
-                Email: <a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a><br>
-                Location: Wandsworth, South West London<br>
-                Available for interviews, phone calls, or in-person meetings in London.</p>
-            </section>
-
+        <div class="moment reveal">
+          <span class="when">Platform</span>
+          <p class="answer">iPhone (iOS 17+) and Android (Android 8+)</p>
         </div>
-    </main>
-
-    <footer class="footer footer-compact">
-        <div class="container">
-            <div class="footer-row">
-                <p>&copy; 2025–2026 Oleksandr Prudnikov</p>
-                <div class="footer-links-inline">
-                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
-                    <a href="../privacy.html">Privacy</a>
-                    <a href="../terms.html">Terms</a>
-                    <a href="mailto:support@flipperhelper.app">Contact</a>
-                </div>
-            </div>
+        <div class="moment reveal">
+          <span class="when">Selling Platforms Tracked</span>
+          <p class="answer">16: eBay, Vinted, Facebook Marketplace, Depop, Poshmark, Mercari, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, OfferUp, Craigslist, ThredUp</p>
         </div>
-    </footer>
-    <script data-goatcounter="https://grommash9.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+        <div class="moment reveal">
+          <span class="when">Currencies</span>
+          <p class="answer">6: GBP (£), USD ($), EUR (€), CAD (CA$), AUD (A$), NZD (NZ$) with automatic daily exchange rates</p>
+        </div>
+        <div class="moment reveal">
+          <span class="when">Offline</span>
+          <p class="answer">Works fully offline — important at markets with no signal</p>
+        </div>
+        <div class="moment reveal">
+          <span class="when">Launched</span>
+          <p class="answer">February 2026</p>
+        </div>
+        <div class="moment reveal">
+          <span class="when">Built With</span>
+          <p class="answer">Swift and SwiftUI on iOS, Kotlin and Jetpack Compose on Android</p>
+        </div>
+        <div class="moment reveal">
+          <span class="when">Developer</span>
+          <p class="answer">Oleksandr Prudnikov, Wandsworth, London</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CORE FEATURES ======================= -->
+  <section id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <span class="eyebrow">The short version</span>
+
+      <div class="pro-card reveal">
+        <h2 class="section-title" id="features-title">Core Features</h2>
+        <ul class="feature-list">
+          <li>Photo-first item tracking with automatic SKU generation</li>
+          <li>Track listings across 16 selling platforms with per-platform dates</li>
+          <li>Automatic profit calculation per item</li>
+          <li>Expense tracking: entry fees, transport (car, bus, train, taxi, van, bike rental), and custom expenses</li>
+          <li>Multi-currency support — 6 currencies (USD, EUR, GBP, CAD, AUD, NZD) with automatic daily exchange rates</li>
+          <li>Market management with GPS auto-detection</li>
+          <li>Money Flow dashboard with weekly, monthly, and custom range revenue, profit, and expense breakdown</li>
+          <li>Hauls — group items and expenses by sourcing trip with per-trip profit tracking</li>
+          <li>5 share card types (Flip Card, Monthly Recap, Top Flips, Daily Haul, My Stock) for social sharing</li>
+          <li>Automatic backup enabled by default — iCloud on iPhone, folder backup on Android</li>
+          <li>Google Drive photo sync and CSV export to Google Sheets (drive.file scope only)</li>
+          <li>Full data backup and restore as ZIP archive</li>
+          <li>Listing reminders via configurable push notifications</li>
+          <li>Works completely offline — no account required</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><hr class="tear"></div>
+
+  <!-- ======================= SCREENSHOTS ======================= -->
+  <section id="screenshots" aria-labelledby="screenshots-title">
+    <div class="wrap">
+      <span class="eyebrow">Free to use</span>
+      <h2 class="section-title" id="screenshots-title">Screenshots</h2>
+      <div class="carousel-head">
+        <p class="section-lede">Click any screenshot to open full resolution (1206 x 2622 px). Right-click to download.</p>
+        <div class="shots-arrows">
+          <button type="button" id="shots-prev" aria-label="Previous screenshots">←</button>
+          <button type="button" id="shots-next" aria-label="Next screenshots">→</button>
+        </div>
+      </div>
+
+      <div class="shots-viewport">
+        <div class="shots" id="shots-track" tabindex="0" aria-label="App screenshots, horizontally scrollable">
+          <figure class="shot">
+            <img src="screenshot-dashboard.png" alt="FlipperHelper home dashboard with stock value and Money Flow profit breakdown" width="1206" height="2622" loading="lazy" decoding="async">
+            <figcaption><a href="screenshot-dashboard.png">Home Dashboard &amp; Money Flow</a></figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="screenshot-add-item.png" alt="FlipperHelper add item screen with photo, price, market, and seller fields" width="1206" height="2622" loading="lazy" decoding="async">
+            <figcaption><a href="screenshot-add-item.png">Add Item</a></figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="screenshot-sold.png" alt="FlipperHelper sold items list with profit and days to sell per item" width="1206" height="2622" loading="lazy" decoding="async">
+            <figcaption><a href="screenshot-sold.png">Sold Items with Profit</a></figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="screenshot-expenses.png" alt="FlipperHelper expense tracking across entry fees, transport, and other categories" width="1206" height="2622" loading="lazy" decoding="async">
+            <figcaption><a href="screenshot-expenses.png">Expense Tracking</a></figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="screenshot-market.png" alt="FlipperHelper market editor with GPS geolocation, detection radius, and default currency" width="1206" height="2622" loading="lazy" decoding="async">
+            <figcaption><a href="screenshot-market.png">Market with GPS &amp; Currency</a></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><hr class="tear"></div>
+
+  <!-- ======================= BRAND ASSETS ======================= -->
+  <section id="assets" aria-labelledby="assets-title">
+    <div class="wrap">
+      <span class="eyebrow">Logos</span>
+      <h2 class="section-title" id="assets-title">Brand Assets</h2>
+
+      <ul class="today-grid">
+        <li class="today-card asset-card reveal">
+          <img src="app-icon-1024.png" alt="FlipperHelper app icon" width="96" height="96" loading="lazy" decoding="async">
+          <div class="asset-body">
+            <h3>App Icon</h3>
+            <span class="card-meta">1024 x 1024 px, PNG</span>
+            <a class="btn btn-ghost" href="app-icon-1024.png" download>Download</a>
+          </div>
+        </li>
+        <li class="today-card asset-card reveal">
+          <img class="logo-preview" src="logo.svg" alt="FlipperHelper logo" width="96" height="96" loading="lazy" decoding="async">
+          <div class="asset-body">
+            <h3>Logo (SVG)</h3>
+            <span class="card-meta">Vector, scalable</span>
+            <a class="btn btn-ghost" href="logo.svg" download>Download</a>
+          </div>
+        </li>
+        <li class="today-card asset-card reveal">
+          <img class="logo-preview" src="logo.png" alt="FlipperHelper logo" width="96" height="96" loading="lazy" decoding="async">
+          <div class="asset-body">
+            <h3>Logo (PNG)</h3>
+            <span class="card-meta">Raster, 114 KB</span>
+            <a class="btn btn-ghost" href="logo.png" download>Download</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="wrap"><hr class="tear"></div>
+
+  <!-- ======================= THE DEVELOPER + MEDIA CONTACT ======================= -->
+  <section id="developer" aria-labelledby="developer-title">
+    <div class="wrap">
+      <span class="eyebrow">The developer</span>
+      <h2 class="section-title" id="developer-title">About the Developer</h2>
+      <div class="prose">
+        <p>Oleksandr Prudnikov, a software developer from Ukraine, living in Wandsworth, South West London. He built FlipperHelper for his wife after she started buying at car boot sales and charity shops to resell on eBay and Vinted, with no way to track what she paid or what her real profit was. It is free — no ads, no subscriptions.</p>
+      </div>
+
+      <dl class="facts pro-rows">
+        <div class="pro-row"><dt class="k">Email</dt><dd class="v"><a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a></dd></div>
+        <div class="pro-row"><dt class="k">Location</dt><dd class="v">Wandsworth, South West London</dd></div>
+        <div class="pro-row"><dt class="k">Available for</dt><dd class="v">Interviews, phone calls, or in-person meetings in London.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ======================= LINKS ======================= -->
+  <section id="links" aria-labelledby="links-title">
+    <div class="wrap">
+      <span class="eyebrow">Elsewhere</span>
+
+      <div class="pro-card reveal">
+        <h2 class="section-title" id="links-title">Links</h2>
+        <ul class="feature-list">
+          <li><a href="https://apps.apple.com/app/id6759716745" rel="noopener">App Store</a></li>
+          <li><a href="https://flipperhelper.app/" rel="noopener">Website</a></li>
+          <li><a href="https://www.instagram.com/flipperhelper" rel="noopener">Instagram (@flipperhelper)</a></li>
+          <li><a href="https://www.reddit.com/r/flipperhelper/" rel="noopener">Reddit (r/flipperhelper)</a></li>
+          <li><a href="https://medium.com/@andreevichprudnikov" rel="noopener">Medium (development blog)</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><hr class="tear"></div>
+
+  <!-- ======================= FINAL ======================= -->
+  <section class="final" aria-labelledby="final-title">
+    <div class="wrap">
+      <h2 id="final-title">Try the thing you are writing about.</h2>
+      <p>Free on iOS 17+ and Android 8+. Set it up in the car park if you like — works offline from the first minute.</p>
+      <div class="store-row">
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/flipperhelper/id6759716745"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="17" height="17"><path d="M16.4 12.9c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.6.9-.7 0-1.9-.9-3.1-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.7 0 0-2.4-.9-2.3-3.7zM14.2 5.9c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.2-.6 2.8-1.4z"/></svg>Download on the App Store</a>
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.oprudnikov.flipperhelper"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="17" height="17"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.6 2.3zM16.2 15.6l-3.1-3.1v-.2l3.1-3.1.1.1 3.7 2.1c1 .6 1 1.6 0 2.2l-3.8 2zM15.9 15.9l-3.2-3.2-9.1 9.1c.3.4.9.4 1.5.1l10.8-6M15.9 8.1L5.1 2c-.6-.3-1.2-.3-1.5.1l9.1 9.1 3.2-3.1z"/></svg>Get it on Google Play</a>
+      </div>
+      <div class="trust-trio">
+        <span><i></i>Works offline</span>
+        <span><i></i>10 seconds per find</span>
+        <span><i></i>Real profit after every fee</span>
+      </div>
+
+      <div class="newsletter" id="newsletter">
+        <h3>The Weekly Flip</h3>
+        <p>Car boot tips, market finds and real profit numbers — straight to your inbox.</p>
+        <form action="https://assets.mailerlite.com/jsonp/2150674/forms/180675629312640165/subscribe" method="POST" novalidate>
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+          <label class="visually-hidden" for="nl-email">Email address</label>
+          <input type="email" id="nl-email" name="fields[email]" placeholder="you@example.com" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="ok" role="status"><i></i>You're subscribed. The next Weekly Flip lands in your inbox.</p>
+        <p class="fine">Unsubscribe anytime. See our <a href="/privacy.html">privacy policy</a>.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="ft-c3">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-left foot-col">
+        <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+        <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+        <h4>Follow</h4>
+        <nav class="row-nav" aria-label="Footer — follow">
+          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Product</h4>
+        <nav aria-label="Footer — product">
+          <a href="/flipperhelper-pricing.html">Pricing</a>
+          <a href="/tools/">Free tools</a>
+          <a href="/compare/">Compare apps</a>
+          <a href="/changelog.html">Changelog</a>
+          <a href="/sources.html">Supported platforms</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <nav aria-label="Footer — company">
+          <a href="/about.html">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/press/">Press kit</a>
+          <a href="/is-flipperhelper-legit.html">Is FlipperHelper legit?</a>
+          <a href="/flipperhelper-review.html">Review</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Help &amp; legal</h4>
+        <nav aria-label="Footer — help and legal">
+          <a href="mailto:support@flipperhelper.app">Support</a>
+          <a href="/faq.html">FAQ</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Community at <a href="https://www.reddit.com/r/flipperhelper/">r/flipperhelper</a></span>
+      <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* reveal-on-scroll, same implementation as the other pages */
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  }
+
+  /* screenshots carousel arrows */
+  var track = document.getElementById('shots-track');
+  if (track) {
+    var step = function(){ var card = track.querySelector('.shot'); return card ? card.getBoundingClientRect().width + 18 : 260; };
+    var prev = document.getElementById('shots-prev');
+    var next = document.getElementById('shots-next');
+    if (prev) prev.addEventListener('click', function(){ track.scrollBy({left:-step()*2, behavior:'smooth'}); });
+    if (next) next.addEventListener('click', function(){ track.scrollBy({left: step()*2, behavior:'smooth'}); });
+  }
+})();
+</script>
+<script data-goatcounter="https://grommash9.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

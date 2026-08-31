@@ -1,549 +1,621 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-itunes-app" content="app-id=6759716745">
-    <title>FlipperHelper vs Flippd vs Vendoo: Which Do You Need? | FlipperHelper Blog</title>
-    <meta name="description" content="FlipperHelper vs Flippd vs Vendoo — these apps solve different problems. Tracker vs cross-lister: an honest comparison so you choose right.">
-    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="canonical" href="https://flipperhelper.app/blog/flipperhelper-vs-flippd-vs-vendoo.html">
-    <!-- OpenGraph -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="FlipperHelper vs Flippd vs Vendoo: Which Do You Need?">
-    <meta property="og:description" content="Tracker vs cross-lister — these apps solve different problems. Honest comparison for resellers.">
-    <meta property="og:url" content="https://flipperhelper.app/blog/flipperhelper-vs-flippd-vs-vendoo.html">
-    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
-    <meta property="og:site_name" content="FlipperHelper">
-    <meta property="og:locale" content="en_GB">
-    <meta property="og:locale:alternate" content="en_US">
-    <meta property="og:locale:alternate" content="en_AU">
-    <meta property="og:locale:alternate" content="en_CA">
-    <meta property="article:published_time" content="2026-04-03">
-    <meta property="article:author" content="Oleksandr Prudnikov">
-    <meta property="article:section" content="Comparison">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="FlipperHelper vs Flippd vs Vendoo">
-    <meta name="twitter:description" content="Tracker vs cross-lister — these apps solve different problems. Honest comparison for resellers.">
-    <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
-    <!-- BreadcrumbList JSON-LD -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-itunes-app" content="app-id=6759716745">
+<title>FlipperHelper vs Flippd vs Vendoo: Which Do You Need? | FlipperHelper Blog</title>
+<meta name="description" content="FlipperHelper vs Flippd vs Vendoo — these apps solve different problems. Tracker vs cross-lister: an honest comparison so you choose right.">
+<link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
+<link rel="canonical" href="https://flipperhelper.app/blog/flipperhelper-vs-flippd-vs-vendoo.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- OpenGraph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="FlipperHelper vs Flippd vs Vendoo: Which Do You Need?">
+<meta property="og:description" content="Tracker vs cross-lister — these apps solve different problems. Honest comparison for resellers.">
+<meta property="og:url" content="https://flipperhelper.app/blog/flipperhelper-vs-flippd-vs-vendoo.html">
+<meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
+<meta property="og:site_name" content="FlipperHelper">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="en_AU">
+<meta property="og:locale:alternate" content="en_CA">
+<meta property="article:published_time" content="2026-04-03">
+<meta property="article:author" content="Oleksandr Prudnikov">
+<meta property="article:section" content="Comparison">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FlipperHelper vs Flippd vs Vendoo">
+<meta name="twitter:description" content="Tracker vs cross-lister — these apps solve different problems. Honest comparison for resellers.">
+<meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+<!-- BreadcrumbList JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flipperhelper.app/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://flipperhelper.app/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "FlipperHelper vs Flippd vs Vendoo", "item": "https://flipperhelper.app/blog/flipperhelper-vs-flippd-vs-vendoo.html"}
+  ]
+}
+</script>
+<!-- Article JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "FlipperHelper vs Flippd vs Vendoo: Which Do You Need?",
+  "description": "FlipperHelper, Flippd, and Vendoo solve different problems for resellers. One tracks inventory, one tracks profit, one cross-lists. Here's an honest comparison.",
+  "datePublished": "2026-04-03",
+  "dateModified": "2026-06-14",
+  "inLanguage": "en",
+  "author": {"@type": "Person", "name": "Oleksandr Prudnikov"},
+  "publisher": {"@type": "Person", "name": "Oleksandr Prudnikov"},
+  "mainEntityOfPage": "https://flipperhelper.app/blog/flipperhelper-vs-flippd-vs-vendoo.html"
+}
+</script>
+<!-- FAQPage JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flipperhelper.app/"},
-        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://flipperhelper.app/blog/"},
-        {"@type": "ListItem", "position": 3, "name": "FlipperHelper vs Flippd vs Vendoo", "item": "https://flipperhelper.app/blog/flipperhelper-vs-flippd-vs-vendoo.html"}
-      ]
+      "@type": "Question",
+      "name": "What is the difference between FlipperHelper, Flippd, and Vendoo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FlipperHelper and Flippd are inventory trackers — they help you track what you bought, what you sold, and your real profit after expenses. Vendoo is a cross-lister — it helps you create a listing once and push it to multiple selling platforms. Trackers answer 'Am I making money?' while cross-listers answer 'How do I list faster?' They solve different problems and some resellers use both."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a free alternative to Flippd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FlipperHelper is a free alternative to Flippd for inventory and profit tracking. It covers purchase logging with photos, multi-platform listing tracking, expense tracking (entry fees, transport), and automatic profit calculation. FlipperHelper is on iOS and Android, while Flippd also supports web."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a free alternative to Vendoo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vendoo's free tier allows 3 new listings per month. There is no fully free cross-listing alternative with equivalent features. However, if your main need is tracking profit rather than cross-listing, FlipperHelper is free and handles the inventory and expense tracking side. For cross-listing specifically, Vendoo's paid plans start at $8.99/month for 25 listings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a tracker app or a cross-lister app for reselling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your biggest pain point. If you don't know your real profit after expenses, you need a tracker (FlipperHelper or Flippd). If you list on 3+ platforms and spend hours copying listings, you need a cross-lister (Vendoo). Many serious resellers eventually use one of each — a tracker for the money side and a cross-lister for the listing side."
+      }
     }
-    </script>
-    <!-- Article JSON-LD -->
-    <script type="application/ld+json">
+  ]
+}
+</script>
+<!-- ItemList of compared apps (Product / SoftwareApplication) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Reseller apps compared: FlipperHelper, Flippd, Vendoo",
+  "description": "Three reseller apps, two categories — inventory and profit trackers (FlipperHelper, Flippd) versus cross-listers (Vendoo). Compared in this article.",
+  "itemListOrder": "https://schema.org/ItemListUnordered",
+  "numberOfItems": 3,
+  "itemListElement": [
     {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "FlipperHelper vs Flippd vs Vendoo: Which Do You Need?",
-      "description": "FlipperHelper, Flippd, and Vendoo solve different problems for resellers. One tracks inventory, one tracks profit, one cross-lists. Here's an honest comparison.",
-      "datePublished": "2026-04-03",
-      "dateModified": "2026-06-14",
-      "inLanguage": "en",
-      "author": {"@type": "Person", "name": "Oleksandr Prudnikov"},
-      "publisher": {"@type": "Person", "name": "Oleksandr Prudnikov"},
-      "mainEntityOfPage": "https://flipperhelper.app/blog/flipperhelper-vs-flippd-vs-vendoo.html"
-    }
-    </script>
-    <!-- FAQPage JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is the difference between FlipperHelper, Flippd, and Vendoo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "FlipperHelper and Flippd are inventory trackers — they help you track what you bought, what you sold, and your real profit after expenses. Vendoo is a cross-lister — it helps you create a listing once and push it to multiple selling platforms. Trackers answer 'Am I making money?' while cross-listers answer 'How do I list faster?' They solve different problems and some resellers use both."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there a free alternative to Flippd?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "FlipperHelper is a free alternative to Flippd for inventory and profit tracking. It covers purchase logging with photos, multi-platform listing tracking, expense tracking (entry fees, transport), and automatic profit calculation. FlipperHelper is on iOS and Android, while Flippd also supports web."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there a free alternative to Vendoo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Vendoo's free tier allows 3 new listings per month. There is no fully free cross-listing alternative with equivalent features. However, if your main need is tracking profit rather than cross-listing, FlipperHelper is free and handles the inventory and expense tracking side. For cross-listing specifically, Vendoo's paid plans start at $8.99/month for 25 listings."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need a tracker app or a cross-lister app for reselling?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It depends on your biggest pain point. If you don't know your real profit after expenses, you need a tracker (FlipperHelper or Flippd). If you list on 3+ platforms and spend hours copying listings, you need a cross-lister (Vendoo). Many serious resellers eventually use one of each — a tracker for the money side and a cross-lister for the listing side."
-          }
-        }
-      ]
-    }
-    </script>
-    <!-- ItemList of compared apps (Product / SoftwareApplication) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "Reseller apps compared: FlipperHelper, Flippd, Vendoo",
-      "description": "Three reseller apps, two categories — inventory and profit trackers (FlipperHelper, Flippd) versus cross-listers (Vendoo). Compared in this article.",
-      "itemListOrder": "https://schema.org/ItemListUnordered",
-      "numberOfItems": 3,
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "SoftwareApplication",
-            "name": "FlipperHelper",
-            "applicationCategory": "BusinessApplication",
-            "applicationSubCategory": "Inventory and profit tracker for resellers",
-            "operatingSystem": "iOS, Android",
-            "url": "https://flipperhelper.app/",
-            "description": "Free reselling app for iOS and Android. Tracks purchases, listings across 16 platforms, expenses (entry fees, transport, packaging), and real profit per item. Works offline. Includes Hauls (per-trip profit), stock value tracking, and Money Flow dashboard.",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock"
-            }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "SoftwareApplication",
-            "name": "Flippd",
-            "applicationCategory": "BusinessApplication",
-            "applicationSubCategory": "Inventory and profit tracker with price research",
-            "operatingSystem": "iOS, Android, Web",
-            "url": "https://flippd.com/",
-            "description": "Inventory and profit tracker with built-in price research (barcode scanning and image-based eBay lookups). Multi-platform availability and QR label printing. Free tier capped at 20 items lifetime.",
-            "offers": [
-              {
-                "@type": "Offer",
-                "name": "Free tier",
-                "price": "0",
-                "priceCurrency": "USD",
-                "description": "20 items lifetime"
-              },
-              {
-                "@type": "Offer",
-                "name": "Paid",
-                "price": "9.99",
-                "priceCurrency": "USD",
-                "description": "Flat rate, unlimited items"
-              }
-            ]
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "SoftwareApplication",
-            "name": "Vendoo",
-            "applicationCategory": "BusinessApplication",
-            "applicationSubCategory": "Cross-listing tool for online marketplaces",
-            "operatingSystem": "iOS, Android, Web",
-            "url": "https://vendoo.co/",
-            "description": "Cross-lister that pushes one listing to multiple marketplaces (eBay, Vinted, Poshmark, Facebook Marketplace, etc.) and auto-delists when an item sells. Not a profit tracker — no expense or mileage tracking.",
-            "offers": [
-              {
-                "@type": "Offer",
-                "name": "Free tier",
-                "price": "0",
-                "priceCurrency": "USD",
-                "description": "3 new listings per month"
-              },
-              {
-                "@type": "Offer",
-                "name": "Paid (entry)",
-                "price": "8.99",
-                "priceCurrency": "USD",
-                "description": "25 listings per month"
-              },
-              {
-                "@type": "Offer",
-                "name": "Paid (unlimited)",
-                "price": "69.99",
-                "priceCurrency": "USD",
-                "description": "Unlimited listings"
-              }
-            ]
-          }
-        }
-      ]
-    }
-    </script>
-    <!-- Editorial Review of FlipperHelper in this comparison -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Review",
-      "itemReviewed": {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
         "@type": "SoftwareApplication",
         "name": "FlipperHelper",
         "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Inventory and profit tracker for resellers",
         "operatingSystem": "iOS, Android",
-        "url": "https://flipperhelper.app/"
-      },
-      "name": "FlipperHelper vs Flippd vs Vendoo — when to pick FlipperHelper",
-      "reviewBody": "FlipperHelper is the right choice when your bottleneck is profit visibility rather than listing volume. It tracks purchase price, listings across 16 platforms (eBay, Vinted, Depop, Poshmark, Mercari, Facebook Marketplace, Etsy, Gumtree, and 8 more), expenses (entry fees, transport with mileage, packaging), and calculates per-item profit with multi-currency support. It is free, works on iOS and Android, and works fully offline. Flippd covers similar ground with a web app in addition to iOS and Android, plus barcode-driven price research, but its free tier is capped at 20 items lifetime. Vendoo is a different product entirely — a cross-lister that pushes one listing to multiple marketplaces and auto-delists on sale, with no expense or profit tracking. Pick FlipperHelper if you need honest per-item profit numbers, source from thrift stores or charity shops, and do your own listing on each platform. Pick Flippd if you also need barcode lookups or a web app. Pick Vendoo if your bottleneck is the time spent listing on multiple platforms, not knowing what you actually earn.",
-      "author": {
-        "@type": "Person",
-        "name": "Oleksandr Prudnikov",
-        "url": "https://flipperhelper.app/about.html"
-      },
-      "publisher": {
-        "@type": "Person",
-        "name": "Oleksandr Prudnikov"
-      },
-      "datePublished": "2026-04-03",
-      "dateModified": "2026-06-14",
-      "inLanguage": "en"
+        "url": "https://flipperhelper.app/",
+        "description": "Free reselling app for iOS and Android. Tracks purchases, listings across 16 platforms, expenses (entry fees, transport, packaging), and real profit per item. Works offline. Includes Hauls (per-trip profit), stock value tracking, and Money Flow dashboard.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Flippd",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Inventory and profit tracker with price research",
+        "operatingSystem": "iOS, Android, Web",
+        "url": "https://flippd.com/",
+        "description": "Inventory and profit tracker with built-in price research (barcode scanning and image-based eBay lookups). Multi-platform availability and QR label printing. Free tier capped at 20 items lifetime.",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Free tier",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "20 items lifetime"
+          },
+          {
+            "@type": "Offer",
+            "name": "Paid",
+            "price": "9.99",
+            "priceCurrency": "USD",
+            "description": "Flat rate, unlimited items"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Vendoo",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Cross-listing tool for online marketplaces",
+        "operatingSystem": "iOS, Android, Web",
+        "url": "https://vendoo.co/",
+        "description": "Cross-lister that pushes one listing to multiple marketplaces (eBay, Vinted, Poshmark, Facebook Marketplace, etc.) and auto-delists when an item sells. Not a profit tracker — no expense or mileage tracking.",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Free tier",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "3 new listings per month"
+          },
+          {
+            "@type": "Offer",
+            "name": "Paid (entry)",
+            "price": "8.99",
+            "priceCurrency": "USD",
+            "description": "25 listings per month"
+          },
+          {
+            "@type": "Offer",
+            "name": "Paid (unlimited)",
+            "price": "69.99",
+            "priceCurrency": "USD",
+            "description": "Unlimited listings"
+          }
+        ]
+      }
     }
-    </script>
+  ]
+}
+</script>
+<!-- Editorial Review of FlipperHelper in this comparison -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "SoftwareApplication",
+    "name": "FlipperHelper",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "iOS, Android",
+    "url": "https://flipperhelper.app/"
+  },
+  "name": "FlipperHelper vs Flippd vs Vendoo — when to pick FlipperHelper",
+  "reviewBody": "FlipperHelper is the right choice when your bottleneck is profit visibility rather than listing volume. It tracks purchase price, listings across 16 platforms (eBay, Vinted, Depop, Poshmark, Mercari, Facebook Marketplace, Etsy, Gumtree, and 8 more), expenses (entry fees, transport with mileage, packaging), and calculates per-item profit with multi-currency support. It is free, works on iOS and Android, and works fully offline. Flippd covers similar ground with a web app in addition to iOS and Android, plus barcode-driven price research, but its free tier is capped at 20 items lifetime. Vendoo is a different product entirely — a cross-lister that pushes one listing to multiple marketplaces and auto-delists on sale, with no expense or profit tracking. Pick FlipperHelper if you need honest per-item profit numbers, source from thrift stores or charity shops, and do your own listing on each platform. Pick Flippd if you also need barcode lookups or a web app. Pick Vendoo if your bottleneck is the time spent listing on multiple platforms, not knowing what you actually earn.",
+  "author": {
+    "@type": "Person",
+    "name": "Oleksandr Prudnikov",
+    "url": "https://flipperhelper.app/about.html"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Oleksandr Prudnikov"
+  },
+  "datePublished": "2026-04-03",
+  "dateModified": "2026-06-14",
+  "inLanguage": "en"
+}
+</script>
+
+<link rel="stylesheet" href="article.css">
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
+
 <body>
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="../" class="nav-logo">
-                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
-                <span>FlipperHelper</span>
-            </a>
-            <div class="nav-links">
-                <a href="../">Home</a>
-                <a href="../faq.html">FAQ</a>
-                <a href="./">Blog</a>
-                <a href="/tools/">Tools</a>
-                <a href="/compare/">Compare</a>
-                <a href="/#download" class="btn btn-small">Get the App</a>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ======================= NAV ======================= -->
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+      FlipperHelper
+    </a>
+    <div class="nav-links">
+        <a href="/tools/">Free tools</a>
+        <a href="/compare/">Compare</a>
+        <a href="/#workbench">What's next</a>
+        <a href="/blog/" aria-current="page">Blog</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/about.html">About</a>
+        <a class="btn btn-primary" href="/#get">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================= ARTICLE ======================= -->
+<main class="post" id="main">
+  <div class="wrap">
+    <article>
+
+            <a href="./" class="post-back">&larr; Back to Blog</a>
+            <p class="post-updated">Last updated: 23 April 2026</p>
+            <h1>FlipperHelper vs Flippd vs Vendoo: Which Do You Need?</h1>
+            <div class="post-meta">
+                <span class="art-date">3 April 2026</span>
+                <span class="art-tag">Comparison</span>
+                <span class="art-read">7 min read</span>
             </div>
-        </div>
-    </nav>
 
-    <main class="legal-page">
-        <div class="container">
-            <div class="legal-content blog-post">
-                <a href="./" class="blog-back">&larr; Back to Blog</a>
-                <p class="blog-updated">Last updated: 23 April 2026</p>
-                <h1>FlipperHelper vs Flippd vs Vendoo: Which Do You Need?</h1>
-                <div class="blog-meta">
-                    <span class="blog-date">3 April 2026</span>
-                    <span class="blog-tag">Comparison</span>
-                    <span class="blog-reading-time">7 min read</span>
-                </div>
+            <section>
+                <p><strong>These three apps solve fundamentally different problems.</strong> FlipperHelper and Flippd are inventory and profit trackers — they tell you whether you're actually making money. Vendoo is a cross-lister — it helps you push listings to multiple platforms at once.</p>
+                <p>Comparing them directly is like comparing a calculator to a printer. You might need one, the other, or both. Here's an honest breakdown to help you decide.</p>
+                <blockquote><p>"I wasted months using a cross-lister thinking it would track my profit. It didn't. Once I understood the difference between a tracker and a cross-lister, everything clicked." — Oleksandr Prudnikov, FlipperHelper developer</p></blockquote>
+            </section>
 
-                <section>
-                    <p><strong>These three apps solve fundamentally different problems.</strong> FlipperHelper and Flippd are inventory and profit trackers — they tell you whether you're actually making money. Vendoo is a cross-lister — it helps you push listings to multiple platforms at once.</p>
-                    <p>Comparing them directly is like comparing a calculator to a printer. You might need one, the other, or both. Here's an honest breakdown to help you decide.</p>
-                    <blockquote><p>"I wasted months using a cross-lister thinking it would track my profit. It didn't. Once I understood the difference between a tracker and a cross-lister, everything clicked." — Oleksandr Prudnikov, FlipperHelper developer</p></blockquote>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>What is the difference between a tracker and a cross-lister?</h2>
-                    <p><strong>A tracker answers "Am I making money?" A cross-lister answers "How do I list faster?"</strong> These are two separate problems that most resellers face, and no single app solves both well.</p>
+      <section>
+                <h2>What is the difference between a tracker and a cross-lister?</h2>
+                <p><strong>A tracker answers "Am I making money?" A cross-lister answers "How do I list faster?"</strong> These are two separate problems that most resellers face, and no single app solves both well.</p>
 
-                    <ul>
-                        <li><strong>Trackers</strong> (FlipperHelper, Flippd) — log purchases, track expenses (entry fees, transport, packaging), record sales, and calculate your <a href="how-to-track-reselling-profits.html">real profit after all costs</a></li>
-                        <li><strong>Cross-listers</strong> (Vendoo) — create a listing once and push it to multiple selling platforms (eBay, Vinted, Poshmark, etc.), detect when something sells, and auto-delist from other platforms</li>
-                    </ul>
+                <ul>
+                    <li><strong>Trackers</strong> (FlipperHelper, Flippd) — log purchases, track expenses (entry fees, transport, packaging), record sales, and calculate your <a href="how-to-track-reselling-profits.html">real profit after all costs</a></li>
+                    <li><strong>Cross-listers</strong> (Vendoo) — create a listing once and push it to multiple selling platforms (eBay, Vinted, Poshmark, etc.), detect when something sells, and auto-delist from other platforms</li>
+                </ul>
 
-                    <p>A tracker won't create listings for you. A cross-lister won't tell you if your <a href="car-boot-sale-tips.html">car boot</a> trip was profitable. Understanding this distinction saves you from choosing the wrong tool.</p>
-                </section>
+                <p>A tracker won't create listings for you. A cross-lister won't tell you if your <a href="car-boot-sale-tips.html">car boot</a> trip was profitable. Understanding this distinction saves you from choosing the wrong tool.</p>
+            </section>
 
-                <section>
-                    <h2>What does FlipperHelper do well?</h2>
-                    <p><strong>FlipperHelper is built for resellers who source at markets, car boot sales, and charity shops.</strong> It covers the full journey from picking up an item to seeing your real profit after every expense. It's free to download with no ads.</p>
+      <hr class="tear">
 
-                    <ul>
-                        <li><strong>Photo capture at purchase</strong> — snap and log in under 10 seconds, right at the stall</li>
-                        <li><strong>16 selling platforms</strong> — track where items are listed (eBay, Vinted, Facebook, Depop, Shpock, etc.)</li>
-                        <li><strong>Full expense tracking</strong> — entry fees, 6 transport types, packaging, and other costs. Smart entry fee suggestions remember previous amounts per market</li>
-                        <li><strong>Automatic profit calculation</strong> — real profit after ALL expenses, not just buy vs. sell</li>
-                        <li><strong>Hauls (sourcing trip tracking)</strong> — group items and expenses by trip dates and track per-trip profitability as items sell over time</li>
-                        <li><strong>Stock value tracking</strong> — see how much money is invested in unsold inventory, with items grouped by purchase date</li>
-                        <li><strong>Top Flips &amp; share cards</strong> — see your most profitable sales and share them as visual cards to social media</li>
-                        <li><strong>Money Flow dashboard</strong> — view revenue, costs, profit, and stock investment by week, month, or custom date range</li>
-                        <li><strong>Market and seller tracking</strong> — GPS auto-detection, per-market analytics</li>
-                        <li><strong>Works offline</strong> — essential for markets with no phone signal</li>
-                        <li><strong>Automatic backup + Google Drive</strong> — automatic backup (iCloud on iPhone, folder on Android), image sync and Sheets export to Google Drive. Data survives even if the app is deleted</li>
-                        <li><strong>Multi-currency support</strong> — daily exchange rates for cross-border selling</li>
-                        <li><strong>Search</strong> — find items by name or SKU across your entire inventory</li>
-                    </ul>
+      <section>
+                <h2>What does FlipperHelper do well?</h2>
+                <p><strong>FlipperHelper is built for resellers who source at markets, car boot sales, and charity shops.</strong> It covers the full journey from picking up an item to seeing your real profit after every expense. It's free to download with no ads.</p>
 
-                    <h3>What are FlipperHelper's limitations?</h3>
-                    <ul>
-                        <li>No web app — mobile only (iOS and Android)</li>
-                        <li>No cross-listing — you mark listings manually, not push them to platforms</li>
-                        <li>No barcode scanning or eBay price lookup</li>
-                        <li>Newer app with a smaller community</li>
-                    </ul>
+                <ul>
+                    <li><strong>Photo capture at purchase</strong> — snap and log in under 10 seconds, right at the stall</li>
+                    <li><strong>16 selling platforms</strong> — track where items are listed (eBay, Vinted, Facebook, Depop, Shpock, etc.)</li>
+                    <li><strong>Full expense tracking</strong> — entry fees, 6 transport types, packaging, and other costs. Smart entry fee suggestions remember previous amounts per market</li>
+                    <li><strong>Automatic profit calculation</strong> — real profit after ALL expenses, not just buy vs. sell</li>
+                    <li><strong>Hauls (sourcing trip tracking)</strong> — group items and expenses by trip dates and track per-trip profitability as items sell over time</li>
+                    <li><strong>Stock value tracking</strong> — see how much money is invested in unsold inventory, with items grouped by purchase date</li>
+                    <li><strong>Top Flips &amp; share cards</strong> — see your most profitable sales and share them as visual cards to social media</li>
+                    <li><strong>Money Flow dashboard</strong> — view revenue, costs, profit, and stock investment by week, month, or custom date range</li>
+                    <li><strong>Market and seller tracking</strong> — GPS auto-detection, per-market analytics</li>
+                    <li><strong>Works offline</strong> — essential for markets with no phone signal</li>
+                    <li><strong>Automatic backup + Google Drive</strong> — automatic backup (iCloud on iPhone, folder on Android), image sync and Sheets export to Google Drive. Data survives even if the app is deleted</li>
+                    <li><strong>Multi-currency support</strong> — daily exchange rates for cross-border selling</li>
+                    <li><strong>Search</strong> — find items by name or SKU across your entire inventory</li>
+                </ul>
 
-                    <p><strong>Price:</strong> Free to download, no ads.</p>
-                </section>
+                <h3>What are FlipperHelper's limitations?</h3>
+                <ul>
+                    <li>No web app — mobile only (iOS and Android)</li>
+                    <li>No cross-listing — you mark listings manually, not push them to platforms</li>
+                    <li>No barcode scanning or eBay price lookup</li>
+                    <li>Newer app with a smaller community</li>
+                </ul>
 
-                <section>
-                    <h2>What does Flippd do well?</h2>
-                    <p><strong>Flippd is an inventory and profit tracker with built-in price research tools.</strong> It focuses on helping resellers know their numbers and find good buys through barcode scanning and image-based eBay lookups.</p>
+                <p><strong>Price:</strong> Free to download, no ads.</p>
+            </section>
 
-                    <ul>
-                        <li><strong>Barcode and image price lookup</strong> — scan an item or snap a photo to check eBay sold prices</li>
-                        <li><strong>GPS mileage tracking</strong> — automatic logging of driving distance for sourcing trips</li>
-                        <li><strong>Receipt scanning</strong> — AI-powered receipt reader to log purchases</li>
-                        <li><strong>"Death pile" alerts</strong> — notifications for items sitting too long unsold</li>
-                        <li><strong>QR label printing</strong> — generate labels for inventory organisation</li>
-                        <li><strong>Cross-platform</strong> — works on iOS, Android, and web</li>
-                    </ul>
+      <hr class="tear">
 
-                    <h3>What are Flippd's limitations?</h3>
-                    <ul>
-                        <li>No cross-listing — same as FlipperHelper, it tracks but doesn't push listings</li>
-                        <li>eBay sync is on a waitlist, not generally available</li>
-                        <li>Free tier is very limited (lifetime cap of 20 items total, not monthly)</li>
-                        <li>No offline mode mentioned in documentation</li>
-                    </ul>
+      <section>
+                <h2>What does Flippd do well?</h2>
+                <p><strong>Flippd is an inventory and profit tracker with built-in price research tools.</strong> It focuses on helping resellers know their numbers and find good buys through barcode scanning and image-based eBay lookups.</p>
 
-                    <p><strong>Price:</strong> $9.99/month (flat rate, unlimited items). Free tier: 20 items lifetime.</p>
-                </section>
+                <ul>
+                    <li><strong>Barcode and image price lookup</strong> — scan an item or snap a photo to check eBay sold prices</li>
+                    <li><strong>GPS mileage tracking</strong> — automatic logging of driving distance for sourcing trips</li>
+                    <li><strong>Receipt scanning</strong> — AI-powered receipt reader to log purchases</li>
+                    <li><strong>"Death pile" alerts</strong> — notifications for items sitting too long unsold</li>
+                    <li><strong>QR label printing</strong> — generate labels for inventory organisation</li>
+                    <li><strong>Cross-platform</strong> — works on iOS, Android, and web</li>
+                </ul>
 
-                <section>
-                    <h2>What does Vendoo do well?</h2>
-                    <p><strong>Vendoo is a cross-listing tool that lets you create a listing once and push it to multiple marketplaces.</strong> If you spend hours copying the same listing across eBay, Vinted, Poshmark, and Facebook Marketplace, Vendoo is designed to solve that specific problem.</p>
+                <h3>What are Flippd's limitations?</h3>
+                <ul>
+                    <li>No cross-listing — same as FlipperHelper, it tracks but doesn't push listings</li>
+                    <li>eBay sync is on a waitlist, not generally available</li>
+                    <li>Free tier is very limited (lifetime cap of 20 items total, not monthly)</li>
+                    <li>No offline mode mentioned in documentation</li>
+                </ul>
 
-                    <ul>
-                        <li><strong>Cross-list to 10+ marketplaces</strong> — eBay, Poshmark, Mercari, Facebook, Vinted (added February 2026), and more</li>
-                        <li><strong>Sale detection</strong> — monitors platforms and detects when an item sells</li>
-                        <li><strong>Auto-delist</strong> — removes listings from other platforms when an item sells (requires desktop app running)</li>
-                        <li><strong>Bulk actions</strong> — relist, delist, and edit multiple items at once</li>
-                        <li><strong>Sales analytics</strong> — basic reporting on what sold and where</li>
-                    </ul>
+                <p><strong>Price:</strong> $9.99/month (flat rate, unlimited items). Free tier: 20 items lifetime.</p>
+            </section>
 
-                    <h3>What are Vendoo's limitations?</h3>
-                    <ul>
-                        <li><strong>Not a profit tracker</strong> — no expense tracking, no mileage, no entry fees, no real profit calculation</li>
-                        <li><strong>Auto-delist requires desktop</strong> — your computer needs to be on and connected for cross-platform delisting to work</li>
-                        <li><strong>US-focused</strong> — some marketplace integrations work better in the US than the UK</li>
-                        <li><strong>Per-platform forms still required</strong> — you fill in category-specific fields for each platform, so it's not truly one-click</li>
-                        <li><strong>No offline mode</strong> — requires internet connection</li>
-                    </ul>
+      <hr class="tear">
 
-                    <p><strong>Price:</strong> Free tier: 3 new listings/month. Paid plans: $8.99/month (25 listings) to $69.99/month (unlimited).</p>
-                </section>
+      <section>
+                <h2>What does Vendoo do well?</h2>
+                <p><strong>Vendoo is a cross-listing tool that lets you create a listing once and push it to multiple marketplaces.</strong> If you spend hours copying the same listing across eBay, Vinted, Poshmark, and Facebook Marketplace, Vendoo is designed to solve that specific problem.</p>
 
-                <section>
-                    <h2>How do FlipperHelper, Flippd, and Vendoo compare side by side?</h2>
-                    <p><strong>This table shows the key differences at a glance.</strong> Notice that trackers and cross-listers have almost no feature overlap — they're complementary tools.</p>
+                <ul>
+                    <li><strong>Cross-list to 10+ marketplaces</strong> — eBay, Poshmark, Mercari, Facebook, Vinted (added February 2026), and more</li>
+                    <li><strong>Sale detection</strong> — monitors platforms and detects when an item sells</li>
+                    <li><strong>Auto-delist</strong> — removes listings from other platforms when an item sells (requires desktop app running)</li>
+                    <li><strong>Bulk actions</strong> — relist, delist, and edit multiple items at once</li>
+                    <li><strong>Sales analytics</strong> — basic reporting on what sold and where</li>
+                </ul>
 
-                    <table style="width:100%; border-collapse:collapse; margin:1.5rem 0;">
-                        <thead>
-                            <tr style="border-bottom:2px solid #334B90; text-align:left;">
-                                <th style="padding:0.75rem 0.5rem;">Feature</th>
-                                <th style="padding:0.75rem 0.5rem;">FlipperHelper</th>
-                                <th style="padding:0.75rem 0.5rem;">Flippd</th>
-                                <th style="padding:0.75rem 0.5rem;">Vendoo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Type</strong></td>
-                                <td style="padding:0.5rem;">Tracker</td>
-                                <td style="padding:0.5rem;">Tracker</td>
-                                <td style="padding:0.5rem;">Cross-lister</td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Photo at purchase</strong></td>
-                                <td style="padding:0.5rem;">Yes</td>
-                                <td style="padding:0.5rem;">Yes</td>
-                                <td style="padding:0.5rem;">No</td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Expense tracking</strong></td>
-                                <td style="padding:0.5rem;">Yes (entry fees, transport, packaging)</td>
-                                <td style="padding:0.5rem;">Yes (mileage, receipts)</td>
-                                <td style="padding:0.5rem;">No</td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Sourcing trip tracking</strong></td>
-                                <td style="padding:0.5rem;">Yes (Hauls with per-trip profit)</td>
-                                <td style="padding:0.5rem;">No</td>
-                                <td style="padding:0.5rem;">No</td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Stock value tracking</strong></td>
-                                <td style="padding:0.5rem;">Yes (invested in inventory view)</td>
-                                <td style="padding:0.5rem;">Yes</td>
-                                <td style="padding:0.5rem;">No</td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Social sharing cards</strong></td>
-                                <td style="padding:0.5rem;">Yes (sold items, top flips, stock)</td>
-                                <td style="padding:0.5rem;">No</td>
-                                <td style="padding:0.5rem;">No</td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Automatic backup</strong></td>
-                                <td style="padding:0.5rem;">Yes (automatic)</td>
-                                <td style="padding:0.5rem;">No</td>
-                                <td style="padding:0.5rem;">No</td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Real profit calculation</strong></td>
-                                <td style="padding:0.5rem;">Yes</td>
-                                <td style="padding:0.5rem;">Yes</td>
-                                <td style="padding:0.5rem;">No</td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Cross-list to platforms</strong></td>
-                                <td style="padding:0.5rem;">No</td>
-                                <td style="padding:0.5rem;">No</td>
-                                <td style="padding:0.5rem;">Yes (10+ marketplaces)</td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Auto-delist on sale</strong></td>
-                                <td style="padding:0.5rem;">No</td>
-                                <td style="padding:0.5rem;">No</td>
-                                <td style="padding:0.5rem;">Yes (desktop required)</td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Price research</strong></td>
-                                <td style="padding:0.5rem;">No</td>
-                                <td style="padding:0.5rem;">Yes (barcode + image)</td>
-                                <td style="padding:0.5rem;">No</td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Offline mode</strong></td>
-                                <td style="padding:0.5rem;">Yes</td>
-                                <td style="padding:0.5rem;">No</td>
-                                <td style="padding:0.5rem;">No</td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Platforms</strong></td>
-                                <td style="padding:0.5rem;">iOS</td>
-                                <td style="padding:0.5rem;">iOS, Android, Web</td>
-                                <td style="padding:0.5rem;">Web, iOS, Android</td>
-                            </tr>
-                            <tr style="border-bottom:1px solid #eee;">
-                                <td style="padding:0.5rem;"><strong>Free tier</strong></td>
-                                <td style="padding:0.5rem;">Free (no ads)</td>
-                                <td style="padding:0.5rem;">20 items lifetime</td>
-                                <td style="padding:0.5rem;">3 listings/month</td>
-                            </tr>
-                            <tr>
-                                <td style="padding:0.5rem;"><strong>Paid price</strong></td>
-                                <td style="padding:0.5rem;">Free</td>
-                                <td style="padding:0.5rem;">$9.99/month</td>
-                                <td style="padding:0.5rem;">$8.99-69.99/month</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+                <h3>What are Vendoo's limitations?</h3>
+                <ul>
+                    <li><strong>Not a profit tracker</strong> — no expense tracking, no mileage, no entry fees, no real profit calculation</li>
+                    <li><strong>Auto-delist requires desktop</strong> — your computer needs to be on and connected for cross-platform delisting to work</li>
+                    <li><strong>US-focused</strong> — some marketplace integrations work better in the US than the UK</li>
+                    <li><strong>Per-platform forms still required</strong> — you fill in category-specific fields for each platform, so it's not truly one-click</li>
+                    <li><strong>No offline mode</strong> — requires internet connection</li>
+                </ul>
 
-                <section>
-                    <h2>Which app should you choose based on your reselling style?</h2>
-                    <p><strong>Start with your biggest pain point, not the app with the most features.</strong> Here's a simple decision guide:</p>
+                <p><strong>Price:</strong> Free tier: 3 new listings/month. Paid plans: $8.99/month (25 listings) to $69.99/month (unlimited).</p>
+            </section>
 
-                    <ul>
-                        <li><strong>"I don't know if I'm actually making money"</strong> — you need a tracker. FlipperHelper if you're on iOS and source at markets (free, offline, expense tracking). Flippd if you want barcode price research or need Android/web access ($9.99/month)</li>
-                        <li><strong>"I spend hours copying the same listing to 4 platforms"</strong> — you need Vendoo. It won't track your profit, but it will save significant time on listing. Starts at $8.99/month</li>
-                        <li><strong>"I need both — profit tracking AND faster listing"</strong> — use a tracker alongside Vendoo. They don't overlap, so there's no duplication. Many serious resellers run both a tracker and a cross-lister</li>
-                        <li><strong>"I sell under 20 items a month on one platform"</strong> — you probably don't need a cross-lister at all. A tracker (or even a simple spreadsheet) is enough at this scale</li>
-                    </ul>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>Can you use FlipperHelper and Vendoo together?</h2>
-                    <p><strong>Yes — they complement each other well because they solve different problems.</strong> A typical workflow for a reseller using both:</p>
+      <section>
+                <h2>How do FlipperHelper, Flippd, and Vendoo compare side by side?</h2>
+                <p><strong>This table shows the key differences at a glance.</strong> Notice that trackers and cross-listers have almost no feature overlap — they're complementary tools.</p>
 
-                    <ol>
-                        <li>At the car boot sale: snap a photo and log the purchase in FlipperHelper (tracks cost, market, entry fee)</li>
-                        <li>At home: create the listing in Vendoo and push it to eBay, Vinted, and Facebook in one go</li>
-                        <li>Mark the item as "listed" in FlipperHelper with the platforms you pushed to</li>
-                        <li>When it sells: Vendoo auto-delists from other platforms; you record the sale in FlipperHelper to see your real profit</li>
-                    </ol>
+                <div class="cmp-wrap" tabindex="0" role="region" aria-label="How do FlipperHelper, Flippd, and Vendoo compare side by side, horizontally scrollable">
+      <table class="cmp">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>FlipperHelper</th>
+                            <th>Flippd</th>
+                            <th>Vendoo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Type</strong></td>
+                            <td>Tracker</td>
+                            <td>Tracker</td>
+                            <td>Cross-lister</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Photo at purchase</strong></td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Expense tracking</strong></td>
+                            <td>Yes (entry fees, transport, packaging)</td>
+                            <td>Yes (mileage, receipts)</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sourcing trip tracking</strong></td>
+                            <td>Yes (Hauls with per-trip profit)</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Stock value tracking</strong></td>
+                            <td>Yes (invested in inventory view)</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Social sharing cards</strong></td>
+                            <td>Yes (sold items, top flips, stock)</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Automatic backup</strong></td>
+                            <td>Yes (automatic)</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Real profit calculation</strong></td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cross-list to platforms</strong></td>
+                            <td>No</td>
+                            <td>No</td>
+                            <td>Yes (10+ marketplaces)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Auto-delist on sale</strong></td>
+                            <td>No</td>
+                            <td>No</td>
+                            <td>Yes (desktop required)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Price research</strong></td>
+                            <td>No</td>
+                            <td>Yes (barcode + image)</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Offline mode</strong></td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Platforms</strong></td>
+                            <td>iOS</td>
+                            <td>iOS, Android, Web</td>
+                            <td>Web, iOS, Android</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Free tier</strong></td>
+                            <td>Free (no ads)</td>
+                            <td>20 items lifetime</td>
+                            <td>3 listings/month</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Paid price</strong></td>
+                            <td>Free</td>
+                            <td>$9.99/month</td>
+                            <td>$8.99-69.99/month</td>
+                        </tr>
+                    </tbody>
+                </table>
+      </div>
+            </section>
 
-                    <p>FlipperHelper handles the money side (what did I spend, what did I make). Vendoo handles the listing side (get it in front of more buyers faster). Neither replaces the other.</p>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>What about FlipperHelper vs Flippd specifically?</h2>
-                    <p><strong>Both are trackers, so they genuinely compete.</strong> The choice comes down to what matters most to you:</p>
+      <section>
+                <h2>Which app should you choose based on your reselling style?</h2>
+                <p><strong>Start with your biggest pain point, not the app with the most features.</strong> Here's a simple decision guide:</p>
 
-                    <ul>
-                        <li><strong>Choose FlipperHelper if:</strong> you source at markets and need offline mode, you want entry fee and transport expense tracking per trip, you want to track sourcing trip profitability with Hauls, you want social share cards for your best flips, you're on iOS, or you want a free tool with no item limits</li>
-                        <li><strong>Choose Flippd if:</strong> you need barcode/image price research at the point of purchase, you want GPS mileage tracking for tax purposes, you need Android or web access, or you want receipt scanning</li>
-                    </ul>
+                <ul>
+                    <li><strong>"I don't know if I'm actually making money"</strong> — you need a tracker. FlipperHelper if you're on iOS and source at markets (free, offline, expense tracking). Flippd if you want barcode price research or need Android/web access ($9.99/month)</li>
+                    <li><strong>"I spend hours copying the same listing to 4 platforms"</strong> — you need Vendoo. It won't track your profit, but it will save significant time on listing. Starts at $8.99/month</li>
+                    <li><strong>"I need both — profit tracking AND faster listing"</strong> — use a tracker alongside Vendoo. They don't overlap, so there's no duplication. Many serious resellers run both a tracker and a cross-lister</li>
+                    <li><strong>"I sell under 20 items a month on one platform"</strong> — you probably don't need a cross-lister at all. A tracker (or even a simple spreadsheet) is enough at this scale</li>
+                </ul>
+            </section>
 
-                    <p>FlipperHelper is stronger on the expense-tracking and market-sourcing side. Flippd is stronger on the price-research and mileage-tracking side. Both calculate profit, both track inventory, both support photos.</p>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>Frequently asked questions</h2>
+      <section>
+                <h2>Can you use FlipperHelper and Vendoo together?</h2>
+                <p><strong>Yes — they complement each other well because they solve different problems.</strong> A typical workflow for a reseller using both:</p>
 
-                    <h3>What is the difference between FlipperHelper, Flippd, and Vendoo?</h3>
-                    <p>FlipperHelper and Flippd are inventory and profit trackers — they tell you what you bought, what you sold, and your real profit after expenses. Vendoo is a cross-lister — it pushes listings to multiple platforms at once. Trackers answer "Am I making money?" while cross-listers answer "How do I list faster?"</p>
+                <ol>
+                    <li>At the car boot sale: snap a photo and log the purchase in FlipperHelper (tracks cost, market, entry fee)</li>
+                    <li>At home: create the listing in Vendoo and push it to eBay, Vinted, and Facebook in one go</li>
+                    <li>Mark the item as "listed" in FlipperHelper with the platforms you pushed to</li>
+                    <li>When it sells: Vendoo auto-delists from other platforms; you record the sale in FlipperHelper to see your real profit</li>
+                </ol>
 
-                    <h3>Is there a free alternative to Flippd?</h3>
-                    <p>FlipperHelper is a free alternative for inventory and profit tracking. It covers purchase logging with photos, multi-platform listing tracking, expense tracking, and automatic profit calculation. FlipperHelper is on iOS and Android, while Flippd also supports web.</p>
+                <p>FlipperHelper handles the money side (what did I spend, what did I make). Vendoo handles the listing side (get it in front of more buyers faster). Neither replaces the other.</p>
+            </section>
 
-                    <h3>Is there a free alternative to Vendoo?</h3>
-                    <p>Vendoo's free tier allows 3 new listings per month. There's no fully free cross-listing alternative with the same features. If your main need is profit tracking rather than cross-listing, FlipperHelper is free and handles that side. For cross-listing specifically, Vendoo's paid plans start at $8.99/month.</p>
+      <hr class="tear">
 
-                    <h3>Do I need a tracker or a cross-lister for reselling?</h3>
-                    <p>If you don't know your real profit after expenses, start with a tracker (FlipperHelper or Flippd). If you list on 3+ platforms and spend hours duplicating listings, you need a cross-lister (Vendoo). Many serious resellers use one of each.</p>
-                </section>
+      <section>
+                <h2>What about FlipperHelper vs Flippd specifically?</h2>
+                <p><strong>Both are trackers, so they genuinely compete.</strong> The choice comes down to what matters most to you:</p>
 
-                <section>
-                    <h2>Related reading</h2>
-                    <ul>
-                        <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers in 2026</a> — full comparison including spreadsheets, inFlow, and platform dashboards</li>
-                        <li><a href="how-to-track-reselling-profits.html">How to Track Reselling Profits</a> — what to measure and why most flippers get it wrong</li>
-                        <li><a href="death-pile-uk-resellers.html">The Death Pile</a> — how to deal with stock that won't sell</li>
-                    </ul>
-                </section>
+                <ul>
+                    <li><strong>Choose FlipperHelper if:</strong> you source at markets and need offline mode, you want entry fee and transport expense tracking per trip, you want to track sourcing trip profitability with Hauls, you want social share cards for your best flips, you're on iOS, or you want a free tool with no item limits</li>
+                    <li><strong>Choose Flippd if:</strong> you need barcode/image price research at the point of purchase, you want GPS mileage tracking for tax purposes, you need Android or web access, or you want receipt scanning</li>
+                </ul>
 
-                <section class="blog-cta">
-                    <h2>Try FlipperHelper free</h2>
-                    <p>Track purchases with photos, log expenses, manage listings across 16 platforms, and see your real profit. No signup required, works offline at markets.</p>
-                    <span class="blog-store-links"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
-                </section>
-            </div>
-        </div>
-    </main>
+                <p>FlipperHelper is stronger on the expense-tracking and market-sourcing side. Flippd is stronger on the price-research and mileage-tracking side. Both calculate profit, both track inventory, both support photos.</p>
+            </section>
 
-    <footer class="footer footer-compact">
-        <div class="container">
-            <div class="footer-row">
-                <p>&copy; 2025–2026 Oleksandr Prudnikov</p>
-                <div class="footer-links-inline">
-                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
-                    <a href="../privacy.html">Privacy</a>
-                    <a href="../terms.html">Terms</a>
-                    <a href="mailto:support@flipperhelper.app">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script data-goatcounter="https://grommash9.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+      <hr class="tear">
+
+      <section>
+                <h2>Frequently asked questions</h2>
+
+                <div class="faq-item">
+      <h3>What is the difference between FlipperHelper, Flippd, and Vendoo?</h3>
+                <p>FlipperHelper and Flippd are inventory and profit trackers — they tell you what you bought, what you sold, and your real profit after expenses. Vendoo is a cross-lister — it pushes listings to multiple platforms at once. Trackers answer "Am I making money?" while cross-listers answer "How do I list faster?"</p>
+      </div><div class="faq-item">
+      <h3>Is there a free alternative to Flippd?</h3>
+                <p>FlipperHelper is a free alternative for inventory and profit tracking. It covers purchase logging with photos, multi-platform listing tracking, expense tracking, and automatic profit calculation. FlipperHelper is on iOS and Android, while Flippd also supports web.</p>
+      </div><div class="faq-item">
+      <h3>Is there a free alternative to Vendoo?</h3>
+                <p>Vendoo's free tier allows 3 new listings per month. There's no fully free cross-listing alternative with the same features. If your main need is profit tracking rather than cross-listing, FlipperHelper is free and handles that side. For cross-listing specifically, Vendoo's paid plans start at $8.99/month.</p>
+      </div><div class="faq-item">
+      <h3>Do I need a tracker or a cross-lister for reselling?</h3>
+                <p>If you don't know your real profit after expenses, start with a tracker (FlipperHelper or Flippd). If you list on 3+ platforms and spend hours duplicating listings, you need a cross-lister (Vendoo). Many serious resellers use one of each.</p>
+      </div></section>
+
+      <hr class="tear">
+
+      <section>
+                <h2>Related reading</h2>
+                <ul>
+                    <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers in 2026</a> — full comparison including spreadsheets, inFlow, and platform dashboards</li>
+                    <li><a href="how-to-track-reselling-profits.html">How to Track Reselling Profits</a> — what to measure and why most flippers get it wrong</li>
+                    <li><a href="death-pile-uk-resellers.html">The Death Pile</a> — how to deal with stock that won't sell</li>
+                </ul>
+            </section>
+
+      <section class="post-cta">
+                <h2>Try FlipperHelper free</h2>
+                <p>Track purchases with photos, log expenses, manage listings across 16 platforms, and see your real profit. No signup required, works offline at markets.</p>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it Free on Google Play</a></span>
+            </section>
+  
+
+    </article>
+  </div>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="ft-c3">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-left foot-col">
+        <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+        <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+        <h4>Follow</h4>
+        <nav class="row-nav" aria-label="Footer — follow">
+          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Product</h4>
+        <nav aria-label="Footer — product">
+          <a href="/flipperhelper-pricing.html">Pricing</a>
+          <a href="/tools/">Free tools</a>
+          <a href="/compare/">Compare apps</a>
+          <a href="/changelog.html">Changelog</a>
+          <a href="/sources.html">Supported platforms</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <nav aria-label="Footer — company">
+          <a href="/about.html">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/press/">Press kit</a>
+          <a href="/is-flipperhelper-legit.html">Is FlipperHelper legit?</a>
+          <a href="/flipperhelper-review.html">Review</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Help &amp; legal</h4>
+        <nav aria-label="Footer — help and legal">
+          <a href="mailto:support@flipperhelper.app">Support</a>
+          <a href="/faq.html">FAQ</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Community at <a href="https://www.reddit.com/r/flipperhelper/">r/flipperhelper</a></span>
+      <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+    </div>
+  </div>
+</footer>
+
+<script data-goatcounter="https://grommash9.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

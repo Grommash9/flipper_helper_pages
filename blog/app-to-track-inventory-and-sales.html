@@ -1,295 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-itunes-app" content="app-id=6759716745">
-    <title>App to Track Inventory and Sales for Resellers (Free, iOS & Android) | FlipperHelper Blog</title>
-    <meta name="description" content="An app to track inventory and sales for resellers — one record from purchase to sale, with real profit after fees and expenses. Free on iOS and Android.">
-    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="canonical" href="https://flipperhelper.app/blog/app-to-track-inventory-and-sales.html">
-    <!-- OpenGraph -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="App to Track Inventory and Sales for Resellers (Free, iOS & Android)">
-    <meta property="og:description" content="One record from purchase through listing to sale — with real profit after fees and expenses. How the workflow actually works.">
-    <meta property="og:url" content="https://flipperhelper.app/blog/app-to-track-inventory-and-sales.html">
-    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
-    <meta property="og:site_name" content="FlipperHelper">
-    <meta property="og:locale" content="en_GB">
-    <meta property="article:published_time" content="2026-05-02">
-    <meta property="article:author" content="Oleksandr Prudnikov">
-    <meta property="article:section" content="Guide">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="App to Track Inventory and Sales for Resellers (Free, iOS & Android)">
-    <meta name="twitter:description" content="A single-record workflow from purchase through listing to sale, with real profit after fees.">
-    <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
-    <!-- BreadcrumbList JSON-LD -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-itunes-app" content="app-id=6759716745">
+<title>App to Track Inventory and Sales for Resellers (Free, iOS & Android) | FlipperHelper Blog</title>
+<meta name="description" content="An app to track inventory and sales for resellers — one record from purchase to sale, with real profit after fees and expenses. Free on iOS and Android.">
+<link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
+<link rel="canonical" href="https://flipperhelper.app/blog/app-to-track-inventory-and-sales.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- OpenGraph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="App to Track Inventory and Sales for Resellers (Free, iOS & Android)">
+<meta property="og:description" content="One record from purchase through listing to sale — with real profit after fees and expenses. How the workflow actually works.">
+<meta property="og:url" content="https://flipperhelper.app/blog/app-to-track-inventory-and-sales.html">
+<meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
+<meta property="og:site_name" content="FlipperHelper">
+<meta property="og:locale" content="en_GB">
+<meta property="article:published_time" content="2026-05-02">
+<meta property="article:author" content="Oleksandr Prudnikov">
+<meta property="article:section" content="Guide">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="App to Track Inventory and Sales for Resellers (Free, iOS & Android)">
+<meta name="twitter:description" content="A single-record workflow from purchase through listing to sale, with real profit after fees.">
+<meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+<!-- BreadcrumbList JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flipperhelper.app/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://flipperhelper.app/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "App to Track Inventory and Sales", "item": "https://flipperhelper.app/blog/app-to-track-inventory-and-sales.html"}
+  ]
+}
+</script>
+<!-- Article JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "App to Track Inventory and Sales for Resellers (Free, iOS & Android)",
+  "description": "An app to track inventory and sales for resellers — single record from purchase through listing to sale, with real profit after fees and expenses.",
+  "datePublished": "2026-05-02",
+  "dateModified": "2026-05-02",
+  "author": {"@type": "Person", "name": "Oleksandr Prudnikov", "url": "https://flipperhelper.app/about.html"},
+  "publisher": {
+    "@type": "Organization",
+    "name": "FlipperHelper",
+    "url": "https://flipperhelper.app/",
+    "logo": {"@type": "ImageObject", "url": "https://flipperhelper.app/logo_FH.png"}
+  },
+  "mainEntityOfPage": "https://flipperhelper.app/blog/app-to-track-inventory-and-sales.html"
+}
+</script>
+<!-- FAQPage JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flipperhelper.app/"},
-        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://flipperhelper.app/blog/"},
-        {"@type": "ListItem", "position": 3, "name": "App to Track Inventory and Sales", "item": "https://flipperhelper.app/blog/app-to-track-inventory-and-sales.html"}
-      ]
-    }
-    </script>
-    <!-- Article JSON-LD -->
-    <script type="application/ld+json">
+      "@type": "Question",
+      "name": "Can one app track both inventory and sales for resellers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and it should — splitting them across two tools causes most reseller tracking to break. A reseller item exists in three states: new (bought, not yet listed), listed (live on one or more platforms), sold (sale recorded with platform and date). The same record carries through all three states. Apps that separate inventory from sales force you to re-enter the same item, which fails within weeks."
+      }
+    },
     {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "App to Track Inventory and Sales for Resellers (Free, iOS & Android)",
-      "description": "An app to track inventory and sales for resellers — single record from purchase through listing to sale, with real profit after fees and expenses.",
-      "datePublished": "2026-05-02",
-      "dateModified": "2026-05-02",
-      "author": {"@type": "Person", "name": "Oleksandr Prudnikov", "url": "https://flipperhelper.app/about.html"},
-      "publisher": {
-        "@type": "Organization",
-        "name": "FlipperHelper",
-        "url": "https://flipperhelper.app/",
-        "logo": {"@type": "ImageObject", "url": "https://flipperhelper.app/logo_FH.png"}
-      },
-      "mainEntityOfPage": "https://flipperhelper.app/blog/app-to-track-inventory-and-sales.html"
-    }
-    </script>
-    <!-- FAQPage JSON-LD -->
-    <script type="application/ld+json">
+      "@type": "Question",
+      "name": "What's the difference between an inventory app and a sales tracker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A pure inventory app tracks what you own — quantity, location, value. A pure sales tracker tracks transactions — who bought what, when, for how much. Resellers need both views of the same item, plus profit calculation that combines purchase price, listing platforms, sale price, and expenses. A reseller-specific app like FlipperHelper unifies the workflow; general inventory or accounting apps handle one side but not both."
+      }
+    },
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can one app track both inventory and sales for resellers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, and it should — splitting them across two tools causes most reseller tracking to break. A reseller item exists in three states: new (bought, not yet listed), listed (live on one or more platforms), sold (sale recorded with platform and date). The same record carries through all three states. Apps that separate inventory from sales force you to re-enter the same item, which fails within weeks."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What's the difference between an inventory app and a sales tracker?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A pure inventory app tracks what you own — quantity, location, value. A pure sales tracker tracks transactions — who bought what, when, for how much. Resellers need both views of the same item, plus profit calculation that combines purchase price, listing platforms, sale price, and expenses. A reseller-specific app like FlipperHelper unifies the workflow; general inventory or accounting apps handle one side but not both."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do you track inventory and sales together for free?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Three options: (1) a free reseller app like FlipperHelper that handles both views in one record; (2) a Google Sheets template with item rows and status columns — works under 200 items but breaks down at scale; (3) eBay Seller Hub plus a notes app, but you lose multi-platform and expense tracking. For market-sourcing resellers, option 1 saves hours per week."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What information should I track for each item?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Photo, purchase price, market or source, seller (if known), date purchased. When listed: which platforms and the listing date. When sold: sold price, sold platform, sold date. Across the business: entry fees per market, transport costs, packaging. Without expenses tied to items or sourcing trips, the profit calculation is wrong."
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "How do you track inventory and sales together for free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three options: (1) a free reseller app like FlipperHelper that handles both views in one record; (2) a Google Sheets template with item rows and status columns — works under 200 items but breaks down at scale; (3) eBay Seller Hub plus a notes app, but you lose multi-platform and expense tracking. For market-sourcing resellers, option 1 saves hours per week."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What information should I track for each item?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photo, purchase price, market or source, seller (if known), date purchased. When listed: which platforms and the listing date. When sold: sold price, sold platform, sold date. Across the business: entry fees per market, transport costs, packaging. Without expenses tied to items or sourcing trips, the profit calculation is wrong."
+      }
     }
-    </script>
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="article.css">
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
+
 <body>
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="../" class="nav-logo">
-                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
-                <span>FlipperHelper</span>
-            </a>
-            <div class="nav-links">
-                <a href="../">Home</a>
-                <a href="../faq.html">FAQ</a>
-                <a href="./">Blog</a>
-                <a href="/tools/">Tools</a>
-                <a href="/compare/">Compare</a>
-                <a href="/#download" class="btn btn-small">Get the App</a>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ======================= NAV ======================= -->
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+      FlipperHelper
+    </a>
+    <div class="nav-links">
+        <a href="/tools/">Free tools</a>
+        <a href="/compare/">Compare</a>
+        <a href="/#workbench">What's next</a>
+        <a href="/blog/" aria-current="page">Blog</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/about.html">About</a>
+        <a class="btn btn-primary" href="/#get">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================= ARTICLE ======================= -->
+<main class="post" id="main">
+  <div class="wrap">
+    <article>
+
+            <a href="./" class="post-back">&larr; Back to Blog</a>
+            <p class="post-updated">Last updated: 2 May 2026</p>
+            <h1>App to Track Inventory and Sales for Resellers (Free, iOS & Android)</h1>
+            <div class="post-meta">
+                <span class="art-date">2 May 2026</span>
+                <span class="art-tag">Guide</span>
+                <span class="art-read">7 min read</span>
             </div>
-        </div>
-    </nav>
 
-    <main class="legal-page">
-        <div class="container">
-            <div class="legal-content blog-post">
-                <a href="./" class="blog-back">&larr; Back to Blog</a>
-                <p class="blog-updated">Last updated: 2 May 2026</p>
-                <h1>App to Track Inventory and Sales for Resellers (Free, iOS & Android)</h1>
-                <div class="blog-meta">
-                    <span class="blog-date">2 May 2026</span>
-                    <span class="blog-tag">Guide</span>
-                    <span class="blog-reading-time">7 min read</span>
-                </div>
+            <section>
+                <p><strong>The point of an app to track inventory and sales is that the same item record carries from purchase through listing to sale &mdash; without you typing anything twice.</strong> Resellers who use one app for inventory and a different one for sales (or worse, a different spreadsheet for each) almost always abandon tracking within a few months. The data drift is too much work.</p>
+                <p>Here's how the unified workflow actually looks for someone sourcing at car boot sales, charity shops, and estate sales, then selling across <a href="ebay-reseller-app-uk.html">eBay</a>, Vinted, Facebook, and Depop.</p>
+                <blockquote><p>"Inventory and sales are the same data, viewed at different points in time. If your tools split them, you're doing twice the work for half the accuracy." &mdash; Oleksandr Prudnikov, FlipperHelper developer</p></blockquote>
+            </section>
 
-                <section>
-                    <p><strong>The point of an app to track inventory and sales is that the same item record carries from purchase through listing to sale &mdash; without you typing anything twice.</strong> Resellers who use one app for inventory and a different one for sales (or worse, a different spreadsheet for each) almost always abandon tracking within a few months. The data drift is too much work.</p>
-                    <p>Here's how the unified workflow actually looks for someone sourcing at car boot sales, charity shops, and estate sales, then selling across <a href="ebay-reseller-app-uk.html">eBay</a>, Vinted, Facebook, and Depop.</p>
-                    <blockquote><p>"Inventory and sales are the same data, viewed at different points in time. If your tools split them, you're doing twice the work for half the accuracy." &mdash; Oleksandr Prudnikov, FlipperHelper developer</p></blockquote>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>The three states of a reseller item</h2>
-                    <p><strong>Every item you flip moves through three states.</strong> A good app handles all three in one record.</p>
+      <section>
+                <h2>The three states of a reseller item</h2>
+                <p><strong>Every item you flip moves through three states.</strong> A good app handles all three in one record.</p>
 
-                    <h3>State 1: New (purchased, not yet listed)</h3>
-                    <p>You picked it up at a car boot for &pound;3. It's now sitting in a box at home. The record needs: photo, purchase price, market, seller, date bought. This is the "inventory" view &mdash; what stock you currently own.</p>
+                <h3>State 1: New (purchased, not yet listed)</h3>
+                <p>You picked it up at a car boot for &pound;3. It's now sitting in a box at home. The record needs: photo, purchase price, market, seller, date bought. This is the "inventory" view &mdash; what stock you currently own.</p>
 
-                    <h3>State 2: Listed (live on one or more platforms)</h3>
-                    <p>You photographed it properly, wrote a description, and listed it on eBay and Vinted on the same day. The same record now has: listing date, listed platforms, asking price (optional). Stock is still yours, but it's now visible to buyers.</p>
+                <h3>State 2: Listed (live on one or more platforms)</h3>
+                <p>You photographed it properly, wrote a description, and listed it on eBay and Vinted on the same day. The same record now has: listing date, listed platforms, asking price (optional). Stock is still yours, but it's now visible to buyers.</p>
 
-                    <h3>State 3: Sold (sale recorded)</h3>
-                    <p>It sold on Vinted for &pound;28 a fortnight later. The same record now has: sold price, sold platform, sold date. Profit calculates automatically &mdash; sold price minus purchase price minus the share of expenses (entry fees, transport, packaging, platform fees).</p>
+                <h3>State 3: Sold (sale recorded)</h3>
+                <p>It sold on Vinted for &pound;28 a fortnight later. The same record now has: sold price, sold platform, sold date. Profit calculates automatically &mdash; sold price minus purchase price minus the share of expenses (entry fees, transport, packaging, platform fees).</p>
 
-                    <p>If your tools force you to re-enter the item between any of these states, you'll stop tracking. The whole point of a unified inventory + sales app is the record carries through.</p>
-                </section>
+                <p>If your tools force you to re-enter the item between any of these states, you'll stop tracking. The whole point of a unified inventory + sales app is the record carries through.</p>
+            </section>
 
-                <section>
-                    <h2>Why splitting inventory and sales fails</h2>
-                    <p><strong>Tracking inventory and sales in separate tools is the single most common reason reseller tracking falls apart.</strong> Three failure modes show up:</p>
+      <hr class="tear">
 
-                    <h3>Double entry burns out</h3>
-                    <p>Every item gets typed once into the inventory tracker and again into the sales log. After 100 items, you stop. By 200, you're guessing at month-end profit because the data doesn't match.</p>
+      <section>
+                <h2>Why splitting inventory and sales fails</h2>
+                <p><strong>Tracking inventory and sales in separate tools is the single most common reason reseller tracking falls apart.</strong> Three failure modes show up:</p>
 
-                    <h3>Items get lost between tools</h3>
-                    <p>You list something on eBay, mark it sold, but never remove it from inventory. Six months later your "stock value" is wildly off because dozens of sold items are still counted as inventory.</p>
+                <h3>Double entry burns out</h3>
+                <p>Every item gets typed once into the inventory tracker and again into the sales log. After 100 items, you stop. By 200, you're guessing at month-end profit because the data doesn't match.</p>
 
-                    <h3>Profit math doesn't reconcile</h3>
-                    <p>Inventory tool says you own &pound;1,200 of stock. Sales tool says you sold &pound;3,400 last month. You can't tell what fraction of that &pound;3,400 came from items in the inventory tool vs items you forgot to log. Real profit becomes a guess.</p>
+                <h3>Items get lost between tools</h3>
+                <p>You list something on eBay, mark it sold, but never remove it from inventory. Six months later your "stock value" is wildly off because dozens of sold items are still counted as inventory.</p>
 
-                    <p>The fix is one tool, one record per item, status that updates as the item moves through states.</p>
-                </section>
+                <h3>Profit math doesn't reconcile</h3>
+                <p>Inventory tool says you own &pound;1,200 of stock. Sales tool says you sold &pound;3,400 last month. You can't tell what fraction of that &pound;3,400 came from items in the inventory tool vs items you forgot to log. Real profit becomes a guess.</p>
 
-                <section>
-                    <h2>What a reseller inventory + sales app should track</h2>
-                    <p><strong>Beyond the basic per-item fields, the app needs three layers of context to produce honest profit numbers.</strong></p>
+                <p>The fix is one tool, one record per item, status that updates as the item moves through states.</p>
+            </section>
 
-                    <h3>Per-item data</h3>
-                    <ul>
-                        <li>Photo (one or more)</li>
-                        <li>Purchase price + currency</li>
-                        <li>Market or source</li>
-                        <li>Seller (if known)</li>
-                        <li>Date purchased</li>
-                        <li>Listed platforms + listing date</li>
-                        <li>Sold price + sold platform + sold date</li>
-                        <li>Optional: SKU, description, condition, asking price</li>
-                    </ul>
+      <hr class="tear">
 
-                    <h3>Per-trip data (Hauls)</h3>
-                    <p>A sourcing trip costs entry fees + transport + sometimes meals. The Sunday car boot run costs &pound;5 entry + &pound;8 petrol + &pound;6 lunch = &pound;19 before you sell anything. A unified app should let you group items + expenses into a "haul" so you can see whether the trip paid for itself across all the items as they sell over weeks. <a href="track-sourcing-trip-profit.html">More on tracking sourcing trip profit</a>.</p>
+      <section>
+                <h2>What a reseller inventory + sales app should track</h2>
+                <p><strong>Beyond the basic per-item fields, the app needs three layers of context to produce honest profit numbers.</strong></p>
 
-                    <h3>Per-business data</h3>
-                    <ul>
-                        <li>Total stock value (sum of unsold purchase prices)</li>
-                        <li>Total revenue (sum of sold prices, by period)</li>
-                        <li>Total expenses (entry fees, transport, packaging, platform fees)</li>
-                        <li>Real profit (revenue minus cost of goods sold minus expenses)</li>
-                        <li>Days-to-sell, sell-through rate, profit per platform</li>
-                    </ul>
-                </section>
+                <h3>Per-item data</h3>
+                <ul>
+                    <li>Photo (one or more)</li>
+                    <li>Purchase price + currency</li>
+                    <li>Market or source</li>
+                    <li>Seller (if known)</li>
+                    <li>Date purchased</li>
+                    <li>Listed platforms + listing date</li>
+                    <li>Sold price + sold platform + sold date</li>
+                    <li>Optional: SKU, description, condition, asking price</li>
+                </ul>
 
-                <section>
-                    <h2>How FlipperHelper handles inventory and sales in one record</h2>
-                    <p><strong>FlipperHelper is a free app for iOS and Android where each item is a single record that updates as its status changes.</strong></p>
+                <h3>Per-trip data (Hauls)</h3>
+                <p>A sourcing trip costs entry fees + transport + sometimes meals. The Sunday car boot run costs &pound;5 entry + &pound;8 petrol + &pound;6 lunch = &pound;19 before you sell anything. A unified app should let you group items + expenses into a "haul" so you can see whether the trip paid for itself across all the items as they sell over weeks. <a href="track-sourcing-trip-profit.html">More on tracking sourcing trip profit</a>.</p>
 
-                    <h3>The workflow</h3>
-                    <ol>
-                        <li><strong>At the market</strong> &mdash; tap +, snap a photo, type the price (&pound;3), pick the market (auto-suggested by GPS if it's a saved one). Item saves with status New. Takes 8 seconds</li>
-                        <li><strong>At home, listing day</strong> &mdash; open the item, mark as Listed on eBay and Vinted (with today's date). Status changes to Listed. The item still counts in your stock value but is visibly "out for sale"</li>
-                        <li><strong>When it sells</strong> &mdash; open the item, tap Mark Sold, enter the sold price (&pound;28) and platform (Vinted). Status changes to Sold. Profit is calculated automatically. Stock value drops by the &pound;3 you originally paid</li>
-                        <li><strong>End of month</strong> &mdash; open Money Flow. See revenue, costs, expenses, and real profit by week, month, or custom date. Filter by platform or market</li>
-                    </ol>
+                <h3>Per-business data</h3>
+                <ul>
+                    <li>Total stock value (sum of unsold purchase prices)</li>
+                    <li>Total revenue (sum of sold prices, by period)</li>
+                    <li>Total expenses (entry fees, transport, packaging, platform fees)</li>
+                    <li>Real profit (revenue minus cost of goods sold minus expenses)</li>
+                    <li>Days-to-sell, sell-through rate, profit per platform</li>
+                </ul>
+            </section>
 
-                    <h3>Inventory + sales together &mdash; what you can see</h3>
-                    <ul>
-                        <li><strong>Home screen stock value</strong> &mdash; total &pound; invested in unsold items, count, percentage already listed</li>
-                        <li><strong>Items grouped by date</strong> &mdash; tap the stock value to see purchase-date groupings with markets</li>
-                        <li><strong>Top Flips</strong> &mdash; most profitable sales for any period (3+ sales required)</li>
-                        <li><strong>Money Flow</strong> &mdash; revenue, costs, expenses by category, profit, days-to-sell, percentage listed, all in one view</li>
-                        <li><strong>Per-item profit</strong> &mdash; sold price minus purchase price minus allocated expenses, shown on the item card</li>
-                        <li><strong>Hauls</strong> &mdash; per-trip ROI updating live as items from that trip sell</li>
-                    </ul>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>What about cross-listers and accounting apps?</h2>
-                    <p>Two adjacent categories of tool show up in this conversation:</p>
+      <section>
+                <h2>How FlipperHelper handles inventory and sales in one record</h2>
+                <p><strong>FlipperHelper is a free app for iOS and Android where each item is a single record that updates as its status changes.</strong></p>
 
-                    <h3>Cross-listers (Vendoo, List Perfectly)</h3>
-                    <p>These automate listing the same item across multiple platforms. They're complementary to a tracker, not a replacement. A cross-lister pushes your listings out; a tracker tells you what each one earned. <a href="flipperhelper-vs-flippd-vs-vendoo.html">Tracker vs cross-lister comparison</a>.</p>
+                <h3>The workflow</h3>
+                <div class="day">
+      <div class="moment reveal">
+      <span class="when">Step 1</span>
+      <h3>At the market</h3>
+      <p>tap +, snap a photo, type the price (&pound;3), pick the market (auto-suggested by GPS if it's a saved one). Item saves with status New. Takes 8 seconds</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 2</span>
+      <h3>At home, listing day</h3>
+      <p>open the item, mark as Listed on eBay and Vinted (with today's date). Status changes to Listed. The item still counts in your stock value but is visibly "out for sale"</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 3</span>
+      <h3>When it sells</h3>
+      <p>open the item, tap Mark Sold, enter the sold price (&pound;28) and platform (Vinted). Status changes to Sold. Profit is calculated automatically. Stock value drops by the &pound;3 you originally paid</p>
+      </div>
+      <div class="moment reveal">
+      <span class="when">Step 4</span>
+      <h3>End of month</h3>
+      <p>open Money Flow. See revenue, costs, expenses, and real profit by week, month, or custom date. Filter by platform or market</p>
+      </div>
+      </div>
 
-                    <h3>Accounting apps (QuickBooks, FreeAgent)</h3>
-                    <p>For UK resellers crossing the <a href="hmrc-1000-trading-allowance-resellers-uk.html">&pound;1,000 trading allowance</a> (see <a href="https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income" target="_blank" rel="noopener nofollow">HMRC's official trading allowance guidance</a>), an accounting app handles tax, invoicing, and books. It doesn't track per-item inventory or sourcing trips. Many full-time resellers use a tracker (per-item, per-trip) plus an accounting tool (per-tax-year). FlipperHelper exports CSV to Google Sheets which most accountants can import.</p>
-                </section>
+                <h3>Inventory + sales together &mdash; what you can see</h3>
+                <ul>
+                    <li><strong>Home screen stock value</strong> &mdash; total &pound; invested in unsold items, count, percentage already listed</li>
+                    <li><strong>Items grouped by date</strong> &mdash; tap the stock value to see purchase-date groupings with markets</li>
+                    <li><strong>Top Flips</strong> &mdash; most profitable sales for any period (3+ sales required)</li>
+                    <li><strong>Money Flow</strong> &mdash; revenue, costs, expenses by category, profit, days-to-sell, percentage listed, all in one view</li>
+                    <li><strong>Per-item profit</strong> &mdash; sold price minus purchase price minus allocated expenses, shown on the item card</li>
+                    <li><strong>Hauls</strong> &mdash; per-trip ROI updating live as items from that trip sell</li>
+                </ul>
+            </section>
 
-                <section>
-                    <h2>Frequently asked questions</h2>
+      <hr class="tear">
 
-                    <h3>What's the simplest free app to track inventory and sales?</h3>
-                    <p>FlipperHelper for iOS &mdash; one record per item, three states (New/Listed/Sold), profit calculated automatically. No item cap, no ads, no subscription. For Android users, the simplest free option is currently a Google Sheets template, though it's painful on mobile at markets.</p>
+      <section>
+                <h2>What about cross-listers and accounting apps?</h2>
+                <p>Two adjacent categories of tool show up in this conversation:</p>
 
-                    <h3>How many items can the app track?</h3>
-                    <p>FlipperHelper has no item cap &mdash; active resellers track thousands of items over time. Many free inventory apps cap at 100&ndash;500 items, so check before committing.</p>
+                <h3>Cross-listers (Vendoo, List Perfectly)</h3>
+                <p>These automate listing the same item across multiple platforms. They're complementary to a tracker, not a replacement. A cross-lister pushes your listings out; a tracker tells you what each one earned. <a href="flipperhelper-vs-flippd-vs-vendoo.html">Tracker vs cross-lister comparison</a>.</p>
 
-                    <h3>Can I track multiple platforms in one inventory record?</h3>
-                    <p>Yes &mdash; an item can be marked listed on eBay and Vinted simultaneously, with the sale recorded against whichever platform it eventually sells on. This is the main reason a unified tracker beats single-platform tools.</p>
+                <h3>Accounting apps (QuickBooks, FreeAgent)</h3>
+                <p>For UK resellers crossing the <a href="hmrc-1000-trading-allowance-resellers-uk.html">&pound;1,000 trading allowance</a> (see <a href="https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income" target="_blank" rel="noopener nofollow">HMRC's official trading allowance guidance</a>), an accounting app handles tax, invoicing, and books. It doesn't track per-item inventory or sourcing trips. Many full-time resellers use a tracker (per-item, per-trip) plus an accounting tool (per-tax-year). FlipperHelper exports CSV to Google Sheets which most accountants can import.</p>
+            </section>
 
-                    <h3>Does the app calculate profit including fees?</h3>
-                    <p>Profit = sold price &minus; purchase price &minus; allocated expenses (entry fees, transport, packaging). Platform fees can be entered as expenses per item or as totals per period. <a href="how-to-track-reselling-profits.html">Real-profit tracking explained</a>.</p>
+      <hr class="tear">
 
-                    <h3>What happens if I reinstall the app?</h3>
-                    <p>FlipperHelper backs up automatically — iCloud on iPhone, a folder you choose on Android — and offers restore on a new device. Optional Google Drive sync also stores photos and CSV exports. ZIP file export is available manually. Data survives device changes and app reinstalls.</p>
-                </section>
+      <section>
+                <h2>Frequently asked questions</h2>
 
-                <section>
-                    <h2>Related reading</h2>
-                    <ul>
-                        <li><a href="how-to-track-reselling-profits.html">How to Track Reselling Profits</a> &mdash; what to measure and why most flippers get it wrong</li>
-                        <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers in 2026</a> &mdash; full reseller-app comparison</li>
-                        <li><a href="free-inventory-app-for-resellers.html">Free Inventory App for Resellers</a> &mdash; the "free" pricing trap and what to actually look for</li>
-                        <li><a href="ebay-reseller-app-uk.html">eBay Reseller App UK</a> &mdash; specific to UK eBay sellers</li>
-                        <li><a href="track-sourcing-trip-profit.html">Track Sourcing Trip Profit</a> &mdash; per-trip ROI tracking with Hauls</li>
-                        <li><a href="reselling-spreadsheet-template-uk.html">Reselling Spreadsheet Template UK</a> &mdash; if you'd rather start with a sheet</li>
-                    </ul>
-                </section>
+                <div class="faq-item">
+      <h3>What's the simplest free app to track inventory and sales?</h3>
+                <p>FlipperHelper for iOS &mdash; one record per item, three states (New/Listed/Sold), profit calculated automatically. No item cap, no ads, no subscription. For Android users, the simplest free option is currently a Google Sheets template, though it's painful on mobile at markets.</p>
+      </div><div class="faq-item">
+      <h3>How many items can the app track?</h3>
+                <p>FlipperHelper has no item cap &mdash; active resellers track thousands of items over time. Many free inventory apps cap at 100&ndash;500 items, so check before committing.</p>
+      </div><div class="faq-item">
+      <h3>Can I track multiple platforms in one inventory record?</h3>
+                <p>Yes &mdash; an item can be marked listed on eBay and Vinted simultaneously, with the sale recorded against whichever platform it eventually sells on. This is the main reason a unified tracker beats single-platform tools.</p>
+      </div><div class="faq-item">
+      <h3>Does the app calculate profit including fees?</h3>
+                <p>Profit = sold price &minus; purchase price &minus; allocated expenses (entry fees, transport, packaging). Platform fees can be entered as expenses per item or as totals per period. <a href="how-to-track-reselling-profits.html">Real-profit tracking explained</a>.</p>
+      </div><div class="faq-item">
+      <h3>What happens if I reinstall the app?</h3>
+                <p>FlipperHelper backs up automatically — iCloud on iPhone, a folder you choose on Android — and offers restore on a new device. Optional Google Drive sync also stores photos and CSV exports. ZIP file export is available manually. Data survives device changes and app reinstalls.</p>
+      </div></section>
 
-                <section class="blog-cta">
-                    <h2>Track inventory and sales free with FlipperHelper</h2>
-                    <p>Free reselling app for iOS and Android. One record per item, from purchase through listing to sale. Real profit after fees and expenses. Works offline at every car boot. No item cap, no ads, no subscription.</p>
-                    <p><em>Not right for you if:</em> you want automated cross-listing instead of tracking, or you only sell under 20 items per month and a Google Sheets template is doing the job &mdash; in that last case, switching tools costs more time than it saves.</p>
-                    <span class="blog-store-links"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
-                </section>
+      <hr class="tear">
 
-                <section>
-                    <h2>About the author</h2>
-                    <p><strong>Written by Oleksandr Prudnikov</strong> &mdash; developer of FlipperHelper. The app started as a tracking tool for his wife's reselling at UK car boot sales, charity shops, and antiques fairs. The "single record, three states" model described here is the same data model the app actually uses internally &mdash; not an idealised workflow invented for the article.</p>
-                </section>
-            </div>
-        </div>
-    </main>
+      <section>
+                <h2>Related reading</h2>
+                <ul>
+                    <li><a href="how-to-track-reselling-profits.html">How to Track Reselling Profits</a> &mdash; what to measure and why most flippers get it wrong</li>
+                    <li><a href="best-apps-for-resellers-2026.html">Best Apps for Resellers in 2026</a> &mdash; full reseller-app comparison</li>
+                    <li><a href="free-inventory-app-for-resellers.html">Free Inventory App for Resellers</a> &mdash; the "free" pricing trap and what to actually look for</li>
+                    <li><a href="ebay-reseller-app-uk.html">eBay Reseller App UK</a> &mdash; specific to UK eBay sellers</li>
+                    <li><a href="track-sourcing-trip-profit.html">Track Sourcing Trip Profit</a> &mdash; per-trip ROI tracking with Hauls</li>
+                    <li><a href="reselling-spreadsheet-template-uk.html">Reselling Spreadsheet Template UK</a> &mdash; if you'd rather start with a sheet</li>
+                </ul>
+            </section>
 
-    <footer class="footer footer-compact">
-        <div class="container">
-            <div class="footer-row">
-                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
-                <div class="footer-links-inline">
-                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://www.reddit.com/r/flipperhelper" target="_blank" rel="noopener">Reddit</a>
-                    <a href="../privacy.html">Privacy</a>
-                    <a href="../terms.html">Terms</a>
-                    <a href="mailto:support@flipperhelper.app">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script data-goatcounter="https://grommash9.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+      <section class="post-cta">
+                <h2>Track inventory and sales free with FlipperHelper</h2>
+                <p>Free reselling app for iOS and Android. One record per item, from purchase through listing to sale. Real profit after fees and expenses. Works offline at every car boot. No item cap, no ads, no subscription.</p>
+                <p><em>Not right for you if:</em> you want automated cross-listing instead of tracking, or you only sell under 20 items per month and a Google Sheets template is doing the job &mdash; in that last case, switching tools costs more time than it saves.</p>
+                <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.98-.2 1.92-.9 3.17-.8 1.5.12 2.63.72 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.11 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.68.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>Get it Free on Google Play</a></span>
+            </section>
+
+      <hr class="tear">
+
+      <section>
+                <h2>About the author</h2>
+                <p><strong>Written by Oleksandr Prudnikov</strong> &mdash; developer of FlipperHelper. The app started as a tracking tool for his wife's reselling at UK car boot sales, charity shops, and antiques fairs. The "single record, three states" model described here is the same data model the app actually uses internally &mdash; not an idealised workflow invented for the article.</p>
+            </section>
+  
+
+    </article>
+  </div>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="ft-c3">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-left foot-col">
+        <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+        <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+        <h4>Follow</h4>
+        <nav class="row-nav" aria-label="Footer — follow">
+          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Product</h4>
+        <nav aria-label="Footer — product">
+          <a href="/flipperhelper-pricing.html">Pricing</a>
+          <a href="/tools/">Free tools</a>
+          <a href="/compare/">Compare apps</a>
+          <a href="/changelog.html">Changelog</a>
+          <a href="/sources.html">Supported platforms</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <nav aria-label="Footer — company">
+          <a href="/about.html">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/press/">Press kit</a>
+          <a href="/is-flipperhelper-legit.html">Is FlipperHelper legit?</a>
+          <a href="/flipperhelper-review.html">Review</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Help &amp; legal</h4>
+        <nav aria-label="Footer — help and legal">
+          <a href="mailto:support@flipperhelper.app">Support</a>
+          <a href="/faq.html">FAQ</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Community at <a href="https://www.reddit.com/r/flipperhelper/">r/flipperhelper</a></span>
+      <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+})();
+</script>
+<script data-goatcounter="https://grommash9.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

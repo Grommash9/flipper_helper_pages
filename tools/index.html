@@ -6,15 +6,23 @@
     <meta name="apple-itunes-app" content="app-id=6759716745">
     <title>Free Reseller Tools | FlipperHelper</title>
     <meta name="description" content="Free in-browser tools for resellers. UK silver hallmarks identifier and more on the way. No signup, no ads, no data harvesting.">
-    <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/svg+xml" href="/logo_FH.svg">
+    <link rel="apple-touch-icon" href="/logo_FH.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&amp;family=Roboto+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/landing.css">
+    <meta name="author" content="Oleksandr Prudnikov">
     <link rel="canonical" href="https://flipperhelper.app/tools/">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <!-- OpenGraph -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:site_name" content="FlipperHelper">
     <meta property="og:title" content="Free Reseller Tools — FlipperHelper">
     <meta property="og:description" content="Free in-browser tools for resellers — UK silver hallmark identifier, fee calculators, more on the way. No signup, no ads, no data harvesting.">
     <meta property="og:url" content="https://flipperhelper.app/tools/">
     <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
-    <meta property="og:site_name" content="FlipperHelper">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Free Reseller Tools — FlipperHelper">
     <meta name="twitter:description" content="Free in-browser tools for resellers. No signup, no ads.">
@@ -29,65 +37,209 @@
       ]
     }
     </script>
+<style>
+/* Page-only additions to landing.css. Everything else on this page — nav, cards,
+   grid, group label, tear, footer, reveal — comes from the shared stylesheet. */
+
+/* .page-head: landing.css has no title-and-lede head, because the homepage
+   opens with .hero instead. Values from the style guide §25.2. */
+.page-head{padding:64px 0 0}
+.page-head h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;
+  margin-bottom:12px;max-width:760px}
+@media(max-width:720px){.page-head{padding:44px 0 0}}
+
+/* Column-count variations of .today-grid. The card, the 18px gap, the radius and
+   the shadow are untouched; only the track count differs, because this page's
+   content is 2 primary tools plus 4 reference pages, not a triad. */
+.today-grid.grid-2{grid-template-columns:repeat(2,1fr)}
+.today-grid.grid-4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:860px){.today-grid.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.today-grid.grid-2{grid-template-columns:1fr}}
+@media(max-width:520px){.today-grid.grid-4{grid-template-columns:1fr}}
+
+/* Link variation of .today-card: every card here is a destination. The title
+   carries the link text; a stretched ::after makes the whole card the hit area
+   without nesting block content inside an <a>. */
+.today-card{position:relative;transition:transform .15s ease, border-color .15s ease}
+.today-card h3 a,.today-card h4 a{color:var(--ink)}
+.today-card h3 a::after,.today-card h4 a::after{content:"";position:absolute;inset:0;
+  border-radius:var(--radius-md)}
+.today-card:hover{transform:translateY(-2px);border-color:var(--line-strong)}
+.today-card:hover h3 a,.today-card:hover h4 a{color:var(--action);text-decoration:none}
+.today-card h4{font-family:var(--font-body);color:var(--ink);line-height:1.16;
+  letter-spacing:-.015em;font-size:var(--fs-h3);font-weight:700}
+.card-meta{margin-top:auto;font-family:var(--font-mono);font-size:var(--fs-2xs);
+  color:var(--ink-45);font-variant-numeric:tabular-nums}
+@media(prefers-reduced-motion:reduce){.today-card:hover{transform:none}}
+
+/* Plain prose block — the closing section is text, not cards. */
+.prose{max-width:720px}
+.prose p{margin-bottom:16px}
+.prose p:last-child{margin-bottom:0}
+</style>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">
-                <img src="../logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
-                <span>FlipperHelper</span>
-            </a>
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="../blog/">Blog</a>
-                <a href="/tools/">Tools</a>
-                <a href="/compare/">Compare</a>
-                <a href="../faq.html">FAQ</a>
-            </div>
-        </div>
-    </nav>
-    <main class="legal-page">
-        <div class="container">
-            <article class="legal-content">
-                <h1>Free Reseller Tools</h1>
-                <p>In-browser tools for resellers. No signup. No ads. No data leaves your device.</p>
-                <p>Reselling throws up the same handful of awkward questions over and over: what is this hallmark, what date is this piece, what will eBay take after fees, is this even worth listing. Most answers are buried in forum threads or behind sign-up walls. These tools are the quick, honest answers &mdash; built for the way UK resellers actually work: at a car boot in the rain, in a charity shop queue, or sorting a haul on the kitchen table. Everything runs in your browser, so it works on your phone and nothing you type is sent anywhere.</p>
-                <p>They&rsquo;re free because they&rsquo;re the same problems we hit sourcing and listing every week. If a tool earns its place by genuinely saving you time, it stays; if it&rsquo;s just filler, we don&rsquo;t ship it.</p>
+<a class="visually-hidden" href="#main-content">Skip to content</a>
 
-                <section>
-                    <h2>Available now</h2>
-                    <ul>
-                        <li><a href="uk-silver-hallmarks.html"><strong>UK Silver Hallmarks Identifier</strong></a> — step-by-step wizard: pick the marks on your piece, get the metal, the assay office, and a rough date range.</li>
-                        <li><a href="vinyl-decoder.html"><strong>Vinyl Matrix &amp; Runout Code Decoder</strong></a> — type what you can read in your record's runout, worn and partial is fine, get ranked matches with honest confidence levels.</li>
-                    </ul>
-                    <h3>Office-specific pages</h3>
-                    <ul>
-                        <li><a href="silver-hallmarks-london.html"><strong>London silver hallmarks</strong></a> — leopard&rsquo;s head, since 1478</li>
-                        <li><a href="silver-hallmarks-birmingham.html"><strong>Birmingham silver hallmarks</strong></a> — anchor, since 1773</li>
-                        <li><a href="silver-hallmarks-sheffield.html"><strong>Sheffield silver hallmarks</strong></a> — crown / Yorkshire Rose, since 1773</li>
-                        <li><a href="silver-hallmarks-edinburgh.html"><strong>Edinburgh silver hallmarks</strong></a> — three-towered castle, since 1457</li>
-                    </ul>
-                </section>
 
-                <section>
-                    <h2>About these tools</h2>
-                    <p>These tools are built to actually be useful, not to be padding. Each one is a focused answer to a question UK resellers ask repeatedly. We&rsquo;d rather ship one tool that works really well than ten tools that look impressive in a list.</p>
-                    <p>If there&rsquo;s a tool you&rsquo;d find useful, <a href="mailto:support@flipperhelper.app">tell me</a>.</p>
-                </section>
-            </article>
-        </div>
-    </main>
-    <footer class="footer footer-compact">
-        <div class="container">
-            <div class="footer-row">
-                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
-                <div class="footer-links-inline">
-                    <a href="../privacy.html">Privacy</a>
-                    <a href="../terms.html">Terms</a>
-                    <a href="mailto:support@flipperhelper.app">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+<!-- ======================= NAV ======================= -->
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+      FlipperHelper
+    </a>
+    <div class="nav-links">
+        <a href="/tools/" aria-current="page">Free tools</a>
+        <a href="/compare/">Compare</a>
+        <a href="/#workbench">What's next</a>
+        <a href="/blog/">Blog</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/about.html">About</a>
+        <a class="btn btn-primary" href="/#get">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+  <!-- ======================= PAGE HEAD ======================= -->
+  <header class="page-head">
+    <div class="wrap">
+      <h1>Free Reseller Tools</h1>
+      <p class="section-lede">In-browser tools for resellers. No signup. No ads. No data leaves your device.</p>
+    </div>
+  </header>
+
+  <!-- ======================= THE TOOLS ======================= -->
+  <section id="available" aria-labelledby="available-title">
+    <div class="wrap">
+      <h2 class="section-title" id="available-title">Open one, get an answer</h2>
+
+      <ul class="today-grid grid-2">
+        <li class="today-card reveal">
+          <span class="today-ic ic-data" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l4.5 4.5"/></svg>
+          </span>
+          <h3><a href="/tools/uk-silver-hallmarks.html">UK Silver Hallmarks Identifier</a></h3>
+          <p>step-by-step wizard: pick the marks on your piece, get the metal, the assay office, and a rough date range.</p>
+        </li>
+        <li class="today-card reveal">
+          <span class="today-ic ic-speed" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/></svg>
+          </span>
+          <h3><a href="/tools/vinyl-decoder.html">Vinyl Matrix &amp; Runout Code Decoder</a></h3>
+          <p>type what you can read in your record's runout, worn and partial is fine, get ranked matches with honest confidence levels.</p>
+        </li>
+      </ul>
+
+      <div class="merged-gap">
+        <h3 class="group-label">Office-specific pages</h3>
+        <ul class="today-grid grid-4">
+          <li class="today-card reveal">
+            <h4><a href="/tools/silver-hallmarks-london.html">London silver hallmarks</a></h4>
+            <p>leopard’s head</p>
+            <span class="card-meta">Since 1478</span>
+          </li>
+          <li class="today-card reveal">
+            <h4><a href="/tools/silver-hallmarks-birmingham.html">Birmingham silver hallmarks</a></h4>
+            <p>anchor</p>
+            <span class="card-meta">Since 1773</span>
+          </li>
+          <li class="today-card reveal">
+            <h4><a href="/tools/silver-hallmarks-sheffield.html">Sheffield silver hallmarks</a></h4>
+            <p>crown / Yorkshire Rose</p>
+            <span class="card-meta">Since 1773</span>
+          </li>
+          <li class="today-card reveal">
+            <h4><a href="/tools/silver-hallmarks-edinburgh.html">Edinburgh silver hallmarks</a></h4>
+            <p>three-towered castle</p>
+            <span class="card-meta">Since 1457</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><hr class="tear"></div>
+
+  <!-- ======================= ABOUT ======================= -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <h2 class="section-title" id="about-title">About these tools</h2>
+      <div class="prose">
+        <p>These tools are built to actually be useful, not to be padding. Each one is a focused answer to a question UK resellers ask repeatedly. We’d rather ship one tool that works really well than ten tools that look impressive in a list.</p>
+        <p>If there’s a tool you’d find useful, <a href="mailto:support@flipperhelper.app">tell me</a>.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ft-c3">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-left foot-col">
+        <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+        <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+        <h4>Follow</h4>
+        <nav class="row-nav" aria-label="Footer — follow">
+          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Product</h4>
+        <nav aria-label="Footer — product">
+          <a href="/flipperhelper-pricing.html">Pricing</a>
+          <a href="/tools/">Free tools</a>
+          <a href="/compare/">Compare apps</a>
+          <a href="/changelog.html">Changelog</a>
+          <a href="/sources.html">Supported platforms</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <nav aria-label="Footer — company">
+          <a href="/about.html">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/press/">Press kit</a>
+          <a href="/is-flipperhelper-legit.html">Is FlipperHelper legit?</a>
+          <a href="/flipperhelper-review.html">Review</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Help &amp; legal</h4>
+        <nav aria-label="Footer — help and legal">
+          <a href="mailto:support@flipperhelper.app">Support</a>
+          <a href="/faq.html">FAQ</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Community at <a href="https://www.reddit.com/r/flipperhelper/">r/flipperhelper</a></span>
+      <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+    }, {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  }
+})();
+</script>
+<script data-goatcounter="https://grommash9.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

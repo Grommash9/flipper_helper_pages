@@ -7,7 +7,9 @@
     <title>FlipperHelper Alternatives (2026): Tracker, Spreadsheet, or Cross-Lister?</title>
     <meta name="description" content="FlipperHelper alternatives compared: Flippd, Vendoo, Google Sheets, Notion, pen-and-paper. When each works, when it doesn't, and how to choose.">
     <link rel="icon" type="image/svg+xml" href="logo_FH.svg">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&amp;family=Roboto+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <link rel="canonical" href="https://flipperhelper.app/flipperhelper-alternatives.html">
     <meta property="og:type" content="article">
     <meta property="og:title" content="FlipperHelper Alternatives (2026)">
@@ -72,117 +74,330 @@
       ]
     }
     </script>
+    <link rel="stylesheet" href="/landing.css">
+    <style>
+        /* ---- page-specific: everything else comes from /landing.css ---- */
+
+        /* skip link — not in landing.css yet; sits above the sticky nav (z-index:100) */
+        .skip{
+          position:absolute;left:-9999px;top:0;z-index:200;
+          font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
+          background:var(--card);color:var(--ink);border:1px solid var(--line-strong);
+          border-radius:12px;padding:10px 16px;box-shadow:var(--neu-soft);
+        }
+        .skip:focus{left:24px;top:8px;text-decoration:none}
+
+        /* page head — the hero-variant without the prop (design guide §25.2) */
+        .page-head{padding:64px 0 0}
+        @media(max-width:720px){.page-head{padding:44px 0 0}}
+        .page-head h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px;max-width:760px}
+        .head-updated{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45)}
+
+        /* one article measure for the longer prose runs on this page (§5.2) */
+        .measure{max-width:var(--measure)}
+
+        /* this page carries no ledes under its headings, so the heading itself
+           holds the gap a lede would normally open before the block below it */
+        .section-title{margin-bottom:26px}
+
+        /* the site's prose bullet: 6px periwinkle dot, bold term then the detail (§13.5) */
+        .answers{list-style:none}
+        .answers li{position:relative;padding-left:22px;margin-bottom:9px;color:var(--ink-66)}
+        .answers li::before{content:"";position:absolute;left:4px;top:.58em;width:6px;height:6px;border-radius:50%;background:var(--cat)}
+        .answers strong{color:var(--ink);font-weight:600}
+
+        a:focus-visible,button:focus-visible,input:focus-visible{
+          outline:2px solid var(--action);outline-offset:3px;border-radius:6px;
+        }
+        .btn:focus-visible{outline:2px solid var(--action);outline-offset:2px}
+    </style>
+    <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">
-                <img src="logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
-                <span>FlipperHelper</span>
-            </a>
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="blog/">Blog</a>
-                <a href="/tools/">Tools</a>
-                <a href="/compare/">Compare</a>
-                <a href="faq.html">FAQ</a>
-            </div>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ======================= NAV ======================= -->
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+      FlipperHelper
+    </a>
+    <div class="nav-links">
+        <a href="/tools/">Free tools</a>
+        <a href="/compare/">Compare</a>
+        <a href="/#workbench">What's next</a>
+        <a href="/blog/">Blog</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/about.html">About</a>
+        <a class="btn btn-primary" href="/#get">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ======================= PAGE HEAD ======================= -->
+<header class="page-head">
+  <div class="wrap">
+    <h1>FlipperHelper Alternatives</h1>
+    <p class="head-updated">Last updated: 6 May 2026</p>
+  </div>
+</header>
+
+<!-- ======================= DECISION TREE ======================= -->
+<section aria-labelledby="decision-tree">
+  <div class="wrap reveal">
+    <span class="eyebrow">Start here</span>
+    <h2 class="section-title" id="decision-tree">Quick decision tree</h2>
+    <ul class="answers measure">
+      <li><strong>Need Android or web?</strong> &rarr; <a href="#flippd">Flippd</a> (multi-platform tracker)</li>
+      <li><strong>Need cross-listing across eBay / Vinted / Poshmark / Facebook?</strong> &rarr; <a href="#vendoo">Vendoo</a> or List Perfectly (different category — see <a href="blog/flipperhelper-vs-flippd-vs-vendoo.html">tracker vs cross-lister</a>)</li>
+      <li><strong>Want zero cost and don&rsquo;t mind manual setup?</strong> &rarr; <a href="#sheets">Google Sheets</a> with the <a href="blog/reselling-spreadsheet-template-uk.html">free FlipperHelper template</a></li>
+      <li><strong>Need built-in barcode scanning and eBay sold-price lookup?</strong> &rarr; <a href="#flippd">Flippd</a></li>
+      <li><strong>Have fewer than 30 active items?</strong> &rarr; <a href="#paper">Paper notebook</a> (genuinely fine at that scale)</li>
+      <li><strong>Use iPhone and source at car boots / charity shops with no signal?</strong> &rarr; FlipperHelper is built for that case</li>
+    </ul>
+  </div>
+</section>
+
+<hr class="tear">
+
+<!-- ======================= FLIPPD ======================= -->
+<section aria-labelledby="flippd">
+  <div class="wrap reveal">
+    <span class="eyebrow">Alternative</span>
+    <h2 class="section-title" id="flippd">Flippd</h2>
+    <div class="pro-card">
+      <p class="pro-intro"><strong>Best for:</strong> resellers who need multi-platform support (iOS / Android / web) or built-in price research.</p>
+      <dl class="pro-rows">
+        <div class="pro-row">
+          <dt class="k">Positioning</dt>
+          <dd class="v">Inventory and profit tracker, similar core idea to FlipperHelper</dd>
         </div>
-    </nav>
-
-    <main class="legal-page">
-        <div class="container">
-            <article class="legal-content">
-                <h1>FlipperHelper Alternatives</h1>
-                <p class="legal-updated">Last updated: 6 May 2026</p>
-
-                <section>
-                    <h2>Quick decision tree</h2>
-                    <ul>
-                        <li><strong>Need Android or web?</strong> &rarr; <a href="#flippd">Flippd</a> (multi-platform tracker)</li>
-                        <li><strong>Need cross-listing across eBay / Vinted / Poshmark / Facebook?</strong> &rarr; <a href="#vendoo">Vendoo</a> or List Perfectly (different category — see <a href="blog/flipperhelper-vs-flippd-vs-vendoo.html">tracker vs cross-lister</a>)</li>
-                        <li><strong>Want zero cost and don&rsquo;t mind manual setup?</strong> &rarr; <a href="#sheets">Google Sheets</a> with the <a href="blog/reselling-spreadsheet-template-uk.html">free FlipperHelper template</a></li>
-                        <li><strong>Need built-in barcode scanning and eBay sold-price lookup?</strong> &rarr; <a href="#flippd">Flippd</a></li>
-                        <li><strong>Have fewer than 30 active items?</strong> &rarr; <a href="#paper">Paper notebook</a> (genuinely fine at that scale)</li>
-                        <li><strong>Use iPhone and source at car boots / charity shops with no signal?</strong> &rarr; FlipperHelper is built for that case</li>
-                    </ul>
-                </section>
-
-                <section id="flippd">
-                    <h2>Flippd</h2>
-                    <p><strong>Best for:</strong> resellers who need multi-platform support (iOS / Android / web) or built-in price research.</p>
-                    <ul>
-                        <li>Inventory and profit tracker, similar core idea to FlipperHelper</li>
-                        <li>Built-in barcode scanning + image-based eBay sold-price lookup</li>
-                        <li>QR label printing for inventory organisation</li>
-                        <li>Free tier: 20 items <em>lifetime</em> (not monthly)</li>
-                        <li>Paid: $9.99/month flat, unlimited items</li>
-                    </ul>
-                    <p><strong>Trade-off vs FlipperHelper:</strong> Flippd is paid above 20 items; FlipperHelper is free. Flippd has price research; FlipperHelper has Hauls (per-trip profit grouping). Full breakdown in the <a href="blog/flipperhelper-vs-flippd-vs-vendoo.html">three-app comparison</a>.</p>
-                </section>
-
-                <section id="vendoo">
-                    <h2>Vendoo (different category)</h2>
-                    <p><strong>Best for:</strong> resellers who list on 3+ platforms and spend hours copying listings.</p>
-                    <ul>
-                        <li>Create a listing once, push to eBay, Vinted, Poshmark, Mercari, Facebook Marketplace, etc.</li>
-                        <li>Auto-delists from other platforms when item sells</li>
-                        <li>Free tier: 3 new listings per month</li>
-                        <li>Paid plans: $8.99/month (25 listings) to $69.99/month (unlimited)</li>
-                    </ul>
-                    <p><strong>Important:</strong> Vendoo is not a profit tracker. It doesn&rsquo;t track expenses, mileage, entry fees, or real profit. It solves &ldquo;how do I list faster?&rdquo;, not &ldquo;am I making money?&rdquo;. Many resellers use one of each.</p>
-                </section>
-
-                <section id="sheets">
-                    <h2>Google Sheets (free, manual)</h2>
-                    <p><strong>Best for:</strong> resellers who want zero cost, full control of the data format, and don&rsquo;t mind manual entry.</p>
-                    <ul>
-                        <li>Free, accessible from any device with a browser</li>
-                        <li>Customisable column layout, formulas, charts</li>
-                        <li>Easy to back up, export, and share with an accountant</li>
-                        <li>Can use the <a href="blog/reselling-spreadsheet-template-uk.html">free FlipperHelper template</a> as a starting point</li>
-                    </ul>
-                    <p><strong>Trade-off vs FlipperHelper:</strong> no offline-first mobile entry at the car boot, no photos attached to rows, no automatic profit calculations after fees, and you have to remember to update three places (purchases / listings / sales) when one item moves through the pipeline.</p>
-                </section>
-
-                <section id="paper">
-                    <h2>Pen and paper</h2>
-                    <p><strong>Best for:</strong> resellers with fewer than ~30 active items, or anyone testing whether reselling is worth pursuing before committing to a system.</p>
-                    <p>If you only have 5&ndash;30 items at any one time, a paper notebook works fine. Where it falls apart: end-of-year tax preparation, multi-platform listing tracking, and remembering which items came from which sourcing trip.</p>
-                </section>
-
-                <section>
-                    <h2>Other options worth knowing about</h2>
-                    <ul>
-                        <li><strong>Notion or Airtable</strong> &mdash; flexible databases, good for multi-stage pipelines, but no native mobile-first reselling workflow.</li>
-                        <li><strong>List Perfectly</strong> &mdash; established cross-lister, similar problem space to Vendoo.</li>
-                        <li><strong>Resellr / ResellTrackr / Profit Prophet</strong> &mdash; smaller-niche profit trackers; feature sets vary.</li>
-                    </ul>
-                </section>
-
-                <section style="margin-top: 3em; text-align: center;">
-                    <p style="margin-bottom: 1.5em;">Still want to try FlipperHelper?</p>
-                    <span class="blog-store-links"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get it Free on Google Play</a></span>
-                </section>
-            </article>
+        <div class="pro-row">
+          <dt class="k">Price research</dt>
+          <dd class="v">Built-in barcode scanning + image-based eBay sold-price lookup</dd>
         </div>
-    </main>
-
-    <footer class="footer footer-compact">
-        <div class="container">
-            <div class="footer-row">
-                <p>&copy; 2025&ndash;2026 Oleksandr Prudnikov</p>
-                <div class="footer-links-inline">
-                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
-                    <a href="privacy.html">Privacy</a>
-                    <a href="terms.html">Terms</a>
-                    <a href="mailto:support@flipperhelper.app">Contact</a>
-                </div>
-            </div>
+        <div class="pro-row">
+          <dt class="k">Labels</dt>
+          <dd class="v">QR label printing for inventory organisation</dd>
         </div>
-    </footer>
-    <script data-goatcounter="https://grommash9.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+        <div class="pro-row">
+          <dt class="k">Free tier</dt>
+          <dd class="v">20 items <em>lifetime</em> (not monthly)</dd>
+        </div>
+        <div class="pro-row">
+          <dt class="k">Paid</dt>
+          <dd class="v">$9.99/month flat, unlimited items</dd>
+        </div>
+      </dl>
+      <p class="pro-foot"><i></i><strong>Trade-off vs FlipperHelper:</strong> Flippd is paid above 20 items; FlipperHelper is free. Flippd has price research; FlipperHelper has Hauls (per-trip profit grouping). Full breakdown in the <a href="blog/flipperhelper-vs-flippd-vs-vendoo.html">three-app comparison</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= VENDOO ======================= -->
+<section aria-labelledby="vendoo">
+  <div class="wrap reveal">
+    <span class="eyebrow">Alternative</span>
+    <h2 class="section-title" id="vendoo">Vendoo (different category)</h2>
+    <div class="pro-card">
+      <p class="pro-intro"><strong>Best for:</strong> resellers who list on 3+ platforms and spend hours copying listings.</p>
+      <dl class="pro-rows">
+        <div class="pro-row">
+          <dt class="k">Cross-listing</dt>
+          <dd class="v">Create a listing once, push to eBay, Vinted, Poshmark, Mercari, Facebook Marketplace, etc.</dd>
+        </div>
+        <div class="pro-row">
+          <dt class="k">Auto-delist</dt>
+          <dd class="v">Auto-delists from other platforms when item sells</dd>
+        </div>
+        <div class="pro-row">
+          <dt class="k">Free tier</dt>
+          <dd class="v">3 new listings per month</dd>
+        </div>
+        <div class="pro-row">
+          <dt class="k">Paid plans</dt>
+          <dd class="v">$8.99/month (25 listings) to $69.99/month (unlimited)</dd>
+        </div>
+      </dl>
+      <p class="pro-foot"><i></i><strong>Important:</strong> Vendoo is not a profit tracker. It doesn&rsquo;t track expenses, mileage, entry fees, or real profit. It solves &ldquo;how do I list faster?&rdquo;, not &ldquo;am I making money?&rdquo;. Many resellers use one of each.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= GOOGLE SHEETS ======================= -->
+<section aria-labelledby="sheets">
+  <div class="wrap reveal">
+    <span class="eyebrow">Alternative</span>
+    <h2 class="section-title" id="sheets">Google Sheets (free, manual)</h2>
+    <div class="pro-card">
+      <p class="pro-intro"><strong>Best for:</strong> resellers who want zero cost, full control of the data format, and don&rsquo;t mind manual entry.</p>
+      <dl class="pro-rows">
+        <div class="pro-row">
+          <dt class="k">Cost</dt>
+          <dd class="v">Free, accessible from any device with a browser</dd>
+        </div>
+        <div class="pro-row">
+          <dt class="k">Flexibility</dt>
+          <dd class="v">Customisable column layout, formulas, charts</dd>
+        </div>
+        <div class="pro-row">
+          <dt class="k">Backup</dt>
+          <dd class="v">Easy to back up, export, and share with an accountant</dd>
+        </div>
+        <div class="pro-row">
+          <dt class="k">Template</dt>
+          <dd class="v">Can use the <a href="blog/reselling-spreadsheet-template-uk.html">free FlipperHelper template</a> as a starting point</dd>
+        </div>
+      </dl>
+      <p class="pro-foot"><i></i><strong>Trade-off vs FlipperHelper:</strong> no offline-first mobile entry at the car boot, no photos attached to rows, no automatic profit calculations after fees, and you have to remember to update three places (purchases / listings / sales) when one item moves through the pipeline.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PEN AND PAPER ======================= -->
+<section aria-labelledby="paper">
+  <div class="wrap reveal">
+    <span class="eyebrow">Alternative</span>
+    <h2 class="section-title" id="paper">Pen and paper</h2>
+    <div class="pro-card">
+      <p class="pro-intro"><strong>Best for:</strong> resellers with fewer than ~30 active items, or anyone testing whether reselling is worth pursuing before committing to a system.</p>
+      <p class="pro-foot"><i></i>If you only have 5&ndash;30 items at any one time, a paper notebook works fine. Where it falls apart: end-of-year tax preparation, multi-platform listing tracking, and remembering which items came from which sourcing trip.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="tear">
+
+<!-- ======================= OTHER OPTIONS ======================= -->
+<section aria-labelledby="other-options">
+  <div class="wrap reveal">
+    <span class="eyebrow">More options</span>
+    <h2 class="section-title" id="other-options">Other options worth knowing about</h2>
+    <ul class="answers measure">
+      <li><strong>Notion or Airtable</strong> &mdash; flexible databases, good for multi-stage pipelines, but no native mobile-first reselling workflow.</li>
+      <li><strong>List Perfectly</strong> &mdash; established cross-lister, similar problem space to Vendoo.</li>
+      <li><strong>Resellr / ResellTrackr / Profit Prophet</strong> &mdash; smaller-niche profit trackers; feature sets vary.</li>
+    </ul>
+  </div>
+</section>
+
+<hr class="tear">
+
+<!-- ======================= FAQ ======================= -->
+<section id="faq" aria-labelledby="faq-title">
+  <div class="wrap reveal">
+    <span class="eyebrow">Common questions</span>
+    <h2 class="section-title" id="faq-title">FAQ</h2>
+    <div class="faq">
+      <details>
+        <summary>What are the best alternatives to FlipperHelper?</summary>
+        <p>It depends on what problem you're solving. If you need a web app, FlipperHelper is mobile only (iOS and Android) — Flippd also works on web. If you need cross-listing (one listing pushed to many marketplaces), Vendoo and List Perfectly are the established tools. If you want a free option and don't mind manual setup, a Google Sheets template can work indefinitely. If you have fewer than 30 active items, even pen and paper is viable.</p>
+      </details>
+      <details>
+        <summary>Is Flippd or FlipperHelper better?</summary>
+        <p>Flippd is multi-platform (iOS, Android, web) and has built-in price research (barcode scanning, image-based eBay sold-price lookups). It's $9.99/month with a free tier capped at 20 items lifetime. FlipperHelper is on iOS and Android and has no built-in price research, but it's free, offline-first, has Hauls (per-trip profit grouping), and tracks 16 selling platforms. Choose Flippd if you need price research or a web app; choose FlipperHelper if you source at car boots without signal and want zero subscription cost.</p>
+      </details>
+      <details>
+        <summary>Is Vendoo a FlipperHelper alternative?</summary>
+        <p>Not really — they solve different problems. Vendoo is a cross-lister: it pushes one listing to multiple marketplaces and auto-delists when an item sells. FlipperHelper is a profit tracker: it logs purchases, expenses, and real profit per item. Many serious resellers eventually use both — a tracker for the money side and a cross-lister for the listing side. See the <a href="blog/flipperhelper-vs-flippd-vs-vendoo.html">FlipperHelper vs Flippd vs Vendoo comparison</a> for details.</p>
+      </details>
+      <details>
+        <summary>Can I use Google Sheets instead of a reseller app?</summary>
+        <p>Yes — many resellers track their inventory in Google Sheets or Excel for years. The advantages: free, fully under your control, easy to back up and customise. The disadvantages: no offline mobile entry at car boots, no photos attached to rows, no automatic profit calculations after fees, and you have to remember to update three places when a single sale happens. There's a <a href="blog/reselling-spreadsheet-template-uk.html">free reselling spreadsheet template</a> on the FlipperHelper blog that you can use as a starting point.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<hr class="tear">
+
+<!-- ======================= FINAL ======================= -->
+<section class="final" aria-labelledby="final-title">
+  <div class="wrap">
+    <h2 id="final-title">Still want to try FlipperHelper?</h2>
+    <p>Free on iOS 17+ and Android 8+. Works offline from the first minute.</p>
+    <div class="store-row">
+      <a class="btn btn-primary" href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="17" height="17"><path d="M16.4 12.9c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.6.9-.7 0-1.9-.9-3.1-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.7 0 0-2.4-.9-2.3-3.7zM14.2 5.9c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.2-.6 2.8-1.4z"/></svg>Download Free on the App Store</a>
+      <a class="btn btn-primary" href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="17" height="17"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.6 2.3zM16.2 15.6l-3.1-3.1v-.2l3.1-3.1.1.1 3.7 2.1c1 .6 1 1.6 0 2.2l-3.8 2zM15.9 15.9l-3.2-3.2-9.1 9.1c.3.4.9.4 1.5.1l10.8-6M15.9 8.1L5.1 2c-.6-.3-1.2-.3-1.5.1l9.1 9.1 3.2-3.1z"/></svg>Get it Free on Google Play</a>
+    </div>
+    <div class="trust-trio">
+      <span><i></i>Works offline</span>
+      <span><i></i>10 seconds per find</span>
+      <span><i></i>Real profit after every fee</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="ft-c3">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-left foot-col">
+        <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+        <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+        <h4>Follow</h4>
+        <nav class="row-nav" aria-label="Footer — follow">
+          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Product</h4>
+        <nav aria-label="Footer — product">
+          <a href="/flipperhelper-pricing.html">Pricing</a>
+          <a href="/tools/">Free tools</a>
+          <a href="/compare/">Compare apps</a>
+          <a href="/changelog.html">Changelog</a>
+          <a href="/sources.html">Supported platforms</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <nav aria-label="Footer — company">
+          <a href="/about.html">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/press/">Press kit</a>
+          <a href="/is-flipperhelper-legit.html">Is FlipperHelper legit?</a>
+          <a href="/flipperhelper-review.html">Review</a>
+        </nav>
+      </div>
+      <div class="foot-col">
+        <h4>Help &amp; legal</h4>
+        <nav aria-label="Footer — help and legal">
+          <a href="mailto:support@flipperhelper.app">Support</a>
+          <a href="/faq.html">FAQ</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Community at <a href="https://www.reddit.com/r/flipperhelper/">r/flipperhelper</a></span>
+      <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* reveal (§10) */
+(function(){
+  var rev = [].slice.call(document.querySelectorAll('.reveal'));
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches){
+    rev.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:.12});
+    rev.forEach(function(el){ io.observe(el); });
+  }
+})();
+</script>
+<script data-goatcounter="https://grommash9.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

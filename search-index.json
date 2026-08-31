@@ -1,8 +1,8 @@
 [
   {
     "url": "/",
-    "title": "FlipperHelper — Inventory & Profit Tracker for Resellers",
-    "description": "Free reselling app for iPhone and Android. Track inventory across 16 platforms and see real profit after every expense. Works offline.",
+    "title": "FlipperHelper — Real Profit Tracker for Resellers Who Source In Person",
+    "description": "Free inventory & profit tracker for car boot, charity shop and flea market resellers. Real profit after every fee, works offline. iPhone & Android.",
     "type": "home"
   },
   {
@@ -13,8 +13,8 @@
   },
   {
     "url": "/faq.html",
-    "title": "FAQ - FlipperHelper | Everything About the Reseller Tracking App",
-    "description": "46 questions answered about FlipperHelper, the free iOS and Android profit tracker for UK resellers. Items, hauls, expenses, multi-currency, 16 platforms.",
+    "title": "FAQ — FlipperHelper | Everything About the Reseller Tracking App",
+    "description": "55 questions answered about FlipperHelper, the free iOS and Android profit tracker for resellers who source in person. Features, offline use, backups, multi-currency, tax records and how it compares.",
     "type": "page"
   },
   {
@@ -50,7 +50,7 @@
   {
     "url": "/flipperhelper-pricing.html",
     "title": "FlipperHelper Pricing (2026): Free Now, Honest About Future Paid Tier",
-    "description": "FlipperHelper is free as of May 2026 — no ads, no subscription, no account. A paid eBay API tier is planned. Existing free features will stay free.",
+    "description": "FlipperHelper is free as of Aug 2026 — no ads, subscription, or account. Pro (eBay sync, web portal, multi-device) planned; existing features stay free.",
     "type": "page"
   },
   {
@@ -97,8 +97,8 @@
   },
   {
     "url": "/blog/index.html",
-    "title": "Blog - FlipperHelper | Tips, Guides & Updates for Resellers",
-    "description": "FlipperHelper blog — reselling tips, profit tracking guides, car boot sale strategies, and app updates. Everything you need to flip smarter.",
+    "title": "Blog — FlipperHelper | Tips, Guides & Updates for Resellers",
+    "description": "Tips, guides and updates for resellers who flip items for profit — car boot sourcing, eBay and Vinted selling, fees, tax, and news from the FlipperHelper app.",
     "type": "post"
   },
   {

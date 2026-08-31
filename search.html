@@ -7,7 +7,10 @@
     <title>Search - FlipperHelper</title>
     <meta name="description" content="Search FlipperHelper articles, guides, and FAQs about reselling on eBay, Vinted, Facebook Marketplace, car boot sales, charity shops, and more.">
     <link rel="icon" type="image/svg+xml" href="logo_FH.svg">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&amp;family=Roboto+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/landing.css">
     <link rel="canonical" href="https://flipperhelper.app/search.html">
     <meta name="robots" content="noindex, follow">
     <meta property="og:type" content="website">
@@ -18,74 +21,138 @@
     <meta property="og:site_name" content="FlipperHelper">
     <meta property="og:locale" content="en_GB">
     <style>
-        .search-page { min-height: 100vh; padding-top: calc(80px + var(--space-3xl)); padding-bottom: var(--space-4xl); }
-        .search-input-wrap { margin: 1.5rem 0 2rem; }
-        .search-input {
-            width: 100%; padding: 0.9rem 1rem; font-size: 1.1rem;
-            border: 2px solid #e0e0e0; border-radius: 8px;
-            font-family: inherit; box-sizing: border-box;
+        /* ---- page-specific: everything else comes from /landing.css ---- */
+        .page-head{padding:64px 0 0}
+        @media(max-width:720px){.page-head{padding:44px 0 0}}
+        .page-head h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px;max-width:760px}
+        .page-head .section-lede{margin-bottom:24px;max-width:640px}
+
+        /* input — faq.html's .faq-search pattern (icon + inset-shadow field) */
+        .search-input-wrap{position:relative;max-width:520px;margin:0 0 28px}
+        .search-input-wrap svg{
+            position:absolute;left:14px;top:50%;transform:translateY(-50%);
+            width:16px;height:16px;stroke:var(--ink-45);fill:none;stroke-width:1.8;
+            stroke-linecap:round;stroke-linejoin:round;pointer-events:none;
         }
-        .search-input:focus { outline: none; border-color: #334B90; }
-        .search-meta { color: #666; font-size: 0.95rem; margin: 0.5rem 0 1.5rem; }
-        .search-results { list-style: none; padding: 0; margin: 0; }
-        .search-result { padding: 1rem 0; border-bottom: 1px solid #eee; }
-        .search-result a { color: #334B90; text-decoration: none; font-weight: 600; font-size: 1.1rem; }
-        .search-result a:hover { text-decoration: underline; }
-        .search-result .result-url { color: #888; font-size: 0.85rem; margin: 0.25rem 0; word-break: break-all; }
-        .search-result .result-desc { color: #444; margin: 0.4rem 0 0; line-height: 1.5; }
-        .search-result mark { background: #F9DDA5; color: inherit; padding: 0 2px; border-radius: 2px; }
-        .search-empty { color: #666; padding: 1.5rem 0; }
-        .search-tag { display: inline-block; padding: 2px 8px; font-size: 0.75rem; background: #BBCBF7; color: #1a2a5a; border-radius: 3px; margin-right: 0.5rem; vertical-align: middle; }
+        .search-input{
+            width:100%;background:var(--card);border:1px solid var(--line-strong);
+            border-radius:12px;padding:11px 16px 11px 40px;color:var(--ink);
+            font-size:var(--fs-md);font-family:var(--font-body);box-sizing:border-box;
+            box-shadow:inset 2px 2px 8px rgba(174,174,174,.18), inset -2px -2px 8px rgba(255,255,255,.7);
+        }
+        .search-input::placeholder{color:var(--ink-30)}
+        .search-input:focus{outline:2px solid var(--action);outline-offset:1px;border-color:transparent}
+
+        .search-meta{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);margin:0 0 22px}
+
+        .search-results{list-style:none;padding:0;margin:0}
+        .search-result{padding:18px 0;border-bottom:1px solid var(--line)}
+        .search-result:first-child{padding-top:0}
+        .search-result a{color:var(--action);text-decoration:none;font-weight:600;font-size:var(--fs-md)}
+        .search-result a:hover{text-decoration:underline}
+        .search-result .result-url{color:var(--ink-45);font-size:var(--fs-2xs);margin:4px 0;word-break:break-all}
+        .search-result .result-desc{color:var(--ink-66);font-size:var(--fs-sm);margin:6px 0 0;line-height:1.55}
+        .search-result mark{background:rgba(187,203,247,.6);color:inherit;padding:0 2px;border-radius:2px}
+        .search-empty{color:var(--ink-45);font-size:var(--fs-sm);padding:24px 0}
+
+        .search-tag{
+            display:inline-block;font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+            color:var(--ink-66);border:1.5px solid var(--line-strong);border-radius:999px;
+            padding:3px 10px;margin-right:10px;vertical-align:middle;
+        }
     </style>
 </head>
 <body>
     <a href="#main-content" class="visually-hidden">Skip to content</a>
-    <nav class="nav" aria-label="Main navigation">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">
-                <img src="logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
-                <span>FlipperHelper</span>
-            </a>
-            <div class="nav-links">
-                <a href="faq.html">FAQ</a>
-                <a href="blog/">Blog</a>
-                <a href="/tools/">Tools</a>
-                <a href="/compare/">Compare</a>
-                <a href="/#download" class="btn btn-small">Get the App</a>
-            </div>
+    <nav class="nav" aria-label="Main">
+      <div class="nav-inner">
+        <a class="brand" href="/">
+          <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+          FlipperHelper
+        </a>
+        <div class="nav-links">
+            <a href="/tools/">Free tools</a>
+            <a href="/compare/">Compare</a>
+            <a href="/#workbench">What's next</a>
+            <a href="/blog/">Blog</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/about.html">About</a>
+            <a class="btn btn-primary" href="/#get">Get the App</a>
         </div>
+      </div>
     </nav>
 
-    <main id="main-content" class="search-page">
-        <div class="container">
-            <h1>Search FlipperHelper</h1>
-            <p>Find articles, guides, and answers across the whole site.</p>
-            <div class="search-input-wrap">
-                <label for="search-q" class="visually-hidden">Search query</label>
-                <input id="search-q" class="search-input" type="search"
-                       placeholder="Try: vinted fees, car boot, hmrc, ebay…"
-                       autocomplete="off" autofocus>
+    <main id="main-content">
+        <header class="page-head">
+            <div class="wrap">
+                <span class="eyebrow">Search</span>
+                <h1>Search FlipperHelper</h1>
+                <p class="section-lede">Find articles, guides, and answers across the whole site.</p>
             </div>
-            <p id="search-meta" class="search-meta" aria-live="polite"></p>
-            <ul id="search-results" class="search-results" role="list"></ul>
-            <p id="search-empty" class="search-empty" hidden>No results. Try different keywords or <a href="blog/">browse the blog</a>.</p>
-        </div>
+        </header>
+        <section aria-label="Search results">
+            <div class="wrap">
+                <div class="search-input-wrap">
+                    <label for="search-q" class="visually-hidden">Search query</label>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+                    <input id="search-q" class="search-input" type="search"
+                           placeholder="Try: vinted fees, car boot, hmrc, ebay…"
+                           autocomplete="off" autofocus>
+                </div>
+                <p id="search-meta" class="search-meta" aria-live="polite"></p>
+                <ul id="search-results" class="search-results" role="list"></ul>
+                <p id="search-empty" class="search-empty" hidden>No results. Try different keywords or <a href="blog/">browse the blog</a>.</p>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer footer-compact" role="contentinfo">
-        <div class="container">
-            <div class="footer-row">
-                <p>&copy; 2025–2026 Oleksandr Prudnikov</p>
-                <div class="footer-links-inline">
-                    <a href="https://www.instagram.com/flipperhelper" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">Reddit</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="privacy.html">Privacy</a>
-                    <a href="terms.html">Terms</a>
-                    <a href="mailto:support@flipperhelper.app">Contact</a>
-                </div>
-            </div>
+    <footer class="ft-c3">
+      <div class="wrap">
+        <div class="foot-grid">
+          <div class="foot-left foot-col">
+            <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+            <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+            <h4>Follow</h4>
+            <nav class="row-nav" aria-label="Footer — follow">
+              <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+              <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+            </nav>
+          </div>
+          <div class="foot-col">
+            <h4>Product</h4>
+            <nav aria-label="Footer — product">
+              <a href="/flipperhelper-pricing.html">Pricing</a>
+              <a href="/tools/">Free tools</a>
+              <a href="/compare/">Compare apps</a>
+              <a href="/changelog.html">Changelog</a>
+              <a href="/sources.html">Supported platforms</a>
+            </nav>
+          </div>
+          <div class="foot-col">
+            <h4>Company</h4>
+            <nav aria-label="Footer — company">
+              <a href="/about.html">About</a>
+              <a href="/blog/">Blog</a>
+              <a href="/press/">Press kit</a>
+              <a href="/is-flipperhelper-legit.html">Is FlipperHelper legit?</a>
+              <a href="/flipperhelper-review.html">Review</a>
+            </nav>
+          </div>
+          <div class="foot-col">
+            <h4>Help &amp; legal</h4>
+            <nav aria-label="Footer — help and legal">
+              <a href="mailto:support@flipperhelper.app">Support</a>
+              <a href="/faq.html">FAQ</a>
+              <a href="/privacy.html">Privacy</a>
+              <a href="/terms.html">Terms</a>
+            </nav>
+          </div>
         </div>
+        <div class="foot-bottom">
+          <span>Community at <a href="https://www.reddit.com/r/flipperhelper/">r/flipperhelper</a></span>
+          <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+        </div>
+      </div>
     </footer>
 
     <script>

@@ -7,36 +7,71 @@
     <title>Privacy Policy - FlipperHelper</title>
     <meta name="description" content="Privacy Policy for FlipperHelper app">
     <link rel="icon" type="image/svg+xml" href="logo_FH.svg">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" href="/logo_FH.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&amp;family=Roboto+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/landing.css">
+    <link rel="canonical" href="https://flipperhelper.app/privacy.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy - FlipperHelper">
+    <meta property="og:description" content="Privacy Policy for FlipperHelper app">
+    <meta property="og:url" content="https://flipperhelper.app/privacy.html">
+    <meta property="og:site_name" content="FlipperHelper">
+    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Privacy Policy - FlipperHelper">
+    <meta name="twitter:description" content="Privacy Policy for FlipperHelper app">
+    <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+    <style>
+    /* page-specific: skip link, not in landing.css yet */
+    .skip{
+        position:absolute;left:-9999px;top:0;z-index:200;
+        font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
+        background:var(--card);color:var(--ink);border:1px solid var(--line-strong);
+        border-radius:12px;padding:10px 16px;box-shadow:var(--neu-soft);
+    }
+    .skip:focus{left:24px;top:8px;text-decoration:none}
+
+    /* legal clauses run short — the article default (48px) dwarfs a 2-3 line
+       section, so this page tightens the divider gap on its own */
+    .post hr.tear{margin:28px auto}
+    </style>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">
-                <img src="logo_FH.svg" alt="FlipperHelper" class="nav-logo-img">
-                <span>FlipperHelper</span>
-            </a>
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="/tools/">Tools</a>
-                <a href="/compare/">Compare</a>
-                <a href="faq.html">FAQ</a>
-                <a href="terms.html">Terms</a>
-            </div>
+    <a class="skip" href="#main">Skip to content</a>
+    <nav class="nav" aria-label="Main">
+      <div class="nav-inner">
+        <a class="brand" href="/">
+          <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+          FlipperHelper
+        </a>
+        <div class="nav-links">
+            <a href="/tools/">Free tools</a>
+            <a href="/compare/">Compare</a>
+            <a href="/#workbench">What's next</a>
+            <a href="/blog/">Blog</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/about.html">About</a>
+            <a class="btn btn-primary" href="/#get">Get the App</a>
         </div>
+      </div>
     </nav>
 
-    <main class="legal-page">
-        <div class="container">
-            <article class="legal-content">
+    <main class="post" id="main">
+        <div class="wrap">
+            <article>
+                <a href="/" class="post-back">&larr; Back home</a>
                 <h1>Privacy Policy</h1>
-                <p class="legal-updated">Last updated: August 11, 2026</p>
+                <p class="post-updated">Last updated: August 11, 2026</p>
 
                 <section>
                     <h2>Introduction</h2>
                     <p>FlipperHelper ("we", "our", or "us") is operated by Oleksandr Prudnikov, a sole trader registered in the United Kingdom. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application ("FlipperHelper" or the "App").</p>
                     <p>We are committed to protecting your privacy and being transparent about our data practices. This policy applies to users in the United States, United Kingdom, European Union, and all other regions where the App is available.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Information We Collect</h2>
@@ -72,6 +107,8 @@
                     </ul>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>How We Use Your Information</h2>
                     <p>We use your information solely to provide the App's functionality:</p>
@@ -86,6 +123,8 @@
                     </ul>
                     <p>We do <strong>not</strong> use your data for advertising, profiling, or any purpose other than providing the App's features.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Data Storage and Security</h2>
@@ -113,6 +152,8 @@
                     <p>If you create a FlipperHelper Pro account, the information listed under "FlipperHelper Pro (Optional Cloud Sync)" above is stored on our behalf using Amazon Web Services (AWS) infrastructure, rather than only on your device, so it can sync across your devices. This data is encrypted in transit, and sensitive fields such as your eBay authorization token are also encrypted at rest. Photos remain stored locally on your device and, if enabled, in your own Google Drive—they are not uploaded to our servers.</p>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Data Sharing</h2>
                     <p>We do <strong>not</strong> sell, rent, or share your personal data with third parties. Your data only leaves your device in these circumstances:</p>
@@ -124,6 +165,8 @@
                         <li><strong>Amazon Web Services (Pro):</strong> If you create a Pro account, your account and reselling data are hosted on AWS infrastructure, which processes it on our behalf and does not use it for its own purposes.</li>
                     </ul>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Your Rights</h2>
@@ -168,6 +211,8 @@
                     </ul>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Data Retention</h2>
                     <p>Outside of the optional FlipperHelper Pro tier described below, your data remains on your device until you delete it or uninstall the App, and we do not retain any copies of it on external servers.</p>
@@ -179,10 +224,14 @@
                     <p>If you have a FlipperHelper Pro account, your account and reselling records are retained on our servers for as long as your account remains active, and are permanently deleted once you request deletion as described in "Your Rights" above.</p>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Children's Privacy</h2>
                     <p>FlipperHelper is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Third-Party Services</h2>
@@ -216,10 +265,14 @@
                     <p>If you connect your eBay account, FlipperHelper uses eBay's APIs to identify your account and receive notifications about your own listings and sales. eBay's privacy policy: <a href="https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy" target="_blank" rel="noopener">https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy</a></p>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Changes to This Policy</h2>
                     <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the App or by updating the "Last updated" date. Your continued use of the App after changes constitutes acceptance of the updated policy.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Contact Us</h2>
@@ -234,29 +287,53 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="logo_FH.svg" alt="FlipperHelper" class="footer-logo">
-                    <p>Track purchases. List everywhere. Know your profits.</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h4>Legal</h4>
-                        <a href="privacy.html">Privacy Policy</a>
-                        <a href="terms.html">Terms of Service</a>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Contact</h4>
-                        <a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Oleksandr Prudnikov. All rights reserved.</p>
-            </div>
+    <footer class="ft-c3">
+      <div class="wrap">
+        <div class="foot-grid">
+          <div class="foot-left foot-col">
+            <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+            <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+            <h4>Follow</h4>
+            <nav class="row-nav" aria-label="Footer — follow">
+              <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+              <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+            </nav>
+          </div>
+          <div class="foot-col">
+            <h4>Product</h4>
+            <nav aria-label="Footer — product">
+              <a href="/flipperhelper-pricing.html">Pricing</a>
+              <a href="/tools/">Free tools</a>
+              <a href="/compare/">Compare apps</a>
+              <a href="/changelog.html">Changelog</a>
+              <a href="/sources.html">Supported platforms</a>
+            </nav>
+          </div>
+          <div class="foot-col">
+            <h4>Company</h4>
+            <nav aria-label="Footer — company">
+              <a href="/about.html">About</a>
+              <a href="/blog/">Blog</a>
+              <a href="/press/">Press kit</a>
+              <a href="/is-flipperhelper-legit.html">Is FlipperHelper legit?</a>
+              <a href="/flipperhelper-review.html">Review</a>
+            </nav>
+          </div>
+          <div class="foot-col">
+            <h4>Help &amp; legal</h4>
+            <nav aria-label="Footer — help and legal">
+              <a href="mailto:support@flipperhelper.app">Support</a>
+              <a href="/faq.html">FAQ</a>
+              <a href="/privacy.html">Privacy</a>
+              <a href="/terms.html">Terms</a>
+            </nav>
+          </div>
         </div>
+        <div class="foot-bottom">
+          <span>Community at <a href="https://www.reddit.com/r/flipperhelper/">r/flipperhelper</a></span>
+          <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+        </div>
+      </div>
     </footer>
     <script data-goatcounter="https://grommash9.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
