@@ -36,6 +36,8 @@
   --fs-h3:1.05rem;   /* card titles */
   --fs-h3-lg:1.25rem;/* feature-card title */
   --fs-xl:1.2rem;    /* large ui accents */
+
+  --measure:900px;   /* single prose/table text measure — shared with blog/article.css */
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -69,6 +71,102 @@ section#get{padding-bottom:46px} /* .revs carousel carries 22px internal bottom 
 .section-title{font-size:clamp(1.8rem,3.6vw,2.4rem);margin-bottom:12px;letter-spacing:-.02em}
 .section-lede{max-width:600px;font-size:var(--fs-lede);color:var(--ink-66);margin-bottom:38px;font-weight:400}
 .mono{font-family:var(--font-mono)}
+
+/* ============================================================
+   PROSE
+   Shared with blog/article.css's .post rules — kept in sync so any
+   root-level long-form page (legal, changelog, comparisons) can use
+   this single stylesheet instead of cross-importing the blog one.
+   ============================================================ */
+.post{padding:68px 0}
+@media(max-width:720px){.post{padding:48px 0}}
+.post-back{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;
+  letter-spacing:.08em;color:var(--action);
+  display:inline-block;margin-bottom:22px;
+}
+.post-updated{
+  font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);margin-bottom:12px;
+}
+.post h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.post section + section{margin-top:48px}
+.post hr.tear{margin:48px auto}
+.post h2{font-size:clamp(1.35rem,2.6vw,1.6rem);margin-bottom:14px}
+.post h3{font-size:var(--fs-lede);margin:26px 0 8px}
+.post h4{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);
+  margin:22px 0 6px;
+}
+.post p{margin-bottom:16px;color:var(--ink-66);max-width:var(--measure)}
+.post p:last-child{margin-bottom:0}
+.post strong{color:var(--ink);font-weight:600}
+.post em{font-style:italic}
+.post .store-row{margin:26px 0}
+.post code{
+  font-family:var(--font-mono);font-size:.9em;color:var(--ink);
+  background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 6px;
+}
+
+/* bullets — periwinkle marker, the site's quiet metadata colour */
+.post ul{list-style:none;margin:0 0 16px;max-width:var(--measure)}
+.post ul li{position:relative;padding-left:22px;margin-bottom:9px;color:var(--ink-66)}
+.post ul li::before{
+  content:"";position:absolute;left:4px;top:.58em;width:6px;height:6px;border-radius:50%;
+  background:var(--cat);
+}
+.post ul li:last-child{margin-bottom:0}
+.post li > ul{margin-top:9px;margin-bottom:0}
+
+/* numbered lists — mono blue digit in a periwinkle ring, matching the .moment dot */
+.post ol{list-style:none;margin:0 0 16px;max-width:var(--measure);counter-reset:step}
+.post ol > li{
+  position:relative;padding-left:32px;margin-bottom:9px;color:var(--ink-66);
+  counter-increment:step;
+}
+.post ol > li::before{
+  content:counter(step);position:absolute;left:0;top:.12em;
+  width:21px;height:21px;border:1px solid var(--cat);border-radius:50%;
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;color:var(--action);
+  display:flex;align-items:center;justify-content:center;
+}
+.post ol > li:last-child{margin-bottom:0}
+
+.post blockquote{border-left:3px solid var(--accent);padding:6px 0 6px 18px;margin:26px 0;max-width:var(--measure)}
+.post blockquote p{font-weight:700;font-size:var(--fs-lede);color:var(--ink);line-height:1.4;letter-spacing:-.01em}
+
+/* ---------- comparison table ----------
+   VARIATION of the .ledger card: same mono machine-layer keys and dashed
+   row rules; only the layout differs (three columns instead of a two-part row). */
+.cmp-wrap{overflow-x:auto;max-width:var(--measure)}
+.cmp{
+  width:100%;min-width:560px;border-collapse:collapse;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+  box-shadow:var(--neu-soft);
+}
+.cmp th,.cmp td{padding:14px 18px;text-align:left;vertical-align:top}
+.cmp thead th{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink);
+  background:var(--cat);
+}
+.cmp thead th:first-child{border-radius:var(--radius-md) 0 0 0}
+.cmp thead th:last-child{border-radius:0 var(--radius-md) 0 0}
+.cmp tbody th{
+  font-size:var(--fs-xs);font-weight:600;color:var(--ink);width:34%;white-space:nowrap;
+}
+@media(max-width:640px){.cmp tbody th{white-space:normal}}
+.cmp tbody td{font-size:var(--fs-sm);color:var(--ink-66)}
+.cmp tbody tr{border-top:1px dashed var(--line-strong)}
+.cmp tbody tr:first-child{border-top:none}
+.cmp tr.highlight-col td{color:#1FA234;font-weight:600}
+.cmp tbody tr > td:first-child{color:var(--ink);font-weight:600}
+.cmp tbody tr > td.col-header{
+  font-family:var(--font-mono);font-size:var(--fs-3xs);font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink);white-space:nowrap;
+}
+.cmp .profit-positive{color:#1FA234;font-weight:600;font-variant-numeric:tabular-nums}
+.post .cmp-wrap{margin:22px 0}
 
 .tear{
   border:none;height:1px;margin:0 auto;max-width:var(--max);

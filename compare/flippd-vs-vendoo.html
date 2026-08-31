@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-itunes-app" content="app-id=6759716745">
+    <meta name="color-scheme" content="light">
     <title>Flippd vs Vendoo: Which Reseller App Should You Choose? | FlipperHelper</title>
     <meta name="description" content="Flippd vs Vendoo: tracker vs cross-lister. Different problems, different tools. Honest comparison so you choose the right one.">
     <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&amp;family=Roboto+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="/footer.css">
-    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="/landing.css">
     <link rel="canonical" href="https://flipperhelper.app/compare/flippd-vs-vendoo.html">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Flippd vs Vendoo: Which Reseller App?">
@@ -155,8 +154,44 @@
     }
   ]
 }</script>
+    <style>
+/* ---- page-specific: everything else comes from /landing.css ---- */
+
+/* skip link — not in landing.css yet; sits above the sticky nav (z-index:100) */
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
+  background:var(--card);color:var(--ink);border:1px solid var(--line-strong);
+  border-radius:12px;padding:10px 16px;box-shadow:var(--neu-soft);
+}
+.skip:focus{left:24px;top:8px;text-decoration:none}
+
+/* page head — title + meta line, same recipe as the silver-hallmarks pages */
+.page-head{padding:64px 0 0}
+@media(max-width:720px){.page-head{padding:44px 0 0}}
+.page-head h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px;max-width:820px}
+.head-updated{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45);font-variant-numeric:tabular-nums}
+.backlink{display:inline-block;margin-top:14px;font-family:var(--font-mono);font-size:var(--fs-2xs);letter-spacing:.08em}
+
+.prose p{margin-bottom:16px}
+.prose p:last-child{margin-bottom:0}
+.section-title{margin-bottom:20px}
+
+/* the site's prose bullet: 6px periwinkle dot, bold term then the detail */
+.answers{list-style:none}
+.answers li{position:relative;padding-left:22px;margin-bottom:9px;color:var(--ink-66)}
+.answers li:last-child{margin-bottom:0}
+.answers li::before{content:"";position:absolute;left:4px;top:.58em;width:6px;height:6px;border-radius:50%;background:var(--cat)}
+.answers strong{color:var(--ink);font-weight:600}
+
+/* "X limitations" sub-heading between the two .answers lists — landing.css only
+   sets h3 spacing inside .post, and these sections aren't .post */
+.sub-title{font-size:var(--fs-lede);margin:26px 0 8px}
+    </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+
     <nav class="nav" aria-label="Main">
       <div class="nav-inner">
         <a class="brand" href="/">
@@ -165,7 +200,7 @@
         </a>
         <div class="nav-links">
             <a href="/tools/">Free tools</a>
-            <a href="/compare/">Compare</a>
+            <a href="/compare/" aria-current="page">Compare</a>
             <a href="/#workbench">What's next</a>
             <a href="/blog/">Blog</a>
             <a href="/faq.html">FAQ</a>
@@ -175,92 +210,156 @@
       </div>
     </nav>
 
-    <main class="legal-page">
-        <div class="container">
-            <article class="legal-content">
-                <h1>Flippd vs Vendoo: Which Reseller App?</h1>
-                <p class="legal-updated">Last verified: 2026-05-06</p>
+    <main id="main">
 
-                <section>
-                    <h2>Quick verdict</h2>
-                    <p><strong>These two apps solve different problems.</strong> Flippd is a inventory and profit tracker with price research; Vendoo is a cross-lister for online marketplaces. A tracker tells you whether you're making money; a cross-lister helps you list faster across multiple platforms.</p>
-                    <ul>
-                        <li><strong>Choose Flippd if:</strong> Resellers who need multi-platform support (iOS / Android / web), built-in barcode scanning, or eBay sold-price lookup before buying.</li>
-                        <li><strong>Choose Vendoo if:</strong> Resellers who list on 3+ platforms (eBay, Vinted, Poshmark, Mercari, Facebook Marketplace) and spend hours copying the same listing across them.</li>
-                        <li><strong>Many resellers use both</strong> — a tracker for the money side, a cross-lister for the listing side.</li>
-                    </ul>
-                </section>
+  <!-- ======================= PAGE HEAD ======================= -->
+  <header class="page-head">
+    <div class="wrap">
+      <h1>Flippd vs Vendoo: Which Reseller App?</h1>
+      <p class="head-updated">Last verified: 2026-05-06</p>
+      <a class="backlink" href="/compare/">&larr; Back to all comparisons</a>
+    </div>
+  </header>
 
-                <section>
-                    <h2>Side-by-side comparison</h2>
-                    <div style="overflow-x:auto;">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <thead>
-                                <tr style="background:#F9DDA5;">
-                                    <th style="padding:0.75rem 0.5rem;text-align:left;">Feature</th>
-                                    <th style="padding:0.75rem 0.5rem;">Flippd</th>
-                                    <th style="padding:0.75rem 0.5rem;">Vendoo</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td style="padding:0.5rem;border-bottom:1px solid #eee;"><strong>Category</strong></td><td style="padding:0.5rem;border-bottom:1px solid #eee;">Inventory and profit tracker with price research</td><td style="padding:0.5rem;border-bottom:1px solid #eee;">Cross-lister for online marketplaces</td></tr>
-                                <tr><td style="padding:0.5rem;border-bottom:1px solid #eee;"><strong>Platforms</strong></td><td style="padding:0.5rem;border-bottom:1px solid #eee;">iOS, Android, Web</td><td style="padding:0.5rem;border-bottom:1px solid #eee;">iOS, Android, Web</td></tr>
-                                <tr><td style="padding:0.5rem;border-bottom:1px solid #eee;"><strong>Free tier</strong></td><td style="padding:0.5rem;border-bottom:1px solid #eee;">Free up to 20 items lifetime</td><td style="padding:0.5rem;border-bottom:1px solid #eee;">Free tier: 3 new listings per month</td></tr>
-                                <tr><td style="padding:0.5rem;border-bottom:1px solid #eee;"><strong>Paid tier</strong></td><td style="padding:0.5rem;border-bottom:1px solid #eee;">$9.99/month flat (unlimited items)</td><td style="padding:0.5rem;border-bottom:1px solid #eee;">$8.99/month (25 listings) to $69.99/month (unlimited)</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
+  <div class="wrap"><hr class="tear"></div>
 
-                <section>
-                    <h2>What Flippd does well</h2>
-                    <ul>
-                        <li>Built-in barcode scanning</li>
-                        <li>Image-based eBay sold-price lookup</li>
-                        <li>QR label printing for inventory organisation</li>
-                        <li>Available on iOS, Android, and web</li>
-                        <li>Inventory and profit tracking core</li>
-                        <li>Flat-rate pricing, unlimited items on paid tier</li>
-                    </ul>
-                    <h3>Flippd limitations</h3>
-                    <ul>
-                        <li>Free tier capped at 20 items lifetime (not monthly)</li>
-                        <li>Subscription required for serious use</li>
-                        <li>No cross-listing — same as FlipperHelper, it tracks only</li>
-                    </ul>
-                </section>
+  <!-- ======================= QUICK VERDICT ======================= -->
+  <section id="verdict" aria-labelledby="verdict-title">
+    <div class="wrap">
+      <span class="eyebrow">Quick verdict</span>
+      <h2 class="section-title" id="verdict-title">Quick verdict</h2>
+      <div class="prose">
+        <p><strong>These two apps solve different problems.</strong> Flippd is a inventory and profit tracker with price research; Vendoo is a cross-lister for online marketplaces. A tracker tells you whether you're making money; a cross-lister helps you list faster across multiple platforms.</p>
+      </div>
+      <ul class="answers">
+        <li><strong>Choose Flippd if:</strong> Resellers who need multi-platform support (iOS / Android / web), built-in barcode scanning, or eBay sold-price lookup before buying.</li>
+        <li><strong>Choose Vendoo if:</strong> Resellers who list on 3+ platforms (eBay, Vinted, Poshmark, Mercari, Facebook Marketplace) and spend hours copying the same listing across them.</li>
+        <li><strong>Many resellers use both</strong> — a tracker for the money side, a cross-lister for the listing side.</li>
+      </ul>
+    </div>
+  </section>
 
-                <section>
-                    <h2>What Vendoo does well</h2>
-                    <ul>
-                        <li>Create a listing once, push to multiple marketplaces</li>
-                        <li>Auto-delists from other platforms when an item sells</li>
-                        <li>Available on iOS, Android, and web</li>
-                        <li>Tiered paid plans from $8.99 to $69.99 per month</li>
-                    </ul>
-                    <h3>Vendoo limitations</h3>
-                    <ul>
-                        <li>Not a profit tracker — no expense tracking, no mileage, no entry fees, no real profit calculation</li>
-                        <li>Free tier limited to 3 new listings per month</li>
-                        <li>Different problem space from inventory trackers</li>
-                    </ul>
-                </section>
+  <!-- ======================= SIDE-BY-SIDE COMPARISON ======================= -->
+  <section id="comparison" aria-labelledby="comparison-title">
+    <div class="wrap">
+      <span class="eyebrow">Side by side</span>
+      <h2 class="section-title" id="comparison-title">Side-by-side comparison</h2>
+      <div class="cmp-wrap" tabindex="0" role="region" aria-label="Flippd vs Vendoo comparison table, horizontally scrollable">
+        <table class="cmp">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Flippd</th>
+              <th>Vendoo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Category</strong></td><td>Inventory and profit tracker with price research</td><td>Cross-lister for online marketplaces</td></tr>
+            <tr><td><strong>Platforms</strong></td><td>iOS, Android, Web</td><td>iOS, Android, Web</td></tr>
+            <tr><td><strong>Free tier</strong></td><td>Free up to 20 items lifetime</td><td>Free tier: 3 new listings per month</td></tr>
+            <tr><td><strong>Paid tier</strong></td><td>$9.99/month flat (unlimited items)</td><td>$8.99/month (25 listings) to $69.99/month (unlimited)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
-                <section>
-                    <h2>Where to read more</h2>
-                    <ul>
-                        <li><a href="../blog/flipperhelper-vs-flippd-vs-vendoo.html">Three-app comparison: FlipperHelper vs Flippd vs Vendoo</a> — full feature matrix and category explanation.</li>
-                        <li><a href="../flipperhelper-alternatives.html">All FlipperHelper alternatives</a> — including spreadsheets, Notion, and pen-and-paper.</li>
-                        <li><a href="https://flippd.com/" rel="noopener" target="_blank">Flippd official site</a></li>
-                        <li><a href="https://vendoo.co/" rel="noopener" target="_blank">Vendoo official site</a></li>
-                    </ul>
-                </section>
+  <!-- ======================= APP A ======================= -->
+  <section id="flippd-strengths" aria-labelledby="flippd-strengths-title">
+    <div class="wrap">
+      <span class="eyebrow">Flippd</span>
+      <h2 class="section-title" id="flippd-strengths-title">What Flippd does well</h2>
+      <ul class="answers">
+        <li>Built-in barcode scanning</li>
+        <li>Image-based eBay sold-price lookup</li>
+        <li>QR label printing for inventory organisation</li>
+        <li>Available on iOS, Android, and web</li>
+        <li>Inventory and profit tracking core</li>
+        <li>Flat-rate pricing, unlimited items on paid tier</li>
+      </ul>
+      <h3 class="sub-title">Flippd limitations</h3>
+      <ul class="answers">
+        <li>Free tier capped at 20 items lifetime (not monthly)</li>
+        <li>Subscription required for serious use</li>
+        <li>No cross-listing — same as FlipperHelper, it tracks only</li>
+      </ul>
+    </div>
+  </section>
 
-                <section style="margin-top: 3em; text-align: center;">
-                    <span class="blog-store-links"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener">Download FlipperHelper Free on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener">Get FlipperHelper Free on Google Play</a></span>
-                </section>
-            </article>
-        </div>
+  <!-- ======================= APP B ======================= -->
+  <section id="vendoo-strengths" aria-labelledby="vendoo-strengths-title">
+    <div class="wrap">
+      <span class="eyebrow">Vendoo</span>
+      <h2 class="section-title" id="vendoo-strengths-title">What Vendoo does well</h2>
+      <ul class="answers">
+        <li>Create a listing once, push to multiple marketplaces</li>
+        <li>Auto-delists from other platforms when an item sells</li>
+        <li>Available on iOS, Android, and web</li>
+        <li>Tiered paid plans from $8.99 to $69.99 per month</li>
+      </ul>
+      <h3 class="sub-title">Vendoo limitations</h3>
+      <ul class="answers">
+        <li>Not a profit tracker — no expense tracking, no mileage, no entry fees, no real profit calculation</li>
+        <li>Free tier limited to 3 new listings per month</li>
+        <li>Different problem space from inventory trackers</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================= WHERE TO READ MORE ======================= -->
+  <section id="read-more" aria-labelledby="read-more-title">
+    <div class="wrap">
+      <span class="eyebrow">References</span>
+      <h2 class="section-title" id="read-more-title">Where to read more</h2>
+      <ul class="answers">
+        <li><a href="../blog/flipperhelper-vs-flippd-vs-vendoo.html">Three-app comparison: FlipperHelper vs Flippd vs Vendoo</a> — full feature matrix and category explanation.</li>
+        <li><a href="../flipperhelper-alternatives.html">All FlipperHelper alternatives</a> — including spreadsheets, Notion, and pen-and-paper.</li>
+        <li><a href="https://flippd.com/" rel="noopener" target="_blank">Flippd official site</a></li>
+        <li><a href="https://vendoo.co/" rel="noopener" target="_blank">Vendoo official site</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================= FAQ ======================= -->
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <span class="eyebrow">Common questions</span>
+      <h2 class="section-title" id="faq-title">FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>What is the difference between Flippd and Vendoo?</summary>
+          <p>Flippd and Vendoo solve different problems. Flippd is a inventory and profit tracker with price research; Vendoo is a cross-lister for online marketplaces. A tracker answers &quot;Am I making money?&quot;; a cross-lister answers &quot;How do I list faster?&quot;. Many resellers use one of each.</p>
+        </details>
+        <details>
+          <summary>Flippd or Vendoo — which should I use?</summary>
+          <p>Flippd is best for: Resellers who need multi-platform support (iOS / Android / web), built-in barcode scanning, or eBay sold-price lookup before buying. Vendoo is best for: Resellers who list on 3+ platforms (eBay, Vinted, Poshmark, Mercari, Facebook Marketplace) and spend hours copying the same listing across them. The right choice depends on your sourcing pattern, the platforms you sell on, and whether you want a free tool or a subscription.</p>
+        </details>
+        <details>
+          <summary>What does Flippd cost?</summary>
+          <p>Flippd: Free up to 20 items lifetime. Paid: $9.99/month flat (unlimited items).</p>
+        </details>
+        <details>
+          <summary>What does Vendoo cost?</summary>
+          <p>Vendoo: Free tier: 3 new listings per month. Paid: $8.99/month (25 listings) to $69.99/month (unlimited).</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><hr class="tear"></div>
+
+  <!-- ======================= FINAL CTA ======================= -->
+  <section class="final" id="get" aria-labelledby="final-title">
+    <div class="wrap">
+      <h2 id="final-title">Track your reselling profit with FlipperHelper</h2>
+      <p>Whichever app you land on for cross-listing, FlipperHelper tracks your real profit after every expense — entry fees, transport, packaging, platform fees. Free, no ads.</p>
+      <div class="store-row">
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="17" height="17"><path d="M16.4 12.9c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.6.9-.7 0-1.9-.9-3.1-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.7 0 0-2.4-.9-2.3-3.7zM14.2 5.9c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.2-.6 2.8-1.4z"/></svg>Download FlipperHelper Free on the App Store</a>
+        <a class="btn btn-primary" href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="17" height="17"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.6 2.3zM16.2 15.6l-3.1-3.1v-.2l3.1-3.1.1.1 3.7 2.1c1 .6 1 1.6 0 2.2l-3.8 2zM15.9 15.9l-3.2-3.2-9.1 9.1c.3.4.9.4 1.5.1l10.8-6M15.9 8.1L5.1 2c-.6-.3-1.2-.3-1.5.1l9.1 9.1 3.2-3.1z"/></svg>Get FlipperHelper Free on Google Play</a>
+      </div>
+    </div>
+  </section>
+
     </main>
 
     <footer class="ft-c3">

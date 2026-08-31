@@ -7,12 +7,11 @@
     <title>Privacy Policy - FlipperHelper</title>
     <meta name="description" content="Privacy Policy for FlipperHelper app">
     <link rel="icon" type="image/svg+xml" href="logo_FH.svg">
+    <link rel="apple-touch-icon" href="/logo_FH.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&amp;family=Roboto+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/footer.css">
-    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="/landing.css">
     <link rel="canonical" href="https://flipperhelper.app/privacy.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Privacy Policy - FlipperHelper">
@@ -24,8 +23,23 @@
     <meta name="twitter:title" content="Privacy Policy - FlipperHelper">
     <meta name="twitter:description" content="Privacy Policy for FlipperHelper app">
     <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+    <style>
+    /* page-specific: skip link, not in landing.css yet */
+    .skip{
+        position:absolute;left:-9999px;top:0;z-index:200;
+        font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
+        background:var(--card);color:var(--ink);border:1px solid var(--line-strong);
+        border-radius:12px;padding:10px 16px;box-shadow:var(--neu-soft);
+    }
+    .skip:focus{left:24px;top:8px;text-decoration:none}
+
+    /* legal clauses run short — the article default (48px) dwarfs a 2-3 line
+       section, so this page tightens the divider gap on its own */
+    .post hr.tear{margin:28px auto}
+    </style>
 </head>
 <body>
+    <a class="skip" href="#main">Skip to content</a>
     <nav class="nav" aria-label="Main">
       <div class="nav-inner">
         <a class="brand" href="/">
@@ -44,17 +58,20 @@
       </div>
     </nav>
 
-    <main class="legal-page">
-        <div class="container">
-            <article class="legal-content">
+    <main class="post" id="main">
+        <div class="wrap">
+            <article>
+                <a href="/" class="post-back">&larr; Back home</a>
                 <h1>Privacy Policy</h1>
-                <p class="legal-updated">Last updated: August 11, 2026</p>
+                <p class="post-updated">Last updated: August 11, 2026</p>
 
                 <section>
                     <h2>Introduction</h2>
                     <p>FlipperHelper ("we", "our", or "us") is operated by Oleksandr Prudnikov, a sole trader registered in the United Kingdom. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application ("FlipperHelper" or the "App").</p>
                     <p>We are committed to protecting your privacy and being transparent about our data practices. This policy applies to users in the United States, United Kingdom, European Union, and all other regions where the App is available.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Information We Collect</h2>
@@ -90,6 +107,8 @@
                     </ul>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>How We Use Your Information</h2>
                     <p>We use your information solely to provide the App's functionality:</p>
@@ -104,6 +123,8 @@
                     </ul>
                     <p>We do <strong>not</strong> use your data for advertising, profiling, or any purpose other than providing the App's features.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Data Storage and Security</h2>
@@ -131,6 +152,8 @@
                     <p>If you create a FlipperHelper Pro account, the information listed under "FlipperHelper Pro (Optional Cloud Sync)" above is stored on our behalf using Amazon Web Services (AWS) infrastructure, rather than only on your device, so it can sync across your devices. This data is encrypted in transit, and sensitive fields such as your eBay authorization token are also encrypted at rest. Photos remain stored locally on your device and, if enabled, in your own Google Drive—they are not uploaded to our servers.</p>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Data Sharing</h2>
                     <p>We do <strong>not</strong> sell, rent, or share your personal data with third parties. Your data only leaves your device in these circumstances:</p>
@@ -142,6 +165,8 @@
                         <li><strong>Amazon Web Services (Pro):</strong> If you create a Pro account, your account and reselling data are hosted on AWS infrastructure, which processes it on our behalf and does not use it for its own purposes.</li>
                     </ul>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Your Rights</h2>
@@ -186,6 +211,8 @@
                     </ul>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Data Retention</h2>
                     <p>Outside of the optional FlipperHelper Pro tier described below, your data remains on your device until you delete it or uninstall the App, and we do not retain any copies of it on external servers.</p>
@@ -197,10 +224,14 @@
                     <p>If you have a FlipperHelper Pro account, your account and reselling records are retained on our servers for as long as your account remains active, and are permanently deleted once you request deletion as described in "Your Rights" above.</p>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Children's Privacy</h2>
                     <p>FlipperHelper is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Third-Party Services</h2>
@@ -234,10 +265,14 @@
                     <p>If you connect your eBay account, FlipperHelper uses eBay's APIs to identify your account and receive notifications about your own listings and sales. eBay's privacy policy: <a href="https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy" target="_blank" rel="noopener">https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy</a></p>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Changes to This Policy</h2>
                     <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the App or by updating the "Last updated" date. Your continued use of the App after changes constitutes acceptance of the updated policy.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Contact Us</h2>

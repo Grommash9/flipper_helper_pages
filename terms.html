@@ -7,12 +7,11 @@
     <title>Terms of Service - FlipperHelper</title>
     <meta name="description" content="Terms of Service for FlipperHelper app">
     <link rel="icon" type="image/svg+xml" href="logo_FH.svg">
+    <link rel="apple-touch-icon" href="/logo_FH.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&amp;family=Roboto+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/footer.css">
-    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="/landing.css">
     <link rel="canonical" href="https://flipperhelper.app/terms.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Terms of Service - FlipperHelper">
@@ -24,8 +23,23 @@
     <meta name="twitter:title" content="Terms of Service - FlipperHelper">
     <meta name="twitter:description" content="Terms of Service for FlipperHelper app">
     <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+    <style>
+    /* page-specific: skip link, not in landing.css yet */
+    .skip{
+        position:absolute;left:-9999px;top:0;z-index:200;
+        font-family:var(--font-body);font-weight:600;font-size:var(--fs-xs);
+        background:var(--card);color:var(--ink);border:1px solid var(--line-strong);
+        border-radius:12px;padding:10px 16px;box-shadow:var(--neu-soft);
+    }
+    .skip:focus{left:24px;top:8px;text-decoration:none}
+
+    /* legal clauses run short — the article default (48px) dwarfs a 2-3 line
+       section, so this page tightens the divider gap on its own */
+    .post hr.tear{margin:28px auto}
+    </style>
 </head>
 <body>
+    <a class="skip" href="#main">Skip to content</a>
     <nav class="nav" aria-label="Main">
       <div class="nav-inner">
         <a class="brand" href="/">
@@ -44,17 +58,20 @@
       </div>
     </nav>
 
-    <main class="legal-page">
-        <div class="container">
-            <article class="legal-content">
+    <main class="post" id="main">
+        <div class="wrap">
+            <article>
+                <a href="/" class="post-back">&larr; Back home</a>
                 <h1>Terms of Service</h1>
-                <p class="legal-updated">Last updated: February 28, 2025</p>
+                <p class="post-updated">Last updated: February 28, 2025</p>
 
                 <section>
                     <h2>Agreement to Terms</h2>
                     <p>These Terms of Service ("Terms") govern your use of the FlipperHelper mobile application ("App") operated by Oleksandr Prudnikov ("we", "us", or "our"), a sole trader registered in the United Kingdom.</p>
                     <p>By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the App.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Description of Service</h2>
@@ -69,11 +86,15 @@
                     </ul>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Eligibility</h2>
                     <p>You must be at least 13 years of age to use the App. By using the App, you represent that you are at least 13 years old and have the legal capacity to enter into these Terms.</p>
                     <p>If you are using the App on behalf of a business or other legal entity, you represent that you have the authority to bind that entity to these Terms.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Your Account and Data</h2>
@@ -94,6 +115,8 @@
                     </ul>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Acceptable Use</h2>
                     <p>You agree to use the App only for its intended purpose of personal inventory and sales tracking. You agree not to:</p>
@@ -107,12 +130,16 @@
                     </ul>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Intellectual Property</h2>
                     <p>The App, including its design, features, and content, is owned by Oleksandr Prudnikov and is protected by copyright, trademark, and other intellectual property laws.</p>
                     <p>You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes in accordance with these Terms.</p>
                     <p>All data you enter into the App remains your property. We do not claim any ownership of your content.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Financial Disclaimer</h2>
@@ -125,6 +152,8 @@
                     </ul>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Third-Party Services</h2>
                     <p>The App integrates with third-party services including:</p>
@@ -134,6 +163,8 @@
                     </ul>
                     <p>We are not responsible for the availability, functionality, or policies of these third-party services.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Disclaimer of Warranties</h2>
@@ -147,6 +178,8 @@
                     <p>We do not warrant that the App will meet your requirements or that any errors will be corrected.</p>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Limitation of Liability</h2>
                     <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL OLEKSANDR PRUDNIKOV BE LIABLE FOR:</p>
@@ -159,6 +192,8 @@
                     <p>Our total liability for any claims arising from these Terms or your use of the App shall not exceed the amount you paid for the App in the twelve (12) months preceding the claim.</p>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Indemnification</h2>
                     <p>You agree to indemnify and hold harmless Oleksandr Prudnikov from any claims, damages, losses, or expenses (including reasonable legal fees) arising from:</p>
@@ -170,6 +205,8 @@
                     </ul>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>App Updates and Changes</h2>
                     <p>We may update, modify, or discontinue the App at any time without prior notice. We are not obligated to:</p>
@@ -180,6 +217,8 @@
                     </ul>
                     <p>It is your responsibility to ensure you have the latest version of the App for optimal functionality and security.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Termination</h2>
@@ -193,12 +232,16 @@
                     <p>Upon termination, your right to use the App will cease immediately. Provisions that by their nature should survive termination will survive.</p>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Governing Law</h2>
                     <p>These Terms shall be governed by and construed in accordance with the laws of England and Wales, without regard to conflict of law principles.</p>
                     <p>Any disputes arising from these Terms or your use of the App shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
                     <p>If you are a consumer in the European Union, you may also be entitled to bring proceedings in your country of residence.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Changes to Terms</h2>
@@ -210,15 +253,21 @@
                     <p>Your continued use of the App after changes are posted constitutes your acceptance of the updated Terms.</p>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Severability</h2>
                     <p>If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions will remain in full force and effect.</p>
                 </section>
 
+                <hr class="tear">
+
                 <section>
                     <h2>Entire Agreement</h2>
                     <p>These Terms, together with our <a href="privacy.html">Privacy Policy</a>, constitute the entire agreement between you and Oleksandr Prudnikov regarding your use of the App and supersede any prior agreements.</p>
                 </section>
+
+                <hr class="tear">
 
                 <section>
                     <h2>Contact Us</h2>
