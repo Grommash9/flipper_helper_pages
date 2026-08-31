@@ -40,7 +40,7 @@
   --measure:900px;   /* single prose/table text measure — shared with blog/article.css */
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:hidden}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
@@ -49,6 +49,7 @@ body{
   background:var(--bg);color:var(--ink-66);
   font-family:var(--font-body);font-size:var(--fs-md);line-height:1.6;
   -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
 }
 ::selection{background:var(--action);color:#fff}
 img{max-width:100%;display:block}
@@ -385,9 +386,15 @@ section#get{padding-bottom:46px} /* .revs carousel carries 22px internal bottom 
 }
 .ledger-row:last-of-type{border-bottom:none}
 .ledger-row .when{color:var(--ink-45);font-size:var(--fs-2xs);flex:none;width:110px}
-.ledger-row .what{color:var(--ink-66);flex:1}
+.ledger-row .what{color:var(--ink-66);flex:1;min-width:0}
 .ledger-row .amt{color:var(--profit);font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
 .ledger .foot{font-size:var(--fs-2xs);color:var(--ink-45);margin-top:18px;font-family:var(--font-body)}
+@media(max-width:420px){
+  .ledger-row{flex-wrap:wrap;row-gap:4px}
+  .ledger-row .what{flex:1 1 100%;order:1}
+  .ledger-row .when{width:auto;order:2}
+  .ledger-row .amt{order:3;margin-left:auto}
+}
 
 /* ---------- workbench: today (free) + pro ---------- */
 .group-label{
