@@ -14,6 +14,7 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 - Website: https://flipperhelper.app/
 - FAQ: https://flipperhelper.app/faq.html
 - Instagram: https://www.instagram.com/flipperhelper
+- YouTube: https://www.youtube.com/@FlipperHelper
 - Reddit: https://www.reddit.com/r/flipperhelper/
 - Medium: https://medium.com/@andreevichprudnikov
 - Blog: https://flipperhelper.app/blog/

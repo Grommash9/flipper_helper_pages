@@ -138,7 +138,19 @@ section#get{padding-bottom:46px} /* .revs carousel carries 22px internal bottom 
 /* ---------- comparison table ----------
    VARIATION of the .ledger card: same mono machine-layer keys and dashed
    row rules; only the layout differs (three columns instead of a two-part row). */
-.cmp-wrap{overflow-x:auto;max-width:var(--measure)}
+.cmp-wrap{
+  overflow-x:auto;max-width:var(--measure);display:flex;
+  scrollbar-width:thin;scrollbar-color:var(--line-strong) transparent;
+}
+.cmp-wrap::-webkit-scrollbar{height:6px}
+.cmp-wrap::-webkit-scrollbar-thumb{background:var(--line-strong);border-radius:99px}
+.cmp-wrap::-webkit-scrollbar-track{background:transparent}
+/* sticky fade hints that the table scrolls further right — no JS, no extra markup */
+.cmp-wrap::after{
+  content:"";position:sticky;right:0;flex:none;align-self:stretch;
+  width:28px;margin-left:-28px;pointer-events:none;
+  background:linear-gradient(to right,transparent,var(--card));
+}
 .cmp{
   width:100%;min-width:560px;border-collapse:collapse;
   background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
