@@ -585,7 +585,7 @@ ${siblingLinks(c.slug)}
       <p>If you flip silver, FlipperHelper logs each piece with photos, tracks listings across eBay, Vinted, and 14 other platforms, and shows real profit per item after every expense. Free on the App Store.</p>
       <div class="store-row">
         <a class="btn btn-primary" href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">Download FlipperHelper Free on the App Store</a>
-        <a class="btn btn-primary" href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener">Get FlipperHelper Free on Google Play</a>
+        <a class="btn btn-primary" href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener">Download from Google Play</a>
       </div>
     </div>
   </section>

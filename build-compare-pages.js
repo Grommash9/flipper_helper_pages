@@ -335,7 +335,7 @@ ${faqHTML}
       <p>Whichever app you land on for cross-listing, FlipperHelper tracks your real profit after every expense — entry fees, transport, packaging, platform fees. Free, no ads.</p>
       <div class="store-row">
         <a class="btn btn-primary" href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">Download FlipperHelper Free on the App Store</a>
-        <a class="btn btn-primary" href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener">Get FlipperHelper Free on Google Play</a>
+        <a class="btn btn-primary" href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener">Download from Google Play</a>
       </div>
     </div>
   </section>
