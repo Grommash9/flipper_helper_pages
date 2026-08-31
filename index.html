@@ -258,16 +258,44 @@
       FlipperHelper
     </a>
     <div class="nav-links">
+        <button type="button" class="nav-burger" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu"><span></span></button>
+        <div class="nav-menu" id="nav-menu">
         <a href="/tools/">Free tools</a>
         <a href="/compare/">Compare</a>
         <a href="/#workbench">What's next</a>
         <a href="/blog/">Blog</a>
         <a href="/faq.html">FAQ</a>
         <a href="/about.html">About</a>
+        </div>
         <a class="btn btn-primary" href="/#get">Get the App</a>
     </div>
   </div>
 </nav>
+<script>
+(function(){
+  var burger = document.querySelector('.nav-burger');
+  var menu = document.getElementById('nav-menu');
+  if (!burger || !menu) return;
+  function closeMenu(){
+    menu.classList.remove('open');
+    burger.setAttribute('aria-expanded','false');
+  }
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.addEventListener('click', function(e){
+    if (e.target.closest('a')) closeMenu();
+  });
+  document.addEventListener('click', function(e){
+    if (!menu.contains(e.target) && !burger.contains(e.target)) closeMenu();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeMenu();
+  });
+})();
+</script>
+
 
 <main id="main-content">
 

@@ -844,7 +844,7 @@
   --fs-xl:1.2rem;    /* large ui accents */
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:hidden}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
@@ -853,6 +853,7 @@ body{
   background:var(--bg);color:var(--ink-66);
   font-family:var(--font-body);font-size:var(--fs-md);line-height:1.6;
   -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
 }
 ::selection{background:var(--action);color:#fff}
 img{max-width:100%;display:block}
@@ -926,6 +927,7 @@ section#get{padding-bottom:46px} /* .revs carousel carries 22px internal bottom 
 .brand{display:flex;align-items:center;gap:8px;font-weight:500;font-size:var(--fs-base);color:var(--ink);text-decoration:none!important;letter-spacing:-.01em}
 .fh-logo{width:19px;height:20px;display:block;color:var(--ink)}
 .nav-links{display:flex;gap:18px;margin-left:auto;align-items:center}
+.nav-menu{display:contents}
 .nav-links a:not(.btn){
   color:#000000;opacity:.45;font-size:var(--fs-xs);font-weight:500;
   transition:opacity .12s ease;
@@ -935,7 +937,31 @@ section#get{padding-bottom:46px} /* .revs carousel carries 22px internal bottom 
 .nav-links a:not(.btn)[aria-current="page"],
 .nav-links a:not(.btn).active{color:#000000;opacity:1;text-decoration:none}
 .nav .btn{padding:5px 11px;font-size:var(--fs-xs);border-radius:9px}
-@media(max-width:860px){.nav-links a:not(.btn){display:none}}
+.nav-burger{
+  display:none;width:38px;height:38px;margin-right:-6px;
+  border:none;background:none;padding:0;cursor:pointer;
+  align-items:center;justify-content:center;border-radius:8px;
+}
+.nav-burger:hover{background:var(--line)}
+.nav-burger span,.nav-burger span::before,.nav-burger span::after{
+  content:"";display:block;width:19px;height:2px;background:var(--ink);border-radius:2px;
+}
+.nav-burger span{position:relative}
+.nav-burger span::before{position:absolute;top:-6px;left:0}
+.nav-burger span::after{position:absolute;top:6px;left:0}
+@media(max-width:860px){
+  .nav-burger{display:flex}
+  .nav-links{position:relative}
+  .nav-menu{
+    display:none;flex-direction:column;gap:2px;
+    position:absolute;top:calc(100% + 12px);right:0;
+    min-width:200px;max-width:calc(100vw - 48px);
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);
+    box-shadow:0 14px 34px rgba(0,0,0,.14);padding:8px;
+  }
+  .nav-menu.open{display:flex}
+  .nav-links a:not(.btn){width:100%;padding:0 12px}
+}
 
 /* ---------- final ---------- */
 .final{text-align:center}
@@ -1141,16 +1167,44 @@ a:focus-visible,button:focus-visible,summary:focus-visible{
       FlipperHelper
     </a>
     <div class="nav-links">
+        <button type="button" class="nav-burger" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu"><span></span></button>
+        <div class="nav-menu" id="nav-menu">
         <a href="/tools/">Free tools</a>
         <a href="/compare/">Compare</a>
         <a href="/#workbench">What's next</a>
         <a href="/blog/" aria-current="page">Blog</a>
         <a href="/faq.html">FAQ</a>
         <a href="/about.html">About</a>
+        </div>
         <a class="btn btn-primary" href="/#get">Get the App</a>
     </div>
   </div>
 </nav>
+<script>
+(function(){
+  var burger = document.querySelector('.nav-burger');
+  var menu = document.getElementById('nav-menu');
+  if (!burger || !menu) return;
+  function closeMenu(){
+    menu.classList.remove('open');
+    burger.setAttribute('aria-expanded','false');
+  }
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.addEventListener('click', function(e){
+    if (e.target.closest('a')) closeMenu();
+  });
+  document.addEventListener('click', function(e){
+    if (!menu.contains(e.target) && !burger.contains(e.target)) closeMenu();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeMenu();
+  });
+})();
+</script>
+
 
 <!-- ======================= PAGE HEAD ======================= -->
 <main id="main">
