@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-itunes-app" content="app-id=6759716745">
-    <title>Changelog - FlipperHelper | Release Notes, Testing & QA</title>
-    <meta name="description" content="Release notes for FlipperHelper (iOS and Android). Every release since February 2026, plus the test suite that gates each build.">
-    <link rel="icon" type="image/svg+xml" href="logo_FH.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&amp;family=Roboto+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/landing.css">
-    <link rel="canonical" href="https://flipperhelper.app/changelog.html">
-    <!-- OpenGraph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="FlipperHelper Changelog - Release Notes, Testing & QA">
-    <meta property="og:description" content="Every FlipperHelper release since February 2026, plus the unit tests, 100k-item stress benchmarks, and 63 automated Maestro QA flows.">
-    <meta property="og:url" content="https://flipperhelper.app/changelog.html">
-    <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
-    <meta property="og:site_name" content="FlipperHelper">
-    <meta property="og:locale" content="en_GB">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="FlipperHelper Changelog">
-    <meta name="twitter:description" content="Public release notes, unit tests, 100k-item stress benchmarks, and 63 Maestro QA flows.">
-    <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
-    <!-- BreadcrumbList JSON-LD -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Changelog - FlipperHelper | Release Notes, Testing &amp; QA</title>
+<meta name="description" content="Release notes for FlipperHelper (iOS and Android). Every release since February 2026, plus the test suite that gates each build.">
+<meta name="apple-itunes-app" content="app-id=6759716745">
+<link rel="icon" type="image/svg+xml" href="/logo_FH.svg">
+<link rel="apple-touch-icon" href="/logo_FH.png">
+<link rel="canonical" href="https://flipperhelper.app/changelog.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FlipperHelper Changelog - Release Notes, Testing &amp; QA">
+<meta property="og:description" content="Every FlipperHelper release since February 2026, plus the unit tests, 100k-item stress benchmarks, and 63 automated Maestro QA flows.">
+<meta property="og:url" content="https://flipperhelper.app/changelog.html">
+<meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
+<meta property="og:site_name" content="FlipperHelper">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FlipperHelper Changelog">
+<meta name="twitter:description" content="Public release notes, unit tests, 100k-item stress benchmarks, and 63 Maestro QA flows.">
+<meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&amp;family=Roboto+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/landing.css">
+<!-- BreadcrumbList JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flipperhelper.app/"},
+    {"@type": "ListItem", "position": 2, "name": "Changelog", "item": "https://flipperhelper.app/changelog.html"}
+  ]
+}
+</script>
+<!-- FAQPage JSON-LD (AEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flipperhelper.app/"},
-        {"@type": "ListItem", "position": 2, "name": "Changelog", "item": "https://flipperhelper.app/changelog.html"}
-      ]
-    }
-    </script>
-    <!-- FAQPage JSON-LD (AEO) -->
-    <script type="application/ld+json">
+      "@type": "Question",
+      "name": "How often is FlipperHelper updated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FlipperHelper ships incrementally. Since the first commit on 20 February 2026, releases have gone out several times per month, driven by user feedback from resellers actively using the app. The public changelog at flipperhelper.app/changelog.html lists every release by month."
+      }
+    },
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How often is FlipperHelper updated?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "FlipperHelper ships incrementally. Since the first commit on 20 February 2026, releases have gone out several times per month, driven by user feedback from resellers actively using the app. The public changelog at flipperhelper.app/changelog.html lists every release by month."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is FlipperHelper actively maintained?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. FlipperHelper is a solo-developed app with an active public changelog, a public subreddit (r/flipperhelper) for build-in-public updates, and a tested release pipeline. The most recent release was 16 April 2026."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What testing does FlipperHelper have before release?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Every release is gated by 10 Swift unit test files totalling over 3,400 lines of test code, a dedicated stress test suite that loads fixtures of 100,000 items, 50,000 transport expenses, 20 markets, and 50 sellers to benchmark query, aggregation, and CSV export performance, and 63 end-to-end Maestro flow tests that exercise the full app on a simulator covering item lifecycle, multi-currency sales, expenses, settings, and navigation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does FlipperHelper have automated end-to-end tests?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. FlipperHelper uses Maestro, a mobile UI testing framework, to run 63 end-to-end flow tests on every release. Coverage includes item creation, listing on multiple platforms, selling in different currencies, expense tracking, market and seller management, notification settings, data backup and restore, and App Store screenshot automation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can FlipperHelper handle large inventories?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The stress test suite validates FlipperHelper's SQLite query path against a dataset of 100,000 items and 50,000 expenses. Benchmarks cover count queries, full table fetches, filtered date ranges, monthly aggregation, stats by market, CSV export, and full backup restore — all verified against the real DatabaseStore used in production."
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "Is FlipperHelper actively maintained?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. FlipperHelper is a solo-developed app with an active public changelog, a public subreddit (r/flipperhelper) for build-in-public updates, and a tested release pipeline. The most recent release was 16 April 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What testing does FlipperHelper have before release?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every release is gated by 10 Swift unit test files totalling over 3,400 lines of test code, a dedicated stress test suite that loads fixtures of 100,000 items, 50,000 transport expenses, 20 markets, and 50 sellers to benchmark query, aggregation, and CSV export performance, and 63 end-to-end Maestro flow tests that exercise the full app on a simulator covering item lifecycle, multi-currency sales, expenses, settings, and navigation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does FlipperHelper have automated end-to-end tests?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. FlipperHelper uses Maestro, a mobile UI testing framework, to run 63 end-to-end flow tests on every release. Coverage includes item creation, listing on multiple platforms, selling in different currencies, expense tracking, market and seller management, notification settings, data backup and restore, and App Store screenshot automation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can FlipperHelper handle large inventories?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The stress test suite validates FlipperHelper's SQLite query path against a dataset of 100,000 items and 50,000 expenses. Benchmarks cover count queries, full table fetches, filtered date ranges, monthly aggregation, stats by market, CSV export, and full backup restore — all verified against the real DatabaseStore used in production."
+      }
     }
-    </script>
-    <style>
+  ]
+}
+</script>
+<style>
     /* ---- page-specific: everything else comes from /landing.css ---- */
 
     /* skip link — not in landing.css yet; sits above the sticky nav (z-index:100) */
@@ -101,266 +100,469 @@
     .page-head{padding:64px 0 0}
     @media(max-width:720px){.page-head{padding:44px 0 0}}
     .page-head h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px;max-width:760px}
-    .page-head .section-lede{margin-bottom:24px;max-width:640px}
-    .page-head .section-lede strong{color:var(--ink);font-weight:600}
-    .head-meta{display:flex;align-items:center;gap:10px 18px;flex-wrap:wrap;margin-bottom:0}
     .head-updated{font-family:var(--font-mono);font-size:var(--fs-2xs);color:var(--ink-45)}
-    </style>
+
+    /* the opening lede closes the head, so the first section's own 68px top padding carries
+       the gap down — the lede's default 38px bottom margin would stack on top of it. It also
+       drops the 600px lede measure and runs the full 1032px frame, so the head lines up with
+       the release rows below instead of reading as a narrower page. Same as sources.html. */
+    .page-head .section-lede{max-width:none;margin:16px 0 0}
+
+    /* one article measure for every run of body text that is not inside a row (§5.2) */
+    :root{--measure:900px}
+    .measure{max-width:var(--measure)}
+
+    /* .group-label carries a dashed rule in its ::after that runs from the end of the label
+       to the right edge. The month now sits in a rail of its own, where that rule would run
+       into the entries beside it. Dropped with the same one-liner as faq.html:518. */
+    .group-label::after{content:none}
+
+    /* ---- the release log ----
+       Each month is one two-rail row: the month label alone in a 190px left rail, all of its
+       entries in the column beside it. Moving the label out of the flow is what makes the
+       months finally look like one list — an entry no longer has to carry a key column that
+       March could only half-fill and February could not fill at all, so the three blocks now
+       differ in what their copy actually has (a date, a title, neither) rather than in how
+       they are laid out. It is also the page's structural relief: two columns instead of one
+       flush-left stack. The track is .pro-row's own 190px (§5.3), so the rail lines up with
+       every other key column on the site. */
+    .month{display:grid;grid-template-columns:220px 1fr;gap:10px 24px;align-items:start}
+    .month + .month{margin-top:34px;padding-top:34px;border-top:1px dashed var(--line-strong)}
+
+    /* The month is this page's section heading and it has to carry a section heading's
+       weight. As a .group-label it rendered at --fs-2xs — 12px — so the whole release log,
+       which is most of the page, had no type above 20px anywhere in it, while every other
+       rebuilt page sets an H2 at clamp(1.8rem,3.6vw,2.4rem) every screenful. That is what
+       made the page read as small next to its siblings, not the frame and not the window.
+       .group-label is also a flex row, which in a rail splits "February 2026 — v1.0 launch"
+       into two columns that each wrap on their own — so it becomes a block, the month goes
+       up to heading scale in the body face, and the qualifier stays a mono label beneath it.
+       Rail is 220px, not the .pro-row 190px track: "February 2026" measures ~197px at
+       1.9rem (13 characters, ~.52em advance, less .02em tracking), so 190px would wrap the
+       longest month while the others sat on one line. */
+    .month .group-label{
+      display:block;margin:0;line-height:1.5;
+      font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;
+      letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);
+    }
+    .month .group-label b{
+      display:block;margin-bottom:6px;
+      font-family:var(--font-body);font-size:clamp(1.5rem,2.4vw,1.9rem);font-weight:700;
+      letter-spacing:-.02em;text-transform:none;color:var(--ink);line-height:1.1;
+    }
+    /* the rail folds above its entries before the label starts wrapping */
+    @media(max-width:720px){
+      .month{grid-template-columns:1fr;gap:0}
+      .month .group-label{margin-bottom:18px}
+    }
+
+    .entry{padding-bottom:22px;margin-bottom:22px;border-bottom:1px dashed var(--line-strong)}
+    .entry:last-child{padding-bottom:0;margin-bottom:0;border-bottom:none}
+    /* the date is the entry's own mono timestamp above its heading — the .moment device
+       (§25.3), not a key column. --ink-45 and not the label's --ink: the month is the
+       chronology, the day is metadata inside it, and two mono blacks side by side made the
+       rail and the entry compete. */
+    .entry .when{
+      font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:600;
+      letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45);
+      display:block;margin-bottom:6px;
+    }
+    /* --fs-md, the ladder's "body copy" — not --fs-sm, which is "card body text". The entries
+       carried --fs-sm because they grew out of .pro-row's .v, where 15.2px is right because
+       it sits inside a card. Out here they are the page's main prose, they run 818px wide,
+       and 15.2px left them two steps below the 17px every other rebuilt page reads at — and
+       below the QA section on this very page. The heading goes up a step with them so a
+       title is never smaller than the paragraph under it. */
+    .entry h3{font-size:var(--fs-h3-lg);font-weight:700;margin-bottom:8px}
+    .entry p{font-size:var(--fs-md);color:var(--ink-66);line-height:1.6}
+
+    /* the two oldest months are summaries rather than dated releases, so they open the
+       column with a line of their own before the entries start */
+    .log-note{margin-bottom:22px}
+
+    /* VARIATION of .ledger (§20): the same --bg box, 20px radius, mono face and dashed rows,
+       with the amount column dropped. §13.6 does put statistics in the ledger, but these five
+       are counts inside a sentence, not money on a receipt — splitting "100,000 items" into a
+       label and a --profit amount would reorder the words and would colour a row count as
+       income. So each row keeps its sentence whole and the box does the work: the mono face
+       turns the figures into the machine layer (§3.1), and the bold number is --ink. */
+    .fixture .what strong{color:var(--ink);font-weight:600}
+
+    .layer h3{font-size:var(--fs-h3-lg);margin-bottom:10px}
+    .layer p{max-width:var(--measure);margin-bottom:14px}
+    .layer p:last-child{margin-bottom:0}
+
+    /* the site's prose bullet: 6px periwinkle dot, bold term then the detail (§13.5) */
+    .answers{list-style:none}
+    .answers li{position:relative;padding-left:22px;margin-bottom:9px;color:var(--ink-66)}
+    .answers li::before{content:"";position:absolute;left:4px;top:.58em;width:6px;height:6px;border-radius:50%;background:var(--cat)}
+    .answers strong{color:var(--ink);font-weight:600}
+    .answers + p{margin-top:16px}
+
+    /* inline code — landing.css has no rule for it, so it would otherwise fall back to the
+       browser's default monospace. Mono is the site's machine layer (§3.1); the tint is
+       --cat at the 0.14 alpha the design system already uses for state backgrounds, and
+       6px is the metadata radius (§21). */
+    code{
+      font-family:var(--font-mono);font-size:.9em;color:var(--ink);
+      background:rgba(187,203,247,.14);border-radius:6px;padding:1px 4px;
+    }
+
+    a:focus-visible,button:focus-visible,input:focus-visible{
+      outline:2px solid var(--action);outline-offset:3px;border-radius:6px;
+    }
+    .btn:focus-visible{outline:2px solid var(--action);outline-offset:2px}
+</style>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
+
 <a class="skip" href="#main">Skip to content</a>
 
-<!-- ======================= NAV ======================= -->
-<nav class="nav" aria-label="Main">
-  <div class="nav-inner">
-    <a class="brand" href="/">
-      <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
-      FlipperHelper
-    </a>
-    <div class="nav-links">
-        <a href="/tools/">Free tools</a>
-        <a href="/compare/">Compare</a>
-        <a href="/#workbench">What's next</a>
-        <a href="/blog/">Blog</a>
-        <a href="/faq.html">FAQ</a>
-        <a href="/about.html">About</a>
-        <a class="btn btn-primary" href="/#get">Get the App</a>
-    </div>
-  </div>
-</nav>
+    <nav class="nav" aria-label="Main">
+      <div class="nav-inner">
+        <a class="brand" href="/">
+          <svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>
+          FlipperHelper
+        </a>
+        <div class="nav-links">
+            <a href="/tools/">Free tools</a>
+            <a href="/compare/">Compare</a>
+            <a href="/#workbench">What's next</a>
+            <a href="/blog/">Blog</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/about.html">About</a>
+            <a class="btn btn-primary" href="/#get">Get the App</a>
+        </div>
+      </div>
+    </nav>
 
 <main id="main">
 
 <!-- ======================= PAGE HEAD ======================= -->
 <header class="page-head">
   <div class="wrap">
-    <span class="eyebrow">Release notes</span>
     <h1>FlipperHelper Changelog</h1>
+    <p class="head-updated">Last updated: 26 August 2026</p>
     <p class="section-lede">Public release notes for FlipperHelper, the iOS and Android reselling tracker. First commit on 20 February 2026. Shipped by a solo developer based in London, active weekly, with a full test suite gating every build.</p>
-    <div class="head-meta">
-      <span class="head-updated">Last updated: 26 August 2026</span>
-    </div>
   </div>
 </header>
 
-<div class="post">
-  <div class="wrap">
-    <article>
+<!-- ======================= RELEASES =======================
+     Months are h2.group-label — the mono uppercase group heading with its dashed rule,
+     exactly as faq.html:647 uses it for its 15 categories. Each release is one
+     article.entry: span.when mono date key, then the release title as a real h3 with
+     its paragraph underneath. -->
+<section>
+  <div class="wrap reveal">
+    <div class="month">
+      <h2 class="group-label"><b>August 2026</b></h2>
+      <div class="entries">
+        <article class="entry">
+            <span class="when">26 August</span>
+            <h3>Link expenses directly to items, plus a new Delivery expense type (v9.0.0, iOS &amp; Android).</h3>
+            <p>Entry fees, transport costs, delivery charges, and other expenses can now be linked directly to the item they belong to &mdash; that cost is then factored into that item&rsquo;s own profit automatically, instead of only showing up in your overall Money Flow totals. Delivery is a new expense type alongside entry fees, transport, and other, for postage and courier costs. Linked expenses now show up in your Google Sheets export. Also in this release: dozens of bug fixes covering more reliable sales, currency, and syncing behaviour, smoother haul and expense editing, corrected profit calculations when expenses are linked, and performance improvements for photo loading and sharing.</p>
+          </article>
+        <article class="entry">
+            <span class="when">6 August</span>
+            <h3>Notification and location permissions, only when they matter (iOS &amp; Android).</h3>
+            <p>FlipperHelper no longer asks for notification or location access the moment you open the app. Notifications are now requested right after you save your first item, alongside a quick explanation of what they&rsquo;re for &mdash; a nudge to list it &mdash; rather than a blanket prompt before you&rsquo;ve done anything. Location is only requested when it can actually help: once you have a market saved with a location, or when you tap &ldquo;Use current location&rdquo; while adding or editing a market. Both prompts show once &mdash; decline and FlipperHelper won&rsquo;t ask again, though you can still turn either on later in Settings.</p>
+          </article>
+      </div>
+    </div>
 
-        <section>
-            <h2>August 2026</h2>
-            <div class="day">
-                <div class="moment">
-                    <span class="when">26 August &mdash;</span>
-                    <p><strong>Link expenses directly to items, plus a new Delivery expense type </strong><span class="chip">(v9.0.0, iOS &amp; Android)</span><strong>.</strong> Entry fees, transport costs, delivery charges, and other expenses can now be linked directly to the item they belong to &mdash; that cost is then factored into that item&rsquo;s own profit automatically, instead of only showing up in your overall Money Flow totals. Delivery is a new expense type alongside entry fees, transport, and other, for postage and courier costs. Linked expenses now show up in your Google Sheets export. Also in this release: dozens of bug fixes covering more reliable sales, currency, and syncing behaviour, smoother haul and expense editing, corrected profit calculations when expenses are linked, and performance improvements for photo loading and sharing.</p>
-                </div>
-                <div class="moment">
-                    <span class="when">6 August &mdash;</span>
-                    <p><strong>Notification and location permissions, only when they matter </strong><span class="chip">(iOS &amp; Android)</span><strong>.</strong> FlipperHelper no longer asks for notification or location access the moment you open the app. Notifications are now requested right after you save your first item, alongside a quick explanation of what they&rsquo;re for &mdash; a nudge to list it &mdash; rather than a blanket prompt before you&rsquo;ve done anything. Location is only requested when it can actually help: once you have a market saved with a location, or when you tap &ldquo;Use current location&rdquo; while adding or editing a market. Both prompts show once &mdash; decline and FlipperHelper won&rsquo;t ask again, though you can still turn either on later in Settings.</p>
-                </div>
-            </div>
-        </section>
+    <div class="month">
+      <h2 class="group-label"><b>July 2026</b></h2>
+      <div class="entries">
+        <article class="entry">
+            <span class="when">31 July</span>
+            <h3>FlipperHelper for Android is now on Google Play.</h3>
+            <p>The Android app is out of early access and available to everyone &mdash; no testing sign-up, no group to join, just <a href="https://play.google.com/store/apps/details?id=com.oprudnikov.flipperhelper" target="_blank" rel="noopener">install it from Google Play</a>. It&rsquo;s a full native app with feature parity with the iPhone version, and both share the same backup format, so you can move your items, photos, and history between iPhone and Android without losing anything.</p>
+          </article>
+        <article class="entry">
+            <span class="when">17 July</span>
+            <h3>Return dates, flexible &ldquo;days to sell&rdquo;, and a customisable Add Item screen (v1.3.0, iOS &amp; Android).</h3>
+            <p>You can now mark an item as returnable and set a return deadline &mdash; the item list shows how many days you have left, turns red at three days or fewer, and switches to &ldquo;Too late&rdquo; once the window closes, so you never miss a shop&rsquo;s return window on stock that didn&rsquo;t sell. &ldquo;Days to sell&rdquo; can now be measured either from the purchase date or from the date you listed an item, whichever better reflects how you work. The Add Item screen is now yours to shape: a &ldquo;Customise fields&rdquo; sheet lets you show only the fields you use &mdash; title, market, seller, purchase date, return date &mdash; each with a short description, right where you add items, instead of being buried in Settings. Purchase date is now a cleaner date-only picker, and trying to save a haul with no items now explains what a haul is for instead of leaving the Save button greyed out. Fixes: photos taken with the camera are no longer occasionally lost if the phone reclaims memory mid-shot, and the onboarding progress bar no longer overlaps the system status bar (both Android).</p>
+          </article>
+        <article class="entry">
+            <span class="when">12 July</span>
+            <h3>Multiple photos per item.</h3>
+            <p>Items can now hold up to 10 photos instead of one &mdash; the most-requested change from resellers who wanted to capture the front, back, label, and any flaws of a piece before listing it. Take new photos with the camera or add several from your camera roll at once, and choose which photo is the &ldquo;main&rdquo; image shown in your item list. Tap any photo to view it full-screen and zoom in. Every photo&rsquo;s link is now included when you export to Google Sheets. Photo sync to Google Drive was also made more reliable, so large batches upload without stalling instead of timing out part-way through.</p>
+          </article>
+      </div>
+    </div>
 
-        <section>
-            <h2>July 2026</h2>
-            <div class="day">
-                <div class="moment">
-                    <span class="when">31 July &mdash;</span>
-                    <p><strong>FlipperHelper for Android is now on Google Play.</strong> The Android app is out of early access and available to everyone &mdash; no testing sign-up, no group to join, just <a href="https://play.google.com/store/apps/details?id=com.oprudnikov.flipperhelper" target="_blank" rel="noopener">install it from Google Play</a>. It&rsquo;s a full native app with feature parity with the iPhone version, and both share the same backup format, so you can move your items, photos, and history between iPhone and Android without losing anything.</p>
-                </div>
-                <div class="moment">
-                    <span class="when">17 July &mdash;</span>
-                    <p><strong>Return dates, flexible &ldquo;days to sell&rdquo;, and a customisable Add Item screen </strong><span class="chip">(v1.3.0, iOS &amp; Android)</span><strong>.</strong> You can now mark an item as returnable and set a return deadline &mdash; the item list shows how many days you have left, turns red at three days or fewer, and switches to &ldquo;Too late&rdquo; once the window closes, so you never miss a shop&rsquo;s return window on stock that didn&rsquo;t sell. &ldquo;Days to sell&rdquo; can now be measured either from the purchase date or from the date you listed an item, whichever better reflects how you work. The Add Item screen is now yours to shape: a &ldquo;Customise fields&rdquo; sheet lets you show only the fields you use &mdash; title, market, seller, purchase date, return date &mdash; each with a short description, right where you add items, instead of being buried in Settings. Purchase date is now a cleaner date-only picker, and trying to save a haul with no items now explains what a haul is for instead of leaving the Save button greyed out. Fixes: photos taken with the camera are no longer occasionally lost if the phone reclaims memory mid-shot, and the onboarding progress bar no longer overlaps the system status bar (both Android).</p>
-                </div>
-                <div class="moment">
-                    <span class="when">12 July &mdash;</span>
-                    <p><strong>Multiple photos per item.</strong> Items can now hold up to 10 photos instead of one &mdash; the most-requested change from resellers who wanted to capture the front, back, label, and any flaws of a piece before listing it. Take new photos with the camera or add several from your camera roll at once, and choose which photo is the &ldquo;main&rdquo; image shown in your item list. Tap any photo to view it full-screen and zoom in. Every photo&rsquo;s link is now included when you export to Google Sheets. Photo sync to Google Drive was also made more reliable, so large batches upload without stalling instead of timing out part-way through.</p>
-                </div>
-            </div>
-        </section>
+    <div class="month">
+      <h2 class="group-label"><b>June 2026</b></h2>
+      <div class="entries">
+        <article class="entry">
+            <span class="when">20 June</span>
+            <h3>New Zealand Dollar support.</h3>
+            <p>NZD (NZ$) is now one of the supported home currencies, bringing the total to six: USD, EUR, GBP, CAD, AUD, and NZD. New Zealand resellers can now set NZD as their home currency, and items bought or sold in NZD convert automatically using the same daily exchange rates as every other currency. The app also picks NZD by default on first launch for iPhones set to a New Zealand region.</p>
+          </article>
+      </div>
+    </div>
 
-        <section>
-            <h2>June 2026</h2>
-            <div class="day">
-                <div class="moment">
-                    <span class="when">20 June &mdash;</span>
-                    <p><strong>New Zealand Dollar support.</strong> NZD (NZ$) is now one of the supported home currencies, bringing the total to six: USD, EUR, GBP, CAD, AUD, and NZD. New Zealand resellers can now set NZD as their home currency, and items bought or sold in NZD convert automatically using the same daily exchange rates as every other currency. The app also picks NZD by default on first launch for iPhones set to a New Zealand region.</p>
-                </div>
-            </div>
-        </section>
+    <div class="month">
+      <h2 class="group-label"><b>April 2026</b></h2>
+      <div class="entries">
+        <article class="entry">
+            <span class="when">16 April</span>
+            <h3>iCloud Backup &amp; Restore.</h3>
+            <p>Your data is now automatically backed up to iCloud every 5 minutes &mdash; enabled by default, works completely offline (iOS syncs when you&apos;re back online). Restore from iCloud on the same device or after a fresh install, with a live progress indicator and cancel button if the download is slow. Two independent backup paths now exist: iCloud (automatic) and file export (manual ZIP via share sheet). Google Sheets &amp; Drive export (for desktop analysis) is a separate feature, not a backup. The backup engine was rewritten with a custom ZIP writer that produces reliable archives &mdash; the previous system-level ZIP creator could produce files that silently restored as empty. Old backups remain fully compatible. Google Drive export progress (folder IDs, spreadsheet links, sync timestamps) is now preserved when restoring from any backup, so you don&apos;t lose your Sheets export setup. The &ldquo;Backup &amp; Restore&rdquo; section in Settings is now a single unified section instead of two confusing ones, with clearer labels: &ldquo;Export to File&rdquo; and &ldquo;Import from File&rdquo; for manual backups. The Google Drive section is renamed to &ldquo;Google Sheets &amp; Drive&rdquo; to reflect that it exports both spreadsheets and images.</p>
+          </article>
+        <article class="entry">
+            <span class="when">15 April</span>
+            <h3>Dashboard deep links.</h3>
+            <p>The app now registers a custom URL scheme (<code>flipperhelper://</code>) that routes to the Dashboard, Add Item, and Items List screens. Used by the App Store in-app event "Car Boot Season 2026" to jump straight into the right screen.</p>
+          </article>
+        <article class="entry">
+            <span class="when">11 April</span>
+            <h3>Sold button on search results.</h3>
+            <p>Requested by a user with ~170 listed items, who pointed out that scrolling a long list to mark a single sale was painful. Search now shows a one-tap sold button on any listed item that hasn't sold yet. Saves a tap-tap-tap.</p>
+          </article>
+        <article class="entry">
+            <span class="when">9 April</span>
+            <h3>Custom dashboard ranges.</h3>
+            <p>Before, the dashboard only showed "this month". Now you can pick a custom date range, a specific week, or a specific month &mdash; useful for reviewing how a single weekend went, or looking back at March after it ended.</p>
+          </article>
+        <article class="entry">
+            <span class="when">9 April</span>
+            <h3>Dates on entry fees and expenses.</h3>
+            <p>If you paid a &pound;5 entry fee on Saturday but only logged it on Sunday, the date used to be wrong. Now you can pick the date when you log any fee or expense. Item costs also show as a separate line in the dashboard summary, so at a glance you can see stock cost vs entry fees, transport, and other expenses.</p>
+          </article>
+      </div>
+    </div>
 
-        <section>
-            <h2>April 2026</h2>
-            <div class="day">
-                <div class="moment">
-                    <span class="when">16 April &mdash;</span>
-                    <p><strong>iCloud Backup &amp; Restore.</strong> Your data is now automatically backed up to iCloud every 5 minutes &mdash; enabled by default, works completely offline (iOS syncs when you&apos;re back online). Restore from iCloud on the same device or after a fresh install, with a live progress indicator and cancel button if the download is slow. Two independent backup paths now exist: iCloud (automatic) and file export (manual ZIP via share sheet). Google Sheets &amp; Drive export (for desktop analysis) is a separate feature, not a backup. The backup engine was rewritten with a custom ZIP writer that produces reliable archives &mdash; the previous system-level ZIP creator could produce files that silently restored as empty. Old backups remain fully compatible. Google Drive export progress (folder IDs, spreadsheet links, sync timestamps) is now preserved when restoring from any backup, so you don&apos;t lose your Sheets export setup. The &ldquo;Backup &amp; Restore&rdquo; section in Settings is now a single unified section instead of two confusing ones, with clearer labels: &ldquo;Export to File&rdquo; and &ldquo;Import from File&rdquo; for manual backups. The Google Drive section is renamed to &ldquo;Google Sheets &amp; Drive&rdquo; to reflect that it exports both spreadsheets and images.</p>
-                </div>
-                <div class="moment">
-                    <span class="when">15 April &mdash;</span>
-                    <p>Dashboard deep links. The app now registers a custom URL scheme (<code>flipperhelper://</code>) that routes to the Dashboard, Add Item, and Items List screens. Used by the App Store in-app event "Car Boot Season 2026" to jump straight into the right screen.</p>
-                </div>
-                <div class="moment">
-                    <span class="when">11 April &mdash;</span>
-                    <p>Sold button on search results. Requested by a user with ~170 listed items, who pointed out that scrolling a long list to mark a single sale was painful. Search now shows a one-tap sold button on any listed item that hasn't sold yet. Saves a tap-tap-tap.</p>
-                </div>
-                <div class="moment">
-                    <span class="when">9 April &mdash;</span>
-                    <p>Custom dashboard ranges. Before, the dashboard only showed "this month". Now you can pick a custom date range, a specific week, or a specific month &mdash; useful for reviewing how a single weekend went, or looking back at March after it ended.</p>
-                </div>
-                <div class="moment">
-                    <span class="when">9 April &mdash;</span>
-                    <p>Dates on entry fees and expenses. If you paid a &pound;5 entry fee on Saturday but only logged it on Sunday, the date used to be wrong. Now you can pick the date when you log any fee or expense. Item costs also show as a separate line in the dashboard summary, so at a glance you can see stock cost vs entry fees, transport, and other expenses.</p>
-                </div>
-            </div>
-        </section>
+    <div class="month">
+      <h2 class="group-label"><b>March 2026</b></h2>
+      <div class="entries">
+        <p class="log-note">Main theme: UX polish, faster backups, better notifications.</p>
+        <article class="entry">
+            <h3>CSV &plus; GZIP sync</h3>
+            <p>replaced the old JSON export pipeline. Backups are now compressed CSV: smaller files, faster uploads to Google Drive, no backend required. A 100k-item backup round-trips end-to-end.</p>
+          </article>
+        <article class="entry">
+            <h3>Background photo sync</h3>
+            <p>photos keep uploading to Google Drive using iOS background task continuation, even when the app is suspended. Queue is resumed on next launch if interrupted.</p>
+          </article>
+        <article class="entry">
+            <h3>Listing reminder notifications</h3>
+            <p>optional local push reminders for unlisted items. Configurable per day of week and time. No server involved; processed entirely on device.</p>
+          </article>
+        <article class="entry">
+            <h3>Entry fee lifecycle per market</h3>
+            <p>entry fees are now linked to markets. Add a fee once; it auto-suggests for the next visit. Option to disable a market from prompting for entry fees.</p>
+          </article>
+        <article class="entry">
+            <h3>Multi-platform listing flow</h3>
+            <p>list the same item across eBay, Vinted, Depop, Facebook, and others in one pass. Dates and asking prices tracked per platform.</p>
+          </article>
+        <article class="entry">
+            <h3>Device currency on first login</h3>
+            <p>the app now picks your iPhone's region currency by default (GBP, EUR, USD, CAD, AUD, NZD) instead of asking.</p>
+          </article>
+        <article class="entry">
+            <h3>Exchange rates</h3>
+            <p>auto-updated daily, stored for 365 days locally, used for multi-currency profit calculation.</p>
+          </article>
+        <article class="entry">
+            <h3>Data backup and restore</h3>
+            <p>full backup as ZIP archive, including items, markets, sellers, expenses, settings, and photos. Restore works on a fresh install.</p>
+          </article>
+        <article class="entry">
+            <h3>SKU display</h3>
+            <p>tap-to-copy SKU on item details (Crockford Base32 format, e.g. <code>FH-20D6G0NR</code>).</p>
+          </article>
+        <article class="entry">
+            <h3>UX</h3>
+            <p>haptics on delete and save, dropped keyboard on outside tap, scroll to profit after selling, cleanup of new-item state on leave.</p>
+          </article>
+        <article class="entry">
+            <h3>Localization</h3>
+            <p>English as the canonical language; dropped a partial Russian locale that wasn't being maintained.</p>
+          </article>
+      </div>
+    </div>
 
-        <section>
-            <h2>March 2026</h2>
-            <p>Main theme: UX polish, faster backups, better notifications.</p>
-            <ul>
-                <li><strong>CSV &plus; GZIP sync</strong> &mdash; replaced the old JSON export pipeline. Backups are now compressed CSV: smaller files, faster uploads to Google Drive, no backend required. A 100k-item backup round-trips end-to-end.</li>
-                <li><strong>Background photo sync</strong> &mdash; photos keep uploading to Google Drive using iOS background task continuation, even when the app is suspended. Queue is resumed on next launch if interrupted.</li>
-                <li><strong>Listing reminder notifications</strong> &mdash; optional local push reminders for unlisted items. Configurable per day of week and time. No server involved; processed entirely on device.</li>
-                <li><strong>Entry fee lifecycle per market</strong> &mdash; entry fees are now linked to markets. Add a fee once; it auto-suggests for the next visit. Option to disable a market from prompting for entry fees.</li>
-                <li><strong>Multi-platform listing flow</strong> &mdash; list the same item across eBay, Vinted, Depop, Facebook, and others in one pass. Dates and asking prices tracked per platform.</li>
-                <li><strong>Device currency on first login</strong> &mdash; the app now picks your iPhone's region currency by default (GBP, EUR, USD, CAD, AUD, NZD) instead of asking.</li>
-                <li><strong>Exchange rates</strong> &mdash; auto-updated daily, stored for 365 days locally, used for multi-currency profit calculation.</li>
-                <li><strong>Data backup and restore</strong> &mdash; full backup as ZIP archive, including items, markets, sellers, expenses, settings, and photos. Restore works on a fresh install.</li>
-                <li><strong>SKU display</strong> &mdash; tap-to-copy SKU on item details (Crockford Base32 format, e.g. <code>FH-20D6G0NR</code>).</li>
-                <li><strong>UX</strong> &mdash; haptics on delete and save, dropped keyboard on outside tap, scroll to profit after selling, cleanup of new-item state on leave.</li>
-                <li><strong>Localization</strong> &mdash; English as the canonical language; dropped a partial Russian locale that wasn't being maintained.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>February 2026 &mdash; v1.0 launch</h2>
-            <p>First commit: 20 February 2026. First TestFlight release: 26 February 2026. Initial scope:</p>
-            <ul>
-                <li>Photo-first item tracking with automatic SKU generation</li>
-                <li>16 listing platforms (eBay, Vinted, Facebook, Depop, Poshmark, Mercari, OfferUp, Craigslist, ThredUp, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing)</li>
-                <li>18 sold platforms (the 16 above plus Car Boot and Sold Offline)</li>
-                <li>Markets with optional GPS and radius-based auto-suggestion</li>
-                <li>Sellers linked to markets</li>
-                <li>Transport expenses by mode (car, bus, train, taxi, van, bike rental)</li>
-                <li>Other expenses (packaging, fees, etc.)</li>
-                <li>Google Drive integration using the restricted <code>drive.file</code> and email OAuth scopes</li>
-                <li>CSV export that Google Drive auto-converts to a Sheet &mdash; no Sheets API required</li>
-                <li>Offline-first: fully functional without a network</li>
-                <li>iOS 17+ with SwiftUI</li>
-                <li>Automatic TestFlight upload on release tag (GitHub Actions + manual code signing)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Testing &amp; QA pipeline</h2>
-            <p>Every release is gated by three layers of automated testing before a TestFlight build goes out.</p>
-
-            <h3>Swift unit tests</h3>
-            <p>10 test files, 3,424 lines of test code covering the data layer, services, and helpers:</p>
-            <ul>
-                <li><code>DatabaseTests.swift</code> &mdash; SQLite / GRDB queries and migrations (523 lines)</li>
-                <li><code>DataStoreTests.swift</code> &mdash; actor-based DataStore concurrency and persistence (497 lines)</li>
-                <li><code>StressTests.swift</code> &mdash; large-dataset benchmarks (688 lines, see below)</li>
-                <li><code>ModelTests.swift</code> &mdash; Item, Market, Seller, expense models (456 lines)</li>
-                <li><code>MigrationServiceTests.swift</code> &mdash; schema migrations and legacy data imports (333 lines)</li>
-                <li><code>HelperTests.swift</code> &mdash; formatters, currency helpers, utilities (323 lines)</li>
-                <li><code>ExchangeRateServiceTests.swift</code> &mdash; multi-currency rate fetching and caching (192 lines)</li>
-                <li><code>UUID7Tests.swift</code> &mdash; time-ordered UUID v7 generation (165 lines)</li>
-                <li><code>ExportServiceTests.swift</code> &mdash; CSV generation for Google Sheets export (153 lines)</li>
-                <li><code>SKUGeneratorTests.swift</code> &mdash; Crockford Base32 SKU uniqueness and format (94 lines)</li>
-            </ul>
-
-            <h3>Stress tests &mdash; 100,000 items</h3>
-            <p>The stress suite loads a generated fixture into the real SQLite database used in production:</p>
-            <ul>
-                <li><strong>100,000 items</strong></li>
-                <li><strong>50,000 transport expenses</strong></li>
-                <li><strong>20 markets</strong> across multiple currencies</li>
-                <li><strong>50 sellers</strong></li>
-                <li>3 months of purchase history (Jan, Feb, Mar 2026)</li>
-            </ul>
-            <p>Benchmarks on that fixture cover: count-all-items query, fetch-all-item-records, filtered sold-items query, filtered date-range (February) query, monthly aggregation SQL, stats-by-market SQL, CSV export of all 100k items, restore from backup end-to-end, and <code>getMonthlyFinancialSummary</code> through the real <code>DatabaseStore</code>. Each benchmark uses XCTest's <code>measure</code> block so regressions show up as a wall-clock slowdown, not a silent correctness bug. Row counts are asserted after every restore so truncated fixtures fail loudly instead of silently.</p>
-
-            <h3>Maestro end-to-end tests &mdash; 63 flows</h3>
-            <p>FlipperHelper uses <a href="https://maestro.mobile.dev/" target="_blank" rel="noopener">Maestro</a> to run UI flows against the simulator. 63 <code>.yaml</code> flow files cover:</p>
-            <ul>
-                <li>Full item lifecycle: add &rarr; list &rarr; sell &rarr; profit verification</li>
-                <li>Multi-currency flows: EUR buy / GBP sell, USD buy / EUR sell, base currency changes</li>
-                <li>Payment-method combinations: cash buy / card sell, card buy / cash sell</li>
-                <li>Listing on multiple platforms, platform toggles, quick-list icons, unlist / relist</li>
-                <li>Selling offline (car boot sales), selling in a different currency, editing a sold item</li>
-                <li>Markets: create, edit, delete (with and without items), currency mismatch, GPS geolocation, market currency auto-change</li>
-                <li>Sellers: lifecycle, create seller with market, multi-seller per market</li>
-                <li>Expenses: entry fees per market, transport (all modes), expense summaries, empty states, edit / delete</li>
-                <li>Foreign currency expenses, suggested-amount reuse</li>
-                <li>Settings: notifications, platform toggles, edit market, edit seller, danger zone, exchange rates view</li>
-                <li>Navigation: all tabs, stress navigation, dashboard stats, long-text edge cases</li>
-                <li>Data: full backup flow, rapid item creation, delete item</li>
-                <li>App Store screenshot automation (<code>99_app_store_screenshots.yaml</code>)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Where it&apos;s going</h2>
-            <p>For what&apos;s being considered next, see the <a href="faq.html">FAQ</a> and the <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">r/flipperhelper subreddit</a>, where shipped changes are announced and requests are collected. If you use FlipperHelper and want something added, the subreddit or <a href="mailto:support@flipperhelper.app">email</a> is the fastest way.</p>
-            <span class="store-row"><a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" class="btn btn-primary" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="17" height="17"><path d="M16.4 12.9c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.6.9-.7 0-1.9-.9-3.1-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.7 0 0-2.4-.9-2.3-3.7zM14.2 5.9c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.2-.6 2.8-1.4z"/></svg>Download FlipperHelper on the App Store</a><a href="https://flipperhelper.app/get-the-app.html" class="btn btn-primary" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="17" height="17"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.6 2.3zM16.2 15.6l-3.1-3.1v-.2l3.1-3.1.1.1 3.7 2.1c1 .6 1 1.6 0 2.2l-3.8 2zM15.9 15.9l-3.2-3.2-9.1 9.1c.3.4.9.4 1.5.1l10.8-6M15.9 8.1L5.1 2c-.6-.3-1.2-.3-1.5.1l9.1 9.1 3.2-3.1z"/></svg>Get FlipperHelper on Google Play</a></span>
-        </section>
-
-    </article>
+    <div class="month">
+      <h2 class="group-label"><b>February 2026</b> &mdash; v1.0 launch</h2>
+      <div class="entries">
+        <p class="log-note">First commit: 20 February 2026. First TestFlight release: 26 February 2026. Initial scope:</p>
+        <article class="entry"><p>Photo-first item tracking with automatic SKU generation</p></article>
+        <article class="entry"><p>16 listing platforms (eBay, Vinted, Facebook, Depop, Poshmark, Mercari, OfferUp, Craigslist, ThredUp, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing)</p></article>
+        <article class="entry"><p>18 sold platforms (the 16 above plus Car Boot and Sold Offline)</p></article>
+        <article class="entry"><p>Markets with optional GPS and radius-based auto-suggestion</p></article>
+        <article class="entry"><p>Sellers linked to markets</p></article>
+        <article class="entry"><p>Transport expenses by mode (car, bus, train, taxi, van, bike rental)</p></article>
+        <article class="entry"><p>Other expenses (packaging, fees, etc.)</p></article>
+        <article class="entry"><p>Google Drive integration using the restricted <code>drive.file</code> and email OAuth scopes</p></article>
+        <article class="entry"><p>CSV export that Google Drive auto-converts to a Sheet &mdash; no Sheets API required</p></article>
+        <article class="entry"><p>Offline-first: fully functional without a network</p></article>
+        <article class="entry"><p>iOS 17+ with SwiftUI</p></article>
+        <article class="entry"><p>Automatic TestFlight upload on release tag (GitHub Actions + manual code signing)</p></article>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+<hr class="tear">
+
+<!-- ======================= TESTING & QA ======================= -->
+<section aria-labelledby="qa-title">
+  <div class="wrap reveal">
+    <h2 class="section-title" id="qa-title">Testing &amp; QA pipeline</h2>
+    <p class="section-lede">Every release is gated by three layers of automated testing before a TestFlight build goes out.</p>
+
+    <div class="layer">
+      <h3>Swift unit tests</h3>
+      <p>10 test files, 3,424 lines of test code covering the data layer, services, and helpers:</p>
+      <ul class="answers measure">
+        <li><code>DatabaseTests.swift</code> &mdash; SQLite / GRDB queries and migrations (523 lines)</li>
+        <li><code>DataStoreTests.swift</code> &mdash; actor-based DataStore concurrency and persistence (497 lines)</li>
+        <li><code>StressTests.swift</code> &mdash; large-dataset benchmarks (688 lines, see below)</li>
+        <li><code>ModelTests.swift</code> &mdash; Item, Market, Seller, expense models (456 lines)</li>
+        <li><code>MigrationServiceTests.swift</code> &mdash; schema migrations and legacy data imports (333 lines)</li>
+        <li><code>HelperTests.swift</code> &mdash; formatters, currency helpers, utilities (323 lines)</li>
+        <li><code>ExchangeRateServiceTests.swift</code> &mdash; multi-currency rate fetching and caching (192 lines)</li>
+        <li><code>UUID7Tests.swift</code> &mdash; time-ordered UUID v7 generation (165 lines)</li>
+        <li><code>ExportServiceTests.swift</code> &mdash; CSV generation for Google Sheets export (153 lines)</li>
+        <li><code>SKUGeneratorTests.swift</code> &mdash; Crockford Base32 SKU uniqueness and format (94 lines)</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======================= STRESS TESTS — the story band (§25.6) =======================
+     The page's one background band and its one boxed data object. It is also what breaks the
+     page out of a single flush-left column: copy left, the fixture right, on white. -->
+<section class="story" aria-labelledby="stress-title">
+  <div class="wrap">
+    <div class="story-grid">
+      <div class="layer">
+        <h3 id="stress-title">Stress tests &mdash; 100,000 items</h3>
+        <p>The stress suite loads a generated fixture into the real SQLite database used in production:</p>
+        <p>Benchmarks on that fixture cover: count-all-items query, fetch-all-item-records, filtered sold-items query, filtered date-range (February) query, monthly aggregation SQL, stats-by-market SQL, CSV export of all 100k items, restore from backup end-to-end, and <code>getMonthlyFinancialSummary</code> through the real <code>DatabaseStore</code>. Each benchmark uses XCTest's <code>measure</code> block so regressions show up as a wall-clock slowdown, not a silent correctness bug. Row counts are asserted after every restore so truncated fixtures fail loudly instead of silently.</p>
+      </div>
+
+      <div>
+        <div class="ledger fixture reveal">
+          <div class="ledger-row"><span class="what"><strong>100,000 items</strong></span></div>
+          <div class="ledger-row"><span class="what"><strong>50,000 transport expenses</strong></span></div>
+          <div class="ledger-row"><span class="what"><strong>20 markets</strong> across multiple currencies</span></div>
+          <div class="ledger-row"><span class="what"><strong>50 sellers</strong></span></div>
+          <div class="ledger-row"><span class="what">3 months of purchase history (Jan, Feb, Mar 2026)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= MAESTRO ======================= -->
+<section aria-labelledby="maestro-title">
+  <div class="wrap reveal">
+    <div class="layer">
+      <h3 id="maestro-title">Maestro end-to-end tests &mdash; 63 flows</h3>
+      <p>FlipperHelper uses <a href="https://maestro.mobile.dev/" target="_blank" rel="noopener">Maestro</a> to run UI flows against the simulator. 63 <code>.yaml</code> flow files cover:</p>
+      <ul class="answers measure">
+        <li>Full item lifecycle: add &rarr; list &rarr; sell &rarr; profit verification</li>
+        <li>Multi-currency flows: EUR buy / GBP sell, USD buy / EUR sell, base currency changes</li>
+        <li>Payment-method combinations: cash buy / card sell, card buy / cash sell</li>
+        <li>Listing on multiple platforms, platform toggles, quick-list icons, unlist / relist</li>
+        <li>Selling offline (car boot sales), selling in a different currency, editing a sold item</li>
+        <li>Markets: create, edit, delete (with and without items), currency mismatch, GPS geolocation, market currency auto-change</li>
+        <li>Sellers: lifecycle, create seller with market, multi-seller per market</li>
+        <li>Expenses: entry fees per market, transport (all modes), expense summaries, empty states, edit / delete</li>
+        <li>Foreign currency expenses, suggested-amount reuse</li>
+        <li>Settings: notifications, platform toggles, edit market, edit seller, danger zone, exchange rates view</li>
+        <li>Navigation: all tabs, stress navigation, dashboard stats, long-text edge cases</li>
+        <li>Data: full backup flow, rapid item creation, delete item</li>
+        <li>App Store screenshot automation (<code>99_app_store_screenshots.yaml</code>)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr class="tear">
+
+<!-- ======================= FINAL ======================= -->
+<section class="final" aria-labelledby="final-title">
+  <div class="wrap">
+    <h2 id="final-title">Where it&apos;s going</h2>
+    <p>For what&apos;s being considered next, see the <a href="/faq.html">FAQ</a> and the <a href="https://www.reddit.com/r/flipperhelper/" target="_blank" rel="noopener">r/flipperhelper subreddit</a>, where shipped changes are announced and requests are collected. If you use FlipperHelper and want something added, the subreddit or <a href="mailto:support@flipperhelper.app">email</a> is the fastest way.</p>
+    <div class="store-row">
+      <a class="btn btn-primary" href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">Download FlipperHelper on the App Store</a>
+      <a class="btn btn-primary" href="https://flipperhelper.app/get-the-app.html" target="_blank" rel="noopener">Get FlipperHelper on Google Play</a>
+    </div>
+  </div>
+</section>
 
 </main>
 
-<footer class="ft-c3">
-  <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-left foot-col">
-        <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
-        <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
-        <h4>Follow</h4>
-        <nav class="row-nav" aria-label="Footer — follow">
-          <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
-          <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
-        </nav>
+    <footer class="ft-c3">
+      <div class="wrap">
+        <div class="foot-grid">
+          <div class="foot-left foot-col">
+            <a class="brand" href="/" style="font-size:1rem"><svg class="fh-logo" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M165.114 18.1H384L375.193 62.6817H201.204C184.22 62.6817 153.27 76.778 146.901 110.745C140.533 144.712 132.273 187.935 132.273 187.935H165.114L156.622 226.148H124.35L92.6553 385.368H25L84.4422 96.6487C97.1547 46.3552 118.409 18.1 165.114 18.1Z"/><path d="M213.959 85.1461L152.374 385.369H186.341C186.341 385.369 206.367 289.56 218.211 226.552C221.29 212.458 223.055 201.637 226.135 187.543C231.938 154.381 247.467 85.1461 247.467 85.1461H213.959Z"/><path d="M281.873 187.935C245.783 183.69 226.135 187.543 226.135 187.543C223.055 201.637 221.29 212.458 218.211 226.552C232.897 226.552 254.781 226.552 254.781 226.552C272.918 227.275 273.093 239.398 266.362 267.389L243.66 385.369H309.471C309.471 385.369 328.577 289.836 332.823 260.115C337.069 230.394 317.963 192.181 281.873 187.935Z"/></svg>FlipperHelper</a>
+            <p>The inventory &amp; profit tracker for resellers who source in person. Built at the car boot in London.</p>
+            <h4>Follow</h4>
+            <nav class="row-nav" aria-label="Footer — follow">
+              <a href="https://www.instagram.com/flipperhelper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
+              <a href="https://www.reddit.com/r/flipperhelper/"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14" rx="8" ry="5.5"/><circle cx="9" cy="13.4" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.4" r=".9" fill="currentColor" stroke="none"/><path d="M9.5 16.3c1.6 1 3.4 1 5 0"/><path d="M12 8.5l1-4 3.5 1"/><circle cx="17.3" cy="5.2" r="1.1"/></svg>Reddit</a>
+            </nav>
+          </div>
+          <div class="foot-col">
+            <h4>Product</h4>
+            <nav aria-label="Footer — product">
+              <a href="/flipperhelper-pricing.html">Pricing</a>
+              <a href="/tools/">Free tools</a>
+              <a href="/compare/">Compare apps</a>
+              <a href="/changelog.html">Changelog</a>
+              <a href="/sources.html">Supported platforms</a>
+            </nav>
+          </div>
+          <div class="foot-col">
+            <h4>Company</h4>
+            <nav aria-label="Footer — company">
+              <a href="/about.html">About</a>
+              <a href="/blog/">Blog</a>
+              <a href="/press/">Press kit</a>
+              <a href="/is-flipperhelper-legit.html">Is FlipperHelper legit?</a>
+              <a href="/flipperhelper-review.html">Review</a>
+            </nav>
+          </div>
+          <div class="foot-col">
+            <h4>Help &amp; legal</h4>
+            <nav aria-label="Footer — help and legal">
+              <a href="mailto:support@flipperhelper.app">Support</a>
+              <a href="/faq.html">FAQ</a>
+              <a href="/privacy.html">Privacy</a>
+              <a href="/terms.html">Terms</a>
+            </nav>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <span>Community at <a href="https://www.reddit.com/r/flipperhelper/">r/flipperhelper</a></span>
+          <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
+        </div>
       </div>
-      <div class="foot-col">
-        <h4>Product</h4>
-        <nav aria-label="Footer — product">
-          <a href="/flipperhelper-pricing.html">Pricing</a>
-          <a href="/tools/">Free tools</a>
-          <a href="/compare/">Compare apps</a>
-          <a href="/changelog.html">Changelog</a>
-          <a href="/sources.html">Supported platforms</a>
-        </nav>
-      </div>
-      <div class="foot-col">
-        <h4>Company</h4>
-        <nav aria-label="Footer — company">
-          <a href="/about.html">About</a>
-          <a href="/blog/">Blog</a>
-          <a href="/press/">Press kit</a>
-          <a href="/is-flipperhelper-legit.html">Is FlipperHelper legit?</a>
-          <a href="/flipperhelper-review.html">Review</a>
-        </nav>
-      </div>
-      <div class="foot-col">
-        <h4>Help &amp; legal</h4>
-        <nav aria-label="Footer — help and legal">
-          <a href="mailto:support@flipperhelper.app">Support</a>
-          <a href="/faq.html">FAQ</a>
-          <a href="/privacy.html">Privacy</a>
-          <a href="/terms.html">Terms</a>
-        </nav>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>Community at <a href="https://www.reddit.com/r/flipperhelper/">r/flipperhelper</a></span>
-      <span>© 2025–2026 Oleksandr Prudnikov. Built for Valentina — and every reseller up before dawn.</span>
-    </div>
-  </div>
-</footer>
+    </footer>
+
+<script>
+/* reveal (§10) */
+(function(){
+  var rev = [].slice.call(document.querySelectorAll('.reveal'));
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches){
+    rev.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:.12});
+    rev.forEach(function(el){ io.observe(el); });
+  }
+})();
+</script>
 <script data-goatcounter="https://grommash9.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
