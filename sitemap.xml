@@ -380,7 +380,13 @@
   </url>
   <url>
     <loc>https://flipperhelper.app/blog/sourcing-stock-from-france.html</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flipperhelper.app/blog/braderie-de-lille-furniture-haul-uk-reseller.html</loc>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
