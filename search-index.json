@@ -90,6 +90,18 @@
     "type": "page"
   },
   {
+    "url": "/tools/scrap-silver-calculator.html",
+    "title": "Scrap Silver Calculator UK — Live Price per Gram",
+    "description": "Free UK scrap silver calculator: enter the weight and hallmark (925, 958, 999, 800) to get the melt value at today's live silver price.",
+    "type": "page"
+  },
+  {
+    "url": "/tools/vinyl-decoder.html",
+    "title": "Vinyl Matrix & Runout Code Decoder — Free Tool",
+    "description": "Type what you can read in your record's runout — worn, faint, partial is fine, use ? for unclear characters. Get ranked, honestly-uncertain matches for mastering engineer initials, plant codes, and more.",
+    "type": "page"
+  },
+  {
     "url": "/press/index.html",
     "title": "Press Kit",
     "description": "FlipperHelper press kit. Download app screenshots, logos, app icon, and key facts about the free iOS and Android reselling tracker app.",
@@ -378,6 +390,12 @@
     "type": "post"
   },
   {
+    "url": "/blog/most-sold-items-on-ebay-uk.html",
+    "title": "Most Sold Items on eBay UK & How to Check Sold Listings",
+    "description": "What sells most on eBay UK? eBay publishes no current ranking, so here is its official data, what sellers report, and how to check sold listings.",
+    "type": "post"
+  },
+  {
     "url": "/blog/portobello-road-market-uk-reseller-guide.html",
     "title": "Portobello Road Market: UK Reseller Guide 2026",
     "description": "Portobello Road Market 2026 — opening hours, antique arcades (Admiral Vernon, Crown), Friday vintage day, Saturday antiques, reseller tips.",
@@ -444,6 +462,12 @@
     "type": "post"
   },
   {
+    "url": "/blog/silver-plate-vs-sterling-silver.html",
+    "title": "Silver Plate vs Sterling Silver: How to Tell Them Apart (UK)",
+    "description": "Sterling silver is solid 925 silver with a UK hallmark. Silver plate (EPNS, EP, A1) is base metal with a thin silver coat. How to tell them apart.",
+    "type": "post"
+  },
+  {
     "url": "/blog/sourcing-stock-from-france.html",
     "title": "Sourcing Reselling Stock from France: UK Guide to Driving, Customs & Costs",
     "description": "How to drive UK to France via Eurotunnel for reselling stock 2-3x cheaper. Customs, EORI, taxes, real costs — the complete guide.",
@@ -500,13 +524,25 @@
   {
     "url": "/blog/vinted-fees-uk.html",
     "title": "Vinted Fees UK Explained (2026)",
-    "description": "Vinted fees explained for UK sellers in 2026. Sellers pay nothing. Buyers pay 3-8% protection plus shipping. Full breakdown with examples.",
+    "description": "Vinted fees for UK sellers in 2026: sellers pay nothing, buyers pay a 3-8% + 30-80p Vinted fee plus shipping. Plus Vinted Pro rules for businesses.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/vinted-pro-uk.html",
+    "title": "Vinted Pro UK: Who Needs It, Fees, Returns and HMRC",
+    "description": "Vinted Pro for UK resellers: who must sign up, what it costs (it's free), 14-day returns, what shows on your profile, allowed categories and HMRC rules.",
     "type": "post"
   },
   {
     "url": "/blog/what-is-a-brocante-uk-guide.html",
     "title": "What Is a Brocante? French Flea Markets Explained (UK Reseller Guide)",
     "description": "A brocante is a French flea market for second-hand and antique goods. UK reseller's guide to brocante vs vide-grenier vs braderie vs marché aux puces.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/where-to-sell-dvds-uk.html",
+    "title": "Where to Sell DVDs in the UK: Buy-Back Sites vs eBay",
+    "description": "Where to sell DVDs, CDs and box sets in the UK: what musicMagpie, WeBuyBooks, Zapper and CeX accept, real trade-in offers, and which DVDs are worth money.",
     "type": "post"
   },
   {

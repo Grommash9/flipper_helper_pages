@@ -26,6 +26,8 @@ const TOP_LEVEL = [
     'tools/silver-hallmarks-birmingham.html',
     'tools/silver-hallmarks-sheffield.html',
     'tools/silver-hallmarks-edinburgh.html',
+    'tools/scrap-silver-calculator.html',
+    'tools/vinyl-decoder.html',
     'press/index.html',
     'blog/index.html',
 ];

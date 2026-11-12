@@ -80,7 +80,7 @@
       "name": "What are the current eBay selling fees in the UK?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "eBay UK charges a 12.8% final value fee plus £0.30 per order for most categories. So an item sold for £20 incurs £2.56 + £0.30 = £2.86 in eBay fees. Private sellers selling casually may qualify for zero insertion fees on the first 150 listings per month. See eBay's official fee page for category-specific rates."
+        "text": "UK private sellers pay no final value fee and get 300 free listings a month. Business sellers pay a final value fee by category (11.9% for clothes), plus 30p per order (40p over £10), a 0.35% regulatory fee, and 20% VAT on those fees. So a £20 clothing sale costs a business seller about £3.42 in eBay fees. See eBay's official fee page for category-specific rates."
       }
     },
     {
@@ -238,7 +238,7 @@
                             </tr>
                             <tr>
                                 <td class="col-header">J: Platform Fees</td>
-                                <td>eBay: 12.8% + &pound;0.30. Vinted: &pound;0 (buyer pays). FB: &pound;0</td>
+                                <td>eBay private: &pound;0. eBay business: 11.9% (clothes) + 0.35% + 30p/40p per order, plus VAT. Vinted: &pound;0 (buyer pays). FB: &pound;0</td>
                                 <td>&pound;0.00</td>
                             </tr>
                             <tr>
@@ -377,11 +377,11 @@
                 </div>
 
                 <div class="formula-block">
-                    <span class="formula-label">eBay fees (12.8% + &pound;0.30 per order)</span>
-                    <code>=IF(F2="eBay",I2*0.128+0.30,0)</code>
+                    <span class="formula-label">eBay business seller fees (11.9% clothes rate + 0.35% + 30p/40p per order, plus 20% VAT)</span>
+                    <code>=IF(F2="eBay",(I2*(0.119+0.0035)+IF(I2&gt;10,0.40,0.30))*1.2,0)</code>
                 </div>
 
-                <p>That last formula auto-calculates eBay fees based on the platform column. Vinted sellers pay no fees (the buyer pays the protection fee), so those stay at &pound;0. For Facebook Marketplace local collection, fees are also &pound;0.</p>
+                <p>That last formula auto-calculates eBay fees based on the platform column. Change 0.119 to your category&rsquo;s rate (see our <a href="ebay-selling-fees-uk-2026.html">eBay fees breakdown</a>). If you sell on eBay as a private seller, your fees are &pound;0, so replace the formula with 0. Vinted sellers pay no fees (the buyer pays the Vinted fee), so those stay at &pound;0. For Facebook Marketplace local collection, fees are also &pound;0.</p>
             </section>
 
       <hr class="tear">
@@ -412,10 +412,10 @@
                                 <td>&pound;3.00</td>
                                 <td>eBay</td>
                                 <td>&pound;18.00</td>
-                                <td>&pound;2.60</td>
+                                <td>&pound;3.13</td>
                                 <td>&pound;3.35</td>
                                 <td>&pound;0.50</td>
-                                <td class="profit-positive">&pound;8.55</td>
+                                <td class="profit-positive">&pound;8.02</td>
                                 <td>11</td>
                             </tr>
                             <tr>
@@ -436,10 +436,10 @@
                                 <td>&pound;8.00</td>
                                 <td>eBay</td>
                                 <td>&pound;45.00</td>
-                                <td>&pound;6.06</td>
+                                <td>&pound;7.10</td>
                                 <td>&pound;5.90</td>
                                 <td>&pound;2.00</td>
-                                <td class="profit-positive">&pound;23.04</td>
+                                <td class="profit-positive">&pound;22.00</td>
                                 <td>4</td>
                             </tr>
                             <tr>
@@ -472,10 +472,10 @@
                                 <td>&pound;15.00</td>
                                 <td>eBay</td>
                                 <td>&pound;28.00</td>
-                                <td>&pound;3.88</td>
+                                <td>&pound;4.60</td>
                                 <td>&pound;4.50</td>
                                 <td>&pound;1.50</td>
-                                <td class="profit-positive">&pound;3.12</td>
+                                <td class="profit-positive">&pound;2.40</td>
                                 <td>19</td>
                             </tr>
                         </tbody>
@@ -484,11 +484,11 @@
 
                 <p>Notes on the fees:</p>
                 <ul>
-                    <li><strong>eBay:</strong> 12.8% of sale price + &pound;0.30 per order. The &pound;18 dress: &pound;18 x 0.128 + &pound;0.30 = &pound;2.60. The &pound;45 Le Creuset: &pound;45 x 0.128 + &pound;0.30 = &pound;6.06. The &pound;28 toaster: &pound;28 x 0.128 + &pound;0.30 = &pound;3.88.</li>
-                    <li><strong>Vinted:</strong> &pound;0 seller fees. The buyer pays the protection fee, not you.</li>
+                    <li><strong>eBay (business seller):</strong> 11.9% final value fee (clothes and home both use 11.9%) + 0.35% regulatory fee + 40p per order, plus 20% VAT on the fees. The &pound;18 dress: (&pound;18 x 0.1225 + &pound;0.40) x 1.2 = &pound;3.13. The &pound;45 Le Creuset: (&pound;45 x 0.1225 + &pound;0.40) x 1.2 = &pound;7.10. The &pound;28 toaster: (&pound;28 x 0.1225 + &pound;0.40) x 1.2 = &pound;4.60. As a private seller, all three would be &pound;0.</li>
+                    <li><strong>Vinted:</strong> &pound;0 seller fees. The buyer pays the Vinted fee, not you.</li>
                     <li><strong>Facebook Marketplace:</strong> &pound;0 fees for local collection. If you use the shipping option, there's a selling fee, but most UK sellers do collection.</li>
                 </ul>
-                <p>The Pyrex bowls sold via Facebook local collection — no postage, no packaging, no fees. That's &pound;13 pure profit. The toaster only made &pound;3.12 after all costs and took 19 days. That's the kind of insight you only get when you track properly.</p>
+                <p>The Pyrex bowls sold via Facebook local collection — no postage, no packaging, no fees. That's &pound;13 pure profit. The toaster only made &pound;2.40 after all costs and took 19 days. That's the kind of insight you only get when you track properly.</p>
             </section>
 
       <hr class="tear">
@@ -548,7 +548,7 @@
                 <p>Net Profit = Sale Price - Purchase Price - Platform Fees - Postage Cost - Packaging Cost. In Google Sheets or Excel, that's <code>=I2-D2-J2-K2-L2</code>. For complete accuracy, also divide your trip expenses (entry fees, petrol) by the number of items bought per trip and add that to each item's cost.</p>
       </div><div class="faq-item">
       <h3>What are the current eBay selling fees in the UK?</h3>
-                <p>eBay UK charges 12.8% of the sale price plus &pound;0.30 per order for most categories. So an item sold for &pound;20 costs you &pound;2.56 + &pound;0.30 = &pound;2.86 in fees. For full details, see our <a href="ebay-selling-fees-uk-2026.html">eBay UK fees 2026 breakdown</a>.</p>
+                <p>UK private sellers pay no final value fee. Business sellers pay a final value fee by category (11.9% for clothes), plus 30p per order (40p over &pound;10), a 0.35% regulatory fee, and 20% VAT on those fees. So a &pound;20 clothing sale costs a business seller about &pound;3.42 in fees. For full details, see our <a href="ebay-selling-fees-uk-2026.html">eBay UK fees 2026 breakdown</a>.</p>
       </div><div class="faq-item">
       <h3>Is Google Sheets or Excel better for tracking reselling?</h3>
                 <p>Google Sheets is better if you want access from multiple devices or need to share with a partner. Excel is stronger for offline use and advanced features like pivot tables. Both support the same formulas. The main limitation of either is that they're painful to use on a phone at a market.</p>

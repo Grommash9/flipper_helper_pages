@@ -59,8 +59,8 @@
   <text x="532" y="111" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Business Seller</text>
 
   <!-- Business seller details -->
-  <text x="395" y="158" font-size="14" fill="#555">Final value fee (10.9%)</text>
-  <text x="670" y="158" text-anchor="end" font-size="14" font-weight="700" fill="#C0392B">£3.22</text>
+  <text x="395" y="158" font-size="14" fill="#555">Final value fee (11.9%)</text>
+  <text x="670" y="158" text-anchor="end" font-size="14" font-weight="700" fill="#C0392B">£3.51</text>
 
   <line x1="395" y1="172" x2="670" y2="172" stroke="#EEF2F7" stroke-width="1"/>
 
@@ -75,20 +75,20 @@
   <line x1="395" y1="244" x2="670" y2="244" stroke="#EEF2F7" stroke-width="1"/>
 
   <text x="395" y="266" font-size="14" fill="#555">VAT on fees (20%)</text>
-  <text x="670" y="266" text-anchor="end" font-size="14" font-weight="700" fill="#C0392B">£0.74</text>
+  <text x="670" y="266" text-anchor="end" font-size="14" font-weight="700" fill="#C0392B">£0.80</text>
 
   <line x1="395" y1="280" x2="670" y2="280" stroke="#EEF2F7" stroke-width="1"/>
 
   <!-- Total box -->
   <rect x="395" y="300" width="275" height="52" rx="8" fill="#FDEDEC"/>
   <text x="532" y="322" text-anchor="middle" font-size="13" fill="#555">eBay takes from this sale:</text>
-  <text x="532" y="343" text-anchor="middle" font-size="22" font-weight="700" fill="#C0392B">£4.46</text>
+  <text x="532" y="343" text-anchor="middle" font-size="22" font-weight="700" fill="#C0392B">£4.81</text>
 
   <!-- Profit -->
-  <text x="532" y="380" text-anchor="middle" font-size="13" fill="#888">Your revenue: £25.04</text>
+  <text x="532" y="380" text-anchor="middle" font-size="13" fill="#888">Your revenue: £24.69</text>
   <text x="532" y="400" text-anchor="middle" font-size="13" fill="#888">Profit after £5 cost + postage:</text>
   <text x="532" y="422" text-anchor="middle" font-size="18" font-weight="700" fill="#334B90">~£15</text>
 
   <!-- Footer note -->
-  <text x="360" y="465" text-anchor="middle" font-size="12" fill="#AAA">Based on eBay UK fees from February 2026. Clothing category (10.9%).</text>
+  <text x="360" y="465" text-anchor="middle" font-size="12" fill="#AAA">Based on eBay UK business fees checked November 2026. Clothing category (11.9%).</text>
 </svg>
