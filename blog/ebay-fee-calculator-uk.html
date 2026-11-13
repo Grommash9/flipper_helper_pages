@@ -60,28 +60,10 @@
 </script>
 <!-- FAQPage JSON-LD -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much does eBay take from a sale UK?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For private sellers: nothing — selling is free. For business sellers: a final value fee of 9.9-12.9% in most categories (11.9% for clothes), plus a per-order fee of 30p (orders of £10 or less) or 40p (orders over £10), plus a 0.35% regulatory operating fee. VAT at 20% is added on top of all fees."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I calculate eBay fees UK?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The total fee for business sellers is: (sale price + postage) × category fee % + per-order fee (30p or 40p) + (sale price + postage) × 0.35% regulatory fee. Then add 20% VAT on the total fees. Private sellers pay no fees."
-      }
-    }
-  ]
-}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"How much does eBay take from a sale UK?","acceptedAnswer":{"@type":"Answer","text":"Private sellers: nothing. Business sellers: typically 16–17% of the total sale on a £20–30 clothing sale. This total includes the final value fee, the per-order fee, the regulatory fee and the VAT on the fees."}},
+  {"@type":"Question","name":"How do I calculate eBay fees?","acceptedAnswer":{"@type":"Answer","text":"Total fee = (sale price + postage) × category fee % + per-order fee + (sale price + postage) × 0.35%. Then add 20% VAT on all fees. Or just use the calculator above."}}
+]}
 </script>
 
 <link rel="stylesheet" href="article.css">
@@ -228,20 +210,20 @@
 
       <section>
                 <h2>Why this matters: fees catch people off guard</h2>
-                <p>One of the <a href="https://www.reddit.com/r/eBaySellerAdvice/comments/1lqazk4/" target="_blank" rel="noopener">most upvoted posts on r/eBaySellerAdvice</a> is titled &ldquo;Learned a hard lesson today.&rdquo; The seller listed a book for $4 and didn&rsquo;t realise eBay charges fees on the <em>total</em> transaction including shipping &mdash; not just the item price. The fees ate roughly 50% of the sale price, and they couldn&rsquo;t even afford a box to ship it in.</p>
-                <p><a href="https://www.reddit.com/r/eBaySellerAdvice/comments/1b61ruy/" target="_blank" rel="noopener">Another popular post</a>: someone bought a golf bag at a charity shop for $15 and sold it on eBay for $68. Sounds like a great flip. But after shipping ($111 &mdash; it was big and heavy, going cross-country), the transaction fee ($26), and a promoted listing fee ($20), they made $6 profit. On a $68 sale.</p>
-                <p>These are US examples (UK private sellers now pay zero fees &mdash; see below), but the lesson is universal: if you don&rsquo;t calculate your fees and postage <em>before</em> listing, your &ldquo;profit&rdquo; can evaporate. That&rsquo;s what the calculator above is for.</p>
+                <p>One of the <a href="https://www.reddit.com/r/eBaySellerAdvice/comments/1lqazk4/" target="_blank" rel="noopener">most upvoted posts on r/eBaySellerAdvice</a> is titled &ldquo;Learned a hard lesson today.&rdquo; The seller listed a book for $4. They didn&rsquo;t realise that eBay charges fees on the <em>total</em> transaction, including shipping, not only on the item price. The fees took roughly 50% of the sale price. After that, the seller couldn&rsquo;t even afford a box to ship the book in.</p>
+                <p><a href="https://www.reddit.com/r/eBaySellerAdvice/comments/1b61ruy/" target="_blank" rel="noopener">Another popular post</a>: someone bought a golf bag at a charity shop for $15 and sold it on eBay for $68. That looks like a good result. But the bag was big and heavy and went cross-country, so shipping cost $111. There was also a transaction fee ($26) and a promoted listing fee ($20). After these costs, the seller made $6 profit on a $68 sale.</p>
+                <p>These are US examples. UK private sellers now pay zero fees (see below). But the lesson applies everywhere. If you don&rsquo;t calculate your fees and postage <em>before</em> you list, your &ldquo;profit&rdquo; can disappear. Use the calculator above to check this before you list.</p>
             </section>
 
       <hr class="tear">
 
       <section>
                 <h2>How eBay fees work</h2>
-                <p>Since October 2024, UK private sellers pay no final value fees on eBay, with 300 free listings per month (source: <a href="https://www.ebay.co.uk/help/selling/fees-credits-invoices/selling-fees?id=4364" target="_blank" rel="noopener">eBay&rsquo;s official UK fee page</a>). If you exceed 300 listings, you pay 35p per additional listing. If you&rsquo;re selling items you already own (not buying to resell), you&rsquo;re a private seller.</p>
-                <p>If you&rsquo;re <strong>regularly buying items specifically to resell</strong>, eBay (and HMRC) may consider you a business seller. The line isn&rsquo;t always clear &mdash; see our <a href="hmrc-1000-trading-allowance-resellers-uk.html">HMRC trading allowance guide</a> for more on this.</p>
+                <p>Since October 2024, UK private sellers pay no final value fees on eBay (source: <a href="https://www.ebay.co.uk/help/selling/fees-credits-invoices/selling-fees?id=4364" target="_blank" rel="noopener">eBay&rsquo;s official UK fee page</a>). They get 300 free listings per month. If you exceed 300 listings, you pay 35p per additional listing. If you&rsquo;re selling items you already own (not buying to resell), you&rsquo;re a private seller.</p>
+                <p>If you&rsquo;re <strong>regularly buying items specifically to resell</strong>, eBay (and HMRC) may consider you a business seller. The line isn&rsquo;t always clear. For more on this, see our <a href="hmrc-1000-trading-allowance-resellers-uk.html">HMRC trading allowance guide</a>.</p>
                 <p>Business sellers pay three fees on every sale (per <a href="https://www.ebay.co.uk/help/selling/fees-credits-invoices/selling-fees?id=4364" target="_blank" rel="noopener">eBay&rsquo;s fee schedule</a>):</p>
                 <ul>
-                    <li><strong>Final value fee:</strong> A percentage of the total sale (item + postage), 9.9&ndash;12.9% in most categories (11.9% for clothes), lower for phones and consoles, up to 14.9% for jewellery</li>
+                    <li><strong>Final value fee:</strong> A percentage of the total sale (item + postage). It is 9.9&ndash;12.9% in most categories (11.9% for clothes). It is lower for phones and consoles and up to 14.9% for jewellery</li>
                     <li><strong>Per-order fee:</strong> 30p on orders of &pound;10 or less, 40p on orders over &pound;10 (increased February 2026)</li>
                     <li><strong>Regulatory operating fee:</strong> 0.35% of the total sale</li>
                 </ul>
@@ -256,7 +238,7 @@
 
                 <div class="faq-item">
       <h3>How much does eBay take from a sale UK?</h3>
-                <p>Private sellers: nothing. Business sellers: typically 16&ndash;17% of the total sale on a &pound;20&ndash;30 clothing sale when you include the final value fee, per-order fee, regulatory fee, and VAT on fees.</p>
+                <p>Private sellers: nothing. Business sellers: typically 16&ndash;17% of the total sale on a &pound;20&ndash;30 clothing sale. This total includes the final value fee, the per-order fee, the regulatory fee and the VAT on the fees.</p>
       </div><div class="faq-item">
       <h3>How do I calculate eBay fees?</h3>
                 <p>Total fee = (sale price + postage) &times; category fee % + per-order fee + (sale price + postage) &times; 0.35%. Then add 20% VAT on all fees. Or just use the calculator above.</p>
@@ -275,8 +257,8 @@
                 <h2>Related reading</h2>
                 <ul>
                     <li><a href="ebay-selling-fees-uk-2026.html">eBay Selling Fees UK 2026</a> — complete breakdown by category including Shop subscriptions</li>
-                    <li><a href="royal-mail-postage-prices-resellers-2026.html">Royal Mail Postage Prices 2026</a> — current rates so you can factor postage into your profit</li>
-                    <li><a href="how-to-track-reselling-profits.html">How to Track Reselling Profits</a> — fees are just one cost; here's how to track them all</li>
+                    <li><a href="royal-mail-postage-prices-resellers-2026.html">Royal Mail Postage Prices 2026</a> — current rates so you can include postage in your profit calculation</li>
+                    <li><a href="how-to-track-reselling-profits.html">How to Track Reselling Profits</a> — fees are only one cost; this guide shows how to track all of them</li>
                 </ul>
             </section>
 
