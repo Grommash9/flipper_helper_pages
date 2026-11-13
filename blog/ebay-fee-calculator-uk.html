@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="apple-itunes-app" content="app-id=6759716745">
 <title>eBay Fee Calculator UK 2026 | FlipperHelper</title>
-<meta name="description" content="Free eBay fee calculator for UK sellers. Enter your sale price and category to see exact fees, net revenue, and profit. Updated for February 2026 changes.">
+<meta name="description" content="Free eBay fee calculator for UK sellers. Enter your sale price and category to see your fees, net revenue, and profit. Updated for February 2026 changes.">
 <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
 <link rel="canonical" href="https://flipperhelper.app/blog/ebay-fee-calculator-uk.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
 <!-- OpenGraph -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="eBay Fee Calculator UK 2026">
-<meta property="og:description" content="See exactly what eBay takes from your sale. Free calculator with February 2026 fee updates.">
+<meta property="og:description" content="See what eBay takes from your sale. Free calculator with February 2026 fee updates.">
 <meta property="og:url" content="https://flipperhelper.app/blog/ebay-fee-calculator-uk.html">
 <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
 <meta property="og:site_name" content="FlipperHelper">
@@ -45,9 +45,9 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "eBay Fee Calculator UK 2026: Calculate Your Fees and Profit",
-  "description": "Free eBay fee calculator for UK sellers. See exact fees by category, net revenue, and profit after all costs.",
+  "description": "Free eBay fee calculator for UK sellers. See fees by category, net revenue, and profit after all costs.",
   "datePublished": "2026-04-17",
-  "dateModified": "2026-11-11",
+  "dateModified": "2026-11-13",
   "author": {
     "@type": "Person",
     "name": "Oleksandr Prudnikov",
@@ -61,7 +61,7 @@
 <!-- FAQPage JSON-LD -->
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-  {"@type":"Question","name":"How much does eBay take from a sale UK?","acceptedAnswer":{"@type":"Answer","text":"Private sellers: nothing. Business sellers: typically 16–17% of the total sale on a £20–30 clothing sale. This total includes the final value fee, the per-order fee, the regulatory fee and the VAT on the fees."}},
+  {"@type":"Question","name":"How much does eBay take from a sale UK?","acceptedAnswer":{"@type":"Answer","text":"UK-based private sellers pay no final value fee and no regulatory operating fee. Business sellers pay about 16–17% of the total sale on a £20–30 clothing sale. This total includes the final value fee, the per-order fee, the regulatory fee and 20% VAT on the fees."}},
   {"@type":"Question","name":"How do I calculate eBay fees?","acceptedAnswer":{"@type":"Answer","text":"Total fee = (sale price + postage) × category fee % + per-order fee + (sale price + postage) × 0.35%. Then add 20% VAT on all fees. Or just use the calculator above."}}
 ]}
 </script>
@@ -126,7 +126,7 @@
     <article>
 
             <a href="./" class="post-back">&larr; Back to Blog</a>
-            <p class="post-updated">Last updated: 11 November 2026</p>
+            <p class="post-updated">Last updated: 13 November 2026</p>
             <h1>eBay Fee Calculator UK 2026</h1>
             <div class="post-meta">
                 <span class="art-date">17 April 2026</span>
@@ -134,7 +134,7 @@
             </div>
 
             <section>
-                <p>Calculate exactly what eBay takes from your sale and what profit you keep. Updated with the February 2026 per-order fee changes. For the full fee breakdown, see our <a href="ebay-selling-fees-uk-2026.html">eBay selling fees UK 2026 guide</a>.</p>
+                <p>Calculate what eBay takes from your sale and what profit you keep. Updated with the February 2026 per-order fee changes. For the full fee breakdown, see our <a href="ebay-selling-fees-uk-2026.html">eBay selling fees UK 2026 guide</a>.</p>
             </section>
 
       <hr class="tear">
@@ -145,7 +145,7 @@
                         <div class="calc-field">
                             <label for="sellerType">Seller type</label>
                             <select id="sellerType">
-                                <option value="private">Private seller (no fees)</option>
+                                <option value="private">Private seller (no final value fee)</option>
                                 <option value="business" selected>Business seller</option>
                             </select>
                         </div>
@@ -153,26 +153,26 @@
                             <label for="category">Category</label>
                             <select id="category">
                                 <option value="11.9">Clothes, Shoes &amp; Accessories (11.9%)</option>
-                                <option value="11.9">Home, Furniture &amp; DIY (11.9% up to &pound;500)</option>
+                                <option value="11.9" data-tier-limit="500" data-tier-rate="7.9" data-reduced-order-fee>Home, Furniture &amp; DIY (11.9% up to &pound;500)</option>
                                 <option value="10.9">Toys &amp; Games (10.9%)</option>
                                 <option value="9.9">Books, Comics &amp; Magazines (9.9%)</option>
                                 <option value="10.9">Sporting Goods (10.9%)</option>
                                 <option value="9.9">Music, Films &amp; TV (9.9%)</option>
-                                <option value="10.9">Antiques (10.9%)</option>
-                                <option value="10.9">Collectables &amp; Art (10.9%)</option>
-                                <option value="10.9">Pottery, Ceramics &amp; Glass (10.9%)</option>
-                                <option value="14.9">Jewellery &amp; Watches (14.9% up to &pound;1,000)</option>
+                                <option value="10.9" data-reduced-order-fee>Antiques (10.9%)</option>
+                                <option value="10.9" data-reduced-order-fee>Collectables &amp; Art (10.9%)</option>
+                                <option value="10.9" data-reduced-order-fee>Pottery, Ceramics &amp; Glass (10.9%)</option>
+                                <option value="14.9" data-tier-limit="1000" data-tier-rate="4">Jewellery &amp; Watches (14.9% up to &pound;1,000)</option>
                                 <option value="10.9">Health &amp; Beauty (10.9%)</option>
                                 <option value="12.9">Pet Supplies (12.9%)</option>
                                 <option value="10.9">Garden &amp; Patio (10.9%)</option>
                                 <option value="12.9">Crafts (12.9%)</option>
-                                <option value="6.9">Mobile &amp; Smart Phones (6.9% up to &pound;1,000)</option>
+                                <option value="6.9" data-tier-limit="1000" data-tier-rate="3">Mobile &amp; Smart Phones (6.9% up to &pound;1,000)</option>
                                 <option value="9.9">Computers, Tablets &amp; Networking (9.9%)</option>
                                 <option value="12.5">Business, Office &amp; Industrial (12.5%)</option>
-                                <option value="9.5">Vehicle Parts &amp; Accessories (9.5% up to &pound;750)</option>
+                                <option value="9.5" data-tier-limit="750" data-tier-rate="3">Vehicle Parts &amp; Accessories (9.5% up to &pound;750)</option>
                                 <option value="9.9">Cameras &amp; Photography (9.9%)</option>
                                 <option value="9.9">Video Games (9.9%)</option>
-                                <option value="6.9">Video Game Consoles (6.9% up to &pound;400)</option>
+                                <option value="6.9" data-tier-limit="400" data-tier-rate="2">Video Game Consoles (6.9% up to &pound;400)</option>
                                 <option value="9.9">Sound &amp; Vision (9.9%)</option>
                                 <option value="10.9">Musical Instruments &amp; DJ Equipment (10.9%)</option>
                                 <option value="12.9">Wholesale &amp; Job Lots / Everything Else (12.9%)</option>
@@ -210,25 +210,26 @@
 
       <section>
                 <h2>Why this matters: fees catch people off guard</h2>
-                <p>One of the <a href="https://www.reddit.com/r/eBaySellerAdvice/comments/1lqazk4/" target="_blank" rel="noopener">most upvoted posts on r/eBaySellerAdvice</a> is titled &ldquo;Learned a hard lesson today.&rdquo; The seller listed a book for $4. They didn&rsquo;t realise that eBay charges fees on the <em>total</em> transaction, including shipping, not only on the item price. The fees took roughly 50% of the sale price. After that, the seller couldn&rsquo;t even afford a box to ship the book in.</p>
-                <p><a href="https://www.reddit.com/r/eBaySellerAdvice/comments/1b61ruy/" target="_blank" rel="noopener">Another popular post</a>: someone bought a golf bag at a charity shop for $15 and sold it on eBay for $68. That looks like a good result. But the bag was big and heavy and went cross-country, so shipping cost $111. There was also a transaction fee ($26) and a promoted listing fee ($20). After these costs, the seller made $6 profit on a $68 sale.</p>
-                <p>These are US examples. UK private sellers now pay zero fees (see below). But the lesson applies everywhere. If you don&rsquo;t calculate your fees and postage <em>before</em> you list, your &ldquo;profit&rdquo; can disappear. Use the calculator above to check this before you list.</p>
+                <p>A <a href="https://www.reddit.com/r/eBaySellerAdvice/comments/1lqazk4/" target="_blank" rel="noopener">post on r/eBaySellerAdvice</a> is titled &ldquo;Learned a hard lesson today.&rdquo; The seller listed a book for $4. They didn&rsquo;t know that eBay includes the shipping cost in its fees. They said the fees took 50% of the sale price. After that, they couldn&rsquo;t afford a box to ship the book in.</p>
+                <p>In <a href="https://www.reddit.com/r/eBaySellerAdvice/comments/1b61ruy/" target="_blank" rel="noopener">another post</a>, someone bought a golf bag at Goodwill (a US charity shop) for $15 and sold it on eBay for $68. The buyer paid $111 for shipping from Las Vegas to New York. The seller paid a $26 transaction fee and a $20 promoted listing fee. The seller said the profit was only $6.</p>
+                <p>These are US examples in US dollars. UK-based private sellers now pay no final value fee (see below). But eBay UK charges business sellers fees on the <em>total</em> sale, including postage. If you don&rsquo;t calculate your fees and postage <em>before</em> you list, your &ldquo;profit&rdquo; can disappear. Use the calculator above to check this before you list.</p>
             </section>
 
       <hr class="tear">
 
       <section>
                 <h2>How eBay fees work</h2>
-                <p>Since October 2024, UK private sellers pay no final value fees on eBay (source: <a href="https://www.ebay.co.uk/help/selling/fees-credits-invoices/selling-fees?id=4364" target="_blank" rel="noopener">eBay&rsquo;s official UK fee page</a>). They get 300 free listings per month. If you exceed 300 listings, you pay 35p per additional listing. If you&rsquo;re selling items you already own (not buying to resell), you&rsquo;re a private seller.</p>
-                <p>If you&rsquo;re <strong>regularly buying items specifically to resell</strong>, eBay (and HMRC) may consider you a business seller. The line isn&rsquo;t always clear. For more on this, see our <a href="hmrc-1000-trading-allowance-resellers-uk.html">HMRC trading allowance guide</a>.</p>
-                <p>Business sellers pay three fees on every sale (per <a href="https://www.ebay.co.uk/help/selling/fees-credits-invoices/selling-fees?id=4364" target="_blank" rel="noopener">eBay&rsquo;s fee schedule</a>):</p>
+                <p>Since 1 October 2024, UK-based private sellers pay no final value fees on eBay (source: <a href="https://pages.ebay.co.uk/selling-on-ebay/" target="_blank" rel="noopener">eBay UK&rsquo;s selling FAQs</a>). They get 300 free listings per month. If you exceed 300 listings, you pay 35p per additional listing. If the delivery address is outside the UK, private sellers pay a 3% international fee, unless they use eBay International Shipping.</p>
+                <p>eBay says a private account is the best option if you sell casually, for example items you no longer want. eBay&rsquo;s business seller policy says you must register as a business if, for example, you sell items you bought to resell. HMRC has its own rules. For more on this, see our <a href="hmrc-1000-trading-allowance-resellers-uk.html">HMRC trading allowance guide</a>.</p>
+                <p>Business sellers pay these fees on every sale (per <a href="https://www.ebay.co.uk/help/selling/fees-credits-invoices/fees-business-sellers?id=4809" target="_blank" rel="noopener">eBay&rsquo;s fee schedule for business sellers</a>). The final value fee has two parts: a percentage and a per-order fee.</p>
                 <ul>
-                    <li><strong>Final value fee:</strong> A percentage of the total sale (item + postage). It is 9.9&ndash;12.9% in most categories (11.9% for clothes). It is lower for phones and consoles and up to 14.9% for jewellery</li>
-                    <li><strong>Per-order fee:</strong> 30p on orders of &pound;10 or less, 40p on orders over &pound;10 (increased February 2026)</li>
+                    <li><strong>Final value fee percentage:</strong> A percentage of the total sale (item + postage). It is 9.9&ndash;12.9% in most categories (11.9% for clothes). It is lower for phones and consoles and up to 14.9% for jewellery</li>
+                    <li><strong>Per-order fee:</strong> 30p on orders of &pound;10 or less, 40p on orders over &pound;10 (40p since 12 February 2026). In some categories, for example Home, Furniture &amp; DIY and Collectables, it is 10p on orders of &pound;10 or less. The 10p fee is for business sellers with a UK registered address</li>
                     <li><strong>Regulatory operating fee:</strong> 0.35% of the total sale</li>
                 </ul>
-                <p>VAT at 20% is added on top of all three fees. The calculator above includes VAT in the total.</p>
+                <p>eBay shows these fees excluding VAT. eBay adds VAT to its fees where VAT applies. The calculator above adds VAT at 20%, the UK standard rate, to all of these fees.</p>
                 <p>For more detail including international fees and Shop subscriptions, see our <a href="ebay-selling-fees-uk-2026.html">complete eBay fee breakdown</a>.</p>
+                <p class="cite">Sources: <a href="https://www.ebay.co.uk/help/selling/fees-credits-invoices/fees-business-sellers?id=4809" target="_blank" rel="noopener">eBay UK, Fees for business sellers</a>; <a href="https://www.ebay.co.uk/help/selling/fees-credits-invoices/selling-fees?id=4364" target="_blank" rel="noopener">eBay UK, Fees for private sellers</a>; <a href="https://pages.ebay.co.uk/selling-on-ebay/" target="_blank" rel="noopener">eBay UK, Selling on eBay FAQs</a>; <a href="https://www.ebay.co.uk/sellercentre/news/2026-january/rate-card-change" target="_blank" rel="noopener">eBay UK Seller Centre, Rate card change</a>; <a href="https://cloud.forbusiness.ebay.com/10p_Order_Fee_April_2022" target="_blank" rel="noopener">eBay UK, 10p per-order fee in Home, Furniture &amp; DIY</a>; <a href="https://cloud.forbusiness.ebay.com/10p_Order_Fee_2022" target="_blank" rel="noopener">eBay UK, 10p per-order fee in selected categories</a>; <a href="https://www.ebay.co.uk/sellercentre/selling/start-selling/create-ebay-business-account" target="_blank" rel="noopener">eBay UK Seller Centre, Business accounts</a>; <a href="https://www.ebay.co.uk/help/policies/selling-policies/business-seller-policy?id=4710" target="_blank" rel="noopener">eBay UK, Business seller policy</a>; <a href="https://www.ebay.co.uk/help/policies/selling-policies/tax-policy?id=4348" target="_blank" rel="noopener">eBay UK, Tax policy</a>; <a href="https://www.gov.uk/vat-rates" target="_blank" rel="noopener">GOV.UK, VAT rates</a></p>
             </section>
 
       <hr class="tear">
@@ -238,7 +239,7 @@
 
                 <div class="faq-item">
       <h3>How much does eBay take from a sale UK?</h3>
-                <p>Private sellers: nothing. Business sellers: typically 16&ndash;17% of the total sale on a &pound;20&ndash;30 clothing sale. This total includes the final value fee, the per-order fee, the regulatory fee and the VAT on the fees.</p>
+                <p>UK-based private sellers pay no final value fee and no regulatory operating fee. Business sellers pay about 16&ndash;17% of the total sale on a &pound;20&ndash;30 clothing sale. This total includes the final value fee, the per-order fee, the regulatory fee and 20% VAT on the fees.</p>
       </div><div class="faq-item">
       <h3>How do I calculate eBay fees?</h3>
                 <p>Total fee = (sale price + postage) &times; category fee % + per-order fee + (sale price + postage) &times; 0.35%. Then add 20% VAT on all fees. Or just use the calculator above.</p>
@@ -248,7 +249,7 @@
 
       <section>
                 <h3>About the author</h3>
-                <p><strong>Oleksandr Prudnikov</strong> builds <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">FlipperHelper</a>, a profit-tracking app for UK resellers. Fee data in this calculator is sourced from <a href="https://www.ebay.co.uk/help/selling/fees-credits-invoices/selling-fees?id=4364" target="_blank" rel="noopener">eBay&rsquo;s official UK seller fees page</a> and verified against actual eBay invoices.</p>
+                <p><strong>Oleksandr Prudnikov</strong> builds <a href="https://apps.apple.com/us/app/flipperhelper/id6759716745" target="_blank" rel="noopener">FlipperHelper</a>, a profit-tracking app for UK resellers. Fee data in this calculator comes from <a href="https://www.ebay.co.uk/help/selling/fees-credits-invoices/fees-business-sellers?id=4809" target="_blank" rel="noopener">eBay&rsquo;s official UK fee page for business sellers</a>.</p>
             </section>
 
       <hr class="tear">
@@ -334,6 +335,34 @@
         var categoryField = document.getElementById('categoryField');
         var resultsSection = document.getElementById('resultsSection');
 
+        function roundToPence(amount) {
+            var pence = Number((amount * 100).toFixed(6));
+            return Math.round(pence) / 100;
+        }
+
+        function isAboveTierLimit(option, totalSale) {
+            return option.hasAttribute('data-tier-limit') && totalSale > Number(option.getAttribute('data-tier-limit'));
+        }
+
+        function finalValueFeeFor(option, totalSale) {
+            var rate = Number(option.value) / 100;
+            if (!isAboveTierLimit(option, totalSale)) return totalSale * rate;
+            var tierLimit = Number(option.getAttribute('data-tier-limit'));
+            var rateAboveLimit = Number(option.getAttribute('data-tier-rate')) / 100;
+            return tierLimit * rate + (totalSale - tierLimit) * rateAboveLimit;
+        }
+
+        function finalValueFeeLabel(option, totalSale) {
+            if (!isAboveTierLimit(option, totalSale)) return option.value + '%';
+            var tierLimit = Number(option.getAttribute('data-tier-limit')).toLocaleString('en-GB');
+            return option.value + '% up to &pound;' + tierLimit + ', ' + option.getAttribute('data-tier-rate') + '% above';
+        }
+
+        function perOrderFeeFor(option, totalSale) {
+            if (totalSale > 10) return 0.40;
+            return option.hasAttribute('data-reduced-order-fee') ? 0.10 : 0.30;
+        }
+
         function calculate() {
             var type = sellerType.value;
             var price = parseFloat(salePrice.value) || 0;
@@ -346,7 +375,7 @@
                 categoryField.style.display = 'none';
                 var profit = totalSale - cost - actualPostage;
                 resultsSection.innerHTML =
-                    '<div class="private-note">Private sellers pay no eBay fees. You keep the full sale amount.</div>' +
+                    '<div class="private-note">UK-based private sellers pay no final value fee and no regulatory operating fee. The calculator does not include listing fees after your free listings, optional upgrades or the 3% international fee.</div>' +
                     '<div class="calc-results">' +
                     '<h3>Your numbers</h3>' +
                     '<div class="calc-line"><span>Sale price + postage</span><span>&pound;' + totalSale.toFixed(2) + '</span></div>' +
@@ -363,13 +392,13 @@
             }
 
             categoryField.style.display = '';
-            var feePercent = parseFloat(category.value) / 100;
-            var finalValueFee = totalSale * feePercent;
-            var perOrderFee = totalSale > 10 ? 0.40 : 0.30;
-            var regulatoryFee = totalSale * 0.0035;
+            var categoryOption = category.options[category.selectedIndex];
+            var finalValueFee = roundToPence(finalValueFeeFor(categoryOption, totalSale));
+            var perOrderFee = perOrderFeeFor(categoryOption, totalSale);
+            var regulatoryFee = roundToPence(totalSale * 0.0035);
             var subtotalFees = finalValueFee + perOrderFee + regulatoryFee;
-            var vat = subtotalFees * 0.20;
-            var totalFees = subtotalFees + vat;
+            var vat = roundToPence(subtotalFees * 0.20);
+            var totalFees = roundToPence(subtotalFees + vat);
             var youReceive = totalSale - totalFees;
             var profit = youReceive - cost - actualPostage;
             var feePercentTotal = totalSale > 0 ? (totalFees / totalSale * 100) : 0;
@@ -378,7 +407,7 @@
                 '<div class="calc-results">' +
                 '<h3>Fee breakdown</h3>' +
                 '<div class="calc-line"><span>Sale price + postage</span><span>&pound;' + totalSale.toFixed(2) + '</span></div>' +
-                '<div class="calc-line"><span>Final value fee (' + (feePercent * 100).toFixed(1) + '%)</span><span>&minus;&pound;' + finalValueFee.toFixed(2) + '</span></div>' +
+                '<div class="calc-line"><span>Final value fee (' + finalValueFeeLabel(categoryOption, totalSale) + ')</span><span>&minus;&pound;' + finalValueFee.toFixed(2) + '</span></div>' +
                 '<div class="calc-line"><span>Per-order fee</span><span>&minus;&pound;' + perOrderFee.toFixed(2) + '</span></div>' +
                 '<div class="calc-line"><span>Regulatory operating fee (0.35%)</span><span>&minus;&pound;' + regulatoryFee.toFixed(2) + '</span></div>' +
                 '<div class="calc-line"><span>VAT on fees (20%)</span><span>&minus;&pound;' + vat.toFixed(2) + '</span></div>' +
@@ -391,7 +420,7 @@
                     '<div class="calc-line calc-total ' + (profit >= 0 ? 'calc-profit' : 'calc-loss') + '"><span>Your profit</span><span>' + (profit >= 0 ? '&pound;' : '&minus;&pound;') + Math.abs(profit).toFixed(2) + '</span></div>'
                 : '') +
                 '</div>' +
-                '<p class="calc-note">Fees shown exclude VAT on the item itself. International fees not included. For categories with a threshold (for example jewellery above &pound;1,000), the lower rate above the threshold is not applied. For the full fee structure, see our <a href="ebay-selling-fees-uk-2026.html">eBay fees guide</a>.</p>';
+                '<p class="calc-note">Fees include VAT at 20%, the UK standard rate. If you are VAT-registered, you can usually reclaim this VAT. International fees, listing fees and Promoted Listings fees are not included. Some subcategories have different rates. For the full fee structure, see our <a href="ebay-selling-fees-uk-2026.html">eBay fees guide</a>.</p>';
         }
 
         sellerType.addEventListener('change', calculate);

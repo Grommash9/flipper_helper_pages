@@ -55,7 +55,7 @@
   <text x="659" y="263" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">MOST COMMON</text>
 
   <!-- Home/Furniture (11.9% up to £500) -->
-  <text x="210" y="308" text-anchor="end" font-size="13" fill="#555">Home &amp; Furniture</text>
+  <text x="210" y="308" text-anchor="end" font-size="13" fill="#555">Home &amp; DIY</text>
   <rect x="220" y="293" width="340" height="26" rx="4" fill="#BBCBF7"/>
   <text x="567" y="311" font-size="13" font-weight="600" fill="#334B90">11.9%</text>
   <text x="612" y="311" font-size="10" fill="#888">(7.9% above £500)</text>
@@ -67,5 +67,5 @@
   <text x="584" y="361" font-size="13" font-weight="600" fill="#8B7030">12.5%</text>
 
   <!-- Note -->
-  <text x="360" y="410" text-anchor="middle" font-size="11" fill="#AAA">+ 30-40p per order + 0.35% regulatory fee + 20% VAT on all fees</text>
+  <text x="360" y="410" text-anchor="middle" font-size="11" fill="#AAA">+ 10-40p per order + 0.35% regulatory fee + 20% VAT on all fees</text>
 </svg>
