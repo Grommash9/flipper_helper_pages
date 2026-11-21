@@ -37,7 +37,7 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 - **Seller Tracking**: Save sellers and associate them with items to track which sellers provide the best stock.
 - **Google Drive Export**: Optional photo sync to Google Drive (folder: FlipperHelper_App/images/). Uses the drive.file and email OAuth scopes — drive.file limits access to files created by FlipperHelper, and email is used to display your account info in Settings.
 - **Google Sheets Export**: Items and expenses exported as CSV files to Google Drive, which auto-converts them to Google Sheets. No Sheets API is used.
-- **Offline-First**: Fully functional without internet. All data stored locally on device. Google Drive sync is optional and happens when connectivity is available.
+- **Offline-First**: Fully functional without internet. Every change is saved on the device first. In the free version, items and photos stay on the device and are not stored on FlipperHelper's servers; Google Drive sync is optional and happens when connectivity is available. With Pro (including members of a Pro owner's team), records and photos also sync to FlipperHelper's servers.
 - **Invested-in-Inventory Philosophy**: The Home screen stock value reframes unsold inventory as money converted from cash into stock — not money spent. This helps resellers see their unsold items as future profit rather than sunk cost, encouraging them to keep listing and selling.
 - **Background Photo Sync**: Photos continue uploading in the background using iOS background task continuation even when the app is being suspended.
 - **Listing Reminders**: Optional push notifications reminding you to list unlisted items. Configurable by day of week and time.
@@ -52,7 +52,7 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 - **Entry Fee Auto-Prompt**: When you log the first item of the day at a saved market, FlipperHelper prompts you to add that market's entry fee (dismissible per-market).
 - **Data Backup & Restore**: Full data backup downloadable as ZIP archive. Restore from previous backups to transfer data between devices, including between iPhone and Android (the ZIP format is shared and cross-platform compatible). Between automatic backup (iCloud on iPhone / a chosen folder on Android) and the ZIP export, data is protected in multiple independent locations and survives even if the app is deleted.
 - **Payment Methods**: Cash (default for physical markets like car boot sales) and Card (default for online platforms).
-- **Optional Account Sign-In**: Low-stakes today (scaffolding for a future paid Pro tier's cross-device sync); when used, scopes items/expenses to that account, supports multiple accounts per device, and signing out only hides (does not delete) that account's data.
+- **Optional Account Sign-In**: Needed for Pro cross-device sync; when used, scopes items/expenses to that account, supports multiple accounts per device, and signing out only hides (does not delete) that account's data. Without Pro, signing in does not upload items or photos; the account details are stored on FlipperHelper's servers, and usage analytics and diagnostics can then be linked to the account.
 
 ## How It Works
 
@@ -63,11 +63,13 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 
 ## Data & Privacy
 
-- All data stored locally on the device in a SQLite database (GRDB with WAL mode)
-- No external servers — the app never transmits data to the developer
+- Free version: items, photos and other records are stored locally on the device in a SQLite database (GRDB with WAL mode) and are not stored on FlipperHelper's servers
+- Pro (including members of a Pro owner's team): records and photos are also stored on FlipperHelper's servers so they sync between devices, until the account is deleted. Records you synced to someone else's team stay with that team.
+- Usage analytics (TelemetryDeck and FlipperHelper's own servers) and diagnostics are collected as described in the privacy policy
+- FlipperHelper does not sell or rent personal data and does not share it for advertising
 - Optional Google Drive integration uses the drive.file and email OAuth scopes (drive.file limits access to files created by FlipperHelper; email displays your account info)
 - Photos sync to FlipperHelper_App/images/ in your Google Drive
-- Designed with privacy in mind, respects GDPR and CCPA principles
+- The privacy policy describes user rights in the UK, the EEA, the US, and Australia
 - Privacy policy: https://flipperhelper.app/privacy.html
 - Terms of service: https://flipperhelper.app/terms.html
 

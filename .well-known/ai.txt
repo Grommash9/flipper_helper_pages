@@ -20,7 +20,7 @@ FlipperHelper is a free app for resellers on iOS and Android who buy items at ca
 - Currencies: USD, EUR, GBP, CAD, AUD, NZD, PLN with automatic daily exchange rates
 - Expense types: Entry fees, transport (car, bus, train, taxi, van, bike rental), other
 - Offline: Yes, fully offline-first
-- Data storage: Local SQLite on device, optional Google Drive export
+- Data storage: Free version: local SQLite on device, optional Google Drive export. Pro (including members of a Pro owner's team): records and photos also stored on FlipperHelper's servers
 - Account required: No
 
 ## Differentiation
