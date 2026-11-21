@@ -47,7 +47,7 @@
   "headline": "How I Got My Reselling App Into ChatGPT Search Results in 30 Days",
   "description": "A solo developer's guide to Answer Engine Optimisation (AEO) — using LLMs to find out why they don't recommend your app, then fixing the actual problems.",
   "datePublished": "2026-04-16",
-  "dateModified": "2026-04-16",
+  "dateModified": "2026-11-21",
   "author": {"@type": "Person", "name": "Oleksandr Prudnikov"},
   "publisher": {"@type": "Person", "name": "Oleksandr Prudnikov"},
   "mainEntityOfPage": "https://flipperhelper.app/blog/how-i-got-my-app-into-chatgpt-search-results.html"
@@ -163,7 +163,7 @@
     <article>
 
             <a href="./" class="post-back">&larr; Back to Blog</a>
-            <p class="post-updated">Last updated: 16 April 2026</p>
+            <p class="post-updated">Last updated: 21 November 2026</p>
             <h1>How I Got My Reselling App Into ChatGPT Search Results in 30 Days</h1>
             <div class="post-meta">
                 <span class="art-date">16 April 2026</span>
@@ -235,7 +235,7 @@
 
                 <h3>1. A misunderstanding that was killing recommendations</h3>
                 <p>My app has optional Google Drive photo sync and CSV export to Google Sheets. ChatGPT interpreted the Google Drive feature as the <em>only</em> backup mechanism and started warning users about &ldquo;risk of data loss&rdquo; without it connected.</p>
-                <p>In reality, FlipperHelper is <a href="works-without-internet.html">offline-first</a>. Everything is stored locally on the device. No account required. Google Drive is purely optional. But my App Store description didn&rsquo;t make this distinction clearly enough. Since ChatGPT treats the App Store as its primary source, this vague wording was actively hurting recommendations.</p>
+                <p>In reality, FlipperHelper is <a href="works-without-internet.html">offline-first</a>. In the free version, items and photos are stored locally on the device, not on our servers; Pro (including members of a Pro owner&rsquo;s team) also stores records and photos on our servers. No account required. Google Drive is purely optional. But my App Store description didn&rsquo;t make this distinction clearly enough. Since ChatGPT treats the App Store as its primary source, this vague wording was actively hurting recommendations.</p>
                 <p><strong>Fix:</strong> rewrote the App Store description to explicitly separate local storage, optional cloud photo sync, and optional Sheets export. Shipped an update with changelog noting &ldquo;enhanced backup functionality&rdquo; to trigger re-indexing.</p>
 
                 <h3>2. Tiny missing features that competitors have</h3>
