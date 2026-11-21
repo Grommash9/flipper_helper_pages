@@ -91,12 +91,12 @@
             <article>
                 <a href="/" class="post-back">&larr; Back home</a>
                 <h1>Privacy Policy</h1>
-                <p class="post-updated">Last updated: August 11, 2026</p>
+                <p class="post-updated">Last updated: November 21, 2026</p>
 
                 <section>
                     <h2>Introduction</h2>
                     <p>FlipperHelper ("we", "our", or "us") is operated by Oleksandr Prudnikov, a sole trader registered in the United Kingdom. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application ("FlipperHelper" or the "App").</p>
-                    <p>We are committed to protecting your privacy and being transparent about our data practices. This policy applies to users in the United States, United Kingdom, European Union, and all other regions where the App is available.</p>
+                    <p>We are committed to protecting your privacy and being transparent about our data practices. This policy applies to users in the United States, United Kingdom, European Union, Australia, and all other regions where the App is available.</p>
                 </section>
 
                 <hr class="tear">
@@ -116,8 +116,12 @@
 
                     <h3>Information Collected Automatically</h3>
                     <ul>
-                        <li><strong>Location Data:</strong> With your permission, we access your device location to suggest nearby markets. Location data is only used locally on your device and is not transmitted to our servers.</li>
-                        <li><strong>Anonymous Usage Data:</strong> We use TelemetryDeck, a privacy-focused analytics service, to understand how the App is used—for example, how often it is opened and how many items are added or marked as sold. This data is fully anonymous: it contains no personal information, no advertising identifier (IDFA), and nothing that identifies you or your device. We are not able to track you across apps or websites, so no tracking permission prompt is shown.</li>
+                        <li><strong>Location Data:</strong> With your permission, we access your device location to suggest nearby markets. Your device location is used only on your device and is not sent to our servers. If you save a location for a market and use cloud sync, the market's coordinates sync with your records.</li>
+                        <li><strong>Usage Analytics:</strong> We record how the App is used. For example: when the App is opened, which screens you view, when you add or sell an item, which selling platforms you mark items as listed on, how long the App takes to start, and when you buy Pro. Each event includes the app version, device model, and operating system version. Usage analytics never include the contents of your records: no item descriptions, photos, prices, market names, or seller names.</li>
+                        <li><strong>Installation ID and Account ID:</strong> When the App is first opened, it creates a random installation ID. This ID is not your device's hardware ID or advertising identifier. A new one is created if you reinstall the App. Usage analytics include the installation ID and, if you are signed in to a FlipperHelper account, your account ID. This means usage analytics are linked to your account.</li>
+                        <li><strong>Users in the European Economic Area:</strong> If your device's region setting is a country in the European Economic Area (the EU, Iceland, Liechtenstein, or Norway), the App sends usage analytics without the installation ID and without your account ID. TelemetryDeck still creates its own pseudonymous identifier (see "Third-Party Services").</li>
+                        <li><strong>Crash and Error Diagnostics:</strong> If you are signed in, the App also sends diagnostic reports. They cover crashes (the error type and the code locations involved, without error messages), failed requests to our servers, sync failures, and photo upload and download statistics (number of photos, size, duration, and network type such as Wi-Fi or cellular). Diagnostic reports include the installation ID and your account ID, so we can find and fix technical faults.</li>
+                        <li><strong>What We Do Not Collect:</strong> We do not store your IP address or your device location with usage analytics or diagnostic reports. The App does not collect your device's advertising identifier. We do not track you across apps or websites owned by other companies, and we do not use usage analytics for advertising, so no tracking permission prompt is shown.</li>
                     </ul>
 
                     <h3>Information from Third-Party Services</h3>
@@ -125,12 +129,14 @@
                         <li><strong>Google Account:</strong> If you choose to connect Google Drive for export and photo sync, we access your Google email address and name to identify your account. We use the limited <code>drive.file</code> scope, which only allows access to files created by FlipperHelper—not your other Google Drive files.</li>
                     </ul>
 
-                    <h3>FlipperHelper Pro (Optional Cloud Sync)</h3>
-                    <p>If you create a FlipperHelper Pro account, we additionally collect:</p>
+                    <h3>FlipperHelper Account and Pro (Optional Cloud Sync)</h3>
+                    <p>Signing in is optional. Cloud sync is available with FlipperHelper Pro, or when you are a member of a team whose owner has Pro. If you create a FlipperHelper account, we additionally collect:</p>
                     <ul>
-                        <li><strong>Account Identifiers:</strong> A unique account identifier and, if you choose to share it, your email address, provided by Sign in with Apple or Sign in with Google.</li>
-                        <li><strong>Reselling Records:</strong> The purchase, sale, market, seller, and expense records you choose to sync, so they are available across your devices.</li>
-                        <li><strong>eBay Account Connection (Optional):</strong> If you connect your eBay account, we store an encrypted authorization token and your eBay username/user ID, and receive eBay's own notifications about your listings and sales so new activity is added to your records automatically.</li>
+                        <li><strong>Account ID and Contact Details:</strong> A unique account ID and, if your sign-in provider shares them, your email address and name, provided by Sign in with Apple or Sign in with Google.</li>
+                        <li><strong>Reselling Records (Cloud Sync):</strong> The purchase, sale, market, seller, expense, and haul records you choose to sync, so they are available across your devices. Each synced change records which account and which installation made it, with a short device description such as "iPhone · iOS 18.2".</li>
+                        <li><strong>Photos (Cloud Sync):</strong> The item photos you sync, so they are available across your devices.</li>
+                        <li><strong>Teams (Optional):</strong> If you create or join a team, the team's name, its members, and the email addresses of the people you invite.</li>
+                        <li><strong>eBay Account Connection (Optional):</strong> If you connect your eBay account, we store an encrypted authorization token and your eBay username/user ID. We receive details of your own eBay listings and sales—such as title, SKU, price, fees, and dates—from eBay's notifications and APIs, so new activity is added to your records automatically. To support and debug this connection, we also keep a complete copy of each request we send to eBay's APIs and each response we receive, for 90 days. Authorization tokens and keys are removed from these copies. The copies can include personal data of your buyers that eBay returns with an order, such as their names and addresses.</li>
                         <li><strong>Subscription Status:</strong> Your Apple App Store or Google Play subscription status, used to confirm you have an active Pro subscription.</li>
                     </ul>
                 </section>
@@ -146,10 +152,13 @@
                         <li><strong>Data Export:</strong> To generate spreadsheets of your data in your Google Drive (when you request it).</li>
                         <li><strong>Notifications:</strong> To send local reminders about unlisted items (if enabled).</li>
                         <li><strong>Market Suggestions:</strong> To suggest nearby markets based on your location (if permitted).</li>
-                        <li><strong>Analytics:</strong> To measure anonymous, aggregate usage—such as active users and which features are used—so we can improve the App. This never includes your inventory, photos, prices, or any personal data.</li>
-                        <li><strong>Account Emails (Pro):</strong> If you create a Pro account, we send a welcome email confirming your registration, and may occasionally send product news and updates by email. You can unsubscribe from news emails at any time using the link included in every such email; this never affects account-related emails such as a data export or an account-deletion confirmation.</li>
+                        <li><strong>Cloud Sync (Optional):</strong> To sync your records and photos across your devices and with your team, to add your eBay listings and sales to your records, and to check your Pro subscription.</li>
+                        <li><strong>Usage Analytics:</strong> To understand how the App is used—such as active users, which features are used, and how fast the App starts—so we can improve the App.</li>
+                        <li><strong>Diagnostics:</strong> To find and fix crashes, failed requests, and sync problems.</li>
+                        <li><strong>eBay Support (Optional):</strong> To investigate problems with your eBay connection, using the copies of eBay requests and responses described above.</li>
+                        <li><strong>Account Emails:</strong> If you create an account, we send a welcome email confirming your registration, and may occasionally send product news and updates by email. You can unsubscribe from news emails at any time using the link included in every such email; this never affects account-related emails such as a data export or an account-deletion confirmation.</li>
                     </ul>
-                    <p>We do <strong>not</strong> use your data for advertising, profiling, or any purpose other than providing the App's features.</p>
+                    <p>We do <strong>not</strong> use your data for advertising, profiling, or any purpose other than those listed above.</p>
                 </section>
 
                 <hr class="tear">
@@ -157,7 +166,7 @@
                 <section>
                     <h2>Data Storage and Security</h2>
                     <h3>Local Storage</h3>
-                    <p>All your data is stored locally on your device in the App's private storage. This includes:</p>
+                    <p>All your records are stored locally on your device in the App's private storage. This includes:</p>
                     <ul>
                         <li>All purchase, sale, and expense records</li>
                         <li>Market and seller information</li>
@@ -173,24 +182,29 @@
                         <li>This data is protected by your Google account security.</li>
                     </ul>
 
-                    <h3>No External Servers (Free Tier)</h3>
-                    <p>Outside of the optional FlipperHelper Pro tier described below, FlipperHelper does not operate any servers, and your personal data—inventory, photos, prices, markets, and sellers—is never transmitted to us. The only personal data that leaves your device goes to your own Google Drive, which you control and can disconnect at any time. Separately, we receive anonymous, non-personal usage statistics through TelemetryDeck, as described above and below.</p>
+                    <h3>Your Records Without Cloud Sync</h3>
+                    <p>If you do not use cloud sync, your records—inventory, photos, prices, markets, and sellers—are not stored on our servers. The only copy of your records that leaves your device goes to your own Google Drive, if you enable it. You control that copy and can disconnect Google Drive at any time. The App does send usage analytics, and if you are signed in, your account ID and diagnostic reports, as described in "Information Collected Automatically" above.</p>
 
-                    <h3>FlipperHelper Pro (Cloud Storage)</h3>
-                    <p>If you create a FlipperHelper Pro account, the information listed under "FlipperHelper Pro (Optional Cloud Sync)" above is stored on our behalf using Amazon Web Services (AWS) infrastructure, rather than only on your device, so it can sync across your devices. This data is encrypted in transit, and sensitive fields such as your eBay authorization token are also encrypted at rest. Photos remain stored locally on your device and, if enabled, in your own Google Drive—they are not uploaded to our servers.</p>
+                    <h3>FlipperHelper Account and Pro (Cloud Storage)</h3>
+                    <p>If you create a FlipperHelper account, the information listed under "FlipperHelper Account and Pro (Optional Cloud Sync)" above, including your synced photos, is stored on our behalf using Amazon Web Services (AWS) infrastructure, rather than only on your device, so it can sync across your devices. This data is encrypted in transit, and sensitive fields such as your eBay authorization token are also encrypted at rest. Synced photos are kept in private storage that is encrypted at rest.</p>
+
+                    <h3>Where Your Data Is Stored</h3>
+                    <p>Our servers run on AWS. Account data, synced records, and synced photos are stored in the United States (N. Virginia), with copies in the European Union (Frankfurt) and Australia (Sydney). Usage analytics that reach our servers are stored in the United States (N. Virginia). Diagnostic reports and server logs are kept in the AWS region that handled the request: the United States, the European Union, or Australia. TelemetryDeck processes the usage analytics it receives under its own privacy policy (see "Third-Party Services").</p>
                 </section>
 
                 <hr class="tear">
 
                 <section>
                     <h2>Data Sharing</h2>
-                    <p>We do <strong>not</strong> sell, rent, or share your personal data with third parties. Your data only leaves your device in these circumstances:</p>
+                    <p>We do <strong>not</strong> sell or rent your personal data, and we do not share it for advertising. Your data only leaves your device in these circumstances:</p>
                     <ul>
                         <li><strong>Google Drive Sync:</strong> When you choose to back up photos or export data to your own Google Drive account.</li>
                         <li><strong>Device Backups:</strong> If you back up your iPhone via iCloud or iTunes, App data may be included in those backups (controlled by Apple).</li>
-                        <li><strong>Anonymous Analytics:</strong> Anonymous, non-personal usage statistics are sent to TelemetryDeck (see Third-Party Services). This contains no personal data and cannot be linked back to you.</li>
-                        <li><strong>eBay (Pro, Optional):</strong> If you connect your eBay account, we exchange authorization data with eBay's API to receive notifications about your own listings and sales. We do not share your data with eBay beyond what is required to maintain that connection.</li>
-                        <li><strong>Amazon Web Services (Pro):</strong> If you create a Pro account, your account and reselling data are hosted on AWS infrastructure, which processes it on our behalf and does not use it for its own purposes.</li>
+                        <li><strong>Usage Analytics:</strong> Usage analytics are sent to TelemetryDeck, an analytics service, and, if you are signed in, to our own servers on AWS (see "Information Collected Automatically" and "Third-Party Services").</li>
+                        <li><strong>eBay (Pro, Optional):</strong> If you connect your eBay account, we exchange authorization data with eBay's API to receive details about your own listings and sales. We do not share your data with eBay beyond what is required to maintain that connection.</li>
+                        <li><strong>Amazon Web Services:</strong> If you are signed in, your account data, usage analytics, and diagnostic reports—and with cloud sync, your synced records and photos—are hosted on AWS infrastructure, which processes it on our behalf and does not use it for its own purposes.</li>
+                        <li><strong>Account Emails:</strong> We send account emails through Microsoft 365, which processes your email address and the content of the email on our behalf.</li>
+                        <li><strong>Team Members (Optional):</strong> If you join a team, the records and photos you sync to that team are visible to its members.</li>
                     </ul>
                 </section>
 
@@ -202,54 +216,71 @@
                     <h3>All Users</h3>
                     <p>You can:</p>
                     <ul>
-                        <li><strong>Access your data:</strong> All your data is visible within the App.</li>
+                        <li><strong>Access your data:</strong> All your records are visible within the App. To get a copy of the data we hold on our servers, see below.</li>
                         <li><strong>Edit your data:</strong> Modify any records directly in the App.</li>
-                        <li><strong>Delete your data:</strong> Delete individual items or use the full data reset in Settings.</li>
+                        <li><strong>Delete your data:</strong> Delete individual items, or use Settings &rarr; Danger zone &rarr; Delete all data. If you are signed in, this also deletes your account.</li>
                         <li><strong>Export your data:</strong> Export all data to Google Sheets at any time.</li>
                         <li><strong>Disconnect Google:</strong> Revoke Google Drive access in the App's Settings.</li>
+                        <li><strong>Turn off usage analytics:</strong> Turn off usage analytics in the App's Settings at any time. The App then stops sending usage analytics to TelemetryDeck and to our servers. Crash and error diagnostics that we need to detect technical faults can continue while you are signed in.</li>
                     </ul>
 
-                    <h3>FlipperHelper Pro Users</h3>
-                    <p>If you have a Pro account, you can additionally:</p>
+                    <h3>Users with a FlipperHelper Account</h3>
+                    <p>If you have a FlipperHelper account, you can additionally:</p>
                     <ul>
-                        <li><strong>Export your Pro account data:</strong> Request a copy of everything we hold about your Pro account by emailing <a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a>; we will send it to the email address on file.</li>
-                        <li><strong>Delete your Pro account:</strong> Request deletion of your Pro account and the data associated with it by emailing us; we will confirm by email once it has been deleted.</li>
+                        <li><strong>Export your account data:</strong> Request a copy of everything we hold about your account by emailing <a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a>; we will send it to the email address on file.</li>
+                        <li><strong>Delete your account:</strong> In the App, go to Settings &rarr; Danger zone &rarr; Delete all data, or email us. We delete your account, the teams you own, your synced records and photos, your eBay connection, the stored copies of eBay requests and responses, and the usage analytics linked to your account. We will confirm by email once your account has been deleted. Some data stays for a limited time or with other people, as described in "Data Retention".</li>
                         <li><strong>Unsubscribe from news emails:</strong> Use the unsubscribe link included in any news/product-update email at any time.</li>
                     </ul>
 
-                    <h3>UK and EU Users (GDPR)</h3>
+                    <h3>UK and EEA Users (UK GDPR and EU GDPR)</h3>
                     <p>Under the UK GDPR and EU GDPR, you have additional rights:</p>
                     <ul>
-                        <li><strong>Right to Access:</strong> Request confirmation of what data we process. For the free tier, all data is stored locally on your device; for a Pro account, request an export as described above.</li>
+                        <li><strong>Right to Access:</strong> Request a copy of the personal data we hold about you, as described above. Records you keep without cloud sync are stored only on your device.</li>
                         <li><strong>Right to Rectification:</strong> Correct inaccurate data (available directly in the App).</li>
-                        <li><strong>Right to Erasure:</strong> Delete your data (available directly in the App, or delete the App). For a Pro account, request deletion as described above.</li>
-                        <li><strong>Right to Data Portability:</strong> Export your data in a common format (CSV/Google Sheets export available). For a Pro account, request an export as described above.</li>
-                        <li><strong>Right to Object:</strong> Object to data processing (since all processing is local and user-initiated, you control this entirely).</li>
+                        <li><strong>Right to Erasure:</strong> Delete your records directly in the App. To delete your account and the data linked to it, use Settings &rarr; Danger zone &rarr; Delete all data, or email us, as described above.</li>
+                        <li><strong>Right to Data Portability:</strong> Export your data in a common format (CSV/Google Sheets export available). For an account, request an export as described above.</li>
+                        <li><strong>Right to Object:</strong> Object to how we process your data. You can turn off usage analytics in the App's Settings at any time, or email us.</li>
                         <li><strong>Right to Withdraw Consent:</strong> Withdraw consent for location access or Google Drive sync at any time in Settings.</li>
+                        <li><strong>Right to Complain:</strong> Complain to a data protection authority: in the UK, the <a href="https://ico.org.uk/" target="_blank" rel="noopener">Information Commissioner's Office (ICO)</a>; in the EEA, the data protection authority of your country.</li>
                     </ul>
+                    <p>If your device's region setting is a country in the European Economic Area, usage analytics are sent without the installation ID and without your account ID, as described in "Information Collected Automatically".</p>
                     <p>For GDPR inquiries, contact us at <a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a>.</p>
 
-                    <h3>California Users (CCPA)</h3>
-                    <p>California residents have the right to:</p>
+                    <h3>United States Users</h3>
+                    <p>Wherever you live in the United States, you can ask what personal information we hold about you, ask for a copy, and ask us to delete it, by emailing <a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a>. California residents have the right to:</p>
                     <ul>
                         <li>Know what personal information is collected.</li>
                         <li>Delete personal information.</li>
                         <li>Opt-out of the sale of personal information (we do not sell your data).</li>
                         <li>Non-discrimination for exercising your rights.</li>
                     </ul>
+
+                    <h3>Australian Users</h3>
+                    <p>You can ask for access to, or correction of, the personal information we hold about you by emailing <a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a>. If you are not satisfied with our answer, you can complain to the <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener">Office of the Australian Information Commissioner (OAIC)</a>. Some of your data is stored outside Australia, in the United States and the European Union, as described in "Where Your Data Is Stored".</p>
                 </section>
 
                 <hr class="tear">
 
                 <section>
                     <h2>Data Retention</h2>
-                    <p>Outside of the optional FlipperHelper Pro tier described below, your data remains on your device until you delete it or uninstall the App, and we do not retain any copies of it on external servers.</p>
+                    <p>If you do not use cloud sync, your records remain on your device until you delete them or uninstall the App, and we do not retain any copies of them on our servers.</p>
                     <p>If you use Google Drive export:</p>
                     <ul>
                         <li>Photos and exports remain in your Google Drive until you delete them.</li>
                         <li>Disconnecting Google Drive from the App does not automatically delete files already uploaded—you can manage these directly in Google Drive.</li>
                     </ul>
-                    <p>If you have a FlipperHelper Pro account, your account and reselling records are retained on our servers for as long as your account remains active, and are permanently deleted once you request deletion as described in "Your Rights" above.</p>
+                    <p>If you have a FlipperHelper account, your account, synced records, and synced photos are retained on our servers for as long as your account remains active, and are permanently deleted when you delete your account as described in "Your Rights" above, with these exceptions:</p>
+                    <ul>
+                        <li><strong>Teams owned by someone else:</strong> If you are a member of a team that someone else owns, the records and photos you synced to that team stay with that team. They still show which installation made each change, with its device description.</li>
+                        <li><strong>Record of the deletion:</strong> We keep a one-way hash of your account ID to record that the account was deleted.</li>
+                    </ul>
+                    <p>Other data is kept as follows:</p>
+                    <ul>
+                        <li><strong>Usage analytics on our servers:</strong> Kept indefinitely. When you delete your account, we delete the usage analytics linked to it within 30 days.</li>
+                        <li><strong>Diagnostic reports and server logs:</strong> Deleted automatically after 30 days.</li>
+                        <li><strong>Copies of eBay requests and responses:</strong> Deleted after 90 days, or earlier when you delete your account.</li>
+                        <li><strong>Usage analytics at TelemetryDeck:</strong> Kept by TelemetryDeck under its own retention policy. They are not deleted when you delete your account.</li>
+                    </ul>
                 </section>
 
                 <hr class="tear">
@@ -281,16 +312,19 @@
                     </ul>
 
                     <h3>TelemetryDeck (Analytics)</h3>
-                    <p>FlipperHelper uses TelemetryDeck for anonymous usage analytics. TelemetryDeck is built for privacy: it does not collect personal data, does not use the advertising identifier (IDFA), and derives a non-reversible, salted anonymous identifier so we can count active users without identifying anyone. TelemetryDeck's privacy policy: <a href="https://telemetrydeck.com/privacy/" target="_blank" rel="noopener">https://telemetrydeck.com/privacy/</a></p>
+                    <p>FlipperHelper uses TelemetryDeck for usage analytics. The App sends TelemetryDeck some of the usage analytics described in "Information Collected Automatically". Outside the European Economic Area, they include the installation ID and, if you are signed in, your account ID. TelemetryDeck's software adds technical details: device model, operating system version, screen size, language, region and time zone settings, accessibility settings, and usage counters such as the date of first use and the number of sessions. TelemetryDeck also creates its own pseudonymous identifier to count active users. On iPhone, it is a hash of the identifier for vendor, an ID that Apple gives to apps from the same developer on one device. On Android, it is a random ID that TelemetryDeck's software stores with the App. The App does not send TelemetryDeck your device's advertising identifier. TelemetryDeck's privacy policy: <a href="https://telemetrydeck.com/privacy/" target="_blank" rel="noopener">https://telemetrydeck.com/privacy/</a></p>
 
                     <h3>Apple Services</h3>
                     <p>The App may interact with standard Apple services (Photos library, Location Services, Notifications). Apple's privacy policy applies: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a></p>
 
-                    <h3>Amazon Web Services (Pro Cloud Infrastructure)</h3>
-                    <p>If you use FlipperHelper Pro, your account and reselling data are hosted on Amazon Web Services (AWS) infrastructure. AWS acts as our data processor and does not use your data for its own purposes. AWS's privacy policy: <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener">https://aws.amazon.com/privacy/</a></p>
+                    <h3>Amazon Web Services (Cloud Infrastructure)</h3>
+                    <p>If you are signed in, your account data, usage analytics, and diagnostic reports—and with cloud sync, your synced records and photos—are hosted on Amazon Web Services (AWS) infrastructure. AWS acts as our data processor and does not use your data for its own purposes. AWS's privacy policy: <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener">https://aws.amazon.com/privacy/</a></p>
 
                     <h3>eBay (Pro, Optional)</h3>
-                    <p>If you connect your eBay account, FlipperHelper uses eBay's APIs to identify your account and receive notifications about your own listings and sales. eBay's privacy policy: <a href="https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy" target="_blank" rel="noopener">https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy</a></p>
+                    <p>If you connect your eBay account, FlipperHelper uses eBay's APIs to identify your account and receive details about your own listings and sales. eBay's privacy policy: <a href="https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy" target="_blank" rel="noopener">https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy</a></p>
+
+                    <h3>Microsoft 365 (Account Emails)</h3>
+                    <p>We send account emails, such as the welcome email and the account-deletion confirmation, through Microsoft 365. Microsoft processes your email address and the content of the email on our behalf. Microsoft's privacy statement: <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">https://privacy.microsoft.com/privacystatement</a></p>
                 </section>
 
                 <hr class="tear">
@@ -309,7 +343,7 @@
                         <strong>Oleksandr Prudnikov</strong><br>
                         Email: <a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a>
                     </p>
-                    <p>For GDPR-related inquiries, this email serves as the point of contact for the data controller.</p>
+                    <p>For GDPR-related inquiries, this email serves as the point of contact for the data controller. Send all privacy requests—access, correction, export, deletion, or objection—to this address, wherever you live.</p>
                 </section>
             </article>
         </div>
