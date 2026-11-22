@@ -6,8 +6,10 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 
 ## Key Details
 
-- Platform: iOS 17.0+ and Android 8.0+
+- Platform: iOS 17.0+ and Android 8.0+, plus a web portal with Pro
 - Status: Available on the App Store and Google Play (free to download, no ads)
+- Pricing: The app is free, with no ads, and everything in it stays free. FlipperHelper Pro is an optional subscription: 1 month free, then the price your app store shows.
+- Web portal (Pro): https://web.flipperhelper.app
 - App Store: https://apps.apple.com/us/app/flipperhelper/id6759716745
 - Google Play: https://play.google.com/store/apps/details?id=com.oprudnikov.flipperhelper
 - Developer: Oleksandr Prudnikov (UK-based)
@@ -25,8 +27,8 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 
 - **Item Tracking**: Snap up to 10 photos per item (take new ones with the camera or add several from your library at once) and log price, market, and seller instantly. Choose one photo as the main image shown in the item list. Each item gets an automatic unique SKU code (Crockford Base32 format, e.g. FH-20D6G0NR).
 - **Item Lifecycle**: Items move through three statuses — New (purchased, not yet listed), Listed (on one or more platforms with per-platform dates), and Sold (sale recorded with price, platform, and date).
-- **16 Listing Platforms**: Manually mark items as listed on eBay, Vinted, Facebook, Depop, Poshmark, Mercari, OfferUp, Craigslist, ThredUp, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, and ShopThing. This is listing tracking (not automated cross-posting). Platforms can be enabled or disabled in Settings.
-- **18 Sold Platforms**: Record where items sold — all 16 listing platforms plus Car Boot (physical market sales) and Sold Offline (private sales).
+- **21 Listing Platforms**: Manually mark items as listed on eBay, Vinted, Facebook, Depop, Poshmark, Mercari, OfferUp, Craigslist, ThredUp, Etsy, Gumtree, Shpock, Preloved, Nextdoor, Grailed, ShopThing, Swappa, Vendora, Chrono24, TCGplayer, and Cardmarket. This is listing tracking (not automated cross-posting); with Pro, eBay listings mark items listed automatically. Platforms can be enabled or disabled in Settings.
+- **Sold Platforms**: Record where items sold — all 21 listing platforms plus Private Sale, Car Boot (physical market sales) and Sold Offline (other channels): 24 in total.
 - **Profit Calculation**: Automatic profit per item calculated as sold price minus purchase price, with multi-currency exchange rate conversion when buy and sell currencies differ.
 - **Quantity & Partial Sales**: An item can hold several identical units (optional field — enable Quantity via Customize fields on the Add Item screen; price entered is the total; cost per unit is derived). Units can be sold in separate sales, each with its own platform, date, price, currency, and payment method; an item with unsold units shows in both Listed and Sold, and profit counts only the units sold. Each sale can be cancelled individually.
 - **Duplicate Item**: One-tap copy of an item, including photos, listing details, linked expenses, and its Haul.
@@ -52,12 +54,13 @@ FlipperHelper is an offline-first inventory and profit tracking app built for pe
 - **Entry Fee Auto-Prompt**: When you log the first item of the day at a saved market, FlipperHelper prompts you to add that market's entry fee (dismissible per-market).
 - **Data Backup & Restore**: Full data backup downloadable as ZIP archive. Restore from previous backups to transfer data between devices, including between iPhone and Android (the ZIP format is shared and cross-platform compatible). Between automatic backup (iCloud on iPhone / a chosen folder on Android) and the ZIP export, data is protected in multiple independent locations and survives even if the app is deleted.
 - **Payment Methods**: Cash (default for physical markets like car boot sales) and Card (default for online platforms).
+- **FlipperHelper Pro (optional subscription)**: Cloud sync between devices (changes are saved on the phone first and work offline), teams of two people (the owner's Pro covers the member), eBay sync (listings mark items listed, sales mark them sold, and eBay's charges for the sale are added as expenses; items are matched by their FlipperHelper SKU), and the web portal at https://web.flipperhelper.app. Monthly and yearly plans, bought in the app. Pro is rolling out now; the App Store and Google Play still review the update. While Pro is active, the Google sync (photos to Google Drive and the Sheets export) turns off. Launch post: https://flipperhelper.app/blog/flipperhelper-pro-launch.html
 - **Optional Account Sign-In**: Needed for Pro cross-device sync; when used, scopes items/expenses to that account, supports multiple accounts per device, and signing out only hides (does not delete) that account's data. Without Pro, signing in does not upload items or photos; the account details are stored on FlipperHelper's servers, and usage analytics and diagnostics can then be linked to the account.
 
 ## How It Works
 
 1. **Buy**: At a car boot sale or market, snap a photo and log the item with price, market, and seller
-2. **List**: Manually mark items as listed on one or more of the 16 selling platforms (you do the listing yourself on each platform, then toggle it in the app)
+2. **List**: Manually mark items as listed on one or more of the 21 selling platforms (you do the listing yourself on each platform, then toggle it in the app; with Pro, eBay listings mark items listed automatically)
 3. **Sell**: Record the sale with price and platform — profit is calculated automatically
 4. **Review**: Use the Money Flow dashboard to see real profits after all expenses are factored in
 
