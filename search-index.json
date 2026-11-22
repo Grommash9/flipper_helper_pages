@@ -14,7 +14,7 @@
   {
     "url": "/faq.html",
     "title": "FAQ — FlipperHelper | Everything About the Reseller Tracking App",
-    "description": "63 questions answered about FlipperHelper, the free iOS and Android profit tracker for resellers who source in person. Features, offline use, backups, multi-currency, tax records and how it compares.",
+    "description": "80 questions answered about FlipperHelper, the free iOS and Android profit tracker for resellers who source in person. Features, offline use, backups, multi-currency, tax records and how it compares.",
     "type": "page"
   },
   {
@@ -49,8 +49,8 @@
   },
   {
     "url": "/flipperhelper-pricing.html",
-    "title": "FlipperHelper Pricing (2026): Free Now, Honest About Future Paid Tier",
-    "description": "FlipperHelper is free as of Aug 2026 — no ads, subscription, or account. Pro (eBay sync, web portal, multi-device) planned; existing features stay free.",
+    "title": "FlipperHelper Pricing (2026): Free App, Optional Pro Subscription",
+    "description": "FlipperHelper is free with no ads and no account. Optional Pro adds cloud sync, teams of two, eBay sync and a web portal. First month free.",
     "type": "page"
   },
   {
@@ -279,6 +279,12 @@
     "url": "/blog/flipperhelper-pro-coming-soon.html",
     "title": "FlipperHelper Pro Is Coming Soon",
     "description": "FlipperHelper Pro is nearly ready: automatic eBay sales and fees, sync between devices, and a website. Why it costs money, and why the free app stays free.",
+    "type": "post"
+  },
+  {
+    "url": "/blog/flipperhelper-pro-launch.html",
+    "title": "FlipperHelper Pro Is Launching: Sync, Teams, eBay and a Web Portal",
+    "description": "FlipperHelper Pro is launching: sync between devices, a team of two, automatic eBay sales and fees, and a web portal. The first month is free.",
     "type": "post"
   },
   {
