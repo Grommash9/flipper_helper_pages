@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FAQ — FlipperHelper | Everything About the Reseller Tracking App</title>
-<meta name="description" content="63 questions answered about FlipperHelper, the free iOS and Android profit tracker for resellers who source in person. Features, offline use, backups, multi-currency, tax records and how it compares.">
+<meta name="description" content="80 questions answered about FlipperHelper, the free iOS and Android profit tracker for resellers who source in person. Features, offline use, backups, multi-currency, tax records and how it compares.">
 <meta name="apple-itunes-app" content="app-id=6759716745">
 <link rel="icon" type="image/svg+xml" href="/logo_FH.svg">
 <link rel="apple-touch-icon" href="/logo_FH.png">
@@ -63,7 +63,7 @@
       "name": "Is FlipperHelper free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, FlipperHelper is completely free to download and use from the App Store. There are no subscriptions, no in-app purchases, no premium tiers, and no ads. Every feature is available to every user at no cost."
+        "text": "Yes, FlipperHelper is free to download and use on iPhone and Android. There are no ads, and every feature of the free app is available to every user at no cost. FlipperHelper Pro is an optional subscription for sync between devices, teams, the eBay connection and the web portal, with the first month free."
       }
     },
     {
@@ -71,7 +71,127 @@
       "name": "What devices does FlipperHelper support?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "FlipperHelper runs on iPhone (iOS 17.0 or later) and Android phones (Android 8.0 or later). Both versions are free and have full feature parity, and they share the same backup format so you can move your data between them. There is no iPad, Mac, or web version."
+        "text": "FlipperHelper runs on iPhone (iOS 17.0 or later) and Android phones (Android 8.0 or later). Both versions are free and have full feature parity, and they share the same backup format so you can move your data between them. There is no iPad or Mac app, but FlipperHelper Pro includes a web portal at web.flipperhelper.app that works in any browser."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is FlipperHelper Pro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FlipperHelper Pro is an optional subscription on top of the free app. It adds sync between your devices, a team of two people, the eBay connection (listings, sales and their fees record themselves), and a web portal at web.flipperhelper.app with the history of changes and CSV export. The free app stays free, and no free feature goes away. Pro is in App Store and Google Play review now, so it can take a few days to reach your phone. Read what is in Pro and how it works ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does FlipperHelper Pro cost, and is there a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is a monthly and a yearly plan, on iPhone and on Android. For new subscribers, the first month is free on both plans. After that, you pay the price your app store shows, and you can cancel any time. You buy Pro in the app, not on the web portal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does sync between devices work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With Pro, your changes go to our server, and your other devices download them. Only what changed is sent. The free Google sync sends all your items every time, which gets slower and uses more mobile data as your stock grows. While Pro is on, the Google sync (photos to Google Drive and the Sheets export) turns off. It comes back if Pro ends. Sync is not live. The app syncs when you open it, when you leave it, and on a timer: every 5 minutes while the app is open on iPhone, and about every 15 minutes on Android. To sync now, tap Sync Now in Settings, under the FlipperHelper Pro row. Every change is saved on your phone first, so the app still works with no signal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I invite someone to my team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Team settings are on the web portal, not in the app. Open web.flipperhelper.app and sign in. Go to Settings → Teams , type the person’s email under Invite by email , and press Invite . The other person opens web.flipperhelper.app and signs in with Google or Apple, with the email you invited. Under Invites to you , they press Accept . In the app, they choose your team in Settings → Account → Team . Sign in with Apple can hide a real email behind a relay address. If it does, the web portal shows that address, and the owner invites it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many people can be in a team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A team has at most 2 people: the owner and one member. One account can be in at most 5 teams, its own team included. Each team can have one open invite at a time. These limits are for now, while we learn the server load. If you need a bigger team, email support@flipperhelper.app ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can a team member do, and do they need their own Pro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A member does not need their own Pro: the owner’s Pro covers the team. A member can add, change and delete items, hauls and expenses from the app. Only the owner can change the home currency and which platforms are on, rename the team, invite or remove the member, hand the team over, and connect or disconnect eBay. If the owner’s Pro ends, the team stops syncing for both people, but no data is deleted. If the owner removes the member, the team’s records are removed from the member’s phone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I connect my eBay account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the app, open Settings and tap Connect eBay Account . You need Pro, and you must be the owner of the team. For now, you connect and disconnect eBay only in the app, not on the web portal. The app then opens eBay’s own page. On many phones it looks bad, and the button to agree is hard to see. Sign in to eBay, find the button that lets FlipperHelper connect, and press it. You then go back to the app. That page comes from eBay, and we cannot change it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does FlipperHelper match my eBay listings to my items?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It looks for the item’s SKU, the code that starts with FH-, in the eBay listing’s Custom label field, its title or its description. If the eBay app shows no Custom label field when you list, put the SKU in the description. A SKU that matches two items is not used. When a listing matches, the item is marked as listed. When it sells, the item is marked as sold. If nothing matches, the sale or the listing waits on the Unmatched eBay page of the web portal, and you link it to the right item by hand, even if the eBay listing has no SKU."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are eBay sales and fees recorded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The sale price is the item price plus the postage the buyer paid. The costs of the sale are added to the item as expenses: eBay’s fees, other eBay charges for the order such as promoted listing (ad) fees, and the postage label. eBay does not show them all at once, so FlipperHelper checks again 10 minutes, 1 hour, 24 hours and 72 hours after the sale. For example, an item sells for £400, and £20 of that goes to eBay for advertising. FlipperHelper records a sale of £400 and an eBay expense of £20 linked to that sale. If the item has no title, the eBay listing title fills it in. A title you wrote is never changed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the eBay connection bring in my past sales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, once, when you connect: the listings that ended and the orders of the last 90 days. It does this only if you added at least one item to FlipperHelper in the 30 days before you connect. Your active listings come in when you connect. Even if you do not plan to keep Pro, you can use the free month for this: connect eBay, let the history and the titles come in, and the data stays on your phone after Pro ends."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why has my eBay sale not appeared yet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "eBay can take time to show all the fees of a sale, so FlipperHelper checks again up to 72 hours after it. eBay also limits how many requests an app can send each day, and all FlipperHelper users share that limit. If it runs out, the waiting work moves to the next eBay day, which starts at midnight US Pacific time (8:00 in the UK). Nothing is lost. If a sale has still not arrived the next day, disconnect eBay in Settings and connect it again. That does not break anything. If that does not help, email support@flipperhelper.app ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can I do on the web portal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At web.flipperhelper.app , you sign in with Apple or Google. With Pro, you can add items and expenses, link expenses to items, add photos, mark items as listed or sold, cancel a sale, see your dashboard, items, hauls and expenses, link unmatched eBay sales and listings, see the history of changes, manage your team, and export CSV. Some things stay on the phone for now: creating hauls, deleting items, and connecting eBay. The web portal is part of Pro. A member of a Pro owner’s team can use it without their own Pro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I export my data with Pro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On the web portal, open Settings → Export and press Request CSV for your items or for your expenses. The file is made in the background, so you can leave the page. When it is ready, press Download . You can open the CSV in Google Sheets, send it to your accountant, or use it anywhere else. Each item row has a link to the item’s main photo. Anyone with the file can open these links for 30 days after the export, with no access to your Google Drive. After that, make a new export. While Pro is on, the Google sync (photos to Google Drive and the Sheets export) turns off."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I see who changed what?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open History on the web portal. It shows every change in your team, newest first: who made it, on which device, and what changed, as “before → after” for each field. Changes that came from eBay have no person’s name."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when Pro ends?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The app says “Pro ended. Sync is paused. Your data stays on this phone.” Your items stay on each phone, and you can keep using the free app. The records that were already synced stay on our servers, without syncing, until you delete your account. If you own a team, the team stops syncing for your member too."
       }
     },
     {
@@ -119,7 +239,7 @@
       "name": "What selling platforms does FlipperHelper support for listings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "FlipperHelper lets you manually mark items as listed on any of 16 selling platforms. This is listing tracking, not automated cross-posting — you list items on each platform yourself, then toggle them in FlipperHelper to record where each item is listed and when. Supported platforms: eBay Vinted Facebook Depop Poshmark Mercari OfferUp Craigslist ThredUp Etsy Gumtree Shpock Preloved Nextdoor Grailed ShopThing You can enable or disable platforms in Settings to show only the ones you use."
+        "text": "FlipperHelper lets you manually mark items as listed on any of 21 selling platforms. This is listing tracking, not automated cross-posting — you list items on each platform yourself, then toggle them in FlipperHelper to record where each item is listed and when. Supported platforms: eBay Vinted Facebook Depop Poshmark Mercari OfferUp Craigslist ThredUp Etsy Gumtree Shpock Preloved Nextdoor Grailed ShopThing Swappa Vendora Chrono24 TCGplayer Cardmarket With FlipperHelper Pro, eBay listings are marked as listed automatically. You can enable or disable platforms in Settings to show only the ones you use."
       }
     },
     {
@@ -127,7 +247,7 @@
       "name": "Where can I record sales in FlipperHelper?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When marking an item as sold, you can choose from 18 sold platforms: all 16 listing platforms plus two additional options: Car Boot — for items sold at physical markets and car boot sales Sold Offline — for private sales or other channels The app auto-suggests the appropriate payment method (Cash for physical sales, Card for online platforms)."
+        "text": "When marking an item as sold, you can choose from 24 sold platforms: the 21 selling platforms and Private Sale, plus two more options: Car Boot — for items sold at physical markets and car boot sales Sold Offline — for private sales or other channels The app auto-suggests the appropriate payment method (Cash for physical sales, Card for online platforms)."
       }
     },
     {
@@ -399,7 +519,7 @@
       "name": "Can I switch between iPhone and Android without losing my data?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, and it is guaranteed. The iPhone app and the Android app read and write the exact same backup format — a ZIP containing your database and all photos. Export a backup on one device, open it on the other, and everything comes across: items, photos, listing history, expenses, hauls, and settings. Backups made on an older app version are automatically upgraded when you restore them on a newer one. The only rule is to keep both apps updated, so a backup from a newer version is never opened by an older one."
+        "text": "Yes, and it is guaranteed. The iPhone app and the Android app read and write the exact same backup format — a ZIP containing your database and all photos. Export a backup on one device, open it on the other, and everything comes across: items, photos, listing history, expenses, hauls, and settings. Backups made on an older app version are automatically upgraded when you restore them on a newer one. The only rule is to keep both apps updated, so a backup from a newer version is never opened by an older one. With FlipperHelper Pro, you can also move by sync, and the free month is enough. Sign in on the new phone with the same account and wait for the sync. The Android app signs in with Google only. If your iPhone uses Sign in with Apple, invite your Google email to your team on the web portal, accept the invite, sign in with Google on Android, and choose the team in Settings → Account → Team . If you then cancel Pro, the data stays on both phones. Do not remove the member or delete the old account afterwards: that also removes the team’s items from the other phone. To make the Google account the owner, use Make owner on the Teams page first. The new owner needs their own Pro (a trial is fine) for the team to sync and to connect eBay. Make owner disconnects eBay, so connect it again."
       }
     },
     {
@@ -432,6 +552,22 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "FlipperHelper stores item records (photos, purchase price, SKU, market, seller, platform listings with dates, sale info), market locations with GPS coordinates, seller names, expense records (entry fees, transport expenses, other expenses), exchange rate history (365 days), and app settings. Everything is stored in a SQLite database on your phone. In the free version, your records and photos stay there and are not stored on our servers. With Pro (including members of a Pro owner's team), records and photos are also stored on our servers. Usage analytics and diagnostics are described in the privacy policy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What usage analytics does FlipperHelper collect, and how do I turn them off?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The app sends facts about how it is used, such as: the app was opened, an item was added or marked as sold, and which platform an item was listed on. It also sends how long the server took to answer, for example for a photo upload or a sign-in, and the errors you saw. When you are signed in, usage analytics are linked to your account, except in the European Economic Area. They never include item titles or descriptions, photos, prices, market names or seller names. To turn them off, open Settings, scroll to the About section near the end, and switch off Share usage analytics . The switch is on iPhone and on Android. It does not stop crash and error reports. The privacy policy lists exactly what is sent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I delete my FlipperHelper account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the app, open Settings, scroll to Danger zone at the end, and tap Delete all data . On the web portal, open Settings → Account and press Delete my account . This deletes your items, photos, expenses and hauls, your eBay connection, your usage data and the rest of your account, on all your devices. You get an email when it is done. It cannot be undone. A few things are kept, as the privacy policy explains. For example, records you added to a team that someone else owns stay with that team."
       }
     },
     {
@@ -487,7 +623,7 @@
       "name": "How does FlipperHelper compare to Vendoo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "FlipperHelper is completely free with no subscription, while Vendoo offers a free tier with paid plans. FlipperHelper focuses on the full reselling lifecycle (buy, list, sell, profit) with expense tracking including entry fees and transport costs, while Vendoo focuses primarily on listing management automation. FlipperHelper works fully offline and is ideal for car boot sale and flea market resellers who source in person, while Vendoo targets high-volume online sellers who need automated cross-posting. Competitor pricing may change — check their websites for current plans."
+        "text": "FlipperHelper is free, with an optional Pro subscription, while Vendoo offers a free tier with paid plans. FlipperHelper focuses on the full reselling lifecycle (buy, list, sell, profit) with expense tracking including entry fees and transport costs, while Vendoo focuses primarily on listing management automation. FlipperHelper works fully offline and is ideal for car boot sale and flea market resellers who source in person, while Vendoo targets high-volume online sellers who need automated cross-posting. Competitor pricing may change — check their websites for current plans."
       }
     },
     {
@@ -495,7 +631,7 @@
       "name": "How does FlipperHelper compare to Flippd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both FlipperHelper and Flippd are reseller apps, but FlipperHelper tracks listings across 16 platforms compared to Flippd's more limited set. FlipperHelper includes multi-currency support with seven currencies (USD, EUR, GBP, CAD, AUD, NZD, PLN) and automatic exchange rates, GPS-based market auto-detection, detailed expense tracking with entry fees and six transport types, and Google Drive photo sync. FlipperHelper is completely free with no premium tier. Competitor features and pricing may change — check their website for current details."
+        "text": "Both FlipperHelper and Flippd are reseller apps, but FlipperHelper tracks listings across 21 platforms compared to Flippd's more limited set. FlipperHelper includes multi-currency support with seven currencies (USD, EUR, GBP, CAD, AUD, NZD, PLN) and automatic exchange rates, GPS-based market auto-detection, detailed expense tracking with entry fees and six transport types, and Google Drive photo sync. The FlipperHelper app is free, and FlipperHelper Pro is an optional subscription with the first month free. Competitor features and pricing may change — check their website for current details."
       }
     },
     {
@@ -630,6 +766,8 @@
     .ans ul li{position:relative;padding-left:22px;margin-bottom:8px;color:var(--ink-66);font-size:var(--fs-sm);line-height:1.5}
     .ans ul li::before{content:"";position:absolute;left:4px;top:.55em;width:6px;height:6px;border-radius:50%;background:var(--cat)}
     .ans ul:last-child{margin-bottom:0}
+    .ans ol{margin:0 0 12px;padding-left:22px}
+    .ans ol li{margin-bottom:8px;color:var(--ink-66);font-size:var(--fs-sm);line-height:1.5}
 
     .no-posts{display:none;font-size:var(--fs-sm);color:var(--ink-45);padding:26px 0}
     .no-posts.show{display:block}
@@ -713,10 +851,10 @@
     <h1>FlipperHelper FAQ</h1>
     <p class="section-lede">
       Everything you need to know about FlipperHelper — the <strong>free</strong> app for iOS and
-      Android that tracks your reselling inventory, profit and expenses across 16 selling platforms.
+      Android that tracks your reselling inventory, profit and expenses across 21 selling platforms.
     </p>
     <div class="head-meta">
-      <span class="head-updated">63 questions · Last updated: 21 November 2026</span>
+      <span class="head-updated">80 questions · Last updated: 22 November 2026</span>
     </div>
   </div>
 </header>
@@ -726,14 +864,14 @@
   <div class="wrap">
     <h2 class="visually-hidden" id="all-title">All questions</h2>
       <div class="toolbar">
-        <div class="filters" role="group" aria-label="Filter by topic"><button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="about-flipperhelper" aria-pressed="false">About FlipperHelper</button><button type="button" data-f="core-features" aria-pressed="false">Core Features</button><button type="button" data-f="common-use-cases" aria-pressed="false">Common Use Cases</button><button type="button" data-f="home-screen-dashboard" aria-pressed="false">Home Screen &amp; Dashboard</button><button type="button" data-f="sourcing-trips-hauls" aria-pressed="false">Sourcing Trips (Hauls)</button><button type="button" data-f="expense-tracking" aria-pressed="false">Expense Tracking</button><button type="button" data-f="multi-currency-support" aria-pressed="false">Multi-Currency Support</button><button type="button" data-f="markets-and-sellers" aria-pressed="false">Markets and Sellers</button><button type="button" data-f="google-integration-and-backup" aria-pressed="false">Google Integration and Backup</button><button type="button" data-f="offline-use-and-privacy" aria-pressed="false">Offline Use and Privacy</button><button type="button" data-f="technical-details" aria-pressed="false">Technical Details</button><button type="button" data-f="search-navigation" aria-pressed="false">Search &amp; Navigation</button><button type="button" data-f="sharing-social" aria-pressed="false">Sharing &amp; Social</button><button type="button" data-f="comparison-with-other-apps" aria-pressed="false">Comparison with Other Apps</button><button type="button" data-f="getting-started" aria-pressed="false">Getting Started</button></div>
+        <div class="filters" role="group" aria-label="Filter by topic"><button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="about-flipperhelper" aria-pressed="false">About FlipperHelper</button><button type="button" data-f="flipperhelper-pro" aria-pressed="false">FlipperHelper Pro</button><button type="button" data-f="core-features" aria-pressed="false">Core Features</button><button type="button" data-f="common-use-cases" aria-pressed="false">Common Use Cases</button><button type="button" data-f="home-screen-dashboard" aria-pressed="false">Home Screen &amp; Dashboard</button><button type="button" data-f="sourcing-trips-hauls" aria-pressed="false">Sourcing Trips (Hauls)</button><button type="button" data-f="expense-tracking" aria-pressed="false">Expense Tracking</button><button type="button" data-f="multi-currency-support" aria-pressed="false">Multi-Currency Support</button><button type="button" data-f="markets-and-sellers" aria-pressed="false">Markets and Sellers</button><button type="button" data-f="google-integration-and-backup" aria-pressed="false">Google Integration and Backup</button><button type="button" data-f="offline-use-and-privacy" aria-pressed="false">Offline Use and Privacy</button><button type="button" data-f="technical-details" aria-pressed="false">Technical Details</button><button type="button" data-f="search-navigation" aria-pressed="false">Search &amp; Navigation</button><button type="button" data-f="sharing-social" aria-pressed="false">Sharing &amp; Social</button><button type="button" data-f="comparison-with-other-apps" aria-pressed="false">Comparison with Other Apps</button><button type="button" data-f="getting-started" aria-pressed="false">Getting Started</button></div>
         <div class="faq-search">
           <label class="visually-hidden" for="q">Search questions</label>
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
           <input type="search" id="q" placeholder="Search answers…" autocomplete="off">
         </div>
       </div>
-      <p class="filter-count" id="count">63 questions</p>
+      <p class="filter-count" id="count">80 questions</p>
 
       <section class="faq-group" data-cat="about-flipperhelper" data-name="About FlipperHelper">
         <h2 class="group-label" id="about-flipperhelper"><b>About FlipperHelper</b></h2>
@@ -747,13 +885,79 @@
           <summary>Who is FlipperHelper for?</summary>
           <div class="ans"><p>FlipperHelper is for anyone who buys secondhand items to resell for profit. This includes car boot sale flippers, charity shop resellers, flea market sellers, eBay side hustlers, Vinted sellers, Depop sellers, and full-time reselling business operators. The app is used by resellers in the UK, US, Canada, and Europe.</p></div>
         </details>
-        <details id="is-flipperhelper-free" data-s="is flipperhelper free? yes, flipperhelper is completely free to download and use from the app store. there are no subscriptions, no in-app purchases, no premium tiers, and no ads. every feature is available to every user at no cost.">
+        <details id="is-flipperhelper-free" data-s="is flipperhelper free? yes, flipperhelper is free to download and use on iphone and android. there are no ads, and every feature of the free app is available to every user at no cost. flipperhelper pro is an optional subscription for sync between devices, teams, the ebay connection and the web portal, with the first month free.">
           <summary>Is FlipperHelper free?</summary>
-          <div class="ans"><p>Yes, FlipperHelper is completely free to download and use from the App Store. There are no subscriptions, no in-app purchases, no premium tiers, and no ads. Every feature is available to every user at no cost.</p></div>
+          <div class="ans"><p>Yes, FlipperHelper is free to download and use on iPhone and Android. There are no ads, and every feature of the free app is available to every user at no cost. FlipperHelper Pro is an optional subscription for sync between devices, teams, the eBay connection and the web portal, with the first month free.</p></div>
         </details>
-        <details id="what-devices-does-flipperhelper-support" data-s="what devices does flipperhelper support? flipperhelper runs on iphone (ios 17.0 or later) and android phones (android 8.0 or later). both versions are free and have full feature parity, and they share the same backup format so you can move your data between them. there is no ipad, mac, or web version.">
+        <details id="what-devices-does-flipperhelper-support" data-s="what devices does flipperhelper support? flipperhelper runs on iphone (ios 17.0 or later) and android phones (android 8.0 or later). both versions are free and have full feature parity, and they share the same backup format so you can move your data between them. there is no ipad or mac app, but flipperhelper pro includes a web portal at web.flipperhelper.app that works in any browser.">
           <summary>What devices does FlipperHelper support?</summary>
-          <div class="ans"><p>FlipperHelper runs on iPhone (iOS 17.0 or later) and Android phones (Android 8.0 or later). Both versions are free and have full feature parity, and they share the same backup format so you can move your data between them. There is no iPad, Mac, or web version.</p></div>
+          <div class="ans"><p>FlipperHelper runs on iPhone (iOS 17.0 or later) and Android phones (Android 8.0 or later). Both versions are free and have full feature parity, and they share the same backup format so you can move your data between them. There is no iPad or Mac app, but FlipperHelper Pro includes a web portal at web.flipperhelper.app that works in any browser.</p></div>
+        </details>
+        </div>
+      </section>
+
+      <section class="faq-group" data-cat="flipperhelper-pro" data-name="FlipperHelper Pro">
+        <h2 class="group-label" id="flipperhelper-pro"><b>FlipperHelper Pro</b></h2>
+        <div class="faq">
+        <details id="what-is-flipperhelper-pro" data-s="what is flipperhelper pro? flipperhelper pro is an optional subscription on top of the free app. it adds sync between your devices, a team of two people, the ebay connection (listings, sales and their fees record themselves), and a web portal at web.flipperhelper.app with the history of changes and csv export. the free app stays free, and no free feature goes away. pro is in app store and google play review now, so it can take a few days to reach your phone. read what is in pro and how it works .">
+          <summary>What is FlipperHelper Pro?</summary>
+          <div class="ans"><p>FlipperHelper Pro is an optional subscription on top of the free app. It adds sync between your devices, a team of two people, the eBay connection (listings, sales and their fees record themselves), and a web portal at <a href="https://web.flipperhelper.app">web.flipperhelper.app</a> with the history of changes and CSV export.</p><p>The free app stays free, and no free feature goes away. Pro is in App Store and Google Play review now, so it can take a few days to reach your phone. Read <a href="/blog/flipperhelper-pro-launch.html">what is in Pro and how it works</a>.</p></div>
+        </details>
+        <details id="how-much-does-flipperhelper-pro-cost" data-s="how much does flipperhelper pro cost, and is there a free trial? there is a monthly and a yearly plan, on iphone and on android. for new subscribers, the first month is free on both plans. after that, you pay the price your app store shows, and you can cancel any time. you buy pro in the app, not on the web portal.">
+          <summary>How much does FlipperHelper Pro cost, and is there a free trial?</summary>
+          <div class="ans"><p>There is a monthly and a yearly plan, on iPhone and on Android. For new subscribers, the first month is free on both plans. After that, you pay the price your app store shows, and you can cancel any time. You buy Pro in the app, not on the web portal.</p></div>
+        </details>
+        <details id="how-does-sync-between-devices-work" data-s="how does sync between devices work? with pro, your changes go to our server, and your other devices download them. only what changed is sent. the free google sync sends all your items every time, which gets slower and uses more mobile data as your stock grows. while pro is on, the google sync (photos to google drive and the sheets export) turns off. it comes back if pro ends. sync is not live. the app syncs when you open it, when you leave it, and on a timer: every 5 minutes while the app is open on iphone, and about every 15 minutes on android. to sync now, tap sync now in settings, under the flipperhelper pro row. every change is saved on your phone first, so the app still works with no signal.">
+          <summary>How does sync between devices work?</summary>
+          <div class="ans"><p>With Pro, your changes go to our server, and your other devices download them. Only what changed is sent. The free Google sync sends all your items every time, which gets slower and uses more mobile data as your stock grows. While Pro is on, the Google sync (photos to Google Drive and the Sheets export) turns off. It comes back if Pro ends.</p><p>Sync is not live. The app syncs when you open it, when you leave it, and on a timer: every 5 minutes while the app is open on iPhone, and about every 15 minutes on Android. To sync now, tap <strong>Sync Now</strong> in Settings, under the FlipperHelper Pro row. Every change is saved on your phone first, so the app still works with no signal.</p></div>
+        </details>
+        <details id="how-do-i-invite-someone-to-my-team" data-s="how do i invite someone to my team? team settings are on the web portal, not in the app. open web.flipperhelper.app and sign in. go to settings → teams , type the person’s email under invite by email , and press invite . the other person opens web.flipperhelper.app and signs in with google or apple, with the email you invited. under invites to you , they press accept . in the app, they choose your team in settings → account → team . sign in with apple can hide a real email behind a relay address. if it does, the web portal shows that address, and the owner invites it.">
+          <summary>How do I invite someone to my team?</summary>
+          <div class="ans"><p>Team settings are on the web portal, not in the app.</p><ol><li>Open <a href="https://web.flipperhelper.app">web.flipperhelper.app</a> and sign in.</li><li>Go to <strong>Settings &rarr; Teams</strong>, type the person&rsquo;s email under <strong>Invite by email</strong>, and press <strong>Invite</strong>.</li><li>The other person opens web.flipperhelper.app and signs in with Google or Apple, with the email you invited.</li><li>Under <strong>Invites to you</strong>, they press <strong>Accept</strong>.</li><li>In the app, they choose your team in <strong>Settings &rarr; Account &rarr; Team</strong>.</li></ol><p>Sign in with Apple can hide a real email behind a relay address. If it does, the web portal shows that address, and the owner invites it.</p></div>
+        </details>
+        <details id="how-many-people-can-be-in-a-team" data-s="how many people can be in a team? a team has at most 2 people: the owner and one member. one account can be in at most 5 teams, its own team included. each team can have one open invite at a time. these limits are for now, while we learn the server load. if you need a bigger team, email support@flipperhelper.app .">
+          <summary>How many people can be in a team?</summary>
+          <div class="ans"><p>A team has at most 2 people: the owner and one member. One account can be in at most 5 teams, its own team included. Each team can have one open invite at a time.</p><p>These limits are for now, while we learn the server load. If you need a bigger team, email <a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a>.</p></div>
+        </details>
+        <details id="what-can-a-team-member-do" data-s="what can a team member do, and do they need their own pro? a member does not need their own pro: the owner’s pro covers the team. a member can add, change and delete items, hauls and expenses from the app. only the owner can change the home currency and which platforms are on, rename the team, invite or remove the member, hand the team over, and connect or disconnect ebay. if the owner’s pro ends, the team stops syncing for both people, but no data is deleted. if the owner removes the member, the team’s records are removed from the member’s phone.">
+          <summary>What can a team member do, and do they need their own Pro?</summary>
+          <div class="ans"><p>A member does not need their own Pro: the owner&rsquo;s Pro covers the team. A member can add, change and delete items, hauls and expenses from the app. Only the owner can change the home currency and which platforms are on, rename the team, invite or remove the member, hand the team over, and connect or disconnect eBay.</p><p>If the owner&rsquo;s Pro ends, the team stops syncing for both people, but no data is deleted. If the owner removes the member, the team&rsquo;s records are removed from the member&rsquo;s phone.</p></div>
+        </details>
+        <details id="how-do-i-connect-my-ebay-account" data-s="how do i connect my ebay account? in the app, open settings and tap connect ebay account . you need pro, and you must be the owner of the team. for now, you connect and disconnect ebay only in the app, not on the web portal. the app then opens ebay’s own page. on many phones it looks bad, and the button to agree is hard to see. sign in to ebay, find the button that lets flipperhelper connect, and press it. you then go back to the app. that page comes from ebay, and we cannot change it.">
+          <summary>How do I connect my eBay account?</summary>
+          <div class="ans"><p>In the app, open Settings and tap <strong>Connect eBay Account</strong>. You need Pro, and you must be the owner of the team. For now, you connect and disconnect eBay only in the app, not on the web portal.</p><p>The app then opens eBay&rsquo;s own page. On many phones it looks bad, and the button to agree is hard to see. Sign in to eBay, find the button that lets FlipperHelper connect, and press it. You then go back to the app. That page comes from eBay, and we cannot change it.</p></div>
+        </details>
+        <details id="how-does-flipperhelper-match-ebay-listings-to-my-items" data-s="how does flipperhelper match my ebay listings to my items? it looks for the item’s sku, the code that starts with fh-, in the ebay listing’s custom label field, its title or its description. if the ebay app shows no custom label field when you list, put the sku in the description. a sku that matches two items is not used. when a listing matches, the item is marked as listed. when it sells, the item is marked as sold. if nothing matches, the sale or the listing waits on the unmatched ebay page of the web portal, and you link it to the right item by hand, even if the ebay listing has no sku.">
+          <summary>How does FlipperHelper match my eBay listings to my items?</summary>
+          <div class="ans"><p>It looks for the item&rsquo;s SKU, the code that starts with FH-, in the eBay listing&rsquo;s Custom label field, its title or its description. If the eBay app shows no Custom label field when you list, put the SKU in the description. A SKU that matches two items is not used.</p><p>When a listing matches, the item is marked as listed. When it sells, the item is marked as sold. If nothing matches, the sale or the listing waits on the <strong>Unmatched eBay</strong> page of the web portal, and you link it to the right item by hand, even if the eBay listing has no SKU.</p></div>
+        </details>
+        <details id="how-are-ebay-sales-and-fees-recorded" data-s="how are ebay sales and fees recorded? the sale price is the item price plus the postage the buyer paid. the costs of the sale are added to the item as expenses: ebay’s fees, other ebay charges for the order such as promoted listing (ad) fees, and the postage label. ebay does not show them all at once, so flipperhelper checks again 10 minutes, 1 hour, 24 hours and 72 hours after the sale. for example, an item sells for £400, and £20 of that goes to ebay for advertising. flipperhelper records a sale of £400 and an ebay expense of £20 linked to that sale. if the item has no title, the ebay listing title fills it in. a title you wrote is never changed.">
+          <summary>How are eBay sales and fees recorded?</summary>
+          <div class="ans"><p>The sale price is the item price plus the postage the buyer paid. The costs of the sale are added to the item as expenses: eBay&rsquo;s fees, other eBay charges for the order such as promoted listing (ad) fees, and the postage label. eBay does not show them all at once, so FlipperHelper checks again 10 minutes, 1 hour, 24 hours and 72 hours after the sale.</p><p>For example, an item sells for &pound;400, and &pound;20 of that goes to eBay for advertising. FlipperHelper records a sale of &pound;400 and an eBay expense of &pound;20 linked to that sale. If the item has no title, the eBay listing title fills it in. A title you wrote is never changed.</p></div>
+        </details>
+        <details id="does-the-ebay-connection-bring-in-my-past-sales" data-s="does the ebay connection bring in my past sales? yes, once, when you connect: the listings that ended and the orders of the last 90 days. it does this only if you added at least one item to flipperhelper in the 30 days before you connect. your active listings come in when you connect. even if you do not plan to keep pro, you can use the free month for this: connect ebay, let the history and the titles come in, and the data stays on your phone after pro ends.">
+          <summary>Does the eBay connection bring in my past sales?</summary>
+          <div class="ans"><p>Yes, once, when you connect: the listings that ended and the orders of the last 90 days. It does this only if you added at least one item to FlipperHelper in the 30 days before you connect. Your active listings come in when you connect.</p><p>Even if you do not plan to keep Pro, you can use the free month for this: connect eBay, let the history and the titles come in, and the data stays on your phone after Pro ends.</p></div>
+        </details>
+        <details id="why-has-my-ebay-sale-not-appeared-yet" data-s="why has my ebay sale not appeared yet? ebay can take time to show all the fees of a sale, so flipperhelper checks again up to 72 hours after it. ebay also limits how many requests an app can send each day, and all flipperhelper users share that limit. if it runs out, the waiting work moves to the next ebay day, which starts at midnight us pacific time (8:00 in the uk). nothing is lost. if a sale has still not arrived the next day, disconnect ebay in settings and connect it again. that does not break anything. if that does not help, email support@flipperhelper.app .">
+          <summary>Why has my eBay sale not appeared yet?</summary>
+          <div class="ans"><p>eBay can take time to show all the fees of a sale, so FlipperHelper checks again up to 72 hours after it. eBay also limits how many requests an app can send each day, and all FlipperHelper users share that limit. If it runs out, the waiting work moves to the next eBay day, which starts at midnight US Pacific time (8:00 in the UK). Nothing is lost.</p><p>If a sale has still not arrived the next day, disconnect eBay in Settings and connect it again. That does not break anything. If that does not help, email <a href="mailto:support@flipperhelper.app">support@flipperhelper.app</a>.</p></div>
+        </details>
+        <details id="what-can-i-do-on-the-web-portal" data-s="what can i do on the web portal? at web.flipperhelper.app , you sign in with apple or google. with pro, you can add items and expenses, link expenses to items, add photos, mark items as listed or sold, cancel a sale, see your dashboard, items, hauls and expenses, link unmatched ebay sales and listings, see the history of changes, manage your team, and export csv. some things stay on the phone for now: creating hauls, deleting items, and connecting ebay. the web portal is part of pro. a member of a pro owner’s team can use it without their own pro.">
+          <summary>What can I do on the web portal?</summary>
+          <div class="ans"><p>At <a href="https://web.flipperhelper.app">web.flipperhelper.app</a>, you sign in with Apple or Google. With Pro, you can add items and expenses, link expenses to items, add photos, mark items as listed or sold, cancel a sale, see your dashboard, items, hauls and expenses, link unmatched eBay sales and listings, see the history of changes, manage your team, and export CSV.</p><p>Some things stay on the phone for now: creating hauls, deleting items, and connecting eBay. The web portal is part of Pro. A member of a Pro owner&rsquo;s team can use it without their own Pro.</p></div>
+        </details>
+        <details id="how-do-i-export-my-data-with-pro" data-s="how do i export my data with pro? on the web portal, open settings → export and press request csv for your items or for your expenses. the file is made in the background, so you can leave the page. when it is ready, press download . you can open the csv in google sheets, send it to your accountant, or use it anywhere else. each item row has a link to the item’s main photo. anyone with the file can open these links for 30 days after the export, with no access to your google drive. after that, make a new export. while pro is on, the google sync (photos to google drive and the sheets export) turns off.">
+          <summary>How do I export my data with Pro?</summary>
+          <div class="ans"><p>On the web portal, open <strong>Settings &rarr; Export</strong> and press <strong>Request CSV</strong> for your items or for your expenses. The file is made in the background, so you can leave the page. When it is ready, press <strong>Download</strong>. You can open the CSV in Google Sheets, send it to your accountant, or use it anywhere else.</p><p>Each item row has a link to the item&rsquo;s main photo. Anyone with the file can open these links for 30 days after the export, with no access to your Google Drive. After that, make a new export. While Pro is on, the Google sync (photos to Google Drive and the Sheets export) turns off.</p></div>
+        </details>
+        <details id="how-do-i-see-who-changed-what" data-s="how do i see who changed what? open history on the web portal. it shows every change in your team, newest first: who made it, on which device, and what changed, as “before → after” for each field. changes that came from ebay have no person’s name.">
+          <summary>How do I see who changed what?</summary>
+          <div class="ans"><p>Open <strong>History</strong> on the web portal. It shows every change in your team, newest first: who made it, on which device, and what changed, as &ldquo;before &rarr; after&rdquo; for each field. Changes that came from eBay have no person&rsquo;s name.</p></div>
+        </details>
+        <details id="what-happens-when-pro-ends" data-s="what happens when pro ends? the app says “pro ended. sync is paused. your data stays on this phone.” your items stay on each phone, and you can keep using the free app. the records that were already synced stay on our servers, without syncing, until you delete your account. if you own a team, the team stops syncing for your member too.">
+          <summary>What happens when Pro ends?</summary>
+          <div class="ans"><p>The app says &ldquo;Pro ended. Sync is paused. Your data stays on this phone.&rdquo; Your items stay on each phone, and you can keep using the free app. The records that were already synced stay on our servers, without syncing, until you delete your account. If you own a team, the team stops syncing for your member too.</p></div>
         </details>
         </div>
       </section>
@@ -781,9 +985,9 @@
           <summary>How does FlipperHelper measure "days to sell"?</summary>
           <div class="ans"><p>You choose. In Settings, "Days to Sell" can be measured either from the purchase date (the total time you held the item) or from the date you listed it on the platform it sold on (how long it took to sell once it was live). Items that were never listed — like car boot or offline sales — fall back to the purchase date. The item list's "Sold in N days" label updates to match whichever basis you pick.</p></div>
         </details>
-        <details id="what-selling-platforms-does-flipperhelper-support-for-listin" data-s="what selling platforms does flipperhelper support for listings? flipperhelper lets you manually mark items as listed on any of 16 selling platforms. this is listing tracking, not automated cross-posting — you list items on each platform yourself, then toggle them in flipperhelper to record where each item is listed and when. supported platforms: ebay vinted facebook depop poshmark mercari offerup craigslist thredup etsy gumtree shpock preloved nextdoor grailed shopthing you can enable or disable platforms in settings to show only the ones you use.">
+        <details id="what-selling-platforms-does-flipperhelper-support-for-listin" data-s="what selling platforms does flipperhelper support for listings? flipperhelper lets you manually mark items as listed on any of 21 selling platforms. this is listing tracking, not automated cross-posting — you list items on each platform yourself, then toggle them in flipperhelper to record where each item is listed and when. supported platforms: ebay vinted facebook depop poshmark mercari offerup craigslist thredup etsy gumtree shpock preloved nextdoor grailed shopthing swappa vendora chrono24 tcgplayer cardmarket with flipperhelper pro, ebay listings are marked as listed automatically. you can enable or disable platforms in settings to show only the ones you use.">
           <summary>What selling platforms does FlipperHelper support for listings?</summary>
-          <div class="ans"><p>FlipperHelper lets you manually mark items as listed on any of 16 selling platforms. This is listing tracking, not automated cross-posting — you list items on each platform yourself, then toggle them in FlipperHelper to record where each item is listed and when. Supported platforms:</p>
+          <div class="ans"><p>FlipperHelper lets you manually mark items as listed on any of 21 selling platforms. This is listing tracking, not automated cross-posting — you list items on each platform yourself, then toggle them in FlipperHelper to record where each item is listed and when. Supported platforms:</p>
                         <ul>
                             <li>eBay</li>
                             <li>Vinted</li>
@@ -801,12 +1005,18 @@
                             <li>Nextdoor</li>
                             <li>Grailed</li>
                             <li>ShopThing</li>
+                            <li>Swappa</li>
+                            <li>Vendora</li>
+                            <li>Chrono24</li>
+                            <li>TCGplayer</li>
+                            <li>Cardmarket</li>
                         </ul>
+                        <p>With FlipperHelper Pro, eBay listings are marked as listed automatically.</p>
                         <p>You can enable or disable platforms in Settings to show only the ones you use.</p></div>
         </details>
-        <details id="where-can-i-record-sales-in-flipperhelper" data-s="where can i record sales in flipperhelper? when marking an item as sold, you can choose from 18 sold platforms: all 16 listing platforms plus two additional options: car boot — for items sold at physical markets and car boot sales sold offline — for private sales or other channels the app auto-suggests the appropriate payment method (cash for physical sales, card for online platforms).">
+        <details id="where-can-i-record-sales-in-flipperhelper" data-s="where can i record sales in flipperhelper? when marking an item as sold, you can choose from 24 sold platforms: the 21 selling platforms and private sale, plus two more options: car boot — for items sold at physical markets and car boot sales sold offline — for private sales or other channels the app auto-suggests the appropriate payment method (cash for physical sales, card for online platforms).">
           <summary>Where can I record sales in FlipperHelper?</summary>
-          <div class="ans"><p>When marking an item as sold, you can choose from 18 sold platforms: all 16 listing platforms plus two additional options:</p>
+          <div class="ans"><p>When marking an item as sold, you can choose from 24 sold platforms: the 21 selling platforms and Private Sale, plus two more options:</p>
                         <ul>
                             <li><strong>Car Boot</strong> — for items sold at physical markets and car boot sales</li>
                             <li><strong>Sold Offline</strong> — for private sales or other channels</li>
@@ -1039,10 +1249,11 @@
           <div class="ans"><p>Because Android has no iCloud equivalent, the FlipperHelper Android app backs up differently — but just as automatically. You choose a backup folder once (anywhere on your phone, or inside a cloud-synced folder such as Google Drive, Dropbox, or OneDrive), and FlipperHelper writes a fresh backup ZIP there in the background, keeping the five most recent copies.</p>
                         <p>This runs entirely on-device, works offline, and is completely independent of the Google Sheets export. Point it at a cloud-synced folder and your backups are mirrored off-device automatically.</p></div>
         </details>
-        <details id="can-i-switch-between-iphone-and-android-without-losing-my-da" data-s="can i switch between iphone and android without losing my data? yes, and it is guaranteed. the iphone app and the android app read and write the exact same backup format — a zip containing your database and all photos. export a backup on one device, open it on the other, and everything comes across: items, photos, listing history, expenses, hauls, and settings. backups made on an older app version are automatically upgraded when you restore them on a newer one. the only rule is to keep both apps updated, so a backup from a newer version is never opened by an older one.">
+        <details id="can-i-switch-between-iphone-and-android-without-losing-my-da" data-s="can i switch between iphone and android without losing my data? yes, and it is guaranteed. the iphone app and the android app read and write the exact same backup format — a zip containing your database and all photos. export a backup on one device, open it on the other, and everything comes across: items, photos, listing history, expenses, hauls, and settings. backups made on an older app version are automatically upgraded when you restore them on a newer one. the only rule is to keep both apps updated, so a backup from a newer version is never opened by an older one. with flipperhelper pro, you can also move by sync, and the free month is enough. sign in on the new phone with the same account and wait for the sync. the android app signs in with google only. if your iphone uses sign in with apple, invite your google email to your team on the web portal, accept the invite, sign in with google on android, and choose the team in settings → account → team . if you then cancel pro, the data stays on both phones. do not remove the member or delete the old account afterwards: that also removes the team’s items from the other phone. to make the google account the owner, use make owner on the teams page first. the new owner needs their own pro (a trial is fine) for the team to sync and to connect ebay. make owner disconnects ebay, so connect it again.">
           <summary>Can I switch between iPhone and Android without losing my data?</summary>
           <div class="ans"><p>Yes, and it is guaranteed. The iPhone app and the Android app read and write the exact same backup format — a ZIP containing your database and all photos. Export a backup on one device, open it on the other, and everything comes across: items, photos, listing history, expenses, hauls, and settings.</p>
-                        <p>Backups made on an older app version are automatically upgraded when you restore them on a newer one. The only rule is to keep both apps updated, so a backup from a newer version is never opened by an older one.</p></div>
+                        <p>Backups made on an older app version are automatically upgraded when you restore them on a newer one. The only rule is to keep both apps updated, so a backup from a newer version is never opened by an older one.</p>
+                        <p>With FlipperHelper Pro, you can also move by sync, and the free month is enough. Sign in on the new phone with the same account and wait for the sync. The Android app signs in with Google only. If your iPhone uses Sign in with Apple, invite your Google email to your team on the web portal, accept the invite, sign in with Google on Android, and choose the team in <strong>Settings &rarr; Account &rarr; Team</strong>. If you then cancel Pro, the data stays on both phones. Do not remove the member or delete the old account afterwards: that also removes the team&rsquo;s items from the other phone. To make the Google account the owner, use <strong>Make owner</strong> on the Teams page first. The new owner needs their own Pro (a trial is fine) for the team to sync and to connect eBay. Make owner disconnects eBay, so connect it again.</p></div>
         </details>
         <details id="what-happens-to-my-data-if-i-delete-flipperhelper-or-change-" data-s="what happens to my data if i delete flipperhelper or change phones? your data is safe in multiple places. on iphone it is automatically backed up to icloud, so switching to a new iphone restores everything; on the android app the same job is done by the automatic backup to your chosen folder. if you connected google drive, your item photos and google sheets exports remain in your google drive permanently — even after deleting the app. you can also use the portable zip export to save a complete copy anywhere. because the zip format is shared across iphone and android, you can even switch platforms with it. even if you stop using flipperhelper entirely, the google drive data can be imported into other tools. your data is never lost as long as at least one backup exists. with pro (including members of a pro owner's team), your synced records and photos also stay on our servers until you delete your account. records you synced to someone else's team stay with that team.">
           <summary>What happens to my data if I delete FlipperHelper or change phones?</summary>
@@ -1066,6 +1277,14 @@
         <details id="what-data-does-flipperhelper-store" data-s="what data does flipperhelper store? flipperhelper stores item records (photos, purchase price, sku, market, seller, platform listings with dates, sale info), market locations with gps coordinates, seller names, expense records (entry fees, transport expenses, other expenses), exchange rate history (365 days), and app settings. everything is stored in a sqlite database on your phone. in the free version, your records and photos stay there and are not stored on our servers. with pro (including members of a pro owner's team), records and photos are also stored on our servers. usage analytics and diagnostics are described in the privacy policy.">
           <summary>What data does FlipperHelper store?</summary>
           <div class="ans"><p>FlipperHelper stores item records (photos, purchase price, SKU, market, seller, platform listings with dates, sale info), market locations with GPS coordinates, seller names, expense records (entry fees, transport expenses, other expenses), exchange rate history (365 days), and app settings. Everything is stored in a SQLite database on your phone. In the free version, your records and photos stay there and are not stored on our servers. With Pro (including members of a Pro owner's team), records and photos are also stored on our servers. Usage analytics and diagnostics are described in the privacy policy.</p></div>
+        </details>
+        <details id="what-usage-analytics-does-flipperhelper-collect" data-s="what usage analytics does flipperhelper collect, and how do i turn them off? the app sends facts about how it is used, such as: the app was opened, an item was added or marked as sold, and which platform an item was listed on. it also sends how long the server took to answer, for example for a photo upload or a sign-in, and the errors you saw. when you are signed in, usage analytics are linked to your account, except in the european economic area. they never include item titles or descriptions, photos, prices, market names or seller names. to turn them off, open settings, scroll to the about section near the end, and switch off share usage analytics . the switch is on iphone and on android. it does not stop crash and error reports. the privacy policy lists exactly what is sent.">
+          <summary>What usage analytics does FlipperHelper collect, and how do I turn them off?</summary>
+          <div class="ans"><p>The app sends facts about how it is used, such as: the app was opened, an item was added or marked as sold, and which platform an item was listed on. It also sends how long the server took to answer, for example for a photo upload or a sign-in, and the errors you saw. When you are signed in, usage analytics are linked to your account, except in the European Economic Area. They never include item titles or descriptions, photos, prices, market names or seller names.</p><p>To turn them off, open Settings, scroll to the About section near the end, and switch off <strong>Share usage analytics</strong>. The switch is on iPhone and on Android. It does not stop crash and error reports. The <a href="/privacy.html">privacy policy</a> lists exactly what is sent.</p></div>
+        </details>
+        <details id="how-do-i-delete-my-flipperhelper-account" data-s="how do i delete my flipperhelper account? in the app, open settings, scroll to danger zone at the end, and tap delete all data . on the web portal, open settings → account and press delete my account . this deletes your items, photos, expenses and hauls, your ebay connection, your usage data and the rest of your account, on all your devices. you get an email when it is done. it cannot be undone. a few things are kept, as the privacy policy explains. for example, records you added to a team that someone else owns stay with that team.">
+          <summary>How do I delete my FlipperHelper account?</summary>
+          <div class="ans"><p>In the app, open Settings, scroll to <strong>Danger zone</strong> at the end, and tap <strong>Delete all data</strong>. On the web portal, open <strong>Settings &rarr; Account</strong> and press <strong>Delete my account</strong>. This deletes your items, photos, expenses and hauls, your eBay connection, your usage data and the rest of your account, on all your devices. You get an email when it is done. It cannot be undone.</p><p>A few things are kept, as the <a href="/privacy.html">privacy policy</a> explains. For example, records you added to a team that someone else owns stay with that team.</p></div>
         </details>
         </div>
       </section>
@@ -1123,13 +1342,13 @@
       <section class="faq-group" data-cat="comparison-with-other-apps" data-name="Comparison with Other Apps">
         <h2 class="group-label" id="comparison-with-other-apps"><b>Comparison with Other Apps</b></h2>
         <div class="faq">
-        <details id="how-does-flipperhelper-compare-to-vendoo" data-s="how does flipperhelper compare to vendoo? flipperhelper is completely free with no subscription, while vendoo offers a free tier with paid plans. flipperhelper focuses on the full reselling lifecycle (buy, list, sell, profit) with expense tracking including entry fees and transport costs, while vendoo focuses primarily on listing management automation. flipperhelper works fully offline and is ideal for car boot sale and flea market resellers who source in person, while vendoo targets high-volume online sellers who need automated cross-posting. competitor pricing may change — check their websites for current plans.">
+        <details id="how-does-flipperhelper-compare-to-vendoo" data-s="how does flipperhelper compare to vendoo? flipperhelper is free, with an optional pro subscription, while vendoo offers a free tier with paid plans. flipperhelper focuses on the full reselling lifecycle (buy, list, sell, profit) with expense tracking including entry fees and transport costs, while vendoo focuses primarily on listing management automation. flipperhelper works fully offline and is ideal for car boot sale and flea market resellers who source in person, while vendoo targets high-volume online sellers who need automated cross-posting. competitor pricing may change — check their websites for current plans.">
           <summary>How does FlipperHelper compare to Vendoo?</summary>
-          <div class="ans"><p>FlipperHelper is completely free with no subscription, while Vendoo offers a free tier with paid plans. FlipperHelper focuses on the full reselling lifecycle (buy, list, sell, profit) with expense tracking including entry fees and transport costs, while Vendoo focuses primarily on listing management automation. FlipperHelper works fully offline and is ideal for car boot sale and flea market resellers who source in person, while Vendoo targets high-volume online sellers who need automated cross-posting. Competitor pricing may change — check their websites for current plans.</p></div>
+          <div class="ans"><p>FlipperHelper is free, with an optional Pro subscription, while Vendoo offers a free tier with paid plans. FlipperHelper focuses on the full reselling lifecycle (buy, list, sell, profit) with expense tracking including entry fees and transport costs, while Vendoo focuses primarily on listing management automation. FlipperHelper works fully offline and is ideal for car boot sale and flea market resellers who source in person, while Vendoo targets high-volume online sellers who need automated cross-posting. Competitor pricing may change — check their websites for current plans.</p></div>
         </details>
-        <details id="how-does-flipperhelper-compare-to-flippd" data-s="how does flipperhelper compare to flippd? both flipperhelper and flippd are reseller apps, but flipperhelper tracks listings across 16 platforms compared to flippd's more limited set. flipperhelper includes multi-currency support with seven currencies (usd, eur, gbp, cad, aud, nzd, pln) and automatic exchange rates, gps-based market auto-detection, detailed expense tracking with entry fees and six transport types, and google drive photo sync. flipperhelper is completely free with no premium tier. competitor features and pricing may change — check their website for current details.">
+        <details id="how-does-flipperhelper-compare-to-flippd" data-s="how does flipperhelper compare to flippd? both flipperhelper and flippd are reseller apps, but flipperhelper tracks listings across 21 platforms compared to flippd's more limited set. flipperhelper includes multi-currency support with seven currencies (usd, eur, gbp, cad, aud, nzd, pln) and automatic exchange rates, gps-based market auto-detection, detailed expense tracking with entry fees and six transport types, and google drive photo sync. the flipperhelper app is free, and flipperhelper pro is an optional subscription with the first month free. competitor features and pricing may change — check their website for current details.">
           <summary>How does FlipperHelper compare to Flippd?</summary>
-          <div class="ans"><p>Both FlipperHelper and Flippd are reseller apps, but FlipperHelper tracks listings across 16 platforms compared to Flippd's more limited set. FlipperHelper includes multi-currency support with seven currencies (USD, EUR, GBP, CAD, AUD, NZD, PLN) and automatic exchange rates, GPS-based market auto-detection, detailed expense tracking with entry fees and six transport types, and Google Drive photo sync. FlipperHelper is completely free with no premium tier. Competitor features and pricing may change — check their website for current details.</p></div>
+          <div class="ans"><p>Both FlipperHelper and Flippd are reseller apps, but FlipperHelper tracks listings across 21 platforms compared to Flippd's more limited set. FlipperHelper includes multi-currency support with seven currencies (USD, EUR, GBP, CAD, AUD, NZD, PLN) and automatic exchange rates, GPS-based market auto-detection, detailed expense tracking with entry fees and six transport types, and Google Drive photo sync. The FlipperHelper app is free, and FlipperHelper Pro is an optional subscription with the first month free. Competitor features and pricing may change — check their website for current details.</p></div>
         </details>
         <details id="how-does-flipperhelper-compare-to-list-perfectly" data-s="how does flipperhelper compare to list perfectly? list perfectly focuses on automated cross-posting, actually publishing your listings across platforms, while flipperhelper focuses on tracking inventory and calculating profit. flipperhelper is free; list perfectly offers paid plans. if you need to track what you bought, where you bought it, what you paid, and calculate your real profit after all expenses, flipperhelper is the better fit. if you need automated cross-posting, list perfectly serves a different purpose. check their website for current pricing.">
           <summary>How does FlipperHelper compare to List Perfectly?</summary>
@@ -1294,8 +1513,8 @@
       g.classList.toggle('hide', visible === 0);
       shown += visible;
     });
-    count.textContent = shown === 61
-      ? '63 questions'
+    count.textContent = shown === 80
+      ? '80 questions'
       : shown + (shown === 1 ? ' question matches' : ' questions match');
     empty.classList.toggle('show', shown === 0);
   }
