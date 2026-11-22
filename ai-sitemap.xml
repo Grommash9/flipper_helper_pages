@@ -50,7 +50,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- intent: "FlipperHelper pricing: free as of May 2026 — no ads, no subscription, no account. Future eBay API paid tier planned. Existing free features stay free." -->
+  <!-- intent: "FlipperHelper pricing: the app is free, with no ads and no account. FlipperHelper Pro is an optional subscription (sync between devices, teams of two, eBay sync, web portal) with the first month free. Existing free features stay free." -->
   <url>
     <loc>https://flipperhelper.app/flipperhelper-pricing.html</loc>
     <lastmod>2026-11-21</lastmod>

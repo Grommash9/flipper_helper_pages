@@ -33,7 +33,7 @@ function metaDesc(a, b) {
 }
 
 function softwareApp(app) {
-    const offers = app.price_paid
+    const offers = extractPrice(app.price_paid)
         ? [
             { '@type': 'Offer', name: 'Free tier', price: '0', priceCurrency: 'USD', description: app.price_free },
             { '@type': 'Offer', name: 'Paid', price: extractPrice(app.price_paid), priceCurrency: 'USD', description: app.price_paid }
@@ -52,7 +52,7 @@ function softwareApp(app) {
 }
 function extractPrice(text) {
     const m = String(text).match(/\$([\d.]+)/);
-    return m ? m[1] : '0';
+    return m ? m[1] : null;
 }
 
 function bullets(arr) {
@@ -426,7 +426,7 @@ function indexHTML() {
     <meta name="apple-itunes-app" content="app-id=6759716745">
     <meta name="color-scheme" content="light">
     <title>Compare Reseller Apps: FlipperHelper, Flippd, Vendoo | FlipperHelper</title>
-    <meta name="description" content="Side-by-side comparisons of reseller apps: FlipperHelper, Flippd, Vendoo. Tracker vs cross-lister, free vs paid, iOS vs multi-platform.">
+    <meta name="description" content="Side-by-side comparisons of reseller apps: FlipperHelper, Flippd, Vendoo. Tracker vs cross-lister, free vs paid, mobile vs web.">
     <link rel="icon" type="image/svg+xml" href="../logo_FH.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -435,14 +435,14 @@ function indexHTML() {
     <link rel="canonical" href="https://flipperhelper.app/compare/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Compare Reseller Apps">
-    <meta property="og:description" content="Side-by-side comparisons of reseller apps. Tracker vs cross-lister, free vs paid, iOS vs multi-platform.">
+    <meta property="og:description" content="Side-by-side comparisons of reseller apps. Tracker vs cross-lister, free vs paid, mobile vs web.">
     <meta property="og:url" content="https://flipperhelper.app/compare/">
     <meta property="og:site_name" content="FlipperHelper">
     <meta property="og:image" content="https://flipperhelper.app/logo_FH.png">
     <meta property="og:locale" content="en_GB">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Compare Reseller Apps">
-    <meta name="twitter:description" content="Side-by-side comparisons of reseller apps. Tracker vs cross-lister, free vs paid, iOS vs multi-platform.">
+    <meta name="twitter:description" content="Side-by-side comparisons of reseller apps. Tracker vs cross-lister, free vs paid, mobile vs web.">
     <meta name="twitter:image" content="https://flipperhelper.app/logo_FH.png">
     <script type="application/ld+json">${JSON.stringify(breadcrumbs, null, 2)}</script>
 <style>
